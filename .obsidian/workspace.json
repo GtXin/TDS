@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "memo/memoWX002_MAS.md",
+                "file": "memo/memoWX_002_MAS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memoWX002_MAS"
+              "title": "memoWX_002_MAS"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 387.48907470703125
   },
   "right": {
     "id": "d2172629678a9549",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "memo/memoWX002_MAS.md",
+                "file": "memo/memoWX_002_MAS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "memo/memoWX002_MAS.md",
+                "file": "memo/memoWX_002_MAS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "memo/memoWX002_MAS.md",
+                "file": "memo/memoWX_002_MAS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,11 +188,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "b688d124338f704e",
+  "active": "4cfb07f0e5c7527e",
   "lastOpenFiles": [
-    "memo/memoWX_002_folderStrucureforProj009.md",
     "memo/memoWX_001_folderStrucureforProj009.md",
-    "memo/memoWX002_MAS.md",
+    "memo/memoWX_002_MAS.md",
+    "memo/memoKWX_001.md",
     "memo/memoWX_001.md"
   ]
 }

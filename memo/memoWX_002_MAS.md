@@ -1,24 +1,62 @@
-# memoWX002_MAS — Long-term multiagent system for Codex and Claude
+# memoWX_002_MAS — Long-term multiagent system for Codex and Claude
 
-## 000 — Background and recommendation
+## 000 — Background
 
-Date: November 7, 2026. Status: proposal.
+We are working in this folder to build a multi-agent system compatible with both Codex and Claude.
 
-A multi-agent system (MAS) is a team of AI agents working toward one goal. Codex and Claude Code can help with different parts of a project, using shared notes to explain the work and pass it to the next agent.
+## 001 — Key Codex concepts
 
-Start with one agent for small tasks. For larger tasks, assign someone to coordinate, someone to build, and someone to check the result. Keep important instructions and decisions in the project so either tool can pick up the work.
+### 1. Agent and task
 
-**Kindergarten explanation:** A small team builds a castle together: one child plans, one builds, and one checks that it stands.
+Codex is an AI helper that can read, edit, and check code. Give it one clear goal.
 
-## 001 — What exists in this repository
+**Simple:** Tell your helper which toy to build.
 
-TDS currently contains a `memo/` directory and Obsidian configuration, alongside Git metadata. The existing `memoWX_001.md` describes the structure of a separate project, `proj009`; that source tree is not present in this checkout.
+### 2. Context
 
-Use TDS initially as the design and operating handbook. When applying this workflow to a code repository, place that project's instructions and task records alongside its code. Keep general policy reusable, but let each project own its commands, constraints, and acceptance criteria. Do not make agents depend on an absolute path to this vault.
+Context is the information Codex uses for a task. Include the relevant files, decisions, and limits.
+
+**Simple:** Show your helper the picture and the right blocks.
+
+### 3. Project instructions — `AGENTS.md`
+
+`AGENTS.md` stores lasting project instructions. Put common rules and commands here.
+
+**Simple:** Put the classroom rules on the wall.
+
+### 4. Tools and connections
+
+Tools let Codex read files, edit code, and run commands. MCP connects it to additional tools and services.
+
+**Simple:** Your helper gets pencils, scissors, and a library card.
+
+### 5. Skills
+
+A skill is a reusable set of instructions for a job. Use it for tasks that follow the same process.
+
+**Simple:** Follow the same recipe to make cookies again.
+
+### 6. Permissions and approvals
+
+Permissions control what Codex can access or change. Approval settings decide when it must ask first.
+
+**Simple:** Ask before using supplies from the locked cupboard.
+
+### 7. Git worktrees
+
+A Git worktree gives an agent its own working copy. Separate copies help keep simultaneous edits apart.
+
+**Simple:** Each helper builds on their own mat.
+
+### 8. Review and verification
+
+Check the changes and run relevant tests. Ask what passed, failed, or remains unverified.
+
+**Simple:** Try the toy before calling it finished.
 
 ## 002 — Seven key MAS concepts
 
-These concepts are a practical 80/20 starting point for working with agents; the percentage is a learning guide, not a measured usage statistic. Codex supports delegating tasks to subagents and collecting their results; see the [official subagent documentation](https://learn.chatgpt.com/docs/agent-configuration/subagents).
+Start with these seven concepts for everyday MAS work. Codex supports delegating tasks to subagents and collecting their results; see the [official subagent documentation](https://learn.chatgpt.com/docs/agent-configuration/subagents).
 
 ### 1. Agents and roles
 
