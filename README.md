@@ -19,7 +19,8 @@ TDS/
 ├── references/
 │   ├── chan_theory/           # Original texts, translations, and explanations
 │   ├── papers/                # External papers and technical articles
-│   └── implementations/       # External code and implementation references
+│   ├── implementations/       # External code and implementation references
+│   └── proj009Memo/            # Imported Project 009 memos
 ├── data/
 │   ├── raw/                   # Original imported datasets
 │   └── processed/             # Cleaned or converted datasets
@@ -29,6 +30,8 @@ TDS/
 │   ├── skills/                # Shared procedures, chosen through experiments
 │   ├── contracts.md           # Common task and result format
 │   └── tasks/                 # Assignments and handoffs
+├── CodexMemory.md             # Current project context and handoff
+├── logXW.md                   # Repository event log
 ├── AGENTS.md                  # Codex entry point to the shared workflow
 ├── .codex/
 │   ├── config.toml            # Subagent support enabled
@@ -50,6 +53,9 @@ TDS/
 
 ## Start here
 
+- [Project 009 memo references](references/proj009Memo/README.md)
+- [Current project memory](CodexMemory.md)
+- [Repository event log](logXW.md)
 - [Memo 004 — Combined project and MAS structure](docs/memo/memoWX_004_projectAndMAS.md)
 - [Shared MAS workflow](mas/README.md)
 - [Task and result format](mas/contracts.md)

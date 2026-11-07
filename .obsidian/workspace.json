@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/memo/memoWX_004_projectAndMAS.md",
+                "file": "docs/memo/memoWX_008_ChanLargePicture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memoWX_004_projectAndMAS"
+              "title": "memoWX_008_ChanLargePicture"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 439.9062385559082
+    "width": 299.69853591918945
   },
   "right": {
     "id": "d2172629678a9549",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/memo/memoWX_004_projectAndMAS.md",
+                "file": "docs/memo/memoWX_008_ChanLargePicture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/memo/memoWX_004_projectAndMAS.md",
+                "file": "docs/memo/memoWX_008_ChanLargePicture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/memo/memoWX_004_projectAndMAS.md",
+                "file": "docs/memo/memoWX_008_ChanLargePicture.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,31 +190,51 @@
   },
   "active": "b688d124338f704e",
   "lastOpenFiles": [
-    "AGENTS.md",
-    "artifacts/mas",
-    "mas/tasks",
-    "mas/skills",
-    "mas/roles",
-    "mas/contracts.md",
-    "mas/README.md",
-    "mas",
-    "docs/memo/memoWX_003_folderDecision.md",
-    "docs/memo/memoWX_004_projectAndMAS.md",
-    "docs/memo/memoWX_002_MAS.md",
-    "docs/memo/memoWX_001_folderStrucureforProj009.md",
-    "docs/memo/memoKWX_001_文件夹结构.md",
-    "README.md",
-    "docs/memo/memoWX_004_folderDecision.md",
-    "memo/memoWX_004_folderDecision.md",
-    "data/raw",
-    "data/processed",
-    "data",
-    "references/papers",
-    "references/implementations",
-    "memo/memoKWX_001_文件夹结构.md",
-    "memo/memoWX_001_folderStrucureforProj009.md",
-    "memo/memoWX_002_MAS.md",
-    "memo/memoKWX_001.md",
-    "memo/memoWX_001.md"
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_151525_532584.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_151525_399741/s5-zhongshu.png",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_151525_399741",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_151501_231598.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_151332_178213/s5-zhongshu.png",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_151332_178213",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_151141_019024/s6-zhongshu.png",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_151141_019024/s5-zoushi.png",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_151141_019024",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_151141_019024.md",
+    "docs/memo/memoWX_008_ChanLargePicture/s5-zhongshu.png",
+    "docs/memo/memoWX_008_ChanLargePicture/s6-zoushi.png",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_150929_958380.md",
+    "docs/memo/memoWX_007_codexMemory.md",
+    "docs/memo/memoWX_008_ChanLargePicture.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_150849_941265/s8-maimai.png",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_150849_941265",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_150849_895215/s7-qushi.png",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_150849_895215",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_150849_840005/s6-zhongshu.png",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_150849_840005",
+    "docs/memo/memoWX_008_ChanLargePicture/s8-maimai.png",
+    "mas/tasks/20261107-memo008-complete-overview.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_150538_915737.md",
+    "mas/tasks/20261107-proj009-zoushi-source-check.md",
+    "mas/tasks/20261107-memo008-overall-direction.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_145912_802727.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_145826_025851",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_145758_568982",
+    "mas/tasks/20261107-memo008-data-simplification.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_140209_928679.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_140114_034015",
+    "references/proj009Memo/memo0033_algo_of_bi.md",
+    "mas/tasks/20261107-memo-reference-format.md",
+    "docs/memo/backups/memoWX_006_memoWritingGuide__20261107_135444_089140.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_135444_088660.md",
+    "mas/tasks/20261107-memo008-s1-s4.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_134354_300931.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_134325_693817.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_134111_592608",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_132955_758410.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_132847_738085.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_132807_586890.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_132713_415270.md",
+    "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_132642_605966.md",
+    "docs/memo/backups/README__20261107_132422_404720.md"
   ]
 }
