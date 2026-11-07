@@ -18,4 +18,13 @@ This folder keeps workflow and task records independent of the tool used to exec
 
 Use repository-relative paths. Keep application code in `src/chanlab/`, generated MAS outputs in `artifacts/mas/`, and design discussions in `docs/memo/`.
 
-Task files preserve state and handoffs; they do not automatically schedule work or synchronize concurrent edits. Native tool configuration and runtime controls will be added separately.
+Task files preserve state and handoffs; they do not automatically schedule work or synchronize concurrent edits.
+
+## Codex connection
+
+- Root [AGENTS.md](../AGENTS.md) directs Codex to this workflow and the task/result format.
+- `.codex/config.toml` enables subagent support; model and permission settings remain inherited from the current runtime.
+- `.codex/agents/` is reserved for native definitions once agents are chosen.
+- `.agents/skills` is a relative directory link to `mas/skills`, keeping one shared source for skill procedures.
+
+Agent definitions, role descriptions, and skills remain unselected. Claude can connect to this same core separately.

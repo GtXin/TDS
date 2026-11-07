@@ -190,6 +190,7 @@
   },
   "active": "b688d124338f704e",
   "lastOpenFiles": [
+    "AGENTS.md",
     "artifacts/mas",
     "mas/tasks",
     "mas/skills",
@@ -210,7 +211,6 @@
     "data",
     "references/papers",
     "references/implementations",
-    "references/chan_theory",
     "memo/memoKWX_001_文件夹结构.md",
     "memo/memoWX_001_folderStrucureforProj009.md",
     "memo/memoWX_002_MAS.md",

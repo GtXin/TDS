@@ -1,6 +1,6 @@
 ## 000 — Purpose
-Combine the project and MAS folder decisions from memos 002 and 003. Support the three-day Chan theory feasibility sprint and future development.
-## 001 — Combined structure for now
+Combine the project structure, shared MAS core, and Codex connection now. Support the three-day Chan theory feasibility sprint and future development.
+## 001 — Current combined structure
 ```text
 TDS/
 ├── src/chanlab/
@@ -20,10 +20,16 @@ TDS/
 │   └── processed/             # Cleaned or converted datasets
 ├── mas/
 │   ├── README.md              # Workflow overview
-│   ├── roles/                 # Responsibilities, defined later
-│   ├── skills/                # Procedures, defined later
+│   ├── roles/                 # Shared responsibilities, chosen through experiments
+│   ├── skills/                # Shared procedures, chosen through experiments
 │   ├── contracts.md           # Common task and result format
 │   └── tasks/                 # Assignments and handoffs
+├── AGENTS.md                  # Codex entry point to the shared workflow
+├── .codex/
+│   ├── config.toml            # Subagent support enabled
+│   └── agents/                # Native definitions; no agents chosen yet
+├── .agents/
+│   └── skills → ../mas/skills  # Shared skill discovery
 ├── artifacts/                 # Generated charts, reports, and results
 │   └── mas/                   # MAS run outputs
 └── docs/memo/                 # Discussions and decisions
@@ -31,16 +37,8 @@ TDS/
 ## 002 — Essential boundaries
 - The backend and experiments use the same algorithm code; the static website displays backend results.
 - Preserve original references and raw data with source information; keep generated results in `artifacts/`.
-- Keep MAS instructions and task records separate from application code; choose specific agents, roles, and skills later.
-## 003 — Later: add Codex connections
-Add these paths when ready, connecting them to the existing shared MAS core:
-```text
-TDS/
-├── AGENTS.md                  # Entry point to the shared workflow
-├── .codex/
-│   ├── config.toml            # Runtime settings, when needed
-│   └── agents/                # Native agent definitions
-└── .agents/skills/            # Links to shared skills in mas/skills/
-```
-Claude can later use its own native connections to the same core. This memo records the combined plan; MAS implementation and agent selection remain deferred.
+- Keep MAS instructions and task records separate from application code; choose specific agents, roles, and skills through experiments.
+## 003 — Codex connected now
+`AGENTS.md` directs Codex to the shared workflow and contracts; `.codex/config.toml` enables subagent support without selecting models or changing permissions. `.agents/skills` links to `mas/skills`, while `.codex/agents/` remains available for native definitions when agents are chosen.
+The project scaffold, shared MAS core, and Codex connection are set up together. Specific agents and skills remain unselected, and the core stays portable to other runtimes.
 Sources: [002 — MAS](memoWX_002_MAS.md), [003 — Folder Decision](memoWX_003_folderDecision.md).
