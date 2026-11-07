@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "memo/memoWX_002_MAS.md",
+                "file": "docs/memo/memoWX_004_projectAndMAS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memoWX_002_MAS"
+              "title": "memoWX_004_projectAndMAS"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 387.48907470703125
+    "width": 439.9062385559082
   },
   "right": {
     "id": "d2172629678a9549",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "memo/memoWX_002_MAS.md",
+                "file": "docs/memo/memoWX_004_projectAndMAS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "memo/memoWX_002_MAS.md",
+                "file": "docs/memo/memoWX_004_projectAndMAS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "memo/memoWX_002_MAS.md",
+                "file": "docs/memo/memoWX_004_projectAndMAS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,8 +188,27 @@
       "bases:Create new base": false
     }
   },
-  "active": "4cfb07f0e5c7527e",
+  "active": "b688d124338f704e",
   "lastOpenFiles": [
+    "docs/memo/memoWX_003_folderDecision.md",
+    "docs/memo/memoWX_004_projectAndMAS.md",
+    "docs/memo/memoWX_002_MAS.md",
+    "docs/memo/memoWX_001_folderStrucureforProj009.md",
+    "docs/memo/memoKWX_001_文件夹结构.md",
+    "README.md",
+    "docs/memo/memoWX_004_folderDecision.md",
+    "memo/memoWX_004_folderDecision.md",
+    "data/raw",
+    "data/processed",
+    "data",
+    "references/papers",
+    "references/implementations",
+    "references/chan_theory",
+    "references",
+    "artifacts",
+    "experiments",
+    "samples",
+    "memo/memoKWX_001_文件夹结构.md",
     "memo/memoWX_001_folderStrucureforProj009.md",
     "memo/memoWX_002_MAS.md",
     "memo/memoKWX_001.md",
