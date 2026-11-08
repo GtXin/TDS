@@ -38,15 +38,22 @@ Describe the big picture of Chan Theory and how its main ideas fit together.
 
 ![同一级别已完成走势的概念示意：上涨、下跌与盘整](memoWX_008_ChanLargePicture/s6-zoushi.png)
 
-### S7 趋势
-趋势是走势的一种：一个已完成走势中，同一级别至少两个中枢依次同向推进，且连同各自波动范围互不重叠。向上为上涨，向下为下跌；只含一个中枢的已完成走势属于盘整。[5][7]
+### S7 背驰
+背驰要放在已确认的趋势中判断：典型结构 `a+A+b+B+c` 中，`A、B` 是构成该级别趋势的同级别中枢，比较的是进入最后中枢 `B` 的 `b` 与离开它的 `c`。若 `c` 创出新高或新低，力度却弱于 `b`，并满足其相应的次级别结构与完成条件，就是趋势背驰。盘整中的类似比较称为盘整背驰；MACD只作辅助。[7][8]
 
-![两个同向中枢连同各自波动范围分离：分别示意上涨与下跌](memoWX_008_ChanLargePicture/s7-qushi.png)
+![只突出离开中枢B的线段c，以一条直线简化表示整段运动，内部结构省略；b保留为力度比较参照](memoWX_008_ChanLargePicture/s7-beichi-exit-segment.png)
 
 ### S8 买卖
-买卖点把前面的结构分析落实为指定级别上的转折或回试位置。一买关注下跌趋势背驰（末段力度衰减）处；二买关注上涨后的次级别回试，图中先画一买后的典型情形；三买关注次级别向上离开中枢后的首次次级别回试，低点不跌破中枢上沿；卖点反向理解。[7][8]
+一买关注下跌趋势背驰处；二买以一买上涨后的首次次级别回试为典型；三买要求次级别向上离开中枢后，首次次级别回试不跌破中枢上沿。图选一买后的第一个中枢作例，三买并不限于第一个中枢；卖点反向理解。[9][10]
 
-![三类买点的独立示意：趋势背驰处、上涨后的回试、离开中枢后的首次回试](memoWX_008_ChanLargePicture/s8-maimai.png)
+![同一条走势上的典型一买10、二买13和三买19；中枢13到17在二买后第三段完成时确认，三买回试保持在上沿17之上](memoWX_008_ChanLargePicture/s8-buy-points-sequence.png)
+
+## 002 — 白板总结
+三天冲刺与缠论讨论的白板记录，保留原始标注。
+
+![三天冲刺、缠论结构与买卖点、MACD讨论的白板总结](memoWX_008_ChanLargePicture/summary-handwritten.png)
+
+[HEIC 原图](memoWX_008_ChanLargePicture/IMG_5152.HEIC)
 
 ## References
 
@@ -56,5 +63,7 @@ Describe the big picture of Chan Theory and how its main ideas fit together.
 4. [references/proj009Memo/memo0031_algo_of_xianduan_1st.md](../../references/proj009Memo/memo0031_algo_of_xianduan_1st.md)
 5. [references/proj009Memo/memo0035_algo_of_zhongshu.md](../../references/proj009Memo/memo0035_algo_of_zhongshu.md)
 6. [references/proj009Memo/memo0015_oop_trading_architecture.md](../../references/proj009Memo/memo0015_oop_trading_architecture.md)
-7. 缠中说禅. 教你炒股票20：缠中说禅走势中枢级别扩张及第三类买卖点. 2007-01-05. [原文存档](https://eczsc.com/originals/20).
-8. 缠中说禅. 教你炒股票53：三类买卖点的再分辨. 2007-05-23. [原文存档](https://eczsc.com/originals/53).
+7. 缠中说禅. 教你炒股票37：背驰的再分辨. [references/chan_theory/037.md](../../references/chan_theory/037.md).
+8. 缠中说禅. 教你炒股票24：MACD 对背弛的辅助判断. [references/chan_theory/024.md](../../references/chan_theory/024.md).
+9. 缠中说禅. 教你炒股票20：缠中说禅走势中枢级别扩张及第三类买卖点. 2007-01-05. [原文存档](https://eczsc.com/originals/20).
+10. 缠中说禅. 教你炒股票53：三类买卖点的再分辨. 2007-05-23. [原文存档](https://eczsc.com/originals/53).

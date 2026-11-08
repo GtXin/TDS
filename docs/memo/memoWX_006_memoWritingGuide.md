@@ -24,7 +24,8 @@ For a folder memo, use 000 for background, 001 for the annotated tree and summar
 
 ## 003 — Writing style
 
-Use plain language and explain unfamiliar terms before relying on them. Introduce the concrete object, explain its purpose, and give an example when that makes the idea clearer. Keep paragraphs focused and avoid repeating the same explanation in several sections.
+Write only essential conclusions, decisions, and necessary references; keep conversational discussion in chat/terminal.
+Keep memos compact: no extra blank lines; use only the spacing needed for correct Markdown rendering. Use plain language and explain unfamiliar terms before relying on them. Introduce the concrete object, explain its purpose, and give an example when that makes the idea clearer. Keep paragraphs focused and avoid repeating the same explanation in several sections.
 
 Match the user's requested language and level of detail. Use prose for explanations, lists for parallel items or steps, and tables for comparisons. Keep source code, concepts, experiments, and documentation clearly distinguished when explaining project structure.
 

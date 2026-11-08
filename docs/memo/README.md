@@ -12,6 +12,7 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | WX 006 | [Memo writing guide](memoWX_006_memoWritingGuide.md) |
 | WX 007 | [Codex memory](memoWX_007_codexMemory.md) |
 | WX 008 | [Chan Large Picture](memoWX_008_ChanLargePicture.md) |
+| WX 009 | [Design pattern for Chan features](memoWX_009_designPatternForChanFeatures.md) |
 | KWX 001 | [cc project folder structure](memoKWX_001_文件夹结构.md) |
 
 For new or revised memos, follow [the writing guide](memoWX_006_memoWritingGuide.md).
