@@ -1,0 +1,30 @@
+column,group,encoding,meaning
+raw_index,raw,integer,Zero-based position in the exact original KlineTSeries.
+timestamp,raw,UTC ISO 8601,Original Kline bar-start timestamp.
+symbol,raw,text,Original instrument identifier; DEMO:CHAN is synthetic.
+period,raw,text,Original bar period; this sample uses 1m.
+source,raw,text,Original provenance; synthetic_template marks invented sample values.
+open,raw,number,Original opening price.
+high,raw,number,Original highest price.
+low,raw,number,Original lowest price.
+close,raw,number,Original closing price; sample values match memo009.
+volume,raw,number,Original traded quantity; this sample uses arbitrary illustrative units.
+mk_ids,merged,JSON integer list or NA,Processed K-line source coverage; IDs belong to the MergedKlineSeries context.
+mk_start_ids,merged,JSON integer list or NA,IDs whose projected source coverage starts at this raw row.
+mk_end_ids,merged,JSON integer list or NA,IDs whose projected source coverage ends at this raw row.
+fx_ids,fractals,JSON integer list or NA,Fractal source-window coverage; IDs belong to the FenxingSeries context.
+fx_start_ids,fractals,JSON integer list or NA,IDs whose projected source coverage starts at this raw row.
+fx_end_ids,fractals,JSON integer list or NA,IDs whose projected source coverage ends at this raw row.
+fx_anchor_ids,fractals,JSON integer list or NA,Fractal IDs whose actual anchor_raw_index equals this raw row.
+bi_ids,bi,JSON integer list or NA,Stroke endpoint-to-endpoint coverage; IDs belong to the BiSeries context.
+bi_start_ids,bi,JSON integer list or NA,IDs whose projected source coverage starts at this raw row.
+bi_end_ids,bi,JSON integer list or NA,IDs whose projected source coverage ends at this raw row.
+xd_ids,xianduan,JSON integer list or NA,Segment endpoint-to-endpoint coverage; IDs belong to the XianduanSeries context.
+xd_start_ids,xianduan,JSON integer list or NA,IDs whose projected source coverage starts at this raw row.
+xd_end_ids,xianduan,JSON integer list or NA,IDs whose projected source coverage ends at this raw row.
+zs_ids,zhongshu,JSON integer list or NA,Center time extent; IDs belong to the ZhongshuSeries context.
+zs_start_ids,zhongshu,JSON integer list or NA,IDs whose projected source coverage starts at this raw row.
+zs_end_ids,zhongshu,JSON integer list or NA,IDs whose projected source coverage ends at this raw row.
+zou_ids,zoushi,JSON integer list or NA,Movement time extent; IDs belong to the ZoushiSeries context.
+zou_start_ids,zoushi,JSON integer list or NA,IDs whose projected source coverage starts at this raw row.
+zou_end_ids,zoushi,JSON integer list or NA,IDs whose projected source coverage ends at this raw row.

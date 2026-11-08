@@ -1,0 +1,4 @@
+raw_index,timestamp,symbol,period,source,open,high,low,close,volume,mk_ids,mk_start_ids,mk_end_ids,fx_ids,fx_start_ids,fx_end_ids,fx_anchor_ids,bi_ids,bi_start_ids,bi_end_ids,xd_ids,xd_start_ids,xd_end_ids,zs_ids,zs_start_ids,zs_end_ids,zou_ids,zou_start_ids,zou_end_ids,mk_direction,fx_kind,bi_direction,xd_direction,zs_lower,zs_upper,zou_kind
+0,2026-11-09T01:30:00Z,DEMO:CHAN,1m,synthetic_template,99,102,98,100,1000,[12],[12],[12],[7],[7],[],[],NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,up,NA,NA,NA,NA,NA,NA
+1,2026-11-09T01:31:00Z,DEMO:CHAN,1m,synthetic_template,100,106,100,104,1200,[13],[13],[13],[7],[],[],[7],NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,up,top,NA,NA,NA,NA,NA
+2,2026-11-09T01:32:00Z,DEMO:CHAN,1m,synthetic_template,103,104,99,101,1100,[14],[14],[14],[7],[],[7],[],NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,down,NA,NA,NA,NA,NA,NA

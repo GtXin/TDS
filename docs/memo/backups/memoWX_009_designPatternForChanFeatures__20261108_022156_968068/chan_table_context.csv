@@ -1,0 +1,8 @@
+series_key,class_name,display_prefix,level,result_version,source_snapshot,availability,note
+raw,KlineTSeries,NA,NA,memo009-synthetic-raw-v1,memo009-synthetic-raw-v1,synthetic sample,"Storage example only. Dates and close/ID mappings follow memo009 section002.q; other OHLCV values are invented. CSV lists [12] and [] decode to integer tuples (12,) and (). Literal NA means result not calculated/loaded. Retain this context with the data."
+merged,MergedKlineSeries,MK,NA,memo009-synthetic-merged-v1,memo009-synthetic-raw-v1,illustrative result,"IDs 12,13,14 cover raw ranges [0,1), [1,2), [2,3)."
+fractals,FenxingSeries,FX,NA,memo009-synthetic-fractals-v1,memo009-synthetic-raw-v1,illustrative result,"ID 7 covers merged positions [0,3) and anchors at raw_index 1. Coverage does not mean it was known at row 0."
+bi,BiSeries,BI,NA,NA,memo009-synthetic-raw-v1,not loaded,All corresponding sample feature cells are NA; no authoritative feature records are supplied.
+xianduan,XianduanSeries,XD,NA,NA,memo009-synthetic-raw-v1,not loaded,All corresponding sample feature cells are NA; no authoritative feature records are supplied.
+zhongshu,ZhongshuSeries,ZS,NA,NA,memo009-synthetic-raw-v1,not loaded,All corresponding sample feature cells are NA; no authoritative feature records are supplied.
+zoushi,ZoushiSeries,ZOU,NA,NA,memo009-synthetic-raw-v1,not loaded,All corresponding sample feature cells are NA; no authoritative feature records are supplied.
