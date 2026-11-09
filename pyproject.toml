@@ -4,5 +4,10 @@ version = "0.0.0"
 requires-python = ">=3.11"
 dependencies = []
 
+[project.optional-dependencies]
+plot = [
+    "plotly>=7.1.0",
+]
+
 [dependency-groups]
 dev = ["pytest", "ruff"]

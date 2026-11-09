@@ -1,0 +1,469 @@
+{
+  "source": "https://www.kwx.me/cc/",
+  "original_sha256": "1c75cb795b7fad1c567d004167ba47a87b57a68f4be73417a8578f87050384aa",
+  "assets": [
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=assets%2Ffavicon.svg",
+      "path": "assets/favicon.svg",
+      "ok": true,
+      "sha256": "cb5e8cd535e54ae3d52203b58fdb93dff812079497d16d618728d963ca370af2",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=assets%2Fscrollspy.js",
+      "path": "assets/scrollspy.js",
+      "ok": true,
+      "sha256": "86e3bdafccabc92a6c739504ca7270db41c249a6e0857e602df8aac04d5c7d28",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=assets%2Fsite.css",
+      "path": "assets/site.css",
+      "ok": true,
+      "sha256": "9a948a477913f0775064e1b52e34c5f72c4fcffc49bca3e32ea2ba9f397db322",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=assets%2Fsite.js",
+      "path": "assets/site.js",
+      "ok": true,
+      "sha256": "0e8e34abfb6aa7aaba0de09a6bd7ee665b2ec8bd8049dbd3007249a6e7670486",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F01-global-overview.svg&v=dbc160c8da5f",
+      "path": "figures/01-global-overview.svg",
+      "ok": true,
+      "sha256": "dbc160c8da5fa65da86f8d2db40fda01d737e707799d53756f8722fdef799fa0",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F02-containment-and-merge.svg&v=b0b666dba7c8",
+      "path": "figures/02-containment-and-merge.svg",
+      "ok": true,
+      "sha256": "b0b666dba7c82d9b6cf72c1a97dce5f27e9e6cb55e49a935e0063efa7dc78dfb",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F03-fractal-shared-window.svg&v=e526c963f51e",
+      "path": "figures/03-fractal-shared-window.svg",
+      "ok": true,
+      "sha256": "e526c963f51e2daf26db9ffb98cead179c7a40387fb78729d95879dca1b92a6a",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F04-top-fractal.svg&v=d93146caf30c",
+      "path": "figures/04-top-fractal.svg",
+      "ok": true,
+      "sha256": "d93146caf30c183aa63bf7dd30b1971eec2ba23aaebe53ed5ff4eb2c243af8dc",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F05-bottom-fractal.svg&v=12c3bbd15f59",
+      "path": "figures/05-bottom-fractal.svg",
+      "ok": true,
+      "sha256": "12c3bbd15f59bcd427ae8bda99b2b78f7617c225d7579153761a240517f4905c",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F06-fractal-rejection.svg&v=d28f1ffa7b6d",
+      "path": "figures/06-fractal-rejection.svg",
+      "ok": true,
+      "sha256": "d28f1ffa7b6de30097a67f4ead4991f606ae3b88ff053977fe243e6e11eec143",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F07-fractal-tail.svg&v=a49286fd44c0",
+      "path": "figures/07-fractal-tail.svg",
+      "ok": true,
+      "sha256": "a49286fd44c0afd490869440c22980e2c8726fbb3c0f449a1f906237c77f2546",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F08-stroke-shared-window.svg&v=8c4af41c5a8e",
+      "path": "figures/08-stroke-shared-window.svg",
+      "ok": true,
+      "sha256": "8c4af41c5a8e46f89930ccf2245957f06a468a22b801a2a6cb2bd6296fcba53d",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F09-first-stroke.svg&v=2758fc90a6c8",
+      "path": "figures/09-first-stroke.svg",
+      "ok": true,
+      "sha256": "2758fc90a6c80975fb52b8b8708d7a67409a8290855aa25e75f3d09e04775b76",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F10-stroke-extension.svg&v=60b01435a941",
+      "path": "figures/10-stroke-extension.svg",
+      "ok": true,
+      "sha256": "60b01435a941ee74c8caeba3d01dad401f68b8f44d24bb3788809bec02a948dd",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F11-stroke-distance.svg&v=8cf94dd7d455",
+      "path": "figures/11-stroke-distance.svg",
+      "ok": true,
+      "sha256": "8cf94dd7d45515899a9adc509517c1eb278283985b7ca3c24a3595f72b8ed319",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F12-stroke-gap.svg&v=07c940c1e8e3",
+      "path": "figures/12-stroke-gap.svg",
+      "ok": true,
+      "sha256": "07c940c1e8e388b2dd052b46224ae2d1e74330e9527485912966cd8f93545818",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F13-stroke-endpoint.svg&v=068918ae1f34",
+      "path": "figures/13-stroke-endpoint.svg",
+      "ok": true,
+      "sha256": "068918ae1f34fd6d430f562282fb0a4c4857502ad266cc9eabc4f4c22d8f05db",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F14-stroke-peak.svg&v=b14a502a7382",
+      "path": "figures/14-stroke-peak.svg",
+      "ok": true,
+      "sha256": "b14a502a738262fde0c0691a2504ee2877c2420278443340669488f656f1bf01",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F15-stroke-established.svg&v=e89766eaf5f0",
+      "path": "figures/15-stroke-established.svg",
+      "ok": true,
+      "sha256": "e89766eaf5f03af0aea1aa6cc56cf3ad20f9eebdd284897d007f07705e5646b8",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F16-stroke-absorption.svg&v=54c70c0d0381",
+      "path": "figures/16-stroke-absorption.svg",
+      "ok": true,
+      "sha256": "54c70c0d038184a382ad835f271b80ebb5add2b3d934080484c86b3ff7b6d208",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F17-stroke-forming.svg&v=12692bd227cb",
+      "path": "figures/17-stroke-forming.svg",
+      "ok": true,
+      "sha256": "12692bd227cb839993ca399dcd407062323008bd62f04ce66938d058e58789a3",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F18-last-bar-update.svg&v=7e77d6b0077a",
+      "path": "figures/18-last-bar-update.svg",
+      "ok": true,
+      "sha256": "7e77d6b0077adad7825d2a7bc66f9adba209f6f3a456e7706945b96178abe248",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F19-segment-shared-window.svg&v=cd00c702efc2",
+      "path": "figures/19-segment-shared-window.svg",
+      "ok": true,
+      "sha256": "cd00c702efc2133ea03cc6bde3112c871f5423f206642cef8d7243b3b54aa803",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F20-segment-feature-sequence.svg&v=5134ac45aaeb",
+      "path": "figures/20-segment-feature-sequence.svg",
+      "ok": true,
+      "sha256": "5134ac45aaebc415484ab4010985d7cddcfa05c0764f6d23b50d5d36ee23b849",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F21-segment-gap-confirmation.svg&v=186339d98158",
+      "path": "figures/21-segment-gap-confirmation.svg",
+      "ok": true,
+      "sha256": "186339d981587b20fe8aaf226f8d7aea864ece85ef42d6410d2ba85f6158e8fd",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F22-segment-state-transition.svg&v=6faa2055a29b",
+      "path": "figures/22-segment-state-transition.svg",
+      "ok": true,
+      "sha256": "6faa2055a29bf742fcb2cc7e5358550deece4a865a9b4945718619c6b2e11dab",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F23-center-shared-window.svg&v=8d9e3552d41e",
+      "path": "figures/23-center-shared-window.svg",
+      "ok": true,
+      "sha256": "8d9e3552d41e66572feef281667f7550133e071685c71d5457f30c53415f9c29",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F24-center-established.svg&v=46c7ae166c07",
+      "path": "figures/24-center-established.svg",
+      "ok": true,
+      "sha256": "46c7ae166c073f861060d600f1d129cc548186fd314a819a729191895a5aaee9",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F25-center-extended-closed.svg&v=1e12584d66df",
+      "path": "figures/25-center-extended-closed.svg",
+      "ok": true,
+      "sha256": "1e12584d66dfd227b636850d252f452bca270df6653f1d49e2426d0c8d123b5d",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F26-final-standard.svg&v=e060cfcfd4b5",
+      "path": "figures/26-final-standard.svg",
+      "ok": true,
+      "sha256": "e060cfcfd4b5831a939bade3ca3d3a5c54b286b16a86a9b3ec367315f7ed79eb",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F27-trend-transition.svg&v=ea5766ea87be",
+      "path": "figures/27-trend-transition.svg",
+      "ok": true,
+      "sha256": "ea5766ea87be30cd15beffd5eab04d8741af2ee57139e119ce707313259d5c41",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F28-stroke-definition-span.svg&v=d12be641b3c0",
+      "path": "figures/28-stroke-definition-span.svg",
+      "ok": true,
+      "sha256": "d12be641b3c0b76fbb4085287afa472eb1f15f29259015ae3f4efbd110189c0a",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F29-stroke-min-span.svg&v=fa5b88572825",
+      "path": "figures/29-stroke-min-span.svg",
+      "ok": true,
+      "sha256": "fa5b885728253af4d962ea4b3f3b519a379cd8c8d14886bb569d8db9f17535ef",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F30-stroke-gap-distance.svg&v=fb7d971894f9",
+      "path": "figures/30-stroke-gap-distance.svg",
+      "ok": true,
+      "sha256": "fb7d971894f95a9e1f76028819bac3b1f4e30e8735ab63215d18e4f2ca84307f",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F31-stroke-endpoint-cases.svg&v=d2efea677647",
+      "path": "figures/31-stroke-endpoint-cases.svg",
+      "ok": true,
+      "sha256": "d2efea677647e10bf4c402f54f8fa6744aafa971a9c5b878955cfd09de5133e5",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F32-stroke-same-type.svg&v=35da850bb6fb",
+      "path": "figures/32-stroke-same-type.svg",
+      "ok": true,
+      "sha256": "35da850bb6fbc5164f94511616338b233fecbb6b214eaf9ac96d0f833e55a115",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F33-stroke-true-extreme.svg&v=b67235ccafe9",
+      "path": "figures/33-stroke-true-extreme.svg",
+      "ok": true,
+      "sha256": "b67235ccafe9bfe69a728ecfb7ad0f142eadcecae8d1d8594472af10ea877f3c",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F34-stroke-repair.svg&v=cdd24d87cd9f",
+      "path": "figures/34-stroke-repair.svg",
+      "ok": true,
+      "sha256": "cdd24d87cd9f6edd3f498c8a0c80421cd2b0e8a0150704060e3fcebce76a2e6e",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F35-stroke-guard-keeps-real-rebound.svg&v=34f2d823b5ac",
+      "path": "figures/35-stroke-guard-keeps-real-rebound.svg",
+      "ok": true,
+      "sha256": "34f2d823b5ac7845ca0fa7c3da3dbff77e822db5e83812f13288c686bfc10374",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F36-stroke-profile-comparison.svg&v=86e8377775bb",
+      "path": "figures/36-stroke-profile-comparison.svg",
+      "ok": true,
+      "sha256": "86e8377775bbf281cdbddc3c25015a4ff18a44cc5474a3a99b0cd9db6bcc7a71",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F37-merge-current-contains.svg&v=540cc0712413",
+      "path": "figures/37-merge-current-contains.svg",
+      "ok": true,
+      "sha256": "540cc071241342d48a1271a4385d33f56439f7a986c9408a5725370fdb7bf876",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F38-merge-new-contains.svg&v=f350b431437f",
+      "path": "figures/38-merge-new-contains.svg",
+      "ok": true,
+      "sha256": "f350b431437ff9cd0f1ecf11958db1dcfdfc4fe122eca52131977dff9c1540b5",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F39-merge-direction.svg&v=431c59d1c315",
+      "path": "figures/39-merge-direction.svg",
+      "ok": true,
+      "sha256": "431c59d1c3151220df5140f13ee3dd64655cdd30759042ab961cca8e32c645cb",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F40-merge-equal-boundary.svg&v=0584a3098b4c",
+      "path": "figures/40-merge-equal-boundary.svg",
+      "ok": true,
+      "sha256": "0584a3098b4c00a071659da43e42e57d0c924327a604e55b3de5dafdcf004032",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F41-merge-lead-direction.svg&v=d84be8fdea94",
+      "path": "figures/41-merge-lead-direction.svg",
+      "ok": true,
+      "sha256": "d84be8fdea94ceeccc6e33386de38ebf635747a850f0f871c33932f050927027",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F42-merge-tail-append.svg&v=2fb59b44a0cc",
+      "path": "figures/42-merge-tail-append.svg",
+      "ok": true,
+      "sha256": "2fb59b44a0cc646508b19479499da49eead863984b8d4060cb8a471da754562a",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F43-fractal-top-window.svg&v=41a6563b61bf",
+      "path": "figures/43-fractal-top-window.svg",
+      "ok": true,
+      "sha256": "41a6563b61bf66e7af2bd6fc12d5fccad19ac6ca4715a5a22b9bdd0cec692f87",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F44-fractal-bottom-window.svg&v=5a7a9ce1c514",
+      "path": "figures/44-fractal-bottom-window.svg",
+      "ok": true,
+      "sha256": "5a7a9ce1c514afbf2573296e4b95caec802e6d01b4e36be12e00c27623f0ae44",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F45-fractal-slide.svg&v=706b62d50484",
+      "path": "figures/45-fractal-slide.svg",
+      "ok": true,
+      "sha256": "706b62d50484ba8e55fb5d2ee07d0d9225329462a73a8157628c5ad07ada070f",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F46-segment-overlap-success.svg&v=9237a8fdd547",
+      "path": "figures/46-segment-overlap-success.svg",
+      "ok": true,
+      "sha256": "9237a8fdd547e3732111902921de8acaa5faf7e3bf1e6630fa2626dd615ab2bc",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F47-segment-overlap-reject.svg&v=906b20386670",
+      "path": "figures/47-segment-overlap-reject.svg",
+      "ok": true,
+      "sha256": "906b203866700b0f9ce01e821d4d07b523a69716716bbda510ec0326c1023255",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F48-segment-odd-continuity.svg&v=9487051b7853",
+      "path": "figures/48-segment-odd-continuity.svg",
+      "ok": true,
+      "sha256": "9487051b785353559f04c86af64de666601cc40a98e47705c7cc79dbeff44396",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F49-segment-no-gap.svg&v=45ea3bb84eef",
+      "path": "figures/49-segment-no-gap.svg",
+      "ok": true,
+      "sha256": "45ea3bb84eefbe7bfdf3129ce609377c7352dea2b87298f4b77697643eaa5d4b",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F50-segment-candidate-freeze.svg&v=d1ba9d40793f",
+      "path": "figures/50-segment-candidate-freeze.svg",
+      "ok": true,
+      "sha256": "d1ba9d40793f3968fe9f367e18580e5d650b0b9b431cc33e3153c87574e2a1dd",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F51-center-no-triple-overlap.svg&v=e430df4999c2",
+      "path": "figures/51-center-no-triple-overlap.svg",
+      "ok": true,
+      "sha256": "e430df4999c24c700e4213462a2fadc538c8b735f428d0fcca73abc5ec1d1d65",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F52-center-entry-miss.svg&v=0690009609a3",
+      "path": "figures/52-center-entry-miss.svg",
+      "ok": true,
+      "sha256": "0690009609a33195edfc14eaad874a41f7129251ac363398ea155fd4406cbc9f",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F53-center-tangent.svg&v=4b6203a73d1e",
+      "path": "figures/53-center-tangent.svg",
+      "ok": true,
+      "sha256": "4b6203a73d1e2d1522542a0059f4435cf1c24d6f29eab4a208ec8f0b6af7fb18",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F54-center-close-up.svg&v=556d1ec607bd",
+      "path": "figures/54-center-close-up.svg",
+      "ok": true,
+      "sha256": "556d1ec607bde235a29945b8a2acb32b9ef3d54ee1ae0e00da4bc201b415d9f7",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F55-center-close-down.svg&v=8c2d3bd9abe6",
+      "path": "figures/55-center-close-down.svg",
+      "ok": true,
+      "sha256": "8c2d3bd9abe64a9a781b7fe0ff51d10fa0dac9818ad4c762cb73c600bfe1cae9",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F56-center-open-tail.svg&v=788a74940346",
+      "path": "figures/56-center-open-tail.svg",
+      "ok": true,
+      "sha256": "788a749403466d66a5febe43d208fd8bd91b89dd3199d79bcfdcf173ee9576ca",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F57-trend-one-center.svg&v=e453707a6485",
+      "path": "figures/57-trend-one-center.svg",
+      "ok": true,
+      "sha256": "e453707a6485392ae3b1d6c5b8243a001447bcd96aab8a4a4b56456a77a7a312",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F58-trend-up-relation.svg&v=e54da2a01ab7",
+      "path": "figures/58-trend-up-relation.svg",
+      "ok": true,
+      "sha256": "e54da2a01ab764b2a8c5d1419ea232c576280755047c42e0f6f75c5395c8ba2f",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F59-trend-down-relation.svg&v=8e86decdcd75",
+      "path": "figures/59-trend-down-relation.svg",
+      "ok": true,
+      "sha256": "8e86decdcd75aebedd51e97b54b607cfae51af06eeafdf9b4051c06be3c70da7",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F60-trend-overlap-relation.svg&v=3c6831d5eb78",
+      "path": "figures/60-trend-overlap-relation.svg",
+      "ok": true,
+      "sha256": "3c6831d5eb78ab2dddf83236552823d9b99626a8afb6e2f8d941a5fa809d436c",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F61-trend-real-extreme.svg&v=5282a48b9626",
+      "path": "figures/61-trend-real-extreme.svg",
+      "ok": true,
+      "sha256": "5282a48b96263871c8924a0674a841aa21c39ab7ea63af00a09c1c60f4ab34b7",
+      "error": null
+    },
+    {
+      "url": "https://www.kwx.me/cc/asset.php?path=figures%2F62-trend-tail-exclusion.svg&v=220f66e6f20d",
+      "path": "figures/62-trend-tail-exclusion.svg",
+      "ok": true,
+      "sha256": "220f66e6f20db1acbabc6e967a4bb6b6c7ea08f7a8fa65b7204c9ed7353e7aa3",
+      "error": null
+    }
+  ],
+  "downloaded_at": "2026-11-08T18:22:50-08:00"
+}

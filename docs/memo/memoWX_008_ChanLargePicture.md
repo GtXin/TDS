@@ -1,4 +1,4 @@
-# Chan Large Picture
+\# Chan Large Picture
 ## 000 — Scope
 Describe the big picture of Chan Theory and how its main ideas fit together.
 ## 001 — Key concepts and flow

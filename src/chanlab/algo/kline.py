@@ -6,7 +6,10 @@ from collections.abc import Iterable, Iterator
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from math import isfinite
-from typing import overload
+from typing import TYPE_CHECKING, overload
+
+if TYPE_CHECKING:
+    from plotly.graph_objects import Figure  # type: ignore[import-not-found]
 
 
 @dataclass(frozen=True, slots=True)
@@ -153,3 +156,32 @@ class KlineTSeries:
     def __getitem__(self, key: int | slice) -> Kline | tuple[Kline, ...]:
         """Return a bar or tuple slice with standard Python indexing behavior."""
         return self.klines[key]
+
+    def plot(
+        self,
+        *,
+        start: int | None = None,
+        stop: int | None = None,
+        volume: bool = True,
+        title: str | None = None,
+    ) -> Figure:
+        """Return a Plotly candlestick figure through the optional plot adapter.
+
+        Args:
+            start: Inclusive bar index, using normal Python slice semantics.
+            stop: Exclusive bar index, using normal Python slice semantics.
+            volume: Include an aligned panel in source-defined volume units.
+            title: Optional chart title; defaults to the symbol and period.
+
+        Returns:
+            A figure retaining source UTC labels, gaps and raw OHLCV values.
+
+        Raises:
+            ValueError: The selected slice contains no bars.
+            ImportError: Plotly is unavailable; install with uv sync --extra plot.
+        """
+        from chanlab.visualization.kline_plot import plot_kline_series
+
+        return plot_kline_series(
+            self, start=start, stop=stop, volume=volume, title=title
+        )
