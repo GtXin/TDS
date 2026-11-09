@@ -20,6 +20,7 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | WX 014 | [ChanAxiomSyntax](memoWX_014_ChanAxiomSyntax.md) |
 | WX 015 | [Chan_mergedkline](memoWX_015_Chan_mergedkline.md) |
 | WX 016 | [Skill：Chan原文与代码研究](memoWX_016_Skill_chan_source_code_study.md) |
+| WX 017 | [Skill_algoDev](memoWX_017_Skill_algoDev.md) |
 | KWX 001 | [cc project folder structure](memoKWX_001_文件夹结构.md) |
 
 For new or revised memos, follow [the writing guide](memoWX_006_memoWritingGuide.md).

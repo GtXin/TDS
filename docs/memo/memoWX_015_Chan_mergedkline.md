@@ -2,13 +2,30 @@
 
 ## 000 — Scope
 
+to define mergedkline with 包含oepration
+
 ## 001 — Definition (What)
+
+**包含 （辅助定义）**：相邻两根K线中，若其中一根的最高价不低于另一根的最高价，且最低价不高于另一根的最低价，则两根K线存在包含关系。既可以前一根包含后一根，也可以后一根包含前一根，边界相等也算。
+
+**向上、向下趋势**（此处指K线区间的局部方向）：按时间先后，若后一根K线的最高价和最低价均严格高于前一根，则称为向上；若均严格低于前一根，则称为向下。若两根存在包含关系，包括边界相等，则不能仅凭这两根K线确定方向。
+
+**MergedKline（合并K线）**：用于结构分析的价格区间单元，代表一根原始K线，或由逐次包含关系归并形成的多根连续原始K线，以一个最高点和一个最低点表示其价格区间，并记录其在原始K线序列中的起止位置，以便追溯全部原始成员。合并方向向上时，高、低点分别取成员高、低点的最大值，形成偏上的“乐观”区间表示；方向向下时，分别取最小值，形成偏下的“悲观”区间表示。
+
+**初始化小注（可选）**
+
+起始时若相邻K线存在包含关系，且尚无方向依据，可考虑以下初始化选项，暂不选定默认方案：
+
+1. 默认向上。
+2. 默认向下。
+3. 同时按向上、向下两种方向评估。输出向上，若差距太大给warning
+4. 取包含区间的外边界：高点取较大值，低点取较小值，即“上大下小”。
 
 ## 002 — Algorithm (How)
 
 ### 002.a — Algorithm Tree
 
-### 002.b — Detailed Implementation Example
+### 002.b — Detailed Implementation and Numerical Examples
 
 ### 002.c — Helper Functions
 
@@ -18,11 +35,13 @@
 
 ## 004 — Other Notes
 
+### Note 1 — 初始化
+
 ## 005 — Gaps and Pending Items
 
 ## Appendix A — Quotes from ChanOriginal
 
-以第62课连续正文为主，保留理解包含处理所需的前后文；再补第65课连续说明及其他课程答疑。引文不以短小为目标，不在论证中间切断。 显示处理仅移除HTML样式标签、转义比较符和问答分隔符，并将区间记号设为行内代码，避免Obsidian误识别；原始参考文件保持不变。补充材料中的正文、问答与编者注分别标明。
+以第62课连续正文为主，保留理解包含处理所需的前后文；再补第65课连续说明及其他课程答疑。引文不以短小为目标，不在论证中间切断。 显示处理仅移除HTML样式标签、用行内代码显示比较表达式、转义问答分隔符，并将区间记号设为行内代码，避免Obsidian误识别；原始参考文件保持不变。补充材料中的正文、问答与编者注分别标明。
 
 ### A.1 — 第62课：连续正文与原图
 
@@ -62,9 +81,9 @@
 >
 > 3、有人可能还要问，什么是向上？什么是向下？其实，这根本没什么可说的，任何看过图的都知道什么是向上，什么是向下。当然，本ID的理论是严格的几何理论，对向上向下，也可以严格地进行几何定义，只不过，这样对于不习惯数学符号的人，头又要大一次了。
 >
-> **假设，第n根K线满足第n根与第n+1根的包含关系，而第n根与第n-1根不是包含关系，那么如果gn&gt;=gn-1，那么称第n-1、n、n+1根K线是向上的；如果dn&lt;=dn-1，那么称第n-1、n、n+1根K线是向下的。(注：应去掉等于号)**
+> **假设，第n根K线满足第n根与第n+1根的包含关系，而第n根与第n-1根不是包含关系，那么如果`gn>=gn-1`，那么称第n-1、n、n+1根K线是向上的；如果`dn<=dn-1`，那么称第n-1、n、n+1根K线是向下的。(注：应去掉等于号)**
 >
-> **有人可能又要问，如果gn&lt;gn-1且dn&gt;dn-1，算什么？那就是一种包含关系，这就违反了前面第n根与第n-1根不是包含关系的假设。同样道理，gn&gt;=gn-1与dn&lt;=dn-1不可能同时成立。**（娇注：同时成立则为包含关系）
+> **有人可能又要问，如果`gn<gn-1`且`dn>dn-1`，算什么？那就是一种包含关系，这就违反了前面第n根与第n-1根不是包含关系的假设。同样道理，`gn>=gn-1`与`dn<=dn-1`不可能同时成立。**（娇注：同时成立则为包含关系）
 >
 > 上面包含关系的定义已经十分清楚，就是一些最精确的几何定义，只要按照定义来，没有任何图是不可以精确无误地、按统一的标准去找出所有的分型来。注意，这种定义是唯一的，有统一答案的，就算是本ID，如果弄错了，也就是错，没有任何含糊的地方，是可以在当下或任何时候明确无误地给出唯一答案的，这答案与时间无关，与人无关，是客观的，不可更改的，唯一的要求就是被分析的K线已经走出来。
 >
@@ -74,7 +93,7 @@
 
 第69课，答疑，本地源文件第329行。[3]
 
-> [匿名] 天眼 删除此人所有评论   2007-08-14 16:21:55  老大,有几个问题我比较模糊, A.关于k线的包含关系. 一.如果第n-1根K线的高低点全在第n根K线的范围里,那么n-1和n是不是包含关系? \=\=  这当然是，难道还有什么疑问的？对于连续包含关系，必须按时间顺序，一个个合并下去。  二.下列情况是不是包含关系? 假设n和n-1 k线的高低点为gn.,dn, gn-1,dn-1 . 1.gn=gn-1且dn&gt;dn-1; 2. dn=dn-1.且gn&lt;gn-1; 3. dn=dn-1.且gn=gn-1;  \=\= 当然是。
+> [匿名] 天眼 删除此人所有评论   2007-08-14 16:21:55  老大,有几个问题我比较模糊, A.关于k线的包含关系. 一.如果第n-1根K线的高低点全在第n根K线的范围里,那么n-1和n是不是包含关系? \=\=  这当然是，难道还有什么疑问的？对于连续包含关系，必须按时间顺序，一个个合并下去。  二.下列情况是不是包含关系? 假设n和n-1 k线的高低点为gn.,dn, gn-1,dn-1 . 1.gn=gn-1且`dn>dn-1`; 2. dn=dn-1.且`gn<gn-1`; 3. dn=dn-1.且gn=gn-1;  \=\= 当然是。
 
 ### A.4 — 一端／两端相等：完整问答
 
@@ -86,7 +105,7 @@
 
 第75课，原问题与作者回答，第142–142行。[4] `==` 前为提问，后为作者回答；问题中的定义或推测不自动视为作者结论。保留源文本的排版与措辞。
 
-> 逍遥往2007-08-30 16:53:05  疑惑：刚才姐姐回答问题时说到“等于”时属于包含关系，是否跟65课里面的“假设，第n根K线满足第n根与第n+1根的包含关系，而第n根与第n-1根不是包含关系，那么如果gn&gt;=gn-1，那么称第n-1、n、n+1根K线是向上的；如果dn&lt;=dn-1，那么称第n-1、n、n+1根K线是向下的。”矛盾 \=\= **&gt;=，其实应该读作不小于，当然包括等于的情况，但不是说一定有这种情况，既然不包含是前提，那自然就没有这种情况，这有什么矛盾的？ 另外，必须注意，包含关系中的相等，必须是绝对相等，也就是说必须在软件上最后一位小数都相等。一般来说，很少出现这种情况。**
+> 逍遥往2007-08-30 16:53:05  疑惑：刚才姐姐回答问题时说到“等于”时属于包含关系，是否跟65课里面的“假设，第n根K线满足第n根与第n+1根的包含关系，而第n根与第n-1根不是包含关系，那么如果`gn>=gn-1`，那么称第n-1、n、n+1根K线是向上的；如果`dn<=dn-1`，那么称第n-1、n、n+1根K线是向下的。”矛盾 \=\= **`>=`，其实应该读作不小于，当然包括等于的情况，但不是说一定有这种情况，既然不包含是前提，那自然就没有这种情况，这有什么矛盾的？ 另外，必须注意，包含关系中的相等，必须是绝对相等，也就是说必须在软件上最后一位小数都相等。一般来说，很少出现这种情况。**
 
 ### A.6 — 第68课：数据来源、连续性与包含判断
 
@@ -128,300 +147,73 @@
 
 第75课，原问题与作者回答，第122–124行。[4] `==` 前为提问，后为作者回答；问题中的定义或推测不自动视为作者结论。保留源文本的排版与措辞。
 
-> 快乐vs菜虫 删除此人所有评论   2007-08-30 16:40:45  缠姐，我由刚才你的回答给出相邻两K线的包含定义： 相邻两K线K1和K2，K1的高点为G1低点为D1,K2的高点为G2低点为D2,若 D1&lt;=D2,G1&gt;=G2则说明K1包含K2 D1&gt;=D2,G1&lt;=G2则说明K2包含K1
+> 快乐vs菜虫 删除此人所有评论   2007-08-30 16:40:45  缠姐，我由刚才你的回答给出相邻两K线的包含定义： 相邻两K线K1和K2，K1的高点为G1低点为D1,K2的高点为G2低点为D2,若 `D1<=D2`,`G1>=G2`则说明K1包含K2 `D1>=D2`,`G1<=G2`则说明K2包含K1
 >
-> 另外，课程65当中“第n根K线满足第n根与第n+1根的包含关系，而第n根与第n-1根不是包含关系，那么如果gn&gt;=gn-1，那么称第n-1、n、n+1根K线是向上的；”这段话应该也是有问题的，应该把 "gn&gt;=gn-1改成 "gn&gt;gn-1"。 不知道这样说对吗？ 还有例如一只股票开盘就封涨停并且全天没打开过以涨停报收，是否可以把当天所有的K线依次全部合并为一根K线，也就是说当天的走势就可以看成是一个跳空缺口加一根K线？？ \=\= **其实是一个意思，不包含就自然没有相等，但注意，这里包含的相等，指的是绝对相等，而后面的相等，还包含测量相等的情况。 另外，一字涨停当然可以这样看，所以最开始时就说，这只形成最小级别的中枢。而站在用分型开始构造最小级别中枢的角度，那就连分型都算不上，更不说笔了。**
+> 另外，课程65当中“第n根K线满足第n根与第n+1根的包含关系，而第n根与第n-1根不是包含关系，那么如果`gn>=gn-1`，那么称第n-1、n、n+1根K线是向上的；”这段话应该也是有问题的，应该把 "`gn>=gn-1`改成 "`gn>gn-1`"。 不知道这样说对吗？ 还有例如一只股票开盘就封涨停并且全天没打开过以涨停报收，是否可以把当天所有的K线依次全部合并为一根K线，也就是说当天的走势就可以看成是一个跳空缺口加一根K线？？ \=\= **其实是一个意思，不包含就自然没有相等，但注意，这里包含的相等，指的是绝对相等，而后面的相等，还包含测量相等的情况。 另外，一字涨停当然可以这样看，所以最开始时就说，这只形成最小级别的中枢。而站在用分型开始构造最小级别中枢的角度，那就连分型都算不上，更不说笔了。**
 
-## Appendix B — CC 的K线包含处理：连续代码与处理步骤
+## Appendix B — CC 的K线包含处理：逻辑与步骤
 
-依据下载网站发布的 `manual_rebuild` 版 `KlineCombiner`，核对日期：2026-11-08。[8] 下文保留相关函数的完整代码，不在函数中间用省略号截断；仅按调用关系重排，方法代码块去除类外层缩进以便阅读。完整文件仍以[提取源码](../../references/cc_algo/extracted/combiner.py)为准。代码中的注释／docstring属于实现者说明；各节解释核对的是实际执行语句。
+本节按网站快照中的 `KlineCombiner` 实际代码整理，核对日期：2026-11-08。[8] 以处理逻辑为主体；完整代码保存在[提取文件](../../references/cc_algo/extracted/combiner.py)，无需在正文逐个展开函数。以下两幅图是依据代码制作的说明图，并非CC网站原图，也不是额外的Chan原文规则。
 
-整体路径是：`append → 前导缓冲／初始化 → 末单元包含判断 → 吸收或新建 → 输出`；末根修订经 `pop_last_kline → 重算或恢复前导期 → append`。初始化口径、输出状态及回退都是CC实现行为，不自动成为TDS已确认规则。
+### B.1 — 先看完整处理过程
 
-### B.1 — 比较判据、合并单元与入口状态
+CC把输入分成两个阶段。起初没有方向，先积累原始K线，等高低点同时严格向一个方向移动；方向出现后，再处理此前的包含链。进入常规阶段后，每一根新K线都与**已经合并后的末单元**比较：存在包含就吸收，不存在包含才新建单元。[8]
 
-源码第32–42行，`_direction`。[8]
+![CC包含处理流程](memoWX_015_Chan_mergedkline/cc-merge-flow.svg)
 
-```python
-def _direction(a_high: float, a_low: float, b_high: float, b_low: float) -> KlineDir | None:
-    """相邻非包含两单元方向：同时严格抬高→UP，同时严格降低→DOWN（第65课，去等号）。
+图B1：依据 `append()`、`_try_establish()`、`_merge_blob()` 与 `_append_established()` 绘制。箭头表示处理阶段，不表示每根新K线都重新经过初始化。[8]
 
-    返回 None 表示「包含 / 等价 / 无法唯一判定」（含相等极值）——此时不构成方向判据。
-    注：非包含必然落入 UP / DOWN 之一；包含或任一边相等都返回 None。
-    """
-    if b_high > a_high and b_low > a_low:
-        return KlineDir.UP
-    if b_high < a_high and b_low < a_low:
-        return KlineDir.DOWN
-    return None
-```
+### B.2 — 开头还没有方向，怎么办？
 
-源码第45–47行，`_contains`。[8]
+第一根K线先放入缓冲。后面每加入一根，只比较缓冲里最后两根原始K线：高点和低点都严格升高，方向为上；都严格降低，方向为下；只要不能这样判定，就继续等待。相等边界不能建立方向，也不根据开盘、收盘或阴阳线决定方向。
 
-```python
-def _contains(a_high: float, a_low: float, b_high: float, b_low: float) -> bool:
-    """a 是否包含 b（区间互含，方向无关；含相等边界 → 视为包含，对应 §16-2/§16-4）。"""
-    return a_high >= b_high and a_low <= b_low
-```
+首次得到方向后，CC用这个方向处理此前全部缓冲成员：向上分别取最高的高点和最高的低点，向下分别取最低的高点和最低的低点，形成首单元。刚刚触发方向的最新K线则单独成为第二单元，随后开始常规追加。
 
-源码第50–63行，`_Unit`。[8]
+这个次序有实际含义：早期包含链借用了后来才出现的方向。初始化中，程序直接建立上述两个单元，没有再让最新K线与聚合后的首单元重走一次包含判断。如果整个窗口始终没有严格方向，程序保留缓冲，合并输出为空。这些是CC的初始化选择，不能直接当成原文已经完整规定的内容。[8：`_direction()`、`_try_establish()`、`_merge_blob()`]
 
-```python
-@dataclass(slots=True)
-class _Unit:
-    """内部可变合并单元（输出时转 MergedKline）。"""
+### B.3 — 已有方向后，怎样判断和处理包含？
 
-    high: float
-    low: float
-    dir: KlineDir
-    rule_id: str  # 该单元形成规则（merge.init / merge.dir.up / merge.dir.down）
-    start_index: int  # 原始 K 线序列起始下标
-    members: list[Kline] = field(default_factory=list)
+判断包含时看完整高低区间，而不是仅看两根K线有没有重叠。旧单元包住新K线，或者新K线包住旧单元，均进入包含分支；上下边界允许相等。
 
-    @property
-    def end_index(self) -> int:
-        return self.start_index + len(self.members) - 1
-```
+一旦属于包含，就沿用末单元原来的方向，不重新定向。向上时，高点、低点分别取较高者；向下时分别取较低者。新K线加入该单元的来源成员，单元数量不增加。下一根到来时，比较的是这些更新后的高低点。
 
-源码第74–79行，`__init__`。[8]
+![已有方向决定包含合并取值](memoWX_015_Chan_mergedkline/cc-merge-values.svg)
 
-```python
-def __init__(self, period: str) -> None:
-    self.period = period
-    self._units: list[_Unit] = []
-    self._lead: list[Kline] = []  # 方向未定的前导缓冲
-    self._established = False
-    self._total = 0  # 已消费原始 K 线根数（= 下一根的全局下标）
-```
+图B2：两次独立的教学计算，均以旧区间 `[5,10]` 和新区间 `[6,9]` 为输入；分别假设已有向上、向下方向，说明为何会得到不同结果。[8：`_contains()`、`_append_established()`]
 
-源码第82–89行，`append`。[8]
+若两者不包含，才由末单元与新K线的高低点确定方向，并给新K线建立新单元。新方向可以延续，也可以反转。代码使用直接数值比较，没有设置“差不多相等”的容差。[8]
 
-```python
-def append(self, k: Kline) -> None:
-    """末端追加一根新 K 线（timestamp 严格更大，由 engine 保证）。"""
-    if self._established:
-        self._append_established(k, self._total)
-    else:
-        self._lead.append(k)
-        self._try_establish()
-    self._total += 1
-```
+### B.4 — 同一根末端K线被修订，怎样恢复？
 
-阅读顺序先从比较判据到状态，再到入口。`_contains(a,b)` 是单向区间包含；是否存在包含关系，要由调用方检查两个方向。等号允许包含，方向则要求高低点同时严格移动，不能由收盘价或单独一个高点决定。
+已有末根被更新时，调用方先撤回旧末根，再追加新值。若还在前导缓冲阶段，撤回就是移除缓冲的最后一根；若已经定向，则从末单元移除该成员。单元还有成员，就按原方向重算高低点；成员清空，则删除该单元。
 
-`append()` 的分流依赖 `_established`。未定向时保留原始K线到 `_lead`；定向后才走 `_append_established()`。`_total` 在处理后递增，传给常规追加函数的是当前原始索引。`append()` 本身没有检查时间戳、周期或OHLC有效性；注释所述时间顺序是调用方前提。[8]
+如果撤回的恰好是最初建立方向的那根K线，程序会把此前首单元的成员重新放回前导缓冲，取消已定向状态。新值到来后，要重新判断方向，不能只修正价格。时间顺序由调用方保证，`append()` 本身没有按时间戳自动识别“替换”。[8：`pop_last_kline()`、`_recompute_unit()`]
 
-### B.2 — 初始化：等待第一对方向，再处理整个前导链
+### B.5 — 合并结果还保留什么？
 
-源码第156–175行，`_try_establish`。[8]
+除了合并区间和方向，每个结果还保留来源原始K线的起止索引、首尾时间及规则标记，便于回查合并依据。原始K线没有被写成合并后的高低点；该输出对象也没有在这里合成open、close或volume。
 
-```python
-def _try_establish(self) -> None:
-    """前导期：检查最新相邻对是否确立方向。"""
-    n = len(self._lead)
-    if n < 2:
-        return
-    a, b = self._lead[-2], self._lead[-1]
-    d = _direction(a.high, a.low, b.high, b.low)
-    if d is None:
-        return
-    # 确立：lead[0..n-2] 必为包含链（更早的可定向对会更早触发），坍缩成首个单元。
-    blob = self._lead[: n - 1]
-    unit0 = self._merge_blob(blob, d, start_index=0)
-    unit1 = _Unit(
-        high=b.high, low=b.low, dir=d,
-        rule_id=RULE_MERGE_DIR_UP if d is KlineDir.UP else RULE_MERGE_DIR_DOWN,
-        start_index=n - 1, members=[b],
-    )
-    self._units = [unit0, unit1]
-    self._lead = []
-    self._established = True
-```
+规则标记根据单元当前状态生成：初始组保留初始化标记，普通多成员组标记为包含合并，普通单成员组保留形成方向。撤回成员后，标记可随状态恢复。
 
-源码第177–188行，`_merge_blob`。[8]
+正常追加时，最后一个单元仍可能吸收新K线；程序以倒数第二单元的结束位置作为稳定边界。不足两个单元时返回 `-1`。这并不保证显式向后撤回时更早状态永远不变。[8：`to_merged_klines()`、`_derive_rule_id()`、`stable_index()`]
 
-```python
-def _merge_blob(self, blob: list[Kline], d: KlineDir, start_index: int) -> _Unit:
-    """把方向未定的包含链按确立方向 d 坍缩成首个单元（rule `merge.init`）。"""
-    if d is KlineDir.UP:
-        high = max(x.high for x in blob)
-        low = max(x.low for x in blob)
-    else:
-        high = min(x.high for x in blob)
-        low = min(x.low for x in blob)
-    return _Unit(
-        high=high, low=low, dir=d, rule_id=RULE_MERGE_INIT,
-        start_index=start_index, members=list(blob),
-    )
-```
+### B.6 — 用K线图看完整例子
 
-两段函数必须一起读：先比较 `_lead` 最后的两根原始K线，无法严格定向就不输出。首次找到方向后，`blob = _lead[:n-1]` 保留此前全部成员；`_merge_blob()` 用这个新方向对前导组整体取max/max或min/min。触发方向的最新K线单独成为第二单元。
+![原始K线与包含合并结果](memoWX_015_Chan_mergedkline/cc-kline-worked-example.png)
 
-这里没有把触发K线再与聚合后的首单元进行一次常规包含判断；代码直接设置两个单元。它与下节逐根比较末端单元的路径不同。此处说明实际执行顺序，不据此宣称两条路径对所有输入等价。若窗口一直未定向，`_units` 为空，输出也为空。[8]
+图B3：上方为K0–K7原始K线，下方蓝框为合并区间，价格刻度与来源顺序对齐。教学构造的开收盘价取各区间30%／70%位置交替，不参与包含判断。蓝框只有高低点与来源范围，不表示完整OHLC。[8]
 
-### B.3 — 已定向：与当前末单元比较，包含则吸收，否则新建
+K0=`[5,10]`、K1=`[6,9]`、K2=`[7,8]`连续包含，先等待。K3=`[9,12]`比K2高低点都升高，首次定向向上；此前三根聚合为M0=`[7,10]`，K3另建M1。K4=`[10,11]`被M1包含，向上合并为 `[10,12]`；K5=`[11,14]`不包含且高低点都升高，另建M2。
 
-源码第190–213行，`_append_established`。[8]
+K6=`[8,13]`与M2虽重叠但不包含，高低点同时降低，因此另建向下M3。K7=`[9,12]`被M3包含，向下合并为 `[8,12]`。这说明重叠不等于包含，包含时取值方向来自已有单元，而非蜡烛颜色。
 
-```python
-def _append_established(self, k: Kline, idx: int) -> None:
-    last = self._units[-1]
-    contained = _contains(last.high, last.low, k.high, k.low) or _contains(
-        k.high, k.low, last.high, last.low
-    )
-    if contained:  # 包含 → 按方向合并取值（rule_id 输出时按成员数派生, 见 _derive_rule_id）
-        if last.dir is KlineDir.UP:
-            last.high = max(last.high, k.high)
-            last.low = max(last.low, k.low)
-        else:
-            last.high = min(last.high, k.high)
-            last.low = min(last.low, k.low)
-        last.members.append(k)
-        return
-    # 非包含 → 必为同时高低之一，新建单元（rule merge.dir.*）
-    d = _direction(last.high, last.low, k.high, k.low)
-    assert d is not None  # 非包含必可定向
-    self._units.append(
-        _Unit(
-            high=k.high, low=k.low, dir=d,
-            rule_id=RULE_MERGE_DIR_UP if d is KlineDir.UP else RULE_MERGE_DIR_DOWN,
-            start_index=idx, members=[k],
-        )
-    )
-```
+![K7修订后的K线与合并分组](memoWX_015_Chan_mergedkline/cc-kline-tail-revision.png)
 
-函数先取已经合并后的 `last`，再检查两个方向的包含。进入包含分支后，沿用 `last.dir`：向上max/max，向下min/min；追加成员后立即返回。因此新K线即使是包住旧单元的一方，也不在该分支重新定向。
+图B4：若K7修订为 `[7,12]`，先撤回旧K7，使M3恢复K6的 `[8,13]`；再加入新K7，两端均降低且不包含，另建M4。修订前K6、K7同组，修订后分组。两图均为依据代码手工推演的教学图，不是真实行情或CC运行截图。[8]
 
-只有非包含分支才调用 `_direction()`，由当前末单元和新K线建立新单元，方向可延续或反转。下一次输入将与这个更新后的末单元比较，而不是固定与上一根原始K线比较。直接数值比较未引入近似相等容差。[8]
+### B.7 — 目前能确定与仍需验证的事
 
-### B.4 — 撤回与重算：尾部更新怎样恢复到正确阶段
-
-源码第91–114行，`pop_last_kline`。[8]
-
-```python
-def pop_last_kline(self) -> None:
-    """回退最近一根原始 K 线（供同 ts 末端更新：pop 后 engine 再 append 新值）。"""
-    if self._total == 0:
-        return
-    self._total -= 1
-    if not self._established:
-        self._lead.pop()
-        return
-    last = self._units[-1]
-    last.members.pop()
-    if last.members:
-        self._recompute_unit(last)
-        return
-    self._units.pop()  # 单元清空 → 丢弃
-    # 跨 establishment 边界回退（顺延口径 §16-1）: 若只剩首段 merge.init 单元, 说明被弹出的
-    # 正是确立方向的那根, 方向依据已消失 → 恢复到方向未定的前导期, 由后续 append 重判。
-    if len(self._units) == 1 and self._units[0].rule_id == RULE_MERGE_INIT:
-        blob = self._units[0]
-        self._lead = list(blob.members)
-        self._units = []
-        self._established = False
-    elif not self._units:  # 防御: 全部弹空 → 回初始
-        self._lead = []
-        self._established = False
-```
-
-源码第230–237行，`_recompute_unit`。[8]
-
-```python
-def _recompute_unit(self, u: _Unit) -> None:
-    """从单元剩余 members 按其方向重算极值（pop 末端 K 线后用）。"""
-    if u.dir is KlineDir.UP:
-        u.high = max(x.high for x in u.members)
-        u.low = max(x.low for x in u.members)
-    else:
-        u.high = min(x.high for x in u.members)
-        u.low = min(x.low for x in u.members)
-```
-
-更新已有时间戳末根时，需要调用方先pop再append；这个类没有按时间戳自动辨别替换。撤回发生在前导阶段，只弹出 `_lead`；定向后先去掉末单元最后成员，若还有成员，就按保存方向重算极值，不能只反向减掉旧极值。
-
-若末单元被删空，则删单元。只剩 `merge.init` 时，说明建立方向的那根也被撤掉：把首单元的成员恢复为 `_lead`，清空单元并取消定向，等待后续输入重新判断。回退能改变初始化状态，因此不能只把它理解成价格修正。[8]
-
-### B.5 — 输出：范围映射、规则标记与稳定边界
-
-源码第130–153行，`to_merged_klines`。[8]
-
-```python
-def to_merged_klines(self) -> list[MergedKline]:
-    """当前合并单元序列（含轻量 trace）。方向未定前导期返回空。"""
-    out: list[MergedKline] = []
-    for u in self._units:
-        trace = StructTrace(
-            algo_card_id=_ALGO_CARD_ID,
-            rule_id=self._derive_rule_id(u),
-            source_from_ts=u.members[0].timestamp,
-            source_to_ts=u.members[-1].timestamp,
-        )
-        out.append(
-            MergedKline(
-                period=self.period,
-                dir=u.dir,
-                high=u.high,
-                low=u.low,
-                start_ts=u.members[0].timestamp,
-                end_ts=u.members[-1].timestamp,
-                start_index=u.start_index,
-                end_index=u.end_index,
-                trace=trace,
-            )
-        )
-    return out
-```
-
-源码第215–228行，`_derive_rule_id`。[8]
-
-```python
-def _derive_rule_id(self, u: _Unit) -> str:
-    """按单元**当前状态**派生 trace rule_id（§13「最近一次操作」）。
-
-    形成规则 (u.rule_id) 始终保留不变 (merge.init / merge.dir.*)；输出时:
-    - 首段 blob → merge.init;
-    - 形成后吸收了包含根 (成员 > 1) → merge.contains;
-    - 单根方向单元 → 其形成方向 merge.dir.up/down。
-    派生而非 mutate, 故 pop/append 回退后 rule_id 自动正确, 无需恢复 (Codex r2 ⚠)。
-    """
-    if u.rule_id == RULE_MERGE_INIT:
-        return RULE_MERGE_INIT
-    if len(u.members) > 1:
-        return RULE_MERGE_CONTAINS
-    return u.rule_id  # 形成时的 merge.dir.up/down
-```
-
-源码第117–124行，`stable_index`。[8]
-
-```python
-def stable_index(self) -> int:
-    """末端稳定点（§10）：倒数第 2 个合并单元的原始 K 线结束下标；不足返回 -1。
-
-    最后一个合并单元为 provisional（新根可能改写），其余 confirmed。O(1)。
-    """
-    if len(self._units) < 2:
-        return -1
-    return self._units[-2].end_index
-```
-
-源码第126–128行，`merged_count`。[8]
-
-```python
-def merged_count(self) -> int:
-    """当前合并单元数量（O(1)）。"""
-    return len(self._units)
-```
-
-输出保留方向、高低点、首尾原始索引与时间戳；来源区间由成员序列构造，依赖原始数据按序连续输入。没有把合并后高低点写回原始K线。这里的 `MergedKline` 输出也没有合成open/close/volume；不能仅因称作K线而假定它有完整OHLCV。
-
-规则ID由当前成员状态派生：首组优先 `merge.init`，普通多成员组 `merge.contains`，单成员组保留形成方向。这样撤回成员后可重新得到对应标记，无需把包含标记永久写死。
-
-`stable_index()` 取倒数第二单元的结束索引，不足两个单元则为-1；它区分正常追加下可改变的末单元与更早单元。显式撤回仍能改变更早状态，不能将此值当作任意历史回退后的永久承诺。[8]
-
-### B.6 — 静态阅读结论与后续核验
-
-本次按完整函数核对两条主路径及回退／输出，没有运行完整CC引擎，也未验证所有输入下的正确性。后续重点是：前导链整体聚合后直接建立两个单元是否满足期望边界、全包含窗口的空输出、相等极值、以及跨初始化边界的末根替换。这些疑问不能用网站介绍文字或样本结果代替验证。[8]
+上述步骤来自代码静态检查，图B2是按分支手工计算的示例，没有运行完整CC引擎。后续需要验证初始化聚合后两个单元的边界、全包含窗口的空输出、相等极值，以及跨初始化边界的末根替换。代码行为、实现者注释与Chan原文应分别判断，不能互相替代。[8]
 
 ## References
 

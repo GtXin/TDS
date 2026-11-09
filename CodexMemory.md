@@ -1,5 +1,5 @@
 # TDS project memory
-Updated: 2026-11-08
+Updated: 2026-11-09
 ## Purpose
 Bring KWX and WX together for a three-day Chan theory feasibility sprint, establishing a reusable algorithm foundation with a Python backend and static website.
 ## Confirmed decisions
@@ -79,3 +79,41 @@ chan-source-code-study and memo016 now explicitly prioritize continuous source a
 Memo015 A/B reworked for continuity: A preserves062/065 and expands full supplemental Q&A/068/082 context; B contains14 complete CC code blocks with source lines and connected processing analysis. Main sections/references preserved, snippets AST-valid; CC engine not run.
 
 Memo015 Obsidian markup cleanup: Appendix A HTML span styles removed, literal comparison symbols/entity-escaped and Q&A == escaped, bracketed interval notation marked as inline code; source wording preserved and normalization disclosed. Appendix B code fences/snippets checked and unchanged. Obsidian live rendering not inspected.
+
+Memo015 Appendix B rewritten as connected prose/steps with two labeled code-derived SVG diagrams; full CC code remains linked, no long function dumps. Skill/memo016 now prefer logic-first prose, useful figures and minimal code excerpts while preserving causal completeness. Appendix A/references preserved.
+
+Memo015B includes coherent K0–K7 numerical walkthrough, equality branches, tail replacement and initialization rollback examples (manual traces, not execution). Shared skill and memo016 require concrete sequence examples with comparisons/state/output/provenance and clear manual/runtime distinction.
+
+Memo015B now has two aligned financial diagrams: K0–K7 original candles vs merged intervals and K7 revision, shared price scales/source order. Synthetic open/close construction disclosed; merged high/low shown as intervals. Skill/memo016 require financial charts for price examples with honest source/synthetic/runtime labels.
+
+Skill now explicitly requires reading/obeying memo006 before memo work; memo016 synchronized. Memo015 financial example embeds restored with complete PNG Kline charts after clipping correction; source of intervening absent section unverified.
+
+Memo015 financial PNG charts cropped to1100×810 to remove Quick Look square-canvas whitespace; prior PNGs backed up, chart content/embeds unchanged.
+
+Memo015 section004 now has empty heading “Note1 — 初始化” at user request; initialization discussion remains unresolved and no new rule was recorded.
+
+Memo015 comparison formulas in source quotations now use literal inline code (e.g. gn>=gn-1), replacing HTML entities to keep source/live-preview reading consistent; original inequality wording retained.
+
+Algorithm discussion safeguard added to chan-source-code-study and memo016 section005: fix scenario/raw-vs-derived/history/direction state, enforce rule premises, separate sources/deductions/implementation choices, counterexample checks and explicit correction; unresolved choices require user confirmation before becoming specs.
+
+Memo015 section001 now temporarily stores user-requested draft definitions: bidirectional inclusion between time-adjacent Klines (front-containing-back or later-containing-earlier, including equal boundaries), MergedKline one/multiple continuous raw members/source range and upward optimistic vs downward pessimistic boundaries. Explicitly incomplete; trend-direction definition and initialization remain under discussion, not settled algorithm rules. Other memo sections preserved.
+
+Source review (2026-11-09) confirms author recognizes later-containing-earlier Kline inclusion:069:329;065:37–39 impossibility assumes the preceding pair is noncontaining, reinforced by075:142. User subsequently authorized updating memo015001: its inclusion definition now covers both enclosure orders and equal boundaries; the MergedKline draft and pending direction/initialization status remain unchanged. These passages do not establish finite-window initialization direction. Root and independent reviewer agree; evidence in [review task](mas/tasks/20261109-reverse-kline-inclusion-review.md).
+
+Memo015001 inclusion definition no longer starts “按时间先后”: either adjacent interval may contain the other; chronological processing order belongs to the merge algorithm, not a restriction on the inclusion relation. Only that phrase removed; bidirectional/equality conditions preserved.
+
+Memo015001 now contains the user-requested one-paragraph upward/downward local Kline-direction definition after inclusion and before MergedKline: chronological strict joint movement of high/low; inclusion/equal boundaries cannot alone establish direction. Overall draft remains provisional; initialization not settled.
+
+Memo015001 ends with a provisional initialization note (moved from004 at user correction) recording four user-proposed options for a leading included pair without direction: default up, default down, evaluate both, or outer-envelope high=max/low=min. Options only; no default chosen or implementation performed.
+
+User-supplied inclusion knowledge-tree note imported unchanged as [references/包含.md](references/包含.md); source path/retrieval date/hash recorded in references/包含.source.json. Original CRLF/content preserved byte-for-byte; no algorithm review, implementation or memo015 changes requested/performed.
+
+GitHub algorithm-skill search completed (no installation): candidates computer-scientist, algorithm-design, invariant-guard, proptest-praxis and heavier FSL reviewed from actual files; fit/evidence/limitations in [search task](mas/tasks/20261109-github-algorithm-skills-search.md). User subsequently selected and installed computer-scientist; effectiveness trial pending; original invariant-guard upstream unavailable, inspected community copy.
+
+Memo017 (`docs/memo/memoWX_017_Skill_algoDev.md`) now follows016 structure with installation, paths, invocation and checks; original candidate table is Appendix A. User selected computer-scientist, installed upstream1.0.0 at pinned commit 98c7fae46648724e1a43a1f2b207b0c82fcc462e in mas/skills/computer-scientist, discovered via existing shared symlink. Provenance/hashes and task recorded; UI discovery/behavior trial pending. Next: use003 prompt to derive algorithm from memo015001 without silently resolving initialization.
+
+First conversational computer-scientist use: reviewed memo015 definitions and supplied inclusion note, derived provisional streaming branch tree (strict up / strict down / either-order inclusion), separated known direction from four unselected initialization options.225 valid interval pairs/9 comparison patterns and740 known-direction triples checked; independent algebraic branch review agrees. No memo/source/code changes; not a complete algorithm or CC equivalence test. Evidence: [discussion task](mas/tasks/20261109-computer-scientist-merge-tree-discussion.md).
+
+MergedKline tree discussion format: user requested later Project009 examples; inspected live0042 (numbered checker nodes, condition→action, explicit goto),0040/0041 and0034 guidance. Present revised tree in chat as an indented numbered text tree, retaining initialization as pending. No memo015 edits authorized by this format request.
+
+Source-aware merge proposal reviewed against actual interfaces: KlineTSeries typed immutable raw input; proposed MergedKlineSeries retains exact source object, each record uses half-open source_start/source_stop (seed i,i+1; absorb extendsstop). Future ChanTable membership/start/end/direction mapping uses stop-1 endpoint and start-only direction. Current ChanTable enforces NA feature columns and has no source/feature registry; adapters/classes are proposed, not implemented. Source/partial/candidate-context review in [mapping task](mas/tasks/20261109-merged-kline-source-mapping-proposal.md); no memo/code changes.

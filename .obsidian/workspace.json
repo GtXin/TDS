@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/memo/memoWX_016_Skill_chan_source_code_study.md",
+                "file": "docs/memo/memoWX_015_Chan_mergedkline.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memoWX_016_Skill_chan_source_code_study"
+              "title": "memoWX_015_Chan_mergedkline"
+            }
+          },
+          {
+            "id": "7c5db727149b0f10",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/memo/memoWX_015_Chan_mergedkline.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "memoWX_015_Chan_mergedkline"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 414.82070541381836
+    "width": 305.64468002319336
   },
   "right": {
     "id": "d2172629678a9549",
@@ -114,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/memo/memoWX_016_Skill_chan_source_code_study.md",
+                "file": "docs/memo/memoWX_015_Chan_mergedkline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/memo/memoWX_016_Skill_chan_source_code_study.md",
+                "file": "docs/memo/memoWX_015_Chan_mergedkline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -176,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/memo/memoWX_016_Skill_chan_source_code_study.md",
+                "file": "docs/memo/memoWX_015_Chan_mergedkline.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -203,53 +217,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "848c1baf2b24a569",
+  "active": "7c5db727149b0f10",
   "lastOpenFiles": [
-    "docs/memo/memoWX_015_Chan_mergedkline.md",
-    "docs/memo/memoWX_008_ChanLargePicture.md",
-    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_185227_875202.md",
+    "mas/tasks/20261109-merged-kline-source-mapping-proposal.md",
     "docs/memo/memoWX_016_Skill_chan_source_code_study.md",
-    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_185018_585669.md",
-    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_185013_193428.md",
-    "docs/memo/backups/memoWX_016_Skill_chan_source_code_study__20261108_184439_263543.md",
-    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_184200_568031.md",
-    "references/chan_theory/062.md",
-    "docs/memo/backups/memoWX_016_Skill_chan_source_code_study__20261108_183620_638582.md",
-    "docs/memo/backups/memoWX_016_Skill_chan_source_code_study__20261108_183551_021203.md",
-    "mas/tasks/20261108-chan-source-code-study-skill.md",
-    "docs/memo/backups/README__20261108_183231_086630.md",
-    "mas/skills/chan-source-code-study/SKILL.md",
-    "mas/skills/chan-source-code-study",
-    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_182500_998168.md",
-    "references/cc_algo/extracted/combiner.py",
-    "references/cc_algo/extracted/README.md",
-    "references/cc_algo/extracted",
+    "docs/memo/memoWX_017_Skill_algoDev.md",
+    "mas/tasks/20261109-computer-scientist-merge-tree-discussion.md",
+    "mas/tasks/20261109-computer-scientist-install.md",
+    "mas/skills/computer-scientist/UPSTREAM.json",
+    "docs/memo/backups/memoWX_017_Skill_algoDev__20261109_022850_172509.md",
+    "mas/skills/computer-scientist/SKILL.md",
+    "mas/skills/computer-scientist",
+    "references/包含.md",
+    "docs/memo/backups/README__20261109_022325_649898.md",
+    "mas/tasks/20261109-github-algorithm-skills-search.md",
+    "docs/memo/memoWX_015_Chan_mergedkline.md",
+    "references/包含.source.json",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261109_021102_415731.md",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261109_021006_905153.md",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261109_020832_147033.md",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261109_020607_151419.md",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261109_020519_009665.md",
     "docs/memo/memoWX_014_ChanAxiomSyntax.md",
-    "references/cc_algo/README.md",
-    "references/cc_algo/manifest.json",
-    "references/cc_algo/index.html",
-    "references/cc_algo/figures/62-trend-tail-exclusion.svg",
-    "references/cc_algo/figures/61-trend-real-extreme.svg",
-    "references/cc_algo/figures/59-trend-down-relation.svg",
-    "references/cc_algo/figures/60-trend-overlap-relation.svg",
-    "references/cc_algo/figures/57-trend-one-center.svg",
-    "references/cc_algo/figures/53-center-tangent.svg",
-    "references/cc_algo/figures/58-trend-up-relation.svg",
-    "references/cc_algo/figures/56-center-open-tail.svg",
-    "references/cc_algo/figures/55-center-close-down.svg",
-    "references/cc_algo/figures/54-center-close-up.svg",
-    "references/cc_algo/assets/site.css",
-    "references/cc_algo/assets/site.js",
-    "references/cc_algo/assets/scrollspy.js",
-    "references/cc_algo/original.html",
-    "references/cc_algo/figures",
-    "docs/memo/backups/memoWX_013_klineFamily__20261108_181536_874704.md",
-    "docs/memo/backups/memoWX_013_klineFamily__20261108_181429_119568.md",
-    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_181403_599715.md",
-    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_181348_539699.md",
-    "artifacts/kline/README.md",
-    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_181146_515000.md",
-    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_180954_662055.md",
-    "docs/memo/memoWX_013_klineFamily.md"
+    "mas/tasks/20261109-reverse-kline-inclusion-review.md",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_231351_446560.md",
+    "references/chan_theory/069.md",
+    "docs/memo/backups/memoWX_016_Skill_chan_source_code_study__20261108_223027_173649.md",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_221230_207173.md",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_220936_331571.md",
+    "docs/memo/memoWX_013_klineFamily.md",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_192611_261063/cc-kline-worked-example.png",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_192611_261063/cc-kline-tail-revision.png",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_192611_261063",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_192553_530030/cc-kline-tail-revision.png",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_192553_530030/cc-kline-worked-example.png",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_192553_530030",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_192446_606790/cc-kline-worked-example.png",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_192446_606790/cc-kline-tail-revision.png",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_192446_606790",
+    "docs/memo/backups/memoWX_016_Skill_chan_source_code_study__20261108_192446_606790.md",
+    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261108_192446_606790.md",
+    "docs/memo/memoWX_015_Chan_mergedkline/cc-kline-tail-revision.png",
+    "docs/memo/memoWX_015_Chan_mergedkline/cc-kline-worked-example.png",
+    "docs/memo/memoWX_015_Chan_mergedkline/cc-kline-tail-revision.svg",
+    "docs/memo/memoWX_015_Chan_mergedkline/cc-kline-worked-example.svg",
+    "mas/skills/chan-source-code-study",
+    "references/cc_algo/extracted/combiner.py",
+    "references/cc_algo/extracted",
+    "references/cc_algo/manifest.json"
   ]
 }
