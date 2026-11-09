@@ -1,0 +1,205 @@
+{
+  "source_root": "/Users/coder/Public/EngineGit/cc",
+  "git_head": "374268381a3eaeee4d220e67d63364b3907405f4",
+  "git_status_porcelain": "",
+  "copied_at": "2026-11-09T03:26:03.581724-08:00",
+  "purpose": "Memo018003 S2–S8 paired original-source and CC-code research. Read-only copies; no upstream changes or CC execution. Separate from older website snapshot.",
+  "files": [
+    {
+      "path": "src/cc/algo/models.py",
+      "sha256": "7487ce3e1bfa8c9565e3328b3be42c185f5aa3d0f4e13a6dc7e6913a2327b1a3",
+      "bytes": 25527,
+      "lines": 674
+    },
+    {
+      "path": "src/cc/algo/config.py",
+      "sha256": "05ca8c288c0d9c1ae01d1d79237b6993a9ee7938f42df07adfe3ac7cca97b026",
+      "bytes": 17435,
+      "lines": 368
+    },
+    {
+      "path": "src/cc/algo/trace.py",
+      "sha256": "2b577b2f9cee792e690059c4f67a7615af21259d7474f2208d198782fc18934d",
+      "bytes": 10901,
+      "lines": 152
+    },
+    {
+      "path": "src/cc/algo/keys.py",
+      "sha256": "d301c1b09881d47e46e6b0bdfe8f8f6614aa9503d1644f37557325183a5b57ee",
+      "bytes": 1074,
+      "lines": 26
+    },
+    {
+      "path": "src/cc/algo/combiner.py",
+      "sha256": "be9370c1ac83304b79102503f83e7bda13b16c570d0b52def112df33fbb69575",
+      "bytes": 10278,
+      "lines": 237
+    },
+    {
+      "path": "src/cc/algo/fenxing.py",
+      "sha256": "270cac4c9b9eae4c514bf2216c5c0c8f9c8d4d3f15e8e4520cdc7f1e4d21c39c",
+      "bytes": 2623,
+      "lines": 62
+    },
+    {
+      "path": "src/cc/algo/bi.py",
+      "sha256": "8e59e085b7d303f1e9a87ba3c0baf62045f1b8ae5ca94fee86cae13d8f6935c0",
+      "bytes": 19897,
+      "lines": 453
+    },
+    {
+      "path": "src/cc/algo/xianduan.py",
+      "sha256": "57bb272443c2fff35e859d53389f709c154666eef00354e6b272583b6ec55766",
+      "bytes": 74915,
+      "lines": 1353
+    },
+    {
+      "path": "src/cc/algo/zhongshu_phase.py",
+      "sha256": "8e153d4f9ec6afc66529d7e083dacdbde13bb43b9bb7c782c5768bd7843b4fe1",
+      "bytes": 4028,
+      "lines": 128
+    },
+    {
+      "path": "src/cc/algo/same_level.py",
+      "sha256": "7d0fe96309c32c884c8334160000774d2c6a96b8980e443cfab0ced714a65832",
+      "bytes": 89034,
+      "lines": 2282
+    },
+    {
+      "path": "src/cc/algo/zhongshu.py",
+      "sha256": "d4f556691536985ea13943606254f691ed190148568e21e84dd5063b6e46da7c",
+      "bytes": 16821,
+      "lines": 493
+    },
+    {
+      "path": "src/cc/algo/zoushi_kernel.py",
+      "sha256": "9c3b28d5f41eb1662b7d037614353eaa8947202b8b7e1a1bc61af0ea9a64362b",
+      "bytes": 38382,
+      "lines": 1022
+    },
+    {
+      "path": "src/cc/algo/zoushi.py",
+      "sha256": "d30d7b97e5e044499f3709596a98774610dece8e0a9becb13a1616b1732b0fe7",
+      "bytes": 38217,
+      "lines": 1109
+    },
+    {
+      "path": "src/cc/algo/zoushi_recursion.py",
+      "sha256": "2ee78149055d8a17e00815d9f2541b3a843a8d2f5f994246adb806879b85ab22",
+      "bytes": 27778,
+      "lines": 796
+    },
+    {
+      "path": "src/cc/algo/engine.py",
+      "sha256": "f54d3648ad626334dc157e75929ebd6d03d8aecb04566184174614d72f7bbb75",
+      "bytes": 26766,
+      "lines": 596
+    },
+    {
+      "path": "src/cc/data/models.py",
+      "sha256": "c95b5c5572e4b9673222efeea35a8f8130edebe406002cc11b806311136d6c76",
+      "bytes": 3146,
+      "lines": 86
+    },
+    {
+      "path": "src/cc/algo/protocols.py",
+      "sha256": "4f9c3a256955be69ca613a085981e90c7163c7496a2fe8a3cc0ea5b2a27e800a",
+      "bytes": 4326,
+      "lines": 125
+    },
+    {
+      "path": "src/cc/api/routes/udf.py",
+      "sha256": "6b71f24d89e044064ed406ff28281bff3bc00bfc897adf9262b11c9d4d320170",
+      "bytes": 30387,
+      "lines": 621
+    },
+    {
+      "path": "src/cc/notify/models.py",
+      "sha256": "10664a18b92d01996027512d70e204fe401a70cf597b7e6d431205952cd6610d",
+      "bytes": 855,
+      "lines": 27
+    }
+  ],
+  "searched_python_files": [
+    "src/cc/__init__.py",
+    "src/cc/algo/__init__.py",
+    "src/cc/algo/bi.py",
+    "src/cc/algo/combiner.py",
+    "src/cc/algo/config.py",
+    "src/cc/algo/engine.py",
+    "src/cc/algo/fenxing.py",
+    "src/cc/algo/keys.py",
+    "src/cc/algo/models.py",
+    "src/cc/algo/protocols.py",
+    "src/cc/algo/registry.py",
+    "src/cc/algo/same_level.py",
+    "src/cc/algo/serializers.py",
+    "src/cc/algo/trace.py",
+    "src/cc/algo/xianduan.py",
+    "src/cc/algo/zhongshu.py",
+    "src/cc/algo/zhongshu_phase.py",
+    "src/cc/algo/zoushi.py",
+    "src/cc/algo/zoushi_kernel.py",
+    "src/cc/algo/zoushi_recursion.py",
+    "src/cc/api/__init__.py",
+    "src/cc/api/main.py",
+    "src/cc/api/routes/__init__.py",
+    "src/cc/api/routes/data_update.py",
+    "src/cc/api/routes/debug_annotations.py",
+    "src/cc/api/routes/metrics.py",
+    "src/cc/api/routes/notify.py",
+    "src/cc/api/routes/overlay.py",
+    "src/cc/api/routes/overlay_bi_index.py",
+    "src/cc/api/routes/overlay_coverage.py",
+    "src/cc/api/routes/overlay_cutoff.py",
+    "src/cc/api/routes/overlay_feature_sequence.py",
+    "src/cc/api/routes/overlay_recursion.py",
+    "src/cc/api/routes/overlay_zhongshu.py",
+    "src/cc/api/routes/overlay_zoushi.py",
+    "src/cc/api/routes/pages.py",
+    "src/cc/api/routes/recursive_zhongshu.py",
+    "src/cc/api/routes/recursive_zoushi.py",
+    "src/cc/api/routes/replay.py",
+    "src/cc/api/routes/udf.py",
+    "src/cc/api/routes/watchlist.py",
+    "src/cc/api/routes/ws.py",
+    "src/cc/api/routes/zhongshu.py",
+    "src/cc/api/routes/zoushi.py",
+    "src/cc/chart/__init__.py",
+    "src/cc/data/__init__.py",
+    "src/cc/data/adapters/__init__.py",
+    "src/cc/data/adapters/ccxt_adapter.py",
+    "src/cc/data/adapters/pytdx_adapter.py",
+    "src/cc/data/adapters/tqsdk_adapter.py",
+    "src/cc/data/catalog.py",
+    "src/cc/data/continuity.py",
+    "src/cc/data/coverage_bootstrap.py",
+    "src/cc/data/left_history.py",
+    "src/cc/data/left_history_types.py",
+    "src/cc/data/models.py",
+    "src/cc/data/periods.py",
+    "src/cc/data/protocols.py",
+    "src/cc/data/repair.py",
+    "src/cc/data/repository.py",
+    "src/cc/data/scan.py",
+    "src/cc/data/scan_schedule.py",
+    "src/cc/data/service.py",
+    "src/cc/data/update_assistant.py",
+    "src/cc/data/update_batch.py",
+    "src/cc/data/update_db_registry.py",
+    "src/cc/data/update_operation.py",
+    "src/cc/data/watchlist_store.py",
+    "src/cc/debug/__init__.py",
+    "src/cc/debug/annotation_broadcast.py",
+    "src/cc/debug/annotation_store.py",
+    "src/cc/notify/__init__.py",
+    "src/cc/notify/errors.py",
+    "src/cc/notify/lark.py",
+    "src/cc/notify/models.py",
+    "src/cc/notify/protocols.py",
+    "src/cc/notify/registry.py",
+    "src/cc/notify/wechat_work.py",
+    "src/cc/perf/__init__.py",
+    "src/cc/perf/chanlun_metrics.py"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "main_transitions": 9,
+  "initialization_transitions": 9,
+  "counterexample_transitions": 3,
+  "source_coverage": "passed",
+  "immutable_raw": "passed",
+  "single_bar": "passed",
+  "equal_one_price_bars": "passed",
+  "unspecified_initialization": "pending at i=1",
+  "production_algorithm_test": false,
+  "default_policy_selected": false,
+  "warning_metric_selected": false
+}

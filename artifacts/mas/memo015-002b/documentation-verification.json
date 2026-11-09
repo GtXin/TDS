@@ -1,0 +1,16 @@
+{
+  "backup": "docs/memo/backups/memoWX_015_Chan_mergedkline__20261109_032532_675848.md",
+  "byte_identical_backup": true,
+  "exact_preservation_outside_002b": true,
+  "saved_reread": true,
+  "table_columns_consistent": true,
+  "section_headings_preserved": true,
+  "image_links_exist": true,
+  "index_entry_exists": true,
+  "copied_figure_sha256": {
+    "docs/memo/memoWX_015_Chan_mergedkline/algorithm-main-kline.png": "55b88a1fc388a301c7985ec94275e73a0b27665180228f909eae028312c86628",
+    "docs/memo/memoWX_015_Chan_mergedkline/algorithm-initialization-kline.png": "f44f5a62d8c02ebb144b69eb0e99a627f23f109ac3e3020ed4095917fb3b1bb3"
+  },
+  "arithmetic_reviews": "two independent read-only reviewers: PASS",
+  "visual_review": "both PNGs inspected, all panels populated and legible"
+}

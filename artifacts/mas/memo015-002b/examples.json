@@ -1,0 +1,868 @@
+{
+  "description": "Synthetic worked arithmetic, not an implementation/CC-engine test",
+  "main_raw": [
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:00:00+00:00",
+      "open": 1.6,
+      "high": 3,
+      "low": 1,
+      "close": 2.4,
+      "volume": 100
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:01:00+00:00",
+      "open": 3.4,
+      "high": 4,
+      "low": 2,
+      "close": 2.6,
+      "volume": 101
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:02:00+00:00",
+      "open": 2.2,
+      "high": 5,
+      "low": 1,
+      "close": 3.8,
+      "volume": 102
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:03:00+00:00",
+      "open": 3.7,
+      "high": 4,
+      "low": 3,
+      "close": 3.3,
+      "volume": 103
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:04:00+00:00",
+      "open": 3.2,
+      "high": 6,
+      "low": 2,
+      "close": 4.8,
+      "volume": 104
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:05:00+00:00",
+      "open": 3.8,
+      "high": 5,
+      "low": 1,
+      "close": 2.2,
+      "volume": 105
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:06:00+00:00",
+      "open": 2.6,
+      "high": 4,
+      "low": 2,
+      "close": 3.4,
+      "volume": 106
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:07:00+00:00",
+      "open": 4.199999999999999,
+      "high": 6,
+      "low": 0,
+      "close": 1.7999999999999998,
+      "volume": 107
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:08:00+00:00",
+      "open": 1.2,
+      "high": 4,
+      "low": 0,
+      "close": 2.8,
+      "volume": 108
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:09:00+00:00",
+      "open": 3.5,
+      "high": 5,
+      "low": 0,
+      "close": 1.5,
+      "volume": 109
+    }
+  ],
+  "main": {
+    "records": [
+      {
+        "low": 1,
+        "high": 3,
+        "direction": null,
+        "start": 0,
+        "stop": 1
+      },
+      {
+        "low": 3,
+        "high": 6,
+        "direction": "up",
+        "start": 1,
+        "stop": 5
+      },
+      {
+        "low": 0,
+        "high": 4,
+        "direction": "down",
+        "start": 5,
+        "stop": 10
+      }
+    ],
+    "trace": [
+      {
+        "i": 1,
+        "before": {
+          "low": 1,
+          "high": 3,
+          "direction": null,
+          "start": 0,
+          "stop": 1
+        },
+        "candidate": [
+          2,
+          4
+        ],
+        "inclusion": false,
+        "branch": "2.4.a",
+        "init_branch": null,
+        "action": "new",
+        "after": {
+          "low": 2,
+          "high": 4,
+          "direction": "up",
+          "start": 1,
+          "stop": 2
+        },
+        "next_i": 2,
+        "next_n": 2
+      },
+      {
+        "i": 2,
+        "before": {
+          "low": 2,
+          "high": 4,
+          "direction": "up",
+          "start": 1,
+          "stop": 2
+        },
+        "candidate": [
+          1,
+          5
+        ],
+        "inclusion": true,
+        "branch": "2.5.a",
+        "init_branch": null,
+        "action": "absorb",
+        "after": {
+          "low": 2,
+          "high": 5,
+          "direction": "up",
+          "start": 1,
+          "stop": 3
+        },
+        "next_i": 3,
+        "next_n": 2
+      },
+      {
+        "i": 3,
+        "before": {
+          "low": 2,
+          "high": 5,
+          "direction": "up",
+          "start": 1,
+          "stop": 3
+        },
+        "candidate": [
+          3,
+          4
+        ],
+        "inclusion": true,
+        "branch": "2.5.a",
+        "init_branch": null,
+        "action": "absorb",
+        "after": {
+          "low": 3,
+          "high": 5,
+          "direction": "up",
+          "start": 1,
+          "stop": 4
+        },
+        "next_i": 4,
+        "next_n": 2
+      },
+      {
+        "i": 4,
+        "before": {
+          "low": 3,
+          "high": 5,
+          "direction": "up",
+          "start": 1,
+          "stop": 4
+        },
+        "candidate": [
+          2,
+          6
+        ],
+        "inclusion": true,
+        "branch": "2.5.a",
+        "init_branch": null,
+        "action": "absorb",
+        "after": {
+          "low": 3,
+          "high": 6,
+          "direction": "up",
+          "start": 1,
+          "stop": 5
+        },
+        "next_i": 5,
+        "next_n": 2
+      },
+      {
+        "i": 5,
+        "before": {
+          "low": 3,
+          "high": 6,
+          "direction": "up",
+          "start": 1,
+          "stop": 5
+        },
+        "candidate": [
+          1,
+          5
+        ],
+        "inclusion": false,
+        "branch": "2.4.b",
+        "init_branch": null,
+        "action": "new",
+        "after": {
+          "low": 1,
+          "high": 5,
+          "direction": "down",
+          "start": 5,
+          "stop": 6
+        },
+        "next_i": 6,
+        "next_n": 3
+      },
+      {
+        "i": 6,
+        "before": {
+          "low": 1,
+          "high": 5,
+          "direction": "down",
+          "start": 5,
+          "stop": 6
+        },
+        "candidate": [
+          2,
+          4
+        ],
+        "inclusion": true,
+        "branch": "2.5.b",
+        "init_branch": null,
+        "action": "absorb",
+        "after": {
+          "low": 1,
+          "high": 4,
+          "direction": "down",
+          "start": 5,
+          "stop": 7
+        },
+        "next_i": 7,
+        "next_n": 3
+      },
+      {
+        "i": 7,
+        "before": {
+          "low": 1,
+          "high": 4,
+          "direction": "down",
+          "start": 5,
+          "stop": 7
+        },
+        "candidate": [
+          0,
+          6
+        ],
+        "inclusion": true,
+        "branch": "2.5.b",
+        "init_branch": null,
+        "action": "absorb",
+        "after": {
+          "low": 0,
+          "high": 4,
+          "direction": "down",
+          "start": 5,
+          "stop": 8
+        },
+        "next_i": 8,
+        "next_n": 3
+      },
+      {
+        "i": 8,
+        "before": {
+          "low": 0,
+          "high": 4,
+          "direction": "down",
+          "start": 5,
+          "stop": 8
+        },
+        "candidate": [
+          0,
+          4
+        ],
+        "inclusion": true,
+        "branch": "2.5.b",
+        "init_branch": null,
+        "action": "absorb",
+        "after": {
+          "low": 0,
+          "high": 4,
+          "direction": "down",
+          "start": 5,
+          "stop": 9
+        },
+        "next_i": 9,
+        "next_n": 3
+      },
+      {
+        "i": 9,
+        "before": {
+          "low": 0,
+          "high": 4,
+          "direction": "down",
+          "start": 5,
+          "stop": 9
+        },
+        "candidate": [
+          0,
+          5
+        ],
+        "inclusion": true,
+        "branch": "2.5.b",
+        "init_branch": null,
+        "action": "absorb",
+        "after": {
+          "low": 0,
+          "high": 4,
+          "direction": "down",
+          "start": 5,
+          "stop": 10
+        },
+        "next_i": 10,
+        "next_n": 3
+      }
+    ],
+    "final_i": 10,
+    "final_n": 3
+  },
+  "startup_raw": [
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:00:00+00:00",
+      "open": 2.9,
+      "high": 5,
+      "low": 2,
+      "close": 4.1,
+      "volume": 100
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:01:00+00:00",
+      "open": 3.7,
+      "high": 4,
+      "low": 3,
+      "close": 3.3,
+      "volume": 101
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:02:00+00:00",
+      "open": 3.1,
+      "high": 4.5,
+      "low": 2.5,
+      "close": 3.9,
+      "volume": 102
+    },
+    {
+      "symbol": "SYNTHETIC",
+      "period": "1m",
+      "source": "memo015002b-synthetic",
+      "timestamp": "2026-01-01 00:03:00+00:00",
+      "open": 5.1,
+      "high": 6,
+      "low": 3,
+      "close": 3.9,
+      "volume": 103
+    }
+  ],
+  "startup": {
+    "up": {
+      "records": [
+        {
+          "low": 3,
+          "high": 5,
+          "direction": "up",
+          "start": 0,
+          "stop": 2
+        },
+        {
+          "low": 2.5,
+          "high": 4.5,
+          "direction": "down",
+          "start": 2,
+          "stop": 3
+        },
+        {
+          "low": 3,
+          "high": 6,
+          "direction": "up",
+          "start": 3,
+          "stop": 4
+        }
+      ],
+      "trace": [
+        {
+          "i": 1,
+          "before": {
+            "low": 2,
+            "high": 5,
+            "direction": null,
+            "start": 0,
+            "stop": 1
+          },
+          "candidate": [
+            3,
+            4
+          ],
+          "inclusion": true,
+          "branch": "2.5.a",
+          "init_branch": "2.6.a",
+          "action": "absorb",
+          "after": {
+            "low": 3,
+            "high": 5,
+            "direction": "up",
+            "start": 0,
+            "stop": 2
+          },
+          "next_i": 2,
+          "next_n": 1
+        },
+        {
+          "i": 2,
+          "before": {
+            "low": 3,
+            "high": 5,
+            "direction": "up",
+            "start": 0,
+            "stop": 2
+          },
+          "candidate": [
+            2.5,
+            4.5
+          ],
+          "inclusion": false,
+          "branch": "2.4.b",
+          "init_branch": null,
+          "action": "new",
+          "after": {
+            "low": 2.5,
+            "high": 4.5,
+            "direction": "down",
+            "start": 2,
+            "stop": 3
+          },
+          "next_i": 3,
+          "next_n": 2
+        },
+        {
+          "i": 3,
+          "before": {
+            "low": 2.5,
+            "high": 4.5,
+            "direction": "down",
+            "start": 2,
+            "stop": 3
+          },
+          "candidate": [
+            3,
+            6
+          ],
+          "inclusion": false,
+          "branch": "2.4.a",
+          "init_branch": null,
+          "action": "new",
+          "after": {
+            "low": 3,
+            "high": 6,
+            "direction": "up",
+            "start": 3,
+            "stop": 4
+          },
+          "next_i": 4,
+          "next_n": 3
+        }
+      ],
+      "final_i": 4,
+      "final_n": 3
+    },
+    "down": {
+      "records": [
+        {
+          "low": 2,
+          "high": 4,
+          "direction": "down",
+          "start": 0,
+          "stop": 2
+        },
+        {
+          "low": 2.5,
+          "high": 4.5,
+          "direction": "up",
+          "start": 2,
+          "stop": 3
+        },
+        {
+          "low": 3,
+          "high": 6,
+          "direction": "up",
+          "start": 3,
+          "stop": 4
+        }
+      ],
+      "trace": [
+        {
+          "i": 1,
+          "before": {
+            "low": 2,
+            "high": 5,
+            "direction": null,
+            "start": 0,
+            "stop": 1
+          },
+          "candidate": [
+            3,
+            4
+          ],
+          "inclusion": true,
+          "branch": "2.5.b",
+          "init_branch": "2.6.b",
+          "action": "absorb",
+          "after": {
+            "low": 2,
+            "high": 4,
+            "direction": "down",
+            "start": 0,
+            "stop": 2
+          },
+          "next_i": 2,
+          "next_n": 1
+        },
+        {
+          "i": 2,
+          "before": {
+            "low": 2,
+            "high": 4,
+            "direction": "down",
+            "start": 0,
+            "stop": 2
+          },
+          "candidate": [
+            2.5,
+            4.5
+          ],
+          "inclusion": false,
+          "branch": "2.4.a",
+          "init_branch": null,
+          "action": "new",
+          "after": {
+            "low": 2.5,
+            "high": 4.5,
+            "direction": "up",
+            "start": 2,
+            "stop": 3
+          },
+          "next_i": 3,
+          "next_n": 2
+        },
+        {
+          "i": 3,
+          "before": {
+            "low": 2.5,
+            "high": 4.5,
+            "direction": "up",
+            "start": 2,
+            "stop": 3
+          },
+          "candidate": [
+            3,
+            6
+          ],
+          "inclusion": false,
+          "branch": "2.4.a",
+          "init_branch": null,
+          "action": "new",
+          "after": {
+            "low": 3,
+            "high": 6,
+            "direction": "up",
+            "start": 3,
+            "stop": 4
+          },
+          "next_i": 4,
+          "next_n": 3
+        }
+      ],
+      "final_i": 4,
+      "final_n": 3
+    },
+    "outer": {
+      "records": [
+        {
+          "low": 2,
+          "high": 5,
+          "direction": null,
+          "start": 0,
+          "stop": 3
+        },
+        {
+          "low": 3,
+          "high": 6,
+          "direction": "up",
+          "start": 3,
+          "stop": 4
+        }
+      ],
+      "trace": [
+        {
+          "i": 1,
+          "before": {
+            "low": 2,
+            "high": 5,
+            "direction": null,
+            "start": 0,
+            "stop": 1
+          },
+          "candidate": [
+            3,
+            4
+          ],
+          "inclusion": true,
+          "branch": "2.6.d",
+          "init_branch": "2.6.d",
+          "action": "absorb",
+          "after": {
+            "low": 2,
+            "high": 5,
+            "direction": null,
+            "start": 0,
+            "stop": 2
+          },
+          "next_i": 2,
+          "next_n": 1
+        },
+        {
+          "i": 2,
+          "before": {
+            "low": 2,
+            "high": 5,
+            "direction": null,
+            "start": 0,
+            "stop": 2
+          },
+          "candidate": [
+            2.5,
+            4.5
+          ],
+          "inclusion": true,
+          "branch": "2.6.d",
+          "init_branch": "2.6.d",
+          "action": "absorb",
+          "after": {
+            "low": 2,
+            "high": 5,
+            "direction": null,
+            "start": 0,
+            "stop": 3
+          },
+          "next_i": 3,
+          "next_n": 1
+        },
+        {
+          "i": 3,
+          "before": {
+            "low": 2,
+            "high": 5,
+            "direction": null,
+            "start": 0,
+            "stop": 3
+          },
+          "candidate": [
+            3,
+            6
+          ],
+          "inclusion": false,
+          "branch": "2.4.a",
+          "init_branch": null,
+          "action": "new",
+          "after": {
+            "low": 3,
+            "high": 6,
+            "direction": "up",
+            "start": 3,
+            "stop": 4
+          },
+          "next_i": 4,
+          "next_n": 2
+        }
+      ],
+      "final_i": 4,
+      "final_n": 2
+    }
+  },
+  "sequential_counterexample": {
+    "records": [
+      {
+        "low": 0,
+        "high": 2,
+        "direction": null,
+        "start": 0,
+        "stop": 1
+      },
+      {
+        "low": 2,
+        "high": 4,
+        "direction": "up",
+        "start": 1,
+        "stop": 3
+      },
+      {
+        "low": 0,
+        "high": 3.5,
+        "direction": "down",
+        "start": 3,
+        "stop": 4
+      }
+    ],
+    "trace": [
+      {
+        "i": 1,
+        "before": {
+          "low": 0,
+          "high": 2,
+          "direction": null,
+          "start": 0,
+          "stop": 1
+        },
+        "candidate": [
+          1,
+          4
+        ],
+        "inclusion": false,
+        "branch": "2.4.a",
+        "init_branch": null,
+        "action": "new",
+        "after": {
+          "low": 1,
+          "high": 4,
+          "direction": "up",
+          "start": 1,
+          "stop": 2
+        },
+        "next_i": 2,
+        "next_n": 2
+      },
+      {
+        "i": 2,
+        "before": {
+          "low": 1,
+          "high": 4,
+          "direction": "up",
+          "start": 1,
+          "stop": 2
+        },
+        "candidate": [
+          2,
+          3
+        ],
+        "inclusion": true,
+        "branch": "2.5.a",
+        "init_branch": null,
+        "action": "absorb",
+        "after": {
+          "low": 2,
+          "high": 4,
+          "direction": "up",
+          "start": 1,
+          "stop": 3
+        },
+        "next_i": 3,
+        "next_n": 2
+      },
+      {
+        "i": 3,
+        "before": {
+          "low": 2,
+          "high": 4,
+          "direction": "up",
+          "start": 1,
+          "stop": 3
+        },
+        "candidate": [
+          0,
+          3.5
+        ],
+        "inclusion": false,
+        "branch": "2.4.b",
+        "init_branch": null,
+        "action": "new",
+        "after": {
+          "low": 0,
+          "high": 3.5,
+          "direction": "down",
+          "start": 3,
+          "stop": 4
+        },
+        "next_i": 4,
+        "next_n": 3
+      }
+    ],
+    "final_i": 4,
+    "final_n": 3
+  }
+}

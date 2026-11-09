@@ -21,6 +21,14 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | WX 015 | [Chan_mergedkline](memoWX_015_Chan_mergedkline.md) |
 | WX 016 | [Skill：Chan原文与代码研究](memoWX_016_Skill_chan_source_code_study.md) |
 | WX 017 | [Skill_algoDev](memoWX_017_Skill_algoDev.md) |
+| WX 018 | [Batch Concepts 2–8](memoWX_018_batchConcept2to8.md) |
+| WX 019 | [Chan_fenxing](memoWX_019_Chan_fenxing.md) |
+| WX 020 | [Chan_bi](memoWX_020_Chan_bi.md) |
+| WX 021 | [Chan_xianduan](memoWX_021_Chan_xianduan.md) |
+| WX 022 | [Chan_zhongshu](memoWX_022_Chan_zhongshu.md) |
+| WX 023 | [Chan_zoushi](memoWX_023_Chan_zoushi.md) |
+| WX 024 | [Chan_beichi](memoWX_024_Chan_beichi.md) |
+| WX 025 | [Chan_buysellpoint](memoWX_025_Chan_buysellpoint.md) |
 | KWX 001 | [cc project folder structure](memoKWX_001_文件夹结构.md) |
 
 For new or revised memos, follow [the writing guide](memoWX_006_memoWritingGuide.md).

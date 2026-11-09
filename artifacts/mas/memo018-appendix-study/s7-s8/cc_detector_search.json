@@ -1,0 +1,358 @@
+{
+  "scope": "/Users/coder/Public/EngineGit/cc/src/cc",
+  "file_count": 80,
+  "method": "Filename and case-insensitive text search; no imports or CC execution. This does not prove absence from history, docs, other repos or non-Python files.",
+  "files": [
+    {
+      "path": "src/cc/__init__.py",
+      "sha256": "8c8b05c9fe1f417d8b43a77ebe6d9d3e4b0e0367a502bab5cfb65c415cccff4c"
+    },
+    {
+      "path": "src/cc/algo/__init__.py",
+      "sha256": "2e5a007292c4429f8f00751dca1d42b6ec623e79b04d6c07a02bcc2f9c2de7ea"
+    },
+    {
+      "path": "src/cc/algo/bi.py",
+      "sha256": "8e59e085b7d303f1e9a87ba3c0baf62045f1b8ae5ca94fee86cae13d8f6935c0"
+    },
+    {
+      "path": "src/cc/algo/combiner.py",
+      "sha256": "be9370c1ac83304b79102503f83e7bda13b16c570d0b52def112df33fbb69575"
+    },
+    {
+      "path": "src/cc/algo/config.py",
+      "sha256": "05ca8c288c0d9c1ae01d1d79237b6993a9ee7938f42df07adfe3ac7cca97b026"
+    },
+    {
+      "path": "src/cc/algo/engine.py",
+      "sha256": "f54d3648ad626334dc157e75929ebd6d03d8aecb04566184174614d72f7bbb75"
+    },
+    {
+      "path": "src/cc/algo/fenxing.py",
+      "sha256": "270cac4c9b9eae4c514bf2216c5c0c8f9c8d4d3f15e8e4520cdc7f1e4d21c39c"
+    },
+    {
+      "path": "src/cc/algo/keys.py",
+      "sha256": "d301c1b09881d47e46e6b0bdfe8f8f6614aa9503d1644f37557325183a5b57ee"
+    },
+    {
+      "path": "src/cc/algo/models.py",
+      "sha256": "7487ce3e1bfa8c9565e3328b3be42c185f5aa3d0f4e13a6dc7e6913a2327b1a3"
+    },
+    {
+      "path": "src/cc/algo/protocols.py",
+      "sha256": "4f9c3a256955be69ca613a085981e90c7163c7496a2fe8a3cc0ea5b2a27e800a"
+    },
+    {
+      "path": "src/cc/algo/registry.py",
+      "sha256": "85432f3abc403b9ef4c32938af05f48f9ba8671dcd8d64a1f56031fd04de156c"
+    },
+    {
+      "path": "src/cc/algo/same_level.py",
+      "sha256": "7d0fe96309c32c884c8334160000774d2c6a96b8980e443cfab0ced714a65832"
+    },
+    {
+      "path": "src/cc/algo/serializers.py",
+      "sha256": "219cba6e7cddfd518f1a7fb3927c620028c486be55471caa2fa5b88619efd56f"
+    },
+    {
+      "path": "src/cc/algo/trace.py",
+      "sha256": "2b577b2f9cee792e690059c4f67a7615af21259d7474f2208d198782fc18934d"
+    },
+    {
+      "path": "src/cc/algo/xianduan.py",
+      "sha256": "57bb272443c2fff35e859d53389f709c154666eef00354e6b272583b6ec55766"
+    },
+    {
+      "path": "src/cc/algo/zhongshu.py",
+      "sha256": "d4f556691536985ea13943606254f691ed190148568e21e84dd5063b6e46da7c"
+    },
+    {
+      "path": "src/cc/algo/zhongshu_phase.py",
+      "sha256": "8e153d4f9ec6afc66529d7e083dacdbde13bb43b9bb7c782c5768bd7843b4fe1"
+    },
+    {
+      "path": "src/cc/algo/zoushi.py",
+      "sha256": "d30d7b97e5e044499f3709596a98774610dece8e0a9becb13a1616b1732b0fe7"
+    },
+    {
+      "path": "src/cc/algo/zoushi_kernel.py",
+      "sha256": "9c3b28d5f41eb1662b7d037614353eaa8947202b8b7e1a1bc61af0ea9a64362b"
+    },
+    {
+      "path": "src/cc/algo/zoushi_recursion.py",
+      "sha256": "2ee78149055d8a17e00815d9f2541b3a843a8d2f5f994246adb806879b85ab22"
+    },
+    {
+      "path": "src/cc/api/__init__.py",
+      "sha256": "d02e32d776a738941e22b7e938c73bd84350b4fe47e841218d06f03162ddb4f3"
+    },
+    {
+      "path": "src/cc/api/main.py",
+      "sha256": "9c7c32dbb4f158f049a376c8d8bb860902e0575b316ed3a8ae95e7a28ed14844"
+    },
+    {
+      "path": "src/cc/api/routes/__init__.py",
+      "sha256": "935b6fd99cf949301afef1f9bea9b5c9347b3e1ba13dc9ace76f7a742a2055ab"
+    },
+    {
+      "path": "src/cc/api/routes/data_update.py",
+      "sha256": "d5cff9737b521ed4e7c01301c63786008b1f44a00c577d6457cba18eebc334b4"
+    },
+    {
+      "path": "src/cc/api/routes/debug_annotations.py",
+      "sha256": "1700989ceef889bd0c7ea9806827edc8def9c511cf8fbdc2bbc7f69053d0e51d"
+    },
+    {
+      "path": "src/cc/api/routes/metrics.py",
+      "sha256": "b6826ccc7631a9f18f443ddcc79c56818e51c16cc93490d5f4fcf6daee1494b3"
+    },
+    {
+      "path": "src/cc/api/routes/notify.py",
+      "sha256": "0b9426ca59c2a4fcd2f3b066bc323c93ae63cff0d309d8e8e26f62480c5b73eb"
+    },
+    {
+      "path": "src/cc/api/routes/overlay.py",
+      "sha256": "98c14e498a3cb67d89e1103b5b4965d991196724d3c88a70611302d9883af08e"
+    },
+    {
+      "path": "src/cc/api/routes/overlay_bi_index.py",
+      "sha256": "163a45d29550b86b178c1c7c3c1bcbaadcc4988dc8a5a197d786e09905302e3d"
+    },
+    {
+      "path": "src/cc/api/routes/overlay_coverage.py",
+      "sha256": "7ae42d5def512b6f7ab860ef239764710a1a356e79670595b978b702ff8ecba1"
+    },
+    {
+      "path": "src/cc/api/routes/overlay_cutoff.py",
+      "sha256": "1430df64a05902c49f5c37ad6e277ea323565087a81a3b93649e6a711f9700ad"
+    },
+    {
+      "path": "src/cc/api/routes/overlay_feature_sequence.py",
+      "sha256": "e636bd3f397c483fa39d3b47fab116e58fa23b7706756eb4a81e26439585cee9"
+    },
+    {
+      "path": "src/cc/api/routes/overlay_recursion.py",
+      "sha256": "f27cdbac5a07eebad9f9cbdcd674e76ebd53b8637053e4d1b0d32740650ff5e5"
+    },
+    {
+      "path": "src/cc/api/routes/overlay_zhongshu.py",
+      "sha256": "b8089bd65ee096897d2368accbedce5a613c73c3801f3aab4980d30d13ac5b65"
+    },
+    {
+      "path": "src/cc/api/routes/overlay_zoushi.py",
+      "sha256": "7aa55f1dcb62531574fad19a5de2a9f089d3f4ec9b459d43b1c278ac03d8a2b3"
+    },
+    {
+      "path": "src/cc/api/routes/pages.py",
+      "sha256": "375a89cb34ee7b0431d5290d3cb2f775f905f4e16443c3772c84605338860761"
+    },
+    {
+      "path": "src/cc/api/routes/recursive_zhongshu.py",
+      "sha256": "3e8bff3f7ac63764a490012e0af997ff6ea8452d586e759ce552913229632329"
+    },
+    {
+      "path": "src/cc/api/routes/recursive_zoushi.py",
+      "sha256": "0df3a2f90c923fb89fc8ec11188aa778b8bc510280e5844c45fb30fa81c372ce"
+    },
+    {
+      "path": "src/cc/api/routes/replay.py",
+      "sha256": "28fd26ef16ebadc83c6e4969661e670e2acb1d9fa9bd76742a7dbccc29fe83d0"
+    },
+    {
+      "path": "src/cc/api/routes/udf.py",
+      "sha256": "6b71f24d89e044064ed406ff28281bff3bc00bfc897adf9262b11c9d4d320170"
+    },
+    {
+      "path": "src/cc/api/routes/watchlist.py",
+      "sha256": "2758233463e3e331238fb81b4ca65c2cc11f7416aaff1b73d8c4ff59c7ddf516"
+    },
+    {
+      "path": "src/cc/api/routes/ws.py",
+      "sha256": "2a672826b21ba27560ba513aac654fc1e818ab5e865501f26a370c3344586e00"
+    },
+    {
+      "path": "src/cc/api/routes/zhongshu.py",
+      "sha256": "9b8613ea4de1e2e2d87fbfe3a1f82bc702e8f6186baf98ce16e431234f20e3e2"
+    },
+    {
+      "path": "src/cc/api/routes/zoushi.py",
+      "sha256": "0ecd48223ca273b188035b8d3e9375e26dd507075a2d1cd2042543f001ae5395"
+    },
+    {
+      "path": "src/cc/chart/__init__.py",
+      "sha256": "9e52d50c00d2e86f152274553851da7723b839bb33ec3105a3abd0c041918e9b"
+    },
+    {
+      "path": "src/cc/data/__init__.py",
+      "sha256": "dd815f20ae59f40557365e2b743b01a065118a038b2f6050453d2a5476110966"
+    },
+    {
+      "path": "src/cc/data/adapters/__init__.py",
+      "sha256": "517c86ecc1b885785b8da2a8afdbff99bdb6e591bbea024c85596c6f13fb3673"
+    },
+    {
+      "path": "src/cc/data/adapters/ccxt_adapter.py",
+      "sha256": "1fe1901be5ba61e859ec140353a621cd39b6609853f056131149a3e1f2822a7c"
+    },
+    {
+      "path": "src/cc/data/adapters/pytdx_adapter.py",
+      "sha256": "c781335440bbf10a1cbd60db9ae529bae80bc059feef87d9a427cb55955f7db7"
+    },
+    {
+      "path": "src/cc/data/adapters/tqsdk_adapter.py",
+      "sha256": "f3d6b319bcc921d9bdc1f3e84d05b08ed8e55e87f618d29974fed314127f3e41"
+    },
+    {
+      "path": "src/cc/data/catalog.py",
+      "sha256": "9377f8b1b1aebe2765d1809951dc3cb8d515be839b385c19b82654417e631ff9"
+    },
+    {
+      "path": "src/cc/data/continuity.py",
+      "sha256": "8af6b106e740848a807b7a208e9c65cef766ef861d93381d5ab8e447a60c7ff1"
+    },
+    {
+      "path": "src/cc/data/coverage_bootstrap.py",
+      "sha256": "cc7c0982549debd73c26f46441e878d6d05de06071e856ad0e6ee7fe7df3a581"
+    },
+    {
+      "path": "src/cc/data/left_history.py",
+      "sha256": "465fc40019305a713c7c4f5d2acf5441e91a2757c9089e6bb6d5dafb1f8150c5"
+    },
+    {
+      "path": "src/cc/data/left_history_types.py",
+      "sha256": "d7863735bad8c6d2fba190d9cc8609400b8111f0fffbba931f90ed8c33f752cb"
+    },
+    {
+      "path": "src/cc/data/models.py",
+      "sha256": "c95b5c5572e4b9673222efeea35a8f8130edebe406002cc11b806311136d6c76"
+    },
+    {
+      "path": "src/cc/data/periods.py",
+      "sha256": "cafdd692cf3e379dc4f658a524d9005fabc3c4a3c425ef6384bca73329f0e2f4"
+    },
+    {
+      "path": "src/cc/data/protocols.py",
+      "sha256": "4f3930d9c0eba5fabf1df485643f62819be1554aa0731b22b37787ee3241b869"
+    },
+    {
+      "path": "src/cc/data/repair.py",
+      "sha256": "f5c5d06313666b9bbf182daed5dc944e2be1801968eb089cfcc2e6b181a3c184"
+    },
+    {
+      "path": "src/cc/data/repository.py",
+      "sha256": "f3a93cbc3f73bb41415f30ef7bafee6fbbc505f98e3f4309e77f5f473f7aaf59"
+    },
+    {
+      "path": "src/cc/data/scan.py",
+      "sha256": "3287c2893f8185871afe3bdf737740dce25659aeb38cb2a6a33697028a2b8934"
+    },
+    {
+      "path": "src/cc/data/scan_schedule.py",
+      "sha256": "571112314accdb70feb3df75d678403756c051a0bab76615f1604e8b8e073317"
+    },
+    {
+      "path": "src/cc/data/service.py",
+      "sha256": "35b3585b7a16ef8f7dcd2737313016c0a88434d60f66b868ca50f5b79a55cdb4"
+    },
+    {
+      "path": "src/cc/data/update_assistant.py",
+      "sha256": "292e788cc9736843714a23d379742a4d292ab2a4ede5666fff7885c623196f43"
+    },
+    {
+      "path": "src/cc/data/update_batch.py",
+      "sha256": "f3b336c4bb114d37b10de98e0ae919cc5bf963ab5b12346fed286ef1a7684c5e"
+    },
+    {
+      "path": "src/cc/data/update_db_registry.py",
+      "sha256": "6455eb8b32fc623e3ddef45cd2c6c92fd408d06d9f4fbcf4b940e6c543ccffe3"
+    },
+    {
+      "path": "src/cc/data/update_operation.py",
+      "sha256": "5fa79f4cf29ed4a1b34825c29ec650df37dd8e2921752683dbf3ce5a5841fa2b"
+    },
+    {
+      "path": "src/cc/data/watchlist_store.py",
+      "sha256": "606dec08afc3375a5d81678431a83e41c04045ae9cd110c17abfbf7294b4712a"
+    },
+    {
+      "path": "src/cc/debug/__init__.py",
+      "sha256": "54aaa17acab723be9f8a391c5520c251f750acc1bc7cc532ba8250653b974995"
+    },
+    {
+      "path": "src/cc/debug/annotation_broadcast.py",
+      "sha256": "701963c7ba5f97f8acbcd2ab2f9ae52b8d8e8caa7d87d23bbafec6f8b4ca499d"
+    },
+    {
+      "path": "src/cc/debug/annotation_store.py",
+      "sha256": "00f6075831cd704d12eb73d5026e162272446e41d4d73e9f756f78ffe4519202"
+    },
+    {
+      "path": "src/cc/notify/__init__.py",
+      "sha256": "f133d97c85f6832b399bef9540181670d7512624e9236f3026ca08b2fd2f2d3a"
+    },
+    {
+      "path": "src/cc/notify/errors.py",
+      "sha256": "9f75fdfe9da04c93762cea98bf17a0a48a8944c455a63d7a726ce98dd24541b9"
+    },
+    {
+      "path": "src/cc/notify/lark.py",
+      "sha256": "d2aa56f94b707402176b98c2e6240f3b180594e5b58c750e10979a7e4a57336b"
+    },
+    {
+      "path": "src/cc/notify/models.py",
+      "sha256": "10664a18b92d01996027512d70e204fe401a70cf597b7e6d431205952cd6610d"
+    },
+    {
+      "path": "src/cc/notify/protocols.py",
+      "sha256": "f0d010f6c24924e8fad9660b184d0b8052266df7ab7e1a4f8e9c0dcc493c5749"
+    },
+    {
+      "path": "src/cc/notify/registry.py",
+      "sha256": "9a2d1cf0bfd6f77acb57dc98d4c1e9e77970a39e5a5930ffc93cdc7fd1860a34"
+    },
+    {
+      "path": "src/cc/notify/wechat_work.py",
+      "sha256": "8a0f58d8f74f13e88cd5a2627858df3b12d724871848e0e2304c09b22a7286c4"
+    },
+    {
+      "path": "src/cc/perf/__init__.py",
+      "sha256": "fc41c21c8d101ba44db6b17ad00ad4981b9b8a247a80eb3135b0b207263ede92"
+    },
+    {
+      "path": "src/cc/perf/chanlun_metrics.py",
+      "sha256": "968023871eb2497488844397577de5935d02ca9b664196c6625f63820547766c"
+    }
+  ],
+  "results": {
+    "s7": {
+      "pattern": "(?i)beichi|divergen|背驰|背弛|macd",
+      "hits": []
+    },
+    "s8": {
+      "pattern": "(?i)buysell|buy_sell|buy_point|sell_point|bsp|买卖点|一买|二买|三买|一卖|二卖|三卖",
+      "hits": [
+        {
+          "path": "src/cc/algo/protocols.py",
+          "line": 17,
+          "text": "**不产买卖点信号** (买卖点归阶段 6, §1.5)。"
+        },
+        {
+          "path": "src/cc/api/routes/udf.py",
+          "line": 534,
+          "text": "    \"\"\"UDF marks (买卖点标记阶段 5 起接通).\"\"\""
+        },
+        {
+          "path": "src/cc/notify/models.py",
+          "line": 10,
+          "text": "NotifyLevel = Literal[\"info\", \"warning\", \"buy_sell\"]"
+        },
+        {
+          "path": "src/cc/notify/models.py",
+          "line": 16,
+          "text": "    阶段 5 起 ``payload`` 字段填入买卖点事件结构化数据"
+        }
+      ]
+    }
+  }
+}
