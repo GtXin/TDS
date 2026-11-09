@@ -1,11 +1,11 @@
 # Shared MAS core
 
-This folder keeps workflow and task records independent of the tool used to execute them. Specific agents, responsibilities, and skills will be chosen through later experiments.
+This folder keeps workflow and task records independent of the tool used to execute them. Specific agents, responsibilities, and additional skills are chosen through experiments.
 
 ## Contents
 
 - `roles/`: shared responsibility descriptions, once defined.
-- `skills/`: reusable procedures, once defined.
+- `skills/`: reusable procedures; Python Pro is installed for the first coding trial.
 - [contracts.md](contracts.md): the common task and result format.
 - `tasks/`: assignments, progress, evidence, and handoffs.
 
@@ -27,4 +27,4 @@ Task files preserve state and handoffs; they do not automatically schedule work 
 - `.codex/agents/` is reserved for native definitions once agents are chosen.
 - `.agents/skills` is a relative directory link to `mas/skills`, keeping one shared source for skill procedures.
 
-Agent definitions, role descriptions, and skills remain unselected. Claude can connect to this same core separately.
+Agent definitions and role descriptions remain unselected. [Python Pro](skills/python-pro/SKILL.md) is the first installed skill; its [installation and trial task](tasks/20261108-python-pro-install-and-trial.md) records source and check results. Claude can connect to this same core separately.

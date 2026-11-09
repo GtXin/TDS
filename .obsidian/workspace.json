@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/memo/memoWX_009_designPatternForChanFeatures.md",
+                "file": "docs/memo/memoWX_014_ChanAxiomSyntax.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memoWX_009_designPatternForChanFeatures"
+              "title": "memoWX_014_ChanAxiomSyntax"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.69853591918945
+    "width": 414.82070541381836
   },
   "right": {
     "id": "d2172629678a9549",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/memo/memoWX_009_designPatternForChanFeatures.md",
+                "file": "docs/memo/memoWX_014_ChanAxiomSyntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/memo/memoWX_009_designPatternForChanFeatures.md",
+                "file": "docs/memo/memoWX_014_ChanAxiomSyntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/memo/memoWX_009_designPatternForChanFeatures.md",
+                "file": "docs/memo/memoWX_014_ChanAxiomSyntax.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,44 +188,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "4cfb07f0e5c7527e",
+  "active": "b688d124338f704e",
   "lastOpenFiles": [
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_031650_633690.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_031611_943169.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_031510_222203.md",
-    "mas/tasks/20261108-beichi-zhongshu-id-reference.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_030130_930746.md",
-    "mas/tasks/20261108-memo009-member-table-rendering.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_025612_294459.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_025612_294459/chan_table_template.csv",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_025612_294459/chan_table_header.csv",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_025612_294459/chan_table_context.csv",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_025612_294459",
-    "mas/tasks/20261108-memo009-chantable-beichi-completeness.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_024823_043286.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_024823_043286/chan_table_template.csv",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_024823_043286/chan_table_header.csv",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_024823_043286/chan_table_context.csv",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_024823_043286",
-    "mas/tasks/20261108-memo009-cohesive-sequence.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_023801_919803.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_023801_919803/chan_table_header.csv",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_023801_919803/chan_table_context.csv",
-    "mas/tasks/20261108-memo009-beichi-classes.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_023144_875948.md",
-    "mas/tasks/20261108-chan-table-column-groups.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_022156_968068.md",
-    "mas/tasks/20261108-chan-table-annotations.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_021451_694464.md",
-    "mas/tasks/20261108-memo009-chan-table-template.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_020504_406042.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_020321_568583.md",
-    "mas/tasks/20261108-memo009-chantable-class-example.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_015358_129183.md",
-    "mas/tasks/20261108-memo009-chantable-columns.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_014553_345288.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_014405_156177.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261108_014207_012333.md",
+    "docs/memo/backups/memoWX_014_ChanAxiomSyntax__20261108_174148_741718.md",
+    "docs/memo/memoWX_013_klineFamily.md",
+    "docs/memo/memoWX_014_ChanAxiomSyntax.md",
+    "docs/memo/backups/memoWX_014_ChanAxiomSyntax__20261108_174044_951961.md",
+    "mas/tasks/20261108-memo013-interface-docs.md",
+    "docs/memo/backups/memoWX_013_klineFamily__20261108_173947_712559.md",
+    "docs/memo/memoWX_011_chanTableImplementation.md",
+    "docs/memo/backups/memoWX_013_klineFamily__20261108_132632_771304.md",
+    "artifacts/mas/kline-family/handoff-and-work-history.md",
+    "artifacts/mas/kline-family/verification.json",
+    "artifacts/mas/kline-family/comparison.md",
+    "artifacts/mas/kline-family/checks/coverage-report.txt",
+    "artifacts/mas/kline-family/checks/black-final.txt",
+    "artifacts/mas/kline-family/checks/ruff-final.txt",
+    "artifacts/mas/kline-family/checks/ruff-initial-final-check.txt",
+    "artifacts/mas/kline-family/checks/active-mypy.txt",
+    "artifacts/mas/kline-family/checks/regression-pytest.txt",
+    "artifacts/mas/kline-family/roundtrip-verification.json",
+    "artifacts/mas/kline-family/roundtrip/dce-KQ.m-at-m_15m_20241028_20260819_kline_v20261108.csv",
+    "artifacts/mas/kline-family/roundtrip/dce-KQ.m-at-m_15m_20241028_20260819_context_v20261108.csv",
+    "artifacts/mas/kline-family/README.md",
+    "artifacts/mas/memo011/comparison.md",
+    "docs/memo/backups/memoWX_013_klineFamily__20261108_130521_675922.md",
+    "docs/memo/backups/memoWX_011_chanTableImplementation__20261108_130417_232889.md",
+    "docs/memo/backups/memoWX_011_chanTableImplementation__20261108_130325_411812.md",
+    "artifacts/mas/memo011/superseded_feature_scope/artifacts/mas/memo011/comparison.md",
+    "docs/memo/backups/memoWX_011_chanTableImplementation__20261108_125455_736372.md",
+    "docs/memo/backups/memoWX_011_chanTableImplementation__20261108_125301_791988.md",
+    "docs/memo/backups/memoWX_013_klineFamily__20261108_125129_664119.md",
+    "docs/memo/backups/README__20261108_125039_951677.md",
+    "docs/memo/backups/memoWX_014_ChanBaoHan__20261108_125039_951677.md",
+    "docs/memo/backups/memoWX_011_chanTableImplementation__20261108_124901_161297.md",
+    "mas/tasks/20261108-memo013-execution.md",
+    "mas/tasks/20261108-memo011-to013-handoff-advice.md",
+    "docs/memo/backups/memoWX_013_klineFamily__20261108_123945_623950.md",
+    "docs/memo/memoWX_014_ChanBaoHan.md",
     "docs/memo/memoWX_008_ChanLargePicture/summary-handwritten.png",
     "docs/memo/backups/memoWX_008_ChanLargePicture__20261107_191115_049389/s7-beichi-center-entry-exit.png",
     "docs/memo/memoWX_008_ChanLargePicture/s7-beichi-exit-segment.png",

@@ -1,0 +1,54 @@
+{
+  "completed_at": "2026-11-08T13:25:39-08:00",
+  "status": "complete",
+  "selected": "python_pro/chanlab, byte-identical to src/chanlab modules",
+  "same_suite_cases": 114,
+  "variant_results": {
+    "baseline": "110 passed,4 failed (frozen known defects)",
+    "python_pro": "114 passed",
+    "active": "114 passed"
+  },
+  "active_regression": "165 passed",
+  "strict_mypy": "passed,2 selected source files",
+  "baseline_strict_mypy": "1 missing local annotation (not selected)",
+  "ruff": "src tests artifacts/mas/kline-family passed",
+  "black": "7 selected source/test/runner/snapshot files check passed",
+  "coverage": {
+    "covered_lines": 181,
+    "num_statements": 194,
+    "percent_covered": 93.29896907216495,
+    "percent_covered_display": "93",
+    "missing_lines": 13,
+    "excluded_lines": 6,
+    "percent_statements_covered": 93.29896907216495,
+    "percent_statements_covered_display": "93"
+  },
+  "full_dataset_roundtrip": {
+    "rows": 10060,
+    "context_keys": 9,
+    "raw_export": "artifacts/mas/kline-family/roundtrip/dce-KQ.m-at-m_15m_20241028_20260819_kline_v20261108.csv",
+    "context_export": "artifacts/mas/kline-family/roundtrip/dce-KQ.m-at-m_15m_20241028_20260819_context_v20261108.csv",
+    "raw_export_sha256": "964e13580e7811a5ad8849915e659b5fd39dfe48a2fbbfa1e4d2393d79a05cd4",
+    "context_export_sha256": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15",
+    "values_and_utc_instants_equal": true,
+    "context_equal": true,
+    "baseline_frozen_unchanged": true,
+    "upstream_data_config_hashes_unchanged": true,
+    "selected_source_equals_snapshot": true
+  },
+  "skill": {
+    "name": "python-pro",
+    "version": "1.1.0",
+    "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
+    "request": "python-pro-request.txt",
+    "baseline_before_skill": true,
+    "comparison_limit": "Same-author continuation plus independent review corrections; no causal skill-effect claim"
+  },
+  "deferred": [
+    "ChanTable object interchange",
+    "DataFrame conversion",
+    "plotting",
+    "indicators and feature detection"
+  ],
+  "source_semantics": "User released existing master handoff. UTC instants/source-defined volume preserved; no independent provider start-label confirmation asserted."
+}

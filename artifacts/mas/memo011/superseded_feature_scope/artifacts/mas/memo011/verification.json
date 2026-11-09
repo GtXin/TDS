@@ -1,0 +1,13 @@
+{
+  "rows": 10060,
+  "columns": 41,
+  "source_copy_sha256": "fc2e6a5c711b6a81cd78583896087e0d5b2d07097f55135cdb480b786a124e2d",
+  "raw_ohlcv_symbol_period_exact": true,
+  "tests_directory": "31 passed, 1 xfailed",
+  "coverage": "91% (468 statements, 40 missed; chan_table 90%, features 92%)",
+  "baseline_feature_test": "expected failure: baseline lacks authoritative merged records",
+  "mypy": "strict --explicit-package-bases src passed, 3 files",
+  "ruff": "src tests passed",
+  "black": "src passed",
+  "timestamp_semantics": "UTC values retained; source bar-start convention unconfirmed"
+}

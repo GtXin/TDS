@@ -1,0 +1,49 @@
+{
+  "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
+  "version": "1.1.0",
+  "upstream_files_verified": [
+    {
+      "path": "SKILL.md",
+      "git_blob_sha": "c1910a2a4732243a09ccc6b290d794a41cb4ee6b",
+      "sha256": "b94b59450d7372ac0cf47c7313a189796a5a7b0470552b2fe9e9581ec6c3de04",
+      "bytes": 6270
+    },
+    {
+      "path": "references/async-patterns.md",
+      "git_blob_sha": "3b155cb062b57d1e1ddd00c0e9f8054c28451cdf",
+      "sha256": "b7986eb185a4858de3edcb27f537a38d351d3017fdbcac3ba2d905d30ba1cb64",
+      "bytes": 9333
+    },
+    {
+      "path": "references/packaging.md",
+      "git_blob_sha": "aa1d0f61622806e73e60ec758506e3767f1ec4d1",
+      "sha256": "483d0a257907d2e17ce1cf2e3e7b8b2af88f9eb17fa3a9c4bcc04aa60e930ae3",
+      "bytes": 9652
+    },
+    {
+      "path": "references/standard-library.md",
+      "git_blob_sha": "f70edddcb49940f03e2b27fc13ae921f950184f3",
+      "sha256": "d2997c8f9a491561947c95a182e09b2d584d828d26cb04eb42a194fa4393c6ce",
+      "bytes": 9063
+    },
+    {
+      "path": "references/testing.md",
+      "git_blob_sha": "7a8798e8e63636b9c82a0a4d287954bcf223ac0d",
+      "sha256": "81c8bc148eaf7d32e51171c997016c7deda140b71d6253b15b63b10f038f3c28",
+      "bytes": 9920
+    },
+    {
+      "path": "references/type-system.md",
+      "git_blob_sha": "8ef495bf6b9b8abbb3da0c8e68f255a3d93f61f8",
+      "sha256": "62c4474c4ed29a18fd64002a356cba0239785f68c8530109c74c5bb3162b021b",
+      "bytes": 6638
+    }
+  ],
+  "license": {
+    "source_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/078a25cc5bfd8011459be7b91d004e900c1d02d3/LICENSE",
+    "sha256": "06dcddbb6908a0c6dd4a9e8ec822eea41d5a460a53089fecccc8a68049e99241"
+  },
+  "skill_path": "/Users/coder/Public/EngineGit/TDS/mas/skills/python-pro",
+  "discovery_path": "/Users/coder/Public/EngineGit/TDS/.agents/skills/python-pro/SKILL.md",
+  "shared_symlink_matches": true
+}

@@ -1,0 +1,19 @@
+{
+  "variant": "baseline",
+  "checked_at": "2026-11-08T21:23:50.370622+00:00",
+  "command": [
+    "/Users/coder/Public/EngineGit/TDS/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_kline_family.py",
+    "tests/test_kline_csv.py",
+    "-q"
+  ],
+  "PYTHONPATH": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/kline-family/baseline:/Users/coder/Public/EngineGit/TDS/src",
+  "modules": [
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/kline-family/baseline/chanlab/algo/kline.py",
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/kline-family/baseline/chanlab/data/kline_csv.py"
+  ],
+  "returncode": 1,
+  "output": "...................................................FFF.................. [ 63%]\n.........................................F                               [100%]\n=================================== FAILURES ===================================\n___________ test_values_outside_float_contract_are_rejected[value0] ____________\n\nvalue = Decimal('1E+1000')\n\n    @pytest.mark.parametrize(\"value\", [Decimal(\"1e1000\"), Fraction(1, 3)])\n    def test_values_outside_float_contract_are_rejected(value):\n        # Raw exports must reload through the declared float CSV representation.\n>       with pytest.raises(ValueError, match=\"volume\"):\nE       Failed: DID NOT RAISE ValueError\n\ntests/test_kline_family.py:69: Failed\n___________ test_values_outside_float_contract_are_rejected[value1] ____________\n\nvalue = Fraction(1, 3)\n\n    @pytest.mark.parametrize(\"value\", [Decimal(\"1e1000\"), Fraction(1, 3)])\n    def test_values_outside_float_contract_are_rejected(value):\n        # Raw exports must reload through the declared float CSV representation.\n>       with pytest.raises(ValueError, match=\"volume\"):\nE       Failed: DID NOT RAISE ValueError\n\ntests/test_kline_family.py:69: Failed\n__________ test_integer_values_must_be_exactly_representable_as_float __________\n\n    def test_integer_values_must_be_exactly_representable_as_float():\n        value = 2**53 + 1\n>       with pytest.raises(ValueError, match=\"open\"):\nE       Failed: DID NOT RAISE ValueError\n\ntests/test_kline_family.py:75: Failed\n_________ test_hardlinked_output_paths_are_rejected_before_overwriting _________\n\ntmp_path = PosixPath('/private/var/folders/0k/mkw91c_d4yv06_102zw_52v40000gp/T/pytest-of-coder/pytest-26/test_hardlinked_output_paths_a0')\n\n    def test_hardlinked_output_paths_are_rejected_before_overwriting(tmp_path):\n        path = tmp_path / \"raw.csv\"\n        sidecar = tmp_path / \"context.csv\"\n        save_rows(path, raw_rows())\n        sidecar.hardlink_to(path)\n        before = path.read_bytes()\n        series, _ = read_kline_csv(path)\n>       with pytest.raises(ValueError, match=\"context_path\"):\nE       Failed: DID NOT RAISE ValueError\n\ntests/test_kline_csv.py:301: Failed\n=========================== short test summary info ============================\nFAILED tests/test_kline_family.py::test_values_outside_float_contract_are_rejected[value0]\nFAILED tests/test_kline_family.py::test_values_outside_float_contract_are_rejected[value1]\nFAILED tests/test_kline_family.py::test_integer_values_must_be_exactly_representable_as_float\nFAILED tests/test_kline_csv.py::test_hardlinked_output_paths_are_rejected_before_overwriting\n4 failed, 110 passed in 0.28s\n"
+}

@@ -1,0 +1,13 @@
+{
+  "rows": 10060,
+  "context_keys": 9,
+  "raw_export": "artifacts/mas/kline-family/roundtrip/dce-KQ.m-at-m_15m_20241028_20260819_kline_v20261108.csv",
+  "context_export": "artifacts/mas/kline-family/roundtrip/dce-KQ.m-at-m_15m_20241028_20260819_context_v20261108.csv",
+  "raw_export_sha256": "964e13580e7811a5ad8849915e659b5fd39dfe48a2fbbfa1e4d2393d79a05cd4",
+  "context_export_sha256": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15",
+  "values_and_utc_instants_equal": true,
+  "context_equal": true,
+  "baseline_frozen_unchanged": true,
+  "upstream_data_config_hashes_unchanged": true,
+  "selected_source_equals_snapshot": true
+}

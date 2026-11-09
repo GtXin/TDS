@@ -1,0 +1,7 @@
+{
+  "pyproject.toml": "49f49b05bca357e4f804c6b22754c93ebf14e71bc29adaf43a0c2f5dba035527",
+  "uv.lock": "987df5b1222e27ab1e3d30e61dd6c3f0aa652fa1150419970ea586dc1632775f",
+  ".python-version": "49a506dd32096b010d75205acf3430c9ae6c40351888129499e5a5e487126c93",
+  ".codex/config.toml": "0d4cde6e4a8e4d44392f8d7f5dc2c456e7637afe3e61296a355447b1487550d7",
+  "skill_symlink": "../mas/skills"
+}

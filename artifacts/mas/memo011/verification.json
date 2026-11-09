@@ -1,0 +1,20 @@
+{
+  "scope": "ChanTable master table only",
+  "tests": 51,
+  "coverage_statement_percent": 100,
+  "dataset_rows": 10060,
+  "versions": [
+    "active",
+    "baseline",
+    "python_pro"
+  ],
+  "comparison": "iterative, skill previously read",
+  "bar_start_semantics": "unconfirmed",
+  "checks": {
+    "pytest": "51 passed",
+    "mypy_strict": "active+adapter, baseline and python_pro passed",
+    "black": "5 files check passed",
+    "ruff": "all scoped files passed",
+    "coverage": "71 statements,0 missed,100%"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "src/chanlab/algo/chan_table.py": "9b148028614bca7064fe5ad0cdfc7ad574785b3c6ab751d5391f886521e457a3",
+  "src/chanlab/data/chan_table_csv.py": "a0d3fd2ef1b021716e5be11a6cf011c97dee7e31463fea9c0ef3c5bd37cd824f",
+  "tests/test_chan_table.py": "ec90aca455f997806d6f0a15b9f6d2367f5013e6fb46d6f67bd000b32c0790da",
+  "pyproject.toml": "49f49b05bca357e4f804c6b22754c93ebf14e71bc29adaf43a0c2f5dba035527",
+  "uv.lock": "987df5b1222e27ab1e3d30e61dd6c3f0aa652fa1150419970ea586dc1632775f",
+  "samples/chan_table/README.md": "40d25863b2de3feb46b423d1a31a7a4becf6203bc251999e3127edfeae8dd261",
+  "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_context_v20261108.csv": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15",
+  "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_chan_table_v20261108.csv": "1c4039411b0472c27fd4af42fcd320ccd0579d9f5c5f54d9d013893f665c85c5"
+}

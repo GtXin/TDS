@@ -1,0 +1,32 @@
+{
+  "thread_id": "01a1bcba-4e32-7e12-9797-9f8929b609db",
+  "turn_status": "completed",
+  "task011_status": "done",
+  "independent_pytest": "51 passed",
+  "ruff": "passed src tests",
+  "rows": 10060,
+  "columns": 41,
+  "source_copy_sha256": "fc2e6a5c711b6a81cd78583896087e0d5b2d07097f55135cdb480b786a124e2d",
+  "original_and_copy_equal": true,
+  "raw_fields_and_timestamps_exact": true,
+  "all_features_NA": true,
+  "skill_snapshot_matches_source": true,
+  "limitations": [
+    "bar-start semantics unconfirmed; raw UTC labels retained without shifting",
+    "CSV view does not reconstruct authoritative features",
+    "comparison not blind; documented011 skill-reading protocol deviation"
+  ],
+  "gate": "Master-only011 acceptance PASSES;013 domain input NOT READY because source bar-start convention remains unconfirmed and sample README requires confirmation before domain import",
+  "memo013_status": "pending: bar-start evidence condition still unresolved",
+  "review_correction": "Initial explicit-check gate was too narrow; independent readiness review found the recorded before-domain-import condition. Unexecuted scratch baseline copies/adapter removed; src/tests/data unchanged.",
+  "local_source_evidence": [
+    "/Users/coder/Public/EngineGit/proj009/records/cc/kline-to-zoushi-001/README.md",
+    "/Users/coder/Public/EngineGit/proj009/records/cc/kline-to-zoushi-001/dce-kqm-m-15m-manifest.json",
+    "/Users/coder/Public/EngineGit/proj009/src/tradinglab/data_io/csv_file_kline_t_series.py"
+  ],
+  "verified_at": "2026-11-08T13:05:21-08:00",
+  "upstream_turn_id": "01a1bcf5-2a16-7903-a2e5-6018228b84d2",
+  "scope": "ChanTable master table only; previous Kline/features archived",
+  "skill_snapshot_path": "artifacts/mas/memo011/python_pro/chan_table.py",
+  "previous_verification": "upstream-verification-prior-turn.json (superseded scope/31+xfailed)"
+}

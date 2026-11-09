@@ -1,0 +1,10 @@
+{
+  "source_path": "/Users/coder/Public/EngineGit/proj009/records/cc/kline-to-zoushi-001/dce-kqm-m-15m.csv",
+  "source_revision": "0c5f5125983c09b43394a6e9b2a48152866bb05c",
+  "sha256": "fc2e6a5c711b6a81cd78583896087e0d5b2d07097f55135cdb480b786a124e2d",
+  "copied_date": "2026-11-08",
+  "row_count": 10060,
+  "timestamp": "datetime_utc retained; epoch and Asia/Shanghai columns preserved in original snapshot",
+  "symbol": "dce:KQ.m@m",
+  "period": "15m"
+}

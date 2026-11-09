@@ -1,0 +1,94 @@
+import importlib.util
+import sys
+from pathlib import Path
+
+import pytest
+
+
+@pytest.fixture(
+    params=[
+        "src/chanlab/algo/chan_table.py",
+        "artifacts/mas/memo011/baseline/chan_table.py",
+    ]
+)
+def mod(request):
+    spec = importlib.util.spec_from_file_location("subject", request.param)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules["subject"] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+def test_full_roundtrip(mod, tmp_path):
+    folder = Path("samples/chan_table")
+    table = mod.ChanTable.read_csv(
+        next(folder.glob("*chan_table*.csv")), next(folder.glob("*context*.csv"))
+    )
+    assert len(table.source_series) == 10060
+    table.write_csv(tmp_path / "rows.csv", tmp_path / "context.csv")
+    again = mod.ChanTable.read_csv(tmp_path / "rows.csv", tmp_path / "context.csv")
+    assert table.rows == again.rows
+    assert table.context == again.context
+
+
+@pytest.mark.parametrize(
+    "field,value",
+    [
+        ("raw_index", "9"),
+        ("volume", "-1"),
+        ("high", "0"),
+        ("timestamp", "2026-01-01T00:00:00"),
+        ("mk_ids", "[true]"),
+        ("mk_ids", "[1,1]"),
+        ("mk_ids", "{}"),
+    ],
+)
+def test_invalid(mod, field, value):
+    import csv
+
+    row = next(
+        csv.DictReader(next(Path("samples/chan_table").glob("*chan_table*.csv")).open())
+    )
+    row[field] = value
+    with pytest.raises((ValueError, TypeError)):
+        mod.ChanTable([row])
+
+
+def test_empty_vs_missing(mod):
+    import csv
+
+    row = next(
+        csv.DictReader(next(Path("samples/chan_table").glob("*chan_table*.csv")).open())
+    )
+    row["mk_ids"] = "[]"
+    table = mod.ChanTable([row])
+    assert table.memberships["mk_ids"] == ((),)
+    assert table.memberships["bi_ids"] == (None,)
+
+
+def test_authoritative_merged_mapping(mod):
+    if not hasattr(mod, "MergedKline"):
+        pytest.xfail("preserved baseline lacks authoritative feature records")
+    table = mod.ChanTable.read_csv(
+        next(Path("samples/chan_table").glob("*chan_table*.csv"))
+    )
+    item = mod.MergedKline(12, 1.0, 2.0, "up", 0, 2, "candidate")
+    series = mod.MergedKlineSeries(
+        table.source_series, (item,), "manual-example-v1", ((),)
+    )
+    result = mod.register_merged(table, "merged", series)
+    assert result.feature_series["merged"] is series
+    assert result.source_series is table.source_series
+    assert result.memberships["mk_ids"][:3] == ((12,), (12,), ())
+    assert result.start_ids["mk_start_ids"][:2] == ((12,), ())
+    assert result.end_ids["mk_end_ids"][:2] == ((), (12,))
+    assert result.rows[0]["mk_direction"] == "up"
+    assert result.rows[1]["mk_direction"] == "NA"
+    assert table.rows[0]["mk_ids"] == "NA"
+    assert series.get_by_id(12) is item
+    with pytest.raises(ValueError):
+        mod.register_merged(result, "again", series)
+    with pytest.raises(ValueError):
+        mod.MergedKlineSeries(table.source_series, (item, item), "v1", ((), ()))
+    with pytest.raises(ValueError):
+        mod.MergedKlineSeries(table.source_series, (item,), "v1", ((0,),))

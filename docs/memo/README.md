@@ -13,6 +13,11 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | WX 007 | [Codex memory](memoWX_007_codexMemory.md) |
 | WX 008 | [Chan Large Picture](memoWX_008_ChanLargePicture.md) |
 | WX 009 | [Design pattern for Chan features](memoWX_009_designPatternForChanFeatures.md) |
+| WX 010 | [Python setup](memoWX_010_pythonSetup.md) |
+| WX 011 | [ChanTable implementation](memoWX_011_chanTableImplementation.md) |
+| WX 012 | [Skill_python_pro](memoWX_012_Skill_python_pro.md) |
+| WX 013 | [Kline family implementation](memoWX_013_klineFamily.md) |
+| WX 014 | [ChanAxiomSyntax](memoWX_014_ChanAxiomSyntax.md) |
 | KWX 001 | [cc project folder structure](memoKWX_001_文件夹结构.md) |
 
 For new or revised memos, follow [the writing guide](memoWX_006_memoWritingGuide.md).

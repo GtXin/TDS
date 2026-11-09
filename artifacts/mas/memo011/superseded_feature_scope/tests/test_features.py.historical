@@ -1,0 +1,254 @@
+"""Supplied feature validation without inventing detection rules."""
+
+from datetime import UTC, datetime
+
+import pytest
+
+from chanlab.algo.chan_table import Kline, KlineTSeries, MergedKline, MergedKlineSeries
+from chanlab.algo.features import Bi, BiSeries, Fenxing, FenxingSeries
+
+
+def source():
+    raw = KlineTSeries(
+        tuple(
+            Kline(
+                "X", "1m", "test", datetime(2026, 1, 1, 0, i, tzinfo=UTC), 2, 3, 1, 2, 0
+            )
+            for i in range(3)
+        )
+    )
+    return MergedKlineSeries(
+        raw,
+        tuple(MergedKline(i, 1, 3, "up", i, i + 1, "forming") for i in range(3)),
+        "rules",
+        ((), (), ()),
+    )
+
+
+def test_snapshot_trace_and_endpoints():
+    merged = source()
+    first = Fenxing(9, "bottom", 1, 0, 0, 2, "forming")
+    last = Fenxing(12, "top", 3, 2, 1, 3, "forming")
+    fx = FenxingSeries(merged, (first, last), "rules", ((0,), ()), ("evidence",))
+    assert fx.source_series is merged
+    assert fx.explain(0) == ("evidence",)
+    assert fx[:] == (first, last)
+    bi = BiSeries(fx, (Bi(4, 0, 1, 1, 3, "up", "forming"),), "rules", ((),))
+    assert bi.get_by_id(4).end_price == 3
+    with pytest.raises(ValueError, match="price mismatch"):
+        BiSeries(fx, (Bi(4, 0, 1, 2, 3, "up", "forming"),), "rules", ((),))
+
+
+def test_invalid_anchor_and_trace():
+    merged = source()
+    item = Fenxing(1, "top", 3, 2, 0, 1, "forming")
+    with pytest.raises(ValueError, match="outside"):
+        FenxingSeries(merged, (item,), "rules", ((),))
+    with pytest.raises(ValueError, match="trace"):
+        FenxingSeries(merged, (), "rules", ((),))
+    with pytest.raises(ValueError):
+        Fenxing(True, "top", float("nan"), 0, 0, 1, "forming")
+
+
+def test_fractal_and_stroke_mapping():
+    from chanlab.algo.chan_table import COLUMNS, ChanTable
+    from chanlab.algo.features import register_features
+
+    merged = source()
+    rows = []
+    for i, bar in enumerate(merged.source_series):
+        row = dict.fromkeys(COLUMNS, "NA")
+        row.update(
+            raw_index=str(i),
+            timestamp=bar.timestamp.isoformat(),
+            symbol=bar.symbol,
+            period=bar.period,
+            source=bar.source,
+        )
+        row.update(
+            {
+                name: str(getattr(bar, name))
+                for name in ("open", "high", "low", "close", "volume")
+            }
+        )
+        rows.append(row)
+    table = ChanTable(rows)
+    # Attach features to the exact snapshot retained by the table.
+    merged = MergedKlineSeries(
+        table.source_series, merged.klines, "rules", ((), (), ())
+    )
+    fx = FenxingSeries(
+        merged,
+        (
+            Fenxing(7, "bottom", 1, 0, 0, 2, "forming"),
+            Fenxing(8, "top", 3, 2, 1, 3, "forming"),
+        ),
+        "rules",
+        ((), ()),
+    )
+    view = register_features(table, "fractals", fx)
+    assert view.rows[0]["fx_kind"] == "bottom"
+    assert view.rows[1]["fx_ids"] == "[7, 8]"
+    assert view.rows[2]["fx_anchor_ids"] == "[8]"
+    bi = BiSeries(fx, (Bi(4, 0, 1, 1, 3, "up", "forming"),), "rules", ((),))
+    view = register_features(view, "strokes", bi)
+    assert view.rows[1]["bi_ids"] == "[4]"
+    assert view.rows[2]["bi_end_ids"] == "[4]"
+    assert view.feature_series["fractals"] is fx
+    assert table.rows[0]["fx_ids"] == "NA"
+    with pytest.raises(ValueError, match="snapshot"):
+        register_features(ChanTable(rows), "fractals", fx)
+
+
+def test_event_mapping():
+    from chanlab.algo.chan_table import COLUMNS, ChanTable
+    from chanlab.algo.features import (
+        BuySellPoint,
+        BuySellPointSeries,
+        ZhongshuSeries,
+        Zoushi,
+        ZoushiSeries,
+        register_features,
+    )
+
+    raw = source().source_series
+    rows = []
+    for i, bar in enumerate(raw):
+        row = dict.fromkeys(COLUMNS, "NA")
+        row.update(
+            raw_index=str(i),
+            timestamp=bar.timestamp.isoformat(),
+            symbol=bar.symbol,
+            period=bar.period,
+            source=bar.source,
+        )
+        row.update(
+            {
+                k: str(getattr(bar, k))
+                for k in ("open", "high", "low", "close", "volume")
+            }
+        )
+        rows.append(row)
+    table = ChanTable(rows)
+    centers = ZhongshuSeries(table.source_series, (), "rules", (), level="L")
+    movements = ZoushiSeries(
+        table.source_series,
+        (Zoushi(2, "L", "up", 0, 3, (), 0, 2, 1, 3, "forming"),),
+        "rules",
+        ((),),
+        level="L",
+        zhongshu_series=centers,
+    )
+    points = BuySellPointSeries(
+        movements,
+        (BuySellPoint(5, "L", "buy", 2, 2, 1, 0, None, None, "forming"),),
+        "rules",
+        ((),),
+        level="L",
+    )
+    view = register_features(table, "points", points)
+    assert view.rows[0]["bsp_ids"] == "[]"
+    assert view.rows[1]["bsp_ids"] == "[5]"
+    assert view.rows[1]["bsp_category"] == "2"
+    assert view.rows[2]["bsp_side"] == "NA"
+
+
+def test_center_movement_and_divergence_relationships():
+    from dataclasses import replace
+
+    from chanlab.algo.features import (
+        Beichi,
+        BeichiSeries,
+        BuySellPoint,
+        BuySellPointSeries,
+        Zhongshu,
+        ZhongshuSeries,
+        Zoushi,
+        ZoushiSeries,
+    )
+
+    raw = source().source_series
+    center = Zhongshu(4, "L", 1, 3, (0, 1), 0, 2, "confirmed")
+    centers = ZhongshuSeries(raw, (center,), "rules", ((),), level="L")
+    movements = ZoushiSeries(
+        raw,
+        (
+            Zoushi(2, "L", "up", 0, 2, (0,), 0, 1, 1, 3, "confirmed"),
+            Zoushi(3, "L", "down", 1, 3, (0,), 1, 2, 3, 1, "confirmed"),
+        ),
+        "rules",
+        ((), ()),
+        level="L",
+        zhongshu_series=centers,
+    )
+    divergence = Beichi(8, "L", "rule-label", 0, 0, 1, 1, "forming")
+    divergences = BeichiSeries(
+        movements,
+        (divergence,),
+        "rules",
+        ((),),
+        level="L",
+        zhongshu_id=4,
+        comparison_series=movements,
+    )
+    assert divergences.get_by_id(8) is divergence
+    with pytest.raises(ValueError):
+        replace(divergences, items=(replace(divergence, exit_index=4),))
+    with pytest.raises((ValueError, KeyError)):
+        replace(divergences, zhongshu_id=99)
+    with pytest.raises(ValueError):
+        replace(movements, level="other")
+    with pytest.raises(ValueError):
+        replace(centers, items=(replace(center, member_indices=(9,)),))
+    point = BuySellPoint(9, "L", "sell", 1, 2, 1, 0, 0, 0, "forming")
+    points = BuySellPointSeries(
+        movements, (point,), "rules", ((),), level="L", beichi_series=divergences
+    )
+    assert points[0].center_index == 0
+    with pytest.raises(ValueError):
+        replace(points, beichi_series=None)
+    with pytest.raises(ValueError):
+        replace(points, items=(replace(point, center_index=3),))
+
+
+@pytest.mark.parametrize(
+    "changes",
+    [
+        {"kind": "middle"},
+        {"price": float("inf")},
+        {"source_stop": 0},
+        {"status": ""},
+        {"anchor_raw_index": -1},
+        {"id": True},
+    ],
+)
+def test_local_invalid_fractal(changes):
+    from dataclasses import replace
+
+    with pytest.raises(ValueError):
+        replace(Fenxing(1, "top", 3, 1, 0, 3, "forming"), **changes)
+
+
+def test_series_rejects_invalid_references():
+    from dataclasses import replace
+
+    merged = source()
+    fx = FenxingSeries(
+        merged,
+        (
+            Fenxing(1, "bottom", 1, 0, 0, 2, "forming"),
+            Fenxing(2, "top", 3, 2, 1, 3, "forming"),
+        ),
+        "rules",
+        ((), ()),
+    )
+    with pytest.raises(ValueError):
+        replace(fx, items=(fx[0], fx[0]))
+    with pytest.raises(ValueError):
+        replace(fx, items=tuple(reversed(fx.items)))
+    with pytest.raises(ValueError):
+        replace(fx, trace_by_point=((0,), ()))
+    with pytest.raises(KeyError):
+        fx.get_by_id(999)
+    with pytest.raises(ValueError):
+        BiSeries(fx, (Bi(3, 0, 9, 1, 3, "up", "forming"),), "rules", ((),))

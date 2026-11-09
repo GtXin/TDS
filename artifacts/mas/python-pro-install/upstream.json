@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/Jeffallan/claude-skills",
+  "requested_ref": "main",
+  "commit": "078a25cc5bfd8011459be7b91d004e900c1d02d3",
+  "skill_path": "skills/python-pro",
+  "source_url": "https://raw.githubusercontent.com/Jeffallan/claude-skills/078a25cc5bfd8011459be7b91d004e900c1d02d3/skills/python-pro/SKILL.md",
+  "resolved_at": "2026-11-08T20:25:23.214713+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "variant": "baseline",
+  "checked_at": "2026-11-08T21:17:52.681543+00:00",
+  "command": [
+    "/Users/coder/Public/EngineGit/TDS/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_kline_family.py",
+    "tests/test_kline_csv.py",
+    "-q"
+  ],
+  "PYTHONPATH": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/kline-family/baseline:/Users/coder/Public/EngineGit/TDS/src",
+  "modules": [
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/kline-family/baseline/chanlab/algo/kline.py",
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/kline-family/baseline/chanlab/data/kline_csv.py"
+  ],
+  "returncode": 1,
+  "output": "........................................................................ [ 66%]\n.............................F.......                                    [100%]\n=================================== FAILURES ===================================\n_____________ test_rejects_rows_with_wrong_number_of_fields[False] _____________\n\ntmp_path = PosixPath('/private/var/folders/0k/mkw91c_d4yv06_102zw_52v40000gp/T/pytest-of-coder/pytest-17/test_rejects_rows_with_wrong_n0')\nextra = False\n\n    @pytest.mark.parametrize(\"extra\", [False, True])\n    def test_rejects_rows_with_wrong_number_of_fields(tmp_path, extra):\n        path = tmp_path / \"bad.csv\"\n        rows = raw_rows()\n        second = [rows[1][field] for field in EXPECTED_COLUMNS]\n        second = second + [\"extra\"] if extra else second[:-1]\n        with path.open(\"w\", newline=\"\", encoding=\"utf-8\") as stream:\n            writer = csv.writer(stream)\n            writer.writerow(EXPECTED_COLUMNS)\n            writer.writerow([rows[0][field] for field in EXPECTED_COLUMNS])\n            writer.writerow(second)\n        with pytest.raises(ValueError) as caught:\n            read_kline_csv(path)\n        assert \"3\" in str(caught.value)\n        if not extra:\n>           assert \"volume\" in str(caught.value).lower()\nE           AssertionError: assert 'volume' in '/private/var/folders/0k/mkw91c_d4yv06_102zw_52v40000gp/t/pytest-of-coder/pytest-17/test_rejects_rows_with_wrong_n0/bad.csv: row 3, field row: expected 9 fields, got 8'\nE            +  where '/private/var/folders/0k/mkw91c_d4yv06_102zw_52v40000gp/t/pytest-of-coder/pytest-17/test_rejects_rows_with_wrong_n0/bad.csv: row 3, field row: expected 9 fields, got 8' = <built-in method lower of str object at 0x10b6e2db0>()\nE            +    where <built-in method lower of str object at 0x10b6e2db0> = '/private/var/folders/0k/mkw91c_d4yv06_102zw_52v40000gp/T/pytest-of-coder/pytest-17/test_rejects_rows_with_wrong_n0/bad.csv: row 3, field row: expected 9 fields, got 8'.lower\nE            +      where '/private/var/folders/0k/mkw91c_d4yv06_102zw_52v40000gp/T/pytest-of-coder/pytest-17/test_rejects_rows_with_wrong_n0/bad.csv: row 3, field row: expected 9 fields, got 8' = str(ValueError('/private/var/folders/0k/mkw91c_d4yv06_102zw_52v40000gp/T/pytest-of-coder/pytest-17/test_rejects_rows_with_wrong_n0/bad.csv: row 3, field row: expected 9 fields, got 8'))\nE            +        where ValueError('/private/var/folders/0k/mkw91c_d4yv06_102zw_52v40000gp/T/pytest-of-coder/pytest-17/test_rejects_rows_with_wrong_n0/bad.csv: row 3, field row: expected 9 fields, got 8') = <ExceptionInfo ValueError('/private/var/folders/0k/mkw91c_d4yv06_102zw_52v40000gp/T/pytest-of-coder/pytest-17/test_rejects_rows_with_wrong_n0/bad.csv: row 3, field row: expected 9 fields, got 8') tblen=2>.value\n\ntests/test_kline_csv.py:196: AssertionError\n=========================== short test summary info ============================\nFAILED tests/test_kline_csv.py::test_rejects_rows_with_wrong_number_of_fields[False]\n1 failed, 108 passed in 0.22s\n"
+}

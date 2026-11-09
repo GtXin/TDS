@@ -1,0 +1,19 @@
+{
+  "variant": "python_pro",
+  "checked_at": "2026-11-08T21:23:50.334825+00:00",
+  "command": [
+    "/Users/coder/Public/EngineGit/TDS/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_kline_family.py",
+    "tests/test_kline_csv.py",
+    "-q"
+  ],
+  "PYTHONPATH": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/kline-family/python_pro:/Users/coder/Public/EngineGit/TDS/src",
+  "modules": [
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/kline-family/python_pro/chanlab/algo/kline.py",
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/kline-family/python_pro/chanlab/data/kline_csv.py"
+  ],
+  "returncode": 0,
+  "output": "........................................................................ [ 63%]\n..........................................                               [100%]\n114 passed in 0.24s\n"
+}

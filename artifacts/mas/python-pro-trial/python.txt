@@ -1,0 +1,2 @@
+3.11.16 (main, Aug 25 2026, 13:50:51) [Clang 22.1.3 ]
+/Users/coder/Public/EngineGit/TDS/.venv/bin/python3

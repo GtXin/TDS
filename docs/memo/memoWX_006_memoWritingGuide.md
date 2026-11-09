@@ -24,10 +24,14 @@ For a folder memo, use 000 for background, 001 for the annotated tree and summar
 
 ## 003 — Writing style
 
-Write only essential conclusions, decisions, and necessary references; keep conversational discussion in chat/terminal.
-Keep memos compact: no extra blank lines; use only the spacing needed for correct Markdown rendering. Use plain language and explain unfamiliar terms before relying on them. Introduce the concrete object, explain its purpose, and give an example when that makes the idea clearer. Keep paragraphs focused and avoid repeating the same explanation in several sections.
+Write for a human reader: keep the memo essential, but include enough detail to understand the topic and use the instructions without guessing.
 
-Match the user's requested language and level of detail. Use prose for explanations, lists for parallel items or steps, and tables for comparisons. Keep source code, concepts, experiments, and documentation clearly distinguished when explaining project structure.
+- Present procedures and key points one item at a time. Use numbered steps for actions in order, short bullets for related points, brief prose for explanations and tables for comparisons.
+- Keep one main idea or action per item. State it directly, then give the necessary reason, condition or example. Explain unfamiliar terms in plain language.
+- For procedures, say where to act (for example, terminal or Codex prompt), include required commands/paths and describe the expected result or how to check it.
+- Retain essential conclusions, decisions and references. Remove repeated explanations, conversational commentary and unnecessary process detail; keep discussion in chat/terminal and detailed execution history in task records or the event log.
+- Match the user's requested language and level of detail. Distinguish concepts, proposed work, implemented code and observed results.
+- Keep formatting compact, with only the blank lines needed for readable, correct Markdown. Shorter wording must not remove details needed to follow the memo.
 
 ## 004 — Evidence and decisions
 

@@ -1,0 +1,44 @@
+RUF007 Prefer `itertools.pairwise()` over `zip()` when iterating over successive pairs
+  --> artifacts/mas/python-pro-trial/price_models.py:73:38
+   |
+71 |         if any(
+72 |             current.timestamp <= previous.timestamp
+73 |             for previous, current in zip(snapshot, snapshot[1:])
+   |                                      ^^^
+74 |         ):
+75 |             raise ValueError("bar timestamps must be strictly increasing")
+   |
+help: Replace `zip()` with `itertools.pairwise()`
+   |
+6  | from math import isfinite
+7  + import itertools
+8  |
+--------------------------------------------------------------------------------
+73 |             current.timestamp <= previous.timestamp
+   -             for previous, current in zip(snapshot, snapshot[1:])
+74 +             for previous, current in itertools.pairwise(snapshot)
+75 |         ):
+   |
+note: This is an unsafe fix and may change runtime behavior
+
+I001 [*] Import block is un-sorted or un-formatted
+ --> artifacts/mas/python-pro-trial/test_price_models.py:3:1
+  |
+1 |   """Behavior checks for the isolated Python Pro OOP trial."""
+2 |
+3 | / from dataclasses import FrozenInstanceError, replace
+4 | | from datetime import UTC, datetime, timedelta, timezone
+5 | |
+6 | | import pytest
+7 | |
+8 | | from price_models import PriceBar, PriceSeries
+  | |______________________________________________^
+help: Organize imports
+  |
+6 | import pytest
+  -
+7 | from price_models import PriceBar, PriceSeries
+  |
+
+Found 2 errors.
+[*] 1 fixable with `--fix` (1 unsafe fix available with `--fix --unsafe-fixes`).

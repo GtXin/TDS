@@ -1,0 +1,115 @@
+{
+  "python_version": "3.11.16 (main, Aug 25 2026, 13:50:51) [Clang 22.1.3 ]",
+  "executable": "/Users/coder/Public/EngineGit/TDS/.venv/bin/python",
+  "prefix": "/Users/coder/Public/EngineGit/TDS/.venv",
+  "checks": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "python",
+        "-c",
+        "import sys; print(sys.executable); print(sys.version)"
+      ],
+      "exit_code": 0,
+      "stdout": "/Users/coder/Public/EngineGit/TDS/.venv/bin/python3\n3.11.16 (main, Aug 25 2026, 13:50:51) [Clang 22.1.3 ]",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "pytest",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "pytest 9.2.0",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "ruff",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "ruff 0.17.4",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Checked 6 packages in 1ms\nAll installed packages are compatible"
+    },
+    {
+      "command": [
+        "uv",
+        "lock",
+        "--check",
+        "--offline"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Resolved 8 packages in 2ms"
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--locked",
+        "--group",
+        "dev",
+        "--offline"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Resolved 8 packages in 1ms\nChecked 6 packages in 0.12ms"
+    },
+    {
+      "command": [
+        "git",
+        "check-ignore",
+        "--verbose",
+        ".venv"
+      ],
+      "exit_code": 0,
+      "stdout": ".gitignore:4:.venv/\t.venv",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "ls-files",
+        "--",
+        ".venv"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "ruff",
+        "check",
+        "/private/tmp/tds-python-env-ruff-probe.py"
+      ],
+      "exit_code": 1,
+      "stdout": "F401 [*] `math` imported but unused\n --> /private/tmp/tds-python-env-ruff-probe.py:1:8\n  |\n1 | import math\n  |        ^^^^\nhelp: Remove unused import: `math`\n  |\n  - import math\n  |\n\nFound 1 error.\n[*] 1 fixable with `--fix`.",
+      "stderr": ""
+    }
+  ],
+  "ruff_report_only_probe_unchanged": true,
+  "project_test_files": 0
+}
