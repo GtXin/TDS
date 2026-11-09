@@ -1,0 +1,27 @@
+{
+  "reviewer": "recheck_s2_s3",
+  "scope": "Read-only semantic/source review of root024/025 second-pass A11–15/A9–11 andB4",
+  "normalized_source_blocks_independently_matched": 7,
+  "source_figure_copies_hash_matched": 6,
+  "figures_independently_viewed": [
+    "056/image001.jpg",
+    "056/image002.gif",
+    "056/image007.gif",
+    "101/image001.jpg",
+    "061/image001.jpg"
+  ],
+  "semantic_checks": [
+    "10134 lower second-buy is explicitly allowed; general rising1/2/3 is not universal",
+    "043 distinguishes same-level vs smaller-level divergence;044 necessary condition not reversed to sufficiency",
+    "06174 second/third SELL overlap refers to center69–72, compiler buy labels not silently accepted",
+    "056001 MACD24/52/9 vs00212/26/9;00715-minute background are explicitly distinguished",
+    "ws_signal exact151–164 sendshello/pong only; Vue/composable transmit/store/display but no detector",
+    "104 author primarypage independently opened: title/date and methodological scope agree with short-source note; no executable divergence formula claimed"
+  ],
+  "primary104_url": "https://blog.sina.com.cn/s/blog_486e105c01008rxy.html",
+  "main_prefixes_match_task_start": true,
+  "links_citations": "passed",
+  "blocking_issues": [],
+  "changes_to_reviewed_memos": false,
+  "cc_execution": false
+}

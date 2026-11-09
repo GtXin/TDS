@@ -1,0 +1,68 @@
+[
+  {
+    "memo": "docs/memo/memoWX_019_Chan_fenxing.md",
+    "backup": "docs/memo/backups/memoWX_019_Chan_fenxing__20261109_043431_699329.md",
+    "before_sha256": "eb7bee5a56a862e2eb3a3896c0864de2acd9986077a9be51f5d69256d63d9e19",
+    "main_sha256": "75045ae602e27003bdfafb78038d5241f597d171035100a950d958662abf4228",
+    "detail": {
+      "new_quote": {
+        "lesson": "069",
+        "start": 25,
+        "stop": 37,
+        "source_block_sha256": "b0a6a56910704cf05e443da7e081b7feaa37a4184310a852d201c34f8c0112fa",
+        "normalization": "Remove span styling and rewrite copied figure links only",
+        "figures": [
+          {
+            "source": "references/chan_theory/069/image001.jpg",
+            "copy": "docs/memo/memoWX_019_Chan_fenxing/lesson069-image001.jpg",
+            "sha256": "7bdd9b0107eb2768e7dfc2f69f3e141a96c6fc8b25ef9301fce406b05a1daed5",
+            "viewed": true
+          }
+        ]
+      },
+      "code_findings": [
+        "No tolerance/rounding in detector",
+        "Caller input validation distinct from helper",
+        "Raw candidate revision distinct from effective endpoint selection"
+      ]
+    }
+  },
+  {
+    "memo": "docs/memo/memoWX_020_Chan_bi.md",
+    "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261109_043431_701182.md",
+    "before_sha256": "5e576d254fae24e5b65045922e0696dbbd498ba7668ba2e570015dd2fc4f2ef5",
+    "main_sha256": "395ba900e2bf9a7906902d380f7b69218483f676e34154cc50f639f96ec5c524",
+    "detail": {
+      "new_quote": {
+        "lesson": "064",
+        "start": 27,
+        "stop": 37,
+        "source_block_sha256": "d5b25d4a0b38ac60a9cd1519fffb492459a7741cc2452c5fd4c414ab96ed3dc5",
+        "normalization": "Remove span styling and rewrite copied figure links only",
+        "figures": [
+          {
+            "source": "references/chan_theory/064/image001.jpg",
+            "copy": "docs/memo/memoWX_020_Chan_bi/lesson064-image001.jpg",
+            "sha256": "0803046659d90d68dcd89f52149b02811860972f9ad8bd43245fac59c24b4442",
+            "viewed": true
+          },
+          {
+            "source": "references/chan_theory/064/image021.jpg",
+            "copy": "docs/memo/memoWX_020_Chan_bi/lesson064-image021.jpg",
+            "sha256": "28cfdb9b1b7a771b88bcd6178190207bbdbc245fc159666bbd3a89395f7bdc42",
+            "viewed": true
+          }
+        ]
+      },
+      "code_findings": [
+        "Named profile normalization vs CUSTOM",
+        "Strong bypasses failed standard gates; no fixed lookahead horizon",
+        "Repair equality/peak/confirmation order",
+        "Rule kind not rewritten on extension/repair; dep vs source time envelope",
+        "trace_enabled not consumed in finish"
+      ],
+      "new_cases": 4,
+      "new_manual_charts": 2
+    }
+  }
+]

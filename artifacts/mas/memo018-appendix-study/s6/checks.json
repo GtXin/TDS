@@ -1,0 +1,28 @@
+{
+  "memo": "docs/memo/memoWX_023_Chan_zoushi.md",
+  "backup": "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_033355_329183.md",
+  "preserved_prefix_sha256": "e415cf47a16068677d95b8f376bcf1a28bf66950fdd86808295cb28899a0439b",
+  "quotes": 7,
+  "source_images": 2,
+  "manual_financial_chart": 1,
+  "checks": "backup identical, original main prefix identical; quote text generated directly from recorded source ranges after disclosed span/display normalization; manual arithmetic assertions passed; all images viewed; no CC execution",
+  "final_checks": [
+    "7 normalized continuous quote blocks exactly match cited source ranges",
+    "000–005 prefix identical to pre-edit backup",
+    "all local links exist",
+    "2 source images byte-identical with recorded hashes",
+    "source2 and chart viewed",
+    "manual assertions only; no CC import/execution",
+    "git diff --check passed"
+  ],
+  "review_correction": {
+    "backup": "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_033709_757520.md",
+    "before_sha256": "244d8725384887c1c8fd5337129d0d93afc51fa811ae7272eee1245bceea356e",
+    "changed_scope": "Only three B6/B7 sentence/table replacements; reverse replacements exactly restore prior bytes",
+    "corrections": [
+      "Frozen-old partition distinguished from overlapping provisional membership L0–L12 andL9–L12 at watermark12",
+      "Prefix-consistent OPEN/CLOSED and close-evidence coordinates stated for A(L5)/B(L9); future evidence not fed into past prefix"
+    ],
+    "checks": "prefix-state/evidence-position arithmetic and overlapping membership assertions passed;000–005,AppendixA,otherBsections andReferences unchanged; no CC execution"
+  }
+}

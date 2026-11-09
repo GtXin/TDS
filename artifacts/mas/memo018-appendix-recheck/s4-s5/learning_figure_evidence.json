@@ -1,0 +1,60 @@
+{
+  "memo": "docs/memo/memoWX_021_Chan_xianduan.md",
+  "backup": "docs/memo/backups/memoWX_021_Chan_xianduan__20261109_043608_054592.md",
+  "lesson": 71,
+  "start": 64,
+  "stop": 88,
+  "raw_sha256": "b32ece1922e595d549a7249af628db756a157a8896048ec3cf9f81ff365d036c",
+  "normalized": "1、线段的特征序列中元素的包含关系：\n\n![重读缠论第71课](memoWX_021_Chan_xianduan/lesson071-image003.jpg)\n\n2、前一特征序列的分型\n\n![重读缠论第71课](memoWX_021_Chan_xianduan/lesson071-image004.jpg)\n\n![重读缠论第71课](memoWX_021_Chan_xianduan/lesson071-image005.jpg)\n\n3、最后一种情况，就是最早破坏那笔就是转折点下来的第一笔，这种情况下，这一笔，如果后面延伸出成为线段的走势，那么这一笔就属于中间地带，既不能说是前面一段的特征序列，更不能说是后一段的特征序列，在这里情况下，即使出现似乎有特征序列的包含关系的走势，也不能算，因为，这一笔不是严格地属于前一段的特征序列，属于待定状态，一旦该笔延伸出三笔以上，那么新的线段就形成了，那时候谈论前一线段特征序列的包含关系就没意义了。\n\n![重读缠论第71课](memoWX_021_Chan_xianduan/lesson071-image006.jpg)\n\n4、第三笔完全在第一笔的范围内，这样，这三笔就分不出是向上还是向下，这样也就定义不了什么特征序列，为什么？因为特征序列是和走势相反的，而走势连方向都没有，那怎么知道哪个元素属于特征序列？这种情况，无非两种最后的结果：1、最终还是先破了第一笔的结束位置，这时候，新的线段显然成立，旧线段还是被破坏了；2、最终，先破第一笔的开始位置，这样，旧线段只被一笔破坏，接着就延续原来的方向，那么，显然旧线段依然延续，新线段没有出现。\n\n![重读缠论第71课](memoWX_021_Chan_xianduan/lesson071-image007.jpg)\n\n![重读缠论第71课](memoWX_021_Chan_xianduan/lesson071-image008.jpg)\n\n![重读缠论第71课](memoWX_021_Chan_xianduan/lesson071-image009.jpg)\n\n5、但假设的转折点后的顶分型的元素，是可以应用包含关系的。为什么？因此，这些元素间，肯定是同一性质的东西，或者就是原线段的延续，那么就同是原线段的特征序列中，或者就是新线段的非特征序列中，反正都是同一类的东西，同一类的东西，当然可以考察包含关系。\n\n![重读缠论第71课](memoWX_021_Chan_xianduan/lesson071-image010.jpg)",
+  "figures": [
+    {
+      "source": "references/chan_theory/071/image003.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson071-image003.jpg",
+      "sha256": "e7ab2413871632f2adc0b8d751169ad86d996106cd8d30a93c2361870ec41bc0",
+      "viewed_before_copy": true
+    },
+    {
+      "source": "references/chan_theory/071/image004.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson071-image004.jpg",
+      "sha256": "bda3c2dd1ecd2b3a4d9100e17cb07b1f3555e0a93035fac0cd766dd4bd7c2c98",
+      "viewed_before_copy": true
+    },
+    {
+      "source": "references/chan_theory/071/image005.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson071-image005.jpg",
+      "sha256": "4d6b79ffd0d4469ca8dbddec635ea02469d65483525acfbd4bd31779e239e829",
+      "viewed_before_copy": true
+    },
+    {
+      "source": "references/chan_theory/071/image006.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson071-image006.jpg",
+      "sha256": "01b2800c18177131a122ce6ddfe6061b1610ac560a8b31e145ba4b7de270f70f",
+      "viewed_before_copy": true
+    },
+    {
+      "source": "references/chan_theory/071/image007.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson071-image007.jpg",
+      "sha256": "cdf32772d2e1ac3468ce0ec12c6f6226f507aee03d82aa0a4d486696f72f9ea4",
+      "viewed_before_copy": true
+    },
+    {
+      "source": "references/chan_theory/071/image008.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson071-image008.jpg",
+      "sha256": "7fd0480c9b087f6966522f59a38c4875df694b165be35a3ceefd7aef5f9fcbcb",
+      "viewed_before_copy": true
+    },
+    {
+      "source": "references/chan_theory/071/image009.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson071-image009.jpg",
+      "sha256": "30dbd8575c20b843991b82a44fc6665424b1b1ebbe163c96b53d485ee9dff9a0",
+      "viewed_before_copy": true
+    },
+    {
+      "source": "references/chan_theory/071/image010.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson071-image010.jpg",
+      "sha256": "e2d33a32de7d3d59bfbabc0c9ea0ccce5efaa629ecae2e4b9ec885a9760986d3",
+      "viewed_before_copy": true
+    }
+  ],
+  "label": "Compiler learning figure group, explicitly not authenticated author original"
+}

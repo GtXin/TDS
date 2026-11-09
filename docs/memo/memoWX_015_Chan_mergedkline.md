@@ -12,6 +12,8 @@ to define mergedkline with 包含oepration
 
 **MergedKline（合并K线）**：用于结构分析的价格区间单元，代表一根原始K线，或由逐次包含关系归并形成的多根连续原始K线，以一个最高点和一个最低点表示其价格区间，并记录其在原始K线序列中的起止位置，以便追溯全部原始成员。合并方向向上时，高、低点分别取成员高、低点的最大值，形成偏上的“乐观”区间表示；方向向下时，分别取最小值，形成偏下的“悲观”区间表示。
 
+**MergedKlineSeries（合并K线序列）**：由同一原始K线序列按顺序处理包含关系后形成、按原始来源先后排列的非空MergedKline序列。各单元的原始来源范围连续、互不重叠，并覆盖本次完整输入；处理完成后，任意相邻两个单元均不存在包含关系，包括边界相等的包含。非相邻单元仍可能包含。
+
 **初始化小注（可选）**
 
 起始时若相邻K线存在包含关系，且尚无方向依据，可考虑以下初始化选项，暂不选定默认方案：
@@ -58,6 +60,7 @@ to define mergedkline with 包含oepration
     └── 2.2 下一根原始K线检查
         ├── 2.2.a i=N，数据耗尽
         │   → 保存Kₙ；检查来源范围连续、完整且不重叠；
+        │     检查相邻合并单元无包含；
         │     返回引用原始raw的MergedKlineSeries
         └── 2.2.b i<N，仍有原始K线
             → 用raw[i]建立候选Kₙ₊₁，来源范围[i,i+1)
@@ -139,7 +142,7 @@ to define mergedkline with 包含oepration
 3. **不包含时结束旧单元，建立新单元（2.4）。** 候选高低点都严格较高，则新单元向上；都严格较低，则向下。先把旧Kₙ连同其方向、来源范围保存，再提升候选为新的当前单元；来源是 `[i,i+1)`，随后n、i各增加1。新方向只赋给新单元，不回填旧单元的None。
 4. **包含且方向已知时吸收候选（2.5.a／2.5.b）。** 向上取高点max、低点max；向下取高点min、低点min。前包后、后包前采用同一方向规则，谁的区间较大不决定方向。保持source_start，用本轮旧i设置 `source_stop=i+1`，再将i增加1；n不变，候选不另占一个合并编号。
 5. **包含且方向未定时执行指定的初始化选项（2.6）。** 向上或向下选项先赋方向，再处理同一候选；双路选项复制完整工作状态，各路分别合并、推进和保存；外边界选项取高max、低min，方向保留None后继续。未指定选项时保留待定状态，不能跳过候选，也不能宣称已得到完整结果。
-6. **输入耗尽时保存末单元（2.2.a）。** 当 `i=N`，不再读取 `raw[N]`，保存仍在工作的Kₙ。最终来源范围应连续、不重叠，并恰好覆盖 `[0,N)`；EOF只结束这份输入的计算，不代表理论上的确认。
+6. **输入耗尽时保存末单元（2.2.a）。** 当 `i=N`，不再读取 `raw[N]`，保存仍在工作的Kₙ。最终来源范围应连续、不重叠，并恰好覆盖 `[0,N)`，还须检查相邻合并单元不存在包含关系；EOF只结束这份输入的计算，不代表理论上的确认。
 
 #### 主例：从10根原始K线形成3个合并单元
 
@@ -229,7 +232,200 @@ to define mergedkline with 包含oepration
 
 ### 002.c — Helper Functions
 
+建议保留以下6个辅助函数，供002.a的主循环调用。这里定义的是接口与约束，尚未实现；工作单元只保存高低点、方向和原始来源范围，不修改原始Kline。原始输入校验直接复用已有的 `raw.validate()`。区间参数均须高低点有限且有序；主循环保证调用方属于同一路径和同一raw上下文，函数不凭数字下标猜测来源快照。
+
+**定位约定：** 合并K线放在原始来源组的第一根，即 `source_start`；显示时间取 `raw[source_start].timestamp`。吸收后续成员时这个位置不变，完整来源仍是 `[source_start,source_stop)`，最后成员位于 `source_stop−1`。显示位置不代表高低点分别发生的位置，也不表示在首根时已经知道后续成员或已经确认；002.b图中的居中竖线只用于示意高低区间。
+
+#### 建立工作单元：work_from_raw
+
+**接口：** `work_from_raw(raw, i, direction=None)`。
+
+输入同一原始快照raw、零基原始下标i及方向。要求 `0≤i<len(raw)`，方向只能是向上、向下或None；不接受Python序列允许的负下标。返回新的独立工作单元：高低点取自 `raw[i]`，来源为 `[i,i+1)`，方向保留输入值。
+
+用于2.1.b建立首根，以及2.2.b建立候选。首根与尚未提升的候选都传None；新单元的方向由2.4另行赋值。函数不分配ID，不推进i或n。
+
+#### 判断包含：has_inclusion
+
+**接口：** `has_inclusion(a, b)`。
+
+输入两个有效价格区间，要求高低点有限且 `low≤high`；输出布尔值。当 `a.high≥b.high 且 a.low≤b.low`，或 `b.high≥a.high 且 b.low≤a.low` 时返回True，否则返回False。等高、等低、完全相等及一字区间均按同一条件处理，交换a、b不改变结果。
+
+用于2.3。它只判断这两个区间的几何关系，不判断方向，也不证明多根可以整组归并；主循环保证比较对象是当前Kₙ与来源紧接其后的候选Kₙ₊₁。
+
+#### 判断非包含方向：direction_between
+
+**接口：** `direction_between(a, b)`；a在前、b在后。
+
+输入有效区间，必须先满足 `has_inclusion(a,b)=False`。若b的高低点都严格高于a，返回向上；若都严格低于a，返回向下。若存在包含，包括边界相等，必须报错，不能推测方向或套用上一方向。
+
+用于2.4，返回值赋给新单元。函数不回填旧单元的方向，也不把K线实体的阴阳当作区间方向。
+
+#### 按已知方向合并：merge_included
+
+**接口：** `merge_included(current, candidate)`。
+
+current为Kₙ，candidate为本轮Kₙ₊₁。两者必须属于同一路径、同一raw，存在包含，且 `current.source_stop=candidate.source_start`；候选必须只代表一根原始K线，即 `candidate.source_stop=candidate.source_start+1`。current.direction必须已经是向上或向下；为None时拒绝调用。
+
+返回新的合并工作单元：向上时高低点分别取max；向下时分别取min。方向和source_start保持current的值，source_stop取candidate.source_stop，也就是本轮旧i＋1。输入工作单元保持不变，由主循环用返回值替换当前Kₙ。
+
+用于2.5.a／2.5.b。2.6.a／2.6.b及双路初始化也先给各自current赋方向，再调用本函数；函数不另接一个可覆盖既有方向的参数，不更新i、n或R。
+
+#### 按外边界合并：merge_outer_boundary
+
+**接口：** `merge_outer_boundary(current, candidate)`。
+
+包含、同一raw、连续来源及单根候选的前提与上一函数相同；另外要求调用方已明确选择2.6.d且current.direction为None；函数不自行选择初始化策略。返回新的工作单元：高点取max、低点取min，方向仍为None；source_start保持不变，source_stop取candidate.source_stop。
+
+函数不修改输入、不推导方向、不推进计数器。主循环接收结果后才执行 `i=i+1`，n不变，回2.2。不能用它替代已经向上或向下的正常包含处理。
+
+#### 校验完整结果：validate_merged_result
+
+**接口：** `validate_merged_result(raw, result)`。
+
+输入原始快照及拟定的MergedKlineSeries结果，要求 `result.source_series` 引用同一个raw对象。检查结果非空；每项高低点有限且有序、方向取值有效、ID为本次结果内唯一的整数；来源下标为整数且满足 `0≤source_start<source_stop≤len(raw)`。
+
+再检查首项从0开始、末项到N结束、前项source_stop等于后项source_start，确保完整覆盖、没有空缺或重叠。逐对检查相邻记录，要求 `has_inclusion(result.klines[j],result.klines[j+1])=False`，其中j从0到M−2，M为结果单元数。含等高、等低或完全相等在内的相邻包含都应报错，并指出两个位置及来源范围；M=1时没有相邻对，此项自然通过。非相邻记录不参加这项检查。
+
+只看相邻价格检查，`[1,5] → [3,7] → [2,4]` 可以通过，即使第一根包含第三根；`[1,5] → [3,5]` 则因等高的包含而失败。成功时返回None，失败时报错，不修补来源、不重排结果，也不把待定的部分结果包装成完整结果。
+
+用于2.2.a保存末单元以后；可作为memo009所拟 `MergedKlineSeries.validate()` 的校验核心。它校验结构与来源，不代替逐步规则复算或一般正确性论证；status、confirmed_at及完整trace规则仍需另行定义，不能由EOF自动填成已确认。
+
+#### 与主循环的分工
+
+辅助函数不改原始raw，不读写文件或ChanTable，也不推进i、n或追加R。合并函数只通过返回值扩展source_stop；主循环先接收这个结果，再推进i，避免把同一根候选消费两次。
+
+初始化选项的选择、双路状态复制、给新单元赋方向、分配结果ID、冻结并追加旧单元，以及EOF保存末单元，都留在主循环。冻结时必须复制当前字段，不能把以后还会变化的工作对象直接放入R；实际MergedKline构造仍要衔接memo009中尚未定下规则的状态与确认字段。
+
+双路之间只共享不可变raw和不可变的已保存内容；可变工作单元、候选及结果列表必须独立。暂不定义自动选择初始化、两路差异评分或warning函数，以免在辅助函数中暗设尚未约定的规则。
+
+#### 与002.b对应的小检查
+
+价格区间仍按 `[low,high]` 表示；下列为接口应满足的结果，不表示这些函数已经实现或通过代码测试。
+
+| 调用情形 | 应有结果 |
+|---|---|
+| `has_inclusion([2,4],[1,5])`，以及交换两参数 | 都为True。 |
+| `direction_between([1,3],[2,4])` | 向上。 |
+| `direction_between([2,4],[1,5])` | 报错：存在包含，不能由这两根定向。 |
+| current为向上 `[2,4]`、来源 `[1,2)`；候选 `[1,5]`、来源 `[2,3)` | `merge_included`返回向上 `[2,5]`、来源 `[1,3)`；定位仍是原始下标1，i、n尚未推进。 |
+| 选定2.6.d；current为None `[2,5]`、来源 `[0,1)`；候选 `[3,4]`、来源 `[1,2)` | `merge_outer_boundary`返回None `[2,5]`、来源 `[0,2)`；定位仍是原始下标0。 |
+| current来源 `[1,2)`；候选来源 `[3,4)`，即使价格包含 | 两种合并函数都拒绝：来源不连续，不能跨过raw[2]。 |
+
 ### 002.d — Pseudocode
+
+只有遇到方向未定的包含时才执行初始化；单根输入或起始非包含不强行赋初始方向，也不无故分路。以下伪代码对应002.a的主过程，调用002.c的6个辅助函数；不是现有Python接口或可直接执行的实现。`Kₙ`在程序状态中记为current，临时候选Kₙ₊₁记为candidate；n仍是从1开始的合并工作单元编号，i仍是从0开始的下一原始下标。
+
+**输入与输出约定**
+
+- raw是同一个不可变KlineTSeries快照；initialization必须明确为 `UP、DOWN、BOTH、OUTER、UNSET` 之一，分别对应2.6.a–d及尚未选择；UNSET不是向上或向下的默认值。rule_tree_ref标识使用的规则版本。
+- 每条路径独立保存 `raw、N、current、R、n、i、initialization、rule_tree_ref`；raw可以共享，current和R的可变部分必须独立。吸收时只推进i，另立时i、n都推进。
+- “保存current”是主过程的动作缩写：分配本路径结果内尚未使用的整数ID，复制current的高低点、方向和来源范围为不可变记录，再追加到R；不增加n或i。吸收候选时不分配新ID。不同路径的相同整数ID不表示同一结果记录。
+- “组装结果”表示保留同一raw引用、不可变记录及规则配置的逻辑结果。memo009中的status、confirmed_at和完整trace如何落地仍待定义，此处不擅自赋状态、确认时间或补造trace。
+
+#### 建立起始状态
+
+```text
+主过程(raw, initialization, rule_tree_ref):
+    raw.validate()
+    若initialization不在允许的五个值中：报错
+
+    S.raw ← raw                         # 保留原始对象引用
+    S.N ← len(raw)
+    S.current ← work_from_raw(raw, 0, None)
+    S.R ← 空列表
+    S.n ← 1
+    S.i ← 1
+    S.initialization ← initialization
+    S.rule_tree_ref ← rule_tree_ref
+
+    返回 推进路径(S)
+```
+
+#### 推进一条路径，必要时分为两路
+
+“推进路径”是同一主算法的分段，不是新增的几何辅助函数。双路分开后，各自在未推进的同一i建立候选；重新读取这个位置不等于已经消费了它。
+
+```text
+推进路径(S):
+    当 S.i < S.N 时重复：
+        断言 S.current.source_stop = S.i
+        断言 len(S.R) = S.n − 1
+        candidate ← work_from_raw(S.raw, S.i, None)
+
+        若 has_inclusion(S.current, candidate) = False：
+            new_direction ← direction_between(S.current, candidate)
+            保存 S.current 到 S.R
+            candidate.direction ← new_direction
+            S.current ← candidate
+            S.n ← S.n + 1
+            S.i ← S.i + 1
+            继续下一轮
+
+        # 到这里，current与candidate一定存在包含
+        若 S.current.direction = None：
+            若 S.initialization = UNSET：
+                返回 待定状态(S及candidate的独立状态副本)
+                # 保留同一raw、R、n、i和当前候选，不推进，不作为完整序列返回
+
+            若 S.initialization = BOTH：
+                U ← 复制S，保留同一raw引用，独立复制可变工作状态
+                D ← 复制S，保留同一raw引用，独立复制可变工作状态
+                U.initialization ← UP
+                D.initialization ← DOWN
+                U.current.direction ← 向上
+                D.current.direction ← 向下
+                # 两路n、i均保持分路前的值，候选尚未吸收
+                up_result ← 推进路径(U)
+                down_result ← 推进路径(D)
+                # 两路都完成各自的EOF检查后，保留两个完整结果
+                返回 双路结果：
+                    主输出 = up_result
+                    比较路径 = down_result
+                    原始初始化请求 = BOTH
+                    warning评估 = 待定（差距度量和阈值尚未定义）
+
+            若 S.initialization = OUTER：
+                S.current ← merge_outer_boundary(S.current, candidate)
+                S.i ← S.i + 1           # 合并已先扩展source_stop
+                继续下一轮               # n不变，方向仍为None
+
+            若 S.initialization = UP：
+                S.current.direction ← 向上
+            否则若 S.initialization = DOWN：
+                S.current.direction ← 向下
+            否则：报错                   # 拒绝遗漏的初始化分支
+            # 只设置方向，n、i仍不变；下面吸收同一candidate
+
+        S.current ← merge_included(S.current, candidate)
+        S.i ← S.i + 1                   # n不变，source_start不变
+
+    # S.i = S.N：没有raw[N]可读取
+    保存 S.current 到 S.R
+    断言 len(S.R) = S.n
+    result ← 组装逻辑结果：
+        source_series = S.raw
+        klines = S.R的不可变记录序列
+        config = 含本路径initialization的不可变配置
+        rule_tree_ref = S.rule_tree_ref
+    validate_merged_result(S.raw, result)
+    返回 result
+```
+
+已知方向的路径始终使用merge_included，只有方向None且明确选OUTER时才取外边界。BOTH的向上初始化路径后续仍可转为向下；比较路径独立保留。warning未评估不能等同于“没有差异”或“不需要warning”，也不能只按相同n比较来源不同的单元。
+
+#### 返回完整结果前的相邻检查
+
+以下是validate_merged_result在来源、价格和ID检查之外必须执行的步骤。M是本路径最终合并单元数量；j是结果数组的零基下标，不是原始下标i。
+
+```text
+M ← len(result.klines)
+对 j = 0 到 M − 2 逐个检查：
+    若 has_inclusion(result.klines[j], result.klines[j+1])：
+        报错：相邻合并K线仍有包含，给出j、j+1及各自来源范围
+# M=1时没有相邻对，此项检查自然通过
+```
+
+检查失败就不返回有效的完整序列；校验函数不偷偷重做合并。非相邻单元不参加这项检查。每个单元的显示位置始终取source_start及其原始时间；完整来源、价格极值位置与确认时间分别保留各自含义。
 
 ## 003 — Reasoning (Why)
 

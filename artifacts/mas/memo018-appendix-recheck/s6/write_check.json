@@ -1,0 +1,23 @@
+{
+  "memo": "docs/memo/memoWX_023_Chan_zoushi.md",
+  "backup": "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_043332_877699.md",
+  "old_sha256": "d3919c9e5ae8286d3f6e22af03682507a067131cf75ff697a396b39d16923de1",
+  "main_prefix_sha256": "e415cf47a16068677d95b8f376bcf1a28bf66950fdd86808295cb28899a0439b",
+  "added_quote_blocks": 7,
+  "total_quote_blocks": 14,
+  "new_original_figures": 0,
+  "new_code_numerical_cases": 0,
+  "checks": [
+    "source ranges directly extracted after disclosed span/equality normalization",
+    "new quotes exactly contained in written appendix",
+    "20 sequential references and relative links pass",
+    "main prefix exactly matches task-start baseline",
+    "no source/CC imports or execution"
+  ],
+  "citation_range_correction_backup": "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_043410_765180.md",
+  "citation_range_check": "Nested function ranges checked using ast lineno/end_lineno, not guessed from concatenated display chunks.",
+  "shared_turn_supplement_backup": "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_043551_862658.md",
+  "new_shared_turn_scope": "OnlyB8 equality/candidate cancellation sequence paragraph",
+  "f1_f2_supplement_backup": "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_043725_260893.md",
+  "trace_right_edge_precision_backup": "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_044001_024095.md"
+}

@@ -1,0 +1,144 @@
+{
+  "saved": [
+    {
+      "memo": "docs/memo/memoWX_021_Chan_xianduan.md",
+      "backup": "docs/memo/backups/memoWX_021_Chan_xianduan__20261109_033313_935425.md",
+      "main_sections_sha256": "508e8cbc7ff8b5c2c4d52e924092420ab757deb99e940e99a3870aea3f4472a1"
+    },
+    {
+      "memo": "docs/memo/memoWX_022_Chan_zhongshu.md",
+      "backup": "docs/memo/backups/memoWX_022_Chan_zhongshu__20261109_033313_938081.md",
+      "main_sections_sha256": "70fdf295984daec78184ecab77b374e428c055d918e2692c5c66a74752114d97"
+    }
+  ],
+  "quote_selections": [
+    {
+      "lesson": 67,
+      "start": 16,
+      "stop": 46,
+      "raw_sha256": "087f41d776582239dcbd249645f32fdd24756ab62b343c4d3682823ebb1feddb",
+      "normalization": "span markup removed only; original image paths replaced with byte-identical companion copies"
+    },
+    {
+      "lesson": 71,
+      "start": 28,
+      "stop": 62,
+      "raw_sha256": "8e01318ae4fdeb7ee612cfb6ac5b336b2485b5a5ac2ad926f0ec6b31cb8395e4",
+      "normalization": "span markup removed only; original image paths replaced with byte-identical companion copies"
+    },
+    {
+      "lesson": 77,
+      "start": 73,
+      "stop": 99,
+      "raw_sha256": "8e83993aff7cf866829b216e28e3763c4980095bc13d2f4c91d15a0293ca93bc",
+      "normalization": "span markup removed only; original image paths replaced with byte-identical companion copies"
+    },
+    {
+      "lesson": 78,
+      "start": 28,
+      "stop": 74,
+      "raw_sha256": "8c92d2d1dd2eae509ac67bea1e4ec35d23892a49643416ba3ff584ad4f47f556",
+      "normalization": "span markup removed only; original image paths replaced with byte-identical companion copies"
+    },
+    {
+      "lesson": 17,
+      "start": 45,
+      "stop": 65,
+      "raw_sha256": "7c2373b2d794c9d86641e135919da05616d4f81c7bed6d437b6501f6e45591a4",
+      "normalization": "span markup removed only; original image paths replaced with byte-identical companion copies"
+    },
+    {
+      "lesson": 18,
+      "start": 24,
+      "stop": 66,
+      "raw_sha256": "fdafba69237c987846de86b32cd864c38c94faf748dbbd15913fd4e7c510469a",
+      "normalization": "span markup removed only; original image paths replaced with byte-identical companion copies"
+    },
+    {
+      "lesson": 20,
+      "start": 28,
+      "stop": 74,
+      "raw_sha256": "b00cf37e30dc6ca581f601090468be676164ab7adfc66d0d3d2a0dd999a6c82a",
+      "normalization": "span markup removed only; original image paths replaced with byte-identical companion copies"
+    },
+    {
+      "lesson": 20,
+      "start": 278,
+      "stop": 292,
+      "raw_sha256": "6a03a32cf3ae61e1217375edbb8e5f8bc039f3f4ced8e6670dc919afc0296bf5",
+      "normalization": "span markup removed only; original image paths replaced with byte-identical companion copies"
+    },
+    {
+      "lesson": 28,
+      "start": 294,
+      "stop": 298,
+      "raw_sha256": "ce6633a98adf569b1430b340bffc7e68acbb881da2a31442634a15ab537305d4",
+      "normalization": "span markup removed only; original image paths replaced with byte-identical companion copies"
+    }
+  ],
+  "original_figures": [
+    {
+      "source": "references/chan_theory/071/image001.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson071-image001.jpg",
+      "sha256": "d84ed624b26a5fff03a7a0f57eb4a2b14e922ded791d2f300cb17bc4a37d61e3",
+      "viewed": true
+    },
+    {
+      "source": "references/chan_theory/071/image002.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson071-image002.jpg",
+      "sha256": "6e36b818ebbe13c2b5775f33a2a2bb87c7b2203e0f8a0d9e7a99c3d2d06f992f",
+      "viewed": true
+    },
+    {
+      "source": "references/chan_theory/071/image013.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson071-image013.jpg",
+      "sha256": "beb81a4a528d43c18c0cebaa8daa5d12609b7ef12592d88a10b1ae146e72338d",
+      "viewed": true
+    },
+    {
+      "source": "references/chan_theory/077/image002.gif",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson077-image002.gif",
+      "sha256": "1b812e550a664b28ac9827cfd79ffad247d35ea0431ef8dd64b084c2c7b70bb0",
+      "viewed": true
+    },
+    {
+      "source": "references/chan_theory/078/image012.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson078-image012.jpg",
+      "sha256": "d244c2a1b5826b6ecf54202b2925ed7f37106b099ebcfc9a8663d0b766b93260",
+      "viewed": true
+    },
+    {
+      "source": "references/chan_theory/078/image001.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson078-image001.jpg",
+      "sha256": "eee9f8f8242e13cb394613c49d3af093d5bc0811daa71ab760aa8cd11e53e00f",
+      "viewed": true
+    },
+    {
+      "source": "references/chan_theory/078/image014.jpg",
+      "copy": "docs/memo/memoWX_021_Chan_xianduan/lesson078-image014.jpg",
+      "sha256": "8322057d6382d19208c1b0e211c0a2a9c8a7fea47b67051aa109fbfe414abf57",
+      "viewed": true
+    },
+    {
+      "source": "references/chan_theory/020/image005.jpg",
+      "copy": "docs/memo/memoWX_022_Chan_zhongshu/lesson020-image005.jpg",
+      "sha256": "02ec9f25b19830954aafe593071ac2b3cba8c109dcc7026a567fac4830912078",
+      "viewed": true
+    },
+    {
+      "source": "references/chan_theory/020/image014.jpg",
+      "copy": "docs/memo/memoWX_022_Chan_zhongshu/lesson020-image014.jpg",
+      "sha256": "eec2bea8ea82cb890eac9819c2f7c73628bff0d33e635a63c1cf97ea6c7bc015",
+      "viewed": true
+    },
+    {
+      "source": "references/chan_theory/020/image015.jpg",
+      "copy": "docs/memo/memoWX_022_Chan_zhongshu/lesson020-image015.jpg",
+      "sha256": "6f01be40a04502a880f96ade6083bfdf89d42d022c970327c1ccc068a06bd66e",
+      "viewed": true
+    }
+  ],
+  "corpus_numbered_lessons": 108,
+  "scan_hits_file": "corpus_hits.txt",
+  "cc_execution": false
+}

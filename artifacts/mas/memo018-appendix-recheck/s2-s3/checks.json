@@ -1,0 +1,36 @@
+{
+  "memos": [
+    {
+      "memo": "docs/memo/memoWX_019_Chan_fenxing.md",
+      "references": 11,
+      "main_prefix": "matches task-start SHA-256",
+      "links_citations": "passed"
+    },
+    {
+      "memo": "docs/memo/memoWX_020_Chan_bi.md",
+      "references": 12,
+      "main_prefix": "matches task-start SHA-256",
+      "links_citations": "passed"
+    }
+  ],
+  "retained_original_quote_blocks": 13,
+  "added_original_quote_blocks": 5,
+  "added_source_image_copies": 3,
+  "new_manual_cases": 4,
+  "new_manual_financial_charts": [
+    {
+      "path": "docs/memo/memoWX_020_Chan_bi/cc-stroke-strong-recheck.png",
+      "sha256": "066983feb157ab7bbc9ba9ef4f80f226f7fcbcdeb95ae76261240ee0223db330",
+      "visual_review": "Viewed final PNG; aligned price/source axes, annotations and no clipping."
+    },
+    {
+      "path": "docs/memo/memoWX_020_Chan_bi/cc-stroke-repair-recheck.png",
+      "sha256": "130d4a5125f5738de57ee2e55d4c4b6f4fd82e1471d86705cd953a97e1cb8587",
+      "visual_review": "Viewed final PNG; aligned price/source axes, annotations and no clipping."
+    }
+  ],
+  "source_quote_checks": "all18 retained/new normalized blocks match recorded sources",
+  "figure_copies": "all13 old/new distinct source copy paths byte-identical",
+  "cc_execution": false,
+  "limits": "Whole-corpus keyword scan plus selected contextual reading and static code review; no exhaustive read, CC runtime verification or correctness proof."
+}

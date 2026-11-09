@@ -1,0 +1,38 @@
+# Batch Concepts 2–8
+
+## 000 — Scope
+
+协调 memo008 中 S2–S8 的批量处理与独立概念 memo 创建，集中记录目标 memo、进度、批次结果和下一步。[1] 具体定义、算法、原文与代码研究保存在各概念 memo 中。
+
+## 001 — Concept tracking
+
+| 概念 | 目标 memo | 本批次状态 |
+|---|---|---|
+| S2 分型 | [memo019：Chan_fenxing](memoWX_019_Chan_fenxing.md) | 空模板已创建 |
+| S3 笔 | [memo020：Chan_bi](memoWX_020_Chan_bi.md) | 空模板已创建 |
+| S4 线段 | [memo021：Chan_xianduan](memoWX_021_Chan_xianduan.md) | 空模板已创建 |
+| S5 中枢 | [memo022：Chan_zhongshu](memoWX_022_Chan_zhongshu.md) | 空模板已创建 |
+| S6 走势 | [memo023：Chan_zoushi](memoWX_023_Chan_zoushi.md) | 空模板已创建 |
+| S7 背驰 | [memo024：Chan_beichi](memoWX_024_Chan_beichi.md) | 空模板已创建 |
+| S8 买卖 | [memo025：Chan_buysellpoint](memoWX_025_Chan_buysellpoint.md) | 空模板已创建 |
+
+各概念 memo 可参照 memo014 的结构；具体填写范围由各批次任务确定。[2] S1 包含已有 memo015，其未决问题继续保留在原 memo。[3]
+
+创建各概念 memo 时检查最新索引、分配编号，并将上表的“待创建”替换为实际链接；本协调 memo 不预占后续编号。进度按实际完成范围更新，不能将附录整理完成等同于定义、算法或实现完成。
+
+## 002 — Batch create the memo template for S2 to S8
+empty template with the right name as 015. 
+
+已完成：创建 memo019–025，保留空白的 000–005、002.a–002.d、Appendix A／B 与 References 章节；定义、算法和附录内容尚未填写。
+
+## 003 - Skill_Chan_source_code study 
+use memo016 to fill the memo appendix seciton for all memos from s2 to s8. Be thorough
+
+
+## References
+
+[1] [Memo008：Chan Large Picture](memoWX_008_ChanLargePicture.md)。
+
+[2] [Memo014：Chan Axiom Syntax](memoWX_014_ChanAxiomSyntax.md)。
+
+[3] [Memo015：Chan_mergedkline](memoWX_015_Chan_mergedkline.md)。

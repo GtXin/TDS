@@ -1,0 +1,260 @@
+[
+  {
+    "memo": "docs/memo/memoWX_024_Chan_beichi.md",
+    "backup": "docs/memo/backups/memoWX_024_Chan_beichi__20261109_033148_020625.md",
+    "main_sections_preserved": true,
+    "quotes": [
+      {
+        "lesson": "037",
+        "start_line": 16,
+        "end_line": 24,
+        "raw_sha256": "893688de7ea4fb338a93d10b92a6d8b2836dd34e17ac880acd14ec8a9583abb9",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "024",
+        "start_line": 14,
+        "end_line": 44,
+        "raw_sha256": "732dc858e0b7021aa508a5e233027daf8738788bf8449df1d376db17fdac65f8",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "027",
+        "start_line": 14,
+        "end_line": 44,
+        "raw_sha256": "514da4943f23d1b872b7999274ded591808c67add4d8f28211f828e7e935c791",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "029",
+        "start_line": 33,
+        "end_line": 63,
+        "raw_sha256": "beec8f61a1df732443d38d988269857bdd0df5cb94f7a1a13b5bb41a8a932a31",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "015",
+        "start_line": 44,
+        "end_line": 58,
+        "raw_sha256": "3dee52d509f43d38fdf6f3374541bbd599060f7b2fc30a46cbc2c21ca746171b",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "017",
+        "start_line": 247,
+        "end_line": 255,
+        "raw_sha256": "ddf9a83a468a51220b7d15b5c3aca0dd1e315d89bb5300b795e82f8990bb696e",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "064",
+        "start_line": 39,
+        "end_line": 57,
+        "raw_sha256": "7bdf666a944e45f70f65f3314a794667e33b525ad0adc436fc5d1a2d658252ad",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "064",
+        "start_line": 369,
+        "end_line": 373,
+        "raw_sha256": "b49161c81aef378bef0b0d2b6c69c7cb96d33920178746d5990c87a261854180",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "064",
+        "start_line": 539,
+        "end_line": 543,
+        "raw_sha256": "d907e32130b10052cb2204b2779007906ddc989220bab49e48037c74a57a504c",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "037",
+        "start_line": 82,
+        "end_line": 86,
+        "raw_sha256": "a216d48729d434d246934683e8d1bbf0ccab8629656dbda981997486b4ae4c06",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      }
+    ],
+    "images": [
+      {
+        "source": "references/chan_theory/029/image001.gif",
+        "copy": "docs/memo/memoWX_024_Chan_beichi/lesson029-image001.gif",
+        "sha256": "2af68e196453d0733a57130b854cc7af5aae21cd73d14f608b48cc0718f65aaa",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/064/image001.jpg",
+        "copy": "docs/memo/memoWX_024_Chan_beichi/lesson064-image001.jpg",
+        "sha256": "0803046659d90d68dcd89f52149b02811860972f9ad8bd43245fac59c24b4442",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/064/image002.gif",
+        "copy": "docs/memo/memoWX_024_Chan_beichi/lesson064-image002.gif",
+        "sha256": "d3c3d91d8e83f571bea293fd5bf4e0f92d5726281db2a33f6384aeff8770730f",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/064/image003.jpg",
+        "copy": "docs/memo/memoWX_024_Chan_beichi/lesson064-image003.jpg",
+        "sha256": "435f60cad4f6a2df7dcd322fd6061eb617cfc0f2f80029b55e572588c3c4edb8",
+        "viewed": true
+      }
+    ],
+    "references": 11,
+    "checks": "All extracted quotes created directly from stated source ranges; all local links exist, copied image bytes/hash match; every selected source image viewed before copy. No CC execution."
+  },
+  {
+    "memo": "docs/memo/memoWX_025_Chan_buysellpoint.md",
+    "backup": "docs/memo/backups/memoWX_025_Chan_buysellpoint__20261109_033148_025145.md",
+    "main_sections_preserved": true,
+    "quotes": [
+      {
+        "lesson": "017",
+        "start_line": 51,
+        "end_line": 79,
+        "raw_sha256": "35426f90e01ea4398cac0c6d76fb425bc8055af12b77f1cdf20f1227789e045d",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "020",
+        "start_line": 62,
+        "end_line": 84,
+        "raw_sha256": "4ac73c3309ffbbbf4985d91a33542b65d6a5b9647da5ce224ef452a755f7fdc9",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "018",
+        "start_line": 50,
+        "end_line": 66,
+        "raw_sha256": "e6ecf475c1b8a39378d8207080aa911873f56bc550517d4562e78efc7f5326f6",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "021",
+        "start_line": 16,
+        "end_line": 40,
+        "raw_sha256": "740ae06f71e2f8a0f4fe393e2841b3eccb4f73c6d7938d23bf1edf9b572a3fb3",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "021",
+        "start_line": 52,
+        "end_line": 56,
+        "raw_sha256": "b7f4af6bc67eaeefc3723b11292685adb47ef3a52e7190e76d45f7f8e8fc627f",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "053",
+        "start_line": 16,
+        "end_line": 36,
+        "raw_sha256": "762e475024c960efbd36498d9d669d88d58cc735270e2bbe259c81b427f349a0",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "037",
+        "start_line": 130,
+        "end_line": 134,
+        "raw_sha256": "081cafda1a78b716d9207aca9530f2b6c251f745d7e42141885a56449974a074",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "036",
+        "start_line": 62,
+        "end_line": 66,
+        "raw_sha256": "a4e61699d9de11dd7f81419f93e7203903ffcdfe4dcbd4b9c7a32facd655bc4b",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "092",
+        "start_line": 210,
+        "end_line": 218,
+        "raw_sha256": "91a8a4a6cb3ec2bcb95b8c0ddec0d197b1092cb0530163fc58fef080b6758ada",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      },
+      {
+        "lesson": "086",
+        "start_line": 27,
+        "end_line": 37,
+        "raw_sha256": "9b727b76db5e094f535b66722b9f9f6b6e3e530d88fa0e64cfb87d056f42a49a",
+        "normalization": "Remove span markup only; rewrite copied figure paths; retain source wording/annotations."
+      }
+    ],
+    "images": [
+      {
+        "source": "references/chan_theory/020/image005.jpg",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson020-image005.jpg",
+        "sha256": "02ec9f25b19830954aafe593071ac2b3cba8c109dcc7026a567fac4830912078",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/020/image001.jpg",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson020-image001.jpg",
+        "sha256": "1749a0ab5cfdfa9fb22a00a29f5e2dfadc82b1833163a1830833202f29a95f5c",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/020/image002.jpg",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson020-image002.jpg",
+        "sha256": "2b9d1997a9fec93002ce1798995c2fb6f1bc9df6b56aaed305686ee075db91e0",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/020/image003.jpg",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson020-image003.jpg",
+        "sha256": "2df8b7ada348cbb6dba1d5d185d30f312106566c66d20a4765af5e13700bf6fa",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/020/image004.gif",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson020-image004.gif",
+        "sha256": "1fb3d7a233644b152e4c39b003f5d72128d3d10bd509bc49abe808e881f91ec3",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/092/image024.gif",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson092-image024.gif",
+        "sha256": "e854b88767966bb222b4332117904168da5998f80648b32bbc23ca5be54c11df",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/086/image001.jpg",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson086-image001.jpg",
+        "sha256": "cc7f302455892887272601a5800f76b8aad810425f277a04b3c9af7dca190182",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/086/image002.jpg",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson086-image002.jpg",
+        "sha256": "c6d65415a6026f7037c43bdedcf42ea76a8430db23c252f3060207c3a7329aae",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/086/image003.jpg",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson086-image003.jpg",
+        "sha256": "ad9c4cb66f5d2f9def8902a7e01a6fd091597b4517d003c7fe6db111c4f7e076",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/086/image004.jpg",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson086-image004.jpg",
+        "sha256": "0215372516104c51a22614d2d41b80bda595f5318c74e78003ad5349d5148f06",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/086/image005.jpg",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson086-image005.jpg",
+        "sha256": "431ad321f122fa169e26cab71cb96e30185ca478944421f5c86666baf487dd31",
+        "viewed": true
+      },
+      {
+        "source": "references/chan_theory/086/image006.jpg",
+        "copy": "docs/memo/memoWX_025_Chan_buysellpoint/lesson086-image006.jpg",
+        "sha256": "16402fd3ea927b63ac85ee1ce6a44338804c990982e150d35ddd647811ea06c0",
+        "viewed": true
+      }
+    ],
+    "references": 15,
+    "checks": "All extracted quotes created directly from stated source ranges; all local links exist, copied image bytes/hash match; every selected source image viewed before copy. No CC execution."
+  }
+]

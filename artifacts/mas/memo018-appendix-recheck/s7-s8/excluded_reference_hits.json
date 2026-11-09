@@ -1,0 +1,161 @@
+{
+  "source_root": "/Users/coder/Public/EngineGit/cc",
+  "git_head": "374268381a3eaeee4d220e67d63364b3907405f4",
+  "interpretation": "Reference-renderer strings describe chanlun-pro; tvWidget configures vendor MACD visuals; notify test verifies delivery shape. These are not executable CC divergence/point detectors. No code executed.",
+  "files": [
+    {
+      "path": "scripts/reffig/render.py",
+      "file_sha256": "c20cfd7dca2e22d8152e8df490e659b89e0472006277d4db67859ef2b8871a37",
+      "hits": [
+        {
+          "line": 1,
+          "text": "\"\"\"chanlun-pro 参考图集生成器 (研究用, 不进项目依赖, 不碰算法口径)。"
+        },
+        {
+          "line": 4,
+          "text": "参数说明图。K 线带上下影线; 包含处理/分型/中枢几何按数据计算 (faithful to chanlun-pro"
+        },
+        {
+          "line": 163,
+          "text": "        \"chanlun-pro 包含处理（真实 K 线）\","
+        },
+        {
+          "line": 262,
+          "text": "        \"chanlun-pro 老笔 vs 新笔（真实 K 线 + 笔）\","
+        },
+        {
+          "line": 309,
+          "text": "        \"chanlun-pro 中枢构造（线段在下，中枢在上）\","
+        },
+        {
+          "line": 399,
+          "text": "        \"chanlun-pro 分型区域 fx_qy（三根 vs 中间）\","
+        },
+        {
+          "line": 424,
+          "text": "        \"chanlun-pro 分型区间 fx_qj（原始K vs 缠论K）\","
+        },
+        {
+          "line": 478,
+          "text": "        \"chanlun-pro 次高次低成笔 bi_fx_cgd（正 / 反）\","
+        },
+        {
+          "line": 512,
+          "text": "        \"chanlun-pro 笔区间 bi_qj（端点 / 原始K / 缠论K）\","
+        },
+        {
+          "line": 593,
+          "text": "        \"chanlun-pro 严格分型 allow_bi_fx_strict（正 / 反）\","
+        },
+        {
+          "line": 635,
+          "text": "        \"chanlun-pro 分型包含 fx_bh（正 / 反）\","
+        },
+        {
+          "line": 682,
+          "text": "        \"chanlun-pro fx_qj 传导：分型区间 → 中枢下沿 → 买卖点\","
+        },
+        {
+          "line": 726,
+          "text": "        \"chanlun-pro 干净分离守卫族：strict / fx_bh / cgd\","
+        },
+        {
+          "line": 746,
+          "text": "        \"左=上涨取高高，右=下跌取低低（与 chanlun-pro 取值同；差异在「去等号」严格方向判定）。绿=合并后单元。\","
+        },
+        {
+          "line": 813,
+          "text": "    p.append(T(112, 722, \"与 chanlun-pro 的差异：本项目分型层几乎无可调参数（固定严格），把老/新笔、次高低、包含等取舍全部推到笔层，\", \"small\"))"
+        },
+        {
+          "line": 814,
+          "text": "    p.append(T(112, 748, \"使分型尽量贴近原文第62课、结果稳定；对照 chanlun-pro 的 fx_qy/fx_qj/fx_bh 可调分型。\", \"small\"))"
+        },
+        {
+          "line": 859,
+          "text": "    p.append(T(112, 744, \"merged_center 下 bi_gap_as_bar=true 时缺口再折算成距离；raw_extreme 另含「不共用 K」硬约束。与 chanlun-pro 老/新笔同理，命名更语义化。\", \"small\"))"
+        },
+        {
+          "line": 943,
+          "text": "    p.append(T(112, 744, \"对应 chanlun-pro 的 bi_bzh（笔标准化）思路，但本项目直接在成笔时按语义延伸，无需事后重排。\", \"small\"))"
+        },
+        {
+          "line": 1040,
+          "text": "    # 走势折线 + 中枢 + 一/二/三类买点 (原文第18/20课概念; chanlun-pro process_mmd:1098)"
+        },
+        {
+          "line": 1045,
+          "text": "        \"chanlun-pro 一/二/三类买点（中枢 + 背驰）\","
+        },
+        {
+          "line": 1071,
+          "text": "    p.append(T(112, 760, \"chanlun-pro 用 11 个 cl_mmd_* 开关细分各类买卖点的触发条件（趋势/盘整/背驰组合）；卖点与买点对称。\", \"small\"))"
+        },
+        {
+          "line": 1079,
+          "text": "        \"chanlun-pro 背驰（MACD 力度对比）\","
+        },
+        {
+          "line": 1080,
+          "text": "        \"缠论原文：背驰=后一段创新高/新低，但力度反而减弱。chanlun-pro 用 MACD 红/绿柱面积比较相邻同向段（趋势背驰 vs 盘整背驰）。源码 beichi_line/pz/qs:1217-1247。\","
+        },
+        {
+          "line": 1108,
+          "text": "    p.append(T(112, 762, \"读法：价格创新低（40→34），但 MACD 柱面积第二段明显缩小 → 下跌力度衰竭 = 底背驰 → 一类买点。趋势背驰(beichi_qs)看整段、盘整背驰(beichi_pz)看单中枢内。\", \"small\"))"
+        },
+        {
+          "line": 1109,
+          "text": "    p.append(T(42, 862, \"索引：FIG-CLP-BC-MACD / beichi_line:1217 / beichi_pz:1229 / beichi_qs:1247 / idx_macd 12/26/9\", \"code\"))"
+        },
+        {
+          "line": 1117,
+          "text": "        \"chanlun-pro 中枢类型 zs_bi_type / zs_xd_type（bz / dn / fx / fl）\","
+        },
+        {
+          "line": 1149,
+          "text": "        \"chanlun-pro 线段拆分族 vs 本项目严格标准\","
+        },
+        {
+          "line": 1150,
+          "text": "        \"chanlun-pro 用多个开关在复杂/横盘走势里把线段拆细（实战画图清晰）；本项目 standard 只认「反向线段破坏」，更接近原文、更少拆。源码 cl.py:65-72。\","
+        },
+        {
+          "line": 1151,
+          "text": "        \"同一段复杂上涨：左=本项目 standard（少拆、只反向线段破坏）；右=chanlun-pro（多开关允许更多拆分）。\","
+        },
+        {
+          "line": 1156,
+          "text": "        (710, \"chanlun-pro（多拆分开关）\", [0, 2, 4, 7], \"横盘处被拆成多条线段\"),"
+        },
+        {
+          "line": 1169,
+          "text": "    p.append(T(112, 716, \"chanlun-pro 开关：xd_allow_bi_pohuai(笔破坏影响线段)、xd_allow_split_no_highlow(无新高低也拆)、xd_allow_split_zs_kz(中枢扩展拆)、_more_line、_no_direction。\", \"small\"))"
+        }
+      ]
+    },
+    {
+      "path": "frontend/src/services/tvWidget.ts",
+      "file_sha256": "be61de3224782a67ac7779ed62c48021038fa5f482441562b0925fdf46807ed9",
+      "hits": [
+        {
+          "line": 205,
+          "text": "        \"MACD.macd.color\": \"#b8b8b8\",       // MACD 线"
+        }
+      ]
+    },
+    {
+      "path": "tests/notify/test_notify_route.py",
+      "file_sha256": "d9ed252f3a5598815241cc196920d5c7e266dbbe026f5fbf2663433ba234cd52",
+      "hits": [
+        {
+          "line": 50,
+          "text": "    r = _CLIENT.post(\"/api/notify/test\", json={\"title\": \"tt\", \"body\": \"bb\", \"level\": \"buy_sell\"})"
+        },
+        {
+          "line": 60,
+          "text": "    assert mock.sent[0].level == \"buy_sell\""
+        }
+      ]
+    }
+  ]
+}

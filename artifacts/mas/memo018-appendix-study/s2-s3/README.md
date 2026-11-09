@@ -1,0 +1,14 @@
+# S2/S3 appendix study evidence
+
+Scope: memo019 分型 and memo020 笔, Appendix A/B and References only. All000–005 content is byte-identical to pre-edit templates. No CC source imports or execution, upstream edits, dependency installs, or TDS algorithm changes.
+
+- Scanned all108 numbered Chan lessons plus README using `分型|顶分|底分|成笔|新笔|旧笔|一笔|一顶一底|独立|共用|结合律`;463 matching lines saved in `corpus-keyword-hits.txt`. Candidate reading covered062/065/069/071/072/075/077/078/079/081/082;13 continuous excerpt ranges were selected from062/065/075/077/078/079/081/082.
+- `source-excerpts.json` preserves selected line ranges, source hashes and declared display normalization. `figure-provenance.json` records10 memo-local byte-identical copies from9 unique original images. All used originals were viewed; no entire-corpus image reading claim.
+- `build_studies.py` authored the appendices and generated two financial teaching PNGs. The source/derived layers share axes. Both final PNGs were viewed; candlestick/interval labels and before/after geometry are visible with no clipping. Input JSON records synthetic H/L; synthetic opens/closes are disclosed. Price charts are manual traces, not CC runtime output.
+- Main example assertions cover raw candidate lists, no-gap premises, distance, key half/peak arithmetic, same-type extension and raw candidate disappearance under tail revision. `check_studies.py` also checks quote block membership, hashes, links, reference IDs, main-section preservation and the stated confirmation-watermark arithmetic. `final-checks.json` records the passing result.
+- Parent review identified upward HALF start-side wording; fixed to center/right in memo020 and its script, and corrected the worked threshold from`max(11,8)=11` to`max(8,10)=10`. Resulting pen choices are unchanged. Clarified that the two distance modes belong to one of three gates.
+- Other corrections during checks:075 reference title corrected from杂史3 to actual杂史1;065 literal intervals/formulas receive inline-code markup to prevent accidental Markdown links, with source wording unchanged. Every memo modification was preceded by a separate timestamped backup.
+- Nonblocking tool issues: a speculative lookup of081/image005.jpg failed because no such file exists; the actual green-arrow figure081/image004.jpg was viewed/copied and its source placement caveat retained. Matplotlib first emitted unwritable font-cache notices but completed using a temporary configuration directory; no package/config changes were made.
+- `git diff --check` passed. No runtime CC equivalence/correctness, complete strong/repair path execution, or performance claims are made. Root maintains the repository event log/task/memory and performs cross-review.
+
+Read-only cross-review of memo021/022: checked principal source/code distinctions, continuous numerical examples, truthful financial charts, main preservation and links. No blocking issue found and no changes made to those memos.

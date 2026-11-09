@@ -1,0 +1,14 @@
+{
+  "numbered_lessons_scanned": 108,
+  "keyword_matching_lines": 463,
+  "continuous_excerpts": 13,
+  "copied_original_assets": 10,
+  "original_unique_source_images": 9,
+  "manual_charts": 2,
+  "main_sections_preserved": true,
+  "source_hashes_and_quote_blocks": "passed",
+  "links_references_asset_hashes": "passed",
+  "flags_arithmetic": "passed",
+  "cc_execution": false,
+  "visual_review": "Both generated PNG charts viewed: labels/candles/derived geometry visible, aligned axes, no clipping."
+}

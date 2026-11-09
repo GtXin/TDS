@@ -1,0 +1,37 @@
+{
+  "segment_endpoints": [
+    10,
+    18,
+    14,
+    22,
+    17,
+    20,
+    12,
+    16,
+    8,
+    13,
+    11,
+    17,
+    14,
+    21,
+    16,
+    20,
+    12
+  ],
+  "center_endpoints": [
+    10,
+    18,
+    12,
+    16,
+    13,
+    19,
+    14,
+    22,
+    18
+  ],
+  "center_core": [
+    13,
+    16
+  ],
+  "checks": "all arithmetic assertions passed; no CC imports/execution"
+}

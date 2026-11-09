@@ -1,0 +1,22 @@
+{
+  "type": "finite documentation arithmetic checks, not production implementation tests",
+  "existing_cases_adjacent_pairs_checked": {
+    "main": 2,
+    "startup_up": 2,
+    "startup_down": 2,
+    "startup_outer": 1,
+    "sequential_counterexample": 2
+  },
+  "total_existing_pairs": 9,
+  "nonadjacent_containment_allowed": true,
+  "equal_high_low_exact_containment_rejected": true,
+  "single_item_empty_pair_loop": true,
+  "draft_duplicate_title_guard": true,
+  "backup": "docs/memo/backups/memoWX_015_Chan_mergedkline__20261109_043531_461703.md",
+  "exact_preservation_outside_five_edits": true,
+  "appendix_byte_text_preservation": true,
+  "byte_identical_backup": true,
+  "independent_reviews": "two read-only reviewers PASS after draft insertion correction",
+  "one_document_title_and_002d_heading": true,
+  "saved_reread": true
+}

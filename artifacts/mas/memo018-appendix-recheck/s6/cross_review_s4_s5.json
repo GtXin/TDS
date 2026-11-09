@@ -1,0 +1,33 @@
+{
+  "targets": [
+    "docs/memo/memoWX_021_Chan_xianduan.md A2compiler supplement,A5/A6,B6",
+    "docs/memo/memoWX_022_Chan_zhongshu.md A6–A8,B6"
+  ],
+  "reviewer": "recheck_s6",
+  "source_checks": [
+    "xianduan.py267–271 algorithm forwards strong_bi; overlay builder omits it",
+    "test_combine300–321 ordering and equality specials",
+    "emit997–1056 first-tie max/min and public forming transformation",
+    "feature overlay1248–1353 PRIMARY/SECOND/TAIL_PROBE roles and labels",
+    "zhongshu continuity133–134 and same_level100–105 omit price check as reported",
+    "LevelLeg324–348 minimum checks and ZhongShu ID213–243 mode distinction",
+    "zhongshu phase62–104 fixed core, accepted Z pairs and unaccepted lonebridge",
+    "originals08319–35,072195 and08463–71 context; new source figures viewed",
+    "07164–88 supplement: all8 diagrams viewed and source-copy bytes checked, each signed张大山习作, inclusion/middle-zone/unconfirmed-confirmed schematic labels match stated compiler context"
+  ],
+  "viewed_figures": [
+    "lesson072-image005.jpg",
+    "lesson072-image006.jpg",
+    "lesson099-image001.jpg",
+    "lesson071-image003.jpg",
+    "lesson071-image004.jpg",
+    "lesson071-image005.jpg",
+    "lesson071-image006.jpg",
+    "lesson071-image007.jpg",
+    "lesson071-image008.jpg",
+    "lesson071-image009.jpg",
+    "lesson071-image010.jpg"
+  ],
+  "result": "pass; no blocking findings in targeted scope; no reviewer memo writes",
+  "cc_execution": false
+}

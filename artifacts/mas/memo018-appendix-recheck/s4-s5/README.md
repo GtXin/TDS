@@ -1,0 +1,18 @@
+# S4/S5 second-pass completeness audit
+
+User requested another substantive completeness check of memo018003. Current memos021/022 were treated as evidence to audit, not as a complete list of possible sources.
+
+- `corpus_scan.json`: renewed search of all108 numbered lessons for segment/feature/center/nine-piece terms. Keyword inventory is not full word-by-word or image-by-image corpus certification.
+- `coverage_matrix.json`:17 topic rows describing retained evidence, newly added material, omitted candidates with reasons, executable branch coverage and residual gaps.
+- `write_evidence.json`:5 added continuous author/Q&A blocks (08319–37,072195,08463–71,066177–187,09927–39),3 new source-image copies and byte-identical memo backups/main-prefix hashes.083 extends through37 to retain its closing domino-effect paragraph. `learning_figure_evidence.json` separately records07164–88 as a compiler learning figure block with8 viewed, copied originals. Thus6 added source blocks and11 new copied figures total; the eight signed Zhang Dashan figures are explicitly not treated as authenticated author first-publication diagrams.
+- `rework.py`: initial scoped append and citation renumbering; do not rerun against the already amended memos (it appends material). Later learning-figure insertion/continuity/reference-label fixes are recorded in their evidence files and backups.
+- `check_rework.py` / `checks.json`: all15 old+new continuous source blocks,21 original figure copies, both task-start main-prefix hashes, relative links and sequential references pass. Checks do not execute CC.
+- `cross_review_s6.json`: independent read-only recheck of023 new original ranges and shared-turn/SAME_LEVEL/recursion additions;7 new source blocks verified, relevant executable predicates checked; no blocking issue.
+
+Material additions include ordered feature-containment branches and raw-index replay; optional strong_bi complete conditions; pending-candidate→forming public output/dep distinction; equal extrema first-occurrence behavior; source-range contracts; defensive loop bound; PRIMARY/SECOND/TAIL_PROBE display distinctions; and the actual omission of strong_bi forwarding in the display builder. Center changes clarify OPEN geometry versus an unpaired tail, exact continuity-validation scope, missing endpoint fallback, direction/ID modes and dependency ranges. No code/rule changes or CC execution.
+
+Existing numerical examples and2 generated financial charts remain unchanged. New price images are source copies viewed before copying; no new synthetic price example was introduced.067 original diagram recovery remains a gap (root checked adjacent CC original HTML/Markdown too). Fully reachable numerical traces for every gap-revert/strong/absorption variant and dynamic stability/parity tests remain unperformed, rather than being asserted complete.
+
+Observed scope deviation: invoking the older `verify_batch.py` passed but rewrote the legacy `artifacts/mas/memo018-appendix-study/batch_verification.json` from current files. Root was notified and chose to retain that observed rerun and point reports to the new canonical recheck validation. Other prior study records were preserved; new substantive checks/evidence are here.
+
+Independent reciprocal review: recheck_s6 read021A5/A6+B6 and022A6–A8+B6, compared executable predicates and viewed072005/006/099001; passed without edits. Its record is ../s6/cross_review_s4_s5.json. The071 compiler-image supplement was not separately reviewed by that agent; all8 source files were personally viewed and byte/hash checked by this writer, and their compiler attribution is explicit. Root notified of this exact review scope.

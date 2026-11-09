@@ -1,0 +1,14 @@
+[
+  {
+    "source": "references/chan_theory/017/image001.jpg",
+    "destination": "docs/memo/memoWX_023_Chan_zoushi/lesson017-image001.jpg",
+    "sha256": "49cfda36b72c0501ef5f76a035c74edabb9f9849556f6fa6b889d7c91f495055",
+    "visual_inspection": "Viewed source before copying; annotations present, first-publication authorship not authenticated."
+  },
+  {
+    "source": "references/chan_theory/020/image005.jpg",
+    "destination": "docs/memo/memoWX_023_Chan_zoushi/lesson020-image005.jpg",
+    "sha256": "02ec9f25b19830954aafe593071ac2b3cba8c109dcc7026a567fac4830912078",
+    "visual_inspection": "Viewed source before copying; annotations present, first-publication authorship not authenticated."
+  }
+]

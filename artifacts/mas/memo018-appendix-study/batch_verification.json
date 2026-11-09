@@ -1,0 +1,78 @@
+{
+  "memos": [
+    {
+      "memo": "docs/memo/memoWX_019_Chan_fenxing.md",
+      "appendix_a_characters": 9154,
+      "appendix_b_characters": 3501,
+      "references": 11,
+      "image_embeds": 11,
+      "main_sections_unchanged": true,
+      "backup": "docs/memo/backups/memoWX_019_Chan_fenxing__20261109_033407_849346.md",
+      "links": "passed"
+    },
+    {
+      "memo": "docs/memo/memoWX_020_Chan_bi.md",
+      "appendix_a_characters": 6538,
+      "appendix_b_characters": 9308,
+      "references": 11,
+      "image_embeds": 8,
+      "main_sections_unchanged": true,
+      "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261109_033407_849970.md",
+      "links": "passed"
+    },
+    {
+      "memo": "docs/memo/memoWX_021_Chan_xianduan.md",
+      "appendix_a_characters": 12880,
+      "appendix_b_characters": 6466,
+      "references": 9,
+      "image_embeds": 18,
+      "main_sections_unchanged": true,
+      "backup": "docs/memo/backups/memoWX_021_Chan_xianduan__20261109_033313_935425.md",
+      "links": "passed"
+    },
+    {
+      "memo": "docs/memo/memoWX_022_Chan_zhongshu.md",
+      "appendix_a_characters": 11683,
+      "appendix_b_characters": 5612,
+      "references": 12,
+      "image_embeds": 5,
+      "main_sections_unchanged": true,
+      "backup": "docs/memo/backups/memoWX_022_Chan_zhongshu__20261109_033313_938081.md",
+      "links": "passed"
+    },
+    {
+      "memo": "docs/memo/memoWX_023_Chan_zoushi.md",
+      "appendix_a_characters": 20646,
+      "appendix_b_characters": 10893,
+      "references": 20,
+      "image_embeds": 3,
+      "main_sections_unchanged": true,
+      "backup": "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_033355_329183.md",
+      "links": "passed"
+    },
+    {
+      "memo": "docs/memo/memoWX_024_Chan_beichi.md",
+      "appendix_a_characters": 24491,
+      "appendix_b_characters": 1680,
+      "references": 17,
+      "image_embeds": 7,
+      "main_sections_unchanged": true,
+      "backup": "docs/memo/backups/memoWX_024_Chan_beichi__20261109_033123_035455.md",
+      "links": "passed"
+    },
+    {
+      "memo": "docs/memo/memoWX_025_Chan_buysellpoint.md",
+      "appendix_a_characters": 17778,
+      "appendix_b_characters": 1747,
+      "references": 20,
+      "image_embeds": 17,
+      "main_sections_unchanged": true,
+      "backup": "docs/memo/backups/memoWX_025_Chan_buysellpoint__20261109_033123_040272.md",
+      "links": "passed"
+    }
+  ],
+  "cc_files_hash_and_ast_checked": 19,
+  "scanned_numbered_lessons": 108,
+  "cc_execution": false,
+  "limits": "Mechanical checks supplement source/figure/manual-trace reviews; not runtime equivalence or algorithm correctness tests."
+}

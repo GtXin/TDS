@@ -1,0 +1,37 @@
+[
+  {
+    "memo": "docs/memo/memoWX_019_Chan_fenxing.md",
+    "full_sha256": "eb7bee5a56a862e2eb3a3896c0864de2acd9986077a9be51f5d69256d63d9e19",
+    "main_prefix_sha256": "75045ae602e27003bdfafb78038d5241f597d171035100a950d958662abf4228"
+  },
+  {
+    "memo": "docs/memo/memoWX_020_Chan_bi.md",
+    "full_sha256": "5e576d254fae24e5b65045922e0696dbbd498ba7668ba2e570015dd2fc4f2ef5",
+    "main_prefix_sha256": "395ba900e2bf9a7906902d380f7b69218483f676e34154cc50f639f96ec5c524"
+  },
+  {
+    "memo": "docs/memo/memoWX_021_Chan_xianduan.md",
+    "full_sha256": "0181fc7092350b40fbc53a6cd29a770908ba9ae3ff8f1d483ca14b578d4ab015",
+    "main_prefix_sha256": "508e8cbc7ff8b5c2c4d52e924092420ab757deb99e940e99a3870aea3f4472a1"
+  },
+  {
+    "memo": "docs/memo/memoWX_022_Chan_zhongshu.md",
+    "full_sha256": "b75310370a6cd61dd7333d2853142e1429efd49bbbadf04cff7409197beb177e",
+    "main_prefix_sha256": "70fdf295984daec78184ecab77b374e428c055d918e2692c5c66a74752114d97"
+  },
+  {
+    "memo": "docs/memo/memoWX_023_Chan_zoushi.md",
+    "full_sha256": "d3919c9e5ae8286d3f6e22af03682507a067131cf75ff697a396b39d16923de1",
+    "main_prefix_sha256": "e415cf47a16068677d95b8f376bcf1a28bf66950fdd86808295cb28899a0439b"
+  },
+  {
+    "memo": "docs/memo/memoWX_024_Chan_beichi.md",
+    "full_sha256": "236760c25a982742eee78879a0b829e737a5e119405d72e2d1650dea19568d18",
+    "main_prefix_sha256": "02f3f78b0151bbd88649d11fde3bc1cdae2dda01b446e93ebad8f5e3468a3c51"
+  },
+  {
+    "memo": "docs/memo/memoWX_025_Chan_buysellpoint.md",
+    "full_sha256": "48fc653c14f8bc99f006caafb5df15ef37f2f36fc2bc938be39942f1cdc1446d",
+    "main_prefix_sha256": "151f7777ecd1a84d563c7be50a0fffa21e78b23e8181fecb033ed57d736017a1"
+  }
+]

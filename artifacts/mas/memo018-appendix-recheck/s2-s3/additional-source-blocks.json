@@ -1,0 +1,27 @@
+{
+  "memo": "docs/memo/memoWX_020_Chan_bi.md",
+  "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261109_043626_297115.md",
+  "quotes": [
+    {
+      "lesson": "066",
+      "start": 59,
+      "stop": 69,
+      "source_block_sha256": "e1c2631e81695185678c56a97fd8aea308c677ba382384c5d636d4c9cd7c45f6",
+      "normalization": "Remove span styling, escape literal == separators only"
+    },
+    {
+      "lesson": "066",
+      "start": 151,
+      "stop": 161,
+      "source_block_sha256": "d1dbf984f8630070e8692ba264adb2e45396a1b8026f0a3dea6e90da29576dac",
+      "normalization": "Remove span styling, escape literal == separators only"
+    },
+    {
+      "lesson": "066",
+      "start": 203,
+      "stop": 209,
+      "source_block_sha256": "297f6c7f64addc755bd858750250b60b36328df3eb843de2a275b1ff659f6d5a",
+      "normalization": "Remove span styling, escape literal == separators only"
+    }
+  ]
+}

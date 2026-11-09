@@ -1,0 +1,19 @@
+{
+  "reviewer": "study_s6 (not author of024/025)",
+  "scope": [
+    "memoWX_024_Chan_beichi.md",
+    "memoWX_025_Chan_buysellpoint.md"
+  ],
+  "result": "passed; no blocking issue",
+  "checks": [
+    "Independently compared all20 quoted source blocks against current lessons after disclosed span removal/path rewrite",
+    "Main000–005 identical to their captured pre-edit backups",
+    "All16 copied image records byte-identical (cross-memo duplicates retained)",
+    "Visually sampled064/image003 and086/image005; confirmed Zhang Dashan attribution as labeled",
+    "B evidence-gap wording explicitly limited to80-file current Python source scope",
+    "Inspected actual UDF /marks empty execution and model/engine upstream structure boundary",
+    "Author/editor/reader and missing-image labels preserve source limits",
+    "No CC execution or formal equivalence claims"
+  ],
+  "note": "Visual sample was064/image003 and086/image005, no026 image was reviewed."
+}

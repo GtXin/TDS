@@ -1,0 +1,166 @@
+{
+  "scanned_numbered_lessons": 108,
+  "scope": "Fresh keyword inventory and candidate-context review, not sentence-by-sentence corpus certification",
+  "rows": [
+    {
+      "concept": "S4",
+      "topic": "Direction, standard features, first/second break",
+      "sources": [
+        "067:16–46",
+        "071:28–62",
+        "077:73–99",
+        "078:28–74"
+      ],
+      "disposition": "Existing continuous sources retained; two-sequence premises and no same-direction destruction retained."
+    },
+    {
+      "concept": "S4",
+      "topic": "Original and compiler diagrams",
+      "sources": [
+        "071:58–62",
+        "071:64–88",
+        "077",
+        "078"
+      ],
+      "disposition": "Added full eight-image signed Zhang Dashan learning group after viewing; explicit compiler attribution, not authenticated author first-publication figures."
+    },
+    {
+      "concept": "S4",
+      "topic": "Temporary label versus completion",
+      "sources": [
+        "072:195",
+        "072:image005/image006"
+      ],
+      "disposition": "Added complete paragraph and adjacent before/after source charts; not equated with CC freeze-state policy."
+    },
+    {
+      "concept": "S4",
+      "topic": "Psychological rationale/minimum center components",
+      "sources": [
+        "083:19–37"
+      ],
+      "disposition": "Added continuous argument through domino-effect conclusion. Exact wording preserved; not converted into a three-complete-fractal numeric requirement."
+    },
+    {
+      "concept": "S4",
+      "topic": "Other candidate lessons",
+      "sources": [
+        "080:40–74",
+        "084:63–71",
+        "085:16–52",
+        "087:23–51",
+        "088:20–58",
+        "101:54"
+      ],
+      "disposition": "080 mostly timing/trade examples or context-specific ASCII redivision;084 structural level boundary added in S5;085 market anecdote;087/088 later type/multi-level notation;101 global recurrence assertion. Not duplicated as additional segment predicates."
+    },
+    {
+      "concept": "S4",
+      "topic": "Containment/equality/sliding",
+      "sources": [
+        "xianduan.py:300–331,374–487"
+      ],
+      "disposition": "Added ordered containment branches and raw-index replay; equality is position-specific, full equality takes first containment branch."
+    },
+    {
+      "concept": "S4",
+      "topic": "Standard candidates and freeze transitions",
+      "sources": [
+        "xianduan.py:544–993"
+      ],
+      "disposition": "Existing N0/N1/N2, gap-revert priority, failure absorption/rollover and source watermark retained; now includes strong single-stroke complete prerequisite chain and immutable single geometry."
+    },
+    {
+      "concept": "S4",
+      "topic": "Output transformation and source contracts",
+      "sources": [
+        "xianduan.py:997–1056,1095–1149"
+      ],
+      "disposition": "Added pending publicly forming, endpoint vs dep difference, first equal-extreme tie, fallback-tail not frozen, first/last trace versus member high/low, defensive4n guard."
+    },
+    {
+      "concept": "S4",
+      "topic": "Display helpers and optional configuration",
+      "sources": [
+        "xianduan.py:793–816,1220–1353",
+        "xianduan.py:267–271"
+      ],
+      "disposition": "Added PRIMARY/SECOND/TAIL_PROBE distinction and parameter-forwarding discrepancy: overlay builder omits strong_bi. Static fact; no runtime divergence test."
+    },
+    {
+      "concept": "S5",
+      "topic": "Definition, completion and fixed core/extents",
+      "sources": [
+        "017:45–65",
+        "018:24–66",
+        "020:28–74",
+        "020:278–292",
+        "028:294–298"
+      ],
+      "disposition": "Existing sources retained; no incompatible rewrite of source levels or extension/newborn/expansion."
+    },
+    {
+      "concept": "S5",
+      "topic": "Initialization vs recursion and level vs time",
+      "sources": [
+        "084:63–71"
+      ],
+      "disposition": "Added complete f1/f2 discussion and level/time separation."
+    },
+    {
+      "concept": "S5",
+      "topic": "Nine pieces and regrouping priority",
+      "sources": [
+        "066:177–187",
+        "099:27–39",
+        "080:462–466"
+      ],
+      "disposition": "Added066 full Q/A and099 continuous argument+compiler diagram.080 read and logged as corroboration, not redundant extra quote. Not a generic nine-anything upgrade rule."
+    },
+    {
+      "concept": "S5",
+      "topic": "Auxiliary monitoring",
+      "sources": [
+        "092:30–52"
+      ],
+      "disposition": "Read; Z/Zn monitor is auxiliary indicator, not center-construction or completion predicate; omitted from structural rule evidence."
+    },
+    {
+      "concept": "S5",
+      "topic": "EXTEND phase, extension, closure, restart",
+      "sources": [
+        "zhongshu_phase.py:53–128",
+        "zhongshu.py:118–130,298–379"
+      ],
+      "disposition": "Existing branches retained; corrected OPEN wording so geometric membership need not cover a final unpaired bridge."
+    },
+    {
+      "concept": "S5",
+      "topic": "Actual SAME_LEVEL path",
+      "sources": [
+        "zhongshu.py:382–490",
+        "same_level.py:193–285,928–994,1348–2282"
+      ],
+      "disposition": "Existing shared projector description retained; old _build_same_level_run not mistaken for reached formal path. Full movement logic cross-referenced023."
+    },
+    {
+      "concept": "S5",
+      "topic": "Input validation, direction, ID and trace",
+      "sources": [
+        "zhongshu.py:44–61,133–197,433–490",
+        "same_level.py:100–105",
+        "models.py:213–244,324–348"
+      ],
+      "disposition": "Added exact continuity check scope, missing price normalization fallback, core direction vs exit direction, mode ID prefixes and deps-source range distinction."
+    },
+    {
+      "concept": "S4/S5",
+      "topic": "Unresolved source figures and runtime coverage",
+      "sources": [
+        "067 diagram references",
+        "prior manual examples"
+      ],
+      "disposition": "067 missing figures remain missing after root local-source recovery check. Complex gap-revert/strong/failed absorption paths are statically analyzed, not fully reachable numeric/runtime test suite. Existing financial teaching charts retained unchanged."
+    }
+  ]
+}

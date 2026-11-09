@@ -1,0 +1,38 @@
+[
+  {
+    "lesson": "024",
+    "tds_markdown_images": [],
+    "cc_md_exists": true,
+    "cc_md_equals_tds": true,
+    "cc_html_image_sources": [],
+    "cc_asset_dir_exists": false,
+    "cc_html_asset_dir_exists": false
+  },
+  {
+    "lesson": "027",
+    "tds_markdown_images": [],
+    "cc_md_exists": true,
+    "cc_md_equals_tds": true,
+    "cc_html_image_sources": [],
+    "cc_asset_dir_exists": false,
+    "cc_html_asset_dir_exists": false
+  },
+  {
+    "lesson": "037",
+    "tds_markdown_images": [],
+    "cc_md_exists": true,
+    "cc_md_equals_tds": true,
+    "cc_html_image_sources": [],
+    "cc_asset_dir_exists": false,
+    "cc_html_asset_dir_exists": false
+  },
+  {
+    "lesson": "067",
+    "tds_markdown_images": [],
+    "cc_md_exists": true,
+    "cc_md_equals_tds": true,
+    "cc_html_image_sources": [],
+    "cc_asset_dir_exists": false,
+    "cc_html_asset_dir_exists": false
+  }
+]

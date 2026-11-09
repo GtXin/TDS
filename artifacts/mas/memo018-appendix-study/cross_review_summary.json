@@ -1,0 +1,36 @@
+{
+  "root_review": [
+    "019/020 actual HALF code and numerical conditions; corrected by owner",
+    "021/022 numerical examples and code scope",
+    "023 transition/local_slices source, arithmetic and financial chart",
+    "All five final financial charts visually inspected"
+  ],
+  "independent_reviews": [
+    {
+      "reviewer": "study_s2_s3",
+      "targets": [
+        "021",
+        "022"
+      ],
+      "result": "pass; no writes"
+    },
+    {
+      "reviewer": "study_s4_s5",
+      "target": "023",
+      "findings": [
+        "provisional source membership overlaps before confirmation",
+        "prefix input centers must not include future closure evidence"
+      ],
+      "result": "both corrected by owner; targeted independent recheck passed"
+    },
+    {
+      "reviewer": "study_s6",
+      "targets": [
+        "024",
+        "025"
+      ],
+      "result": "20 quote blocks/source hashes,16 original image copies,main preservation and bounded detector-gap evidence pass; no writes"
+    }
+  ],
+  "cc_execution": false
+}

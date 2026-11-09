@@ -1,0 +1,14 @@
+{
+  "memos": [
+    "021",
+    "022"
+  ],
+  "original_and_added_blocks": 15,
+  "new_blocks": 6,
+  "original_image_copies_checked": 21,
+  "new_image_copies": 11,
+  "quote_wording_source_hashes": "passed",
+  "main_prefixes_against_recheck_baseline": "passed",
+  "links_and_sequential_citations": "passed",
+  "cc_execution": false
+}

@@ -1,0 +1,24 @@
+{
+  "source_root": "/Users/coder/Public/EngineGit/cc",
+  "git_head": "374268381a3eaeee4d220e67d63364b3907405f4",
+  "purpose": "Second-pass S7/S8 boundary audit; no source execution; separate supplement to fixed19-file algorithm snapshot",
+  "files": [
+    {
+      "path": "src/cc/api/routes/ws.py",
+      "sha256": "2a672826b21ba27560ba513aac654fc1e818ab5e865501f26a370c3344586e00",
+      "lines": 164
+    },
+    {
+      "path": "frontend/src/composables/useSignalStream.ts",
+      "sha256": "0ef31a888cb2baac2cd12a182770ecdf9d9992a182c0f360747e9e951e23b3d1",
+      "lines": 40
+    },
+    {
+      "path": "frontend/src/components/LeftPane/SignalPanel.vue",
+      "sha256": "3fc7a737687e8fba0b6d3c56f8dad2c4f8abf23a2bc65e0574c923b03a6b4f3f",
+      "lines": 31
+    }
+  ],
+  "captured_at": "2026-11-09T04:33:54.972595-08:00",
+  "source_worktree_status": "clean (git status --short observed at capture)"
+}

@@ -1,0 +1,61 @@
+{
+  "memos": [
+    {
+      "memo": "docs/memo/memoWX_019_Chan_fenxing.md",
+      "main_prefix": "task-start SHA256 matches",
+      "references": 11,
+      "links": "passed",
+      "current_sha256": "f48dec54807d0dc47f15963accc67d3e8e4ff7cea373c31ae8737382ddf8fd70"
+    },
+    {
+      "memo": "docs/memo/memoWX_020_Chan_bi.md",
+      "main_prefix": "task-start SHA256 matches",
+      "references": 12,
+      "links": "passed",
+      "current_sha256": "9a6e6dd84b914a994c32a5481320272fa4701a101da9120f36a056970503c05f"
+    },
+    {
+      "memo": "docs/memo/memoWX_021_Chan_xianduan.md",
+      "main_prefix": "task-start SHA256 matches",
+      "references": 9,
+      "links": "passed",
+      "current_sha256": "ea653e936d5397eaecbb867e1a0f272a4d07321e73dbd43f2239bd6c97d76f95"
+    },
+    {
+      "memo": "docs/memo/memoWX_022_Chan_zhongshu.md",
+      "main_prefix": "task-start SHA256 matches",
+      "references": 12,
+      "links": "passed",
+      "current_sha256": "47ceb00515b0ecf5edcda77a461ffcc50ad949cf45ea3073b1a9e046a3c1a968"
+    },
+    {
+      "memo": "docs/memo/memoWX_023_Chan_zoushi.md",
+      "main_prefix": "task-start SHA256 matches",
+      "references": 21,
+      "links": "passed",
+      "current_sha256": "233bb5e5a0efdcbab77a967d9925e3ea800737a17e46c0b3081e25b1f2adaf39"
+    },
+    {
+      "memo": "docs/memo/memoWX_024_Chan_beichi.md",
+      "main_prefix": "task-start SHA256 matches",
+      "references": 18,
+      "links": "passed",
+      "current_sha256": "0a37006786c3cdf5a1f340cea37a57936657f512fe59d40b2d0ba81142d6fa32"
+    },
+    {
+      "memo": "docs/memo/memoWX_025_Chan_buysellpoint.md",
+      "main_prefix": "task-start SHA256 matches",
+      "references": 20,
+      "links": "passed",
+      "current_sha256": "3592d67a635021b8799c34a8e6408ad19fe49e77f30909d4cf2a0fa3be524b95"
+    }
+  ],
+  "source_files_hash_checked": 22,
+  "python_source_syntax_only": true,
+  "cc_execution": false,
+  "new_local_source_blocks": 25,
+  "new_online_short_note": "104 primary author page",
+  "new_source_image_copies": 20,
+  "new_manual_financial_charts": 2,
+  "limits": "Corpus keyword scan and selected context/figure/code audits, not exhaustive publication/image certification or runtime equivalence/proof. S7/S8 executable detector evidence still absent."
+}

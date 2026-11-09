@@ -1,0 +1,19 @@
+{
+  "target": "memo023 new A8+ and B8–B10",
+  "reviewer": "recheck_s4_s5",
+  "read_only": true,
+  "new_source_ranges_verified": 7,
+  "source_and_normalized_quotes": "pass",
+  "code_checks": [
+    "kernel297–371 same-price reanchor only before candidate, strict new extreme clears candidate, _transition start/evidence match",
+    "same_level1405–1555 X-time prefix geometry vs right-candidate observed horizon; retained+2 conservative baseline",
+    "same_level1681–1857 phase refinement valid contiguous prefix and next_frozen condition",
+    "same_level1859–1869 single left-edge phase shift",
+    "same_level2140–2158 all ordered pairs strict direction set",
+    "same_level770–916 exclusive ownership and source-boundary invariants",
+    "zoushi_recursion291–400 run breaks for forming/zero-price and601+ logical level",
+    "zoushi_recursion476–588 horizon selected-member coordinates and explicit evidence-only dep expansion"
+  ],
+  "result": "pass, no blocking finding",
+  "limits": "Source/static read only; no CC imports/execution, runtime parity or complete theorem proof."
+}
