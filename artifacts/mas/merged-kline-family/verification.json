@@ -1,0 +1,61 @@
+{
+  "raw_count": 10060,
+  "context_count": 9,
+  "protected_hashes": {
+    "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_context_v20261108.csv": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15",
+    "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_chan_table_v20261108.csv": "1c4039411b0472c27fd4af42fcd320ccd0579d9f5c5f54d9d013893f665c85c5"
+  },
+  "policies": {
+    "UP": {
+      "merged_count": 6200,
+      "trace_count": 10061
+    },
+    "DOWN": {
+      "merged_count": 6200,
+      "trace_count": 10061
+    },
+    "OUTER": {
+      "merged_count": 6200,
+      "trace_count": 10061
+    },
+    "BOTH": {
+      "merged_count": 6200,
+      "trace_count": 10061
+    },
+    "UNSET": {
+      "merged_count": 6200,
+      "trace_count": 10061
+    }
+  },
+  "variants": {
+    "baseline": {
+      "returncode": 1,
+      "source": "artifacts/mas/merged-kline-family/baseline/merged_kline.py",
+      "sha256": "8e73ea5c48ede7b099304d743d955e8c86dc10abb6aa50df792b73077811d90f"
+    },
+    "python_pro": {
+      "returncode": 0,
+      "source": "artifacts/mas/merged-kline-family/python_pro/merged_kline.py",
+      "sha256": "f8373c3f2830bdeb5ce0e5357fd0f9366e34146d0126cabe2b059e773ac74e2c"
+    }
+  },
+  "png_error": "BrowserFailedError: ('The browser seemed to close immediately after starting.', 'You can set the `logging.Logger` level lower to see more output.', 'You may try installing a known working copy of Chrome by running ', '`$ choreo_get_chrome`.It may be your browser auto-updated and will now work upon restart. The browser we tried to start is located at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome.')",
+  "worked_png_error": "('The browser seemed to close immediately after starting.', 'You can set the `logging.Logger` level lower to see more output.', 'You may try installing a known working copy of Chrome by running ', '`$ choreo_get_chrome`.It may be your browser auto-updated and will now work upon restart. The browser we tried to start is located at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome.')",
+  "protected_inputs_unchanged": true,
+  "inspected_pngs": {
+    "artifacts/merged-kline/cc-last40-merged.png": "ba99ec333f4df77f248263504636e6de6d2c460cfdb5dc174d3db250c827e181",
+    "artifacts/merged-kline/worked-example.png": "ba4d724f519436fc8c983feb7756b709d5acb3622abfd201930b26684eb88bca"
+  },
+  "png_note": "These existing PNGs were exported successfully with broader execution permission and visually inspected; later sandbox re-export failures are retained above.",
+  "checks": {
+    "focused_passed": 26,
+    "regression_passed": 202,
+    "baseline_core": "23 passed, 1 failed",
+    "selected_core": "24 passed",
+    "coverage_statements": "277/278",
+    "mypy": "strict passed, optional untyped Plotly imports localized ignores",
+    "black": "check passed",
+    "ruff": "report-only final passed",
+    "memo_example": "executed successfully"
+  }
+}

@@ -29,6 +29,7 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | WX 023 | [Chan_zoushi](memoWX_023_Chan_zoushi.md) |
 | WX 024 | [Chan_beichi](memoWX_024_Chan_beichi.md) |
 | WX 025 | [Chan_buysellpoint](memoWX_025_Chan_buysellpoint.md) |
+| WX 026 | [MergedKline family implementation plan](memoWX_026_MergedKlineFamily.md) |
 | KWX 001 | [cc project folder structure](memoKWX_001_文件夹结构.md) |
 
 For new or revised memos, follow [the writing guide](memoWX_006_memoWritingGuide.md).

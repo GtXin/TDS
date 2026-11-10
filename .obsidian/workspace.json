@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/memo/memoWX_015_Chan_mergedkline.md",
+                "file": "docs/memo/memoWX_026_MergedKlineFamily.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memoWX_015_Chan_mergedkline"
+              "title": "memoWX_026_MergedKlineFamily"
             }
           }
         ],
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/memo/memoWX_015_Chan_mergedkline.md",
+                "file": "docs/memo/memoWX_026_MergedKlineFamily.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/memo/memoWX_015_Chan_mergedkline.md",
+                "file": "docs/memo/memoWX_026_MergedKlineFamily.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -190,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/memo/memoWX_015_Chan_mergedkline.md",
+                "file": "docs/memo/memoWX_026_MergedKlineFamily.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -219,27 +219,39 @@
   },
   "active": "7c5db727149b0f10",
   "lastOpenFiles": [
-    "artifacts/mas/memo018-appendix-recheck/coordinator_update.json",
+    "artifacts/mas/merged-kline-family/checks/focused.txt",
+    "artifacts/mas/merged-kline-family/checks/black.txt",
+    "artifacts/mas/merged-kline-family/checks/ruff.txt",
+    "artifacts/mas/merged-kline-family/checks/memo-example.txt",
+    "artifacts/merged-kline/example.html",
+    "artifacts/merged-kline/README.md",
+    "artifacts/mas/merged-kline-family/comparison.md",
+    "docs/memo/backups/memoWX_026_MergedKlineFamily__20261109_113250_474571.md",
+    "artifacts/mas/merged-kline-family/checks/full-verification.txt",
+    "artifacts/mas/merged-kline-family/baseline/acceptance_frozen.py",
+    "artifacts/mas/merged-kline-family/checks/coverage.json",
+    "artifacts/mas/merged-kline-family/checks/mypy.txt",
+    "artifacts/mas/merged-kline-family/baseline/__pycache__/test_merged_kline.cpython-311-pytest-9.2.0.pyc",
+    "artifacts/mas/merged-kline-family/checks/regression.txt",
+    "artifacts/merged-kline/worked-example.png",
+    "artifacts/merged-kline/cc-last40-merged.png",
+    "mas/tasks/20261109-memo026-execution.md",
+    "docs/memo/memoWX_019_Chan_fenxing.md",
+    "docs/memo/backups/memoWX_026_MergedKlineFamily__20261109_112511_238069.md",
+    "docs/memo/memoWX_026_MergedKlineFamily.md",
+    "docs/memo/memoWX_013_klineFamily.md",
+    "docs/memo/backups/README__20261109_112119_129132.md",
+    "docs/memo/memoWX_015_Chan_mergedkline.md",
     "docs/memo/backups/memoWX_018_batchConcept2to8__20261109_044309_556828.md",
     "artifacts/mas/memo018-appendix-recheck/README.md",
-    "artifacts/mas/memo018-appendix-recheck/final_verification.json",
-    "artifacts/mas/memo018-appendix-recheck/verify_recheck.py",
-    "artifacts/mas/memo018-appendix-recheck/s2-s3/cross-review-s7-s8.json",
     "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_044001_024095.md",
     "artifacts/mas/memo018-appendix-recheck/s4-s5/README.md",
-    "artifacts/mas/memo018-appendix-recheck/s4-s5/coverage_matrix.json",
-    "artifacts/mas/memo018-appendix-recheck/s6/cross_review_s4_s5.json",
     "artifacts/mas/memo018-appendix-recheck/s6/README.md",
     "artifacts/mas/memo018-appendix-recheck/s2-s3/README.md",
     "artifacts/mas/memo018-appendix-recheck/s2-s3/coverage.md",
-    "artifacts/mas/memo018-appendix-recheck/s6/final_checks.json",
-    "artifacts/mas/memo018-appendix-recheck/s6/check_recheck.py",
-    "artifacts/mas/memo018-appendix-recheck/s7-s8/online104_and_style.json",
     "docs/memo/backups/memoWX_025_Chan_buysellpoint__20261109_043902_901803.md",
     "docs/memo/backups/memoWX_024_Chan_beichi__20261109_043902_901078.md",
     "docs/memo/backups/memoWX_021_Chan_xianduan__20261109_043856_887403.md",
-    "artifacts/mas/memo018-appendix-recheck/s2-s3/checks.json",
-    "artifacts/mas/memo018-appendix-recheck/s2-s3/check_rework.py",
     "docs/memo/backups/memoWX_020_Chan_bi__20261109_043727_239020.md",
     "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_043725_260893.md",
     "docs/memo/backups/memoWX_020_Chan_bi__20261109_043626_297115.md",
@@ -252,18 +264,6 @@
     "docs/memo/memoWX_021_Chan_xianduan/lesson071-image005.jpg",
     "docs/memo/memoWX_021_Chan_xianduan/lesson071-image004.jpg",
     "docs/memo/memoWX_021_Chan_xianduan/lesson071-image003.jpg",
-    "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_043551_862658.md",
-    "docs/memo/backups/memoWX_015_Chan_mergedkline__20261109_043531_461703.md",
-    "docs/memo/backups/memoWX_022_Chan_zhongshu__20261109_043522_476469.md",
-    "docs/memo/backups/memoWX_021_Chan_xianduan__20261109_043522_475627.md",
-    "artifacts/mas/memo018-appendix-recheck/s6/coverage_matrix.md",
-    "docs/memo/backups/memoWX_020_Chan_bi__20261109_043431_701182.md",
-    "docs/memo/memoWX_020_Chan_bi/lesson064-image021.jpg",
-    "docs/memo/memoWX_020_Chan_bi/lesson064-image001.jpg",
-    "docs/memo/backups/memoWX_019_Chan_fenxing__20261109_043431_699329.md",
-    "docs/memo/backups/memoWX_022_Chan_zhongshu__20261109_043428_121130.md",
-    "docs/memo/backups/memoWX_021_Chan_xianduan__20261109_043428_119164.md",
-    "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_043410_765180.md",
-    "docs/memo/backups/memoWX_025_Chan_buysellpoint__20261109_043355_050757.md"
+    "docs/memo/backups/memoWX_023_Chan_zoushi__20261109_043551_862658.md"
   ]
 }

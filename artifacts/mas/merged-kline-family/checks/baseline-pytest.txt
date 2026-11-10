@@ -1,0 +1,35 @@
+VARIANT_SOURCE=/Users/coder/Public/EngineGit/TDS/artifacts/mas/merged-kline-family/baseline/merged_kline.py
+FULL_DATA UP 6200 0045233775f0d00c07a85c81c6452e00e93cbfb9986a67074902e6655c5247d4
+FULL_DATA DOWN 6200 0045233775f0d00c07a85c81c6452e00e93cbfb9986a67074902e6655c5247d4
+FULL_DATA OUTER 6200 0045233775f0d00c07a85c81c6452e00e93cbfb9986a67074902e6655c5247d4
+FULL_DATA BOTH 6200 0045233775f0d00c07a85c81c6452e00e93cbfb9986a67074902e6655c5247d4
+FULL_DATA UNSET 6200 0045233775f0d00c07a85c81c6452e00e93cbfb9986a67074902e6655c5247d4
+.......................F                                                 [100%]
+=================================== FAILURES ===================================
+______________________ test_result_validation_regressions ______________________
+
+    def test_result_validation_regressions():
+        s = derive([(1, 5), (3, 7), (2, 4)])
+        # Nonadjacent inclusion is permitted; exact same raw values are not source identity.
+        assert has_inclusion(s[0], s[2])
+        with pytest.raises(ValueError):
+            replace(s, klines=(s[0], s[1], replace(s[2], id=s[0].id)))
+        with pytest.raises(ValueError):
+            replace(s, klines=(replace(s[0], source_start=1),) + s.klines[1:])
+        with pytest.raises(ValueError):
+            replace(s, klines=s.klines[:-1])
+        with pytest.raises(ValueError):
+            replace(s, klines=s.klines[:-1] + (replace(s[-1], source_stop=4),))
+        with pytest.raises(ValueError):
+            replace(s, klines=(s[0], replace(s[1], low=2, high=5), s[2]))
+        with pytest.raises(ValueError):
+            replace(s, trace_by_point=((),) + s.trace_by_point[1:])
+        with pytest.raises(ValueError):
+            replace(s, trace_by_point=((True,),) + s.trace_by_point[1:])
+>       with pytest.raises(ValueError):
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_merged_kline.py:221: Failed
+=========================== short test summary info ============================
+FAILED tests/test_merged_kline.py::test_result_validation_regressions - Faile...
+1 failed, 23 passed, 2 deselected in 0.04s
