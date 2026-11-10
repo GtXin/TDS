@@ -20,30 +20,132 @@
       "png": "artifacts/kline/cc-15m-last200-volume.png",
       "bars": 200,
       "volume": true,
+      "show_gaps": false,
+      "market": "US",
+      "up_color": "#16a34a",
+      "down_color": "#dc2626",
       "first_utc": "2026-08-06T14:45:00+00:00",
       "last_utc": "2026-08-19T06:45:00+00:00",
       "trace_values_match_source": true,
-      "png_bytes": 137058
+      "png_bytes": 166642
     },
     {
       "html": "artifacts/kline/cc-15m-last40-detail.html",
       "png": "artifacts/kline/cc-15m-last40-detail.png",
       "bars": 40,
       "volume": false,
+      "show_gaps": false,
+      "market": "US",
+      "up_color": "#16a34a",
+      "down_color": "#dc2626",
       "first_utc": "2026-08-17T14:30:00+00:00",
       "last_utc": "2026-08-19T06:45:00+00:00",
       "trace_values_match_source": true,
-      "png_bytes": 98011
+      "png_bytes": 103146
+    },
+    {
+      "html": "artifacts/kline/cc-15m-last200-calendar.html",
+      "png": "artifacts/kline/cc-15m-last200-calendar.png",
+      "bars": 200,
+      "volume": true,
+      "show_gaps": true,
+      "market": "US",
+      "up_color": "#16a34a",
+      "down_color": "#dc2626",
+      "first_utc": "2026-08-06T14:45:00+00:00",
+      "last_utc": "2026-08-19T06:45:00+00:00",
+      "trace_values_match_source": true,
+      "png_bytes": 137211
+    },
+    {
+      "html": "artifacts/kline/cc-15m-last40-china.html",
+      "png": "artifacts/kline/cc-15m-last40-china.png",
+      "bars": 40,
+      "volume": false,
+      "show_gaps": false,
+      "market": "China",
+      "up_color": "#dc2626",
+      "down_color": "#16a34a",
+      "first_utc": "2026-08-17T14:30:00+00:00",
+      "last_utc": "2026-08-19T06:45:00+00:00",
+      "trace_values_match_source": true,
+      "png_bytes": 103403
     }
   ],
   "implementation": "KlineTSeries.plot -> chanlab.visualization.kline_plot.plot_kline_series",
   "plotly_version": "7.1.0",
-  "focused_tests": "11 passed",
-  "regression_tests": "176 passed",
-  "typed_source_check": "strict mypy passed3 source files; optional Plotly imports have localized import-not-found ignores in isolated checker environment",
+  "focused_tests": "14 raw plot cases and 14 palette cases passed",
+  "regression_tests": "278 passed",
+  "typed_source_check": "Strict mypy on 2 raw source files with follow-imports=silent passed",
   "ruff": "src tests generator passed",
-  "black": "four changed source/test/generator files passed after formatting",
-  "coverage": "93%;221 statements,15 missed;125 focused/core cases passed with Plotly in coverage tool environment",
-  "visual_inspection": "Both PNGs inspected:titles,UTC axes,price/candles/volume legible; real session gaps retained; no clipping observed",
-  "runtime_dependency": "optional plot extra; no base runtime dependencies; Kaleido/Chrome used only for preview export"
+  "black": "5 scoped files passed",
+  "coverage": "94%; 250 statements, 15 missed; 164 core/CSV/OOP/plot cases passed",
+  "visual_inspection": "All four PNGs viewed: US/China color reversal accurate; prices, UTC timestamps and category geometry identical for the matched 40 bars; titles, labels and volume legible.",
+  "runtime_dependency": "optional plot extra; no base runtime dependencies; Kaleido/Chrome used only for preview export",
+  "time_axis_correction": {
+    "date": "2026-11-09T18:36:32-08:00",
+    "cause": "Prior helper and sample generator forced an elapsed date axis; originals match recorded epoch/UTC values.",
+    "source_rows": 10060,
+    "selected_bars": 200,
+    "selected_span_minutes": 18240,
+    "intervals_over_15_minutes": 35,
+    "largest_interval_minutes": 3495,
+    "interpretation_limit": "No exchange calendar/data completeness claim; default compresses all absent intervals.",
+    "default": "show_gaps=False, equal ordered timestamp categories; trace datetime values unchanged",
+    "optional": "show_gaps=True, calendar date axes",
+    "merged_compatibility": "Existing026 helper explicitly uses show_gaps=True; overlays remain aligned.",
+    "tests": {
+      "focused_raw_merged": "40 passed",
+      "regression": "205 passed",
+      "core_plot_coverage_suite": "128 passed",
+      "ruff": "src/tests/generator passed",
+      "black": "6 scoped files passed",
+      "mypy": "2 raw plot source files strict passed"
+    },
+    "pictures": {
+      "docs/memo/memoWX_013_klineFamily/cc-last200-consecutive-bars.png": "e7b5b3b393ffbe629b8955d324969dbd9d041049413f43807844bf73ffdb000d",
+      "docs/memo/memoWX_013_klineFamily/cc-last200-calendar-time.png": "44ddf408dd9f18ce5ef44815b6a8debfaf156e4bbb3e74fec9b4c75d2726ff6a",
+      "docs/memo/memoWX_013_klineFamily/cc-last40-detail.png": "f8c5635b9348656f5cbbdec62acbc04dc7d05854b2b09c4732f7801230988708"
+    },
+    "samples": [
+      {
+        "html": "artifacts/kline/cc-15m-last200-volume.html",
+        "png": "artifacts/kline/cc-15m-last200-volume.png",
+        "bars": 200,
+        "volume": true,
+        "show_gaps": false,
+        "first_utc": "2026-08-06T14:45:00+00:00",
+        "last_utc": "2026-08-19T06:45:00+00:00",
+        "trace_values_match_source": true,
+        "png_bytes": 169459
+      },
+      {
+        "html": "artifacts/kline/cc-15m-last40-detail.html",
+        "png": "artifacts/kline/cc-15m-last40-detail.png",
+        "bars": 40,
+        "volume": false,
+        "show_gaps": false,
+        "first_utc": "2026-08-17T14:30:00+00:00",
+        "last_utc": "2026-08-19T06:45:00+00:00",
+        "trace_values_match_source": true,
+        "png_bytes": 104734
+      },
+      {
+        "html": "artifacts/kline/cc-15m-last200-calendar.html",
+        "png": "artifacts/kline/cc-15m-last200-calendar.png",
+        "bars": 200,
+        "volume": true,
+        "show_gaps": true,
+        "first_utc": "2026-08-06T14:45:00+00:00",
+        "last_utc": "2026-08-19T06:45:00+00:00",
+        "trace_values_match_source": true,
+        "png_bytes": 137058
+      }
+    ],
+    "visual_review": "All three PNGs viewed; default equal-width candle/volume spacing and UTC ticks legible; calendar comparison reproduces earlier gap layout."
+  },
+  "current_sample_manifest": "sample-verification.json (four charts; prior reports in history)",
+  "current_checks_date": "2026-11-09T21:43:08-08:00",
+  "protected_hash_baseline": "market-color-protected-hashes.json",
+  "current_market_verification": "market-color-verification.json"
 }

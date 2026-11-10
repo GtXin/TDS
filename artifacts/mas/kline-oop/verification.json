@@ -1,0 +1,48 @@
+{
+  "completed_at": "2026-11-09T19:21:12-08:00",
+  "status": "complete",
+  "class_count": 2,
+  "Kline_fields": 9,
+  "KlineTSeries_fields": [
+    "klines",
+    "context"
+  ],
+  "KlineTSeries_methods": [
+    "__getitem__",
+    "__init__",
+    "__iter__",
+    "__len__",
+    "plot",
+    "read_csv",
+    "validate",
+    "write_csv"
+  ],
+  "new_method_tests": "22 passed",
+  "regression": "233 passed",
+  "core_plot_oop_cases": "150 passed",
+  "coverage": {
+    "covered_lines": 232,
+    "num_statements": 247,
+    "percent_covered": 93.92712550607287,
+    "percent_covered_display": "94",
+    "missing_lines": 15,
+    "excluded_lines": 12,
+    "percent_statements_covered": 93.92712550607287,
+    "percent_statements_covered_display": "94"
+  },
+  "ruff": "all src/tests/generator/method script passed",
+  "black": "five scoped files passed after formatting test file",
+  "mypy": "strict owned2files passed with follow-imports=silent; broadimport traversal has6unrelated merged optional-import diagnostics",
+  "roundtrip": {
+    "rows": 10060,
+    "owned_context_keys": 9,
+    "object_roundtrip_equal": true,
+    "plot_trace_values_match": true,
+    "source_images_and_configuration_unchanged": true,
+    "raw_export_sha256": "964e13580e7811a5ad8849915e659b5fd39dfe48a2fbbfa1e4d2393d79a05cd4",
+    "context_export_sha256": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15"
+  },
+  "docs": "Both examples executed,class/member/method inventory/tables/links checked,3 pictures preserved",
+  "source_data_images_and_config_hashes": "unchanged",
+  "review": "independent source/OO design review passed"
+}

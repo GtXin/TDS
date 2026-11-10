@@ -1,0 +1,12 @@
+{
+  "baseline": {
+    "returncode": 1,
+    "source": "artifacts/mas/fenxing-family/baseline/fenxing.py",
+    "sha256": "091d88454dd544c48ea770f6042dd01317b60ccee5eb2a49c3ffb3bafe1c76ef"
+  },
+  "python_pro": {
+    "returncode": 0,
+    "source": "artifacts/mas/fenxing-family/python_pro/fenxing.py",
+    "sha256": "f1b3ada5c8c0c91a6a0761f23d69e9f2349af3a274b341e511b098412afcf220"
+  }
+}

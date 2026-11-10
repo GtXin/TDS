@@ -1,0 +1,86 @@
+{
+  "bars_low_high": [
+    [
+      6,
+      7
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      11,
+      12
+    ]
+  ],
+  "fractals_center_kind": [
+    [
+      1,
+      "bottom"
+    ],
+    [
+      5,
+      "top"
+    ],
+    [
+      7,
+      "bottom"
+    ],
+    [
+      11,
+      "top"
+    ]
+  ],
+  "valid_pairs_merged_centers": [
+    [
+      1,
+      5
+    ],
+    [
+      7,
+      11
+    ]
+  ],
+  "fixed_boundary_paths": [],
+  "meaning": "Cannot assume a complete path between arbitrary fixed valid first and last fractals. A-B and C-D individually valid; A-D violates minimum; B-C spacing fails."
+}

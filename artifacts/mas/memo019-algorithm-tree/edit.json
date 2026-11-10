@@ -1,0 +1,16 @@
+{
+  "backup": "docs/memo/backups/memoWX_019_Chan_fenxing__20261109_220111_354305.md",
+  "memo": "docs/memo/memoWX_019_Chan_fenxing.md",
+  "before_sha256": "cf5c79d216e0468fd5e7e0a25848d49d28ee3fb38d6125821b2d6fa7ab2291cf",
+  "after_sha256": "95c9a9c97e856ae4391940ded4b34c7d0e7a56e8277518f6b3d385882b4e2f81",
+  "outside_section_sha256": "f15725989ea2de1ed5e9311d60cae241cc04cc15641d72b8793939e32854dfda",
+  "section_start_line": 12,
+  "outside_section_preserved": true,
+  "backup_verified": true,
+  "followup_backups": [
+    {
+      "path": "docs/memo/backups/memoWX_019_Chan_fenxing__20261109_220245_981944.md",
+      "sha256": "41caae44991a9b9e58d1946972599d133df7cf9b01ff21f2e381ca0a4be102b9"
+    }
+  ]
+}

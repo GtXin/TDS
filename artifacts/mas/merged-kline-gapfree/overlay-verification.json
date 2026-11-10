@@ -1,0 +1,26 @@
+{
+  "raw_count": 40,
+  "merged_intervals": 26,
+  "raw_range": [
+    10020,
+    10060
+  ],
+  "gap_free": true,
+  "raw_candles_foreground": true,
+  "merged_fill_opacity": 0.1,
+  "source_hashes": {
+    "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_chan_table_v20261108.csv": "1c4039411b0472c27fd4af42fcd320ccd0579d9f5c5f54d9d013893f665c85c5",
+    "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_context_v20261108.csv": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15"
+  },
+  "no_fabricated_merged_ohlc": true,
+  "legend_can_toggle_merged_groups": true,
+  "png_sha256": "b72ab5e2a6800c54be0f3c9d23bb254365085aef69be2a61c019c0e6f905f8b4",
+  "visually_inspected": true,
+  "memo_picture_sha256": "b72ab5e2a6800c54be0f3c9d23bb254365085aef69be2a61c019c0e6f905f8b4",
+  "memo_backup": "docs/memo/backups/memoWX_026_MergedKlineFamily__20261109_194352_324859.md",
+  "package": "artifacts/exports/memo026_with_overlay.zip",
+  "package_sha256": "c312b1a7da76116a82b324aec9b0462c16ea312d6f7b15c5ee5072b42954290f",
+  "historical_before_plot_api": true,
+  "original_png_archived": "artifacts/mas/merged-kline-plot-options/before/cc-last40-overlay-gapfree.png",
+  "current_method_verification": "artifacts/mas/merged-kline-plot-options/verification.json"
+}

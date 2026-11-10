@@ -1,0 +1,103 @@
+{
+  "source_hashes": {
+    "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_chan_table_v20261108.csv": "1c4039411b0472c27fd4af42fcd320ccd0579d9f5c5f54d9d013893f665c85c5",
+    "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_context_v20261108.csv": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15"
+  },
+  "raw_count": 10060,
+  "merged_count": 6200,
+  "samples": {
+    "cc-last40-overlay-gapfree": {
+      "options": {
+        "raw_start": -40,
+        "volume": false
+      },
+      "metadata": {
+        "market": "US",
+        "style": "overlay",
+        "show_gaps": false,
+        "raw_start": 10020,
+        "raw_stop": 10060,
+        "merged_count": 26
+      },
+      "png_sha256": "ec60883dfbfdcc70e900fbed86b3b4f49519627a7e7fecce1e8b033c8d10bfc3"
+    },
+    "cc-last40-raw-and-merged-gapfree": {
+      "options": {
+        "raw_start": -40,
+        "volume": false,
+        "style": "panels"
+      },
+      "metadata": {
+        "market": "US",
+        "style": "panels",
+        "show_gaps": false,
+        "raw_start": 10020,
+        "raw_stop": 10060,
+        "merged_count": 26
+      },
+      "png_sha256": "4f5d98bc9b97a61c4c7fbde45f298089b1ce6e9627c44a301296b6e1cf8c6603"
+    },
+    "cc-last40-overlay-calendar": {
+      "options": {
+        "raw_start": -40,
+        "volume": false,
+        "show_gaps": true
+      },
+      "metadata": {
+        "market": "US",
+        "style": "overlay",
+        "show_gaps": true,
+        "raw_start": 10020,
+        "raw_stop": 10060,
+        "merged_count": 26
+      },
+      "png_sha256": "dca65f44fe27e50626d1ab0b19dc2293094239472092b9fcf698eb97c7f1e158"
+    },
+    "cc-last40-overlay-china": {
+      "options": {
+        "raw_start": -40,
+        "volume": false,
+        "market": "China"
+      },
+      "metadata": {
+        "market": "China",
+        "style": "overlay",
+        "show_gaps": false,
+        "raw_start": 10020,
+        "raw_stop": 10060,
+        "merged_count": 26
+      },
+      "png_sha256": "ba4b4954cd3e7bd32eadda2f488db1b372a28e20a192d37939bfeea01689f1c9"
+    }
+  },
+  "market_default": "US",
+  "presets": {
+    "US": {
+      "up": "#16a34a",
+      "down": "#dc2626"
+    },
+    "China": {
+      "up": "#dc2626",
+      "down": "#16a34a"
+    }
+  },
+  "protected_hashes_unchanged": true,
+  "same_geometry_ohlc_both_presets": true,
+  "all_png_hashes": {
+    "cc-last40-overlay-gapfree.png": "ec60883dfbfdcc70e900fbed86b3b4f49519627a7e7fecce1e8b033c8d10bfc3",
+    "cc-last40-overlay-china.png": "ba4b4954cd3e7bd32eadda2f488db1b372a28e20a192d37939bfeea01689f1c9",
+    "cc-last40-raw-and-merged-gapfree.png": "4f5d98bc9b97a61c4c7fbde45f298089b1ce6e9627c44a301296b6e1cf8c6603",
+    "cc-last40-merged.png": "3c4cacee4cd90f666bba0d34fe345c3e390a6f91182d0bedc1d9844137df670f",
+    "worked-example.png": "c8511cdf171badb07ac11e2f7280658abf5bc7f6024955bd8cfb792f9598548b",
+    "cc-last40-overlay-calendar.png": "dca65f44fe27e50626d1ab0b19dc2293094239472092b9fcf698eb97c7f1e158"
+  },
+  "regression_passed": 305,
+  "focused_passed": 90,
+  "new_palette_cases": 27,
+  "renderer_coverage": "79/79",
+  "combined_coverage": "346/348",
+  "six_pngs_visually_inspected": true,
+  "all_memo_image_bytes_match": true,
+  "package": "artifacts/exports/memo026_market_colors.zip",
+  "package_sha256": "c706f8bb4d2023de9aa0ad2f737938997b4c143313f65ed6b816c76b5cf84aef"
+}

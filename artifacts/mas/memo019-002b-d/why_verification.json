@@ -1,0 +1,9 @@
+{
+  "backup": "docs/memo/backups/memoWX_019_Chan_fenxing__20261109_223807_507355.md",
+  "before_sha256": "4a047ecaf2ae62c72a7f2d706e92e9700acad492c048b1b71b3bad740a87dae4",
+  "after_sha256": "045f19faff953cde7c54d7c2d2187f4b4095da6efa624e0bd7b7895a8fa8f95b",
+  "outside_003_preserved": true,
+  "line": 311,
+  "review": "Read-only conceptual review PASS; three-bar minimality scoped to adjacent-direction definition, center distinguished from structure.",
+  "checks": "backup bytes, scoped preservation, section/index and clarity pass"
+}

@@ -14,26 +14,63 @@
     "features": "All eight groups unavailable; no detection run"
   },
   "source_and_protected_files_unchanged": true,
+  "protected_hash_baseline": "market-color-protected-hashes.json",
   "charts": [
     {
       "html": "artifacts/kline/cc-15m-last200-volume.html",
       "png": "artifacts/kline/cc-15m-last200-volume.png",
       "bars": 200,
       "volume": true,
+      "show_gaps": false,
+      "market": "US",
+      "up_color": "#16a34a",
+      "down_color": "#dc2626",
       "first_utc": "2026-08-06T14:45:00+00:00",
       "last_utc": "2026-08-19T06:45:00+00:00",
       "trace_values_match_source": true,
-      "png_bytes": 137058
+      "png_bytes": 166642
     },
     {
       "html": "artifacts/kline/cc-15m-last40-detail.html",
       "png": "artifacts/kline/cc-15m-last40-detail.png",
       "bars": 40,
       "volume": false,
+      "show_gaps": false,
+      "market": "US",
+      "up_color": "#16a34a",
+      "down_color": "#dc2626",
       "first_utc": "2026-08-17T14:30:00+00:00",
       "last_utc": "2026-08-19T06:45:00+00:00",
       "trace_values_match_source": true,
-      "png_bytes": 98011
+      "png_bytes": 103146
+    },
+    {
+      "html": "artifacts/kline/cc-15m-last200-calendar.html",
+      "png": "artifacts/kline/cc-15m-last200-calendar.png",
+      "bars": 200,
+      "volume": true,
+      "show_gaps": true,
+      "market": "US",
+      "up_color": "#16a34a",
+      "down_color": "#dc2626",
+      "first_utc": "2026-08-06T14:45:00+00:00",
+      "last_utc": "2026-08-19T06:45:00+00:00",
+      "trace_values_match_source": true,
+      "png_bytes": 137211
+    },
+    {
+      "html": "artifacts/kline/cc-15m-last40-china.html",
+      "png": "artifacts/kline/cc-15m-last40-china.png",
+      "bars": 40,
+      "volume": false,
+      "show_gaps": false,
+      "market": "China",
+      "up_color": "#dc2626",
+      "down_color": "#16a34a",
+      "first_utc": "2026-08-17T14:30:00+00:00",
+      "last_utc": "2026-08-19T06:45:00+00:00",
+      "trace_values_match_source": true,
+      "png_bytes": 103403
     }
   ]
 }

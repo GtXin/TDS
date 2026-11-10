@@ -1,0 +1,680 @@
+{
+  "scope": "Actual upstream merged calculation; independent finite fractal arithmetic, not production detection or CC execution",
+  "raw_bounds": [
+    [
+      0,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      1,
+      4
+    ]
+  ],
+  "merged_groups": [
+    [
+      0,
+      3,
+      0,
+      1
+    ],
+    [
+      3,
+      6,
+      1,
+      4
+    ],
+    [
+      1,
+      4,
+      4,
+      5
+    ],
+    [
+      0,
+      2,
+      5,
+      7
+    ],
+    [
+      2,
+      5,
+      7,
+      8
+    ],
+    [
+      3,
+      6,
+      8,
+      9
+    ],
+    [
+      1,
+      4,
+      9,
+      10
+    ]
+  ],
+  "default_first": {
+    "items": [
+      {
+        "id": 0,
+        "kind": "top",
+        "price": 6,
+        "anchor_raw_index": 2,
+        "source_start": 0,
+        "source_stop": 3,
+        "status": "unconfirmed",
+        "confirmed_at": null
+      },
+      {
+        "id": 1,
+        "kind": "bottom",
+        "price": 0,
+        "anchor_raw_index": 5,
+        "source_start": 2,
+        "source_stop": 5,
+        "status": "unconfirmed",
+        "confirmed_at": null
+      },
+      {
+        "id": 2,
+        "kind": "top",
+        "price": 6,
+        "anchor_raw_index": 8,
+        "source_start": 4,
+        "source_stop": 7,
+        "status": "unconfirmed",
+        "confirmed_at": null
+      }
+    ],
+    "config": {
+      "anchor_tie": "FIRST"
+    },
+    "trace": [
+      {
+        "center": 1,
+        "left": "up",
+        "right": "down",
+        "kind": "top",
+        "price": 6,
+        "window": [
+          0,
+          3
+        ],
+        "anchor_evidence": {
+          "count": 2,
+          "first": 2,
+          "last": 3,
+          "selected": 2,
+          "policy": "FIRST"
+        }
+      },
+      {
+        "center": 2,
+        "left": "down",
+        "right": "down",
+        "kind": null,
+        "price": null,
+        "window": [
+          1,
+          4
+        ]
+      },
+      {
+        "center": 3,
+        "left": "down",
+        "right": "up",
+        "kind": "bottom",
+        "price": 0,
+        "window": [
+          2,
+          5
+        ],
+        "anchor_evidence": {
+          "count": 2,
+          "first": 5,
+          "last": 6,
+          "selected": 5,
+          "policy": "FIRST"
+        }
+      },
+      {
+        "center": 4,
+        "left": "up",
+        "right": "up",
+        "kind": null,
+        "price": null,
+        "window": [
+          3,
+          6
+        ]
+      },
+      {
+        "center": 5,
+        "left": "up",
+        "right": "down",
+        "kind": "top",
+        "price": 6,
+        "window": [
+          4,
+          7
+        ],
+        "anchor_evidence": {
+          "count": 1,
+          "first": 8,
+          "last": 8,
+          "selected": 8,
+          "policy": "FIRST"
+        }
+      }
+    ],
+    "trace_by_point": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  "explicit_last": {
+    "items": [
+      {
+        "id": 0,
+        "kind": "top",
+        "price": 6,
+        "anchor_raw_index": 3,
+        "source_start": 0,
+        "source_stop": 3,
+        "status": "unconfirmed",
+        "confirmed_at": null
+      },
+      {
+        "id": 1,
+        "kind": "bottom",
+        "price": 0,
+        "anchor_raw_index": 6,
+        "source_start": 2,
+        "source_stop": 5,
+        "status": "unconfirmed",
+        "confirmed_at": null
+      },
+      {
+        "id": 2,
+        "kind": "top",
+        "price": 6,
+        "anchor_raw_index": 8,
+        "source_start": 4,
+        "source_stop": 7,
+        "status": "unconfirmed",
+        "confirmed_at": null
+      }
+    ],
+    "config": {
+      "anchor_tie": "LAST"
+    },
+    "trace": [
+      {
+        "center": 1,
+        "left": "up",
+        "right": "down",
+        "kind": "top",
+        "price": 6,
+        "window": [
+          0,
+          3
+        ],
+        "anchor_evidence": {
+          "count": 2,
+          "first": 2,
+          "last": 3,
+          "selected": 3,
+          "policy": "LAST"
+        }
+      },
+      {
+        "center": 2,
+        "left": "down",
+        "right": "down",
+        "kind": null,
+        "price": null,
+        "window": [
+          1,
+          4
+        ]
+      },
+      {
+        "center": 3,
+        "left": "down",
+        "right": "up",
+        "kind": "bottom",
+        "price": 0,
+        "window": [
+          2,
+          5
+        ],
+        "anchor_evidence": {
+          "count": 2,
+          "first": 5,
+          "last": 6,
+          "selected": 6,
+          "policy": "LAST"
+        }
+      },
+      {
+        "center": 4,
+        "left": "up",
+        "right": "up",
+        "kind": null,
+        "price": null,
+        "window": [
+          3,
+          6
+        ]
+      },
+      {
+        "center": 5,
+        "left": "up",
+        "right": "down",
+        "kind": "top",
+        "price": 6,
+        "window": [
+          4,
+          7
+        ],
+        "anchor_evidence": {
+          "count": 1,
+          "first": 8,
+          "last": 8,
+          "selected": 8,
+          "policy": "LAST"
+        }
+      }
+    ],
+    "trace_by_point": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  "revised_bounds": [
+    [
+      0,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      7
+    ]
+  ],
+  "revised_fractals": {
+    "items": [
+      {
+        "id": 0,
+        "kind": "top",
+        "price": 6,
+        "anchor_raw_index": 2,
+        "source_start": 0,
+        "source_stop": 3,
+        "status": "unconfirmed",
+        "confirmed_at": null
+      },
+      {
+        "id": 1,
+        "kind": "bottom",
+        "price": 0,
+        "anchor_raw_index": 5,
+        "source_start": 2,
+        "source_stop": 5,
+        "status": "unconfirmed",
+        "confirmed_at": null
+      }
+    ],
+    "config": {
+      "anchor_tie": "FIRST"
+    },
+    "trace": [
+      {
+        "center": 1,
+        "left": "up",
+        "right": "down",
+        "kind": "top",
+        "price": 6,
+        "window": [
+          0,
+          3
+        ],
+        "anchor_evidence": {
+          "count": 2,
+          "first": 2,
+          "last": 3,
+          "selected": 2,
+          "policy": "FIRST"
+        }
+      },
+      {
+        "center": 2,
+        "left": "down",
+        "right": "down",
+        "kind": null,
+        "price": null,
+        "window": [
+          1,
+          4
+        ]
+      },
+      {
+        "center": 3,
+        "left": "down",
+        "right": "up",
+        "kind": "bottom",
+        "price": 0,
+        "window": [
+          2,
+          5
+        ],
+        "anchor_evidence": {
+          "count": 2,
+          "first": 5,
+          "last": 6,
+          "selected": 5,
+          "policy": "FIRST"
+        }
+      },
+      {
+        "center": 4,
+        "left": "up",
+        "right": "up",
+        "kind": null,
+        "price": null,
+        "window": [
+          3,
+          6
+        ]
+      },
+      {
+        "center": 5,
+        "left": "up",
+        "right": "up",
+        "kind": null,
+        "price": null,
+        "window": [
+          4,
+          7
+        ]
+      }
+    ],
+    "trace_by_point": [
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ]
+  },
+  "appended_bounds": [
+    [
+      0,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "appended_fractals": {
+    "items": [
+      {
+        "id": 0,
+        "kind": "top",
+        "price": 6,
+        "anchor_raw_index": 2,
+        "source_start": 0,
+        "source_stop": 3,
+        "status": "unconfirmed",
+        "confirmed_at": null
+      },
+      {
+        "id": 1,
+        "kind": "bottom",
+        "price": 0,
+        "anchor_raw_index": 5,
+        "source_start": 2,
+        "source_stop": 5,
+        "status": "unconfirmed",
+        "confirmed_at": null
+      },
+      {
+        "id": 2,
+        "kind": "top",
+        "price": 7,
+        "anchor_raw_index": 9,
+        "source_start": 5,
+        "source_stop": 8,
+        "status": "unconfirmed",
+        "confirmed_at": null
+      }
+    ],
+    "config": {
+      "anchor_tie": "FIRST"
+    },
+    "trace": [
+      {
+        "center": 1,
+        "left": "up",
+        "right": "down",
+        "kind": "top",
+        "price": 6,
+        "window": [
+          0,
+          3
+        ],
+        "anchor_evidence": {
+          "count": 2,
+          "first": 2,
+          "last": 3,
+          "selected": 2,
+          "policy": "FIRST"
+        }
+      },
+      {
+        "center": 2,
+        "left": "down",
+        "right": "down",
+        "kind": null,
+        "price": null,
+        "window": [
+          1,
+          4
+        ]
+      },
+      {
+        "center": 3,
+        "left": "down",
+        "right": "up",
+        "kind": "bottom",
+        "price": 0,
+        "window": [
+          2,
+          5
+        ],
+        "anchor_evidence": {
+          "count": 2,
+          "first": 5,
+          "last": 6,
+          "selected": 5,
+          "policy": "FIRST"
+        }
+      },
+      {
+        "center": 4,
+        "left": "up",
+        "right": "up",
+        "kind": null,
+        "price": null,
+        "window": [
+          3,
+          6
+        ]
+      },
+      {
+        "center": 5,
+        "left": "up",
+        "right": "up",
+        "kind": null,
+        "price": null,
+        "window": [
+          4,
+          7
+        ]
+      },
+      {
+        "center": 6,
+        "left": "up",
+        "right": "down",
+        "kind": "top",
+        "price": 7,
+        "window": [
+          5,
+          8
+        ],
+        "anchor_evidence": {
+          "count": 1,
+          "first": 9,
+          "last": 9,
+          "selected": 9,
+          "policy": "FIRST"
+        }
+      }
+    ],
+    "trace_by_point": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  "finite_model_sequences": 5188,
+  "finite_model_windows": 14166,
+  "output_trace_corruption_probes_rejected": 8,
+  "edge_cases": "short/monotone/invalid equal boundary/no raw match/invalid config pass",
+  "figure_files": [
+    "algorithm-main-fractals.png",
+    "algorithm-tail-revision.png"
+  ]
+}

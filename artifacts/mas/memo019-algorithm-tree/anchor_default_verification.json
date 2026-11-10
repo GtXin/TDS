@@ -1,0 +1,10 @@
+{
+  "backup": "docs/memo/backups/memoWX_019_Chan_fenxing__20261109_221542_404072.md",
+  "before_sha256": "d2bdb9d4f4a4da05119a311506609dfb81d723df9e3d3d3414335c63eb2f19e3",
+  "after_sha256": "30e53d2f5aae3f6849fed27ad390032fc778968dd38d3a19cc9026e67e5623bc",
+  "outside_002a_preserved": true,
+  "default": "earliest matching raw index (min J)",
+  "explicit_override": "latest matching raw index (max J)",
+  "empty_match_remains_error": true,
+  "goto_targets": "pass"
+}

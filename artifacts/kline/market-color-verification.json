@@ -1,0 +1,116 @@
+{
+  "completed_at": "2026-11-09T21:44:09-08:00",
+  "market_default": "US",
+  "palettes": {
+    "US": {
+      "up": "#16a34a",
+      "down": "#dc2626"
+    },
+    "China": {
+      "up": "#dc2626",
+      "down": "#16a34a"
+    }
+  },
+  "meaning": "Up/down compares each candle’s close with its own open. Equal-open/close dojis retain Plotly’s native stroke handling; volume is gray. Source values, timestamps and gap settings stay unchanged.",
+  "tests": {
+    "new_palette_cases": "14 passed",
+    "regression": "278 passed",
+    "coverage_suite": "164 passed",
+    "ruff": "src tests generator passed",
+    "mypy": "Strict mypy on 2 raw source files with follow-imports=silent passed",
+    "black": "5 scoped files passed"
+  },
+  "source_hash_baseline": "market-color-protected-hashes.json",
+  "sample_manifest": {
+    "source": "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_chan_table_v20261108.csv",
+    "source_sha256": "1c4039411b0472c27fd4af42fcd320ccd0579d9f5c5f54d9d013893f665c85c5",
+    "total_source_rows": 10060,
+    "context": {
+      "source_path": "/Users/coder/Public/EngineGit/proj009/records/cc/kline-to-zoushi-001/dce-kqm-m-15m.csv",
+      "source_revision": "0c5f5125983c09b43394a6e9b2a48152866bb05c",
+      "sha256": "fc2e6a5c711b6a81cd78583896087e0d5b2d07097f55135cdb480b786a124e2d",
+      "copied_date": "2026-11-08",
+      "row_count": "10060",
+      "timestamp": "datetime_utc retained; epoch and Asia/Shanghai columns preserved in original snapshot",
+      "symbol": "dce:KQ.m@m",
+      "period": "15m",
+      "features": "All eight groups unavailable; no detection run"
+    },
+    "source_and_protected_files_unchanged": true,
+    "protected_hash_baseline": "market-color-protected-hashes.json",
+    "charts": [
+      {
+        "html": "artifacts/kline/cc-15m-last200-volume.html",
+        "png": "artifacts/kline/cc-15m-last200-volume.png",
+        "bars": 200,
+        "volume": true,
+        "show_gaps": false,
+        "market": "US",
+        "up_color": "#16a34a",
+        "down_color": "#dc2626",
+        "first_utc": "2026-08-06T14:45:00+00:00",
+        "last_utc": "2026-08-19T06:45:00+00:00",
+        "trace_values_match_source": true,
+        "png_bytes": 166642
+      },
+      {
+        "html": "artifacts/kline/cc-15m-last40-detail.html",
+        "png": "artifacts/kline/cc-15m-last40-detail.png",
+        "bars": 40,
+        "volume": false,
+        "show_gaps": false,
+        "market": "US",
+        "up_color": "#16a34a",
+        "down_color": "#dc2626",
+        "first_utc": "2026-08-17T14:30:00+00:00",
+        "last_utc": "2026-08-19T06:45:00+00:00",
+        "trace_values_match_source": true,
+        "png_bytes": 103146
+      },
+      {
+        "html": "artifacts/kline/cc-15m-last200-calendar.html",
+        "png": "artifacts/kline/cc-15m-last200-calendar.png",
+        "bars": 200,
+        "volume": true,
+        "show_gaps": true,
+        "market": "US",
+        "up_color": "#16a34a",
+        "down_color": "#dc2626",
+        "first_utc": "2026-08-06T14:45:00+00:00",
+        "last_utc": "2026-08-19T06:45:00+00:00",
+        "trace_values_match_source": true,
+        "png_bytes": 137211
+      },
+      {
+        "html": "artifacts/kline/cc-15m-last40-china.html",
+        "png": "artifacts/kline/cc-15m-last40-china.png",
+        "bars": 40,
+        "volume": false,
+        "show_gaps": false,
+        "market": "China",
+        "up_color": "#dc2626",
+        "down_color": "#16a34a",
+        "first_utc": "2026-08-17T14:30:00+00:00",
+        "last_utc": "2026-08-19T06:45:00+00:00",
+        "trace_values_match_source": true,
+        "png_bytes": 103403
+      }
+    ]
+  },
+  "pictures": {
+    "docs/memo/memoWX_013_klineFamily/cc-last200-consecutive-bars.png": "4020451883a39c5e47ca59bbb94f4c83850b1fae48538011e5faf7bf315a6101",
+    "docs/memo/memoWX_013_klineFamily/cc-last200-calendar-time.png": "3497405568ec67e1ff53fa2461897c2ba038dd9812bf00d6540c553c3dec842f",
+    "docs/memo/memoWX_013_klineFamily/cc-last40-detail.png": "61725d6e584dd7d00405efc302ae4d3b8b9ac488e490e2b42d8edf93e686fb73",
+    "docs/memo/memoWX_013_klineFamily/cc-last40-china.png": "ae753eca2cfa204d0e38d9f3782e873ba17cf98749cb60f92c63e9fa336fde1d"
+  },
+  "visual_inspection": "All four PNGs viewed: US/China color reversal accurate; prices, UTC timestamps and category geometry identical for the matched 40 bars; titles, labels and volume legible.",
+  "review": "Independent read-only source/design review passed. Docs review found one stale Appendix checkpoint, corrected after backup; final examples, links, table widths, class inventory, source/picture hashes and citations passed.",
+  "final_checks": {
+    "checked_at": "2026-11-09T21:43:33-08:00",
+    "memo_examples": "Both Python blocks executed; 10,060-row method-only CSV/context roundtrip and US/category/calendar/China plot checks passed",
+    "class_inventory": "Exactly Kline and KlineTSeries, 9+2 stored fields; market is an argument, not a member",
+    "protected_hashes": "7 source/context/provenance/config files unchanged",
+    "picture_hashes": "All 4 sibling PNG copies match recorded hashes; generated preview sizes match manifest",
+    "links_tables_sections_citations": "All local links, table widths, sections000–003 and citation first-appearance1–11 checks passed"
+  }
+}

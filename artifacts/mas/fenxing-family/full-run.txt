@@ -1,0 +1,77 @@
+{
+  "raw_count": 10060,
+  "raw_digest": "1c871b6966f3220e9abba847f9d29f0851dd6e079c3279c250dd4fb46f295a39",
+  "configuration_results": {
+    "UP": {
+      "outcome": "complete",
+      "paths": {
+        "complete": {
+          "merged": 6200,
+          "fenxing": 3027,
+          "top": 1514,
+          "bottom": 1513,
+          "changed_tie_anchors": 542
+        }
+      }
+    },
+    "DOWN": {
+      "outcome": "complete",
+      "paths": {
+        "complete": {
+          "merged": 6200,
+          "fenxing": 3027,
+          "top": 1514,
+          "bottom": 1513,
+          "changed_tie_anchors": 542
+        }
+      }
+    },
+    "OUTER": {
+      "outcome": "complete",
+      "paths": {
+        "complete": {
+          "merged": 6200,
+          "fenxing": 3027,
+          "top": 1514,
+          "bottom": 1513,
+          "changed_tie_anchors": 542
+        }
+      }
+    },
+    "UNSET": {
+      "outcome": "complete",
+      "paths": {
+        "complete": {
+          "merged": 6200,
+          "fenxing": 3027,
+          "top": 1514,
+          "bottom": 1513,
+          "changed_tie_anchors": 542
+        }
+      }
+    },
+    "BOTH": {
+      "outcome": "complete",
+      "paths": {
+        "complete": {
+          "merged": 6200,
+          "fenxing": 3027,
+          "top": 1514,
+          "bottom": 1513,
+          "changed_tie_anchors": 542
+        }
+      }
+    }
+  },
+  "roundtrip": "passed",
+  "independent_four_comparison_oracle": "passed on every complete configured path",
+  "figures": [
+    "artifacts/fenxing/cc-last80-calendar.html",
+    "artifacts/fenxing/cc-last80.html",
+    "artifacts/fenxing/cc-last80.png",
+    "artifacts/fenxing/worked-example.html",
+    "artifacts/fenxing/cc-last80-calendar.png",
+    "artifacts/fenxing/cc-last80-china.png",
+    "artifacts/fenxing/cc-last80-china.html"
+  ]
+}

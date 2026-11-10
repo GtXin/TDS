@@ -1,0 +1,10 @@
+Name                                        Stmts   Miss  Cover
+---------------------------------------------------------------
+src/chanlab/algo/chan_table.py                142     12    92%
+src/chanlab/algo/fenxing.py                   210      0   100%
+src/chanlab/data/feature_table.py              49      0   100%
+src/chanlab/data/fenxing_table.py              75      0   100%
+src/chanlab/data/merged_kline_table.py         68      2    97%
+src/chanlab/visualization/fenxing_plot.py      12      0   100%
+---------------------------------------------------------------
+TOTAL                                         556     14    97%

@@ -1,0 +1,52 @@
+{
+  "source": "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_chan_table_v20261108.csv",
+  "source_sha256": "1c4039411b0472c27fd4af42fcd320ccd0579d9f5c5f54d9d013893f665c85c5",
+  "total_source_rows": 10060,
+  "context": {
+    "source_path": "/Users/coder/Public/EngineGit/proj009/records/cc/kline-to-zoushi-001/dce-kqm-m-15m.csv",
+    "source_revision": "0c5f5125983c09b43394a6e9b2a48152866bb05c",
+    "sha256": "fc2e6a5c711b6a81cd78583896087e0d5b2d07097f55135cdb480b786a124e2d",
+    "copied_date": "2026-11-08",
+    "row_count": "10060",
+    "timestamp": "datetime_utc retained; epoch and Asia/Shanghai columns preserved in original snapshot",
+    "symbol": "dce:KQ.m@m",
+    "period": "15m",
+    "features": "All eight groups unavailable; no detection run"
+  },
+  "source_and_protected_files_unchanged": true,
+  "charts": [
+    {
+      "html": "artifacts/kline/cc-15m-last200-volume.html",
+      "png": "artifacts/kline/cc-15m-last200-volume.png",
+      "bars": 200,
+      "volume": true,
+      "show_gaps": false,
+      "first_utc": "2026-08-06T14:45:00+00:00",
+      "last_utc": "2026-08-19T06:45:00+00:00",
+      "trace_values_match_source": true,
+      "png_bytes": 169459
+    },
+    {
+      "html": "artifacts/kline/cc-15m-last40-detail.html",
+      "png": "artifacts/kline/cc-15m-last40-detail.png",
+      "bars": 40,
+      "volume": false,
+      "show_gaps": false,
+      "first_utc": "2026-08-17T14:30:00+00:00",
+      "last_utc": "2026-08-19T06:45:00+00:00",
+      "trace_values_match_source": true,
+      "png_bytes": 104734
+    },
+    {
+      "html": "artifacts/kline/cc-15m-last200-calendar.html",
+      "png": "artifacts/kline/cc-15m-last200-calendar.png",
+      "bars": 200,
+      "volume": true,
+      "show_gaps": true,
+      "first_utc": "2026-08-06T14:45:00+00:00",
+      "last_utc": "2026-08-19T06:45:00+00:00",
+      "trace_values_match_source": true,
+      "png_bytes": 137058
+    }
+  ]
+}

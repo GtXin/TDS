@@ -1,0 +1,13 @@
+{
+  "protected_files": 22,
+  "all_protected_hashes_unchanged": true,
+  "source_or_test_changes": false,
+  "structure": "003.a class count; b/c class members/methods; d workflow; e examples; f pictures",
+  "raw_owned_context_example": true,
+  "class_count": 2,
+  "example_blocks": 4,
+  "images": {
+    "docs/memo/memoWX_026_MergedKlineFamily/worked-example.png": "ba4d724f519436fc8c983feb7756b709d5acb3622abfd201930b26684eb88bca",
+    "docs/memo/memoWX_026_MergedKlineFamily/cc-last40-merged.png": "ba99ec333f4df77f248263504636e6de6d2c460cfdb5dc174d3db250c827e181"
+  }
+}

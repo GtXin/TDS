@@ -6,18 +6,21 @@ import pytest
 
 from chanlab.algo.kline import Kline, KlineTSeries
 from chanlab.algo.merged_kline import (
-    DualMerge,
-    MergeConfig,
     MergedKline,
     MergedKlineSeries,
-    PendingMerge,
-    direction_between,
-    has_inclusion,
-    merge_included,
-    merge_outer_boundary,
-    validate_merged_result,
-    work_from_raw,
 )
+
+direction_between = MergedKlineSeries._direction_between
+
+has_inclusion = MergedKlineSeries._has_inclusion
+
+merge_included = MergedKlineSeries._merge_included
+
+merge_outer_boundary = MergedKlineSeries._merge_outer_boundary
+
+validate_merged_result = MergedKlineSeries._validate_result
+
+work_from_raw = MergedKlineSeries._work_from_raw
 
 
 def raw(intervals):
@@ -39,7 +42,7 @@ def raw(intervals):
 
 def derive(intervals, policy="UP"):
     return MergedKlineSeries.derive_from(
-        raw(intervals), MergeConfig(policy), "memo015:test"
+        raw(intervals), {"initialization": policy}, "memo015:test"
     )
 
 
@@ -61,14 +64,14 @@ def test_worked_initialization():
     ]
     assert values(derive(data, "OUTER")) == [(2, 5, None, 0, 3), (3, 6, "up", 3, 4)]
     both = derive(data, "BOTH")
-    assert isinstance(both, DualMerge)
-    assert both.main.klines == derive(data).klines
-    assert both.comparison.klines == derive(data, "DOWN").klines
-    assert both.warning_evaluation == "not_evaluated"
+    assert both["kind"] == "dual"
+    assert both["main"].klines == derive(data).klines
+    assert both["comparison"].klines == derive(data, "DOWN").klines
+    assert both["warning_evaluation"] == "not_evaluated"
     pending = derive(data, "UNSET")
-    assert isinstance(pending, PendingMerge)
-    assert pending.raw_index == 1 and pending.current.source_stop == 1
-    assert pending.candidate.source_start == 1 and not pending.saved
+    assert pending["kind"] == "pending"
+    assert pending["raw_index"] == 1 and pending["current"]["source_stop"] == 1
+    assert pending["candidate"]["source_start"] == 1 and not pending["saved"]
 
 
 def test_sequential_counterexample():
@@ -153,19 +156,19 @@ def test_helpers():
         direction_between(a, b)
     with pytest.raises(ValueError):
         merge_included(a, b)
-    assert merge_outer_boundary(a, b).direction is None
-    assert merge_included(replace(a, direction="up"), b).low == 3
-    assert merge_included(replace(a, direction="down"), b).high == 4
+    assert merge_outer_boundary(a, b)["direction"] is None
+    assert merge_included(dict(a, direction="up"), b)["low"] == 3
+    assert merge_included(dict(a, direction="down"), b)["high"] == 4
     with pytest.raises(ValueError):
-        merge_outer_boundary(replace(a, direction="up"), b)
+        merge_outer_boundary(dict(a, direction="up"), b)
     with pytest.raises(ValueError):
-        merge_included(replace(a, direction="up"), work_from_raw(r, 2))
+        merge_included(dict(a, direction="up"), work_from_raw(r, 2))
     with pytest.raises(ValueError):
         work_from_raw(r, -1)
     with pytest.raises(ValueError):
         work_from_raw(r, 3)
     with pytest.raises(ValueError):
-        MergeConfig("bad")
+        derive([(1, 2)], "bad")
 
 
 @pytest.mark.parametrize("policy", ["UP", "DOWN", "OUTER"])
@@ -223,42 +226,61 @@ def test_result_validation_regressions():
     with pytest.raises(ValueError):
         replace(s, trace=(None,) + s.trace[1:])
     with pytest.raises(ValueError):
-        replace(s.trace[0], rule="bad")
+        replace(s, trace=(dict(s.trace[0], rule="bad"),) + s.trace[1:])
     with pytest.raises(ValueError):
-        replace(s.trace[0], raw_index=99)
+        replace(s, trace=(dict(s.trace[0], raw_index=99),) + s.trace[1:])
     with pytest.raises(ValueError):
-        replace(s.trace[0], after=work_from_raw(raw([(1, 5)]), 0))
+        replace(
+            s,
+            trace=(dict(s.trace[0], after=work_from_raw(raw([(1, 5)]), 0)),)
+            + s.trace[1:],
+        )
     with pytest.raises(ValueError):
         MergedKline(1, 1, 10**1000, None, 0, 1)
     with pytest.raises(ValueError):
         replace(s, source_series=raw([(1, 5), (3, 7), (2, 4)]))
     with pytest.raises(ValueError):
-        replace(work_from_raw(s.source_series, 0), source_stop=99)
+        replace(
+            s,
+            trace=(dict(s.trace[0], after=dict(s.trace[0]["after"], source_stop=99)),)
+            + s.trace[1:],
+        )
     with pytest.raises(ValueError):
         MergedKlineSeries.derive_from(s.source_series, None, "v")
     with pytest.raises(ValueError):
-        MergedKlineSeries.derive_from(s.source_series, MergeConfig("UP"), "")
+        MergedKlineSeries.derive_from(s.source_series, {"initialization": "UP"}, "")
 
 
 def test_plot_source_alignment(tmp_path):
     s = derive([(1, 3), (2, 4), (1, 5), (0, 3), (1, 2)])
     before = s.source_series.klines
-    fig = s.plot(start=1, stop=2, volume=True, title="Merged test")
+    fig = s.plot(
+        start=1,
+        stop=2,
+        volume=True,
+        title="Merged test",
+        style="ranges",
+        show_gaps=True,
+    )
+    candles = next(t for t in fig.data if t.type == "candlestick")
+    volumes = next(t for t in fig.data if t.type == "bar")
+    ranges = next(t for t in fig.data if t.type == "scatter")
+    assert fig.layout.xaxis.type == fig.layout.xaxis2.type == "date"
     selected = s[1]
-    assert list(fig.data[0].x) == [
+    assert list(candles.x) == [
         x.timestamp
         for x in s.source_series[selected.source_start : selected.source_stop]
     ]
-    assert list(fig.data[0].high) == [
+    assert list(candles.high) == [
         x.high for x in s.source_series[selected.source_start : selected.source_stop]
     ]
-    assert list(fig.data[1].y) == [
+    assert list(volumes.y) == [
         x.volume for x in s.source_series[selected.source_start : selected.source_stop]
     ]
-    assert list(fig.data[2].y) == [selected.low, selected.high, None]
-    assert fig.data[2].x[0] == s.source_series[selected.source_start].timestamp
-    assert "MK" in fig.data[2].text[0]
-    assert len(s.plot(volume=False).data) == 4
+    assert list(ranges.y) == [selected.low, selected.high, None]
+    assert ranges.x[0] == s.source_series[selected.source_start].timestamp
+    assert "MK" in ranges.text[0]
+    assert len(s.plot(volume=False, style="ranges", show_gaps=True).data) == 4
     path = tmp_path / "merged.html"
     fig.write_html(path, include_plotlyjs=True)
     assert path.stat().st_size > 1000
@@ -280,3 +302,53 @@ def test_missing_plot_dependency(monkeypatch):
     monkeypatch.setattr(builtins, "__import__", blocked)
     with pytest.raises(ImportError, match="uv sync --extra plot"):
         derive([(1, 2)]).plot()
+
+
+def test_only_two_classes_and_detached_data():
+    import ast
+    from pathlib import Path
+
+    tree = ast.parse(Path("src/chanlab/algo/merged_kline.py").read_text())
+    classes = [n for n in ast.walk(tree) if isinstance(n, ast.ClassDef)]
+    assert not any(
+        isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef)) for n in tree.body
+    )
+    assert {n.name for n in classes} == {"MergedKline", "MergedKlineSeries"}
+    counts = {
+        n.name: sum(isinstance(x, ast.AnnAssign) for x in n.body) for n in classes
+    }
+    assert counts == {"MergedKline": 8, "MergedKlineSeries": 6}
+    config = {"initialization": "UP"}
+    source = raw([(1, 3), (2, 4), (1, 5)])
+    s = MergedKlineSeries.derive_from(source, config, "v")
+    config["initialization"] = "DOWN"
+    assert s.config["initialization"] == "UP"
+    with pytest.raises(TypeError):
+        s.config["initialization"] = "DOWN"
+    with pytest.raises(TypeError):
+        s.trace[0]["rule"] = "bad"
+    with pytest.raises(TypeError):
+        s.trace[0]["before"]["low"] = 99
+    steps = [dict(t) for t in s.trace]
+    steps[0]["before"] = dict(steps[0]["before"])
+    detached = replace(s, trace=steps)
+    steps[0]["before"]["low"] = 99
+    assert detached.trace[0]["before"]["low"] == 1
+    pending = derive([(2, 5), (3, 4)], "UNSET")
+    with pytest.raises(TypeError):
+        pending["raw_index"] = 2
+    with pytest.raises(TypeError):
+        pending["current"]["low"] = 99
+    dual = derive([(2, 5), (3, 4)], "BOTH")
+    with pytest.raises(TypeError):
+        dual["requested_config"]["initialization"] = "UP"
+    assert dual["main"].source_series is dual["comparison"].source_series
+    assert dual["main"].config["initialization"] == "UP"
+    assert dual["comparison"].config["initialization"] == "DOWN"
+    for invalid in (
+        {},
+        {"initialization": "bad"},
+        {"initialization": "UP", "extra": 1},
+    ):
+        with pytest.raises(ValueError):
+            MergedKlineSeries.derive_from(source, invalid, "v")

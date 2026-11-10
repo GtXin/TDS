@@ -1,0 +1,21 @@
+{
+  "classes": [
+    "MergedKline",
+    "MergedKlineSeries"
+  ],
+  "differential_cases": 2580,
+  "seed": 26009,
+  "previous_csv_context_compatible": true,
+  "previous_persisted_bytes_reproduced": true,
+  "complete_trace_evidence_equal": true,
+  "previous_fixture_hashes": {
+    "artifacts/mas/merged-kline-family/integration/chan_table.csv": "86120cdf959ee61f3506c19f94dae90c4f7d016bcf7d2053ebd0960479cac4e3",
+    "artifacts/mas/merged-kline-family/integration/context.csv": "9d3baa204b889a10447cac2175ed9b2db2b93ba35ffa1544717d1ee0f5d38ccf"
+  },
+  "raw_count": 10060,
+  "merged_count": 6200,
+  "explanations_preserved": 6200,
+  "full_data_policies_equal": 5,
+  "dataframe_rows": 6200,
+  "plot_checked": true
+}

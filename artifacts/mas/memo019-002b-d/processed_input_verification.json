@@ -1,0 +1,14 @@
+{
+  "backup": "docs/memo/backups/memoWX_019_Chan_fenxing__20261109_223342_202606.md",
+  "before_sha256": "28059c236eb48e442960e3808162317e4573fa94053909d8afdf4a1789ab0b33",
+  "after_sha256": "4a047ecaf2ae62c72a7f2d706e92e9700acad492c048b1b71b3bad740a87dae4",
+  "outside_002b_preserved": true,
+  "input": "7 given processed intervals; no raw preprocessing or merge explanation",
+  "unchanged_outputs": "centers1/3/5; FIRST raw2/5/8; LAST raw3/6/8",
+  "tail": "given M6 revision with raw9.high=7, then M7 raw[10,11); new top center6/price7/anchor9",
+  "image": "docs/memo/memoWX_019_Chan_fenxing/fractal-window-example.png",
+  "image_sha256": "7b3571c35638725cdf956714632ccb5555f8ccb8bcbad002ce17eb19cf4ee5f9",
+  "local_links_checked": 29,
+  "tables": "pass",
+  "review": "Read-only scope/numeric review PASS; root inspected processed-coordinate chart."
+}

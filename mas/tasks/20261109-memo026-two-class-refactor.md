@@ -1,0 +1,29 @@
+# Memo026 two-class OOP correction
+## Task
+- **ID:** 20261109-memo026-two-class-refactor
+- **Goal:** Restore memo009's two merged-family classes using the Computer Scientist skill; preserve memo015 algorithm, source identity, table/DataFrame/plot behavior; correct026.
+- **Inputs:**009/013/015/026, current implementation/tests/snapshots and persisted integration CSV/context.
+- **Allowed changes:** merged algorithm/data adapter, related tests/current repro scripts, artifacts/mas/merged-kline-two-class/, backed-up026, memory/log/task. No changes to009/015/raw data, historical baseline/skill snapshots, raw plot behavior or dependencies.
+- **Acceptance checks:** exact2 authored classes by AST, same8+6 stored fields and009 public methods; immutable mapping config/traces/state; all015 modes and source invariants; differential old/new exhaustive/random cases; prior CSV/context compatibility; full-data table/DataFrame/plot and current regression/quality checks; class-first003 and runnable examples.
+- **Assignment:** Codex personally applying mas/skills/computer-scientist/SKILL.md (K-Dense1.0.0), not a Computer Scientist subagent.
+- **Status:** done
+## Model and design
+Sequential inclusion processing on immutable raw snapshots. Correctness obligations: same price/range/direction outputs, complete coverage, adjacent noninclusion, explicit initialization and no hidden confirmation/warning rules. Two domain classes only; configuration/trace/private work/outcome payloads are recursively immutable mappings, not additional classes. Complete factory result remains a series; rare pending/dual outcomes retain memo015 data as tagged read-only mappings. Other options rejected: preserve7 classes (violates requested abstraction), or discard pending/comparison behavior (violates015). O(N) processing/storage per path; BOTH adds at most one fork, still O(N). Public signatures change intentionally from unauthorized extra classes; previous disk metadata schema retained.
+## Result and handoff
+- **Outcome:** Exactly2 domain classes with unchanged8+6 fields, calculation/initialization/trace helpers encapsulated as private methods, mapping config/evidence/outcomes, compatible table/DataFrame/plot APIs and corrected026003.
+- **Evidence:** artifacts/mas/merged-kline-two-class/; pre-refactor sources/tests preserved under before/.
+- **Blockers:** none in scoped correction; confirmation/scoring remain deferred.
+- **Next action:** none for this correction; confirmation/scoring remain undefined.
+
+## Actual evidence and checks
+- AST/runtime document check:only MergedKline and MergedKlineSeries authored;8+6 stored fields;no top-level functions;all authored public/private methods documented. No extra-class aliases. Four memo Python examples executed;local links/table widths/index/section order passed.
+- Computer Scientist skill1.0.0 read/applied directly: defined abstraction/invariants,considered retaining extra classes versus dropping required015 branches,selected two classes with immutable data,then tested equivalence/serialization compatibility. User subsequently reaffirmed encapsulating added behavior inside classes;all calculation helpers moved to private methods. Adapters remain separate behind009’s public methods.
+- `PYTHONPATH=src .venv/bin/python -m pytest tests -q`:211 passed. Focused core+table32 passed,no skips. Original648 oracle sequences retained;new tests enforce exact2 classes/no module functions,config/trace/outcome deep immutability and8+6 fields.
+- `PYTHONPATH=src .venv/bin/python artifacts/mas/merged-kline-two-class/verify.py`:2580 differential sequence-policy cases (216 exhaustive3-bar sequences+300 seeded1–40-bar sequences,5 policies),identical records/ranges/directions/full before-candidate-after trace evidence,mapping/explanations and pending/dual data. Full10060-row input,all5 policies also equal.
+- Existing previous integration CSV/context loaded with no schema migration;source identity shared internally,6200 records/explanations preserved;rewritten CSV/context byte-identical to prior files. Prior fixture hashes unchanged. DataFrame6200 rows and plotting checked. Historical baseline/skill snapshots untouched;current reproduction scripts migrated to dict API and historical runner points at pre-refactor acceptance fixture.
+- Strict mypy3 affected/dependent modules passed;scoped Ruff and Black check passed. Coverage via repo Python with temporary checker packages on PYTHONPATH:350/354 algorithm+adapter statements(98.87%),32 focused cases,no skips. Source/algorithm coverage is finite test evidence,not a proof or benchmark.
+- Memo026 backed up before rewriting;only class spec/API/current-result text updated,existing chart links retained. No new plots/dependencies/raw data/rule memo changes. git diff --check passed.
+## Corrections during work
+A cast-edit parenthesis mismatch was caught by formatter/parser before tests,then corrected. Final Black check caught formatting in the newly added AST assertion;formatted and rechecked. Temporary coverage environment initially lacked pandas and skipped its test;offline install lacked cache,so used existing repo pandas with checker modules on PYTHONPATH and reran all32 focused cases. No network/dependency update needed. Failures were tooling/edit issues,not suppressed tests.
+## API migration and limitations
+Use config={"initialization":"UP"},series.config["initialization"],and keyed trace access. Pending/dual data use kind tags;no resume API. This intentionally removes unauthorized extra-class constructors/attribute access while keeping disk v1 payload and scientific outputs unchanged. General DecisionStep remains deferred;status unconfirmed/None and warning not_evaluated remain unchanged. Classes are frozen;private data mappings recursively frozen. No subclass factory semantics or arbitrary supplied-trace replay correctness promised.

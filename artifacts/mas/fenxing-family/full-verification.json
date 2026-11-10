@@ -1,0 +1,83 @@
+{
+  "raw_count": 10060,
+  "raw_digest": "1c871b6966f3220e9abba847f9d29f0851dd6e079c3279c250dd4fb46f295a39",
+  "configuration_results": {
+    "UP": {
+      "outcome": "complete",
+      "paths": {
+        "complete": {
+          "merged": 6200,
+          "fenxing": 3027,
+          "top": 1514,
+          "bottom": 1513,
+          "changed_tie_anchors": 542
+        }
+      }
+    },
+    "DOWN": {
+      "outcome": "complete",
+      "paths": {
+        "complete": {
+          "merged": 6200,
+          "fenxing": 3027,
+          "top": 1514,
+          "bottom": 1513,
+          "changed_tie_anchors": 542
+        }
+      }
+    },
+    "OUTER": {
+      "outcome": "complete",
+      "paths": {
+        "complete": {
+          "merged": 6200,
+          "fenxing": 3027,
+          "top": 1514,
+          "bottom": 1513,
+          "changed_tie_anchors": 542
+        }
+      }
+    },
+    "UNSET": {
+      "outcome": "complete",
+      "paths": {
+        "complete": {
+          "merged": 6200,
+          "fenxing": 3027,
+          "top": 1514,
+          "bottom": 1513,
+          "changed_tie_anchors": 542
+        }
+      }
+    },
+    "BOTH": {
+      "outcome": "complete",
+      "paths": {
+        "complete": {
+          "merged": 6200,
+          "fenxing": 3027,
+          "top": 1514,
+          "bottom": 1513,
+          "changed_tie_anchors": 542
+        }
+      }
+    }
+  },
+  "protected_hashes": {
+    "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_chan_table_v20261108.csv": "1c4039411b0472c27fd4af42fcd320ccd0579d9f5c5f54d9d013893f665c85c5",
+    "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_context_v20261108.csv": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15",
+    "references/proj009data/provenance.json": "e8ef35c63ddf95490324ae8f853ba1a067b722484394dc2504b8b337df08d578",
+    "references/proj009data/dce-kqm-m-15m.csv": "fc2e6a5c711b6a81cd78583896087e0d5b2d07097f55135cdb480b786a124e2d"
+  },
+  "roundtrip": "passed",
+  "independent_four_comparison_oracle": "passed on every complete configured path",
+  "figures": [
+    "artifacts/fenxing/cc-last80-calendar.html",
+    "artifacts/fenxing/cc-last80.html",
+    "artifacts/fenxing/cc-last80.png",
+    "artifacts/fenxing/worked-example.html",
+    "artifacts/fenxing/cc-last80-calendar.png",
+    "artifacts/fenxing/cc-last80-china.png",
+    "artifacts/fenxing/cc-last80-china.html"
+  ]
+}

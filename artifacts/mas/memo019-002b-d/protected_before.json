@@ -1,0 +1,11 @@
+{
+  "docs/memo/memoWX_019_Chan_fenxing.md": "30e53d2f5aae3f6849fed27ad390032fc778968dd38d3a19cc9026e67e5623bc",
+  "docs/memo/memoWX_009_designPatternForChanFeatures.md": "655e5e29d053c07f72d03c5f3629ef2e10ff4dd6ab62e2f2d568f136829bade5",
+  "docs/memo/memoWX_015_Chan_mergedkline.md": "ac4842675044f06dc10bba66a462683191f1982439f7925106be9ccc0dfec960",
+  "docs/memo/memoWX_026_MergedKlineFamily.md": "4d8c2411cc3a1100e3d71ddeec2d3759c2d39f162494a11e83a2cdd90cb42812",
+  "docs/memo/README.md": "1f215d293d55b34d316d4ccaff5d11fdb1158bdcd97603c9dbf0e883cfb149c7",
+  "src/chanlab/algo/merged_kline.py": "3caa74c2b9fa201723edcaa32eba0d898fbaeae876c3fc482c04007bbbb613d5",
+  "src/chanlab/algo/kline.py": "4976d1995c09c05d64ade1efb79782bb1c4ce7f5311cbdfc2471cd7fa4e6f583",
+  "pyproject.toml": "10d4fc4c481425826a11c05c0934765625e65018709eba435d1760ac1aac9366",
+  "uv.lock": "95b20efd6f089af1632191af1a0f4cd0dcbe798c2399434d35301b43790b71ea"
+}

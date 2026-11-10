@@ -47,7 +47,7 @@ def plotly() -> ModuleType:
     return pytest.importorskip("plotly.graph_objects")
 
 
-def test_full_figure_preserves_values_gaps_and_source_without_display_or_export(
+def test_full_figure_preserves_values_and_source_without_display_or_export(
     series: KlineTSeries,
     plotly: ModuleType,
     monkeypatch: pytest.MonkeyPatch,
@@ -80,11 +80,17 @@ def test_full_figure_preserves_values_gaps_and_source_without_display_or_export(
     assert tuple(volume.y) == tuple(bar.volume for bar in series)
     assert candle.x[2] - candle.x[1] > timedelta(days=2)
     assert all(timestamp.tzinfo == UTC for timestamp in candle.x)
-    assert figure.layout.xaxis.type == figure.layout.xaxis2.type == "date"
+    assert figure.layout.xaxis.type == figure.layout.xaxis2.type == "category"
+    assert tuple(figure.layout.xaxis.categoryarray) == timestamps
+    assert tuple(figure.layout.xaxis2.categoryarray) == timestamps
+    assert figure.layout.xaxis.categoryorder == "array"
+    assert figure.layout.xaxis.tickvals[0] == timestamps[0]
+    assert figure.layout.xaxis.tickvals[-1] == timestamps[-1]
     assert not figure.layout.xaxis.rangebreaks
     assert not figure.layout.xaxis2.rangebreaks
     assert figure.layout.xaxis.matches == "x2" or figure.layout.xaxis2.matches == "x"
     assert "UTC" in figure.layout.xaxis2.title.text
+    assert "gaps hidden" in figure.layout.xaxis2.title.text
     assert "source" in figure.layout.yaxis2.title.text.lower()
     assert series[0].symbol in figure.layout.title.text
     assert series[0].period in figure.layout.title.text
@@ -94,6 +100,30 @@ def test_full_figure_preserves_values_gaps_and_source_without_display_or_export(
         for bar in series
     )
     assert list(tmp_path.iterdir()) == []
+
+
+@pytest.mark.parametrize("volume", [False, True])
+def test_calendar_option_keeps_elapsed_time_axis(
+    series: KlineTSeries, plotly: ModuleType, volume: bool
+) -> None:
+    figure = series.plot(volume=volume, show_gaps=True)
+    assert figure.layout.xaxis.type == "date"
+    assert tuple(figure.data[0].x) == tuple(bar.timestamp for bar in series)
+    assert not figure.layout.xaxis.rangebreaks
+    assert figure.layout.xaxis.tickmode is None
+    if volume:
+        assert figure.layout.xaxis2.type == "date"
+        assert tuple(figure.data[1].x) == tuple(figure.data[0].x)
+
+
+def test_one_bar_category_axis_has_valid_ticks(
+    series: KlineTSeries, plotly: ModuleType
+) -> None:
+    single = KlineTSeries([series[0]])
+    figure = single.plot(volume=False)
+    assert figure.layout.xaxis.type == "category"
+    assert tuple(figure.layout.xaxis.categoryarray) == (single[0].timestamp,)
+    assert tuple(figure.layout.xaxis.tickvals) == (single[0].timestamp,)
 
 
 @pytest.mark.parametrize("start,stop", [(1, 3), (-3, -1), (None, 2), (2, None)])
@@ -119,6 +149,10 @@ def test_helper_uses_python_slice_bounds_and_can_omit_volume(
         )
     assert "yaxis2" not in figure.layout.to_plotly_json()
     assert "UTC" in figure.layout.xaxis.title.text
+    assert figure.layout.xaxis.type == "category"
+    assert tuple(figure.layout.xaxis.categoryarray) == tuple(
+        bar.timestamp for bar in selected
+    )
     assert figure.layout.title.text == "Raw selection"
 
 
@@ -134,7 +168,9 @@ def test_series_delegates_all_plot_options(
     series: KlineTSeries, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     returned = object()
-    calls: list[tuple[KlineTSeries, int | None, int | None, bool, str | None]] = []
+    calls: list[
+        tuple[KlineTSeries, int | None, int | None, bool, str | None, bool, str]
+    ] = []
 
     def helper(
         supplied: KlineTSeries,
@@ -143,14 +179,26 @@ def test_series_delegates_all_plot_options(
         stop: int | None = None,
         volume: bool = True,
         title: str | None = None,
+        show_gaps: bool = False,
+        market: str = "US",
     ) -> object:
-        calls.append((supplied, start, stop, volume, title))
+        calls.append((supplied, start, stop, volume, title, show_gaps, market))
         return returned
 
     monkeypatch.setattr(kline_plot, "plot_kline_series", helper)
 
-    assert series.plot(start=-3, stop=-1, volume=False, title="Detail") is returned
-    assert calls == [(series, -3, -1, False, "Detail")]
+    assert (
+        series.plot(
+            start=-3,
+            stop=-1,
+            volume=False,
+            title="Detail",
+            show_gaps=True,
+            market="China",
+        )
+        is returned
+    )
+    assert calls == [(series, -3, -1, False, "Detail", True, "China")]
 
 
 def test_raw_csv_and_helper_import_work_without_plotly(tmp_path: Path) -> None:

@@ -1,5 +1,5 @@
 # MergedKline implementation comparison
-Selected: Python Pro continuation in `python_pro/merged_kline.py`, identical to active algorithm source. Renderer added separately.
+Selected core checkpoint: Python Pro continuation in `python_pro/merged_kline.py`. Renderer, table/DataFrame interfaces and the user-directed two-class OOP correction extend the live source; frozen snapshots preserve the original core comparison.
 
 | Check | Frozen baseline | Selected continuation |
 |---|---|---|

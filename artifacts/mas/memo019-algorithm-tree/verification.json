@@ -1,0 +1,38 @@
+{
+  "scope": "Documentation preservation, static contracts and independent finite arithmetic model; no production Fenxing code or CC execution",
+  "backup_verified": true,
+  "backup_count": 2,
+  "outside_002a_preserved": true,
+  "protected_other_files": 7,
+  "record_fields": [
+    "id",
+    "kind",
+    "price",
+    "anchor_raw_index",
+    "source_start",
+    "source_stop",
+    "status",
+    "confirmed_at"
+  ],
+  "series_fields": [
+    "source_series",
+    "items",
+    "config",
+    "rule_tree_ref",
+    "trace",
+    "trace_by_point"
+  ],
+  "unique_tree_nodes": 22,
+  "goto_targets_resolve": true,
+  "local_links_checked": 29,
+  "tables_and_fences": "pass",
+  "finite_model_valid_sequences": 5188,
+  "finite_model_windows": 14166,
+  "branches": {
+    "top": 6176,
+    "bottom": 6176,
+    "up_up": 907,
+    "down_down": 907
+  },
+  "anchor_zero_single_multiple_and_display_distinction": "pass"
+}

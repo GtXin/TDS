@@ -1,0 +1,13 @@
+{
+  "backup": "docs/memo/backups/memoWX_019_Chan_fenxing__20261109_221152_681069.md",
+  "before_sha256": "95c9a9c97e856ae4391940ded4b34c7d0e7a56e8277518f6b3d385882b4e2f81",
+  "after_sha256": "d2bdb9d4f4a4da05119a311506609dfb81d723df9e3d3d3414335c63eb2f19e3",
+  "before_section_characters": 5598,
+  "after_section_characters": 3316,
+  "outside_002a_preserved": true,
+  "numbered_tree_verbatim": true,
+  "unique_tree_nodes": 22,
+  "goto_targets_and_local_links": "pass",
+  "index": "unchanged",
+  "review": "Read-only simplification review PASS; numbered tree and necessary coordinate/anchor/trace contracts retained."
+}

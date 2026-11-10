@@ -1,0 +1,14 @@
+{
+  "classes": [
+    "MergedKline",
+    "MergedKlineSeries"
+  ],
+  "member_counts": {
+    "MergedKline": 8,
+    "MergedKlineSeries": 6
+  },
+  "all_authored_methods_documented": true,
+  "no_module_functions": true,
+  "examples_executed": 4,
+  "links_and_table_columns": true
+}

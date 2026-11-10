@@ -94,7 +94,8 @@ def read_kline_csv(
         context_path: Optional sidecar CSV with exact key,value columns.
 
     Returns:
-        A validated series and an immutable mapping of unchanged context strings.
+        A validated series and its owned immutable context mapping. The mapping
+        contains unchanged sidecar strings and is the same object as series.context.
 
     Raises:
         ValueError: Schema, row, bar, chronology, or context is invalid. Validation
@@ -148,7 +149,8 @@ def read_kline_csv(
     if not bars:
         raise _error(data_path, 2, "klines", "at least one Kline is required")
     context = _read_context(sidecar) if sidecar is not None else MappingProxyType({})
-    return KlineTSeries(bars), context
+    series = KlineTSeries(bars, context=context)
+    return series, series.context
 
 
 def write_kline_csv(
@@ -164,7 +166,8 @@ def write_kline_csv(
         series: Validated bars to serialize without time or volume conversion.
         path: Output CSV path; an existing file is replaced.
         context_path: Sidecar destination, required when context is nonempty.
-        context: Optional string mapping retained without trimming or conversion.
+        context: Optional explicit provenance override, retained without changes.
+            None uses series.context; an empty mapping explicitly omits metadata.
 
     Raises:
         ValueError: Series, context, or output paths are invalid. All validation
@@ -177,7 +180,7 @@ def write_kline_csv(
     series.validate()
     if context is not None and not isinstance(context, Mapping):
         raise ValueError("context: a string mapping is required")
-    saved_context: dict[str, str] = dict(context) if context is not None else {}
+    saved_context: dict[str, str] = dict(series.context if context is None else context)
     for key, value in saved_context.items():
         if not isinstance(key, str) or not key.strip():
             raise ValueError("context key: must be a nonblank string")

@@ -1,0 +1,43 @@
+{
+  "backup_bytes_verified": true,
+  "outside_002b_d_unchanged": true,
+  "protected_other_files_unchanged": 7,
+  "concurrent_changes_preserved": {
+    "docs/memo/README.md": {
+      "task_start_sha256": "1f215d293d55b34d316d4ccaff5d11fdb1158bdcd97603c9dbf0e883cfb149c7",
+      "observed_sha256": "1eff0605213965ec08ed027307005b72ebc62cb37754a076e0bec09f24a9bd98",
+      "observed_change": "Only addition of WX027 Fenxing family implementation plan row; root did not edit index and preserved concurrent change.",
+      "added_line": "| WX 027 | [Fenxing family implementation plan](memoWX_027_fenxingFamily.md) |\n"
+    }
+  },
+  "private_helper_names": [
+    "_normalize_config",
+    "_direction_between",
+    "_classify_window",
+    "_resolve_anchor",
+    "_validate_result"
+  ],
+  "pseudocode_record_series_fields": [
+    8,
+    6
+  ],
+  "local_links_checked": 30,
+  "headings_tables_fences_index": "pass",
+  "image_bytes_and_dimensions": {
+    "docs/memo/memoWX_019_Chan_fenxing/algorithm-main-fractals.png": [
+      1950,
+      1200
+    ],
+    "docs/memo/memoWX_019_Chan_fenxing/algorithm-tail-revision.png": [
+      1950,
+      1575
+    ]
+  },
+  "visual_inspection": "Both final figures inspected; initial cramped bottom labels preserved under history and corrected before copy",
+  "numeric_examples": "10 raw -> 7 merged -> 3 fractals; FIRST 2/5/8, LAST 3/6/8; tail snapshots 10/7/2 and 11/8/3",
+  "finite_arithmetic_sequences": 5188,
+  "finite_arithmetic_windows": 14166,
+  "output_trace_corruption_probes_rejected": 8,
+  "review": "Independent numerical and helper/pseudocode reviews PASS",
+  "scope": "Documentation and finite arithmetic witnesses; no production Fenxing/CC execution or general proof"
+}

@@ -1,0 +1,16 @@
+{
+  "memo": "docs/memo/memoWX_019_Chan_fenxing.md",
+  "backup": "docs/memo/backups/memoWX_019_Chan_fenxing__20261109_222636_259295.md",
+  "before_sha256": "30e53d2f5aae3f6849fed27ad390032fc778968dd38d3a19cc9026e67e5623bc",
+  "after_sha256": "28059c236eb48e442960e3808162317e4573fa94053909d8afdf4a1789ab0b33",
+  "images": {
+    "docs/memo/memoWX_019_Chan_fenxing/algorithm-main-fractals.png": "6f0bb189852545e2cbd5d1121ee271492659a01a11bad4fc1c0b8e8504162fe4",
+    "docs/memo/memoWX_019_Chan_fenxing/algorithm-tail-revision.png": "26a5db93004e1550029ac44c4f00af342310b8d727bbd767eebfcd6b6d458db6"
+  },
+  "section_lines": {
+    "### 002.b — Detailed Implementation logic and Numerical Examples": 104,
+    "### 002.c — Helper Functions": 177,
+    "### 002.d — Pseudocode": 219
+  },
+  "outside_002b_d_preserved": true
+}

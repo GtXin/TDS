@@ -1,0 +1,15 @@
+{
+  "raw_count": 10060,
+  "merged_count": 6200,
+  "dataframe_count": 6200,
+  "source_identity": true,
+  "raw_columns_unchanged": true,
+  "context_trace_roundtrip": true,
+  "explanation_checks": 6200,
+  "source_hashes": {
+    "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_chan_table_v20261108.csv": "1c4039411b0472c27fd4af42fcd320ccd0579d9f5c5f54d9d013893f665c85c5",
+    "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_context_v20261108.csv": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15"
+  },
+  "csv_bytes": 2385961,
+  "context_bytes": 4769878
+}

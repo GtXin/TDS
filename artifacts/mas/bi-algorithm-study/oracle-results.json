@@ -1,0 +1,165 @@
+{
+  "scope": "independent finite model; no production Bi/CC execution",
+  "seed": 20261110,
+  "checks": {
+    "sequences": 40949,
+    "fractals": 226869,
+    "pair_comparisons": 694020,
+    "path_dp_comparisons": 448549
+  },
+  "protected_sha256": {
+    "docs/memo/memoWX_020_Chan_bi.md": "d94cd38640a22fbb4a8e1dca311a76e51c5204ebe64ccf0a4e046b3026b74899",
+    "docs/memo/memoWX_019_Chan_fenxing.md": "045f19faff953cde7c54d7c2d2187f4b4095da6efa624e0bd7b7895a8fa8f95b",
+    "src/chanlab/algo/fenxing.py": "97fb4c9f00f5267c57b7e29bd423eb41289a5a0b0129efe07ac1134368402ea0",
+    "src/chanlab/algo/merged_kline.py": "3caa74c2b9fa201723edcaa32eba0d898fbaeae876c3fc482c04007bbbb613d5",
+    "docs/memo/memoWX_009_designPatternForChanFeatures.md": "655e5e29d053c07f72d03c5f3629ef2e10ff4dd6ab62e2f2d568f136829bade5"
+  },
+  "protected_files_unchanged": true,
+  "counterexample": {
+    "bars_low_high": [
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "fractals_center_kind": [
+      [
+        1,
+        "top"
+      ],
+      [
+        5,
+        "bottom"
+      ],
+      [
+        9,
+        "top"
+      ],
+      [
+        11,
+        "bottom"
+      ],
+      [
+        15,
+        "top"
+      ],
+      [
+        19,
+        "bottom"
+      ]
+    ],
+    "all_fixed_boundary_paths_fx_positions": [
+      [
+        0,
+        1,
+        2,
+        5
+      ],
+      [
+        0,
+        3,
+        4,
+        5
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "maximum_stroke_count": 3,
+    "maximum_paths_merged_centers": [
+      [
+        1,
+        5,
+        9,
+        19
+      ],
+      [
+        1,
+        11,
+        15,
+        19
+      ]
+    ]
+  }
+}

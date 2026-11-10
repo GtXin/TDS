@@ -3,8 +3,9 @@
 import hashlib
 import json
 from pathlib import Path
+from typing import Literal
 
-from chanlab.data.kline_csv import read_kline_csv
+from chanlab.algo.kline import KlineTSeries
 
 
 def main() -> None:
@@ -13,20 +14,36 @@ def main() -> None:
     folder = root / "samples/chan_table"
     master = next(folder.glob("*chan_table*.csv"))
     context_path = next(folder.glob("*context*.csv"))
-    series, context = read_kline_csv(master, context_path)
+    series = KlineTSeries.read_csv(master, context_path)
+    context = series.context
     reports = []
-    for count, volume, stem in (
-        (200, True, "cc-15m-last200-volume"),
-        (40, False, "cc-15m-last40-detail"),
-    ):
+    samples: list[tuple[int, bool, bool, Literal["US", "China"], str]] = [
+        (200, True, False, "US", "cc-15m-last200-volume"),
+        (40, False, False, "US", "cc-15m-last40-detail"),
+        (200, True, True, "US", "cc-15m-last200-calendar"),
+        (40, False, False, "China", "cc-15m-last40-china"),
+    ]
+    for count, volume, show_gaps, market, stem in samples:
         bars = series[-count:]
         figure = series.plot(
             start=-count,
             volume=volume,
-            title=f"{bars[0].symbol} · 15-minute candles · Last {count} bars",
+            show_gaps=show_gaps,
+            market=market,
+            title=f"{bars[0].symbol} · 15m · Last {count} bars · {market} colors",
         )
         candle = figure.data[0]
         assert candle.type == "candlestick"
+        expected_up, expected_down = (
+            ("#16a34a", "#dc2626") if market == "US" else ("#dc2626", "#16a34a")
+        )
+        assert (
+            candle.increasing.line.color == candle.increasing.fillcolor == expected_up
+        )
+        assert (
+            candle.decreasing.line.color == candle.decreasing.fillcolor == expected_down
+        )
+        assert figure.layout.xaxis.type == ("date" if show_gaps else "category")
         assert tuple(candle.x) == tuple(bar.timestamp for bar in bars)
         for field in ("open", "high", "low", "close"):
             assert tuple(getattr(candle, field)) == tuple(
@@ -45,13 +62,7 @@ def main() -> None:
             showlegend=False,
             hovermode="x",
         )
-        figure.update_traces(
-            increasing_line_color="#0d9488",
-            decreasing_line_color="#dc5964",
-            selector={"type": "candlestick"},
-        )
         figure.update_xaxes(
-            type="date",
             showgrid=True,
             gridcolor="#edf0f4",
             tickfont={"size": 12},
@@ -69,13 +80,17 @@ def main() -> None:
                 "png": str(image_path.relative_to(root)),
                 "bars": count,
                 "volume": volume,
+                "show_gaps": show_gaps,
+                "market": market,
+                "up_color": expected_up,
+                "down_color": expected_down,
                 "first_utc": bars[0].timestamp.isoformat(),
                 "last_utc": bars[-1].timestamp.isoformat(),
                 "trace_values_match_source": True,
                 "png_bytes": image_path.stat().st_size,
             }
         )
-    protected = json.loads((output / "pre-plot-hashes.json").read_text())
+    protected = json.loads((output / "market-color-protected-hashes.json").read_text())
     assert all(
         hashlib.sha256((root / path).read_bytes()).hexdigest() == digest
         for path, digest in protected.items()
@@ -86,6 +101,7 @@ def main() -> None:
         "total_source_rows": len(series),
         "context": dict(context),
         "source_and_protected_files_unchanged": True,
+        "protected_hash_baseline": "market-color-protected-hashes.json",
         "charts": reports,
     }
     (output / "sample-verification.json").write_text(

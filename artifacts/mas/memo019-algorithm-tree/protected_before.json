@@ -1,0 +1,10 @@
+{
+  "docs/memo/memoWX_009_designPatternForChanFeatures.md": "655e5e29d053c07f72d03c5f3629ef2e10ff4dd6ab62e2f2d568f136829bade5",
+  "docs/memo/memoWX_015_Chan_mergedkline.md": "ac4842675044f06dc10bba66a462683191f1982439f7925106be9ccc0dfec960",
+  "docs/memo/memoWX_019_Chan_fenxing.md": "cf5c79d216e0468fd5e7e0a25848d49d28ee3fb38d6125821b2d6fa7ab2291cf",
+  "docs/memo/memoWX_026_MergedKlineFamily.md": "4d8c2411cc3a1100e3d71ddeec2d3759c2d39f162494a11e83a2cdd90cb42812",
+  "docs/memo/README.md": "1f215d293d55b34d316d4ccaff5d11fdb1158bdcd97603c9dbf0e883cfb149c7",
+  "src/chanlab/algo/merged_kline.py": "3caa74c2b9fa201723edcaa32eba0d898fbaeae876c3fc482c04007bbbb613d5",
+  "src/chanlab/algo/kline.py": "4976d1995c09c05d64ade1efb79782bb1c4ce7f5311cbdfc2471cd7fa4e6f583",
+  "src/chanlab/algo/chan_table.py": "1ed61d3feece76868f550a5c07e9b0e9434e9ad83d825bbf178a30d00b8a0d4d"
+}

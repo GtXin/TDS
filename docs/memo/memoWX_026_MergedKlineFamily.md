@@ -1,20 +1,17 @@
 # MergedKline family implementation plan
 ## 000 — Scope
-Implement the `MergedKline` and `MergedKlineSeries` feature interfaces from memo009 sections001.b–001.e and002.d–002.e.[1] Use memo015 sections001 and002.a–002.d for inclusion rules, source mapping, helper contracts and control flow.[2] Follow memo013’s process: baseline implementation, Python Pro continuation, common-test comparison, selected-code verification and separate plotting results.[3] **Status: core implementation, baseline/continuation comparison and plotting completed on2026-11-09.** ChanTable/DataFrame adapters, confirmation rules and dual-path warning scoring remain deferred. Section001 retains the execution plan; sections002–003 record the delivered scope and actual interfaces.
+Implement `MergedKline` and `MergedKlineSeries` from memo009’s feature interfaces,[1] using memo015’s inclusion definitions, algorithm and source contracts.[2] Follow memo013’s baseline/skill comparison process and class-centered interface format.[3] Core calculation, ChanTable/DataFrame integration and plotting are implemented. Section003 describes the current two-class API; confirmation rules and dual-path warning scoring remain deferred.
 ## 001 — Implementation plan
-Reuse memo013’s implemented `Kline`/`KlineTSeries`, raw CSV loader and existing master/context in `samples/chan_table/`; no new raw-data preparation is needed. Preserve the original files, source labels and volume units. Before execution, record the exact input/configuration/rule version, allowed changes and acceptance checks in a task under `mas/tasks/`.
+Reuse memo013’s implemented `Kline`/`KlineTSeries` and `KlineTSeries.read_csv(...)` with its owned `context`, using the existing master/context in `samples/chan_table/`; no new raw-data preparation is needed. Preserve the original files, source labels and volume units. Before execution, record the exact input/configuration/rule version, allowed changes and acceptance checks in a task under `mas/tasks/`.
 ### 001.a — Implement the MergedKline family
-1. **Set the interface contract.** Use the complete member/method inventory in003, including trace, explanation and plotting. Resolve the open contracts in the Appendix before implementing dependent interfaces; retain explicitly deferred integrations in the inventory rather than silently dropping them.
-2. **Implement the immutable record.** Store memo009’s eight fields and validate automatically. Keep local record checks separate from owning-series checks against the exact raw source. Integer IDs are result-scoped; `MK12` is a display label, not a stored ID or source index.
-3. **Implement the immutable series.** Retain the original `KlineTSeries` object, ordered record tuple, immutable configuration, versioned rule reference, full trace and per-record trace indices. Add sequence operations, ID lookup and validation with the behavior in003.a.
-4. **Implement memo015’s six helpers.** Preserve their preconditions and ownership boundaries as mapped in003.b. Mutable work units remain private to calculation; saved records copy/freeze their fields.
-5. **Implement the sequential factory.** `derive_from(source_series, config, rule_tree_ref)` validates raw input, initializes the first work unit, compares each next raw bar with the current merged interval, then absorbs or saves/starts a new unit. The main loop owns `i`, `n`, ID assignment, result appends and EOF save. Absorption advances only `i`; starting a new unit advances `i` and `n`.
-6. **Implement explicit initialization behavior.** Apply initialization only to inclusion with unresolved direction. `UP`/`DOWN` set the current direction then absorb the same candidate. `OUTER` takes the outer envelope and retains None. `BOTH` copies independent mutable states and evaluates both complete paths, retaining the upward-initialized main output. `UNSET` stops before consuming the ambiguous candidate and preserves a pending outcome. No default is selected; settle the factory’s return contract without disguising pending/dual results as an ordinary complete series.
-7. **Validate completed results.** Require nonempty output; unique integer IDs; finite ordered prices; valid directions; and continuous, nonoverlapping half-open source ranges covering the complete raw input. Reject inclusion between adjacent results, including equal boundaries. Allow nonadjacent inclusion. A one-record result passes the empty adjacent-pair check.
-8. **Provide source-grounded explanations.** Record all executed decisions, including those producing no saved record. Map each result position to valid trace indices; explain rules, input evidence, direction changes, merges and source coverage using the exact rule version. DecisionStep’s schema remains unresolved; do not substitute fabricated traces or describe this interface as complete before agreement and verification.
-9. **Preserve the display/source distinction.** Place a result at `source_start` and the first raw member’s timestamp. Preserve every raw member through `[source_start, source_stop)`; neither placement nor EOF establishes confirmation time.
-10. **Keep components separate.** Proposed algorithm location: `src/chanlab/algo/merged_kline.py`; proposed renderer: `src/chanlab/visualization/merged_kline_plot.py`. Keep file/table/DataFrame adapters outside the algorithm. ChanTable interchange and DataFrame conversion remain explicit later integrations, as in memo013; later Chan detectors are outside this family.
-11. **Add the plotting extension.** After selecting the core implementation, implement `plot(**options)` through a separate Plotly helper, following the Appendix. Preserve the frozen core comparison and record plotting checks separately in002.f, as memo013 does.
+1. Keep the two immutable domain classes in `src/chanlab/algo/merged_kline.py`:8 record members and6 series members, with automatic validation.
+2. Retain the exact raw KlineTSeries, configuration, rule version and complete trace. Use result-scoped integer IDs independently of raw/tuple positions.
+3. Encapsulate memo015’s sequential inclusion algorithm and six helpers as private MergedKlineSeries methods. The loop owns raw consumption, ID assignment, saving and EOF.
+4. Require explicit initialization policy. Preserve UP/DOWN/OUTER behavior and pending/dual data for UNSET/BOTH without introducing more classes or selecting a default.
+5. Validate complete source coverage and adjacent noninclusion, including equal boundaries; permit nonadjacent inclusion. Display each result at its first raw member and keep confirmation separate.
+6. Add sequence operations, ID lookup and source/rule-grounded explanation, covering decisions that produce no saved record.
+7. Expose table registration/retrieval, compact DataFrame export and plotting as class/instance methods. Keep file-format/rendering details in dedicated adapters behind the methods; preserve raw data and existing registrations.
+8. Add plotting after core selection and record extension checks separately. Later Chan detectors, confirmation rules, warning scoring and general DecisionStep design remain outside the implemented scope.
 ### 001.b — Repeat the core implementation using Python Pro
 1. Complete the baseline against the agreed core contract and common tests; freeze its source, checks and hashes under `artifacts/mas/merged-kline-family/baseline/` before the continuation.
 2. Record the exact invocation request verbatim in the execution task; read `mas/skills/python-pro/SKILL.md` and record its actual source/version.[4]
@@ -36,103 +33,331 @@ Reuse memo013’s implemented `Kline`/`KlineTSeries`, raw CSV loader and existin
 8. **Plotting:** verify selected intervals, source timestamps, range/ID hover data, optional raw volume, empty selections, missing optional dependency, no source mutation, Figure return and HTML export; inspect representative charts visually. Record this extension separately from the core comparison.
 ## 002 — Implementation notes and logs
 ### 002.a — Implement the MergedKline family → 001.a
-Implemented immutable records, explicit configuration, complete/pending/dual outcomes, six helpers, sequential calculation, source/adjacency validation, sequence access, ID lookup and explanations in [merged_kline.py](../../src/chanlab/algo/merged_kline.py). Input uses the existing raw loader; raw objects and ChanTable implementation are unchanged. Execution contracts and evidence are in [the task](../../mas/tasks/20261109-memo026-execution.md).
+The current [algorithm module](../../src/chanlab/algo/merged_kline.py) implements exactly two classes, source-aware sequential inclusion, immutable configuration/evidence data and private calculation helpers. The series provides validation, access, ID lookup, explanation, table/DataFrame conversion and plotting. Current interfaces and examples are in003.
 ### 002.b — Apply Python Pro → 001.b
-Baseline passed23 initial tests before freezing. Python Pro1.1.0 was then read and applied as a typed continuation, adding scoped decision validation, complete executed-event mapping checks, documentation and formatting. The task preserves the exact invocation. Both source versions remain under [baseline](../../artifacts/mas/merged-kline-family/baseline/) and [python_pro](../../artifacts/mas/merged-kline-family/python_pro/). This was sequential work with prior skill exposure, not a blind comparison.
+The original baseline passed23 acceptance cases before freezing. Python Pro1.1.0 was then applied as a sequential typed continuation, improving trace validation, typing and documentation. [The execution task](../../mas/tasks/20261109-memo026-execution.md) records the exact invocation. [Baseline](../../artifacts/mas/merged-kline-family/baseline/) and [continuation](../../artifacts/mas/merged-kline-family/python_pro/) are preserved historical snapshots; the current two-class correction is recorded in002.h.
 ### 002.c — Compare and select → 001.c
-Selected the continuation. On the same final24-case core suite: baseline23 passed/1 failed, selected24 passed. The baseline accepts a trace map that omits executed decisions; the selected version rejects it. Both variants were imported from their recorded snapshot paths in separate processes and checked against the full dataset. Plotting tests are separate from this core comparison. [Comparison](../../artifacts/mas/merged-kline-family/comparison.md); [variant checks and full-data verification](../../artifacts/mas/merged-kline-family/verification.json).
+On the same final24-case historical core suite, baseline23 passed/1 failed and selected24 passed. The baseline accepted trace maps omitting executed decisions; the continuation rejected them. Both snapshot variants matched the full-data outputs. This was an incremental comparison with prior skill exposure, not causal evidence of a skill-only effect. [Comparison and checks](../../artifacts/mas/merged-kline-family/comparison.md).
 ### 002.d — Test → 001.d
-**26 focused tests and202 total regression tests pass.** The focused suite includes648 exhaustive three-bar sequences against an independent scalar oracle,015’s main/initialization/counterexample cases, invalid record/result/trace tests, source identity, immutability, plot alignment and missing-dependency behavior. Strict mypy, Black check and report-only Ruff pass for changed source/tests. Changed core/renderer statement coverage is277/278 lines, **99.64%**; it is not a proof of general correctness. [Checks and coverage](../../artifacts/mas/merged-kline-family/checks/).
+At the two-class correction checkpoint, **211 regression tests and32 focused cases passed**; strict mypy, Black and Ruff passed. Algorithm/adapter statement coverage was350/354 (98.87%). Cases include memo015’s worked examples,648 small-sequence oracle checks, initialization paths, source/trace validation, immutability, conversion and plotting. [Detailed checks](../../artifacts/mas/merged-kline-two-class/checks/).
 
-The10,060-bar sample produces6,200 merged intervals and10,061 decision events for every explicit policy. It begins without ambiguous inclusion, so BOTH does not fork and UNSET does not stop on this sample; synthetic tests exercise those outcomes. Sample/context SHA-256 checks are unchanged. Generated compact records and exact rule/source context are in [verification artifacts](../../artifacts/mas/merged-kline-family/); they are not a standardized merged CSV API.
+The complete sample has10,060 raw bars and6,200 merged intervals. All5 policies give the same full-data result because its startup is unambiguous; synthetic cases exercise actual UNSET/BOTH outcomes. Two-class differential tests compared2,580 sequence-policy cases and all5 full-input paths, including complete trace evidence and6,200 explanations. This is tested equivalence, not a general correctness proof. Memo013’s later raw-family checks have their own test totals.
 ### 002.e — Handoff and remaining scope
-The scoped implementation is ready for use with explicit configuration. All records retain `status="unconfirmed"` and `confirmed_at=None`; confirmation rules were not inferred. `MergeDecision` is a merge-specific trace and does not define the still-deferred general DecisionStep class. BOTH reports warning evaluation as `not_evaluated`. ChanTable interchange and DataFrame methods are not implemented, matching the plan’s deferred integration boundary. Next work: choose confirmation/warning rules or separately release table integration when needed.
+The two-class implementation and both source entry points are usable with explicit configuration. Every result remains `unconfirmed` with `confirmed_at=None`; EOF completion does not imply confirmation. BOTH retains both paths and reports warning evaluation as `not_evaluated`. General DecisionStep, confirmation rules, warning scoring, later feature adapters and expanded per-key CSV columns remain deferred.
 ### 002.f — Plotly implementation and samples
-Added lazy `series.plot(...)` delegating to [merged_kline_plot.py](../../src/chanlab/visualization/merged_kline_plot.py). Uses the existing optional Plotly extra; no dependency manifest/lock changes. HTML and PNG samples show015’s10-bar→3-unit example and the last40 merged intervals from full data. Interval coordinates and raw candle/volume arrays were checked in tests; both PNGs were visually inspected for labels, placement and clipping. Initial sandbox Chrome export failed; export with broader execution permission succeeded. The real-data chart retains session gaps.
-## 003 — Implemented MergedKline family interface
-### 003.a — Records, configuration and outcomes
-Import from `chanlab.algo.merged_kline`.
+`merged.plot(...)` delegates to [merged_kline_plot.py](../../src/chanlab/visualization/merged_kline_plot.py), using the existing optional plot extra. Worked-example and real-data PNGs were visually inspected; their byte-identical memo copies are embedded in003.f. Trace coordinates were checked against raw/merged values. The preferred plot default is now a gap-free filled-range overlay. Explicit calendar spacing and separate panels are available through the same method; see002.i. [Samples](../../artifacts/merged-kline/README.md).
+### 002.g — ChanTable and DataFrame integration
+[The table adapter](../../src/chanlab/data/merged_kline_table.py) implements memo009’s registration, retrieval and compact DataFrame view. Both raw and table inputs retain their exact source snapshot. Fixed mk_* columns project the first registered key; all keys retain authoritative records/config/rules/trace and source/result digests in versioned context. CSV export requires the context sidecar. DataFrame uses the optional dataframe extra; its attrs are not an interchange format.
 
-| Type / field | Implemented behavior |
-|---|---|
-| `MergedKline(id, low, high, direction, source_start, source_stop, status="unconfirmed", confirmed_at=None)` | Frozen validated record; direction is `"up"`, `"down"` or None. Nonnegative integer IDs/indices reject bool. Bounds must be finite and ordered; source range nonempty. Only unconfirmed/None is currently accepted. |
-| `MergeConfig(initialization)` | Frozen required policy: `"UP"`, `"DOWN"`, `"BOTH"`, `"OUTER"`, `"UNSET"`. No default. |
-| `MergedKlineSeries(source_series, klines, config, rule_tree_ref, trace, trace_by_point)` | Frozen complete result; normalizes record/trace containers to tuples and validates automatically. Retains exact raw object and a nonblank versioned rule reference supplied by caller. |
-| `source_series`, `klines`, `config`, `rule_tree_ref` | Exact raw snapshot, nonempty record tuple, immutable policy and rule identifier. IDs are result-scoped and independent of tuple positions. |
-| `trace` | Tuple of immutable `MergeDecision(rule, raw_index, before, candidate, after)` events. Work states retain raw identity, bounds, direction and source range. Candidate is None at initialization/EOF. |
-| `trace_by_point` | One nonempty tuple per result position; all indices valid and every executed event covered. A boundary transition can explain both neighboring records. |
-| `PendingMerge` | Frozen factory outcome holding source/config/rule reference, saved prefix, current/candidate, unconsumed `raw_index` and trace. It is not a complete series and has no plotting interface. |
-| `DualMerge` | Frozen `main` upward-initialized series, `comparison` downward-initialized series, original `requested_config`, and `warning_evaluation="not_evaluated"`. Returned only when ambiguous startup actually requires a fork. |
+Full10,060-row table/context roundtrip preserves6,200 records, rules, configuration and explanations, with unchanged raw values and original input hashes. The two-class refactor reads the prior format and reproduces its CSV/context bytes exactly. [Integration task](../../mas/tasks/20261109-memo026-table-integration.md); [persisted sample](../../artifacts/mas/merged-kline-family/integration/verification.json).
+### 002.h — Two-class OOP correction
+The current implementation follows memo009’s two-class boundary using the Computer Scientist skill.[5] Configuration, traces, temporary intervals and special outcomes are immutable data. Calculation/initialization/validation stays in private methods; public conversion/plot methods delegate internal adapters. No extra domain members, initialization default, confirmation rule or warning metric was added. Historical baseline/skill snapshots remain unchanged. [Task](../../mas/tasks/20261109-memo026-two-class-refactor.md); [differential and compatibility verification](../../artifacts/mas/merged-kline-two-class/verification.json).
+### 002.i — Preferred plot options in the class API
+The user-approved gap-free overlay is now the default in `MergedKlineSeries.plot()`: `style="overlay"`, `show_gaps=False`. `style="panels"` reproduces the separate comparison panels; `style="ranges"` retains the earlier interval marks. All styles return an interactive Figure and support explicit calendar spacing and optional raw volume. Raw bounds select an exact raw viewport; existing start/stop semantics remain merged-record positions. No classes, stored members or inclusion rules changed.
 
-| Method / operation | Implemented behavior |
-|---|---|
-| `bar.validate()` | Local field/order/direction and conservative status checks. |
-| `series.validate()` | Source/records, unique IDs, complete contiguous source partition, adjacent noninclusion, trace source identity and complete mapping. Does not replay every price derivation or infer confirmation. |
-| `MergedKlineSeries.derive_from(source_series, config, rule_tree_ref)` | Returns `MergedKlineSeries | PendingMerge | DualMerge`. Policies apply only at unresolved inclusion. EOF freezes the last record and validates complete results. |
-| `len(series)`, `iter(series)` | Stored record count and chronological iteration. |
-| `series[index]`, `series[start:stop:step]` | Record or tuple; normal Python indexing including negatives and empty slices. IDs/source/trace indices remain unchanged. |
-| `series.get_by_id(feature_id)` | Resolve a nonnegative integer ID; absent valid ID raises `KeyError`. Invalid ID type/value raises `ValueError`. |
-| `series.explain(point_index)` | Human-readable ID/range/direction/status, rule version and linked before/after events. Full candidate evidence is available in `trace`. |
-| `series.plot(*, start=None, stop=None, volume=True, title=None)` | Return Plotly Figure through the renderer; bounds are merged-record positions. No automatic display/export. |
-| `from_chan_table`, `to_chan_table`, `to_dataframe` | Still proposed by009 and explicitly deferred in026; not exposed as working methods. |
+Current method-generated HTML/PNG examples use the full10,060-bar calculation and raw[10020:10060], yielding40 candles and26 merged ranges. Overlay, panels and calendar images were visually inspected; source hashes and original OHLC remain unchanged. [Task](../../mas/tasks/20261109-memo026-plot-options.md); [sample verification](../../artifacts/mas/merged-kline-plot-options/verification.json). **Checks:**264 regression tests and63 focused cases pass; renderer statement coverage75/75 (100%), combined algorithm/renderer342/344 (99.42%). Strict mypy, Black and Ruff pass. Independent tests cover defaults, raw/merged selection, clipped/singleton viewports, all styles/calendar/volume, invalid requests, no automatic output and standalone HTML export. [Checks](../../artifacts/mas/merged-kline-plot-options/checks/).
+### 002.j — Matching US/China palettes
+Added `market="US"` (default) and `market="China"`, matching memo013’s name, values and raw-candle colors. Merged up/down borders and transparent fills use the same selected palette. Unresolved merged direction and raw volume remain gray; color selection does not change data or calculation. Existing overlay/no-gap defaults, classes and stored members are unchanged.
 
-### 003.b — Helpers and adapter boundaries
-`work_from_raw`, `has_inclusion`, `direction_between`, `merge_included`, `merge_outer_boundary` and `validate_merged_result` implement015’s contracts. Work records are immutable; merge functions return new work states. The main loop owns candidate consumption, IDs, appends and EOF. OUTER selection belongs to the caller; the outer helper checks unresolved direction and contiguous inclusion.
+27 new palette tests and all305 regression tests pass. The90-case focused suite has346/348 algorithm/renderer statements covered (99.43%); renderer79/79 (100%). Scoped strict mypy, Black and Ruff pass. Same-data US/China geometry/price arrays match; raw source,013,configuration and dependency hashes are unchanged. Six HTML/PNG examples were rendered through real methods and visually inspected; memo pictures are embedded in003.f. [Task](../../mas/tasks/20261109-memo026-market-colors.md); [palette/source/picture verification](../../artifacts/mas/merged-kline-market-colors/verification.json).
+## 003 — Implemented classes, members and methods
+### 003.a — Class count and scope
+**This memo implements two classes: `MergedKline` and `MergedKlineSeries`.** Both are defined in [merged_kline.py](../../src/chanlab/algo/merged_kline.py), following memo009.
 
-Input remains `chanlab.data.kline_csv.read_kline_csv`. No merged CSV/DataFrame interchange schema was added. Future ChanTable projection remains: memberships throughout `[source_start,source_stop)`, start at `source_start`, end at `source_stop-1`, direction at start; retain exact source/series/version context and NA versus computed-empty semantics. Existing ChanTable still rejects non-NA feature columns.
-### 003.c — Runnable example
-Run from the repository root with `PYTHONPATH=src .venv/bin/python`. This example was executed against the existing sample.
+| Class | Represents | Stored members | Main methods |
+|---|---|---|---|
+| `MergedKline` | One merged price interval. | Eight fields, listed in003.b. | Constructor and validate(). |
+| `MergedKlineSeries` | Ordered merged records tied to the exact raw source. | Six fields, listed in003.c. | Constructor, calculation, validation, sequence access, ID lookup, explanation, table conversion, DataFrame export and plotting. |
+
+This count is specific to memo026. Kline/KlineTSeries belong to memo013; ChanTable belongs to memo011. Configuration and trace/state/outcome payloads are read-only data, not additional classes. Public operations belong to the two classes; private methods handle inclusion processing, and adapters supply serialization/rendering details.
+### 003.b — MergedKline
+**Members — the data stored in each merged interval**
+
+| Member | Declared type | Meaning |
+|---|---|---|
+| `id` | `int` | Nonnegative result-scoped integer ID; MK prefix is display-only. |
+| `low` | `float` | Lower bound after inclusion processing. |
+| `high` | `float` | Upper bound after inclusion processing. |
+| `direction` | `Direction` | Alias for `"up"`, `"down"` or None while unresolved. |
+| `source_start` | `int` | First member position in the exact raw source, inclusive; also display placement. |
+| `source_stop` | `int` | Raw member end position, exclusive. |
+| `status` | `str` | Currently only `"unconfirmed"` is accepted. |
+| `confirmed_at` | `datetime \| None` | Currently must be None; no confirmation rule has been selected. |
+
+All eight members are immutable. IDs and source positions are distinct. Raw members are recovered from `source_series[source_start:source_stop]`; a merged record stores no invented open/close/volume or independent display timestamp.
+
+**Methods**
+
+| Method | Normal use | Behavior |
+|---|---|---|
+| `__init__(id, low, high, direction, source_start, source_stop, status="unconfirmed", confirmed_at=None)` | `bar = MergedKline(...)` | Generated dataclass constructor: store fields and automatically validate. |
+| `validate() -> None` | `bar.validate()` | Check nonnegative integer IDs/indices excluding bool, finite ordered bounds, nonempty range, direction and status/time contract. Owning series checks source upper bounds. |
+
+Internal hook: `__post_init__()` calls validate(); private `_validate_integer()` supplies the integer check. Dataclass-generated equality/representation are standard Python behavior, separate from the domain interface.
+### 003.c — MergedKlineSeries
+**Members — the data stored in each result series**
+
+| Member | Declared type | Meaning |
+|---|---|---|
+| `source_series` | `KlineTSeries` | Exact immutable raw object used for this calculation. |
+| `klines` | `tuple[MergedKline, ...]` | Nonempty completed merged records in source order. |
+| `config` | `Mapping[str, str]` | Immutable copy of explicit rule options; currently one initialization policy. |
+| `rule_tree_ref` | `str` | Nonblank rule location/version supplied by the caller. |
+| `trace` | `tuple[Mapping[str, Any], ...]` | Immutable rule/index/before/candidate/after evidence, including decisions with no saved output. |
+| `trace_by_point` | `tuple[tuple[int, ...], ...]` | For each result position, a nonempty tuple of trace indices. Every executed event must be covered. |
+
+The series stores six members. It references raw data and its owned provenance through `source_series`, rather than copying raw bars/context into new members. Configuration, trace and nested evidence are copied/frozen at construction. A complete series covers the full raw input continuously and has no inclusion between adjacent merged records, including equal boundaries. Nonadjacent inclusion is allowed.
+
+**Methods**
+
+| Method | Normal use | Behavior or result |
+|---|---|---|
+| `__init__(source_series, klines, config, rule_tree_ref, trace, trace_by_point)` | `merged = MergedKlineSeries(...)` | Store exact raw reference, snapshot immutable data and validate automatically. Normally use a factory below. |
+| `derive_from(source_series, config, rule_tree_ref)` | `merged = MergedKlineSeries.derive_from(...)` | Class method: calculate from KlineTSeries or ChanTable. Normally returns MergedKlineSeries; unresolved UNSET/BOTH behavior is specified below. |
+| `from_chan_table(table, series_key)` | `merged = MergedKlineSeries.from_chan_table(...)` | Class method: retrieve the exact registered result after validation, without recalculation. Missing key raises KeyError. |
+| `validate() -> None` | `merged.validate()` | Check raw/records, unique IDs, full source partition, adjacent noninclusion, configuration and complete trace mapping. Structural validation does not replay every calculated price. |
+| `__len__() -> int` | `len(merged)` | Number of merged records. |
+| `__iter__()` | `for bar in merged` | Iterate in source order. |
+| `__getitem__(key)` | `merged[index]` or `merged[start:stop:step]` | Integer → record; slice → tuple, possibly empty. Normal negative indices; no ID/source/trace renumbering. |
+| `get_by_id(feature_id)` | `merged.get_by_id(12)` | Lookup result-scoped integer ID. Missing valid ID raises KeyError; invalid ID raises ValueError. |
+| `explain(point_index) -> str` | `merged.explain(0)` | Explain a result position using its ID, source range, rule reference and linked evidence. Position is not a feature ID. |
+| `to_chan_table(table, series_key)` | `view = merged.to_chan_table(base, "merged")` | Return new registered table view. Require exact same raw object; preserve existing view/registrations and reject conflicting key. |
+| `to_dataframe()` | `frame = merged.to_dataframe()` | Return detached compact pandas DataFrame; one row per record and provenance/config/rule/result metadata in attrs. Requires dataframe extra. |
+| `plot(*, start=None, stop=None, raw_start=None, raw_stop=None, volume=True, title=None, style="overlay", show_gaps=False, market="US")` | `fig = merged.plot(...)` | Return interactive Plotly Figure; default overlay with time gaps hidden. No automatic display/export. Requires plot extra. |
+
+Class factories are called on MergedKlineSeries; instance methods operate on an existing result. `__getitem__` is one method with typed integer/slice overloads. Internal hook `__post_init__()` snapshots and validates construction data. Calculation/initialization/trace helpers are private methods; their inventory is in the Appendix.
+
+**Arguments of derive_from() — call inputs, not additional members/classes**
+
+| Argument | Input | Meaning |
+|---|---|---|
+| `source_series` | KlineTSeries or ChanTable | Use the raw object directly, or the table’s exact source_series. |
+| `config` | `{"initialization": "UP"}` | Required explicit policy: UP, DOWN, OUTER, BOTH or UNSET. No default; unsupported keys/policies raise ValueError. |
+| `rule_tree_ref` | nonblank string | Exact rule version/location used; examples use memo015’s SHA-256. |
+
+The normal factory result is one completed MergedKlineSeries. Only an actual unresolved inclusion triggers special read-only data: UNSET returns `kind="pending"` with the unconsumed candidate; BOTH returns `kind="dual"`, `main` and `comparison` series plus unevaluated-warning metadata. These are plain mappings, not extra classes. The Appendix gives the data fields;003.e shows how to handle them.
+
+**Arguments of plot() — call options, not stored members**
+
+| Argument | Type | Default | Meaning |
+|---|---|---|---|
+| `start` | `int \| None` | None | Inclusive merged-record position; negative values count from the end. |
+| `stop` | `int \| None` | None | Exclusive merged-record end. Both omitted selects all unless raw bounds are supplied. |
+| `raw_start` | `int \| None` | None | Optional inclusive raw-bar viewport position; `-40` selects the last40 original bars. |
+| `raw_stop` | `int \| None` | None | Optional exclusive raw-bar end. Use raw bounds instead of start/stop, never together. |
+| `volume` | `bool` | True | Include unchanged raw volume in a separate aligned panel. |
+| `title` | `str \| None` | None | Custom chart title; otherwise raw symbol/period, chart description and market color preset. |
+| `style` | `str` | `"overlay"` | `"overlay"`: transparent merged bands behind raw candles; `"panels"`: separate raw/merged price panels; `"ranges"`: earlier vertical interval marks. |
+| `show_gaps` | `bool` | False | False: consecutive observed-bar positions. True: calendar time and its gaps. |
+| `market` | `Literal["US", "China"]` | `"US"` | Color convention matching memo013: US green-up/red-down; China red-up/green-down. Raw candles and merged borders/transparent fills use the same palette. |
+
+Preferred call: `merged.plot(raw_start=-40, volume=False)` displays exactly40 raw bars and their intersecting merged intervals in the approved gap-free overlay. `merged.plot(start=-40)` instead selects40 merged records and all their source members. Both operate on full-data results without recalculating initialization. Raw viewport edges clip only the displayed block; hover retains complete source range/bounds and marks clipping. Empty selections or mixed raw/merged bounds raise ValueError.
+
+The Figure is interactive: hover shows UTC, original OHLC and merged ID/range/bounds; the legend toggles direction groups; Plotly provides zoom/pan. `fig.show()` displays it and `fig.write_html(...)` exports standalone interactive HTML. Rendering merged ranges does not invent merged OHLC. A raw wick can lie outside a directional merged bound. Both gap modes preserve original values and timestamp metadata; only horizontal spacing changes.
+**Meaning of colors — the same convention as memo013**
+
+| market | Raw candle close > open / merged direction up | Raw candle close < open / merged direction down | Unresolved merged / volume |
+|---|---|---|---|
+| `"US"` — default | Green (`#16a34a`) | Red (`#dc2626`) | Gray |
+| `"China"` | Red (`#dc2626`) | Green (`#16a34a`) | Gray |
+
+Raw candle line and body use the same opaque preset color. Merged borders use the corresponding direction color; merged fills use that RGB at10% opacity. A merged box can contain raw candles of both colors: the box follows its stored merge direction, while each raw candle compares its own close/open. Unresolved merged direction stays gray regardless of raw candle colors. A doji has a zero-height body and retains Plotly’s native stroke handling, as documented in memo013.
+
+market changes colors only, independently of the instrument’s country. It does not change source values, timestamps, gap settings, grouping or price bounds. Overlay, panels and legacy ranges share the selected palette; volume stays gray. Defaults remain `market="US"`, `style="overlay"`, `show_gaps=False`.
+### 003.d — Object workflow and implementation boundary
+Use objects throughout: load raw data or a table, calculate/retrieve merged results, then call conversion or plotting methods.
+
+| Public operation | Owner | Implementation / result |
+|---|---|---|
+| Load raw bars and provenance | `KlineTSeries.read_csv(...)` | Memo013 factory returns one raw object owning context. |
+| Load existing master rows/context | `ChanTable.read_csv(...)` | Existing table and its exact raw source; stored features are restored if supplied. |
+| Calculate merged results | `MergedKlineSeries.derive_from(...)` | Private class methods implement memo015. |
+| Build table from an existing raw object | `ChanTable.from_source_series(raw, context=raw.context)` | Retain raw identity; explicitly carry its provenance into the table. |
+| Register/retrieve a result | `merged.to_chan_table(...)` / `MergedKlineSeries.from_chan_table(...)` | [Table adapter](../../src/chanlab/data/merged_kline_table.py) checks raw identity/key/context and derives MK columns. |
+| Save table and registered features | `view.write_csv(path, context_path)` | Existing ChanTable writes row CSV plus versioned authoritative context. |
+| Export compact rows | `merged.to_dataframe()` | Same adapter; detached DataFrame, no inverse importer. |
+| Build a chart | `merged.plot(...)` | [Renderer](../../src/chanlab/visualization/merged_kline_plot.py) returns Figure. |
+
+Raw-route provenance is owned by `raw.context`. When creating a table from raw, pass it explicitly as above; from_source_series does not copy that context by default. The existing-table route retains `table.context`. MergedKlineSeries has no extra context member; source provenance and table metadata stay with their owning objects.
+
+In-memory retrieval returns the exact registered series; a disk reload creates new results sharing the newly loaded raw snapshot. Registration requires identity, not merely equal-valued bars. The same key cannot name a different result object. Multiple keys are retained; the first supplies the fixed mk_* columns, with other keys available through keyed memberships/markers and versioned context. Other feature-family columns remain NA.
+
+MK membership covers `[source_start,source_stop)`; start/end markers are at source_start/source_stop−1; direction appears only at the start. CSV ID cells use JSON arrays, including `[]` for computed-empty markers; unresolved/inapplicable direction is NA. Raw columns are unchanged. These columns alone cannot recover bounds/config/rules/trace, so registered-feature writes require a separate context destination. Data/context paths must differ. DataFrame attrs are not retained by ordinary DataFrame CSV export.
+### 003.e — Usage examples
+Run from the repository root with `PYTHONPATH=src .venv/bin/python`. Optional export/plot support: `uv sync --extra dataframe --extra plot`.
+
+**From the Kline family — one raw object owns bars and provenance**
 ```python
 from hashlib import sha256
 from pathlib import Path
-from chanlab.data.kline_csv import read_kline_csv
-from chanlab.algo.merged_kline import (
-    MergeConfig, MergedKlineSeries, PendingMerge, DualMerge,
-)
+from tempfile import TemporaryDirectory
+
+from chanlab.algo.kline import KlineTSeries
+from chanlab.algo.chan_table import ChanTable
+from chanlab.algo.merged_kline import MergedKline, MergedKlineSeries
 
 folder = Path("samples/chan_table")
-raw, context = read_kline_csv(
-    next(folder.glob("*chan_table*.csv")), next(folder.glob("*context*.csv"))
-)
+rows_path = next(folder.glob("*chan_table*.csv"))
+context_path = next(folder.glob("*context*.csv"))
+raw = KlineTSeries.read_csv(rows_path, context_path)
+assert len(raw) == 10060 and len(raw.context) == 9
 rule_path = Path("docs/memo/memoWX_015_Chan_mergedkline.md")
 rule_ref = "memo015:sha256:" + sha256(rule_path.read_bytes()).hexdigest()
-outcome = MergedKlineSeries.derive_from(raw, MergeConfig("UP"), rule_ref)
-if isinstance(outcome, PendingMerge):
-    raise RuntimeError(f"Initialization required at raw[{outcome.raw_index}]")
-series = outcome.main if isinstance(outcome, DualMerge) else outcome
-series.validate()
-assert series.source_series is raw
-assert len(raw) == 10060 and len(series) == 6200
-assert series[0].source_start == 0 and series[-1].source_stop == len(raw)
-record = series.get_by_id(series[0].id)
-members = raw[record.source_start:record.source_stop]
-assert members[0].timestamp == raw[record.source_start].timestamp
-print(series.explain(0))
+config = {"initialization": "UP"}
+merged = MergedKlineSeries.derive_from(raw, config, rule_ref)
+assert isinstance(merged, MergedKlineSeries)
+assert merged.source_series is raw and len(merged) == 6200
+bar = merged.get_by_id(merged[0].id)
+assert isinstance(bar, MergedKline)
+members = raw[bar.source_start:bar.source_stop]
+assert members
+print(merged.explain(0))
+base = ChanTable.from_source_series(raw, context=raw.context)
+view = merged.to_chan_table(base, "merged")
+assert MergedKlineSeries.from_chan_table(view, "merged") is merged
+assert all(view.context[key] == value for key, value in raw.context.items())
 ```
-### 003.d — Plotting and sample charts
-With `series` from003.c, install the existing optional extra if needed (`uv sync --extra plot`), then:
-```python
-fig = series.plot(start=-40, volume=True, title="Last 40 merged intervals")
-fig.write_html("artifacts/merged-kline/example.html", include_plotlyjs=True)
-```
-Slicing selects already-calculated merged records and the corresponding raw extent; it does not recompute initialization on a truncated input. Empty selections raise `ValueError`. Missing Plotly gives the installation instruction. Raw candles/volume remain unchanged; merged bounds are vertical range marks at first-member timestamps with IDs/source ranges/direction/status on hover.
 
-| Sample | Interactive HTML | Inspected PNG |
+**From an existing ChanTable — calculate, write and read back**
+```python
+base = ChanTable.read_csv(rows_path, context_path)
+merged = MergedKlineSeries.derive_from(base, config, rule_ref)
+assert isinstance(merged, MergedKlineSeries)
+assert merged.source_series is base.source_series
+view = merged.to_chan_table(base, "merged")
+with TemporaryDirectory() as directory:
+    output = Path(directory)
+    view.write_csv(output / "chan.csv", output / "context.csv")
+    loaded = ChanTable.read_csv(output / "chan.csv", output / "context.csv")
+    restored = MergedKlineSeries.from_chan_table(loaded, "merged")
+    assert restored.klines == merged.klines
+    assert restored.source_series is loaded.source_series
+frame = merged.to_dataframe()
+assert len(frame) == 6200
+```
+
+**Handle any explicit initialization policy**
+```python
+outcome = MergedKlineSeries.derive_from(raw, {"initialization": "BOTH"}, rule_ref)
+if isinstance(outcome, MergedKlineSeries):
+    main = outcome
+elif outcome["kind"] == "dual":
+    main = outcome["main"]
+    comparison = outcome["comparison"]
+else:
+    raise RuntimeError(f"Initialization required at raw[{outcome['raw_index']}]")
+assert isinstance(main, MergedKlineSeries)
+```
+
+**Preferred interactive plot and alternative options**
+```python
+# Default: filled merged ranges over original candles, with time gaps hidden.
+fig = merged.plot(raw_start=-40, volume=False)
+assert fig.layout.meta["style"] == "overlay"
+assert fig.layout.meta["show_gaps"] is False
+assert fig.layout.meta["market"] == "US"
+assert fig.layout.meta["raw_stop"] - fig.layout.meta["raw_start"] == 40
+# Display: fig.show()
+# Standalone interactive export:
+# fig.write_html("artifacts/merged-kline/my-overlay.html", include_plotlyjs=True)
+
+china_fig = merged.plot(raw_start=-40, volume=False, market="China")
+china_candles = next(t for t in china_fig.data if t.type == "candlestick")
+china_up = next(t for t in china_fig.data if t.legendgroup == "merged-up")
+assert china_candles.increasing.line.color == china_up.line.color == "#dc2626"
+assert china_up.fillcolor == "rgba(220,38,38,0.10)"
+# china_fig.show() or china_fig.write_html(path, include_plotlyjs=True)
+
+panels = merged.plot(raw_start=-40, volume=False, style="panels")
+calendar = merged.plot(raw_start=-40, volume=False, show_gaps=True)
+assert calendar.layout.xaxis.type == "date"
+# Earlier interval-mark style, if needed:
+# legacy = merged.plot(start=-40, style="ranges", show_gaps=True)
+```
+The Figure belongs to the caller; the method does not open windows or write files. All current40-raw-bar samples below are generated by these public method calls.
+
+| Sample | Interactive HTML | PNG preview |
 |---|---|---|
+| Last40 raw bars, gap-free overlay (default US) | [Open](../../artifacts/merged-kline/cc-last40-overlay-gapfree.html) | [Preview](../../artifacts/merged-kline/cc-last40-overlay-gapfree.png) |
+| Same40 raw bars, China overlay | [Open](../../artifacts/merged-kline/cc-last40-overlay-china.html) | [Preview](../../artifacts/merged-kline/cc-last40-overlay-china.png) |
+| Last40 raw bars, gap-free raw/merged panels | [Open](../../artifacts/merged-kline/cc-last40-raw-and-merged-gapfree.html) | [Preview](../../artifacts/merged-kline/cc-last40-raw-and-merged-gapfree.png) |
+| Last40 raw bars, calendar overlay | [Open](../../artifacts/merged-kline/cc-last40-overlay-calendar.html) | [Preview](../../artifacts/merged-kline/cc-last40-overlay-calendar.png) |
 | Memo015 worked example | [Open](../../artifacts/merged-kline/worked-example.html) | [Preview](../../artifacts/merged-kline/worked-example.png) |
 | Last40 merged intervals | [Open](../../artifacts/merged-kline/cc-last40-merged.html) | [Preview](../../artifacts/merged-kline/cc-last40-merged.png) |
 
+### 003.f — Chart pictures
+**Preferred/default: gap-free overlay — the same40 raw bars and26 merged intervals.** With default US colors, opaque green-up/red-down raw candles are in the foreground. Transparent green-up/red-down boxes show merged low–high bounds; each box spans its original member bars. The light fill keeps candle bodies and wicks visible. A raw wick can extend beyond the box because directional inclusion processing adjusts merged bounds; the box is not the raw group’s outer envelope.
+
+![Gap-free original Klines overlaid on transparent merged-range boxes](memoWX_026_MergedKlineFamily/cc-last40-overlay-gapfree.png)
+
+The [interactive overlay](../../artifacts/merged-kline/cc-last40-overlay-gapfree.html) allows merged direction groups to be hidden/shown through the legend. Both overlay and two-panel comparison use identical full-data calculation and viewport. Reproduce with `merged.plot(raw_start=-40, volume=False)`. [Production-method sample generator](../../artifacts/mas/merged-kline-plot-options/generate.py); [source/geometry verification](../../artifacts/mas/merged-kline-market-colors/verification.json).
+
+**China overlay — same data, reversed convention.** `merged.plot(raw_start=-40, volume=False, market="China")` uses red-up/green-down for both raw candles and merged direction bands. Fills remain10% transparent. Compare with the default US picture above; geometry, timestamps and prices are identical.
+
+![Same40 raw bars and26 merged ranges with China red-up green-down colors](memoWX_026_MergedKlineFamily/cc-last40-overlay-china.png)
+
+[Interactive China overlay](../../artifacts/merged-kline/cc-last40-overlay-china.html). Omitting market uses US colors.
+
+**Gap-free comparison — 40 raw bars and their26 merged intervals.** The top panel shows the last40 original candles; the lower panel shows the full-input merge result on the same consecutive-bar axis. Blocks span their original members and show merged low/high only; they do not invent merged open/close values. Green/red means upward/downward merge direction under the default US preset. Calendar gaps are hidden, original UTC labels remain, and no error-bar-style marks are used.
+
+![Last40 raw Klines and26 merged intervals on a shared gap-free axis](memoWX_026_MergedKlineFamily/cc-last40-raw-and-merged-gapfree.png)
+
+Reproduce this panel view with `merged.plot(raw_start=-40, volume=False, style="panels")`. The merge is calculated on the entire10,060-bar input before selecting the40-bar viewport. [Interactive chart](../../artifacts/merged-kline/cc-last40-raw-and-merged-gapfree.html); [method/source verification](../../artifacts/mas/merged-kline-plot-options/verification.json).
+
+**Optional calendar overlay.** `merged.plot(raw_start=-40, volume=False, show_gaps=True)` shows the same40 bars and26 ranges with elapsed-time spacing. The default above hides these gaps.
+
+![Same40 raw bars and26 merged ranges with calendar-time spacing](memoWX_026_MergedKlineFamily/cc-last40-overlay-calendar.png)
+
+**Worked example.** Ten synthetic raw bars become three merged intervals. Gray/green/red ranges show unresolved/up/down merge direction under the US preset; each range spans its raw members. Source ranges retain all ten bars.
+
+![Memo015 ten-bar worked example with three merged intervals](memoWX_026_MergedKlineFamily/worked-example.png)
+
+**Calendar comparison — interval-mark style.** Last40 already-calculated merged intervals over original candles and volume. Calendar gaps remain visible; no raw values or timestamps were changed.
+
+![Last40 merged intervals over original raw candles and volume](memoWX_026_MergedKlineFamily/cc-last40-merged.png)
+
 ## Appendix — Contracts and reproduction
-1. **Initialization:** explicit immutable policy; no project default. BOTH/UNSET return special outcomes only if ambiguous inclusion is encountered.
+1. **Initialization:** explicit configuration mapping; no project default. BOTH/UNSET return tagged read-only data only if ambiguous inclusion is encountered.
 2. **Confirmation:** only unconfirmed/None supported. EOF completion and first-member display placement are not confirmation evidence.
-3. **Trace:** scoped MergeDecision retains rule and before/candidate/after evidence. General DecisionStep remains deferred; callers should not treat this schema as a cross-feature standard.
+3. **Trace:** read-only mappings retain rule and before/candidate/after evidence. Nested work data contains raw reference, low/high, direction and source_start/source_stop. General DecisionStep remains deferred; this is not a cross-feature schema.
 4. **Warning:** BOTH retains both full paths and original request; source-aware difference scoring/threshold/delivery remain unimplemented and explicitly unevaluated.
-5. **Adapters:** table registration/conflicts and DataFrame schema remain separate work. No raw/master schema was changed.
-6. **Plotting:** existing optional Plotly extra; UTC/session gaps retained; raw volume only. PNG export uses temporary Kaleido/local Chrome tooling, not a new runtime requirement.
-7. **Reproduction:** [verify.py](../../artifacts/mas/merged-kline-family/verify.py) reruns isolated comparisons, full input checks and chart exports. Run with `PYTHONPATH=src` in an environment containing pytest/Plotly; PNG export additionally needs Kaleido/Chrome. Tooling/check commands and limitations are in [the task](../../mas/tasks/20261109-memo026-execution.md).
+5. **Adapters:** implemented in002.g/003.c–003.e. Fixed41-column master schema remains; authoritative feature data uses the versioned context entry. Other concept adapters and expanded per-key CSV columns remain future work.
+6. **Plotting:** existing optional Plotly extra; preferred/default style is overlay with gaps hidden. show_gaps=True preserves calendar spacing; market="US" defaults to green-up/red-down and market="China" reverses both candle and merged colors; raw volume remains gray. PNG export uses temporary Kaleido/local Chrome tooling, not a new runtime requirement.
+7. **Reproduction:** [current refactor verification](../../artifacts/mas/merged-kline-two-class/verify.py) compares old/new behavior and prior persisted-context compatibility. [Original verify.py](../../artifacts/mas/merged-kline-family/verify.py) reruns frozen historical comparisons and current chart outputs. Run with `PYTHONPATH=src` in an environment containing pytest/Plotly; PNG export additionally needs Kaleido/Chrome. Tooling/check commands and limitations are in [the task](../../mas/tasks/20261109-memo026-execution.md).
+
+### Internal class methods and factory data
+These are implementation details, separated from the caller-facing class reference in003.
+
+**Automatic hook and private implementation methods**
+
+| Method | Responsibility |
+|---|---|
+| `__post_init__()` | Freeze input data and call validate(). |
+| `_validate_config(config)` | Require explicit initialization mapping; reject unsupported keys/policies. |
+| `_freeze_data(value)` | Recursively detach/freeze configuration and evidence containers. |
+| `_work(...)`, `_change(work, **changes)` | Construct or replace validated private interval data. No work class. |
+| `_work_from_raw(raw, i, direction=None)` | Initialize one private work interval from a raw bar. |
+| `_has_inclusion(a, b)` | Symmetric inclusive containment, including equality. |
+| `_direction_between(a, b)` | Strict up/down for a nonincluded chronological pair. |
+| `_check_pair(current, candidate)` | Same raw snapshot, continuous ranges and one included raw candidate. |
+| `_merge_included(current, candidate)` | Known direction: max/max upward or min/min downward. |
+| `_merge_outer_boundary(current, candidate)` | Explicit unresolved OUTER envelope, retaining None. |
+| `_validate_step(step, raw)` | Validate decision fields, supported rule/index and evidence source/ranges. |
+| `_validate_result(raw, result)` | Complete source coverage, record/ID checks and adjacent noninclusion. |
+| `_advance(...)` | Own sequential processing, initialization, independent dual paths, ID assignment, saving and EOF. |
+
+The six helpers from memo015 are now private methods on MergedKlineSeries. The main loop owns consumption counters, record IDs, saving and EOF; each returned work mapping is immutable. `_validate_integer` belongs to MergedKline and is reused for indices.
+
+| Special outcome | Read-only fields |
+|---|---|
+| UNSET at ambiguous inclusion | `kind="pending"`, `source_series`, `config`, `rule_tree_ref`, `saved`, `current`, `candidate`, `raw_index`, `trace`. The candidate is unconsumed; no completed-series/resume API is implied. |
+| BOTH at ambiguous inclusion | `kind="dual"`, `main`, `comparison`, `requested_config`, `warning_evaluation="not_evaluated"`. Each path owns independent work/result state and references the same raw object. |
+
+Trace entries contain `rule`, `raw_index`, `before`, `candidate`, `after`. Nested interval data contains `raw`, `low`, `high`, `direction`, `source_start`, `source_stop`; candidate is None for initialization/EOF. Normal complete factory results remain MergedKlineSeries objects.
 
 ## References
 1. [Memo009 — Design pattern for Chan features](memoWX_009_designPatternForChanFeatures.md), sections001.b–001.e,002.d–002.e and002.u.
 2. [Memo015 — Chan_mergedkline](memoWX_015_Chan_mergedkline.md), sections001 and002.a–002.d.
 3. [Memo013 — Kline family implementation](memoWX_013_klineFamily.md), sections001–003 and Plotly Appendix; [core execution task](../../mas/tasks/20261108-memo013-execution.md) and [comparison](../../artifacts/mas/kline-family/comparison.md).
 4. [Memo012 — Python Pro skill](memoWX_012_Skill_python_pro.md).
+5. [Computer Scientist skill](../../mas/skills/computer-scientist/SKILL.md), installed K-Dense1.0.0; applied directly by Codex for the two-class abstraction/invariant review.

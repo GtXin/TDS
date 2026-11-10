@@ -1,0 +1,9 @@
+{
+  "rows": 10060,
+  "owned_context_keys": 9,
+  "object_roundtrip_equal": true,
+  "plot_trace_values_match": true,
+  "source_images_and_configuration_unchanged": true,
+  "raw_export_sha256": "964e13580e7811a5ad8849915e659b5fd39dfe48a2fbbfa1e4d2393d79a05cd4",
+  "context_export_sha256": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15"
+}

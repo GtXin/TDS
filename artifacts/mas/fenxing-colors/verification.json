@@ -1,0 +1,37 @@
+{
+  "charts": {
+    "cc-last80": {
+      "market": "US",
+      "colors": {
+        "top fractal": "#dc2626",
+        "bottom fractal": "#16a34a"
+      },
+      "sha256": "b509afb0037ad8cd339e71b6f4c7d8dcce3a7d94b88c307aaad9737507422d24"
+    },
+    "cc-last80-china": {
+      "market": "China",
+      "colors": {
+        "top fractal": "#16a34a",
+        "bottom fractal": "#dc2626"
+      },
+      "sha256": "f0dba73598c8d4baa8c8ee175f5b8ae1422ce1ccee0d851dd21c944acf1c4437"
+    },
+    "cc-last80-calendar": {
+      "market": "US",
+      "colors": {
+        "top fractal": "#dc2626",
+        "bottom fractal": "#16a34a"
+      },
+      "sha256": "d1f3579f47b71c4a97eb4ad819e3d8479b40807cbb9b12b641497de87f4f2837"
+    },
+    "worked-example": {
+      "market": "US",
+      "colors": {
+        "top fractal": "#dc2626",
+        "bottom fractal": "#16a34a"
+      },
+      "sha256": "e32546e297f03e58016a4dc6780830f815961551789a9f6e845466600d487252"
+    }
+  },
+  "backup": "docs/memo/backups/memoWX_027_fenxingFamily__20261109_224945_206206"
+}

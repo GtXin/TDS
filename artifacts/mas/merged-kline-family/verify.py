@@ -1,4 +1,4 @@
-"""Reproduce frozen-variant comparisons and full-data outputs from repo root."""
+"""Reproduce current outputs; compare frozen variants against their pre-refactor tests."""
 
 from pathlib import Path
 from hashlib import sha256
@@ -8,12 +8,7 @@ import os
 import subprocess
 import sys
 
-from chanlab.algo.merged_kline import (
-    MergeConfig,
-    MergedKlineSeries,
-    DualMerge,
-    PendingMerge,
-)
+from chanlab.algo.merged_kline import MergedKlineSeries
 from chanlab.data.kline_csv import read_kline_csv
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -42,20 +37,20 @@ def main():
     for policy in ("UP", "DOWN", "OUTER", "BOTH", "UNSET"):
         result = MergedKlineSeries.derive_from(
             raw,
-            MergeConfig(policy),
+            {"initialization": policy},
             "memo015:sha256:"
             + sha256(
                 (ROOT / "docs/memo/memoWX_015_Chan_mergedkline.md").read_bytes()
             ).hexdigest(),
         )
-        if isinstance(result, DualMerge):
+        if not isinstance(result, MergedKlineSeries) and result["kind"] == "dual":
             report["policies"][policy] = {
-                "main_count": len(result.main),
-                "comparison_count": len(result.comparison),
-                "warning": result.warning_evaluation,
+                "main_count": len(result["main"]),
+                "comparison_count": len(result["comparison"]),
+                "warning": result["warning_evaluation"],
             }
-        elif isinstance(result, PendingMerge):
-            report["policies"][policy] = {"pending_raw_index": result.raw_index}
+        elif not isinstance(result, MergedKlineSeries) and result["kind"] == "pending":
+            report["policies"][policy] = {"pending_raw_index": result["raw_index"]}
         else:
             result.validate()
             assert result.source_series is raw
@@ -69,6 +64,8 @@ def main():
             if policy == "UP":
                 figure = result.plot(
                     start=-40,
+                    style="ranges",
+                    show_gaps=True,
                     title="Merged Kline · last 40 merged intervals · UP initialization",
                 )
                 figure.write_html(
@@ -111,10 +108,15 @@ def main():
         )
         for i, (lo, hi) in enumerate(intervals)
     )
-    result = MergedKlineSeries.derive_from(worked, MergeConfig("UP"), "memo015:002.b")
+    result = MergedKlineSeries.derive_from(
+        worked, {"initialization": "UP"}, "memo015:002.b"
+    )
     assert isinstance(result, MergedKlineSeries)
     fig = result.plot(
-        volume=False, title="Memo015 worked example · 10 raw bars → 3 merged intervals"
+        volume=False,
+        style="ranges",
+        show_gaps=True,
+        title="Memo015 worked example · 10 raw bars → 3 merged intervals",
     )
     fig.write_html(CHARTS / "worked-example.html", include_plotlyjs=True)
     try:
@@ -139,7 +141,7 @@ for policy in ('UP','DOWN','OUTER','BOTH','UNSET'):
     result=module.MergedKlineSeries.derive_from(raw,module.MergeConfig(policy),'common-full-data')
     payload=[(x.low,x.high,x.direction,x.source_start,x.source_stop) for x in result]
     print('FULL_DATA',policy,len(result),hashlib.sha256(json.dumps(payload).encode()).hexdigest())
-raise SystemExit(pytest.main(['tests/test_merged_kline.py','-q','-k','not plot']))
+raise SystemExit(pytest.main(['artifacts/mas/merged-kline-two-class/before/acceptance.py','-q','-k','not plot']))
 """
         run = subprocess.run(
             [sys.executable, "-c", code, str(path)],

@@ -1,0 +1,9 @@
+{
+  "samples/chan_table/README.md": "40d25863b2de3feb46b423d1a31a7a4becf6203bc251999e3127edfeae8dd261",
+  "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_context_v20261108.csv": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15",
+  "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_chan_table_v20261108.csv": "1c4039411b0472c27fd4af42fcd320ccd0579d9f5c5f54d9d013893f665c85c5",
+  "references/proj009data/provenance.json": "e8ef35c63ddf95490324ae8f853ba1a067b722484394dc2504b8b337df08d578",
+  "references/proj009data/dce-kqm-m-15m.csv": "fc2e6a5c711b6a81cd78583896087e0d5b2d07097f55135cdb480b786a124e2d",
+  "pyproject.toml": "10d4fc4c481425826a11c05c0934765625e65018709eba435d1760ac1aac9366",
+  "uv.lock": "95b20efd6f089af1632191af1a0f4cd0dcbe798c2399434d35301b43790b71ea"
+}
