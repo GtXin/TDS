@@ -1,0 +1,153 @@
+{
+  "classification": "020-permitted blocked empty output; user review required, not definition violation",
+  "raw_ohlcv": [
+    {
+      "timestamp": "2026-01-01T00:00:00+00:00",
+      "open": 94.0,
+      "high": 94,
+      "low": 94,
+      "close": 94.0,
+      "volume": 7720
+    },
+    {
+      "timestamp": "2026-01-01T00:01:00+00:00",
+      "open": 91.0,
+      "high": 91,
+      "low": 91,
+      "close": 91.0,
+      "volume": 2949
+    },
+    {
+      "timestamp": "2026-01-01T00:02:00+00:00",
+      "open": 94.0,
+      "high": 94,
+      "low": 94,
+      "close": 94.0,
+      "volume": 5372
+    },
+    {
+      "timestamp": "2026-01-01T00:03:00+00:00",
+      "open": 91.0,
+      "high": 91,
+      "low": 91,
+      "close": 91.0,
+      "volume": 2301
+    },
+    {
+      "timestamp": "2026-01-01T00:04:00+00:00",
+      "open": 97.0,
+      "high": 97,
+      "low": 97,
+      "close": 97.0,
+      "volume": 9722
+    },
+    {
+      "timestamp": "2026-01-01T00:05:00+00:00",
+      "open": 100.0,
+      "high": 100,
+      "low": 100,
+      "close": 100.0,
+      "volume": 3650
+    },
+    {
+      "timestamp": "2026-01-01T00:06:00+00:00",
+      "open": 94.0,
+      "high": 94,
+      "low": 94,
+      "close": 94.0,
+      "volume": 8872
+    },
+    {
+      "timestamp": "2026-01-01T00:07:00+00:00",
+      "open": 91.0,
+      "high": 91,
+      "low": 91,
+      "close": 91.0,
+      "volume": 3380
+    },
+    {
+      "timestamp": "2026-01-01T00:08:00+00:00",
+      "open": 88.0,
+      "high": 88,
+      "low": 88,
+      "close": 88.0,
+      "volume": 1184
+    },
+    {
+      "timestamp": "2026-01-01T00:09:00+00:00",
+      "open": 91.0,
+      "high": 91,
+      "low": 91,
+      "close": 91.0,
+      "volume": 836
+    },
+    {
+      "timestamp": "2026-01-01T00:10:00+00:00",
+      "open": 94.0,
+      "high": 94,
+      "low": 94,
+      "close": 94.0,
+      "volume": 6348
+    },
+    {
+      "timestamp": "2026-01-01T00:11:00+00:00",
+      "open": 97.0,
+      "high": 97,
+      "low": 97,
+      "close": 97.0,
+      "volume": 2968
+    },
+    {
+      "timestamp": "2026-01-01T00:12:00+00:00",
+      "open": 100.0,
+      "high": 100,
+      "low": 100,
+      "close": 100.0,
+      "volume": 7674
+    },
+    {
+      "timestamp": "2026-01-01T00:13:00+00:00",
+      "open": 106.0,
+      "high": 106,
+      "low": 106,
+      "close": 106.0,
+      "volume": 2169
+    },
+    {
+      "timestamp": "2026-01-01T00:14:00+00:00",
+      "open": 112.0,
+      "high": 112,
+      "low": 112,
+      "close": 112.0,
+      "volume": 4450
+    },
+    {
+      "timestamp": "2026-01-01T00:15:00+00:00",
+      "open": 106.0,
+      "high": 106,
+      "low": 106,
+      "close": 106.0,
+      "volume": 8130
+    },
+    {
+      "timestamp": "2026-01-01T00:16:00+00:00",
+      "open": 103.0,
+      "high": 103,
+      "low": 103,
+      "close": 103.0,
+      "volume": 802
+    }
+  ],
+  "initial_a": 0,
+  "historical_fractal_positions": [
+    0,
+    3
+  ],
+  "failed_fractal_position": 5,
+  "source_config": {
+    "anchor_tie": "FIRST"
+  },
+  "merged_config": {
+    "initialization": "UP"
+  }
+}

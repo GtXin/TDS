@@ -1,0 +1,47 @@
+{
+  "raw": 10060,
+  "merged": 6200,
+  "fractals": 3027,
+  "budget": 100000,
+  "seconds": 0.11033387499628589,
+  "source_hash_unchanged": true,
+  "complete": true,
+  "routes": 0,
+  "initial_a": 0,
+  "status": "blocked",
+  "states": 3177,
+  "blocked_count": 1,
+  "blocked": [
+    {
+      "prefix": [
+        0,
+        1,
+        6,
+        9,
+        12,
+        25,
+        26,
+        39,
+        54,
+        59,
+        64,
+        71,
+        76,
+        79,
+        80,
+        87,
+        90,
+        97,
+        108,
+        119,
+        124,
+        137,
+        140,
+        145,
+        148,
+        149
+      ],
+      "failed": 151
+    }
+  ]
+}

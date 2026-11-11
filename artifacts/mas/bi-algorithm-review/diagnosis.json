@@ -1,0 +1,303 @@
+{
+  "scope": "read-only diagnosis; no proposed rule adopted",
+  "seed50": {
+    "raw_count": 49,
+    "merged_count": 31,
+    "fractal_count": 16,
+    "initial_a": 1,
+    "status": "blocked",
+    "viable_routes": [],
+    "blocked": [
+      {
+        "prefix": [
+          1,
+          4
+        ],
+        "failed": 6
+      }
+    ],
+    "fractals": [
+      {
+        "position": 0,
+        "center": 1,
+        "kind": "bottom",
+        "price": 75,
+        "interval": [
+          75,
+          79
+        ]
+      },
+      {
+        "position": 1,
+        "center": 2,
+        "kind": "top",
+        "price": 82,
+        "interval": [
+          76,
+          82
+        ]
+      },
+      {
+        "position": 2,
+        "center": 3,
+        "kind": "bottom",
+        "price": 50,
+        "interval": [
+          50,
+          56
+        ]
+      },
+      {
+        "position": 3,
+        "center": 4,
+        "kind": "top",
+        "price": 79,
+        "interval": [
+          77,
+          79
+        ]
+      },
+      {
+        "position": 4,
+        "center": 6,
+        "kind": "bottom",
+        "price": 27,
+        "interval": [
+          27,
+          31
+        ]
+      },
+      {
+        "position": 5,
+        "center": 8,
+        "kind": "top",
+        "price": 86,
+        "interval": [
+          78,
+          86
+        ]
+      },
+      {
+        "position": 6,
+        "center": 11,
+        "kind": "bottom",
+        "price": 25,
+        "interval": [
+          25,
+          35
+        ]
+      },
+      {
+        "position": 7,
+        "center": 12,
+        "kind": "top",
+        "price": 59,
+        "interval": [
+          51,
+          59
+        ]
+      },
+      {
+        "position": 8,
+        "center": 13,
+        "kind": "bottom",
+        "price": 50,
+        "interval": [
+          50,
+          56
+        ]
+      },
+      {
+        "position": 9,
+        "center": 15,
+        "kind": "top",
+        "price": 85,
+        "interval": [
+          78,
+          85
+        ]
+      },
+      {
+        "position": 10,
+        "center": 18,
+        "kind": "bottom",
+        "price": 1,
+        "interval": [
+          1,
+          6
+        ]
+      },
+      {
+        "position": 11,
+        "center": 23,
+        "kind": "top",
+        "price": 106,
+        "interval": [
+          104,
+          106
+        ]
+      },
+      {
+        "position": 12,
+        "center": 24,
+        "kind": "bottom",
+        "price": 79,
+        "interval": [
+          79,
+          81
+        ]
+      },
+      {
+        "position": 13,
+        "center": 25,
+        "kind": "top",
+        "price": 110,
+        "interval": [
+          100,
+          110
+        ]
+      },
+      {
+        "position": 14,
+        "center": 26,
+        "kind": "bottom",
+        "price": 77,
+        "interval": [
+          77,
+          83
+        ]
+      },
+      {
+        "position": 15,
+        "center": 29,
+        "kind": "top",
+        "price": 134,
+        "interval": [
+          130,
+          134
+        ]
+      }
+    ],
+    "independent_legal_edges": {
+      "0": [],
+      "1": [
+        4
+      ],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [
+        10
+      ],
+      "6": [
+        9
+      ],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": [
+        11,
+        13,
+        15
+      ],
+      "11": [],
+      "12": [],
+      "13": [],
+      "14": [],
+      "15": []
+    }
+  },
+  "synthetic9": {
+    "raw_count": 9,
+    "merged_count": 9,
+    "fractal_count": 4,
+    "initial_a": 0,
+    "status": "blocked",
+    "viable_routes": [],
+    "blocked": [
+      {
+        "prefix": [
+          0,
+          1
+        ],
+        "failed": 3
+      }
+    ],
+    "fractals": [
+      {
+        "position": 0,
+        "center": 1,
+        "kind": "top",
+        "price": 10,
+        "interval": [
+          9,
+          10
+        ]
+      },
+      {
+        "position": 1,
+        "center": 5,
+        "kind": "bottom",
+        "price": 0,
+        "interval": [
+          0,
+          1
+        ]
+      },
+      {
+        "position": 2,
+        "center": 6,
+        "kind": "top",
+        "price": 12,
+        "interval": [
+          11,
+          12
+        ]
+      },
+      {
+        "position": 3,
+        "center": 7,
+        "kind": "bottom",
+        "price": -1,
+        "interval": [
+          -1,
+          0
+        ]
+      }
+    ],
+    "independent_legal_edges": {
+      "0": [
+        1
+      ],
+      "1": [],
+      "2": [],
+      "3": []
+    }
+  },
+  "full_sample": {
+    "raw_count": 10060,
+    "merged_count": 6200,
+    "fractal_count": 3027,
+    "production_routes": 0,
+    "states": 3177,
+    "initial_a": 0,
+    "blocked_at": 151,
+    "six_condition_witness_strokes": 480,
+    "witness_reaches_last_fractal": true,
+    "first_divergence": {
+      "path_position": 24,
+      "common_previous": 145,
+      "current_next": 148,
+      "witness_next": 150
+    },
+    "witness_scope": "pair-definition-valid only, not compliance with current temporal protocol"
+  },
+  "protected_sha256": {
+    "docs/memo/memoWX_020_Chan_bi.md": "54bdb7a09cafc42e253bae7500fa6ec21f15aa1562791e17548167cb603d286d",
+    "docs/memo/memoWX_028_biFamily.md": "9ae89a755f699e9b58dca36948bbd3de25075071c8988aafe811a2537ca0fa20",
+    "src/chanlab/algo/bi.py": "415d33ae7645c5fddd8b0fd2ff212e63926fd6ff2a661afdf1d48b53cefde4a8",
+    "tests/test_bi.py": "12bb7c902176df66ca03ce5a908fc7df015146e9da9ca7fc1d7348a8f898c02e"
+  },
+  "protected_files_unchanged": true,
+  "saved_seed_case_sha256": "616ba770de49719e3839fade011ae9aa2c145cb4d6e64b76de33bb048bc7c55d"
+}

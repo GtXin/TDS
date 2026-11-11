@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/memo/memoWX_020_Chan_bi.md",
+                "file": "docs/memo/memoWX_027_fenxingFamily.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memoWX_020_Chan_bi"
+              "title": "memoWX_027_fenxingFamily"
+            }
+          },
+          {
+            "id": "ecd975acf4974ebc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/memo/memoWX_021_Chan_xianduan.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "memoWX_021_Chan_xianduan"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -203,53 +217,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "848c1baf2b24a569",
+  "active": "ecd975acf4974ebc",
   "lastOpenFiles": [
-    "artifacts/mas/bi-algorithm-study/endpoint-extension-review.md",
-    "artifacts/mas/bi-algorithm-study/endpoint-extension-model.json",
-    "artifacts/mas/bi-algorithm-study/endpoint-extension-cases.json",
-    "artifacts/mas/bi-algorithm-study/endpoint-extension-model.py",
-    "docs/memo/backups/memoWX_020_Chan_bi__20261110_024803_271079.md",
-    "artifacts/mas/bi-algorithm-study/algo-tree.txt",
-    "artifacts/mas/bi-algorithm-study/verification.json",
-    "artifacts/mas/bi-algorithm-study/README.md",
-    "artifacts/mas/bi-algorithm-study/boundary-case.json",
-    "artifacts/mas/bi-algorithm-study/__pycache__/oracle.cpython-314.pyc",
-    "artifacts/mas/bi-algorithm-study/__pycache__",
-    "artifacts/mas/bi-algorithm-study/oracle-results.json",
-    "artifacts/mas/bi-algorithm-study/oracle.py",
-    "artifacts/mas/bi-algorithm-study/state_model.md",
-    "artifacts/mas/bi-algorithm-study/ambiguity.md",
-    "mas/tasks/20261110-bi-algorithm-tree-study.md",
-    "docs/memo/backups/memoWX_020_Chan_bi__20261110_021834_334443.md",
-    "docs/memo/backups/memoWX_020_Chan_bi__20261110_021554_795964.md",
-    "mas/tasks/20261110-memo020-definition-v2.md",
-    "docs/memo/backups/memoWX_020_Chan_bi__20261110_021310_190946.md",
-    "docs/memo/memoWX_027_fenxingFamily.md",
     "docs/memo/memoWX_020_Chan_bi.md",
-    "docs/memo/memoWX_019_Chan_fenxing.md",
-    "docs/memo/memoWX_026_MergedKlineFamily.md",
-    "docs/memo/memoWX_018_batchConcept2to8.md",
-    "docs/memo/memoWX_015_Chan_mergedkline.md",
-    "docs/memo/memoWX_003_folderDecision.md",
-    "docs/memo/memoWX_002_MAS.md",
-    "docs/memo/memoWX_001_folderStrucureforProj009.md",
-    "docs/memo/memoWX_016_Skill_chan_source_code_study.md",
-    "docs/memo/backups/memoWX_027_fenxingFamily__20261109_224959_766172.md",
-    "artifacts/mas/fenxing-colors/before/20261109_224945_206206/worked-example.png",
-    "artifacts/mas/fenxing-colors/before/20261109_224945_206206/cc-last80.png",
-    "artifacts/mas/fenxing-colors/before/20261109_224945_206206/cc-last80-china.png",
-    "artifacts/mas/fenxing-colors/before/20261109_224945_206206/cc-last80-calendar.png",
-    "artifacts/mas/fenxing-colors/before/20261109_224945_206206/README.md",
-    "docs/memo/backups/memoWX_027_fenxingFamily__20261109_224945_206206/worked-example.png",
-    "docs/memo/backups/memoWX_027_fenxingFamily__20261109_224945_206206/cc-last80.png",
-    "docs/memo/backups/memoWX_027_fenxingFamily__20261109_224945_206206/cc-last80-china.png",
-    "docs/memo/backups/memoWX_027_fenxingFamily__20261109_224945_206206/cc-last80-calendar.png",
-    "docs/memo/backups/memoWX_027_fenxingFamily__20261109_224459_798993.md",
-    "docs/memo/backups/memoWX_027_fenxingFamily__20261109_224436_761665.md",
-    "docs/memo/backups/memoWX_027_fenxingFamily__20261109_224421_665008.md",
-    "artifacts/fenxing/README.md",
-    "docs/memo/memoWX_027_fenxingFamily/worked-example.png",
-    "docs/memo/memoWX_027_fenxingFamily/cc-last80.png"
+    "artifacts/mas/bi-tree-details/README.md",
+    "docs/memo/backups/memoWX_020_Chan_bi__20261110_202545_435576.md",
+    "docs/memo/memoWX_027_fenxingFamily.md",
+    "docs/memo/memoWX_021_Chan_xianduan.md",
+    "docs/memo/backups/memoWX_020_Chan_bi__20261110_212154_532834.md",
+    "artifacts/mas/bi-tree-details/apply_unified_tree.py",
+    "artifacts/mas/bi-tree-details/unified-tree.txt",
+    "artifacts/mas/bi-tree-details/verification.json",
+    "docs/memo/backups/memoWX_020_Chan_bi__20261110_211718_919409.md",
+    "artifacts/mas/bi-tree-details/apply_and_verify.py",
+    "artifacts/mas/bi-tree-details/decomposition-checks.json",
+    "artifacts/mas/bi-tree-details/check_decomposition.py",
+    "artifacts/mas/bi-tree-details/examples-review.md",
+    "artifacts/mas/bi-tree-details/section-002d.md",
+    "artifacts/mas/bi-tree-details/section-002c.md",
+    "artifacts/mas/bi-tree-details/helpers-draft.md",
+    "artifacts/mas/bi-tree-details/section-002a.md",
+    "artifacts/mas/bi-tree-details/baseline.json",
+    "artifacts/mas/bi-tree-details/section-002b.md",
+    "artifacts/mas/bi-tree-details/contract-review.md",
+    "mas/tasks/20261110-memo020-details-and-headings.md",
+    "artifacts/mas/bi-tree-details",
+    "artifacts/mas/bi-check-simplification/README.md",
+    "artifacts/mas/bi-check-simplification/verification.json",
+    "docs/memo/backups/memoWX_020_Chan_bi__20261110_210646_574830.md",
+    "artifacts/mas/bi-check-simplification/section-003.md",
+    "artifacts/mas/bi-check-simplification/section-002a.md",
+    "artifacts/mas/bi-check-simplification/comparison.json",
+    "mas/tasks/20261110-memo020-simplify-and-render.md",
+    "artifacts/mas/bi-open-tail-tree/README.md",
+    "docs/memo/backups/memoWX_020_Chan_bi__20261110_205537_185737.md",
+    "artifacts/mas/bi-open-tail-tree/section-003.md",
+    "artifacts/mas/bi-open-tail-tree/section-002a.md",
+    "mas/tasks/20261110-memo020-open-tail-algorithm.md",
+    "docs/memo/backups/memoWX_020_Chan_bi__20261110_204404_425591.md",
+    "artifacts/mas/bi-weaker-start-figure/initialization-2b.png",
+    "artifacts/mas/bi-weaker-start-figure/weaker-start-2b.png",
+    "docs/memo/memoWX_028_biFamily/restart-seed50-problem.png",
+    "artifacts/mas/bi-family/restart-20261110_040433/problem/problem.png",
+    "docs/memo/backups/memoWX_028_biFamily__20261110_035748_391456/worked-US.png",
+    "docs/memo/backups/memoWX_028_biFamily__20261110_035748_391456/worked-China.png",
+    "artifacts/mas/bi-family/history/20261110_035536_342706/worked-US.png",
+    "artifacts/mas/bi-family/history/20261110_035536_342706/worked-China.png",
+    "docs/memo/memoWX_028_biFamily/worked-US.png",
+    "docs/memo/memoWX_028_biFamily/worked-China.png"
   ]
 }

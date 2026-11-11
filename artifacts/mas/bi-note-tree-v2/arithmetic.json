@@ -1,0 +1,755 @@
+{
+  "main19": {
+    "bars_low_high": [
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "fractals_center_kind": {
+      "1": "top",
+      "2": "bottom",
+      "3": "top",
+      "4": "bottom",
+      "5": "top",
+      "9": "bottom",
+      "11": "top",
+      "13": "bottom",
+      "17": "top"
+    },
+    "pair_checks": [
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "valid": false,
+        "checks": {
+          "gap": false,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          0,
+          11
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          1,
+          4
+        ],
+        "valid": false,
+        "checks": {
+          "gap": false,
+          "interval": true,
+          "maximum": true,
+          "minimum": false
+        },
+        "range": [
+          0,
+          11
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          5,
+          9
+        ],
+        "valid": true,
+        "checks": {
+          "gap": true,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          2,
+          13
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          9,
+          11
+        ],
+        "valid": false,
+        "checks": {
+          "gap": false,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          2,
+          8
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          5,
+          13
+        ],
+        "valid": true,
+        "checks": {
+          "gap": true,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          0,
+          13
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          13,
+          17
+        ],
+        "valid": true,
+        "checks": {
+          "gap": true,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          0,
+          9
+        ],
+        "mirror_decision_matches": true
+      }
+    ]
+  },
+  "blocked21": {
+    "bars_low_high": [
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -2,
+        -1
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "fractals_center_kind": {
+      "1": "top",
+      "5": "bottom",
+      "9": "top",
+      "11": "bottom",
+      "15": "top",
+      "19": "bottom"
+    },
+    "pair_checks": [
+      {
+        "pair": [
+          1,
+          5
+        ],
+        "valid": true,
+        "checks": {
+          "gap": true,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          0,
+          10
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          5,
+          9
+        ],
+        "valid": true,
+        "checks": {
+          "gap": true,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          0,
+          8
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          9,
+          11
+        ],
+        "valid": false,
+        "checks": {
+          "gap": false,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          -1,
+          8
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          5,
+          15
+        ],
+        "valid": false,
+        "checks": {
+          "gap": true,
+          "interval": true,
+          "maximum": true,
+          "minimum": false
+        },
+        "range": [
+          -1,
+          9
+        ],
+        "mirror_decision_matches": true
+      }
+    ]
+  },
+  "extension15": {
+    "bars_low_high": [
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        16,
+        18
+      ],
+      [
+        13,
+        15
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "fractals_center_kind": {
+      "1": "bottom",
+      "5": "top",
+      "7": "bottom",
+      "9": "top",
+      "13": "bottom"
+    },
+    "pair_checks": [
+      {
+        "pair": [
+          1,
+          5
+        ],
+        "valid": true,
+        "checks": {
+          "gap": true,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          0,
+          14
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          5,
+          7
+        ],
+        "valid": false,
+        "checks": {
+          "gap": false,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          8,
+          14
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          1,
+          9
+        ],
+        "valid": true,
+        "checks": {
+          "gap": true,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          0,
+          18
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          9,
+          13
+        ],
+        "valid": true,
+        "checks": {
+          "gap": true,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          4,
+          18
+        ],
+        "mirror_decision_matches": true
+      }
+    ]
+  },
+  "initial7": {
+    "bars_low_high": [
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        11,
+        12
+      ]
+    ],
+    "fractals_center_kind": {
+      "1": "top",
+      "2": "bottom",
+      "3": "top",
+      "4": "bottom",
+      "5": "top"
+    },
+    "pair_checks": [
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "valid": false,
+        "checks": {
+          "gap": false,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          0,
+          11
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          1,
+          4
+        ],
+        "valid": false,
+        "checks": {
+          "gap": false,
+          "interval": true,
+          "maximum": true,
+          "minimum": false
+        },
+        "range": [
+          0,
+          11
+        ],
+        "mirror_decision_matches": true
+      }
+    ]
+  },
+  "equal_end11": {
+    "bars_low_high": [
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        9,
+        10
+      ]
+    ],
+    "fractals_center_kind": {
+      "1": "bottom",
+      "5": "top",
+      "7": "bottom",
+      "9": "top"
+    },
+    "pair_checks": [
+      {
+        "pair": [
+          1,
+          5
+        ],
+        "valid": true,
+        "checks": {
+          "gap": true,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          0,
+          11
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          5,
+          7
+        ],
+        "valid": false,
+        "checks": {
+          "gap": false,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          5,
+          11
+        ],
+        "mirror_decision_matches": true
+      },
+      {
+        "pair": [
+          1,
+          9
+        ],
+        "valid": true,
+        "checks": {
+          "gap": true,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          0,
+          11
+        ],
+        "mirror_decision_matches": true
+      }
+    ]
+  },
+  "equal_start5": {
+    "bars_low_high": [
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        9,
+        10
+      ]
+    ],
+    "fractals_center_kind": {
+      "1": "top",
+      "2": "bottom",
+      "3": "top"
+    },
+    "pair_checks": [
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "valid": false,
+        "checks": {
+          "gap": false,
+          "interval": true,
+          "maximum": true,
+          "minimum": true
+        },
+        "range": [
+          0,
+          11
+        ],
+        "mirror_decision_matches": true
+      }
+    ]
+  },
+  "scope": "Executed pair arithmetic and price-reflected decisions; main-route state trace independently reviewed. No production Bi or complete protocol implementation executed."
+}

@@ -1,0 +1,267 @@
+{
+  "bars_low_high": [
+    [
+      28,
+      29
+    ],
+    [
+      29,
+      30
+    ],
+    [
+      26,
+      27
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      22,
+      23
+    ],
+    [
+      20,
+      21
+    ],
+    [
+      22,
+      23
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      26,
+      27
+    ],
+    [
+      27,
+      28
+    ],
+    [
+      23,
+      24
+    ],
+    [
+      19,
+      20
+    ],
+    [
+      21,
+      22
+    ],
+    [
+      23,
+      24
+    ],
+    [
+      25,
+      26
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      25,
+      26
+    ],
+    [
+      22,
+      23
+    ],
+    [
+      20,
+      21
+    ],
+    [
+      18,
+      19
+    ],
+    [
+      19,
+      20
+    ]
+  ],
+  "fractals_center_kind": {
+    "1": "top",
+    "5": "bottom",
+    "9": "top",
+    "11": "bottom",
+    "15": "top",
+    "19": "bottom"
+  },
+  "labels": {
+    "A": {
+      "center": 1,
+      "kind": "top",
+      "price": 30
+    },
+    "B": {
+      "center": 5,
+      "kind": "bottom",
+      "price": 20
+    },
+    "C": {
+      "center": 9,
+      "kind": "top",
+      "price": 28
+    },
+    "D": {
+      "center": 11,
+      "kind": "bottom",
+      "price": 19
+    },
+    "E": {
+      "center": 15,
+      "kind": "top",
+      "price": 29
+    },
+    "F": {
+      "center": 19,
+      "kind": "bottom",
+      "price": 18
+    }
+  },
+  "pair_checks": {
+    "AB": {
+      "centers": [
+        1,
+        5
+      ],
+      "valid": true,
+      "checks": {
+        "distance": true,
+        "intervals": true,
+        "maximum": true,
+        "minimum": true
+      },
+      "range": [
+        20,
+        30
+      ]
+    },
+    "BC": {
+      "centers": [
+        5,
+        9
+      ],
+      "valid": true,
+      "checks": {
+        "distance": true,
+        "intervals": true,
+        "maximum": true,
+        "minimum": true
+      },
+      "range": [
+        20,
+        28
+      ]
+    },
+    "CD": {
+      "centers": [
+        9,
+        11
+      ],
+      "valid": false,
+      "checks": {
+        "distance": false,
+        "intervals": true,
+        "maximum": true,
+        "minimum": true
+      },
+      "range": [
+        19,
+        28
+      ]
+    },
+    "BE": {
+      "centers": [
+        5,
+        15
+      ],
+      "valid": false,
+      "checks": {
+        "distance": true,
+        "intervals": true,
+        "maximum": true,
+        "minimum": false
+      },
+      "range": [
+        19,
+        29
+      ]
+    },
+    "CF": {
+      "centers": [
+        9,
+        19
+      ],
+      "valid": false,
+      "checks": {
+        "distance": true,
+        "intervals": true,
+        "maximum": false,
+        "minimum": true
+      },
+      "range": [
+        18,
+        29
+      ]
+    },
+    "AD": {
+      "centers": [
+        1,
+        11
+      ],
+      "valid": true,
+      "checks": {
+        "distance": true,
+        "intervals": true,
+        "maximum": true,
+        "minimum": true
+      },
+      "range": [
+        19,
+        30
+      ]
+    },
+    "DE": {
+      "centers": [
+        11,
+        15
+      ],
+      "valid": true,
+      "checks": {
+        "distance": true,
+        "intervals": true,
+        "maximum": true,
+        "minimum": true
+      },
+      "range": [
+        19,
+        29
+      ]
+    },
+    "EF": {
+      "centers": [
+        15,
+        19
+      ],
+      "valid": true,
+      "checks": {
+        "distance": true,
+        "intervals": true,
+        "maximum": true,
+        "minimum": true
+      },
+      "range": [
+        18,
+        29
+      ]
+    }
+  },
+  "scope": "Literal user-note pair choices; no stop and no invented recovery. Existing final AB cannot support continued chain in this sequence under full range extrema. Alternative AD/DE/EF does not preserve final AB."
+}

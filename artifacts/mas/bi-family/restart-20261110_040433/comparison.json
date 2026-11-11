@@ -1,0 +1,19 @@
+{
+  "common_inputs": 200,
+  "route_sets_equal": true,
+  "accepted_corrupt_route_metadata": [
+    false,
+    false
+  ],
+  "files": {
+    "baseline": {
+      "path": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/bi-family/restart-20261110_040433/baseline/bi.py",
+      "sha256": "996a39e97eb527f86c16e4d3f4f1dbdb4ea5cac335e90d46be58b27f4f87f86d"
+    },
+    "python_pro": {
+      "path": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/bi-family/restart-20261110_040433/python_pro/bi.py",
+      "sha256": "415d33ae7645c5fddd8b0fd2ff212e63926fd6ff2a661afdf1d48b53cefde4a8"
+    }
+  },
+  "limitation": "sequential continuation with prior skill exposure; no causal skill claim"
+}

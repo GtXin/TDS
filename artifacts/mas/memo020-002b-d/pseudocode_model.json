@@ -1,0 +1,276 @@
+{
+  "scope": "helper-decomposed research report, not production BiSeries",
+  "checks": {
+    "original_cases": 1010,
+    "sign_mirrors": 1010,
+    "independent_reference_comparisons": 1010,
+    "variable_width_cases": 1000,
+    "corruption_probes_rejected": 12,
+    "immutable_prefix_alias_probe": true,
+    "exact_source_identity_and_no_input_mutation": true,
+    "short_input_validated_before_shortcut": true,
+    "short_input_events_empty": true,
+    "event_counts": {
+      "RESTORE": 20589,
+      "FIRST_B": 5415,
+      "REVERSE": 3837,
+      "REJECT_REVERSE": 18679,
+      "BLOCKED": 247,
+      "REJECT_FIRST": 70530,
+      "EXTEND": 1561,
+      "EQUAL_KEEP": 4663,
+      "INFERIOR": 8762
+    }
+  },
+  "examples": {
+    "recovery21": {
+      "center_routes": [
+        [
+          1,
+          11,
+          15,
+          19
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          11,
+          15,
+          19
+        ],
+        [
+          15,
+          19
+        ]
+      ],
+      "position_routes": [
+        [
+          0,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "blocked": [
+        {
+          "kind": "blocked",
+          "historical_endpoints": [
+            0,
+            1,
+            2
+          ],
+          "working_pair": [
+            1,
+            2
+          ],
+          "failed_F": 4,
+          "reasons": [
+            "interior_low"
+          ]
+        },
+        {
+          "kind": "blocked",
+          "historical_endpoints": [
+            1,
+            2
+          ],
+          "working_pair": [
+            1,
+            2
+          ],
+          "failed_F": 4,
+          "reasons": [
+            "interior_low"
+          ]
+        }
+      ]
+    },
+    "unsafe13": {
+      "center_routes": [
+        [
+          7,
+          11
+        ]
+      ],
+      "position_routes": [
+        [
+          2,
+          3
+        ]
+      ],
+      "blocked": [
+        {
+          "kind": "blocked",
+          "historical_endpoints": [
+            0,
+            1
+          ],
+          "working_pair": [
+            0,
+            1
+          ],
+          "failed_F": 3,
+          "reasons": [
+            "interior_high"
+          ]
+        }
+      ]
+    },
+    "safe_extension": {
+      "center_routes": [
+        [
+          1,
+          9,
+          13
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "position_routes": [
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "blocked": []
+    },
+    "equal": {
+      "center_routes": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          11,
+          15
+        ],
+        [
+          7,
+          11,
+          15
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "position_routes": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "blocked": []
+    },
+    "two_equal_routes": {
+      "center_routes": [
+        [
+          1,
+          5,
+          13
+        ],
+        [
+          1,
+          9,
+          13
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "position_routes": [
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "blocked": []
+    },
+    "tail_breach": {
+      "center_routes": [
+        [
+          1,
+          5
+        ]
+      ],
+      "position_routes": [
+        [
+          0,
+          1
+        ]
+      ],
+      "blocked": []
+    },
+    "no_fractal": {
+      "center_routes": [],
+      "position_routes": [],
+      "blocked": []
+    },
+    "too_short": {
+      "center_routes": [],
+      "position_routes": [],
+      "blocked": []
+    },
+    "sole_fractal": {
+      "center_routes": [],
+      "position_routes": [],
+      "blocked": []
+    }
+  }
+}

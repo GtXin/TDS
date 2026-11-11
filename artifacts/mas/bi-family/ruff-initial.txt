@@ -1,0 +1,79 @@
+TRY004 Prefer `TypeError` exception for invalid type
+   --> src/chanlab/algo/bi.py:123:13
+    |
+121 |         """
+122 |         if not isinstance(source_series, FenxingSeries):
+123 |             raise ValueError("complete FenxingSeries required")
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+124 |         source_series.validate()
+125 |         if not isinstance(rule_tree_ref, str) or not rule_tree_ref.strip():
+    |
+
+RUF007 Prefer `itertools.pairwise()` over `zip()` when iterating over successive pairs
+   --> src/chanlab/algo/bi.py:217:44
+    |
+215 |                     "up" if source[x].kind == "bottom" else "down",
+216 |                 )
+217 |                 for i, (x, y) in enumerate(zip(route, route[1:]))
+    |                                            ^^^
+218 |             )
+219 |             series = cls(
+    |
+help: Replace `zip()` with `itertools.pairwise()`
+    |
+20  | from chanlab.algo.merged_kline import MergedKline, MergedKlineSeries
+21  + import itertools
+22  |
+--------------------------------------------------------------------------------
+217 |                 )
+    -                 for i, (x, y) in enumerate(zip(route, route[1:]))
+218 +                 for i, (x, y) in enumerate(itertools.pairwise(route))
+219 |             )
+    |
+note: This is an unsafe fix and may change runtime behavior
+
+TRY004 Prefer `TypeError` exception for invalid type
+   --> src/chanlab/algo/bi.py:261:13
+    |
+259 |         """Check local definition, shared endpoints and trace associations."""
+260 |         if not isinstance(self.source_series, FenxingSeries):
+261 |             raise ValueError("FenxingSeries required")
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+262 |         self._options(self.config)
+263 |         if not isinstance(self.rule_tree_ref, str) or not self.rule_tree_ref.strip():
+    |
+
+TRY004 Prefer `TypeError` exception for invalid type
+   --> src/chanlab/algo/bi.py:271:17
+    |
+269 |         for item, links in zip(self.items, self.trace_by_point):
+270 |             if not isinstance(item, Bi):
+271 |                 raise ValueError("Bi required")
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+272 |             item.validate()
+273 |             if item.id in ids or item.end_fenxing_index >= len(self.source_series):
+    |
+
+TRY004 Prefer `TypeError` exception for invalid type
+   --> src/chanlab/algo/bi.py:355:13
+    |
+353 |         result = table.feature_series[series_key]
+354 |         if not isinstance(result, cls):
+355 |             raise ValueError("registered class mismatch")
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+356 |         return result
+    |
+
+TRY004 Prefer `TypeError` exception for invalid type
+  --> src/chanlab/data/bi_table.py:66:17
+   |
+64 |             fx = features[data["upstream_key"]]
+65 |             if not isinstance(fx, FenxingSeries):
+66 |                 raise ValueError("invalid upstream class")
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+67 |             if data["upstream_digest"] != fingerprint(
+68 |                 {
+   |
+
+Found 11 errors (5 fixed, 6 remaining).
+1 unsafe fix available with `--fix --unsafe-fixes`.

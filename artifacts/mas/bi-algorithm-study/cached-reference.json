@@ -1,0 +1,652 @@
+{
+  "policy": "mandatory valid extension; first qualified reverse; equal alternatives; all initial seeds and first-B alternatives",
+  "cases": [
+    {
+      "name": "safe_extension",
+      "bars_low_high": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "viable_EOF_paths": [
+        [
+          1,
+          11,
+          15
+        ],
+        [
+          7,
+          11,
+          15
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "fractals": [
+        [
+          1,
+          "top"
+        ],
+        [
+          5,
+          "bottom"
+        ],
+        [
+          7,
+          "top"
+        ],
+        [
+          11,
+          "bottom"
+        ],
+        [
+          15,
+          "top"
+        ]
+      ],
+      "blocked": [],
+      "events": {
+        "valid_first_B_fork": 4,
+        "rejected_reverse_continue": 1,
+        "mandatory_extension": 1,
+        "first_qualified_reverse": 3,
+        "EOF_provisional": 4,
+        "EOF_without_B": 5
+      }
+    },
+    {
+      "name": "unsafe_13_bars",
+      "bars_low_high": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "viable_EOF_paths": [
+        [
+          7,
+          11
+        ]
+      ],
+      "fractals": [
+        [
+          1,
+          "top"
+        ],
+        [
+          5,
+          "bottom"
+        ],
+        [
+          7,
+          "top"
+        ],
+        [
+          11,
+          "bottom"
+        ]
+      ],
+      "blocked": [
+        {
+          "historical_prefix": [
+            1
+          ],
+          "old_working_pair": [
+            1,
+            5
+          ],
+          "F": 11,
+          "reason": "mandatory_extension_pair_invalid"
+        }
+      ],
+      "events": {
+        "valid_first_B_fork": 2,
+        "rejected_reverse_continue": 1,
+        "BLOCKED_extension": 1,
+        "EOF_without_B": 4,
+        "EOF_provisional": 1
+      }
+    },
+    {
+      "name": "restore_earlier_B_choice_21_bars",
+      "bars_low_high": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "viable_EOF_paths": [
+        [
+          1,
+          11,
+          15,
+          19
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          11,
+          15,
+          19
+        ],
+        [
+          15,
+          19
+        ]
+      ],
+      "fractals": [
+        [
+          1,
+          "top"
+        ],
+        [
+          5,
+          "bottom"
+        ],
+        [
+          9,
+          "top"
+        ],
+        [
+          11,
+          "bottom"
+        ],
+        [
+          15,
+          "top"
+        ],
+        [
+          19,
+          "bottom"
+        ]
+      ],
+      "blocked": [
+        {
+          "historical_prefix": [
+            1,
+            5
+          ],
+          "old_working_pair": [
+            5,
+            9
+          ],
+          "F": 15,
+          "reason": "mandatory_extension_pair_invalid"
+        },
+        {
+          "historical_prefix": [
+            5
+          ],
+          "old_working_pair": [
+            5,
+            9
+          ],
+          "F": 15,
+          "reason": "mandatory_extension_pair_invalid"
+        }
+      ],
+      "events": {
+        "valid_first_B_fork": 6,
+        "first_qualified_reverse": 4,
+        "rejected_reverse_continue": 2,
+        "BLOCKED_extension": 2,
+        "EOF_provisional": 4,
+        "EOF_without_B": 6
+      }
+    },
+    {
+      "name": "equal_bottom_replacement",
+      "bars_low_high": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "viable_EOF_paths": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          11,
+          15
+        ],
+        [
+          7,
+          11,
+          15
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "fractals": [
+        [
+          1,
+          "top"
+        ],
+        [
+          5,
+          "bottom"
+        ],
+        [
+          7,
+          "top"
+        ],
+        [
+          11,
+          "bottom"
+        ],
+        [
+          15,
+          "top"
+        ]
+      ],
+      "blocked": [],
+      "events": {
+        "valid_first_B_fork": 4,
+        "rejected_reverse_continue": 2,
+        "equal_fork": 1,
+        "EOF_provisional": 5,
+        "first_qualified_reverse": 3,
+        "EOF_without_B": 5
+      }
+    },
+    {
+      "name": "equal_top_two_EOF_routes",
+      "bars_low_high": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "viable_EOF_paths": [
+        [
+          1,
+          5,
+          13
+        ],
+        [
+          1,
+          9,
+          13
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "fractals": [
+        [
+          1,
+          "bottom"
+        ],
+        [
+          5,
+          "top"
+        ],
+        [
+          7,
+          "bottom"
+        ],
+        [
+          9,
+          "top"
+        ],
+        [
+          13,
+          "bottom"
+        ]
+      ],
+      "blocked": [],
+      "events": {
+        "valid_first_B_fork": 4,
+        "rejected_reverse_continue": 1,
+        "equal_fork": 1,
+        "first_qualified_reverse": 3,
+        "EOF_provisional": 5,
+        "EOF_without_B": 5
+      }
+    }
+  ],
+  "checks": {
+    "scalar_sequences_length9": 26244,
+    "scalar_sign_mirrors": 26244,
+    "variable_width_sequences": 2000,
+    "variable_width_sign_mirrors": 2000,
+    "finite_event_counts": {
+      "valid_first_B_fork": 25032,
+      "rejected_reverse_continue": 9990,
+      "EOF_provisional": 26352,
+      "EOF_without_B": 142884,
+      "equal_fork": 1320,
+      "nonextreme_or_invalid_equal_continue": 790,
+      "mandatory_extension": 180
+    },
+    "independent_reference": true,
+    "production_or_CC_execution": false
+  }
+}

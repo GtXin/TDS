@@ -1,0 +1,11 @@
+{
+  "outside002a_unchanged": true,
+  "tree_matches_saved_memo": true,
+  "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261110_030702_421927.md",
+  "memo_sha256": "d8dc0b6e190d9bd219c6aa42dea6ea38c5c7235886a2fbbb2ea4597c0287db36",
+  "iterative_vs_independent_recursive_cases": 1006,
+  "mirror_and_pair_checks_passed": true,
+  "scoped_diff_check": "passed",
+  "production_bi_implementation": false,
+  "canonical_single_route_claim": false
+}

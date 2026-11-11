@@ -1,0 +1,8 @@
+{
+  "docs/memo/memoWX_020_Chan_bi.md": "54bdb7a09cafc42e253bae7500fa6ec21f15aa1562791e17548167cb603d286d",
+  "docs/memo/memoWX_028_biFamily.md": "8a67d0f747a6f9ba6416ee56f2af15e4aab09f3b03bb1b468d820fb66b086e57",
+  "docs/memo/memoWX_009_designPatternForChanFeatures.md": "655e5e29d053c07f72d03c5f3629ef2e10ff4dd6ab62e2f2d568f136829bade5",
+  "src/chanlab/algo/bi.py": "415d33ae7645c5fddd8b0fd2ff212e63926fd6ff2a661afdf1d48b53cefde4a8",
+  "src/chanlab/algo/fenxing.py": "97fb4c9f00f5267c57b7e29bd423eb41289a5a0b0129efe07ac1134368402ea0",
+  "src/chanlab/algo/merged_kline.py": "3caa74c2b9fa201723edcaa32eba0d898fbaeae876c3fc482c04007bbbb613d5"
+}

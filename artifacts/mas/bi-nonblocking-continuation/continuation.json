@@ -1,0 +1,272 @@
+{
+  "bars_low_high": [
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      -2,
+      -1
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      -4,
+      -3
+    ],
+    [
+      -2,
+      -1
+    ]
+  ],
+  "fractals_center_kind": {
+    "1": "top",
+    "5": "bottom",
+    "9": "top",
+    "11": "bottom",
+    "15": "top",
+    "19": "bottom",
+    "23": "top",
+    "27": "bottom"
+  },
+  "state_before_continuation": {
+    "recorded": [
+      [
+        1,
+        5
+      ]
+    ],
+    "pending": [
+      5,
+      9
+    ]
+  },
+  "continued_checks_with_fixed_pending": [
+    {
+      "pair": [
+        5,
+        15
+      ],
+      "valid": false,
+      "reasons": [
+        "interior low below bottom"
+      ],
+      "range": [
+        -1,
+        9
+      ]
+    },
+    {
+      "pair": [
+        9,
+        19
+      ],
+      "valid": false,
+      "reasons": [
+        "interior high exceeds top"
+      ],
+      "range": [
+        -2,
+        9
+      ]
+    },
+    {
+      "pair": [
+        5,
+        23
+      ],
+      "valid": false,
+      "reasons": [
+        "interior low below bottom"
+      ],
+      "range": [
+        -2,
+        12
+      ]
+    },
+    {
+      "pair": [
+        9,
+        27
+      ],
+      "valid": false,
+      "reasons": [
+        "interior high exceeds top"
+      ],
+      "range": [
+        -4,
+        12
+      ]
+    }
+  ],
+  "literal_note_if_unchanged": "All later fractals can be read; these four candidate checks fail, so the same pending pair remains.",
+  "alternative_geometric_chain": [
+    1,
+    11,
+    15,
+    19,
+    23,
+    27
+  ],
+  "alternative_pair_checks": [
+    {
+      "pair": [
+        1,
+        11
+      ],
+      "valid": true,
+      "reasons": [],
+      "range": [
+        -1,
+        10
+      ]
+    },
+    {
+      "pair": [
+        11,
+        15
+      ],
+      "valid": true,
+      "reasons": [],
+      "range": [
+        -1,
+        9
+      ]
+    },
+    {
+      "pair": [
+        15,
+        19
+      ],
+      "valid": true,
+      "reasons": [],
+      "range": [
+        -2,
+        9
+      ]
+    },
+    {
+      "pair": [
+        19,
+        23
+      ],
+      "valid": true,
+      "reasons": [],
+      "range": [
+        -2,
+        12
+      ]
+    },
+    {
+      "pair": [
+        23,
+        27
+      ],
+      "valid": true,
+      "reasons": [],
+      "range": [
+        -4,
+        12
+      ]
+    }
+  ],
+  "scope": "Pair arithmetic only, not an adopted repair algorithm or unconditional existence proof."
+}

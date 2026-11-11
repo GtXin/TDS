@@ -1,0 +1,40 @@
+{
+  "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261110_205537_185737.md",
+  "before_sha256": "bab10dcf46a4b93d0a2da68e07e48e2d2c71e7dde847bbbe110c9178b908ca09",
+  "after_sha256": "d16762d48a880f87b17c10c88a0c168494022934695ffe163e378d141c883a91",
+  "changed_sections": [
+    "002.a",
+    "003"
+  ],
+  "outside_changed_sections_exact": true,
+  "004_note_and_prompt_exact": true,
+  "definitions_bcd_appendices_references_exact": true,
+  "protected_hashes": {
+    "docs/memo/README.md": "1c41009ea3739e1257831de366a9094abf8dacb94559572aaf4f74a42dd7bde2",
+    "docs/memo/memoWX_021_Chan_xianduan.md": "536158aa2817030c148148b04d3438947444cda0b5fc472db8b8ef824abc5328",
+    "docs/memo/memoWX_028_biFamily.md": "9ae89a755f699e9b58dca36948bbd3de25075071c8988aafe811a2537ca0fa20",
+    "src/chanlab/algo/bi.py": "415d33ae7645c5fddd8b0fd2ff212e63926fd6ff2a661afdf1d48b53cefde4a8",
+    "src/chanlab/data/bi_table.py": "868d8b62e876af5fb7ac6bc1db5a42468f94456575b8e6d607d78a79190e6d6d",
+    "src/chanlab/visualization/bi_plot.py": "2f8740b782fabd8798b1b7c27d26c56fa8c0d436d71fe09341686b5a7a862346",
+    "tests/test_bi.py": "12bb7c902176df66ca03ce5a908fc7df015146e9da9ca7fc1d7348a8f898c02e"
+  },
+  "local_links_resolve": 34,
+  "goto_nodes": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "2.6",
+    "2.7",
+    "2.8",
+    "2.9"
+  ],
+  "failed_pair_returns_to_reading": true,
+  "zero_fractal_cursor_initialized": true,
+  "empty_resume_returns_to_reading": true,
+  "eof_normal_return_no_forced_submission": true,
+  "no_new_trailing_whitespace": true,
+  "independent_review": "PASS after two control-flow fixes",
+  "production_changed": false
+}

@@ -1,0 +1,12 @@
+{
+  "memo_sha256": "db2587132b2905af4f1868978dbf093fd8e72bc929da50833e5317ed2b480d50",
+  "protected_hashes": {
+    "docs/memo/README.md": "1c41009ea3739e1257831de366a9094abf8dacb94559572aaf4f74a42dd7bde2",
+    "docs/memo/memoWX_021_Chan_xianduan.md": "536158aa2817030c148148b04d3438947444cda0b5fc472db8b8ef824abc5328",
+    "docs/memo/memoWX_028_biFamily.md": "9ae89a755f699e9b58dca36948bbd3de25075071c8988aafe811a2537ca0fa20",
+    "src/chanlab/algo/bi.py": "415d33ae7645c5fddd8b0fd2ff212e63926fd6ff2a661afdf1d48b53cefde4a8",
+    "src/chanlab/data/bi_table.py": "868d8b62e876af5fb7ac6bc1db5a42468f94456575b8e6d607d78a79190e6d6d",
+    "src/chanlab/visualization/bi_plot.py": "2f8740b782fabd8798b1b7c27d26c56fa8c0d436d71fe09341686b5a7a862346",
+    "tests/test_bi.py": "12bb7c902176df66ca03ce5a908fc7df015146e9da9ca7fc1d7348a8f898c02e"
+  }
+}

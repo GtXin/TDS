@@ -1,0 +1,61 @@
+{
+  "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261110_212154_532834.md",
+  "before_sha256": "db2587132b2905af4f1868978dbf093fd8e72bc929da50833e5317ed2b480d50",
+  "after_sha256": "984a0838a13d50fad9c5497a70fc0057d47b4e45153652472cd76edb850847a2",
+  "changed_scope": "002.a one-tree presentation/example move;002.b–d completion;000–001 and003onward exact",
+  "outside002_exact": true,
+  "original004_all_appendices_references_exact": true,
+  "balanced_fences": true,
+  "local_file_links_resolve": 35,
+  "no_new_trailing_whitespace": true,
+  "protected_hashes": {
+    "docs/memo/README.md": "1c41009ea3739e1257831de366a9094abf8dacb94559572aaf4f74a42dd7bde2",
+    "docs/memo/memoWX_021_Chan_xianduan.md": "536158aa2817030c148148b04d3438947444cda0b5fc472db8b8ef824abc5328",
+    "docs/memo/memoWX_028_biFamily.md": "9ae89a755f699e9b58dca36948bbd3de25075071c8988aafe811a2537ca0fa20",
+    "src/chanlab/algo/bi.py": "415d33ae7645c5fddd8b0fd2ff212e63926fd6ff2a661afdf1d48b53cefde4a8",
+    "src/chanlab/data/bi_table.py": "868d8b62e876af5fb7ac6bc1db5a42468f94456575b8e6d607d78a79190e6d6d",
+    "src/chanlab/visualization/bi_plot.py": "2f8740b782fabd8798b1b7c27d26c56fa8c0d436d71fe09341686b5a7a862346",
+    "tests/test_bi.py": "12bb7c902176df66ca03ce5a908fc7df015146e9da9ca7fc1d7348a8f898c02e"
+  },
+  "independent_contract_review": "PASS",
+  "independent_numeric_review": "PASS",
+  "production_changed": false,
+  "obsidian_final_check": "PASS: one nested tree in Live Preview; shared2.7/EOF2.8→2.9 rendered consistently in Reading view;002/003 remain real section headings.",
+  "edits": [
+    {
+      "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261110_211718_919409.md",
+      "after_sha256": "aa251203f93c23a501fa90661b8247403d1f5e49e4ac8758f778a71db7220f23",
+      "description": "Filledb–d; first formatting pass used separate numbered headings, superseded by user correction."
+    },
+    {
+      "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261110_212154_532834.md",
+      "after_sha256": "984a0838a13d50fad9c5497a70fc0057d47b4e45153652472cd76edb850847a2",
+      "description": "One rooted texttree;2.x are algorithm nodes, not Markdown headings."
+    }
+  ],
+  "active_tree_semantics_review": "PASS; only presentation and wording compacted; previous decisions retained",
+  "numbered_markdown_headings": 0,
+  "tree_code_blocks": 1,
+  "algorithm_nodes": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "2.6",
+    "2.7",
+    "2.8",
+    "2.9"
+  ],
+  "bcd_unchanged_in_second_edit": true,
+  "one_rooted_tree": true,
+  "final_sections_match_reviewed_drafts": true,
+  "arithmetic_checks": {
+    "fixtures": 22,
+    "all_prefix_splits": 42,
+    "scan_calls": 174,
+    "expected_changed_prefix_rejection": 1,
+    "production": false
+  },
+  "remaining_blockers": []
+}

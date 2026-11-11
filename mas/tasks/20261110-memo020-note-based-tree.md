@@ -1,0 +1,16 @@
+# Task
+
+- **ID:** 20261110-memo020-note-based-tree
+- **Goal:** Build memo020002.a from the user's preserved note/prompt, add explicit reasoning and a comparison with that note, and keep initialization distinct from cached-pair extension and reversal.
+- **Inputs:** memo020001/004 and empty002; archived AppendixC; memo006; Computer Scientist skill; prior clarification that initialization2.b keeps the stronger pending start.
+- **Allowed changes:** Root owns memo020002.a/003 (and005 only if needed), required pre-edit backup, this task, memory/log and `artifacts/mas/bi-note-tree-v2/` draft/verification files. Numeric reviewer owns only `numeric-review.md` there; theoretical reviewer owns only `theory-review.md`; contract reviewer is read-only. User004, definitions, AppendixA/B/C, References,002.b–d, memo028, production code and tests must remain unchanged.
+- **Acceptance checks:** Complete numbered condition/action/goto tree, original rolling main-route architecture and first-fractal pending start; six-condition pair checks; no silent all-route search or new initialA preflight; fill missing initial failure/rotation/EOF actions; label equal handling and invalid stronger extension policy with reasoning; one continuous numeric worked example plus stage-valid boundary probe; independent state/numeric review; full backup and protected-content/hash/link checks; report similarities and differences in final answer. No production implementation or broad regression rerun.
+- **Assignment:** Root drafts/edits; independent contract, numeric and theoretical reviewers check specific invariants and examples.
+- **Status:** done
+
+# Result and handoff
+
+- **Outcome:** Saved note-based second-round tree in002.a and reasoning/boundary/comparison in003. Preserved first-fractal initialization and original stage-specific policies; added missing failure/rotation/EOF actions. Stronger-but-invalid same-kind extension reports a blocked partial route as an explicit AI adjustment to5.b. Records are geometrically valid, not proven permanent confirmation. Original004, definitions, AppendixA/B/C, References and002.b–d remain exact. No new production policy implemented.
+- **Evidence:** Pre-edit full backup `docs/memo/backups/memoWX_020_Chan_bi__20261110_202545_435576.md`. Three independent reviews: state/contract draft PASS (read-only), ownednumeric-review.md andtheory-review.md. Root executed arithmetic on6 continuous inputs with20 pair checks+20 reflected decisions. Main19bar states: recorded5→13, pending13→17. Stage-correct21bar boundary: recorded1→5/pending5→9, stop15,19unread. Equality fixtures separately verify init-old/pending-latest. `edit.json`/`verification.json` confirm exact reviewed drafts, unchanged outside002.a/003,35 local links, complete goto targets, six protected file hashes and no new whitespace. Theory reviewer corrected an equality-bound proof detail within its owned artifact before completion. No production or broad regression execution claimed.
+- **Blockers:** None for the requested tree. Full recovery/coverage and permanent-confirmation rules remain later design questions, not hidden promises of this proposal.
+- **Next action:** Review the explicit5.b adjustment and recording semantics with the user; fill further detail or synchronize028/code only when requested.

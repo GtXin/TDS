@@ -1,0 +1,6954 @@
+{
+  "scope": "four directed examples and four reflected examples; no invented OHLC or production/CC run",
+  "source_cached_search_sha256": "f88c7c50940550d7f1fb0e6c553abfe05b8e6a96fd7c570443bf86ccdbc6aaa3",
+  "fx_position_contract": "zero-based position in complete source FenxingSeries; merged center = source_start+1, not raw anchor",
+  "main_case": "blocked_then_cached_earlier_choice",
+  "examples": {
+    "blocked_then_cached_earlier_choice": {
+      "bars_low_high": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "fractals": [
+        [
+          1,
+          "top"
+        ],
+        [
+          5,
+          "bottom"
+        ],
+        [
+          9,
+          "top"
+        ],
+        [
+          11,
+          "bottom"
+        ],
+        [
+          15,
+          "top"
+        ],
+        [
+          19,
+          "bottom"
+        ]
+      ],
+      "routes": [
+        [
+          1,
+          11,
+          15,
+          19
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          11,
+          15,
+          19
+        ],
+        [
+          15,
+          19
+        ]
+      ],
+      "blocked": [
+        {
+          "historical_centers": [
+            1,
+            5,
+            9
+          ],
+          "failed_new_end": 15
+        },
+        {
+          "historical_centers": [
+            5,
+            9
+          ],
+          "failed_new_end": 15
+        }
+      ],
+      "tail_breaches": [
+        {
+          "route": [
+            1,
+            11,
+            15,
+            19
+          ],
+          "breach": false
+        },
+        {
+          "route": [
+            1,
+            19
+          ],
+          "breach": false
+        },
+        {
+          "route": [
+            11,
+            15,
+            19
+          ],
+          "breach": false
+        },
+        {
+          "route": [
+            15,
+            19
+          ],
+          "breach": false
+        }
+      ],
+      "events": [
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 1,
+            "next_center": 5
+          },
+          "checkpoint_id": 6
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 2,
+            "next_center": 9
+          },
+          "F_fx": 1,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 1,
+            "centers": [
+              1,
+              5
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 0,
+            "maximum_high": 10,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 1,
+            "bottom_center": 5,
+            "top_interval": [
+              9,
+              10
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 7,
+            "kind": "initial_end_skip",
+            "decision_fx": 1,
+            "post_decision_state": {
+              "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+              "prefix_fx": [
+                0
+              ],
+              "prefix_centers": [
+                1
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 0,
+              "B_fx": null,
+              "A_center": 1,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 2,
+              "next_center": 9
+            }
+          }
+        },
+        {
+          "event": "first_qualified_reverse",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 3,
+            "next_center": 11
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 2,
+            "centers": [
+              5,
+              9
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 0,
+            "maximum_high": 8,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 9,
+            "bottom_center": 5,
+            "top_interval": [
+              7,
+              8
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "post_state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0,
+              1
+            ],
+            "prefix_centers": [
+              1,
+              5
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                5
+              ]
+            ],
+            "A_fx": 1,
+            "B_fx": 2,
+            "A_center": 5,
+            "B_center": 9,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 3,
+            "next_center": 11
+          }
+        },
+        {
+          "event": "reject_reverse_keep_working_pair",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0,
+              1
+            ],
+            "prefix_centers": [
+              1,
+              5
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                5
+              ]
+            ],
+            "A_fx": 1,
+            "B_fx": 2,
+            "A_center": 5,
+            "B_center": 9,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 2,
+            "end_fx": 3,
+            "centers": [
+              9,
+              11
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 2,
+            "independent_bar_count": 0,
+            "minimum_low": -1,
+            "maximum_high": 8,
+            "opposite": true,
+            "gap_at_least_four": false,
+            "top_center": 9,
+            "bottom_center": 11,
+            "top_interval": [
+              7,
+              8
+            ],
+            "bottom_interval": [
+              -1,
+              0
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [
+              "center_gap_below_four"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "blocked_extension",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0,
+              1
+            ],
+            "prefix_centers": [
+              1,
+              5
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                5
+              ]
+            ],
+            "A_fx": 1,
+            "B_fx": 2,
+            "A_center": 5,
+            "B_center": 9,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": 19
+          },
+          "F_fx": 4,
+          "old_price": 8,
+          "new_price": 9,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 4,
+            "centers": [
+              5,
+              15
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 10,
+            "independent_bar_count": 7,
+            "minimum_low": -1,
+            "maximum_high": 9,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 5,
+            "top_interval": [
+              8,
+              9
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": false,
+            "bars_above_top": [],
+            "bars_below_bottom": [
+              11
+            ],
+            "failures": [
+              "interior_low_below_bottom"
+            ],
+            "valid": false
+          },
+          "historical_centers": [
+            1,
+            5,
+            9
+          ],
+          "pending_checkpoint_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 2,
+            "next_center": 9
+          },
+          "checkpoint_id": 7
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": 11
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 2,
+            "centers": [
+              1,
+              9
+            ],
+            "kinds": [
+              "top",
+              "top"
+            ],
+            "center_gap": 8,
+            "independent_bar_count": 5,
+            "minimum_low": 0,
+            "maximum_high": 10,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 3,
+            "A_center": 1,
+            "B_center": 11,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 3,
+            "centers": [
+              1,
+              11
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 10,
+            "independent_bar_count": 7,
+            "minimum_low": -1,
+            "maximum_high": 10,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 1,
+            "bottom_center": 11,
+            "top_interval": [
+              9,
+              10
+            ],
+            "bottom_interval": [
+              -1,
+              0
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 8,
+            "kind": "initial_end_skip",
+            "decision_fx": 3,
+            "post_decision_state": {
+              "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+              "prefix_fx": [
+                0
+              ],
+              "prefix_centers": [
+                1
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 0,
+              "B_fx": null,
+              "A_center": 1,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 4,
+              "next_center": 15
+            }
+          }
+        },
+        {
+          "event": "first_qualified_reverse",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 3,
+            "A_center": 1,
+            "B_center": 11,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": 19
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 3,
+            "end_fx": 4,
+            "centers": [
+              11,
+              15
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": -1,
+            "maximum_high": 9,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 11,
+            "top_interval": [
+              8,
+              9
+            ],
+            "bottom_interval": [
+              -1,
+              0
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "post_state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0,
+              3
+            ],
+            "prefix_centers": [
+              1,
+              11
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                11
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": 19
+          }
+        },
+        {
+          "event": "first_qualified_reverse",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0,
+              3
+            ],
+            "prefix_centers": [
+              1,
+              11
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                11
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "F_fx": 5,
+          "pair": {
+            "start_fx": 4,
+            "end_fx": 5,
+            "centers": [
+              15,
+              19
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": -2,
+            "maximum_high": 9,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 19,
+            "top_interval": [
+              8,
+              9
+            ],
+            "bottom_interval": [
+              -2,
+              -1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "post_state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0,
+              3,
+              4
+            ],
+            "prefix_centers": [
+              1,
+              11,
+              15
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                11
+              ],
+              [
+                11,
+                15
+              ]
+            ],
+            "A_fx": 4,
+            "B_fx": 5,
+            "A_center": 15,
+            "B_center": 19,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 6,
+            "next_center": null
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0,
+              3,
+              4
+            ],
+            "prefix_centers": [
+              1,
+              11,
+              15
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                11
+              ],
+              [
+                11,
+                15
+              ]
+            ],
+            "A_fx": 4,
+            "B_fx": 5,
+            "A_center": 15,
+            "B_center": 19,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "route_centers": [
+            1,
+            11,
+            15,
+            19
+          ],
+          "tail_start": 20,
+          "tail_stop": 21,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "checkpoint_id": 8
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": 19
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 4,
+            "centers": [
+              1,
+              15
+            ],
+            "kinds": [
+              "top",
+              "top"
+            ],
+            "center_gap": 14,
+            "independent_bar_count": 11,
+            "minimum_low": -1,
+            "maximum_high": 10,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 5,
+            "A_center": 1,
+            "B_center": 19,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "F_fx": 5,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 5,
+            "centers": [
+              1,
+              19
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 18,
+            "independent_bar_count": 15,
+            "minimum_low": -2,
+            "maximum_high": 10,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 1,
+            "bottom_center": 19,
+            "top_interval": [
+              9,
+              10
+            ],
+            "bottom_interval": [
+              -2,
+              -1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 9,
+            "kind": "initial_end_skip",
+            "decision_fx": 5,
+            "post_decision_state": {
+              "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+              "prefix_fx": [
+                0
+              ],
+              "prefix_centers": [
+                1
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 0,
+              "B_fx": null,
+              "A_center": 1,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 6,
+              "next_center": null
+            }
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 5,
+            "A_center": 1,
+            "B_center": 19,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "route_centers": [
+            1,
+            19
+          ],
+          "tail_start": 20,
+          "tail_stop": 21,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "checkpoint_id": 9
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 2,
+            "next_center": 9
+          },
+          "checkpoint_id": 5
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": 2,
+            "A_center": 5,
+            "B_center": 9,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 3,
+            "next_center": 11
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 2,
+            "centers": [
+              5,
+              9
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 0,
+            "maximum_high": 8,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 9,
+            "bottom_center": 5,
+            "top_interval": [
+              7,
+              8
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 10,
+            "kind": "initial_end_skip",
+            "decision_fx": 2,
+            "post_decision_state": {
+              "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+              "prefix_fx": [
+                1
+              ],
+              "prefix_centers": [
+                5
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 1,
+              "B_fx": null,
+              "A_center": 5,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 3,
+              "next_center": 11
+            }
+          }
+        },
+        {
+          "event": "reject_reverse_keep_working_pair",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": 2,
+            "A_center": 5,
+            "B_center": 9,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 2,
+            "end_fx": 3,
+            "centers": [
+              9,
+              11
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 2,
+            "independent_bar_count": 0,
+            "minimum_low": -1,
+            "maximum_high": 8,
+            "opposite": true,
+            "gap_at_least_four": false,
+            "top_center": 9,
+            "bottom_center": 11,
+            "top_interval": [
+              7,
+              8
+            ],
+            "bottom_interval": [
+              -1,
+              0
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [
+              "center_gap_below_four"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "blocked_extension",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": 2,
+            "A_center": 5,
+            "B_center": 9,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": 19
+          },
+          "F_fx": 4,
+          "old_price": 8,
+          "new_price": 9,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 4,
+            "centers": [
+              5,
+              15
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 10,
+            "independent_bar_count": 7,
+            "minimum_low": -1,
+            "maximum_high": 9,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 5,
+            "top_interval": [
+              8,
+              9
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": false,
+            "bars_above_top": [],
+            "bars_below_bottom": [
+              11
+            ],
+            "failures": [
+              "interior_low_below_bottom"
+            ],
+            "valid": false
+          },
+          "historical_centers": [
+            5,
+            9
+          ],
+          "pending_checkpoint_ids": [
+            1,
+            2,
+            3,
+            4,
+            10
+          ]
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": 11
+          },
+          "checkpoint_id": 10
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 3,
+            "centers": [
+              5,
+              11
+            ],
+            "kinds": [
+              "bottom",
+              "bottom"
+            ],
+            "center_gap": 6,
+            "independent_bar_count": 3,
+            "minimum_low": -1,
+            "maximum_high": 8,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": 19
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 4,
+            "centers": [
+              5,
+              15
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 10,
+            "independent_bar_count": 7,
+            "minimum_low": -1,
+            "maximum_high": 9,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 5,
+            "top_interval": [
+              8,
+              9
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": false,
+            "bars_above_top": [],
+            "bars_below_bottom": [
+              11
+            ],
+            "failures": [
+              "interior_low_below_bottom"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "F_fx": 5,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 5,
+            "centers": [
+              5,
+              19
+            ],
+            "kinds": [
+              "bottom",
+              "bottom"
+            ],
+            "center_gap": 14,
+            "independent_bar_count": 11,
+            "minimum_low": -2,
+            "maximum_high": 9,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              9
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 9,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": 11
+          },
+          "checkpoint_id": 4
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              9
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 9,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 2,
+            "end_fx": 3,
+            "centers": [
+              9,
+              11
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 2,
+            "independent_bar_count": 0,
+            "minimum_low": -1,
+            "maximum_high": 8,
+            "opposite": true,
+            "gap_at_least_four": false,
+            "top_center": 9,
+            "bottom_center": 11,
+            "top_interval": [
+              7,
+              8
+            ],
+            "bottom_interval": [
+              -1,
+              0
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [
+              "center_gap_below_four"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              9
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 9,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": 19
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 2,
+            "end_fx": 4,
+            "centers": [
+              9,
+              15
+            ],
+            "kinds": [
+              "top",
+              "top"
+            ],
+            "center_gap": 6,
+            "independent_bar_count": 3,
+            "minimum_low": -1,
+            "maximum_high": 9,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              9
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 9,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "F_fx": 5,
+          "pair": {
+            "start_fx": 2,
+            "end_fx": 5,
+            "centers": [
+              9,
+              19
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 10,
+            "independent_bar_count": 7,
+            "minimum_low": -2,
+            "maximum_high": 9,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 9,
+            "bottom_center": 19,
+            "top_interval": [
+              7,
+              8
+            ],
+            "bottom_interval": [
+              -2,
+              -1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": false,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [
+              15
+            ],
+            "bars_below_bottom": [],
+            "failures": [
+              "interior_high_exceeds_top"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              9
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 9,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              11
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": null,
+            "A_center": 11,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "checkpoint_id": 3
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              11
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": 19
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 3,
+            "end_fx": 4,
+            "centers": [
+              11,
+              15
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": -1,
+            "maximum_high": 9,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 11,
+            "top_interval": [
+              8,
+              9
+            ],
+            "bottom_interval": [
+              -1,
+              0
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 11,
+            "kind": "initial_end_skip",
+            "decision_fx": 4,
+            "post_decision_state": {
+              "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+              "prefix_fx": [
+                3
+              ],
+              "prefix_centers": [
+                11
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 3,
+              "B_fx": null,
+              "A_center": 11,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 5,
+              "next_center": 19
+            }
+          }
+        },
+        {
+          "event": "first_qualified_reverse",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              11
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "F_fx": 5,
+          "pair": {
+            "start_fx": 4,
+            "end_fx": 5,
+            "centers": [
+              15,
+              19
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": -2,
+            "maximum_high": 9,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 19,
+            "top_interval": [
+              8,
+              9
+            ],
+            "bottom_interval": [
+              -2,
+              -1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "post_state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              3,
+              4
+            ],
+            "prefix_centers": [
+              11,
+              15
+            ],
+            "locally_closed_edges_centers": [
+              [
+                11,
+                15
+              ]
+            ],
+            "A_fx": 4,
+            "B_fx": 5,
+            "A_center": 15,
+            "B_center": 19,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 6,
+            "next_center": null
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              3,
+              4
+            ],
+            "prefix_centers": [
+              11,
+              15
+            ],
+            "locally_closed_edges_centers": [
+              [
+                11,
+                15
+              ]
+            ],
+            "A_fx": 4,
+            "B_fx": 5,
+            "A_center": 15,
+            "B_center": 19,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "route_centers": [
+            11,
+            15,
+            19
+          ],
+          "tail_start": 20,
+          "tail_stop": 21,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              11
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": null,
+            "A_center": 11,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": 19
+          },
+          "checkpoint_id": 11
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              11
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": null,
+            "A_center": 11,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "F_fx": 5,
+          "pair": {
+            "start_fx": 3,
+            "end_fx": 5,
+            "centers": [
+              11,
+              19
+            ],
+            "kinds": [
+              "bottom",
+              "bottom"
+            ],
+            "center_gap": 8,
+            "independent_bar_count": 5,
+            "minimum_low": -2,
+            "maximum_high": 9,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              11
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": null,
+            "A_center": 11,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              4
+            ],
+            "prefix_centers": [
+              15
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 4,
+            "B_fx": null,
+            "A_center": 15,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": 19
+          },
+          "checkpoint_id": 2
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              4
+            ],
+            "prefix_centers": [
+              15
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 4,
+            "B_fx": 5,
+            "A_center": 15,
+            "B_center": 19,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "F_fx": 5,
+          "pair": {
+            "start_fx": 4,
+            "end_fx": 5,
+            "centers": [
+              15,
+              19
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": -2,
+            "maximum_high": 9,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 19,
+            "top_interval": [
+              8,
+              9
+            ],
+            "bottom_interval": [
+              -2,
+              -1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 12,
+            "kind": "initial_end_skip",
+            "decision_fx": 5,
+            "post_decision_state": {
+              "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+              "prefix_fx": [
+                4
+              ],
+              "prefix_centers": [
+                15
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 4,
+              "B_fx": null,
+              "A_center": 15,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 6,
+              "next_center": null
+            }
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              4
+            ],
+            "prefix_centers": [
+              15
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 4,
+            "B_fx": 5,
+            "A_center": 15,
+            "B_center": 19,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "route_centers": [
+            15,
+            19
+          ],
+          "tail_start": 20,
+          "tail_stop": 21,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              4
+            ],
+            "prefix_centers": [
+              15
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 4,
+            "B_fx": null,
+            "A_center": 15,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "checkpoint_id": 12
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              4
+            ],
+            "prefix_centers": [
+              15
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 4,
+            "B_fx": null,
+            "A_center": 15,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              5
+            ],
+            "prefix_centers": [
+              19
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 5,
+            "B_fx": null,
+            "A_center": 19,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          },
+          "checkpoint_id": 1
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "3ed9774028c7b60989b71626faa3c17df36bbe1255a3930e8a52c1e3ffcd280e",
+            "prefix_fx": [
+              5
+            ],
+            "prefix_centers": [
+              19
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 5,
+            "B_fx": null,
+            "A_center": 19,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 6,
+            "next_center": null
+          }
+        }
+      ],
+      "all_pair_evidence": [
+        {
+          "start_fx": 0,
+          "end_fx": 1,
+          "centers": [
+            1,
+            5
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 4,
+          "independent_bar_count": 1,
+          "minimum_low": 0,
+          "maximum_high": 10,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 1,
+          "bottom_center": 5,
+          "top_interval": [
+            9,
+            10
+          ],
+          "bottom_interval": [
+            0,
+            1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        },
+        {
+          "start_fx": 0,
+          "end_fx": 2,
+          "centers": [
+            1,
+            9
+          ],
+          "kinds": [
+            "top",
+            "top"
+          ],
+          "center_gap": 8,
+          "independent_bar_count": 5,
+          "minimum_low": 0,
+          "maximum_high": 10,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 0,
+          "end_fx": 3,
+          "centers": [
+            1,
+            11
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 10,
+          "independent_bar_count": 7,
+          "minimum_low": -1,
+          "maximum_high": 10,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 1,
+          "bottom_center": 11,
+          "top_interval": [
+            9,
+            10
+          ],
+          "bottom_interval": [
+            -1,
+            0
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        },
+        {
+          "start_fx": 0,
+          "end_fx": 4,
+          "centers": [
+            1,
+            15
+          ],
+          "kinds": [
+            "top",
+            "top"
+          ],
+          "center_gap": 14,
+          "independent_bar_count": 11,
+          "minimum_low": -1,
+          "maximum_high": 10,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 0,
+          "end_fx": 5,
+          "centers": [
+            1,
+            19
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 18,
+          "independent_bar_count": 15,
+          "minimum_low": -2,
+          "maximum_high": 10,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 1,
+          "bottom_center": 19,
+          "top_interval": [
+            9,
+            10
+          ],
+          "bottom_interval": [
+            -2,
+            -1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        },
+        {
+          "start_fx": 1,
+          "end_fx": 2,
+          "centers": [
+            5,
+            9
+          ],
+          "kinds": [
+            "bottom",
+            "top"
+          ],
+          "center_gap": 4,
+          "independent_bar_count": 1,
+          "minimum_low": 0,
+          "maximum_high": 8,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 9,
+          "bottom_center": 5,
+          "top_interval": [
+            7,
+            8
+          ],
+          "bottom_interval": [
+            0,
+            1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        },
+        {
+          "start_fx": 1,
+          "end_fx": 3,
+          "centers": [
+            5,
+            11
+          ],
+          "kinds": [
+            "bottom",
+            "bottom"
+          ],
+          "center_gap": 6,
+          "independent_bar_count": 3,
+          "minimum_low": -1,
+          "maximum_high": 8,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 1,
+          "end_fx": 4,
+          "centers": [
+            5,
+            15
+          ],
+          "kinds": [
+            "bottom",
+            "top"
+          ],
+          "center_gap": 10,
+          "independent_bar_count": 7,
+          "minimum_low": -1,
+          "maximum_high": 9,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 15,
+          "bottom_center": 5,
+          "top_interval": [
+            8,
+            9
+          ],
+          "bottom_interval": [
+            0,
+            1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": false,
+          "bars_above_top": [],
+          "bars_below_bottom": [
+            11
+          ],
+          "failures": [
+            "interior_low_below_bottom"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 1,
+          "end_fx": 5,
+          "centers": [
+            5,
+            19
+          ],
+          "kinds": [
+            "bottom",
+            "bottom"
+          ],
+          "center_gap": 14,
+          "independent_bar_count": 11,
+          "minimum_low": -2,
+          "maximum_high": 9,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 2,
+          "end_fx": 3,
+          "centers": [
+            9,
+            11
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 2,
+          "independent_bar_count": 0,
+          "minimum_low": -1,
+          "maximum_high": 8,
+          "opposite": true,
+          "gap_at_least_four": false,
+          "top_center": 9,
+          "bottom_center": 11,
+          "top_interval": [
+            7,
+            8
+          ],
+          "bottom_interval": [
+            -1,
+            0
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [
+            "center_gap_below_four"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 2,
+          "end_fx": 4,
+          "centers": [
+            9,
+            15
+          ],
+          "kinds": [
+            "top",
+            "top"
+          ],
+          "center_gap": 6,
+          "independent_bar_count": 3,
+          "minimum_low": -1,
+          "maximum_high": 9,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 2,
+          "end_fx": 5,
+          "centers": [
+            9,
+            19
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 10,
+          "independent_bar_count": 7,
+          "minimum_low": -2,
+          "maximum_high": 9,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 9,
+          "bottom_center": 19,
+          "top_interval": [
+            7,
+            8
+          ],
+          "bottom_interval": [
+            -2,
+            -1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": false,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [
+            15
+          ],
+          "bars_below_bottom": [],
+          "failures": [
+            "interior_high_exceeds_top"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 3,
+          "end_fx": 4,
+          "centers": [
+            11,
+            15
+          ],
+          "kinds": [
+            "bottom",
+            "top"
+          ],
+          "center_gap": 4,
+          "independent_bar_count": 1,
+          "minimum_low": -1,
+          "maximum_high": 9,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 15,
+          "bottom_center": 11,
+          "top_interval": [
+            8,
+            9
+          ],
+          "bottom_interval": [
+            -1,
+            0
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        },
+        {
+          "start_fx": 3,
+          "end_fx": 5,
+          "centers": [
+            11,
+            19
+          ],
+          "kinds": [
+            "bottom",
+            "bottom"
+          ],
+          "center_gap": 8,
+          "independent_bar_count": 5,
+          "minimum_low": -2,
+          "maximum_high": 9,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 4,
+          "end_fx": 5,
+          "centers": [
+            15,
+            19
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 4,
+          "independent_bar_count": 1,
+          "minimum_low": -2,
+          "maximum_high": 9,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 15,
+          "bottom_center": 19,
+          "top_interval": [
+            8,
+            9
+          ],
+          "bottom_interval": [
+            -2,
+            -1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        }
+      ],
+      "reflection_checks_passed": true
+    },
+    "mandatory_extension": {
+      "bars_low_high": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          16,
+          18
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "fractals": [
+        [
+          1,
+          "bottom"
+        ],
+        [
+          5,
+          "top"
+        ],
+        [
+          7,
+          "bottom"
+        ],
+        [
+          9,
+          "top"
+        ],
+        [
+          13,
+          "bottom"
+        ]
+      ],
+      "routes": [
+        [
+          1,
+          9,
+          13
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "blocked": [],
+      "tail_breaches": [
+        {
+          "route": [
+            1,
+            9,
+            13
+          ],
+          "breach": false
+        },
+        {
+          "route": [
+            9,
+            13
+          ],
+          "breach": false
+        }
+      ],
+      "events": [
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 1,
+            "next_center": 5
+          },
+          "checkpoint_id": 5
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 2,
+            "next_center": 7
+          },
+          "F_fx": 1,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 1,
+            "centers": [
+              1,
+              5
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 0,
+            "maximum_high": 14,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 5,
+            "bottom_center": 1,
+            "top_interval": [
+              12,
+              14
+            ],
+            "bottom_interval": [
+              0,
+              2
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 6,
+            "kind": "initial_end_skip",
+            "decision_fx": 1,
+            "post_decision_state": {
+              "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+              "prefix_fx": [
+                0
+              ],
+              "prefix_centers": [
+                1
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 0,
+              "B_fx": null,
+              "A_center": 1,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 2,
+              "next_center": 7
+            }
+          }
+        },
+        {
+          "event": "reject_reverse_keep_working_pair",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 3,
+            "next_center": 9
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 2,
+            "centers": [
+              5,
+              7
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 2,
+            "independent_bar_count": 0,
+            "minimum_low": 8,
+            "maximum_high": 14,
+            "opposite": true,
+            "gap_at_least_four": false,
+            "top_center": 5,
+            "bottom_center": 7,
+            "top_interval": [
+              12,
+              14
+            ],
+            "bottom_interval": [
+              8,
+              10
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [
+              "center_gap_below_four"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "mandatory_end_extension",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 4,
+            "next_center": 13
+          },
+          "F_fx": 3,
+          "old_price": 14,
+          "new_price": 18,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 3,
+            "centers": [
+              1,
+              9
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 8,
+            "independent_bar_count": 5,
+            "minimum_low": 0,
+            "maximum_high": 18,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 9,
+            "bottom_center": 1,
+            "top_interval": [
+              16,
+              18
+            ],
+            "bottom_interval": [
+              0,
+              2
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "post_state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 3,
+            "A_center": 1,
+            "B_center": 9,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 4,
+            "next_center": 13
+          }
+        },
+        {
+          "event": "first_qualified_reverse",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 3,
+            "A_center": 1,
+            "B_center": 9,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 3,
+            "end_fx": 4,
+            "centers": [
+              9,
+              13
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 4,
+            "maximum_high": 18,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 9,
+            "bottom_center": 13,
+            "top_interval": [
+              16,
+              18
+            ],
+            "bottom_interval": [
+              4,
+              6
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "post_state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0,
+              3
+            ],
+            "prefix_centers": [
+              1,
+              9
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                9
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 9,
+            "B_center": 13,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0,
+              3
+            ],
+            "prefix_centers": [
+              1,
+              9
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                9
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 9,
+            "B_center": 13,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "route_centers": [
+            1,
+            9,
+            13
+          ],
+          "tail_start": 14,
+          "tail_stop": 15,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 2,
+            "next_center": 7
+          },
+          "checkpoint_id": 6
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": 9
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 2,
+            "centers": [
+              1,
+              7
+            ],
+            "kinds": [
+              "bottom",
+              "bottom"
+            ],
+            "center_gap": 6,
+            "independent_bar_count": 3,
+            "minimum_low": 0,
+            "maximum_high": 14,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 3,
+            "A_center": 1,
+            "B_center": 9,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 4,
+            "next_center": 13
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 3,
+            "centers": [
+              1,
+              9
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 8,
+            "independent_bar_count": 5,
+            "minimum_low": 0,
+            "maximum_high": 18,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 9,
+            "bottom_center": 1,
+            "top_interval": [
+              16,
+              18
+            ],
+            "bottom_interval": [
+              0,
+              2
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 7,
+            "kind": "initial_end_skip",
+            "decision_fx": 3,
+            "post_decision_state": {
+              "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+              "prefix_fx": [
+                0
+              ],
+              "prefix_centers": [
+                1
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 0,
+              "B_fx": null,
+              "A_center": 1,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 4,
+              "next_center": 13
+            }
+          }
+        },
+        {
+          "event": "first_qualified_reverse",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 3,
+            "A_center": 1,
+            "B_center": 9,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 3,
+            "end_fx": 4,
+            "centers": [
+              9,
+              13
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 4,
+            "maximum_high": 18,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 9,
+            "bottom_center": 13,
+            "top_interval": [
+              16,
+              18
+            ],
+            "bottom_interval": [
+              4,
+              6
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "post_state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0,
+              3
+            ],
+            "prefix_centers": [
+              1,
+              9
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                9
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 9,
+            "B_center": 13,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0,
+              3
+            ],
+            "prefix_centers": [
+              1,
+              9
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                9
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 9,
+            "B_center": 13,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "route_centers": [
+            1,
+            9,
+            13
+          ],
+          "tail_start": 14,
+          "tail_stop": 15,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 13
+          },
+          "checkpoint_id": 7
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 4,
+            "centers": [
+              1,
+              13
+            ],
+            "kinds": [
+              "bottom",
+              "bottom"
+            ],
+            "center_gap": 12,
+            "independent_bar_count": 9,
+            "minimum_low": 0,
+            "maximum_high": 18,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 2,
+            "next_center": 7
+          },
+          "checkpoint_id": 4
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": 9
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 2,
+            "centers": [
+              5,
+              7
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 2,
+            "independent_bar_count": 0,
+            "minimum_low": 8,
+            "maximum_high": 14,
+            "opposite": true,
+            "gap_at_least_four": false,
+            "top_center": 5,
+            "bottom_center": 7,
+            "top_interval": [
+              12,
+              14
+            ],
+            "bottom_interval": [
+              8,
+              10
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [
+              "center_gap_below_four"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 13
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 3,
+            "centers": [
+              5,
+              9
+            ],
+            "kinds": [
+              "top",
+              "top"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 8,
+            "maximum_high": 18,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 4,
+            "centers": [
+              5,
+              13
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 8,
+            "independent_bar_count": 5,
+            "minimum_low": 4,
+            "maximum_high": 18,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 5,
+            "bottom_center": 13,
+            "top_interval": [
+              12,
+              14
+            ],
+            "bottom_interval": [
+              4,
+              6
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": false,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [
+              9,
+              10
+            ],
+            "bars_below_bottom": [],
+            "failures": [
+              "interior_high_exceeds_top"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              7
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 7,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": 9
+          },
+          "checkpoint_id": 3
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              7
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 7,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 13
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 2,
+            "end_fx": 3,
+            "centers": [
+              7,
+              9
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 2,
+            "independent_bar_count": 0,
+            "minimum_low": 8,
+            "maximum_high": 18,
+            "opposite": true,
+            "gap_at_least_four": false,
+            "top_center": 9,
+            "bottom_center": 7,
+            "top_interval": [
+              16,
+              18
+            ],
+            "bottom_interval": [
+              8,
+              10
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [
+              "center_gap_below_four"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              7
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 7,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 2,
+            "end_fx": 4,
+            "centers": [
+              7,
+              13
+            ],
+            "kinds": [
+              "bottom",
+              "bottom"
+            ],
+            "center_gap": 6,
+            "independent_bar_count": 3,
+            "minimum_low": 4,
+            "maximum_high": 18,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              7
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 7,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              9
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": null,
+            "A_center": 9,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 13
+          },
+          "checkpoint_id": 2
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              9
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 9,
+            "B_center": 13,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 3,
+            "end_fx": 4,
+            "centers": [
+              9,
+              13
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 4,
+            "maximum_high": 18,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 9,
+            "bottom_center": 13,
+            "top_interval": [
+              16,
+              18
+            ],
+            "bottom_interval": [
+              4,
+              6
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 8,
+            "kind": "initial_end_skip",
+            "decision_fx": 4,
+            "post_decision_state": {
+              "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+              "prefix_fx": [
+                3
+              ],
+              "prefix_centers": [
+                9
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 3,
+              "B_fx": null,
+              "A_center": 9,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 5,
+              "next_center": null
+            }
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              9
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 9,
+            "B_center": 13,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "route_centers": [
+            9,
+            13
+          ],
+          "tail_start": 14,
+          "tail_stop": 15,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              9
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": null,
+            "A_center": 9,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "checkpoint_id": 8
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              9
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": null,
+            "A_center": 9,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              4
+            ],
+            "prefix_centers": [
+              13
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 4,
+            "B_fx": null,
+            "A_center": 13,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "checkpoint_id": 1
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "288c0fc8a31607b587e8a00e9cd7485cee456220bd6a6b22a601d4636aa4aff5",
+            "prefix_fx": [
+              4
+            ],
+            "prefix_centers": [
+              13
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 4,
+            "B_fx": null,
+            "A_center": 13,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          }
+        }
+      ],
+      "all_pair_evidence": [
+        {
+          "start_fx": 0,
+          "end_fx": 1,
+          "centers": [
+            1,
+            5
+          ],
+          "kinds": [
+            "bottom",
+            "top"
+          ],
+          "center_gap": 4,
+          "independent_bar_count": 1,
+          "minimum_low": 0,
+          "maximum_high": 14,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 5,
+          "bottom_center": 1,
+          "top_interval": [
+            12,
+            14
+          ],
+          "bottom_interval": [
+            0,
+            2
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        },
+        {
+          "start_fx": 0,
+          "end_fx": 2,
+          "centers": [
+            1,
+            7
+          ],
+          "kinds": [
+            "bottom",
+            "bottom"
+          ],
+          "center_gap": 6,
+          "independent_bar_count": 3,
+          "minimum_low": 0,
+          "maximum_high": 14,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 0,
+          "end_fx": 3,
+          "centers": [
+            1,
+            9
+          ],
+          "kinds": [
+            "bottom",
+            "top"
+          ],
+          "center_gap": 8,
+          "independent_bar_count": 5,
+          "minimum_low": 0,
+          "maximum_high": 18,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 9,
+          "bottom_center": 1,
+          "top_interval": [
+            16,
+            18
+          ],
+          "bottom_interval": [
+            0,
+            2
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        },
+        {
+          "start_fx": 0,
+          "end_fx": 4,
+          "centers": [
+            1,
+            13
+          ],
+          "kinds": [
+            "bottom",
+            "bottom"
+          ],
+          "center_gap": 12,
+          "independent_bar_count": 9,
+          "minimum_low": 0,
+          "maximum_high": 18,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 1,
+          "end_fx": 2,
+          "centers": [
+            5,
+            7
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 2,
+          "independent_bar_count": 0,
+          "minimum_low": 8,
+          "maximum_high": 14,
+          "opposite": true,
+          "gap_at_least_four": false,
+          "top_center": 5,
+          "bottom_center": 7,
+          "top_interval": [
+            12,
+            14
+          ],
+          "bottom_interval": [
+            8,
+            10
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [
+            "center_gap_below_four"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 1,
+          "end_fx": 3,
+          "centers": [
+            5,
+            9
+          ],
+          "kinds": [
+            "top",
+            "top"
+          ],
+          "center_gap": 4,
+          "independent_bar_count": 1,
+          "minimum_low": 8,
+          "maximum_high": 18,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 1,
+          "end_fx": 4,
+          "centers": [
+            5,
+            13
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 8,
+          "independent_bar_count": 5,
+          "minimum_low": 4,
+          "maximum_high": 18,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 5,
+          "bottom_center": 13,
+          "top_interval": [
+            12,
+            14
+          ],
+          "bottom_interval": [
+            4,
+            6
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": false,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [
+            9,
+            10
+          ],
+          "bars_below_bottom": [],
+          "failures": [
+            "interior_high_exceeds_top"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 2,
+          "end_fx": 3,
+          "centers": [
+            7,
+            9
+          ],
+          "kinds": [
+            "bottom",
+            "top"
+          ],
+          "center_gap": 2,
+          "independent_bar_count": 0,
+          "minimum_low": 8,
+          "maximum_high": 18,
+          "opposite": true,
+          "gap_at_least_four": false,
+          "top_center": 9,
+          "bottom_center": 7,
+          "top_interval": [
+            16,
+            18
+          ],
+          "bottom_interval": [
+            8,
+            10
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [
+            "center_gap_below_four"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 2,
+          "end_fx": 4,
+          "centers": [
+            7,
+            13
+          ],
+          "kinds": [
+            "bottom",
+            "bottom"
+          ],
+          "center_gap": 6,
+          "independent_bar_count": 3,
+          "minimum_low": 4,
+          "maximum_high": 18,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 3,
+          "end_fx": 4,
+          "centers": [
+            9,
+            13
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 4,
+          "independent_bar_count": 1,
+          "minimum_low": 4,
+          "maximum_high": 18,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 9,
+          "bottom_center": 13,
+          "top_interval": [
+            16,
+            18
+          ],
+          "bottom_interval": [
+            4,
+            6
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        }
+      ],
+      "reflection_checks_passed": true
+    },
+    "equal_end_alternative_needed": {
+      "bars_low_high": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "fractals": [
+        [
+          1,
+          "top"
+        ],
+        [
+          5,
+          "bottom"
+        ],
+        [
+          7,
+          "top"
+        ],
+        [
+          11,
+          "bottom"
+        ],
+        [
+          15,
+          "top"
+        ]
+      ],
+      "routes": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          11,
+          15
+        ],
+        [
+          7,
+          11,
+          15
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "blocked": [],
+      "tail_breaches": [
+        {
+          "route": [
+            1,
+            5
+          ],
+          "breach": false
+        },
+        {
+          "route": [
+            1,
+            11,
+            15
+          ],
+          "breach": false
+        },
+        {
+          "route": [
+            7,
+            11,
+            15
+          ],
+          "breach": false
+        },
+        {
+          "route": [
+            11,
+            15
+          ],
+          "breach": false
+        }
+      ],
+      "events": [
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 1,
+            "next_center": 5
+          },
+          "checkpoint_id": 5
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 2,
+            "next_center": 7
+          },
+          "F_fx": 1,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 1,
+            "centers": [
+              1,
+              5
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 0,
+            "maximum_high": 10,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 1,
+            "bottom_center": 5,
+            "top_interval": [
+              9,
+              10
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 6,
+            "kind": "initial_end_skip",
+            "decision_fx": 1,
+            "post_decision_state": {
+              "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+              "prefix_fx": [
+                0
+              ],
+              "prefix_centers": [
+                1
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 0,
+              "B_fx": null,
+              "A_center": 1,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 2,
+              "next_center": 7
+            }
+          }
+        },
+        {
+          "event": "reject_reverse_keep_working_pair",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 3,
+            "next_center": 11
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 2,
+            "centers": [
+              5,
+              7
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 2,
+            "independent_bar_count": 0,
+            "minimum_low": 0,
+            "maximum_high": 8,
+            "opposite": true,
+            "gap_at_least_four": false,
+            "top_center": 7,
+            "bottom_center": 5,
+            "top_interval": [
+              7,
+              8
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [
+              "center_gap_below_four"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "cache_equal_replace_keep_old_now",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 3,
+            "centers": [
+              1,
+              11
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 10,
+            "independent_bar_count": 7,
+            "minimum_low": 0,
+            "maximum_high": 10,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 1,
+            "bottom_center": 11,
+            "top_interval": [
+              9,
+              10
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 7,
+            "kind": "equal_replace",
+            "decision_fx": 3,
+            "post_decision_state": {
+              "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+              "prefix_fx": [
+                0
+              ],
+              "prefix_centers": [
+                1
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 0,
+              "B_fx": 3,
+              "A_center": 1,
+              "B_center": 11,
+              "phase": "WAIT_REVERSE",
+              "next_fx": 4,
+              "next_center": 15
+            }
+          }
+        },
+        {
+          "event": "reject_reverse_keep_working_pair",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 4,
+            "centers": [
+              5,
+              15
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 10,
+            "independent_bar_count": 7,
+            "minimum_low": 0,
+            "maximum_high": 8,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 5,
+            "top_interval": [
+              4,
+              5
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": false,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [
+              7,
+              8
+            ],
+            "bars_below_bottom": [],
+            "failures": [
+              "interior_high_exceeds_top"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "route_centers": [
+            1,
+            5
+          ],
+          "tail_start": 6,
+          "tail_stop": 17,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_equal_replace",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 3,
+            "A_center": 1,
+            "B_center": 11,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "checkpoint_id": 7
+        },
+        {
+          "event": "first_qualified_reverse",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 3,
+            "A_center": 1,
+            "B_center": 11,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 3,
+            "end_fx": 4,
+            "centers": [
+              11,
+              15
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 0,
+            "maximum_high": 5,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 11,
+            "top_interval": [
+              4,
+              5
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "post_state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0,
+              3
+            ],
+            "prefix_centers": [
+              1,
+              11
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                11
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0,
+              3
+            ],
+            "prefix_centers": [
+              1,
+              11
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                11
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "route_centers": [
+            1,
+            11,
+            15
+          ],
+          "tail_start": 16,
+          "tail_stop": 17,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 2,
+            "next_center": 7
+          },
+          "checkpoint_id": 6
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": 11
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 2,
+            "centers": [
+              1,
+              7
+            ],
+            "kinds": [
+              "top",
+              "top"
+            ],
+            "center_gap": 6,
+            "independent_bar_count": 3,
+            "minimum_low": 0,
+            "maximum_high": 10,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 3,
+            "A_center": 1,
+            "B_center": 11,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 3,
+            "centers": [
+              1,
+              11
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 10,
+            "independent_bar_count": 7,
+            "minimum_low": 0,
+            "maximum_high": 10,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 1,
+            "bottom_center": 11,
+            "top_interval": [
+              9,
+              10
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 8,
+            "kind": "initial_end_skip",
+            "decision_fx": 3,
+            "post_decision_state": {
+              "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+              "prefix_fx": [
+                0
+              ],
+              "prefix_centers": [
+                1
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 0,
+              "B_fx": null,
+              "A_center": 1,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 4,
+              "next_center": 15
+            }
+          }
+        },
+        {
+          "event": "first_qualified_reverse",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 3,
+            "A_center": 1,
+            "B_center": 11,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 3,
+            "end_fx": 4,
+            "centers": [
+              11,
+              15
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 0,
+            "maximum_high": 5,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 11,
+            "top_interval": [
+              4,
+              5
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "post_state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0,
+              3
+            ],
+            "prefix_centers": [
+              1,
+              11
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                11
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0,
+              3
+            ],
+            "prefix_centers": [
+              1,
+              11
+            ],
+            "locally_closed_edges_centers": [
+              [
+                1,
+                11
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "route_centers": [
+            1,
+            11,
+            15
+          ],
+          "tail_start": 16,
+          "tail_stop": 17,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "checkpoint_id": 8
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 4,
+            "centers": [
+              1,
+              15
+            ],
+            "kinds": [
+              "top",
+              "top"
+            ],
+            "center_gap": 14,
+            "independent_bar_count": 11,
+            "minimum_low": 0,
+            "maximum_high": 10,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 2,
+            "next_center": 7
+          },
+          "checkpoint_id": 4
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": 11
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 2,
+            "centers": [
+              5,
+              7
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 2,
+            "independent_bar_count": 0,
+            "minimum_low": 0,
+            "maximum_high": 8,
+            "opposite": true,
+            "gap_at_least_four": false,
+            "top_center": 7,
+            "bottom_center": 5,
+            "top_interval": [
+              7,
+              8
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [
+              "center_gap_below_four"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 3,
+            "centers": [
+              5,
+              11
+            ],
+            "kinds": [
+              "bottom",
+              "bottom"
+            ],
+            "center_gap": 6,
+            "independent_bar_count": 3,
+            "minimum_low": 0,
+            "maximum_high": 8,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 4,
+            "centers": [
+              5,
+              15
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 10,
+            "independent_bar_count": 7,
+            "minimum_low": 0,
+            "maximum_high": 8,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 5,
+            "top_interval": [
+              4,
+              5
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": false,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [
+              7,
+              8
+            ],
+            "bars_below_bottom": [],
+            "failures": [
+              "interior_high_exceeds_top"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              7
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 7,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": 11
+          },
+          "checkpoint_id": 3
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              7
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": 3,
+            "A_center": 7,
+            "B_center": 11,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "F_fx": 3,
+          "pair": {
+            "start_fx": 2,
+            "end_fx": 3,
+            "centers": [
+              7,
+              11
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 0,
+            "maximum_high": 8,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 7,
+            "bottom_center": 11,
+            "top_interval": [
+              7,
+              8
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 9,
+            "kind": "initial_end_skip",
+            "decision_fx": 3,
+            "post_decision_state": {
+              "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+              "prefix_fx": [
+                2
+              ],
+              "prefix_centers": [
+                7
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 2,
+              "B_fx": null,
+              "A_center": 7,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 4,
+              "next_center": 15
+            }
+          }
+        },
+        {
+          "event": "first_qualified_reverse",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              7
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": 3,
+            "A_center": 7,
+            "B_center": 11,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 3,
+            "end_fx": 4,
+            "centers": [
+              11,
+              15
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 0,
+            "maximum_high": 5,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 11,
+            "top_interval": [
+              4,
+              5
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "post_state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              2,
+              3
+            ],
+            "prefix_centers": [
+              7,
+              11
+            ],
+            "locally_closed_edges_centers": [
+              [
+                7,
+                11
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              2,
+              3
+            ],
+            "prefix_centers": [
+              7,
+              11
+            ],
+            "locally_closed_edges_centers": [
+              [
+                7,
+                11
+              ]
+            ],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "route_centers": [
+            7,
+            11,
+            15
+          ],
+          "tail_start": 16,
+          "tail_stop": 17,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              7
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 7,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "checkpoint_id": 9
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              7
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 7,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 2,
+            "end_fx": 4,
+            "centers": [
+              7,
+              15
+            ],
+            "kinds": [
+              "top",
+              "top"
+            ],
+            "center_gap": 8,
+            "independent_bar_count": 5,
+            "minimum_low": 0,
+            "maximum_high": 8,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              7
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 7,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              11
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": null,
+            "A_center": 11,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 4,
+            "next_center": 15
+          },
+          "checkpoint_id": 2
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              11
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "F_fx": 4,
+          "pair": {
+            "start_fx": 3,
+            "end_fx": 4,
+            "centers": [
+              11,
+              15
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 0,
+            "maximum_high": 5,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 15,
+            "bottom_center": 11,
+            "top_interval": [
+              4,
+              5
+            ],
+            "bottom_interval": [
+              0,
+              1
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 10,
+            "kind": "initial_end_skip",
+            "decision_fx": 4,
+            "post_decision_state": {
+              "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+              "prefix_fx": [
+                3
+              ],
+              "prefix_centers": [
+                11
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 3,
+              "B_fx": null,
+              "A_center": 11,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 5,
+              "next_center": null
+            }
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              11
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": 4,
+            "A_center": 11,
+            "B_center": 15,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "route_centers": [
+            11,
+            15
+          ],
+          "tail_start": 16,
+          "tail_stop": 17,
+          "tail_exceeds_working_endpoint": false
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              11
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": null,
+            "A_center": 11,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "checkpoint_id": 10
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              3
+            ],
+            "prefix_centers": [
+              11
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 3,
+            "B_fx": null,
+            "A_center": 11,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              4
+            ],
+            "prefix_centers": [
+              15
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 4,
+            "B_fx": null,
+            "A_center": 15,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          },
+          "checkpoint_id": 1
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "28b1b264ec6f80de66d36a91fc6078788417831d34aa85641445309474989216",
+            "prefix_fx": [
+              4
+            ],
+            "prefix_centers": [
+              15
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 4,
+            "B_fx": null,
+            "A_center": 15,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 5,
+            "next_center": null
+          }
+        }
+      ],
+      "all_pair_evidence": [
+        {
+          "start_fx": 0,
+          "end_fx": 1,
+          "centers": [
+            1,
+            5
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 4,
+          "independent_bar_count": 1,
+          "minimum_low": 0,
+          "maximum_high": 10,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 1,
+          "bottom_center": 5,
+          "top_interval": [
+            9,
+            10
+          ],
+          "bottom_interval": [
+            0,
+            1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        },
+        {
+          "start_fx": 0,
+          "end_fx": 2,
+          "centers": [
+            1,
+            7
+          ],
+          "kinds": [
+            "top",
+            "top"
+          ],
+          "center_gap": 6,
+          "independent_bar_count": 3,
+          "minimum_low": 0,
+          "maximum_high": 10,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 0,
+          "end_fx": 3,
+          "centers": [
+            1,
+            11
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 10,
+          "independent_bar_count": 7,
+          "minimum_low": 0,
+          "maximum_high": 10,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 1,
+          "bottom_center": 11,
+          "top_interval": [
+            9,
+            10
+          ],
+          "bottom_interval": [
+            0,
+            1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        },
+        {
+          "start_fx": 0,
+          "end_fx": 4,
+          "centers": [
+            1,
+            15
+          ],
+          "kinds": [
+            "top",
+            "top"
+          ],
+          "center_gap": 14,
+          "independent_bar_count": 11,
+          "minimum_low": 0,
+          "maximum_high": 10,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 1,
+          "end_fx": 2,
+          "centers": [
+            5,
+            7
+          ],
+          "kinds": [
+            "bottom",
+            "top"
+          ],
+          "center_gap": 2,
+          "independent_bar_count": 0,
+          "minimum_low": 0,
+          "maximum_high": 8,
+          "opposite": true,
+          "gap_at_least_four": false,
+          "top_center": 7,
+          "bottom_center": 5,
+          "top_interval": [
+            7,
+            8
+          ],
+          "bottom_interval": [
+            0,
+            1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [
+            "center_gap_below_four"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 1,
+          "end_fx": 3,
+          "centers": [
+            5,
+            11
+          ],
+          "kinds": [
+            "bottom",
+            "bottom"
+          ],
+          "center_gap": 6,
+          "independent_bar_count": 3,
+          "minimum_low": 0,
+          "maximum_high": 8,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 1,
+          "end_fx": 4,
+          "centers": [
+            5,
+            15
+          ],
+          "kinds": [
+            "bottom",
+            "top"
+          ],
+          "center_gap": 10,
+          "independent_bar_count": 7,
+          "minimum_low": 0,
+          "maximum_high": 8,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 15,
+          "bottom_center": 5,
+          "top_interval": [
+            4,
+            5
+          ],
+          "bottom_interval": [
+            0,
+            1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": false,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [
+            7,
+            8
+          ],
+          "bars_below_bottom": [],
+          "failures": [
+            "interior_high_exceeds_top"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 2,
+          "end_fx": 3,
+          "centers": [
+            7,
+            11
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 4,
+          "independent_bar_count": 1,
+          "minimum_low": 0,
+          "maximum_high": 8,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 7,
+          "bottom_center": 11,
+          "top_interval": [
+            7,
+            8
+          ],
+          "bottom_interval": [
+            0,
+            1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        },
+        {
+          "start_fx": 2,
+          "end_fx": 4,
+          "centers": [
+            7,
+            15
+          ],
+          "kinds": [
+            "top",
+            "top"
+          ],
+          "center_gap": 8,
+          "independent_bar_count": 5,
+          "minimum_low": 0,
+          "maximum_high": 8,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 3,
+          "end_fx": 4,
+          "centers": [
+            11,
+            15
+          ],
+          "kinds": [
+            "bottom",
+            "top"
+          ],
+          "center_gap": 4,
+          "independent_bar_count": 1,
+          "minimum_low": 0,
+          "maximum_high": 5,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 15,
+          "bottom_center": 11,
+          "top_interval": [
+            4,
+            5
+          ],
+          "bottom_interval": [
+            0,
+            1
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        }
+      ],
+      "reflection_checks_passed": true
+    },
+    "tail_without_new_complete_top": {
+      "bars_low_high": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          14,
+          16
+        ]
+      ],
+      "fractals": [
+        [
+          1,
+          "bottom"
+        ],
+        [
+          5,
+          "top"
+        ],
+        [
+          6,
+          "bottom"
+        ]
+      ],
+      "routes": [
+        [
+          1,
+          5
+        ]
+      ],
+      "blocked": [],
+      "tail_breaches": [
+        {
+          "route": [
+            1,
+            5
+          ],
+          "breach": true
+        }
+      ],
+      "events": [
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 1,
+            "next_center": 5
+          },
+          "checkpoint_id": 3
+        },
+        {
+          "event": "accept_initial_end_cache_skip",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 2,
+            "next_center": 6
+          },
+          "F_fx": 1,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 1,
+            "centers": [
+              1,
+              5
+            ],
+            "kinds": [
+              "bottom",
+              "top"
+            ],
+            "center_gap": 4,
+            "independent_bar_count": 1,
+            "minimum_low": 0,
+            "maximum_high": 14,
+            "opposite": true,
+            "gap_at_least_four": true,
+            "top_center": 5,
+            "bottom_center": 1,
+            "top_interval": [
+              12,
+              14
+            ],
+            "bottom_interval": [
+              0,
+              2
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [],
+            "valid": true
+          },
+          "checkpoint": {
+            "checkpoint_id": 4,
+            "kind": "initial_end_skip",
+            "decision_fx": 1,
+            "post_decision_state": {
+              "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+              "prefix_fx": [
+                0
+              ],
+              "prefix_centers": [
+                1
+              ],
+              "locally_closed_edges_centers": [],
+              "A_fx": 0,
+              "B_fx": null,
+              "A_center": 1,
+              "B_center": null,
+              "phase": "SEEK_B",
+              "next_fx": 2,
+              "next_center": 6
+            }
+          }
+        },
+        {
+          "event": "reject_reverse_keep_working_pair",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 3,
+            "next_center": null
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 2,
+            "centers": [
+              5,
+              6
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 1,
+            "independent_bar_count": 0,
+            "minimum_low": 10,
+            "maximum_high": 14,
+            "opposite": true,
+            "gap_at_least_four": false,
+            "top_center": 5,
+            "bottom_center": 6,
+            "top_interval": [
+              12,
+              14
+            ],
+            "bottom_interval": [
+              10,
+              12
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [
+              "center_gap_below_four"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_provisional_route",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": 1,
+            "A_center": 1,
+            "B_center": 5,
+            "phase": "WAIT_REVERSE",
+            "next_fx": 3,
+            "next_center": null
+          },
+          "route_centers": [
+            1,
+            5
+          ],
+          "tail_start": 6,
+          "tail_stop": 10,
+          "tail_exceeds_working_endpoint": true
+        },
+        {
+          "event": "restore_initial_end_skip",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 2,
+            "next_center": 6
+          },
+          "checkpoint_id": 4
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": null
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 0,
+            "end_fx": 2,
+            "centers": [
+              1,
+              6
+            ],
+            "kinds": [
+              "bottom",
+              "bottom"
+            ],
+            "center_gap": 5,
+            "independent_bar_count": 2,
+            "minimum_low": 0,
+            "maximum_high": 14,
+            "opposite": false,
+            "gap_at_least_four": true,
+            "failures": [
+              "same_kind"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              0
+            ],
+            "prefix_centers": [
+              1
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 0,
+            "B_fx": null,
+            "A_center": 1,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 2,
+            "next_center": 6
+          },
+          "checkpoint_id": 2
+        },
+        {
+          "event": "reject_initial_end",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": null
+          },
+          "F_fx": 2,
+          "pair": {
+            "start_fx": 1,
+            "end_fx": 2,
+            "centers": [
+              5,
+              6
+            ],
+            "kinds": [
+              "top",
+              "bottom"
+            ],
+            "center_gap": 1,
+            "independent_bar_count": 0,
+            "minimum_low": 10,
+            "maximum_high": 14,
+            "opposite": true,
+            "gap_at_least_four": false,
+            "top_center": 5,
+            "bottom_center": 6,
+            "top_interval": [
+              12,
+              14
+            ],
+            "bottom_interval": [
+              10,
+              12
+            ],
+            "high_T_gt_high_B": true,
+            "low_B_lt_low_T": true,
+            "all_high_le_high_T": true,
+            "all_low_ge_low_B": true,
+            "bars_above_top": [],
+            "bars_below_bottom": [],
+            "failures": [
+              "center_gap_below_four"
+            ],
+            "valid": false
+          }
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              1
+            ],
+            "prefix_centers": [
+              5
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 1,
+            "B_fx": null,
+            "A_center": 5,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": null
+          }
+        },
+        {
+          "event": "restore_seed",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              6
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 6,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": null
+          },
+          "checkpoint_id": 1
+        },
+        {
+          "event": "EOF_singleton_not_stroke",
+          "state": {
+            "source_sha256": "a18d07718fe8843563538c8b96b47d7b6d4bc4ce2f218ea7cfb3f7a1bc177bf0",
+            "prefix_fx": [
+              2
+            ],
+            "prefix_centers": [
+              6
+            ],
+            "locally_closed_edges_centers": [],
+            "A_fx": 2,
+            "B_fx": null,
+            "A_center": 6,
+            "B_center": null,
+            "phase": "SEEK_B",
+            "next_fx": 3,
+            "next_center": null
+          }
+        }
+      ],
+      "all_pair_evidence": [
+        {
+          "start_fx": 0,
+          "end_fx": 1,
+          "centers": [
+            1,
+            5
+          ],
+          "kinds": [
+            "bottom",
+            "top"
+          ],
+          "center_gap": 4,
+          "independent_bar_count": 1,
+          "minimum_low": 0,
+          "maximum_high": 14,
+          "opposite": true,
+          "gap_at_least_four": true,
+          "top_center": 5,
+          "bottom_center": 1,
+          "top_interval": [
+            12,
+            14
+          ],
+          "bottom_interval": [
+            0,
+            2
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [],
+          "valid": true
+        },
+        {
+          "start_fx": 0,
+          "end_fx": 2,
+          "centers": [
+            1,
+            6
+          ],
+          "kinds": [
+            "bottom",
+            "bottom"
+          ],
+          "center_gap": 5,
+          "independent_bar_count": 2,
+          "minimum_low": 0,
+          "maximum_high": 14,
+          "opposite": false,
+          "gap_at_least_four": true,
+          "failures": [
+            "same_kind"
+          ],
+          "valid": false
+        },
+        {
+          "start_fx": 1,
+          "end_fx": 2,
+          "centers": [
+            5,
+            6
+          ],
+          "kinds": [
+            "top",
+            "bottom"
+          ],
+          "center_gap": 1,
+          "independent_bar_count": 0,
+          "minimum_low": 10,
+          "maximum_high": 14,
+          "opposite": true,
+          "gap_at_least_four": false,
+          "top_center": 5,
+          "bottom_center": 6,
+          "top_interval": [
+            12,
+            14
+          ],
+          "bottom_interval": [
+            10,
+            12
+          ],
+          "high_T_gt_high_B": true,
+          "low_B_lt_low_T": true,
+          "all_high_le_high_T": true,
+          "all_low_ge_low_B": true,
+          "bars_above_top": [],
+          "bars_below_bottom": [],
+          "failures": [
+            "center_gap_below_four"
+          ],
+          "valid": false
+        }
+      ],
+      "reflection_checks_passed": true
+    }
+  },
+  "all_checks": "passed"
+}

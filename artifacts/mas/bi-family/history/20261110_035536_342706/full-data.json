@@ -1,0 +1,10 @@
+{
+  "raw": 10060,
+  "merged": 6200,
+  "fractals": 3027,
+  "budget": 100000,
+  "seconds": 0.48379749996820465,
+  "source_hash_unchanged": true,
+  "complete": false,
+  "reason": "candidate state budget exhausted; no complete result"
+}

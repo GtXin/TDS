@@ -1,0 +1,24 @@
+{
+  "common_inputs": 200,
+  "route_sets_equal": true,
+  "accepted_corrupt_route_metadata": [
+    true,
+    false
+  ],
+  "files": {
+    "baseline": {
+      "path": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/bi-family/baseline/bi.py",
+      "sha256": "abd68dd6b32fef205e38375982f1d96e493a0204802c5bad2e662ab534e33823"
+    },
+    "python_pro": {
+      "path": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/bi-family/python_pro/bi.py",
+      "sha256": "f911f6118d5b4ae0b85bc911669b75fbbdc34671d1acb10ce8546ee796990e1c"
+    }
+  },
+  "limitation": "sequential continuation with prior skill exposure; no causal skill claim",
+  "isolated_process_inputs": 200,
+  "verified_import_paths": [
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/bi-family/baseline/bi.py",
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/bi-family/python_pro/bi.py"
+  ]
+}

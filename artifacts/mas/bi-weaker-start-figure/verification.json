@@ -1,0 +1,113 @@
+{
+  "source": "Synthetic teaching counterexample from current chat; no market OHLC invented.",
+  "bars_low_high": [
+    [
+      9,
+      10
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "fractals_center_kind": [
+    [
+      1,
+      "top"
+    ],
+    [
+      2,
+      "bottom"
+    ],
+    [
+      3,
+      "top"
+    ],
+    [
+      7,
+      "bottom"
+    ]
+  ],
+  "labels": {
+    "A": 1,
+    "X": 2,
+    "B": 3,
+    "C": 7
+  },
+  "pair_checks": {
+    "A_to_X": {
+      "checks": {
+        "opposite_types": true,
+        "time_order": true,
+        "center_distance": false,
+        "center_intervals": true,
+        "maximum_at_top": true,
+        "minimum_at_bottom": true
+      },
+      "valid": false
+    },
+    "A_to_C": {
+      "checks": {
+        "opposite_types": true,
+        "time_order": true,
+        "center_distance": true,
+        "center_intervals": true,
+        "maximum_at_top": true,
+        "minimum_at_bottom": false
+      },
+      "valid": false
+    },
+    "B_to_C": {
+      "checks": {
+        "opposite_types": true,
+        "time_order": true,
+        "center_distance": true,
+        "center_intervals": true,
+        "maximum_at_top": true,
+        "minimum_at_bottom": true
+      },
+      "valid": true
+    }
+  },
+  "B_window": [
+    2,
+    3,
+    4
+  ],
+  "C_window": [
+    6,
+    7,
+    8
+  ],
+  "independent_bar": 5,
+  "note": "Pair interior includes endpoint centers, not the entire fractal windows.",
+  "png_sha256": "04f652453c97e98168a9e51f2866295edc9d5a7380379f6330007f8c1d653ee2"
+}

@@ -1,0 +1,69 @@
+{
+  "source": "Synthetic illustration of the user's initialization2.b, before any qualified pair.",
+  "bars_low_high": [
+    [
+      9,
+      10
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      11,
+      12
+    ]
+  ],
+  "fractals_center_kind": [
+    [
+      1,
+      "top"
+    ],
+    [
+      2,
+      "bottom"
+    ],
+    [
+      3,
+      "top"
+    ],
+    [
+      4,
+      "bottom"
+    ],
+    [
+      5,
+      "top"
+    ]
+  ],
+  "initial_start_center": 1,
+  "weaker_top_center": 3,
+  "stronger_top_center": 5,
+  "failed_initial_pair_gaps": {
+    "A_to_X": 1,
+    "A_to_Y": 3
+  },
+  "start_sequence": [
+    1,
+    1,
+    5
+  ],
+  "png_sha256": "4e084bdf900099c0b5666a98e3591662060e08f44578348973442d6fd4ad642e",
+  "scope": "Local pending-start update only; no complete-algorithm or permanent-discard claim."
+}

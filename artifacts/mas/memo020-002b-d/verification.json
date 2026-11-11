@@ -1,0 +1,57 @@
+{
+  "backup_exact": true,
+  "outside002b_d_exact": true,
+  "definitions_002a_appendices_preserved": true,
+  "saved_draft_exact": true,
+  "helper_names": [
+    "_check_pair",
+    "_compare_end",
+    "_freeze_branch",
+    "_validate_branch",
+    "_finish_branch",
+    "_validate_candidates"
+  ],
+  "local_links_passed": 4,
+  "figures_byte_equal": {
+    "algorithm-cached-recovery.png": "92c144a48e8d600410f7cd7a9a70b05e8fcee93b61b758e3cf75f83572ea198e",
+    "algorithm-endpoint-extension.png": "16d905d3808885dacd10e422839bc0947363a27d8f3a1f003c97ceef3357a3c5"
+  },
+  "protected_files_unchanged": [
+    "docs/memo/memoWX_019_Chan_fenxing.md",
+    "docs/memo/memoWX_009_designPatternForChanFeatures.md",
+    "src/chanlab/algo/fenxing.py",
+    "src/chanlab/algo/merged_kline.py",
+    "src/chanlab/algo/kline.py",
+    "src/chanlab/algo/chan_table.py",
+    "pyproject.toml",
+    "uv.lock"
+  ],
+  "new_section_whitespace_fences_index_passed": true,
+  "model_checks": {
+    "original_cases": 1010,
+    "sign_mirrors": 1010,
+    "independent_reference_comparisons": 1010,
+    "variable_width_cases": 1000,
+    "corruption_probes_rejected": 12,
+    "immutable_prefix_alias_probe": true,
+    "exact_source_identity_and_no_input_mutation": true,
+    "short_input_validated_before_shortcut": true,
+    "short_input_events_empty": true,
+    "event_counts": {
+      "RESTORE": 20589,
+      "FIRST_B": 5415,
+      "REVERSE": 3837,
+      "REJECT_REVERSE": 18679,
+      "BLOCKED": 247,
+      "REJECT_FIRST": 70530,
+      "EXTEND": 1561,
+      "EQUAL_KEEP": 4663,
+      "INFERIOR": 8762
+    }
+  },
+  "main_routes_and_source_positions_passed": true,
+  "plots_visually_inspected": true,
+  "numerical_review": "PASS",
+  "contract_review": "PASS",
+  "scope": "memo algorithm design and isolated evidence only; no production Bi implementation or CC execution"
+}

@@ -1,0 +1,27 @@
+{
+  "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261110_201337_214337.md",
+  "before_sha256": "82ebe508b253cb7e45c90a3552282a75a02c2e3467a4ce3a91bb24e5f16642ac",
+  "after_sha256": "45232f1fa2f9c61047cc6200322f44b2b03d378c2059c46e1e5310fb46255be4",
+  "backup_byte_identical": true,
+  "definitions_unchanged": true,
+  "user_note_byte_preserved": true,
+  "instruction_preserved_once": true,
+  "active_002_headings_only": true,
+  "appendix_A_B_and_references_unchanged": true,
+  "image_targets_and_occurrence_counts_preserved": true,
+  "archive_heading_map": {
+    "002.a": "C.1",
+    "002.b": "C.2",
+    "002.c": "C.3",
+    "002.d": "C.4"
+  },
+  "archive_normalization": "Move user instruction to004; rename heading/self references; trim section-edge blank lines.",
+  "protected_hashes": {
+    "docs/memo/README.md": "1c41009ea3739e1257831de366a9094abf8dacb94559572aaf4f74a42dd7bde2",
+    "docs/memo/memoWX_028_biFamily.md": "9ae89a755f699e9b58dca36948bbd3de25075071c8988aafe811a2537ca0fa20",
+    "src/chanlab/algo/bi.py": "415d33ae7645c5fddd8b0fd2ff212e63926fd6ff2a661afdf1d48b53cefde4a8",
+    "src/chanlab/data/bi_table.py": "868d8b62e876af5fb7ac6bc1db5a42468f94456575b8e6d607d78a79190e6d6d",
+    "src/chanlab/visualization/bi_plot.py": "2f8740b782fabd8798b1b7c27d26c56fa8c0d436d71fe09341686b5a7a862346",
+    "tests/test_bi.py": "12bb7c902176df66ca03ce5a908fc7df015146e9da9ca7fc1d7348a8f898c02e"
+  }
+}

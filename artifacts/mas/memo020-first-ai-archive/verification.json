@@ -1,0 +1,12 @@
+{
+  "backup_byte_identical": true,
+  "active_002_headings_only": true,
+  "protected_user_note_exact": true,
+  "instruction_moved_to004": true,
+  "archive_exact_except_declared_relocation": true,
+  "definitions_A_B_references_exact": true,
+  "local_links_checked": 32,
+  "protected_files_checked": 6,
+  "no_new_trailing_whitespace": true,
+  "fences_balanced": true
+}

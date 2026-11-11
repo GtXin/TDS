@@ -1,0 +1,2736 @@
+{
+  "scope": "Isolated note-based interval/fractal/state replay; no production Bi/API, raw-market pipeline, all-route search or guarantee of future completion.",
+  "fresh_cases": {
+    "main19": {
+      "R": [
+        [
+          5,
+          13
+        ]
+      ],
+      "pending": [
+        13,
+        17
+      ],
+      "S": 17,
+      "cursor": 9,
+      "input_bars": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "input_fx": [
+        [
+          1,
+          "top"
+        ],
+        [
+          2,
+          "bottom"
+        ],
+        [
+          3,
+          "top"
+        ],
+        [
+          4,
+          "bottom"
+        ],
+        [
+          5,
+          "top"
+        ],
+        [
+          9,
+          "bottom"
+        ],
+        [
+          11,
+          "top"
+        ],
+        [
+          13,
+          "bottom"
+        ],
+        [
+          17,
+          "top"
+        ]
+      ],
+      "events": [
+        {
+          "center": 1,
+          "action": "initialize_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 2,
+          "action": "continue_initial_failure",
+          "checked_pair": [
+            1,
+            2
+          ],
+          "qualified": false,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 3,
+          "action": "keep_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 4,
+          "action": "continue_initial_failure",
+          "checked_pair": [
+            1,
+            4
+          ],
+          "qualified": false,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 5,
+          "action": "replace_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 5
+        },
+        {
+          "center": 9,
+          "action": "accept_first",
+          "checked_pair": [
+            5,
+            9
+          ],
+          "qualified": true,
+          "R": [],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        },
+        {
+          "center": 11,
+          "action": "continue_reverse_failure",
+          "checked_pair": [
+            9,
+            11
+          ],
+          "qualified": false,
+          "R": [],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        },
+        {
+          "center": 13,
+          "action": "update_pending",
+          "checked_pair": [
+            5,
+            13
+          ],
+          "qualified": true,
+          "R": [],
+          "pending": [
+            5,
+            13
+          ],
+          "S": 13
+        },
+        {
+          "center": 17,
+          "action": "submit_and_rotate",
+          "checked_pair": [
+            13,
+            17
+          ],
+          "qualified": true,
+          "R": [
+            [
+              5,
+              13
+            ]
+          ],
+          "pending": [
+            13,
+            17
+          ],
+          "S": 17
+        }
+      ]
+    },
+    "open21": {
+      "R": [
+        [
+          1,
+          5
+        ]
+      ],
+      "pending": [
+        5,
+        9
+      ],
+      "S": 9,
+      "cursor": 6,
+      "input_bars": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "input_fx": [
+        [
+          1,
+          "top"
+        ],
+        [
+          5,
+          "bottom"
+        ],
+        [
+          9,
+          "top"
+        ],
+        [
+          11,
+          "bottom"
+        ],
+        [
+          15,
+          "top"
+        ],
+        [
+          19,
+          "bottom"
+        ]
+      ],
+      "events": [
+        {
+          "center": 1,
+          "action": "initialize_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 5,
+          "action": "accept_first",
+          "checked_pair": [
+            1,
+            5
+          ],
+          "qualified": true,
+          "R": [],
+          "pending": [
+            1,
+            5
+          ],
+          "S": 5
+        },
+        {
+          "center": 9,
+          "action": "submit_and_rotate",
+          "checked_pair": [
+            5,
+            9
+          ],
+          "qualified": true,
+          "R": [
+            [
+              1,
+              5
+            ]
+          ],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        },
+        {
+          "center": 11,
+          "action": "continue_reverse_failure",
+          "checked_pair": [
+            9,
+            11
+          ],
+          "qualified": false,
+          "R": [
+            [
+              1,
+              5
+            ]
+          ],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        },
+        {
+          "center": 15,
+          "action": "continue_extension_failure",
+          "checked_pair": [
+            5,
+            15
+          ],
+          "qualified": false,
+          "R": [
+            [
+              1,
+              5
+            ]
+          ],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        },
+        {
+          "center": 19,
+          "action": "continue_reverse_failure",
+          "checked_pair": [
+            9,
+            19
+          ],
+          "qualified": false,
+          "R": [
+            [
+              1,
+              5
+            ]
+          ],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        }
+      ]
+    },
+    "equal_pending11": {
+      "R": [],
+      "pending": [
+        1,
+        9
+      ],
+      "S": 9,
+      "cursor": 4,
+      "input_bars": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "input_fx": [
+        [
+          1,
+          "bottom"
+        ],
+        [
+          5,
+          "top"
+        ],
+        [
+          7,
+          "bottom"
+        ],
+        [
+          9,
+          "top"
+        ]
+      ],
+      "events": [
+        {
+          "center": 1,
+          "action": "initialize_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 5,
+          "action": "accept_first",
+          "checked_pair": [
+            1,
+            5
+          ],
+          "qualified": true,
+          "R": [],
+          "pending": [
+            1,
+            5
+          ],
+          "S": 5
+        },
+        {
+          "center": 7,
+          "action": "continue_reverse_failure",
+          "checked_pair": [
+            5,
+            7
+          ],
+          "qualified": false,
+          "R": [],
+          "pending": [
+            1,
+            5
+          ],
+          "S": 5
+        },
+        {
+          "center": 9,
+          "action": "update_pending",
+          "checked_pair": [
+            1,
+            9
+          ],
+          "qualified": true,
+          "R": [],
+          "pending": [
+            1,
+            9
+          ],
+          "S": 9
+        }
+      ]
+    },
+    "equal_initial5": {
+      "R": [],
+      "pending": null,
+      "S": 1,
+      "cursor": 3,
+      "input_bars": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "input_fx": [
+        [
+          1,
+          "top"
+        ],
+        [
+          2,
+          "bottom"
+        ],
+        [
+          3,
+          "top"
+        ]
+      ],
+      "events": [
+        {
+          "center": 1,
+          "action": "initialize_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 2,
+          "action": "continue_initial_failure",
+          "checked_pair": [
+            1,
+            2
+          ],
+          "qualified": false,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 3,
+          "action": "keep_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 1
+        }
+      ]
+    },
+    "no_fractal2": {
+      "R": [],
+      "pending": null,
+      "S": null,
+      "cursor": 0,
+      "input_bars": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "input_fx": [],
+      "events": []
+    },
+    "single_fractal3": {
+      "R": [],
+      "pending": null,
+      "S": 1,
+      "cursor": 1,
+      "input_bars": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "input_fx": [
+        [
+          1,
+          "top"
+        ]
+      ],
+      "events": [
+        {
+          "center": 1,
+          "action": "initialize_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 1
+        }
+      ]
+    },
+    "reflected_main19": {
+      "R": [
+        [
+          5,
+          13
+        ]
+      ],
+      "pending": [
+        13,
+        17
+      ],
+      "S": 17,
+      "cursor": 9,
+      "input_bars": [
+        [
+          -10,
+          -9
+        ],
+        [
+          -11,
+          -10
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -10,
+          -9
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -13,
+          -12
+        ],
+        [
+          -12,
+          -11
+        ],
+        [
+          -9,
+          -8
+        ],
+        [
+          -6,
+          -5
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -5,
+          -4
+        ],
+        [
+          -8,
+          -7
+        ],
+        [
+          -4,
+          -3
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -5,
+          -4
+        ],
+        [
+          -7,
+          -6
+        ],
+        [
+          -9,
+          -8
+        ],
+        [
+          -8,
+          -7
+        ]
+      ],
+      "input_fx": [
+        [
+          1,
+          "bottom"
+        ],
+        [
+          2,
+          "top"
+        ],
+        [
+          3,
+          "bottom"
+        ],
+        [
+          4,
+          "top"
+        ],
+        [
+          5,
+          "bottom"
+        ],
+        [
+          9,
+          "top"
+        ],
+        [
+          11,
+          "bottom"
+        ],
+        [
+          13,
+          "top"
+        ],
+        [
+          17,
+          "bottom"
+        ]
+      ],
+      "events": [
+        {
+          "center": 1,
+          "action": "initialize_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 2,
+          "action": "continue_initial_failure",
+          "checked_pair": [
+            1,
+            2
+          ],
+          "qualified": false,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 3,
+          "action": "keep_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 4,
+          "action": "continue_initial_failure",
+          "checked_pair": [
+            1,
+            4
+          ],
+          "qualified": false,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 5,
+          "action": "replace_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 5
+        },
+        {
+          "center": 9,
+          "action": "accept_first",
+          "checked_pair": [
+            5,
+            9
+          ],
+          "qualified": true,
+          "R": [],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        },
+        {
+          "center": 11,
+          "action": "continue_reverse_failure",
+          "checked_pair": [
+            9,
+            11
+          ],
+          "qualified": false,
+          "R": [],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        },
+        {
+          "center": 13,
+          "action": "update_pending",
+          "checked_pair": [
+            5,
+            13
+          ],
+          "qualified": true,
+          "R": [],
+          "pending": [
+            5,
+            13
+          ],
+          "S": 13
+        },
+        {
+          "center": 17,
+          "action": "submit_and_rotate",
+          "checked_pair": [
+            13,
+            17
+          ],
+          "qualified": true,
+          "R": [
+            [
+              5,
+              13
+            ]
+          ],
+          "pending": [
+            13,
+            17
+          ],
+          "S": 17
+        }
+      ]
+    },
+    "reflected_open21": {
+      "R": [
+        [
+          1,
+          5
+        ]
+      ],
+      "pending": [
+        5,
+        9
+      ],
+      "S": 9,
+      "cursor": 6,
+      "input_bars": [
+        [
+          -9,
+          -8
+        ],
+        [
+          -10,
+          -9
+        ],
+        [
+          -7,
+          -6
+        ],
+        [
+          -5,
+          -4
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -5,
+          -4
+        ],
+        [
+          -7,
+          -6
+        ],
+        [
+          -8,
+          -7
+        ],
+        [
+          -4,
+          -3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -4,
+          -3
+        ],
+        [
+          -6,
+          -5
+        ],
+        [
+          -9,
+          -8
+        ],
+        [
+          -6,
+          -5
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "input_fx": [
+        [
+          1,
+          "bottom"
+        ],
+        [
+          5,
+          "top"
+        ],
+        [
+          9,
+          "bottom"
+        ],
+        [
+          11,
+          "top"
+        ],
+        [
+          15,
+          "bottom"
+        ],
+        [
+          19,
+          "top"
+        ]
+      ],
+      "events": [
+        {
+          "center": 1,
+          "action": "initialize_start",
+          "checked_pair": null,
+          "qualified": null,
+          "R": [],
+          "pending": null,
+          "S": 1
+        },
+        {
+          "center": 5,
+          "action": "accept_first",
+          "checked_pair": [
+            1,
+            5
+          ],
+          "qualified": true,
+          "R": [],
+          "pending": [
+            1,
+            5
+          ],
+          "S": 5
+        },
+        {
+          "center": 9,
+          "action": "submit_and_rotate",
+          "checked_pair": [
+            5,
+            9
+          ],
+          "qualified": true,
+          "R": [
+            [
+              1,
+              5
+            ]
+          ],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        },
+        {
+          "center": 11,
+          "action": "continue_reverse_failure",
+          "checked_pair": [
+            9,
+            11
+          ],
+          "qualified": false,
+          "R": [
+            [
+              1,
+              5
+            ]
+          ],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        },
+        {
+          "center": 15,
+          "action": "continue_extension_failure",
+          "checked_pair": [
+            5,
+            15
+          ],
+          "qualified": false,
+          "R": [
+            [
+              1,
+              5
+            ]
+          ],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        },
+        {
+          "center": 19,
+          "action": "continue_reverse_failure",
+          "checked_pair": [
+            9,
+            19
+          ],
+          "qualified": false,
+          "R": [
+            [
+              1,
+              5
+            ]
+          ],
+          "pending": [
+            5,
+            9
+          ],
+          "S": 9
+        }
+      ]
+    }
+  },
+  "continuation_cases": {
+    "split_after_first_pair": {
+      "first_batch": {
+        "R": [],
+        "pending": [
+          5,
+          9
+        ],
+        "S": 9,
+        "cursor": 6,
+        "input_bars": [
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "input_fx": [
+          [
+            1,
+            "top"
+          ],
+          [
+            2,
+            "bottom"
+          ],
+          [
+            3,
+            "top"
+          ],
+          [
+            4,
+            "bottom"
+          ],
+          [
+            5,
+            "top"
+          ],
+          [
+            9,
+            "bottom"
+          ]
+        ],
+        "events": [
+          {
+            "center": 1,
+            "action": "initialize_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 2,
+            "action": "continue_initial_failure",
+            "checked_pair": [
+              1,
+              2
+            ],
+            "qualified": false,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 3,
+            "action": "keep_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 4,
+            "action": "continue_initial_failure",
+            "checked_pair": [
+              1,
+              4
+            ],
+            "qualified": false,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 5,
+            "action": "replace_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 5
+          },
+          {
+            "center": 9,
+            "action": "accept_first",
+            "checked_pair": [
+              5,
+              9
+            ],
+            "qualified": true,
+            "R": [],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          }
+        ]
+      },
+      "continued": {
+        "R": [
+          [
+            5,
+            13
+          ]
+        ],
+        "pending": [
+          13,
+          17
+        ],
+        "S": 17,
+        "cursor": 9,
+        "input_bars": [
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "input_fx": [
+          [
+            1,
+            "top"
+          ],
+          [
+            2,
+            "bottom"
+          ],
+          [
+            3,
+            "top"
+          ],
+          [
+            4,
+            "bottom"
+          ],
+          [
+            5,
+            "top"
+          ],
+          [
+            9,
+            "bottom"
+          ],
+          [
+            11,
+            "top"
+          ],
+          [
+            13,
+            "bottom"
+          ],
+          [
+            17,
+            "top"
+          ]
+        ],
+        "events": [
+          {
+            "center": 1,
+            "action": "initialize_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 2,
+            "action": "continue_initial_failure",
+            "checked_pair": [
+              1,
+              2
+            ],
+            "qualified": false,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 3,
+            "action": "keep_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 4,
+            "action": "continue_initial_failure",
+            "checked_pair": [
+              1,
+              4
+            ],
+            "qualified": false,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 5,
+            "action": "replace_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 5
+          },
+          {
+            "center": 9,
+            "action": "accept_first",
+            "checked_pair": [
+              5,
+              9
+            ],
+            "qualified": true,
+            "R": [],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 11,
+            "action": "continue_reverse_failure",
+            "checked_pair": [
+              9,
+              11
+            ],
+            "qualified": false,
+            "R": [],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 13,
+            "action": "update_pending",
+            "checked_pair": [
+              5,
+              13
+            ],
+            "qualified": true,
+            "R": [],
+            "pending": [
+              5,
+              13
+            ],
+            "S": 13
+          },
+          {
+            "center": 17,
+            "action": "submit_and_rotate",
+            "checked_pair": [
+              13,
+              17
+            ],
+            "qualified": true,
+            "R": [
+              [
+                5,
+                13
+              ]
+            ],
+            "pending": [
+              13,
+              17
+            ],
+            "S": 17
+          }
+        ]
+      }
+    },
+    "resume_no_fractal": {
+      "first_batch": {
+        "R": [],
+        "pending": null,
+        "S": null,
+        "cursor": 0,
+        "input_bars": [
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "input_fx": [],
+        "events": []
+      },
+      "continued": {
+        "R": [
+          [
+            5,
+            13
+          ]
+        ],
+        "pending": [
+          13,
+          17
+        ],
+        "S": 17,
+        "cursor": 9,
+        "input_bars": [
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "input_fx": [
+          [
+            1,
+            "top"
+          ],
+          [
+            2,
+            "bottom"
+          ],
+          [
+            3,
+            "top"
+          ],
+          [
+            4,
+            "bottom"
+          ],
+          [
+            5,
+            "top"
+          ],
+          [
+            9,
+            "bottom"
+          ],
+          [
+            11,
+            "top"
+          ],
+          [
+            13,
+            "bottom"
+          ],
+          [
+            17,
+            "top"
+          ]
+        ],
+        "events": [
+          {
+            "center": 1,
+            "action": "initialize_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 2,
+            "action": "continue_initial_failure",
+            "checked_pair": [
+              1,
+              2
+            ],
+            "qualified": false,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 3,
+            "action": "keep_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 4,
+            "action": "continue_initial_failure",
+            "checked_pair": [
+              1,
+              4
+            ],
+            "qualified": false,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 5,
+            "action": "replace_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 5
+          },
+          {
+            "center": 9,
+            "action": "accept_first",
+            "checked_pair": [
+              5,
+              9
+            ],
+            "qualified": true,
+            "R": [],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 11,
+            "action": "continue_reverse_failure",
+            "checked_pair": [
+              9,
+              11
+            ],
+            "qualified": false,
+            "R": [],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 13,
+            "action": "update_pending",
+            "checked_pair": [
+              5,
+              13
+            ],
+            "qualified": true,
+            "R": [],
+            "pending": [
+              5,
+              13
+            ],
+            "S": 13
+          },
+          {
+            "center": 17,
+            "action": "submit_and_rotate",
+            "checked_pair": [
+              13,
+              17
+            ],
+            "qualified": true,
+            "R": [
+              [
+                5,
+                13
+              ]
+            ],
+            "pending": [
+              13,
+              17
+            ],
+            "S": 17
+          }
+        ]
+      }
+    },
+    "resume_single_fractal": {
+      "first_batch": {
+        "R": [],
+        "pending": null,
+        "S": 1,
+        "cursor": 1,
+        "input_bars": [
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "input_fx": [
+          [
+            1,
+            "top"
+          ]
+        ],
+        "events": [
+          {
+            "center": 1,
+            "action": "initialize_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 1
+          }
+        ]
+      },
+      "continued": {
+        "R": [
+          [
+            5,
+            13
+          ]
+        ],
+        "pending": [
+          13,
+          17
+        ],
+        "S": 17,
+        "cursor": 9,
+        "input_bars": [
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "input_fx": [
+          [
+            1,
+            "top"
+          ],
+          [
+            2,
+            "bottom"
+          ],
+          [
+            3,
+            "top"
+          ],
+          [
+            4,
+            "bottom"
+          ],
+          [
+            5,
+            "top"
+          ],
+          [
+            9,
+            "bottom"
+          ],
+          [
+            11,
+            "top"
+          ],
+          [
+            13,
+            "bottom"
+          ],
+          [
+            17,
+            "top"
+          ]
+        ],
+        "events": [
+          {
+            "center": 1,
+            "action": "initialize_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 2,
+            "action": "continue_initial_failure",
+            "checked_pair": [
+              1,
+              2
+            ],
+            "qualified": false,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 3,
+            "action": "keep_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 4,
+            "action": "continue_initial_failure",
+            "checked_pair": [
+              1,
+              4
+            ],
+            "qualified": false,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 5,
+            "action": "replace_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 5
+          },
+          {
+            "center": 9,
+            "action": "accept_first",
+            "checked_pair": [
+              5,
+              9
+            ],
+            "qualified": true,
+            "R": [],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 11,
+            "action": "continue_reverse_failure",
+            "checked_pair": [
+              9,
+              11
+            ],
+            "qualified": false,
+            "R": [],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 13,
+            "action": "update_pending",
+            "checked_pair": [
+              5,
+              13
+            ],
+            "qualified": true,
+            "R": [],
+            "pending": [
+              5,
+              13
+            ],
+            "S": 13
+          },
+          {
+            "center": 17,
+            "action": "submit_and_rotate",
+            "checked_pair": [
+              13,
+              17
+            ],
+            "qualified": true,
+            "R": [
+              [
+                5,
+                13
+              ]
+            ],
+            "pending": [
+              13,
+              17
+            ],
+            "S": 17
+          }
+        ]
+      }
+    },
+    "open21_to29": {
+      "first_batch": {
+        "R": [
+          [
+            1,
+            5
+          ]
+        ],
+        "pending": [
+          5,
+          9
+        ],
+        "S": 9,
+        "cursor": 6,
+        "input_bars": [
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            -2,
+            -1
+          ],
+          [
+            -1,
+            0
+          ]
+        ],
+        "input_fx": [
+          [
+            1,
+            "top"
+          ],
+          [
+            5,
+            "bottom"
+          ],
+          [
+            9,
+            "top"
+          ],
+          [
+            11,
+            "bottom"
+          ],
+          [
+            15,
+            "top"
+          ],
+          [
+            19,
+            "bottom"
+          ]
+        ],
+        "events": [
+          {
+            "center": 1,
+            "action": "initialize_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 5,
+            "action": "accept_first",
+            "checked_pair": [
+              1,
+              5
+            ],
+            "qualified": true,
+            "R": [],
+            "pending": [
+              1,
+              5
+            ],
+            "S": 5
+          },
+          {
+            "center": 9,
+            "action": "submit_and_rotate",
+            "checked_pair": [
+              5,
+              9
+            ],
+            "qualified": true,
+            "R": [
+              [
+                1,
+                5
+              ]
+            ],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 11,
+            "action": "continue_reverse_failure",
+            "checked_pair": [
+              9,
+              11
+            ],
+            "qualified": false,
+            "R": [
+              [
+                1,
+                5
+              ]
+            ],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 15,
+            "action": "continue_extension_failure",
+            "checked_pair": [
+              5,
+              15
+            ],
+            "qualified": false,
+            "R": [
+              [
+                1,
+                5
+              ]
+            ],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 19,
+            "action": "continue_reverse_failure",
+            "checked_pair": [
+              9,
+              19
+            ],
+            "qualified": false,
+            "R": [
+              [
+                1,
+                5
+              ]
+            ],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          }
+        ]
+      },
+      "continued": {
+        "R": [
+          [
+            1,
+            5
+          ]
+        ],
+        "pending": [
+          5,
+          9
+        ],
+        "S": 9,
+        "cursor": 8,
+        "input_bars": [
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            -2,
+            -1
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            -4,
+            -3
+          ],
+          [
+            -2,
+            -1
+          ]
+        ],
+        "input_fx": [
+          [
+            1,
+            "top"
+          ],
+          [
+            5,
+            "bottom"
+          ],
+          [
+            9,
+            "top"
+          ],
+          [
+            11,
+            "bottom"
+          ],
+          [
+            15,
+            "top"
+          ],
+          [
+            19,
+            "bottom"
+          ],
+          [
+            23,
+            "top"
+          ],
+          [
+            27,
+            "bottom"
+          ]
+        ],
+        "events": [
+          {
+            "center": 1,
+            "action": "initialize_start",
+            "checked_pair": null,
+            "qualified": null,
+            "R": [],
+            "pending": null,
+            "S": 1
+          },
+          {
+            "center": 5,
+            "action": "accept_first",
+            "checked_pair": [
+              1,
+              5
+            ],
+            "qualified": true,
+            "R": [],
+            "pending": [
+              1,
+              5
+            ],
+            "S": 5
+          },
+          {
+            "center": 9,
+            "action": "submit_and_rotate",
+            "checked_pair": [
+              5,
+              9
+            ],
+            "qualified": true,
+            "R": [
+              [
+                1,
+                5
+              ]
+            ],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 11,
+            "action": "continue_reverse_failure",
+            "checked_pair": [
+              9,
+              11
+            ],
+            "qualified": false,
+            "R": [
+              [
+                1,
+                5
+              ]
+            ],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 15,
+            "action": "continue_extension_failure",
+            "checked_pair": [
+              5,
+              15
+            ],
+            "qualified": false,
+            "R": [
+              [
+                1,
+                5
+              ]
+            ],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 19,
+            "action": "continue_reverse_failure",
+            "checked_pair": [
+              9,
+              19
+            ],
+            "qualified": false,
+            "R": [
+              [
+                1,
+                5
+              ]
+            ],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 23,
+            "action": "continue_extension_failure",
+            "checked_pair": [
+              5,
+              23
+            ],
+            "qualified": false,
+            "R": [
+              [
+                1,
+                5
+              ]
+            ],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          },
+          {
+            "center": 27,
+            "action": "continue_reverse_failure",
+            "checked_pair": [
+              9,
+              27
+            ],
+            "qualified": false,
+            "R": [
+              [
+                1,
+                5
+              ]
+            ],
+            "pending": [
+              5,
+              9
+            ],
+            "S": 9
+          }
+        ]
+      }
+    }
+  },
+  "changed_prefix_rejected": true,
+  "all_complete_fractals_read": true,
+  "final_prefix_never_modified": true,
+  "eof_does_not_submit_pending": true,
+  "counts": {
+    "fresh_cases": 8,
+    "continuation_cases": 4,
+    "successful_scan_calls": 15,
+    "total_scan_calls": 16,
+    "changed_prefix_probe": 1
+  }
+}

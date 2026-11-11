@@ -1,0 +1,25 @@
+{
+  "backup_byte_identical": true,
+  "saved_sections_equal_reviewed_drafts": true,
+  "outside_002a_and003_exact": true,
+  "original_004_and_appendices_exact": true,
+  "protected_files": 6,
+  "local_links": 35,
+  "tree_nodes": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "2.6",
+    "2.7",
+    "2.8",
+    "2.9"
+  ],
+  "gotos_resolve": true,
+  "no_new_trailing_whitespace": true,
+  "six_continuous_numeric_inputs": true,
+  "executed_pair_checks": 20,
+  "executed_mirrored_pair_checks": 20,
+  "production_algorithm_execution": false
+}

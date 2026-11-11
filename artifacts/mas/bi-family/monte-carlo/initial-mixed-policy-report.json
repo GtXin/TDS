@@ -1,0 +1,109 @@
+{
+  "seed_range": [
+    0,
+    9999
+  ],
+  "generated": 10000,
+  "counts": {
+    "completed": 9998,
+    "raw": 344950,
+    "merged": 214931,
+    "fractals": 106302,
+    "routes": 53836,
+    "strokes": 139573,
+    "empty": 3361,
+    "states": 1789179,
+    "blocked": 2947,
+    "pending": 898,
+    "dual": 896
+  },
+  "layers": {
+    "0": {
+      "completed": 1659,
+      "raw": 56931,
+      "merged": 24963,
+      "fractals": 8289,
+      "routes": 2310,
+      "strokes": 2339,
+      "empty": 826,
+      "states": 45814,
+      "blocked": 1,
+      "pending": 197,
+      "dual": 189
+    },
+    "1": {
+      "completed": 1664,
+      "raw": 59072,
+      "merged": 46604,
+      "fractals": 22458,
+      "routes": 9044,
+      "strokes": 19261,
+      "empty": 337,
+      "states": 335644,
+      "blocked": 516,
+      "pending": 79,
+      "dual": 76
+    },
+    "2": {
+      "completed": 1653,
+      "raw": 56461,
+      "merged": 35784,
+      "fractals": 17706,
+      "routes": 6245,
+      "strokes": 11383,
+      "empty": 485,
+      "states": 204308,
+      "blocked": 383,
+      "pending": 143,
+      "dual": 129
+    },
+    "3": {
+      "pending": 322,
+      "dual": 330,
+      "completed": 1675,
+      "raw": 56843,
+      "merged": 16378,
+      "fractals": 12930,
+      "routes": 1651,
+      "strokes": 1929,
+      "empty": 952,
+      "states": 82130,
+      "blocked": 99
+    },
+    "4": {
+      "completed": 1666,
+      "raw": 58962,
+      "merged": 58962,
+      "fractals": 27832,
+      "routes": 28420,
+      "strokes": 93842,
+      "empty": 215,
+      "states": 932151,
+      "blocked": 1663
+    },
+    "5": {
+      "completed": 1681,
+      "raw": 56681,
+      "merged": 32240,
+      "fractals": 17087,
+      "routes": 6166,
+      "strokes": 10819,
+      "empty": 546,
+      "states": 189132,
+      "blocked": 285,
+      "pending": 157,
+      "dual": 172
+    }
+  },
+  "transformed_probes": 300,
+  "seconds": 21.161631499999203,
+  "failures": 0,
+  "reference_comparisons": "all completed branches",
+  "lengths": [
+    9,
+    17,
+    33,
+    49,
+    65
+  ]
+}

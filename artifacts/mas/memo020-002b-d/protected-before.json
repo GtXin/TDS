@@ -1,0 +1,10 @@
+{
+  "docs/memo/memoWX_019_Chan_fenxing.md": "045f19faff953cde7c54d7c2d2187f4b4095da6efa624e0bd7b7895a8fa8f95b",
+  "docs/memo/memoWX_009_designPatternForChanFeatures.md": "655e5e29d053c07f72d03c5f3629ef2e10ff4dd6ab62e2f2d568f136829bade5",
+  "src/chanlab/algo/fenxing.py": "97fb4c9f00f5267c57b7e29bd423eb41289a5a0b0129efe07ac1134368402ea0",
+  "src/chanlab/algo/merged_kline.py": "3caa74c2b9fa201723edcaa32eba0d898fbaeae876c3fc482c04007bbbb613d5",
+  "src/chanlab/algo/kline.py": "4976d1995c09c05d64ade1efb79782bb1c4ce7f5311cbdfc2471cd7fa4e6f583",
+  "src/chanlab/algo/chan_table.py": "7fc6d4612b04abbfc03beb50d372c62b55527ae0ea5842e6fdb0d36a470c1908",
+  "pyproject.toml": "10d4fc4c481425826a11c05c0934765625e65018709eba435d1760ac1aac9366",
+  "uv.lock": "95b20efd6f089af1632191af1a0f4cd0dcbe798c2399434d35301b43790b71ea"
+}

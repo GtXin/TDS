@@ -1,0 +1,621 @@
+{
+  "scope": "complete experimental cached temporal candidate protocol, not production/canonical proof",
+  "seed": 20261110,
+  "sequences_and_mirrors": 1006,
+  "event_counts": {
+    "cache_restore": 15254,
+    "cache_initial_end_skip": 3920,
+    "provisional_end": 3920,
+    "reverse_rejected_evidence_retained": 10431,
+    "mandatory_end_extension": 1162,
+    "first_qualified_reverse": 2287,
+    "eof_provisional_route": 4861,
+    "seed_pair_rejected_evidence_retained": 60776,
+    "blocked_extension_restore_alternative": 227,
+    "inferior_end_evidence_retained": 5573,
+    "cache_equal_end_replace": 1168,
+    "keep_equal_current_end": 1454
+  },
+  "examples": {
+    "mandatory_extension": {
+      "bars_low_high": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          16,
+          18
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "routes": [
+        [
+          1,
+          9,
+          13
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "blocked": [],
+      "counts": {
+        "cache_restore": 8,
+        "cache_initial_end_skip": 3,
+        "provisional_end": 3,
+        "reverse_rejected_evidence_retained": 1,
+        "mandatory_end_extension": 1,
+        "first_qualified_reverse": 2,
+        "eof_provisional_route": 3,
+        "seed_pair_rejected_evidence_retained": 7
+      }
+    },
+    "blocked_then_cached_earlier_choice": {
+      "bars_low_high": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "routes": [
+        [
+          1,
+          11,
+          15,
+          19
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          11,
+          15,
+          19
+        ],
+        [
+          15,
+          19
+        ]
+      ],
+      "blocked": [
+        {
+          "historical_centers": [
+            1,
+            5,
+            9
+          ],
+          "failed_new_end": 15
+        },
+        {
+          "historical_centers": [
+            5,
+            9
+          ],
+          "failed_new_end": 15
+        }
+      ],
+      "counts": {
+        "cache_restore": 12,
+        "cache_initial_end_skip": 6,
+        "provisional_end": 6,
+        "first_qualified_reverse": 4,
+        "reverse_rejected_evidence_retained": 2,
+        "blocked_extension_restore_alternative": 2,
+        "seed_pair_rejected_evidence_retained": 9,
+        "eof_provisional_route": 4
+      }
+    },
+    "two_viable_no_tie_maximums": {
+      "bars_low_high": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "routes": [
+        [
+          1,
+          5,
+          9,
+          19
+        ],
+        [
+          1,
+          11,
+          15,
+          19
+        ],
+        [
+          1,
+          19
+        ],
+        [
+          5,
+          9,
+          19
+        ],
+        [
+          9,
+          19
+        ],
+        [
+          11,
+          15,
+          19
+        ],
+        [
+          15,
+          19
+        ]
+      ],
+      "blocked": [],
+      "counts": {
+        "cache_restore": 13,
+        "cache_initial_end_skip": 7,
+        "provisional_end": 7,
+        "first_qualified_reverse": 6,
+        "reverse_rejected_evidence_retained": 2,
+        "inferior_end_evidence_retained": 2,
+        "eof_provisional_route": 7,
+        "seed_pair_rejected_evidence_retained": 8
+      }
+    },
+    "fixed_start_cannot_recover_but_later_seed_can": {
+      "bars_low_high": [
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "routes": [
+        [
+          7,
+          11
+        ]
+      ],
+      "blocked": [
+        {
+          "historical_centers": [
+            1,
+            5
+          ],
+          "failed_new_end": 11
+        }
+      ],
+      "counts": {
+        "cache_restore": 6,
+        "cache_initial_end_skip": 2,
+        "provisional_end": 2,
+        "reverse_rejected_evidence_retained": 1,
+        "blocked_extension_restore_alternative": 1,
+        "seed_pair_rejected_evidence_retained": 4,
+        "eof_provisional_route": 1
+      }
+    },
+    "equal_end_alternative_needed": {
+      "bars_low_high": [
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "routes": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          11,
+          15
+        ],
+        [
+          7,
+          11,
+          15
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "blocked": [],
+      "counts": {
+        "cache_restore": 10,
+        "cache_initial_end_skip": 4,
+        "provisional_end": 4,
+        "reverse_rejected_evidence_retained": 2,
+        "cache_equal_end_replace": 1,
+        "keep_equal_current_end": 1,
+        "eof_provisional_route": 5,
+        "first_qualified_reverse": 3,
+        "seed_pair_rejected_evidence_retained": 6
+      }
+    },
+    "tail_without_new_complete_top": {
+      "bars_low_high": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          14,
+          16
+        ]
+      ],
+      "routes": [
+        [
+          1,
+          5
+        ]
+      ],
+      "blocked": [],
+      "counts": {
+        "cache_restore": 4,
+        "cache_initial_end_skip": 1,
+        "provisional_end": 1,
+        "reverse_rejected_evidence_retained": 1,
+        "eof_provisional_route": 1,
+        "seed_pair_rejected_evidence_retained": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261110_032855_616827.md",
+  "before_sha256": "d8dc0b6e190d9bd219c6aa42dea6ea38c5c7235886a2fbbb2ea4597c0287db36",
+  "after_sha256": "9aca2abde3d25ec3128f4adb615c77be5522f8c9294926fbc22e97ecabf5f7eb",
+  "before_start": 3928,
+  "before_stop": 4048,
+  "after_start": 3928,
+  "after_stop": 15695,
+  "outside_preserved": true,
+  "sections": [
+    "002.b",
+    "002.c",
+    "002.d"
+  ],
+  "pictures": {
+    "algorithm-cached-recovery.png": "92c144a48e8d600410f7cd7a9a70b05e8fcee93b61b758e3cf75f83572ea198e",
+    "algorithm-endpoint-extension.png": "16d905d3808885dacd10e422839bc0947363a27d8f3a1f003c97ceef3357a3c5"
+  }
+}
