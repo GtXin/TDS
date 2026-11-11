@@ -1,0 +1,97 @@
+{
+  "status": "verified",
+  "memo_sha256": "cc5477cc4b52b23550b095da04fb3ffeefc566b1a17b3c6dfff447d6cd57f390",
+  "template_sha256": "d626070261068693174b409b06f83e8279a894ecb353c725a6b90e26c1c7e9aa",
+  "view": "recursive_l0_d1",
+  "selection": {
+    "mk": "cc.mk",
+    "fx": "cc.fx",
+    "bi": "cc.bi",
+    "xd": "cc.xd",
+    "zs": "cc.recursive.l0.d1.zs",
+    "zou": "cc.recursive.l0.d1.zou"
+  },
+  "rows": 44375,
+  "columns": 41,
+  "cc_source": {
+    "head": "af305b0812131be71e49cf91851016012ea63a78",
+    "source_sha256": {
+      "src/cc/algo/__init__.py": "c13fcdfceff6103405b7ab76f7d645da4dbcdb74af687e64ad21de40791ddd8b",
+      "src/cc/algo/beichi.py": "779c46edad02460d3be38801d6b1ba154ad902875822ddaf3eb9ffedc161a767",
+      "src/cc/algo/bi.py": "21fe99ca8345987923ab8930322570f543148bb7332eaed5d7acb521e6f4dad6",
+      "src/cc/algo/combiner.py": "28271c963dfa55c9ff631a2d80223b2ee7a18b17dd485200141e05e9b8e0bb8f",
+      "src/cc/algo/config.py": "3717ff0a8565b98f289773771bf368f1b9c6b295721d5d32063ca4920d8a8ea4",
+      "src/cc/algo/engine.py": "324799118a12279d1e06df0efe209f8a6204e9268684a8c98ac97a2d69d05bf9",
+      "src/cc/algo/fenxing.py": "7f8d34873f4963cb90ab661c24a7ecdc3214bc44869c4336cb9b2c8f74b69d65",
+      "src/cc/algo/keys.py": "c7d52c5090d364096832441a6f221d8d71f040b6b60e1d707e8755e651393bda",
+      "src/cc/algo/models.py": "7b3a2bd30d3bebf21a5239d98e4cda8b86722cbaac6f4c64abfbd60d61685024",
+      "src/cc/algo/protocols.py": "00670e2c2b65037c7000d578b04a4840e4d73ef91263aa87d49124adf9aed401",
+      "src/cc/algo/registry.py": "92e097fce8ef8badac8803653b80a3ab59cf7cea7b85ec0db86270f12287fd01",
+      "src/cc/algo/same_level.py": "7f85fe804eb79554fc38d6f2ae23929fdb5d0803101ed95fb45c71294de8247c",
+      "src/cc/algo/serializers.py": "2034aae9c175f8a4b4ab733e43f1afbc9e86bdfc3bc78d39287677da335e439e",
+      "src/cc/algo/trace.py": "da759b7c9c0234d42a3d79d8cd61978263ea4c551cca6f49fc1f5d4a650b121c",
+      "src/cc/algo/xianduan.py": "12524961dcb1bc97973e3759410406c9bbcc5b10b1ab304491ecb710ef0dd198",
+      "src/cc/algo/zhongshu.py": "b0b2d01c497ca89eb79e83bb55b45351e6421bcea79f09f9b7381d3437750efb",
+      "src/cc/algo/zhongshu_phase.py": "15233173344eea4f94a568479d0aaf0f23bc6556a092e7ecba00cc6bae34d21f",
+      "src/cc/algo/zoushi.py": "086cd5219eda8f2c301e864ebbb93b81292cc27c87cdf7f1241d1c66cf501908",
+      "src/cc/algo/zoushi_kernel.py": "5c0fdc7c941b877bf0068f8721caa6e267735bfa9de0cf6709cc061ec0e4d736",
+      "src/cc/algo/zoushi_recursion.py": "4a7432c717c6c70a6a74042d2144012a15dc541b22e98446d8cc420f2657b56b",
+      "src/cc/data/models.py": "1a10ce79c7281a61ed3970b0990d828a7d368de394c0449255e3634490df7d48"
+    }
+  },
+  "cc_config": {
+    "normalized": {
+      "bi_profile": "bi_5k",
+      "bi_formation_mode": "standard",
+      "bi_span_mode": "merged_center",
+      "bi_min_span": 4,
+      "bi_gap_as_bar": true,
+      "bi_endpoint_check": "half",
+      "bi_require_peak": true,
+      "bi_fractal_repair": true,
+      "bi_strength_ratio": 0.9,
+      "xianduan_preset": "standard",
+      "xianduan_break_policy": "line_only",
+      "xianduan_nonstandard_policy": "off",
+      "xianduan_oscillation_policy": "off",
+      "xianduan_left_method": "peak",
+      "zhongshu_mode": "extend",
+      "trace_enabled": true,
+      "trace_level": "light"
+    },
+    "profile_id": "bi_5k",
+    "config_hash": "65564d7f127c",
+    "algorithm_versions": {
+      "config": {
+        "MERGE_ALGO_VERSION": 2,
+        "BI_ALGO_VERSION": 4,
+        "XIANDUAN_ALGO_VERSION": 2
+      },
+      "zhongshu": {
+        "ZHONGSHU_ALGO_VERSION": 15
+      },
+      "zoushi": {
+        "ZOUSHI_ALGO_VERSION": 2,
+        "ZOUSHI_V2_ALGO_VERSION": 21
+      },
+      "zoushi_kernel": {},
+      "zoushi_recursion": {
+        "RECURSIVE_ZHONGSHU_ALGO_VERSION": 2,
+        "RECURSIVE_ZOUSHI_ALGO_VERSION": 4
+      },
+      "beichi": {
+        "BEICHI_ALGO_VERSION": 1,
+        "CONSOLIDATION_BEICHI_ALGO_VERSION": 1
+      }
+    }
+  },
+  "sha256": {
+    "D:\\Codex\\TDS_CN\\data\\raw\\cc\\cc-chantable-20261111-134106-27c20343\\klines.csv": "aebfe6ad5fe5b33107f9d444ff605d258b24e95e3006051c4837498f4a936c30",
+    "D:\\Codex\\TDS_CN\\data\\raw\\cc\\cc-chantable-20261111-134106-27c20343\\provenance.json": "3e8e5e48832f21e3c526fca8375856e5ad789bd25e058058b5d9de35fe756c67",
+    "D:\\Codex\\TDS_CN\\artifacts\\mas\\cc-chantable-20261111-134106-27c20343\\cc_native_snapshot.json": "17d452366744b43dcff5544aa0fc1d1bc3d51b3807d863164f133ef6fcabe007",
+    "D:\\Codex\\TDS_CN\\artifacts\\mas\\cc-chantable-20261111-134106-27c20343\\ChanTable.csv": "06c64f0edbcd9d6b69bba53e8d12552e352fabfa7f1051d5f0bbbe105eafdc76",
+    "D:\\Codex\\TDS_CN\\artifacts\\mas\\cc-chantable-20261111-134106-27c20343\\context.csv": "6033c6c95482f4656c26a92f45896d2af352c7c4e9db0afd3ac5f46a166520f3",
+    "D:\\Codex\\TDS_CN\\artifacts\\mas\\cc-chantable-20261111-134106-27c20343\\features.json": "aee573ebc7b919d354870e44c376bdfea4471050d89e2504868f68d54501eb8a",
+    "D:\\Codex\\TDS_CN\\artifacts\\mas\\cc-chantable-20261111-134106-27c20343\\import_report.json": "7ccbb9b4bc6611a4c8aa44cda54234f1e2e2027c08ddf814c3f4333a19903fc9"
+  }
+}

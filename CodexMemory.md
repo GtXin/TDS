@@ -53,6 +53,8 @@ Bring KWX and WX together for a three-day Chan theory feasibility sprint, establ
 - [Memo 005](docs/memo/memoWX_005_informationWorkflow.md) covers research and evidence; [memo 006](docs/memo/memoWX_006_memoWritingGuide.md) is the authoritative writing guide.
 - [logXW.md](logXW.md) records repository events; every repository update must also be logged.
 ## Current status
+The selected TDS_CN KWX001–004 memos and 44,375-row CC ChanTable L1 batch are available on GitHub main. See the [publication record](mas/tasks/20261111-publish-kwx001-004.md) and [batch verification](artifacts/mas/cc-chantable-20261111-134106-27c20343/verification.json).
+
 Memo028已按029固定快照DP执行，009两类合同及027报告结构补齐。425回归／39定向通过，3个Bi模块合计96%覆盖，strict mypy／Black／Ruff通过。10,000随机原始OHLCV×strong/weak经既有merged/FX处理，逐端点独立参考及每档5,377短输入穷举无差异；空路线单列。真实CC100/1000/3000FX两档各3次，全部best/prev一致。完整10060raw→6200merged→3027FX：strong480／weak682，均FX0→3026，仅首尾各1合并单元未覆盖。112页PNG/HTML全部生成、机器覆盖核对并逐页目视检查；页边FX裁切已修复，密集文字可交互放大。无永久确认／缓存续读；029未修改。证据[执行任务](mas/tasks/20261111-memo028-dp029.md)、[图集](artifacts/mas/bi-dp029/index.html)。下一步：用户审阅；算法目标改变先改029。
 
 [Project 009 memo references](references/proj009Memo/README.md) contains 42 verified memo snapshots, including two historical versions; originals and source-project links are preserved.

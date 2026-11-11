@@ -34,6 +34,9 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | WX 028 | [Bi family implementation plan](memoWX_028_biFamily.md) |
 | WX 029 | [Chan_bi — new algorithm draft](memoWX_029_Chan_bi.md) |
 | KWX 001 | [cc project folder structure](memoKWX_001_文件夹结构.md) |
+| KWX 002 | [Guide to WX001–018](memoKWX_002_memoWX001-018导读.md) |
+| KWX 003 | [TDS synchronization and Chinese localization](memoKWX_003_sync_en2cn.md) |
+| KWX 004 | [CC data import and ChanTable conversion](memoKWX_004_CCToChanTable.md) |
 | KWX 009 | [线段](memoKWX_009_Chan_xianduan.md) |
 
 For new or revised memos, follow [the writing guide](memoWX_006_memoWritingGuide.md).
