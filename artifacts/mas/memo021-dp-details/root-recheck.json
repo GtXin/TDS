@@ -1,0 +1,110 @@
+{
+  "source_arithmetic_passed": 2,
+  "graphs": {
+    "base": {
+      "a": 0,
+      "end": 18,
+      "count": 4,
+      "route": [
+        "A",
+        "B",
+        "D",
+        "X"
+      ],
+      "best": {
+        "A": 1,
+        "B": 2,
+        "C": 1,
+        "D": 3,
+        "E": 4,
+        "F": 5,
+        "X": 4
+      },
+      "prev": {
+        "A": null,
+        "B": "A",
+        "C": null,
+        "D": "B",
+        "E": "D",
+        "F": "E",
+        "X": "D"
+      },
+      "subsets": 128
+    },
+    "later_root": {
+      "a": 0,
+      "end": 18,
+      "count": 4,
+      "route": [
+        "A",
+        "B",
+        "D",
+        "X"
+      ],
+      "best": {
+        "A": 1,
+        "B": 2,
+        "C": 1,
+        "D": 3,
+        "E": 4,
+        "F": 5,
+        "X": 4,
+        "L": -1
+      },
+      "prev": {
+        "A": null,
+        "B": "A",
+        "C": null,
+        "D": "B",
+        "E": "D",
+        "F": "E",
+        "X": "D",
+        "L": null
+      },
+      "subsets": 256
+    },
+    "tie_context": {
+      "a": 0,
+      "end": 18,
+      "count": 4,
+      "route": [
+        "A",
+        "B",
+        "D",
+        "X"
+      ],
+      "best": {
+        "A": 1,
+        "B": 2,
+        "C": 1,
+        "D": 3,
+        "E": 4,
+        "F": 5,
+        "X": 4,
+        "Y": 4
+      },
+      "prev": {
+        "A": null,
+        "B": "A",
+        "C": null,
+        "D": "B",
+        "E": "D",
+        "F": "E",
+        "X": "D",
+        "Y": "D"
+      },
+      "subsets": 256
+    },
+    "empty": {
+      "a": null,
+      "end": null,
+      "count": 0,
+      "route": [],
+      "best": {},
+      "prev": {},
+      "subsets": 1
+    }
+  },
+  "subsets_total": 641,
+  "scope": "Graph-only DP and isolated source arithmetic; no candidate generator, compatibility proof or production execution."
+}

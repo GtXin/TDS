@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "backup_exact": true,
+    "definition_unchanged": true,
+    "other_notes_unchanged": true,
+    "appendices_and_references_unchanged": true,
+    "saved_main_matches_reviewed_draft": true,
+    "saved_algorithm_matches_reviewed_draft": true,
+    "saved_reasoning_matches_reviewed_draft": true,
+    "saved_pending_matches_reviewed_draft": true,
+    "protected_files_unchanged": true,
+    "local_link_targets_exist": true,
+    "fences_balanced": true,
+    "main_section_order": true,
+    "algorithm_section_order": true,
+    "002c_honestly_empty": true,
+    "002d_honestly_empty": true,
+    "002e_honestly_empty": true,
+    "002f_honestly_empty": true,
+    "no_new_trailing_whitespace": true
+  },
+  "protected_count": 32,
+  "changed_protected": [],
+  "link_count": 29,
+  "missing_links": [],
+  "scope": "Documentation preservation and consistency only; no line-segment DP implementation, detector or optimization validation executed."
+}

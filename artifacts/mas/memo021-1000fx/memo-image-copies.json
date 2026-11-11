@@ -1,0 +1,26 @@
+[
+  {
+    "source": "artifacts/mas/memo021-1000fx/charts/strong/overview.png",
+    "target": "docs/memo/memoWX_021_Chan_xianduan/xd-p1-1000fx-strong-overview.png",
+    "sha256": "cf99451488b94885fe51c7e3b0ab41d538797ff077f44126b78720d49759c1dc",
+    "root_full_resolution_inspected": true
+  },
+  {
+    "source": "artifacts/mas/memo021-1000fx/charts/weak/overview.png",
+    "target": "docs/memo/memoWX_021_Chan_xianduan/xd-p1-1000fx-weak-overview.png",
+    "sha256": "4401adfb0698b454ea9d2df62602b8e7151a54d200b0d1fe2cef5e95eee83da4",
+    "root_full_resolution_inspected": true
+  },
+  {
+    "source": "artifacts/mas/memo021-1000fx/charts/strong/detail-007.png",
+    "target": "docs/memo/memoWX_021_Chan_xianduan/xd-p1-1000fx-strong-detail.png",
+    "sha256": "bbbbd0c4673243cc983b7895c9c1fffd778b3d278ca6cc9f59db4d0e8c17328d",
+    "root_full_resolution_inspected": true
+  },
+  {
+    "source": "artifacts/mas/memo021-1000fx/charts/weak/detail-012.png",
+    "target": "docs/memo/memoWX_021_Chan_xianduan/xd-p1-1000fx-weak-tail.png",
+    "sha256": "fb2ae650c5731ccf76209add061170a2aa24873ad7b2667fa679896379a76c8d",
+    "root_full_resolution_inspected": true
+  }
+]

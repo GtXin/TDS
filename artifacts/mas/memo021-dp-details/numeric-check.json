@@ -1,0 +1,556 @@
+{
+  "scope": "Arithmetic on supplied immutable legal-pen endpoint fixtures plus DP selection on supplied abstract certified-state DAGs. No CC execution; no source-to-graph completeness/compatibility proof; no production algorithm validation.",
+  "source_fixtures": {
+    "no_gap": {
+      "prices": [
+        10,
+        20,
+        15,
+        25,
+        18,
+        22,
+        12
+      ],
+      "candidate_member_pens_half_open": [
+        0,
+        3
+      ],
+      "geometry_endpoint": {
+        "P": 3,
+        "price": 25
+      },
+      "F1": {
+        "pen_indices": [
+          1,
+          3,
+          5
+        ],
+        "intervals": [
+          [
+            15,
+            20
+          ],
+          [
+            18,
+            25
+          ],
+          [
+            12,
+            22
+          ]
+        ],
+        "type": "strict_top",
+        "gap": false
+      },
+      "evidence": {
+        "last_pen": 5,
+        "last_P": 6,
+        "price": 12
+      },
+      "candidate_first3_common": [
+        15,
+        20
+      ],
+      "reverse_first3_common": [
+        18,
+        22
+      ],
+      "open_tail_pens_half_open": [
+        3,
+        6
+      ]
+    },
+    "gap": {
+      "prices": [
+        10,
+        18,
+        14,
+        24,
+        19,
+        22,
+        16,
+        20,
+        12,
+        17,
+        14,
+        21
+      ],
+      "candidate_member_pens_half_open": [
+        0,
+        3
+      ],
+      "geometry_endpoint": {
+        "P": 3,
+        "price": 24
+      },
+      "F1": {
+        "pen_indices": [
+          1,
+          3,
+          5
+        ],
+        "intervals": [
+          [
+            14,
+            18
+          ],
+          [
+            19,
+            24
+          ],
+          [
+            16,
+            22
+          ]
+        ],
+        "type": "strict_top",
+        "gap": true,
+        "comparison": "18 < 19"
+      },
+      "prefix_last_P6_status": "gap_candidate_only_no_F2_bottom",
+      "F2": {
+        "all_up_pen_indices": [
+          4,
+          6,
+          8,
+          10
+        ],
+        "last3_pen_indices": [
+          6,
+          8,
+          10
+        ],
+        "last3_intervals": [
+          [
+            16,
+            20
+          ],
+          [
+            12,
+            17
+          ],
+          [
+            14,
+            21
+          ]
+        ],
+        "type": "strict_bottom",
+        "bottom_geometry_P": 8,
+        "bottom_price": 12
+      },
+      "evidence": {
+        "last_pen": 10,
+        "last_P": 11,
+        "price": 21
+      },
+      "candidate_first3_common": [
+        14,
+        18
+      ],
+      "reverse_first3_common": [
+        19,
+        22
+      ],
+      "reverse_candidate_member_pens_half_open": [
+        3,
+        8
+      ],
+      "open_tail_pens_half_open": [
+        3,
+        11
+      ],
+      "scope": "Only confirms original P3 boundary by the second rule in this no-inclusion example; not a complete source-state graph."
+    }
+  },
+  "abstract_graphs": {
+    "base": {
+      "nodes": {
+        "A": {
+          "i": 0,
+          "j": 3,
+          "pred": [],
+          "root": true
+        },
+        "B": {
+          "i": 3,
+          "j": 6,
+          "pred": [
+            "A"
+          ],
+          "root": false
+        },
+        "C": {
+          "i": 0,
+          "j": 9,
+          "pred": [],
+          "root": true
+        },
+        "D": {
+          "i": 6,
+          "j": 9,
+          "pred": [
+            "B"
+          ],
+          "root": false
+        },
+        "E": {
+          "i": 9,
+          "j": 12,
+          "pred": [
+            "C",
+            "D"
+          ],
+          "root": false
+        },
+        "F": {
+          "i": 12,
+          "j": 15,
+          "pred": [
+            "E"
+          ],
+          "root": false
+        },
+        "X": {
+          "i": 9,
+          "j": 18,
+          "pred": [
+            "C",
+            "D"
+          ],
+          "root": false
+        }
+      },
+      "dp": {
+        "a": 0,
+        "end": 18,
+        "count": 4,
+        "route": [
+          "A",
+          "B",
+          "D",
+          "X"
+        ],
+        "best": {
+          "A": 1,
+          "B": 2,
+          "C": 1,
+          "D": 3,
+          "E": 4,
+          "F": 5,
+          "X": 4
+        },
+        "prev": {
+          "A": null,
+          "B": "A",
+          "C": null,
+          "D": "B",
+          "E": "D",
+          "F": "E",
+          "X": "D"
+        }
+      },
+      "independent_subset_reference": {
+        "a": 0,
+        "end": 18,
+        "count": 4,
+        "paths": [
+          [
+            "A",
+            "B",
+            "D",
+            "X"
+          ]
+        ],
+        "best": {
+          "A": 1,
+          "B": 2,
+          "C": 1,
+          "D": 3,
+          "E": 4,
+          "F": 5,
+          "X": 4
+        },
+        "subset_count": 128,
+        "valid_prefix_paths": 10
+      },
+      "status": "PASS"
+    },
+    "later_root": {
+      "nodes": {
+        "A": {
+          "i": 0,
+          "j": 3,
+          "pred": [],
+          "root": true
+        },
+        "B": {
+          "i": 3,
+          "j": 6,
+          "pred": [
+            "A"
+          ],
+          "root": false
+        },
+        "C": {
+          "i": 0,
+          "j": 9,
+          "pred": [],
+          "root": true
+        },
+        "D": {
+          "i": 6,
+          "j": 9,
+          "pred": [
+            "B"
+          ],
+          "root": false
+        },
+        "E": {
+          "i": 9,
+          "j": 12,
+          "pred": [
+            "C",
+            "D"
+          ],
+          "root": false
+        },
+        "F": {
+          "i": 12,
+          "j": 15,
+          "pred": [
+            "E"
+          ],
+          "root": false
+        },
+        "X": {
+          "i": 9,
+          "j": 18,
+          "pred": [
+            "C",
+            "D"
+          ],
+          "root": false
+        },
+        "L": {
+          "i": 2,
+          "j": 21,
+          "pred": [],
+          "root": true
+        }
+      },
+      "dp": {
+        "a": 0,
+        "end": 18,
+        "count": 4,
+        "route": [
+          "A",
+          "B",
+          "D",
+          "X"
+        ],
+        "best": {
+          "A": 1,
+          "B": 2,
+          "C": 1,
+          "D": 3,
+          "E": 4,
+          "F": 5,
+          "X": 4,
+          "L": -1
+        },
+        "prev": {
+          "A": null,
+          "B": "A",
+          "C": null,
+          "D": "B",
+          "E": "D",
+          "F": "E",
+          "X": "D",
+          "L": null
+        }
+      },
+      "independent_subset_reference": {
+        "a": 0,
+        "end": 18,
+        "count": 4,
+        "paths": [
+          [
+            "A",
+            "B",
+            "D",
+            "X"
+          ]
+        ],
+        "best": {
+          "A": 1,
+          "B": 2,
+          "C": 1,
+          "D": 3,
+          "E": 4,
+          "F": 5,
+          "X": 4,
+          "L": -1
+        },
+        "subset_count": 256,
+        "valid_prefix_paths": 10
+      },
+      "status": "PASS"
+    },
+    "tie_context": {
+      "nodes": {
+        "A": {
+          "i": 0,
+          "j": 3,
+          "pred": [],
+          "root": true
+        },
+        "B": {
+          "i": 3,
+          "j": 6,
+          "pred": [
+            "A"
+          ],
+          "root": false
+        },
+        "C": {
+          "i": 0,
+          "j": 9,
+          "pred": [],
+          "root": true
+        },
+        "D": {
+          "i": 6,
+          "j": 9,
+          "pred": [
+            "B"
+          ],
+          "root": false
+        },
+        "E": {
+          "i": 9,
+          "j": 12,
+          "pred": [
+            "C",
+            "D"
+          ],
+          "root": false
+        },
+        "F": {
+          "i": 12,
+          "j": 15,
+          "pred": [
+            "E"
+          ],
+          "root": false
+        },
+        "X": {
+          "i": 9,
+          "j": 18,
+          "pred": [
+            "C",
+            "D"
+          ],
+          "root": false
+        },
+        "Y": {
+          "i": 9,
+          "j": 18,
+          "pred": [
+            "C",
+            "D"
+          ],
+          "root": false
+        }
+      },
+      "dp": {
+        "a": 0,
+        "end": 18,
+        "count": 4,
+        "route": [
+          "A",
+          "B",
+          "D",
+          "X"
+        ],
+        "best": {
+          "A": 1,
+          "B": 2,
+          "C": 1,
+          "D": 3,
+          "E": 4,
+          "F": 5,
+          "X": 4,
+          "Y": 4
+        },
+        "prev": {
+          "A": null,
+          "B": "A",
+          "C": null,
+          "D": "B",
+          "E": "D",
+          "F": "E",
+          "X": "D",
+          "Y": "D"
+        }
+      },
+      "independent_subset_reference": {
+        "a": 0,
+        "end": 18,
+        "count": 4,
+        "paths": [
+          [
+            "A",
+            "B",
+            "D",
+            "X"
+          ],
+          [
+            "A",
+            "B",
+            "D",
+            "Y"
+          ]
+        ],
+        "best": {
+          "A": 1,
+          "B": 2,
+          "C": 1,
+          "D": 3,
+          "E": 4,
+          "F": 5,
+          "X": 4,
+          "Y": 4
+        },
+        "subset_count": 256,
+        "valid_prefix_paths": 12
+      },
+      "status": "PASS"
+    },
+    "empty": {
+      "nodes": {},
+      "dp": {
+        "a": null,
+        "end": null,
+        "count": 0,
+        "route": [],
+        "best": {},
+        "prev": {}
+      },
+      "independent_subset_reference": {
+        "a": null,
+        "end": null,
+        "count": 0,
+        "paths": [],
+        "best": {},
+        "subset_count": 1
+      },
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "source_fixtures_passed": 2,
+    "graph_cases_passed": 4,
+    "enumerated_subsets_total": 641,
+    "all_pass": true
+  }
+}

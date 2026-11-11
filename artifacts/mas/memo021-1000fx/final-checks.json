@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "definition_unchanged": true,
+    "appendices_and_references_unchanged": true,
+    "profile_backup_hash": true,
+    "results_backup_hash": true,
+    "protected_files_unchanged": true,
+    "memo_local_links": true,
+    "balanced_fences": true,
+    "002_order": true,
+    "real_results_section_present": true,
+    "XD_P1_explicit": true,
+    "four_png_copies_exact": true,
+    "independent_full_profile_pass": true,
+    "chart_source_coverage_pass": true,
+    "all_png_rendered": true,
+    "reported_routes_correct": true,
+    "open_tails_returned": true,
+    "profile_saved_before_real_run": true
+  },
+  "protected_files_excluding_expected_021": 31,
+  "changed_protected": [],
+  "memo_link_count": 39,
+  "missing_links": [],
+  "new_pngs": 4,
+  "atlas_pages": 26,
+  "scope": "Documentation/source-protection/figure identity and recorded XD-P1 checks; no author-equivalence claim."
+}

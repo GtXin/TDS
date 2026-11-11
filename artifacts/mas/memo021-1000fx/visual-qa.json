@@ -1,0 +1,24 @@
+{
+  "root_inspection": {
+    "initial_all26_pages_via_contacts": [
+      "charts/contact-01.png",
+      "charts/contact-02.png",
+      "charts/contact-03.png",
+      "charts/contact-04.png",
+      "charts/contact-05.png"
+    ],
+    "final_four_full_resolution": [
+      "strong/overview.png",
+      "weak/overview.png",
+      "strong/detail-007.png",
+      "weak/detail-012.png"
+    ],
+    "findings": [
+      "Left-boundary label clipping corrected before final copy.",
+      "Shared XD endpoint labels combined; actual anchors/lines unchanged."
+    ],
+    "outcome": "PASS for visible source alignment, legends, bounds, candle/FX/Bi/XD overlays and open tails."
+  },
+  "independent_chart_agent": "All5final contact sheets/all26final pages inspected plus finaldetail007 full resolution.",
+  "scope": "Static native views of exact source arrays; HTML trace source coverage machine-audited, no separate browser interaction test."
+}

@@ -1,0 +1,55 @@
+{
+  "profile": "XD-P1",
+  "input_complete_fractals": 1000,
+  "modes": {
+    "strong": {
+      "pens": 167,
+      "states": 141,
+      "edges": 124,
+      "selected_segments": 15,
+      "selected_fx_bounds": [
+        0,
+        917
+      ],
+      "unresolved_pen_ranges": [
+        [
+          147,
+          167
+        ]
+      ],
+      "recognition_graph_selection_median_seconds_3runs": 0.15098583296639845,
+      "max_outdegree": 1,
+      "kind_counts": {
+        "gap": 2,
+        "secondary_067": 2,
+        "no_gap": 5,
+        "direct_071": 6
+      }
+    },
+    "weak": {
+      "pens": 239,
+      "states": 212,
+      "edges": 203,
+      "selected_segments": 26,
+      "selected_fx_bounds": [
+        0,
+        986
+      ],
+      "unresolved_pen_ranges": [
+        [
+          234,
+          239
+        ]
+      ],
+      "recognition_graph_selection_median_seconds_3runs": 0.4116673749522306,
+      "max_outdegree": 1,
+      "kind_counts": {
+        "no_gap": 10,
+        "gap": 2,
+        "secondary_067": 2,
+        "direct_071": 12
+      }
+    }
+  },
+  "scope": "Fixed snapshot own conservative operational profile; no CC execution or author-completeness/online guarantee."
+}

@@ -1,0 +1,20 @@
+{
+  "preparation": "PASS",
+  "independent_selected_pairs": 406,
+  "source_prefix_identity": "PASS",
+  "historical_scaling_route_crosscheck": {
+    "strong": {
+      "matches_existing_scaling_exact_route": true,
+      "selected_pairs_valid": true
+    },
+    "weak": {
+      "matches_existing_scaling_exact_route": true,
+      "selected_pairs_valid": true
+    }
+  },
+  "ruff": "PASS",
+  "mypy": "UNAVAILABLE: No module named mypy in current .venv",
+  "black": "UNAVAILABLE: No module named black in current .venv",
+  "no_install": true,
+  "no_xianduan_or_cc_execution": true
+}

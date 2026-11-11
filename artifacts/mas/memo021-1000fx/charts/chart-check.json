@@ -1,0 +1,29 @@
+{
+  "pages": 26,
+  "modes": {
+    "strong": {
+      "all_pages": 13,
+      "details": 12,
+      "raw_coverage": 3244,
+      "merged_coverage": 2040,
+      "fx_coverage": 1000,
+      "source_arrays_and_endpoints_exact": true,
+      "unique_shared_endpoint_annotations": true
+    },
+    "weak": {
+      "all_pages": 13,
+      "details": 12,
+      "raw_coverage": 3244,
+      "merged_coverage": 2040,
+      "fx_coverage": 1000,
+      "source_arrays_and_endpoints_exact": true,
+      "unique_shared_endpoint_annotations": true
+    }
+  },
+  "png_dimensions": [
+    1800,
+    900
+  ],
+  "all_pass": true,
+  "scope": "Atlas source coordinates/coverage and rendered artifacts, not recognizer correctness."
+}

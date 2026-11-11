@@ -1,0 +1,41 @@
+{
+  "modes": {
+    "strong": {
+      "overview": 1,
+      "detail_pages": 12,
+      "raw_coverage": 3244,
+      "merged_coverage": 2040,
+      "fractal_coverage": 1000,
+      "bi_coverage": 167,
+      "xd_coverage": 15,
+      "xd_roles": {
+        "primary": 13,
+        "derived": 2
+      }
+    },
+    "weak": {
+      "overview": 1,
+      "detail_pages": 12,
+      "raw_coverage": 3244,
+      "merged_coverage": 2040,
+      "fractal_coverage": 1000,
+      "bi_coverage": 239,
+      "xd_coverage": 26,
+      "xd_roles": {
+        "primary": 24,
+        "derived": 2
+      }
+    }
+  },
+  "seconds": 0.5239673749892972,
+  "source_results": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/memo021-1000fx/results.json",
+  "png_rendered": true,
+  "visual_qa": "PASS agent finalcontact26pages plusstrong/detail007 fullres; parentcriticalreview separate",
+  "png_count": 26,
+  "png_dimensions": [
+    1800,
+    900
+  ],
+  "render_seconds": 0.7539680004119873,
+  "chart_source_audit": "PASS all26 sourcearrays/coordinates andPNGdimensions; chart-check.json"
+}

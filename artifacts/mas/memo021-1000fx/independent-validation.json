@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "modes": {
+    "strong": {
+      "status": "PASS",
+      "input_sha256": "a917c21ebd54299b0f7fa0eb9a27f84e66d27617e7e88474c5aabf5dce9b885c",
+      "pens": 167,
+      "origin_boundary_pairs_independently_examined": 6889,
+      "raw_completion_alternatives": 628,
+      "compatible_alternatives": 611,
+      "primary_certificates_fully_reconstructed": 128,
+      "nodes_independently_reconstructed_and_checked": 141,
+      "edges_independently_reconstructed_and_checked": 124,
+      "dfs_all_path_prefixes_from_earliest_roots": 15,
+      "all_best_prev_and_tie_rules": "PASS",
+      "selected_segments": 15,
+      "selected_endpoints": [
+        0,
+        21,
+        24,
+        39,
+        42,
+        47,
+        54,
+        61,
+        76,
+        79,
+        90,
+        93,
+        100,
+        103,
+        110,
+        147
+      ],
+      "selected_fx_bounds": [
+        0,
+        917
+      ],
+      "unresolved_pen_ranges": [
+        [
+          147,
+          167
+        ]
+      ],
+      "independent_list_reduction_cache": {
+        "hits": 19052,
+        "misses": 4477,
+        "maxsize": null,
+        "currsize": 4477
+      }
+    },
+    "weak": {
+      "status": "PASS",
+      "input_sha256": "84e83dbb3c00ae5948982c470fbf8ccf16dd4df8829bcc608587e57d197e2063",
+      "pens": 239,
+      "origin_boundary_pairs_independently_examined": 14161,
+      "raw_completion_alternatives": 1441,
+      "compatible_alternatives": 1418,
+      "primary_certificates_fully_reconstructed": 196,
+      "nodes_independently_reconstructed_and_checked": 212,
+      "edges_independently_reconstructed_and_checked": 203,
+      "dfs_all_path_prefixes_from_earliest_roots": 26,
+      "all_best_prev_and_tie_rules": "PASS",
+      "selected_segments": 26,
+      "selected_endpoints": [
+        0,
+        23,
+        26,
+        33,
+        36,
+        55,
+        58,
+        65,
+        74,
+        83,
+        96,
+        99,
+        104,
+        109,
+        124,
+        129,
+        138,
+        149,
+        154,
+        169,
+        180,
+        185,
+        188,
+        193,
+        202,
+        221,
+        234
+      ],
+      "selected_fx_bounds": [
+        0,
+        986
+      ],
+      "unresolved_pen_ranges": [
+        [
+          234,
+          239
+        ]
+      ],
+      "independent_list_reduction_cache": {
+        "hits": 44717,
+        "misses": 8911,
+        "maxsize": null,
+        "currsize": 8911
+      }
+    }
+  },
+  "scope": "XD-P1 profile consistency only, not author-complete or unique Chan segmentation",
+  "recognizer_imported": false,
+  "upstream_source_hashes_unchanged": 6,
+  "seconds": 0.2416863749967888,
+  "limitations": [
+    "The declared experimental rules are independently reimplemented; agreement does not prove author equivalence.",
+    "Upstream Bi legality was checked by input preparation; this script checks its fixed pen/source identity, not reruns upstream algorithm.",
+    "Candidate completeness is relative to XD-P1's finite odd endpoint enumeration and declared strict policies."
+  ]
+}
