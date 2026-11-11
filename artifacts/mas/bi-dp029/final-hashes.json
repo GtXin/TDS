@@ -1,0 +1,8 @@
+{
+  "docs/memo/memoWX_028_biFamily.md": "841818d596eba34d1f60fc85dbd2b712e6dcc84691bae4e8676fd4974612f739",
+  "src/chanlab/algo/bi.py": "79863f73d6116200bfbdadd448ee573bcfe9fae0cf9b3c984d081726b29da6f0",
+  "src/chanlab/data/bi_table.py": "d257fe421cc1ae9eca46e71265ccceb9d9093d58141038611cefb0bc009ccee2",
+  "src/chanlab/visualization/bi_plot.py": "2483f7da35e0754e7904afd3bad82ac8495ceb07b9d8040d9a406888aed19812",
+  "tests/test_bi.py": "c3fcc7fddf0c14d9e19f77dcf126bcce819438b35b2d28e4ce23ff665dec053d",
+  "docs/memo/memoWX_029_Chan_bi.md": "8b7f0c9cf374fb26aac139edde49f15ca1e56c8dc5d13ac9d596ff45acfbab97"
+}

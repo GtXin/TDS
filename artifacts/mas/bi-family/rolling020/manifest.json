@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "docs/memo/memoWX_020_Chan_bi.md": "984a0838a13d50fad9c5497a70fc0057d47b4e45153652472cd76edb850847a2",
+    "src/chanlab/algo/bi.py": "acc6ee30703e31452da79747e4d7085976f2cfc3b482dbc7e8ff097339501492",
+    "src/chanlab/visualization/bi_plot.py": "0c2c4c820d7a09bf59a0317f4d25a80f35010a6c92110edf99b4cd3688506c2e",
+    "tests/test_bi.py": "966dbec23ba0b39d923e58af6bd9694cc667b10b31f6f93e99e6aa443b3f49bb"
+  },
+  "isolated_comparison_inputs": 200,
+  "snapshot_import_paths": [
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/bi-family/rolling020/baseline/bi.py",
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/bi-family/rolling020/python_pro/bi.py"
+  ],
+  "snapshot_hashes": {
+    "baseline": "b5ce43a8822846724da45197307ba843d0b779f07272bb97d9606e10de73b356",
+    "python_pro": "acc6ee30703e31452da79747e4d7085976f2cfc3b482dbc7e8ff097339501492"
+  }
+}

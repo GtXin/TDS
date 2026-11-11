@@ -1,0 +1,10 @@
+{
+  "inputs": 100,
+  "batches": [
+    17,
+    33,
+    65
+  ],
+  "fresh_resume_equal": true,
+  "committed_prefix_unchanged": true
+}

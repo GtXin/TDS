@@ -14,6 +14,8 @@ Read [project memory](CodexMemory.md), [the shared MAS workflow](mas/README.md),
 
 ## Memo writing
 
+- Memo028 is the implementation and validation plan derived from memo029, the algorithm specification. Work on memo028, its implementation, or validation must follow memo029 and must not modify memo029 unless the user explicitly requests a specification change. Record unresolved conflicts and ask the user instead of silently changing the specification.
+
 Keep exploratory discussion in chat/terminal. Edit memos only when requested; record only essential conclusions, decisions, and necessary references, without conversational commentary, research narration, or repeated explanations.
 
 Before creating or editing memos in `docs/memo/`, read and follow [the memo writing guide](docs/memo/memoWX_006_memoWritingGuide.md). Check [the memo index](docs/memo/README.md) and existing filenames before assigning a number, and update the index when adding or renaming a memo.

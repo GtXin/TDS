@@ -1,0 +1,569 @@
+{
+  "pages_reviewed": 112,
+  "method": "All 56 full-resolution two-page contact sheets inspected using view_image after rerender; geometry and IDs separately audited by check_atlas.py",
+  "pages": [
+    {
+      "mode": "strong",
+      "page": 1,
+      "png": "strong/page-001.png"
+    },
+    {
+      "mode": "strong",
+      "page": 2,
+      "png": "strong/page-002.png"
+    },
+    {
+      "mode": "strong",
+      "page": 3,
+      "png": "strong/page-003.png"
+    },
+    {
+      "mode": "strong",
+      "page": 4,
+      "png": "strong/page-004.png"
+    },
+    {
+      "mode": "strong",
+      "page": 5,
+      "png": "strong/page-005.png"
+    },
+    {
+      "mode": "strong",
+      "page": 6,
+      "png": "strong/page-006.png"
+    },
+    {
+      "mode": "strong",
+      "page": 7,
+      "png": "strong/page-007.png"
+    },
+    {
+      "mode": "strong",
+      "page": 8,
+      "png": "strong/page-008.png"
+    },
+    {
+      "mode": "strong",
+      "page": 9,
+      "png": "strong/page-009.png"
+    },
+    {
+      "mode": "strong",
+      "page": 10,
+      "png": "strong/page-010.png"
+    },
+    {
+      "mode": "strong",
+      "page": 11,
+      "png": "strong/page-011.png"
+    },
+    {
+      "mode": "strong",
+      "page": 12,
+      "png": "strong/page-012.png"
+    },
+    {
+      "mode": "strong",
+      "page": 13,
+      "png": "strong/page-013.png"
+    },
+    {
+      "mode": "strong",
+      "page": 14,
+      "png": "strong/page-014.png"
+    },
+    {
+      "mode": "strong",
+      "page": 15,
+      "png": "strong/page-015.png"
+    },
+    {
+      "mode": "strong",
+      "page": 16,
+      "png": "strong/page-016.png"
+    },
+    {
+      "mode": "strong",
+      "page": 17,
+      "png": "strong/page-017.png"
+    },
+    {
+      "mode": "strong",
+      "page": 18,
+      "png": "strong/page-018.png"
+    },
+    {
+      "mode": "strong",
+      "page": 19,
+      "png": "strong/page-019.png"
+    },
+    {
+      "mode": "strong",
+      "page": 20,
+      "png": "strong/page-020.png"
+    },
+    {
+      "mode": "strong",
+      "page": 21,
+      "png": "strong/page-021.png"
+    },
+    {
+      "mode": "strong",
+      "page": 22,
+      "png": "strong/page-022.png"
+    },
+    {
+      "mode": "strong",
+      "page": 23,
+      "png": "strong/page-023.png"
+    },
+    {
+      "mode": "strong",
+      "page": 24,
+      "png": "strong/page-024.png"
+    },
+    {
+      "mode": "strong",
+      "page": 25,
+      "png": "strong/page-025.png"
+    },
+    {
+      "mode": "strong",
+      "page": 26,
+      "png": "strong/page-026.png"
+    },
+    {
+      "mode": "strong",
+      "page": 27,
+      "png": "strong/page-027.png"
+    },
+    {
+      "mode": "strong",
+      "page": 28,
+      "png": "strong/page-028.png"
+    },
+    {
+      "mode": "strong",
+      "page": 29,
+      "png": "strong/page-029.png"
+    },
+    {
+      "mode": "strong",
+      "page": 30,
+      "png": "strong/page-030.png"
+    },
+    {
+      "mode": "strong",
+      "page": 31,
+      "png": "strong/page-031.png"
+    },
+    {
+      "mode": "strong",
+      "page": 32,
+      "png": "strong/page-032.png"
+    },
+    {
+      "mode": "strong",
+      "page": 33,
+      "png": "strong/page-033.png"
+    },
+    {
+      "mode": "strong",
+      "page": 34,
+      "png": "strong/page-034.png"
+    },
+    {
+      "mode": "strong",
+      "page": 35,
+      "png": "strong/page-035.png"
+    },
+    {
+      "mode": "strong",
+      "page": 36,
+      "png": "strong/page-036.png"
+    },
+    {
+      "mode": "strong",
+      "page": 37,
+      "png": "strong/page-037.png"
+    },
+    {
+      "mode": "strong",
+      "page": 38,
+      "png": "strong/page-038.png"
+    },
+    {
+      "mode": "strong",
+      "page": 39,
+      "png": "strong/page-039.png"
+    },
+    {
+      "mode": "strong",
+      "page": 40,
+      "png": "strong/page-040.png"
+    },
+    {
+      "mode": "strong",
+      "page": 41,
+      "png": "strong/page-041.png"
+    },
+    {
+      "mode": "strong",
+      "page": 42,
+      "png": "strong/page-042.png"
+    },
+    {
+      "mode": "strong",
+      "page": 43,
+      "png": "strong/page-043.png"
+    },
+    {
+      "mode": "strong",
+      "page": 44,
+      "png": "strong/page-044.png"
+    },
+    {
+      "mode": "strong",
+      "page": 45,
+      "png": "strong/page-045.png"
+    },
+    {
+      "mode": "strong",
+      "page": 46,
+      "png": "strong/page-046.png"
+    },
+    {
+      "mode": "strong",
+      "page": 47,
+      "png": "strong/page-047.png"
+    },
+    {
+      "mode": "strong",
+      "page": 48,
+      "png": "strong/page-048.png"
+    },
+    {
+      "mode": "strong",
+      "page": 49,
+      "png": "strong/page-049.png"
+    },
+    {
+      "mode": "strong",
+      "page": 50,
+      "png": "strong/page-050.png"
+    },
+    {
+      "mode": "strong",
+      "page": 51,
+      "png": "strong/page-051.png"
+    },
+    {
+      "mode": "strong",
+      "page": 52,
+      "png": "strong/page-052.png"
+    },
+    {
+      "mode": "strong",
+      "page": 53,
+      "png": "strong/page-053.png"
+    },
+    {
+      "mode": "strong",
+      "page": 54,
+      "png": "strong/page-054.png"
+    },
+    {
+      "mode": "strong",
+      "page": 55,
+      "png": "strong/page-055.png"
+    },
+    {
+      "mode": "strong",
+      "page": 56,
+      "png": "strong/page-056.png"
+    },
+    {
+      "mode": "weak",
+      "page": 1,
+      "png": "weak/page-001.png"
+    },
+    {
+      "mode": "weak",
+      "page": 2,
+      "png": "weak/page-002.png"
+    },
+    {
+      "mode": "weak",
+      "page": 3,
+      "png": "weak/page-003.png"
+    },
+    {
+      "mode": "weak",
+      "page": 4,
+      "png": "weak/page-004.png"
+    },
+    {
+      "mode": "weak",
+      "page": 5,
+      "png": "weak/page-005.png"
+    },
+    {
+      "mode": "weak",
+      "page": 6,
+      "png": "weak/page-006.png"
+    },
+    {
+      "mode": "weak",
+      "page": 7,
+      "png": "weak/page-007.png"
+    },
+    {
+      "mode": "weak",
+      "page": 8,
+      "png": "weak/page-008.png"
+    },
+    {
+      "mode": "weak",
+      "page": 9,
+      "png": "weak/page-009.png"
+    },
+    {
+      "mode": "weak",
+      "page": 10,
+      "png": "weak/page-010.png"
+    },
+    {
+      "mode": "weak",
+      "page": 11,
+      "png": "weak/page-011.png"
+    },
+    {
+      "mode": "weak",
+      "page": 12,
+      "png": "weak/page-012.png"
+    },
+    {
+      "mode": "weak",
+      "page": 13,
+      "png": "weak/page-013.png"
+    },
+    {
+      "mode": "weak",
+      "page": 14,
+      "png": "weak/page-014.png"
+    },
+    {
+      "mode": "weak",
+      "page": 15,
+      "png": "weak/page-015.png"
+    },
+    {
+      "mode": "weak",
+      "page": 16,
+      "png": "weak/page-016.png"
+    },
+    {
+      "mode": "weak",
+      "page": 17,
+      "png": "weak/page-017.png"
+    },
+    {
+      "mode": "weak",
+      "page": 18,
+      "png": "weak/page-018.png"
+    },
+    {
+      "mode": "weak",
+      "page": 19,
+      "png": "weak/page-019.png"
+    },
+    {
+      "mode": "weak",
+      "page": 20,
+      "png": "weak/page-020.png"
+    },
+    {
+      "mode": "weak",
+      "page": 21,
+      "png": "weak/page-021.png"
+    },
+    {
+      "mode": "weak",
+      "page": 22,
+      "png": "weak/page-022.png"
+    },
+    {
+      "mode": "weak",
+      "page": 23,
+      "png": "weak/page-023.png"
+    },
+    {
+      "mode": "weak",
+      "page": 24,
+      "png": "weak/page-024.png"
+    },
+    {
+      "mode": "weak",
+      "page": 25,
+      "png": "weak/page-025.png"
+    },
+    {
+      "mode": "weak",
+      "page": 26,
+      "png": "weak/page-026.png"
+    },
+    {
+      "mode": "weak",
+      "page": 27,
+      "png": "weak/page-027.png"
+    },
+    {
+      "mode": "weak",
+      "page": 28,
+      "png": "weak/page-028.png"
+    },
+    {
+      "mode": "weak",
+      "page": 29,
+      "png": "weak/page-029.png"
+    },
+    {
+      "mode": "weak",
+      "page": 30,
+      "png": "weak/page-030.png"
+    },
+    {
+      "mode": "weak",
+      "page": 31,
+      "png": "weak/page-031.png"
+    },
+    {
+      "mode": "weak",
+      "page": 32,
+      "png": "weak/page-032.png"
+    },
+    {
+      "mode": "weak",
+      "page": 33,
+      "png": "weak/page-033.png"
+    },
+    {
+      "mode": "weak",
+      "page": 34,
+      "png": "weak/page-034.png"
+    },
+    {
+      "mode": "weak",
+      "page": 35,
+      "png": "weak/page-035.png"
+    },
+    {
+      "mode": "weak",
+      "page": 36,
+      "png": "weak/page-036.png"
+    },
+    {
+      "mode": "weak",
+      "page": 37,
+      "png": "weak/page-037.png"
+    },
+    {
+      "mode": "weak",
+      "page": 38,
+      "png": "weak/page-038.png"
+    },
+    {
+      "mode": "weak",
+      "page": 39,
+      "png": "weak/page-039.png"
+    },
+    {
+      "mode": "weak",
+      "page": 40,
+      "png": "weak/page-040.png"
+    },
+    {
+      "mode": "weak",
+      "page": 41,
+      "png": "weak/page-041.png"
+    },
+    {
+      "mode": "weak",
+      "page": 42,
+      "png": "weak/page-042.png"
+    },
+    {
+      "mode": "weak",
+      "page": 43,
+      "png": "weak/page-043.png"
+    },
+    {
+      "mode": "weak",
+      "page": 44,
+      "png": "weak/page-044.png"
+    },
+    {
+      "mode": "weak",
+      "page": 45,
+      "png": "weak/page-045.png"
+    },
+    {
+      "mode": "weak",
+      "page": 46,
+      "png": "weak/page-046.png"
+    },
+    {
+      "mode": "weak",
+      "page": 47,
+      "png": "weak/page-047.png"
+    },
+    {
+      "mode": "weak",
+      "page": 48,
+      "png": "weak/page-048.png"
+    },
+    {
+      "mode": "weak",
+      "page": 49,
+      "png": "weak/page-049.png"
+    },
+    {
+      "mode": "weak",
+      "page": 50,
+      "png": "weak/page-050.png"
+    },
+    {
+      "mode": "weak",
+      "page": 51,
+      "png": "weak/page-051.png"
+    },
+    {
+      "mode": "weak",
+      "page": 52,
+      "png": "weak/page-052.png"
+    },
+    {
+      "mode": "weak",
+      "page": 53,
+      "png": "weak/page-053.png"
+    },
+    {
+      "mode": "weak",
+      "page": 54,
+      "png": "weak/page-054.png"
+    },
+    {
+      "mode": "weak",
+      "page": 55,
+      "png": "weak/page-055.png"
+    },
+    {
+      "mode": "weak",
+      "page": 56,
+      "png": "weak/page-056.png"
+    }
+  ],
+  "correction": "Boundary FX label clipping corrected before complete rerender and review",
+  "limitations": "Dense adjacent FX labels can overlap in static200bar pages; interactive HTML zoom/hover provides detail.",
+  "missing_pages": 0
+}

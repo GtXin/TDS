@@ -1,0 +1,92 @@
+{
+  "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261110_215003_966293.md",
+  "before_sha256": "984a0838a13d50fad9c5497a70fc0057d47b4e45153652472cd76edb850847a2",
+  "after_sha256": "97992f979922b01fb88d9e0fadd3659bebe91861b23cb549948dd2fdfa60d8ab",
+  "changed_sections": [
+    "000 scope",
+    "002 state/tree/examples/helpers/pseudocode",
+    "003 continuation reasoning",
+    "004 formatting only",
+    "005 actual pending items"
+  ],
+  "definition001_exact": true,
+  "appendices_and_references_exact": true,
+  "original_note_sha256": "826433d85d6571b2039925712cad7a2e70a7a2cb3efd8cbb06f5cc0f3d9a58f0",
+  "prompt_nonformat_text_exact": true,
+  "one_active_tree": true,
+  "numbered_algorithm_steps_not_markdown_headings": true,
+  "balanced_fences": true,
+  "local_file_links_resolve": 36,
+  "no_new_trailing_whitespace": true,
+  "protected_hashes_at_apply": {
+    "docs/memo/README.md": "1c41009ea3739e1257831de366a9094abf8dacb94559572aaf4f74a42dd7bde2",
+    "docs/memo/memoWX_021_Chan_xianduan.md": "536158aa2817030c148148b04d3438947444cda0b5fc472db8b8ef824abc5328",
+    "docs/memo/memoWX_028_biFamily.md": "af892d963653a8c137f53426d9675db4b1264e37f059e72223c11e9d181fb8ed",
+    "src/chanlab/algo/bi.py": "acc6ee30703e31452da79747e4d7085976f2cfc3b482dbc7e8ff097339501492",
+    "src/chanlab/data/bi_table.py": "868d8b62e876af5fb7ac6bc1db5a42468f94456575b8e6d607d78a79190e6d6d",
+    "src/chanlab/visualization/bi_plot.py": "167be9816e90d4dff853e4e7bb8b458839a988dd7296002cbf9ed7c093a46494",
+    "tests/test_bi.py": "6522c31e8b039735d62d3a68dcd59711bb6e00b517defd14502735b65bc7fa98"
+  },
+  "further_concurrent_changes": {
+    "docs/memo/memoWX_028_biFamily.md": "af892d963653a8c137f53426d9675db4b1264e37f059e72223c11e9d181fb8ed"
+  },
+  "independent_format_numeric_and_contract_reviews": "PASS",
+  "production_edited_by_this_task": false,
+  "concurrent_changes_reviewed": {
+    "docs/memo/memoWX_028_biFamily.md": {
+      "before": "9ae89a755f699e9b58dca36948bbd3de25075071c8988aafe811a2537ca0fa20",
+      "now": "df95d251b4a3c464fba40870482c8a05e513e12db38ef9614979ad71f668cd87"
+    },
+    "src/chanlab/algo/bi.py": {
+      "before": "415d33ae7645c5fddd8b0fd2ff212e63926fd6ff2a661afdf1d48b53cefde4a8",
+      "now": "acc6ee30703e31452da79747e4d7085976f2cfc3b482dbc7e8ff097339501492"
+    },
+    "src/chanlab/visualization/bi_plot.py": {
+      "before": "2f8740b782fabd8798b1b7c27d26c56fa8c0d436d71fe09341686b5a7a862346",
+      "now": "167be9816e90d4dff853e4e7bb8b458839a988dd7296002cbf9ed7c093a46494"
+    },
+    "tests/test_bi.py": {
+      "before": "12bb7c902176df66ca03ce5a908fc7df015146e9da9ca7fc1d7348a8f898c02e",
+      "now": "6522c31e8b039735d62d3a68dcd59711bb6e00b517defd14502735b65bc7fa98"
+    }
+  },
+  "obsidian_final_check": "PASS: observed final004 in Reading view; original numbered hierarchy, indented6.a continuation and one continuous collaboration quote visible. Earlier concurrent tab changes resolved through exact Quick Switcher selection.",
+  "checkpoint_model_checks": {
+    "counts": {
+      "calls": 163,
+      "success": 158,
+      "expected_rejections": 5,
+      "first": 122,
+      "extension": 56,
+      "reverse": 134
+    },
+    "nonempty_fixtures": 20,
+    "nonempty_split_points": 40,
+    "all_Q_fields_equal_one_shot": true,
+    "saved_Q_not_mutated": true,
+    "no_new_FX_context_range_refresh": true,
+    "identical_snapshot_idempotent": true
+  },
+  "original_prompt_normalized_lines": 10,
+  "source_current_and_reviewed_draft_exact": true,
+  "edits": [
+    {
+      "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261110_214313_172476.md",
+      "after_sha256": "d7cbe74e821fe7946a60c37cd375aec2536fc90eed1303e4e368929f9c4870c7",
+      "description": "Reviewed Q contract and004 wrapper repair; original note byte exact."
+    },
+    {
+      "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261110_215003_966293.md",
+      "after_sha256": "97992f979922b01fb88d9e0fadd3659bebe91861b23cb549948dd2fdfa60d8ab",
+      "description": "004format-only hard linebreak and continuation indent in6.a after observed softwrap."
+    }
+  ],
+  "original_note_source_bytes": 854,
+  "formatted_note_bytes": 865,
+  "original_note_nonformat_text_exact": true,
+  "original_note_numbering_and_hierarchy_preserved": true,
+  "note_format_adjustment": "One newline and continuation indent before6.a cache assignments; no words/numbers/punctuation changed.",
+  "final_source_checks": "PASS: exact reviewed draft,001/allappendices preserved,36local filelinks,one active tree,no numbered step headings,no new trailing whitespace.",
+  "original_note_nonformat_sha256": "78b880410fc210ac4f45239169db581e4fb04cef870669901bd16ae2942e2821",
+  "remaining_blockers": []
+}

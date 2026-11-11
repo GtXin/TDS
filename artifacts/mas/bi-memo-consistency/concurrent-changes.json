@@ -1,0 +1,18 @@
+{
+  "docs/memo/memoWX_028_biFamily.md": {
+    "before": "9ae89a755f699e9b58dca36948bbd3de25075071c8988aafe811a2537ca0fa20",
+    "now": "df95d251b4a3c464fba40870482c8a05e513e12db38ef9614979ad71f668cd87"
+  },
+  "src/chanlab/algo/bi.py": {
+    "before": "415d33ae7645c5fddd8b0fd2ff212e63926fd6ff2a661afdf1d48b53cefde4a8",
+    "now": "acc6ee30703e31452da79747e4d7085976f2cfc3b482dbc7e8ff097339501492"
+  },
+  "src/chanlab/visualization/bi_plot.py": {
+    "before": "2f8740b782fabd8798b1b7c27d26c56fa8c0d436d71fe09341686b5a7a862346",
+    "now": "167be9816e90d4dff853e4e7bb8b458839a988dd7296002cbf9ed7c093a46494"
+  },
+  "tests/test_bi.py": {
+    "before": "12bb7c902176df66ca03ce5a908fc7df015146e9da9ca7fc1d7348a8f898c02e",
+    "now": "6522c31e8b039735d62d3a68dcd59711bb6e00b517defd14502735b65bc7fa98"
+  }
+}

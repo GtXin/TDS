@@ -1,0 +1,18 @@
+{
+  "pages": 112,
+  "modes": {
+    "strong": {
+      "pages": 56,
+      "raw_coverage": 10060,
+      "fractal_coverage": 3027,
+      "stroke_coverage": 480
+    },
+    "weak": {
+      "pages": 56,
+      "raw_coverage": 10060,
+      "fractal_coverage": 3027,
+      "stroke_coverage": 682
+    }
+  },
+  "all_marker_ids_and_windows_checked": true
+}

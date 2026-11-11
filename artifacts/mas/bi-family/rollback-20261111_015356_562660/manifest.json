@@ -1,0 +1,8 @@
+{
+  "src/chanlab/algo/bi.py": "acc6ee30703e31452da79747e4d7085976f2cfc3b482dbc7e8ff097339501492",
+  "src/chanlab/data/bi_table.py": "868d8b62e876af5fb7ac6bc1db5a42468f94456575b8e6d607d78a79190e6d6d",
+  "src/chanlab/visualization/bi_plot.py": "167be9816e90d4dff853e4e7bb8b458839a988dd7296002cbf9ed7c093a46494",
+  "tests/test_bi.py": "6522c31e8b039735d62d3a68dcd59711bb6e00b517defd14502735b65bc7fa98",
+  "src/chanlab/data/feature_table.py": "a862b0ddad411e9d4b7119a706e21eec646474def831e0dbfe2e411dc0e65059",
+  "src/chanlab/algo/chan_table.py": "a85880e169bb5486d356a79a74dfff9609c481b38923f98249704a6c09299662"
+}

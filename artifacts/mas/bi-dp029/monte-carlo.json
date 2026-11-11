@@ -1,0 +1,165 @@
+{
+  "seeds": [
+    0,
+    9999
+  ],
+  "input_sequences": 10000,
+  "modes": {
+    "strong": {
+      "results": 10000,
+      "strokes": 23621,
+      "empty": 2877,
+      "exhaustive": 5377,
+      "fractals": 168482,
+      "raw": 507168,
+      "merged": 338300
+    },
+    "weak": {
+      "results": 10000,
+      "strokes": 32310,
+      "empty": 2382,
+      "exhaustive": 5377,
+      "fractals": 168482,
+      "raw": 507168,
+      "merged": 338300
+    }
+  },
+  "layers": {
+    "0": {
+      "strong": {
+        "results": 1667,
+        "strokes": 915,
+        "empty": 781,
+        "exhaustive": 1221,
+        "fractals": 12841,
+        "raw": 84107,
+        "merged": 36032
+      },
+      "weak": {
+        "results": 1667,
+        "strokes": 1108,
+        "empty": 736,
+        "exhaustive": 1221,
+        "fractals": 12841,
+        "raw": 84107,
+        "merged": 36032
+      }
+    },
+    "1": {
+      "strong": {
+        "results": 1667,
+        "strokes": 5179,
+        "empty": 335,
+        "exhaustive": 771,
+        "fractals": 33930,
+        "raw": 87675,
+        "merged": 68942
+      },
+      "weak": {
+        "results": 1667,
+        "strokes": 7125,
+        "empty": 244,
+        "exhaustive": 771,
+        "fractals": 33930,
+        "raw": 87675,
+        "merged": 68942
+      }
+    },
+    "2": {
+      "strong": {
+        "results": 1667,
+        "strokes": 3802,
+        "empty": 491,
+        "exhaustive": 911,
+        "fractals": 26633,
+        "raw": 82651,
+        "merged": 52109
+      },
+      "weak": {
+        "results": 1667,
+        "strokes": 5265,
+        "empty": 404,
+        "exhaustive": 911,
+        "fractals": 26633,
+        "raw": 82651,
+        "merged": 52109
+      }
+    },
+    "3": {
+      "strong": {
+        "results": 1667,
+        "strokes": 2277,
+        "empty": 661,
+        "exhaustive": 982,
+        "fractals": 23487,
+        "raw": 82987,
+        "merged": 33617
+      },
+      "weak": {
+        "results": 1667,
+        "strokes": 3229,
+        "empty": 554,
+        "exhaustive": 982,
+        "fractals": 23487,
+        "raw": 82987,
+        "merged": 33617
+      }
+    },
+    "4": {
+      "strong": {
+        "results": 1666,
+        "strokes": 6481,
+        "empty": 249,
+        "exhaustive": 673,
+        "fractals": 39555,
+        "raw": 87234,
+        "merged": 82688
+      },
+      "weak": {
+        "results": 1666,
+        "strokes": 8818,
+        "empty": 171,
+        "exhaustive": 673,
+        "fractals": 39555,
+        "raw": 87234,
+        "merged": 82688
+      }
+    },
+    "5": {
+      "strong": {
+        "results": 1666,
+        "strokes": 4967,
+        "empty": 360,
+        "exhaustive": 819,
+        "fractals": 32036,
+        "raw": 82514,
+        "merged": 64912
+      },
+      "weak": {
+        "results": 1666,
+        "strokes": 6765,
+        "empty": 273,
+        "exhaustive": 819,
+        "fractals": 32036,
+        "raw": 82514,
+        "merged": 64912
+      }
+    }
+  },
+  "distance_modes": [
+    "strong",
+    "weak"
+  ],
+  "lengths": [
+    9,
+    17,
+    33,
+    65,
+    129
+  ],
+  "extra_policy_tie_inputs": 100,
+  "transformed_inputs": 300,
+  "seconds": 52.41471016703872,
+  "peak_rss_bytes_macos": 23887872,
+  "failures": 0
+}

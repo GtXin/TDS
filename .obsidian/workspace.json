@@ -41,16 +41,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/memo/memoWX_021_Chan_xianduan.md",
+                "file": "docs/memo/memoWX_028_biFamily.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memoWX_021_Chan_xianduan"
+              "title": "memoWX_028_biFamily"
+            }
+          },
+          {
+            "id": "f65a6d0e48b7fb48",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/memo/memoWX_029_Chan_bi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "memoWX_029_Chan_bi"
+            }
+          },
+          {
+            "id": "4bb05b68806e93c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/memo/memoWX_028_biFamily.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "memoWX_028_biFamily"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -128,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/memo/memoWX_027_fenxingFamily.md",
+                "file": "docs/memo/memoWX_020_Chan_bi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,53 +245,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "ecd975acf4974ebc",
+  "active": "4bb05b68806e93c7",
   "lastOpenFiles": [
-    "docs/memo/memoWX_020_Chan_bi.md",
-    "artifacts/mas/bi-tree-details/README.md",
-    "docs/memo/backups/memoWX_020_Chan_bi__20261110_202545_435576.md",
-    "docs/memo/memoWX_027_fenxingFamily.md",
-    "docs/memo/memoWX_021_Chan_xianduan.md",
-    "docs/memo/backups/memoWX_020_Chan_bi__20261110_212154_532834.md",
-    "artifacts/mas/bi-tree-details/apply_unified_tree.py",
-    "artifacts/mas/bi-tree-details/unified-tree.txt",
-    "artifacts/mas/bi-tree-details/verification.json",
-    "docs/memo/backups/memoWX_020_Chan_bi__20261110_211718_919409.md",
-    "artifacts/mas/bi-tree-details/apply_and_verify.py",
-    "artifacts/mas/bi-tree-details/decomposition-checks.json",
-    "artifacts/mas/bi-tree-details/check_decomposition.py",
-    "artifacts/mas/bi-tree-details/examples-review.md",
-    "artifacts/mas/bi-tree-details/section-002d.md",
-    "artifacts/mas/bi-tree-details/section-002c.md",
-    "artifacts/mas/bi-tree-details/helpers-draft.md",
-    "artifacts/mas/bi-tree-details/section-002a.md",
-    "artifacts/mas/bi-tree-details/baseline.json",
-    "artifacts/mas/bi-tree-details/section-002b.md",
-    "artifacts/mas/bi-tree-details/contract-review.md",
-    "mas/tasks/20261110-memo020-details-and-headings.md",
-    "artifacts/mas/bi-tree-details",
-    "artifacts/mas/bi-check-simplification/README.md",
-    "artifacts/mas/bi-check-simplification/verification.json",
-    "docs/memo/backups/memoWX_020_Chan_bi__20261110_210646_574830.md",
-    "artifacts/mas/bi-check-simplification/section-003.md",
-    "artifacts/mas/bi-check-simplification/section-002a.md",
-    "artifacts/mas/bi-check-simplification/comparison.json",
-    "mas/tasks/20261110-memo020-simplify-and-render.md",
-    "artifacts/mas/bi-open-tail-tree/README.md",
-    "docs/memo/backups/memoWX_020_Chan_bi__20261110_205537_185737.md",
-    "artifacts/mas/bi-open-tail-tree/section-003.md",
-    "artifacts/mas/bi-open-tail-tree/section-002a.md",
-    "mas/tasks/20261110-memo020-open-tail-algorithm.md",
-    "docs/memo/backups/memoWX_020_Chan_bi__20261110_204404_425591.md",
-    "artifacts/mas/bi-weaker-start-figure/initialization-2b.png",
-    "artifacts/mas/bi-weaker-start-figure/weaker-start-2b.png",
-    "docs/memo/memoWX_028_biFamily/restart-seed50-problem.png",
-    "artifacts/mas/bi-family/restart-20261110_040433/problem/problem.png",
-    "docs/memo/backups/memoWX_028_biFamily__20261110_035748_391456/worked-US.png",
-    "docs/memo/backups/memoWX_028_biFamily__20261110_035748_391456/worked-China.png",
-    "artifacts/mas/bi-family/history/20261110_035536_342706/worked-US.png",
-    "artifacts/mas/bi-family/history/20261110_035536_342706/worked-China.png",
-    "docs/memo/memoWX_028_biFamily/worked-US.png",
-    "docs/memo/memoWX_028_biFamily/worked-China.png"
+    "artifacts/mas/bi-dp029/final-hashes.json",
+    "docs/memo/backups/memoWX_028_biFamily__20261111_022935_662068.md",
+    "artifacts/mas/bi-dp029/document-example.json",
+    "artifacts/mas/bi-dp029/README.md",
+    "docs/memo/memoWX_028_biFamily/dp029-weak-last.png",
+    "docs/memo/memoWX_028_biFamily/dp029-weak-first.png",
+    "docs/memo/memoWX_028_biFamily/dp029-weak-overview.png",
+    "docs/memo/memoWX_028_biFamily/dp029-strong-last.png",
+    "docs/memo/memoWX_028_biFamily/dp029-strong-first.png",
+    "docs/memo/memoWX_028_biFamily/dp029-strong-overview.png",
+    "artifacts/mas/bi-dp029/visual-review.json",
+    "artifacts/mas/bi-dp029/contact_sheets.swift",
+    "artifacts/mas/bi-dp029/render_png.py",
+    "artifacts/mas/bi-dp029/scaling.json",
+    "artifacts/mas/bi-dp029/__pycache__/full_atlas.cpython-311.pyc",
+    "artifacts/mas/bi-dp029/scaling-output.txt",
+    "artifacts/mas/bi-dp029/scaling.py",
+    "artifacts/mas/bi-dp029/atlas-check.json",
+    "docs/memo/backups/memoWX_028_biFamily__20261111_022340_879488.md",
+    "artifacts/mas/bi-dp029/check_atlas.py",
+    "docs/memo/memoWX_029_Chan_bi.md",
+    "artifacts/mas/bi-dp029/weak/overview.png",
+    "artifacts/mas/bi-dp029/strong/overview.png",
+    "artifacts/mas/bi-dp029/visual-qa/sheet-056.png",
+    "artifacts/mas/bi-dp029/visual-qa/sheet-055.png",
+    "mas/tasks/20261111-memo028-dp029.md",
+    "docs/memo/memoWX_028_biFamily.md",
+    "docs/memo/backups/memoWX_028_biFamily__20261111_021139_682111.md",
+    "docs/memo/backups/memoWX_028_biFamily__20261111_020834_916752.md",
+    "docs/memo/backups/memoWX_029_Chan_bi__20261111_020834_916752.md",
+    "docs/memo/backups/memoWX_029_Chan_bi__20261111_020738_377596.md",
+    "docs/memo/backups/memoWX_028_biFamily__20261111_020738_377596.md",
+    "docs/memo/backups/memoWX_028_biFamily__20261111_020648_440711.md",
+    "docs/memo/backups/memoWX_028_biFamily__20261111_020614_350579.md",
+    "docs/memo/backups/memoWX_028_biFamily__20261111_020350_235908.md",
+    "docs/memo/backups/memoWX_029_Chan_bi__20261111_020105_243984.md",
+    "docs/memo/backups/memoWX_029_Chan_bi__20261111_015629_949972.md",
+    "mas/tasks/20261111-memo029-cc200.md",
+    "artifacts/mas/memo029-cc200/README.md",
+    "mas/tasks/20261111-memo028-return-to-plan.md",
+    "docs/memo/backups/memoWX_028_biFamily__20261111_015356_562660.md",
+    "docs/memo/backups/memoWX_029_Chan_bi__20261111_015205_810044.md",
+    "docs/memo/backups/memoWX_029_Chan_bi__20261111_014839_435204.md",
+    "docs/memo/backups/memoWX_029_Chan_bi__20261111_014428_284798.md",
+    "docs/memo/backups/memoWX_029_Chan_bi__20261111_014258_754218.md",
+    "docs/memo/backups/memoWX_029_Chan_bi__20261111_014226_869472.md"
   ]
 }

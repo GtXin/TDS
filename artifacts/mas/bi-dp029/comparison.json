@@ -1,0 +1,15 @@
+{
+  "inputs": 200,
+  "mode_results": 400,
+  "routes_and_evidence_equal": true,
+  "imports": [
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/bi-dp029/baseline/bi.py",
+    "/Users/coder/Public/EngineGit/TDS/artifacts/mas/bi-dp029/python_pro/bi.py"
+  ],
+  "hashes": {
+    "baseline": "467362295caa503bb0c8463bb55d7a62c6bebcd69e76cc8bfdd28219d664ff4c",
+    "python_pro": "79863f73d6116200bfbdadd448ee573bcfe9fae0cf9b3c984d081726b29da6f0"
+  },
+  "selection": "optimized sparse-range continuation; equivalent output to direct-range baseline on common inputs",
+  "limitation": "sequential implementation with prior skill exposure, not causal skill comparison"
+}

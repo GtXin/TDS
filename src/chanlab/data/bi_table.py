@@ -11,7 +11,7 @@ from chanlab.algo.bi import Bi, BiSeries
 from chanlab.algo.fenxing import FenxingSeries
 from chanlab.data.fenxing_table import fingerprint, plain
 
-FEATURE_CONTEXT = "chanlab.bi_features.v1"
+FEATURE_CONTEXT = "chanlab.bi_features.v2"
 
 
 def encode_features(features: Mapping[str, Any]) -> str:

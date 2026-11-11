@@ -1,0 +1,100 @@
+{
+  "seed_range": [
+    0,
+    9999
+  ],
+  "generated": 10000,
+  "counts": {
+    "completed": 10000,
+    "raw": 345296,
+    "merged": 215780,
+    "fractals": 107194,
+    "committed": 6441,
+    "working": 5289,
+    "empty": 6997,
+    "decisions": 97552
+  },
+  "layers": {
+    "0": {
+      "completed": 1667,
+      "raw": 57339,
+      "merged": 24879,
+      "fractals": 8397,
+      "committed": 10,
+      "working": 267,
+      "empty": 1660,
+      "decisions": 6960
+    },
+    "1": {
+      "completed": 1667,
+      "raw": 59131,
+      "merged": 46607,
+      "fractals": 22453,
+      "committed": 1703,
+      "working": 1172,
+      "empty": 895,
+      "decisions": 20794
+    },
+    "2": {
+      "completed": 1667,
+      "raw": 56555,
+      "merged": 35811,
+      "fractals": 17639,
+      "committed": 1019,
+      "working": 1015,
+      "empty": 1077,
+      "decisions": 16001
+    },
+    "3": {
+      "completed": 1667,
+      "raw": 57035,
+      "merged": 17507,
+      "fractals": 13974,
+      "committed": 126,
+      "working": 542,
+      "empty": 1552,
+      "decisions": 12364
+    },
+    "4": {
+      "completed": 1666,
+      "raw": 58962,
+      "merged": 58962,
+      "fractals": 27832,
+      "committed": 2715,
+      "working": 1342,
+      "empty": 670,
+      "decisions": 26171
+    },
+    "5": {
+      "completed": 1666,
+      "raw": 56274,
+      "merged": 32014,
+      "fractals": 16899,
+      "committed": 868,
+      "working": 951,
+      "empty": 1143,
+      "decisions": 15262
+    }
+  },
+  "transformed_probes": 300,
+  "seconds": 19.473496833001263,
+  "failures": 0,
+  "peak_rss_bytes_macos": 23609344,
+  "policy_tie_probes": 1000,
+  "layer_names": {
+    "0": "trend",
+    "1": "oscillation",
+    "2": "gaps",
+    "3": "inclusion and equality",
+    "4": "single price",
+    "5": "variable width"
+  },
+  "reference_comparisons": "all completed branches",
+  "lengths": [
+    9,
+    17,
+    33,
+    49,
+    65
+  ]
+}

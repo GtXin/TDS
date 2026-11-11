@@ -32,6 +32,7 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | WX 026 | [MergedKline family implementation plan](memoWX_026_MergedKlineFamily.md) |
 | WX 027 | [Fenxing family implementation plan](memoWX_027_fenxingFamily.md) |
 | WX 028 | [Bi family implementation plan](memoWX_028_biFamily.md) |
+| WX 029 | [Chan_bi — new algorithm draft](memoWX_029_Chan_bi.md) |
 | KWX 001 | [cc project folder structure](memoKWX_001_文件夹结构.md) |
 
 For new or revised memos, follow [the writing guide](memoWX_006_memoWritingGuide.md).

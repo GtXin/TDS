@@ -1,0 +1,9 @@
+{
+  "docs/memo/README.md": "1c41009ea3739e1257831de366a9094abf8dacb94559572aaf4f74a42dd7bde2",
+  "docs/memo/memoWX_021_Chan_xianduan.md": "536158aa2817030c148148b04d3438947444cda0b5fc472db8b8ef824abc5328",
+  "docs/memo/memoWX_028_biFamily.md": "df95d251b4a3c464fba40870482c8a05e513e12db38ef9614979ad71f668cd87",
+  "src/chanlab/algo/bi.py": "acc6ee30703e31452da79747e4d7085976f2cfc3b482dbc7e8ff097339501492",
+  "src/chanlab/data/bi_table.py": "868d8b62e876af5fb7ac6bc1db5a42468f94456575b8e6d607d78a79190e6d6d",
+  "src/chanlab/visualization/bi_plot.py": "167be9816e90d4dff853e4e7bb8b458839a988dd7296002cbf9ed7c093a46494",
+  "tests/test_bi.py": "6522c31e8b039735d62d3a68dcd59711bb6e00b517defd14502735b65bc7fa98"
+}

@@ -1,0 +1,47 @@
+{
+  "backup": "docs/memo/backups/memoWX_020_Chan_bi__20261110_235554_243576.md",
+  "before_sha256": "e25bf00fb36077c54d9f080bda4db6ff22b27cf51ed3d9e6cb1f69ddba22a5bd",
+  "after_sha256": "d443e0025e4cd50d3de166951dbb65d55802a2b6911cdb834320bf0433407f2b",
+  "scopes": "Active000–005 distance normalization; source/archived tail exact",
+  "user_004_note_and_prompt_exact": true,
+  "other_five_elements_and_user_version3_exact": true,
+  "appendices_references_exact": true,
+  "one_active_tree": true,
+  "no_numbered_algorithm_markdown_headings": true,
+  "helpers": [
+    "_validate_input",
+    "_resolve_distance_mode",
+    "_compare_same_kind",
+    "_check_first",
+    "_check_extension",
+    "_check_reverse",
+    "_check_state",
+    "_validate_output"
+  ],
+  "local_file_links_resolve": 37,
+  "no_new_trailing_whitespace": true,
+  "protected_hashes_at_apply": {
+    "docs/memo/README.md": "1c41009ea3739e1257831de366a9094abf8dacb94559572aaf4f74a42dd7bde2",
+    "docs/memo/memoWX_028_biFamily.md": "af892d963653a8c137f53426d9675db4b1264e37f059e72223c11e9d181fb8ed",
+    "docs/memo/memoWX_021_Chan_xianduan.md": "536158aa2817030c148148b04d3438947444cda0b5fc472db8b8ef824abc5328",
+    "src/chanlab/algo/bi.py": "acc6ee30703e31452da79747e4d7085976f2cfc3b482dbc7e8ff097339501492",
+    "tests/test_bi.py": "6522c31e8b039735d62d3a68dcd59711bb6e00b517defd14502735b65bc7fa98"
+  },
+  "concurrent_changes_preserved": {},
+  "independent_contract_numeric_proof_reviews": "PASS",
+  "production_edited_by_this_task": false,
+  "visual_check": "PASS: strong/weak definition table visible in Live Preview;11bar input/window explanation and complete strong/weak output table visible in final Reading view.",
+  "mode_model": {
+    "base_nonempty_fixtures": 22,
+    "fresh_mode_cases": 44,
+    "mode_split_points": 102,
+    "process_calls": 403,
+    "successful_calls": 383,
+    "expected_process_rejections": 20,
+    "direct_guard_probes": 3,
+    "complete_Q_matches_same_mode_one_shot": true
+  },
+  "final_protected_hashes_unchanged": true,
+  "final_source_matches_reviewed_draft": true,
+  "remaining_blockers": []
+}

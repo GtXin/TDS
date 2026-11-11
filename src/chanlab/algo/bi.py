@@ -1,29 +1,25 @@
-"""Immutable strokes and complete memo020 temporal candidate enumeration.
-
-Every route is a separate series. No canonical route or market confirmation is
-inferred. Resource exhaustion raises rather than returning truncated success.
-"""
+"""Memo029 fixed-snapshot dynamic programming, independent of API and charts."""
 
 from __future__ import annotations
 
-from collections.abc import Iterator, Mapping
+from collections.abc import Callable, Iterator, Mapping
 from dataclasses import dataclass
 from datetime import datetime
 from itertools import pairwise
 from math import isfinite
 from types import MappingProxyType
-from typing import TYPE_CHECKING, Any, cast, overload
-
-if TYPE_CHECKING:
-    from chanlab.algo.chan_table import ChanTable
+from typing import TYPE_CHECKING, Any, overload
 
 from chanlab.algo.fenxing import FenxingSeries
 from chanlab.algo.merged_kline import MergedKline, MergedKlineSeries
 
+if TYPE_CHECKING:
+    from chanlab.algo.chan_table import ChanTable
+
 
 @dataclass(frozen=True, slots=True)
 class Bi:
-    """One unconfirmed stroke with positions in its exact fractal source."""
+    """One unconfirmed stroke referencing positions in an exact fractal series."""
 
     id: int
     start_fenxing_index: int
@@ -38,31 +34,35 @@ class Bi:
         self.validate()
 
     def validate(self) -> None:
-        """Reject invalid IDs, prices, chronology and invented confirmation."""
+        """Validate local fields; the owning series checks interval definitions."""
         for key in ("id", "start_fenxing_index", "end_fenxing_index"):
             MergedKline._validate_integer(getattr(self, key), key)
         if self.start_fenxing_index >= self.end_fenxing_index:
             raise ValueError("endpoints must increase")
         for value in (self.start_price, self.end_price):
-            if (
-                isinstance(value, bool)
-                or not isinstance(value, (int, float))
-                or not isfinite(value)
-            ):
-                raise ValueError("finite endpoint price required")
+            try:
+                valid = (
+                    not isinstance(value, bool)
+                    and isinstance(value, (int, float))
+                    and isfinite(value)
+                )
+            except OverflowError:
+                valid = False
+            if not valid:
+                raise ValueError("finite endpoint prices required")
         if (
             self.direction not in ("up", "down")
+            or self.start_price == self.end_price
             or (self.end_price > self.start_price) != (self.direction == "up")
-            or self.end_price == self.start_price
         ):
-            raise ValueError("price/direction mismatch")
+            raise ValueError("direction/price mismatch")
         if self.status != "unconfirmed" or self.confirmed_at is not None:
             raise ValueError("confirmation undefined: unconfirmed/None required")
 
 
 @dataclass(frozen=True, slots=True)
 class BiSeries:
-    """One route, preserving immutable source, rule context and decision evidence."""
+    """One selected fixed-snapshot route; no rolling cache or permanent commit."""
 
     source_series: FenxingSeries
     items: tuple[Bi, ...]
@@ -73,298 +73,258 @@ class BiSeries:
 
     def __post_init__(self) -> None:
         object.__setattr__(self, "items", tuple(self.items))
-        object.__setattr__(self, "config", MergedKlineSeries._freeze_data(self.config))
+        object.__setattr__(self, "config", self._normalize_config(self.config))
         object.__setattr__(
-            self, "trace", tuple(MergedKlineSeries._freeze_data(x) for x in self.trace)
+            self, "trace", tuple(MergedKlineSeries._freeze_data(v) for v in self.trace)
         )
         object.__setattr__(
-            self, "trace_by_point", tuple(tuple(x) for x in self.trace_by_point)
+            self, "trace_by_point", tuple(tuple(v) for v in self.trace_by_point)
         )
         self.validate()
 
     @staticmethod
-    def _check_pair(source: FenxingSeries, a: int, b: int) -> bool:
-        x, y = source[a], source[b]
+    def _resolve_distance(mode: Any) -> tuple[str, int]:
+        if mode is None or mode == "strong":
+            return "strong", 4
+        if mode == "weak":
+            return "weak", 3
+        raise ValueError("distance_mode must be strong/weak")
+
+    @classmethod
+    def _normalize_config(cls, config: Mapping[str, Any]) -> Mapping[str, Any]:
+        if not isinstance(config, Mapping) or set(config) - {"distance_mode"}:
+            raise ValueError("only distance_mode is supported")
+        mode, _ = cls._resolve_distance(config.get("distance_mode"))
+        return MappingProxyType({"distance_mode": mode})
+
+    @staticmethod
+    def _validate_source(source: FenxingSeries) -> None:
+        if not isinstance(source, FenxingSeries):
+            raise ValueError("complete FenxingSeries required")  # noqa: TRY004
+        source.validate()
+
+    @staticmethod
+    def _check_pair(
+        source: FenxingSeries, p: int, f: int, gap: int
+    ) -> tuple[bool, Mapping[str, Any]]:
+        """Direct original-range scan, returning first violation or full evidence."""
+        for value in (p, f):
+            if type(value) is not int or not 0 <= value < len(source):
+                raise ValueError("fractal position out of range")
+        if p >= f:
+            return False, {"reason": "order", "pair": (p, f)}
+        x, y = source[p], source[f]
         i, j = x.source_start + 1, y.source_start + 1
-        if i >= j or j - i < 4 or x.kind == y.kind:
-            return False
-        top, bottom = (
+        if x.kind == y.kind:
+            return False, {"reason": "same_kind", "pair": (p, f)}
+        if j - i < gap:
+            return False, {
+                "reason": "distance",
+                "pair": (p, f),
+                "actual": j - i,
+                "required": gap,
+            }
+        t, b = (
             (source.source_series[i], source.source_series[j])
             if x.kind == "top"
             else (source.source_series[j], source.source_series[i])
         )
-        return (
-            top.high > bottom.high
-            and bottom.low < top.low
-            and all(
-                bottom.low <= bar.low and bar.high <= top.high
-                for bar in source.source_series[i : j + 1]
+        if t.high <= b.high or b.low >= t.low:
+            return False, {
+                "reason": "endpoint_intervals",
+                "pair": (p, f),
+                "top": (t.low, t.high),
+                "bottom": (b.low, b.high),
+            }
+        low, high = float("inf"), float("-inf")
+        for k in range(i, j + 1):
+            bar = source.source_series[k]
+            if bar.high > t.high or bar.low < b.low:
+                return False, {
+                    "reason": "range",
+                    "pair": (p, f),
+                    "first_breach": k,
+                    "bar": (bar.low, bar.high),
+                    "bounds": (b.low, t.high),
+                }
+            low, high = min(low, bar.low), max(high, bar.high)
+        return True, {
+            "rule": "memo029.full_pair",
+            "pair": (p, f),
+            "centers": (i, j),
+            "gap": gap,
+            "intervals": ((t.low, t.high), (b.low, b.high)),
+            "range": (low, high),
+        }
+
+    @staticmethod
+    def _range_index(
+        source: FenxingSeries,
+    ) -> tuple[list[list[float]], list[list[float]]]:
+        """Sparse tables allow O(1) min/max queries after O(K log K) setup."""
+        lows = [[p.low for p in source.source_series]]
+        highs = [[p.high for p in source.source_series]]
+        width = 2
+        while width <= len(source.source_series):
+            half = width // 2
+            lows.append(
+                [
+                    min(lows[-1][i], lows[-1][i + half])
+                    for i in range(len(source.source_series) - width + 1)
+                ]
             )
+            highs.append(
+                [
+                    max(highs[-1][i], highs[-1][i + half])
+                    for i in range(len(source.source_series) - width + 1)
+                ]
+            )
+            width *= 2
+        return lows, highs
+
+    @classmethod
+    def _solve(
+        cls, source: FenxingSeries, gap: int
+    ) -> tuple[tuple[int, ...], tuple[int, ...], tuple[int | None, ...]]:
+        count = len(source)
+        best = [-1] * count
+        prev: list[int | None] = [None] * count
+        centers = [p.source_start + 1 for p in source]
+        kinds = [p.kind for p in source]
+        lows, highs = cls._range_index(source)
+
+        def good(p: int, f: int) -> bool:
+            i, j = centers[p], centers[f]
+            if kinds[p] == kinds[f] or j - i < gap:
+                return False
+            t, b = (i, j) if kinds[p] == "top" else (j, i)
+            top, bottom = source.source_series[t], source.source_series[b]
+            if top.high <= bottom.high or bottom.low >= top.low:
+                return False
+            level = (j - i + 1).bit_length() - 1
+            right = j - (1 << level) + 1
+            return (
+                max(highs[level][i], highs[level][right]) <= top.high
+                and min(lows[level][i], lows[level][right]) >= bottom.low
+            )
+
+        a = cls._find_start(count, good)
+        if a is None:
+            return (), tuple(best), tuple(prev)
+        best[a] = 0
+        for f in range(a + 1, count):
+            for p in range(a, f):
+                if best[p] >= 0 and best[p] + 1 > best[f] and good(p, f):
+                    best[f], prev[f] = best[p] + 1, p
+        end = next(f for f in range(count - 1, a, -1) if best[f] >= 1)
+        return cls._recover(prev, a, end), tuple(best), tuple(prev)
+
+    @staticmethod
+    def _find_start(count: int, good: Callable[[int, int], bool]) -> int | None:
+        return next(
+            (
+                a
+                for a in range(count - 1)
+                if any(good(a, f) for f in range(a + 1, count))
+            ),
+            None,
         )
 
     @staticmethod
-    def _options(config: Mapping[str, Any]) -> dict[str, Any]:
-        if not isinstance(config, Mapping) or set(config) - {"max_states", "route"}:
-            raise ValueError("supported options: max_states, route")
-        limit = config.get("max_states", 100000)
-        if type(limit) is not int or limit < 1:
-            raise ValueError("max_states must be positive integer")
-        return {"max_states": limit}
-
-    @classmethod
-    def derive_candidates(
-        cls, source_series: FenxingSeries, config: Mapping[str, Any], rule_tree_ref: str
-    ) -> Mapping[str, Any]:
-        """Return every route grouped by identical boundary positions.
-
-        Raises RuntimeError on state budget exhaustion; never silently truncates.
-        Reports retain blocked histories and EOF-without-endpoint diagnostics.
-        """
-        if not isinstance(source_series, FenxingSeries):
-            raise ValueError("complete FenxingSeries required")  # noqa: TRY004
-        source_series.validate()
-        if not isinstance(rule_tree_ref, str) or not rule_tree_ref.strip():
-            raise ValueError("rule_tree_ref required")
-        options = cls._options(config)
-        source = source_series
-        # Select the earliest A admitting any qualified later B, left to right.
-        initial: int | None = None
-        states = 0
-        for a in range(len(source) - 1):
-            for probe_b in range(a + 1, len(source)):
-                states += 1
-                if states > options["max_states"]:
-                    raise RuntimeError(
-                        "initial-start state budget exhausted; no complete result"
-                    )
-                if cls._check_pair(source, a, probe_b):
-                    initial = a
-                    break
-            if initial is not None:
-                break
-        # Prefix ends at A; alternatives are post-choice states; no later A.
-
-        pending: list[
-            tuple[tuple[int, ...], int, int | None, int, tuple[Mapping[str, Any], ...]]
-        ] = ([] if initial is None else [((initial,), initial, None, initial + 1, ())])
-        routes: dict[tuple[int, ...], tuple[Mapping[str, Any], ...]] = {}
-        blocked: list[Mapping[str, Any]] = []
-        unresolved: list[tuple[int, ...]] = []
-        while pending:
-            prefix, a, b, cursor, evidence = pending.pop()
-            while cursor < len(source):
-                states += 1
-                if states > options["max_states"]:
-                    raise RuntimeError(
-                        "candidate state budget exhausted; no complete result"
-                    )
-                f = cursor
-                cursor += 1
-                before = (prefix, a, b, f)
-                action = "reject_initial"
-                if b is None:
-                    if cls._check_pair(source, a, f):
-                        pending.append(
-                            (
-                                prefix,
-                                a,
-                                None,
-                                cursor,
-                                evidence + ({"rule": "skip_initial", "state": before},),
-                            )
-                        )
-                        b = f
-                        action = "accept_initial"
-                elif source[f].kind == source[b].kind:
-                    value, old = source[f].price, source[b].price
-                    better = value > old if source[b].kind == "top" else value < old
-                    if better:
-                        if cls._check_pair(source, a, f):
-                            b = f
-                            action = "extend"
-                        else:
-                            blocked.append(
-                                {
-                                    "prefix": prefix + (b,),
-                                    "failed": f,
-                                    "evidence": evidence,
-                                    "state": before,
-                                }
-                            )
-                            break
-                    elif value == old and cls._check_pair(source, a, f):
-                        pending.append(
-                            (
-                                prefix,
-                                a,
-                                f,
-                                cursor,
-                                evidence
-                                + ({"rule": "replace_equal", "state": before},),
-                            )
-                        )
-                        action = "keep_equal"
-                    else:
-                        action = "keep_end"
-                elif cls._check_pair(source, b, f):
-                    prefix = prefix + (b,)
-                    a, b = b, f
-                    action = "first_reverse"
-                else:
-                    action = "reject_reverse"
-                evidence += ({"rule": action, "state": before},)
-            else:
-                if b is not None:
-                    routes.setdefault(
-                        prefix + (b,),
-                        evidence + ({"rule": "EOF_provisional", "working": (a, b)},),
-                    )
-                else:
-                    unresolved.append(prefix)
-        groups: dict[tuple[int, int], list[BiSeries]] = {}
-        for route, trace in sorted(routes.items()):
-            records = tuple(
-                Bi(
-                    i,
-                    x,
-                    y,
-                    source[x].price,
-                    source[y].price,
-                    "up" if source[x].kind == "bottom" else "down",
-                )
-                for i, (x, y) in enumerate(pairwise(route))
-            )
-            series = cls(
-                source,
-                records,
-                {**options, "route": route},
-                rule_tree_ref,
-                trace,
-                tuple(tuple(range(len(trace))) for _ in records),
-            )
-            groups.setdefault((route[0], route[-1]), []).append(series)
-        return MappingProxyType(
-            {
-                "groups": MappingProxyType({k: tuple(v) for k, v in groups.items()}),
-                "blocked": MergedKlineSeries._freeze_data(blocked),
-                "unresolved": tuple(unresolved),
-                "states": states,
-                "source_series": source,
-                "rule_tree_ref": rule_tree_ref,
-                "initial_a": initial,
-                "status": (
-                    "no_qualified_start"
-                    if initial is None
-                    else ("candidates" if routes else "blocked")
-                ),
-                "unresolved_merged_range": (
-                    (0, len(source.source_series)) if not routes else None
-                ),
-            }
-        )
+    def _recover(prev: list[int | None], a: int, end: int) -> tuple[int, ...]:
+        route = [end]
+        while route[-1] != a:
+            p = prev[route[-1]]
+            if type(p) is not int or not a <= p < route[-1]:
+                raise ValueError("invalid DP predecessor")
+            route.append(p)
+        return tuple(reversed(route))
 
     @classmethod
     def derive_from(
         cls, source_series: FenxingSeries, config: Mapping[str, Any], rule_tree_ref: str
     ) -> BiSeries:
-        """Select an explicitly requested route, or the sole available route."""
-        report = cls.derive_candidates(source_series, config, rule_tree_ref)
-        routes = tuple(s for group in report["groups"].values() for s in group)
-        selected = config.get("route")
-        if selected is not None:
-            for series in routes:
-                if tuple(selected) == series.config["route"]:
-                    return cast(BiSeries, series)
-            raise ValueError("requested route not in viable candidates")
-        if len(routes) != 1:
-            raise ValueError(
-                "explicit route required: use derive_candidates for all results"
+        """Select earliest start, latest reachable end, maximum prefix stroke count."""
+        cls._validate_source(source_series)
+        effective = cls._normalize_config(config)
+        _, gap = cls._resolve_distance(effective["distance_mode"])
+        route, _, _ = cls._solve(source_series, gap)
+        records = tuple(
+            Bi(
+                i,
+                a,
+                b,
+                source_series[a].price,
+                source_series[b].price,
+                "up" if source_series[a].kind == "bottom" else "down",
             )
-        return cast(BiSeries, routes[0])
+            for i, (a, b) in enumerate(pairwise(route))
+        )
+        trace = cls._validate_route(source_series, route, gap)
+        return cls(
+            source_series,
+            records,
+            effective,
+            rule_tree_ref,
+            trace,
+            tuple((i,) for i in range(len(records))),
+        )
+
+    @classmethod
+    def _validate_route(
+        cls, source: FenxingSeries, route: tuple[int, ...], gap: int
+    ) -> tuple[Mapping[str, Any], ...]:
+        evidence = []
+        for a, b in pairwise(route):
+            ok, detail = cls._check_pair(source, a, b, gap)
+            if not ok:
+                raise ValueError(f"route definition failure: {detail}")
+            evidence.append(detail)
+        return tuple(evidence)
 
     def validate(self) -> None:
-        """Check local definition, shared endpoints and trace associations."""
-        if not isinstance(self.source_series, FenxingSeries):
-            raise ValueError("FenxingSeries required")  # noqa: TRY004
-        self._options(self.config)
+        """Recheck source, route definitions and exact selected-stroke evidence."""
+        self._validate_source(self.source_series)
         if not isinstance(self.rule_tree_ref, str) or not self.rule_tree_ref.strip():
             raise ValueError("rule_tree_ref required")
-        if len(self.trace_by_point) != len(self.items):
-            raise ValueError("trace alignment")
+        _, gap = self._resolve_distance(self.config["distance_mode"])
         ids: set[int] = set()
-        expected_route = (
-            ()
-            if not self.items
-            else (self.items[0].start_fenxing_index,)
-            + tuple(p.end_fenxing_index for p in self.items)
-        )
-        if "route" in self.config and tuple(self.config["route"]) != expected_route:
-            raise ValueError("route metadata mismatch")
-        allowed = {
-            "skip_initial",
-            "accept_initial",
-            "reject_initial",
-            "extend",
-            "replace_equal",
-            "keep_equal",
-            "keep_end",
-            "first_reverse",
-            "reject_reverse",
-            "EOF_provisional",
-        }
-        for event in self.trace:
-            if event.get("rule") not in allowed:
-                raise ValueError("unknown decision rule")
-            if event["rule"] == "EOF_provisional":
-                if tuple(event.get("working", ())) != expected_route[-2:]:
-                    raise ValueError("EOF working pair mismatch")
-            else:
-                state = event.get("state")
-                if not isinstance(state, tuple) or len(state) != 4:
-                    raise ValueError("invalid decision state")
-                prefix, a, b, f = state
-                if (
-                    not isinstance(prefix, tuple)
-                    or not prefix
-                    or prefix[-1] != a
-                    or type(a) is not int
-                    or type(f) is not int
-                    or not 0 <= a < f < len(self.source_series)
-                ):
-                    raise ValueError("invalid source decision positions")
-                if b is not None and (
-                    type(b) is not int
-                    or not a < b < f
-                    or not self._check_pair(self.source_series, a, b)
-                ):
-                    raise ValueError("invalid cached working pair")
-        if self.items and (
-            not self.trace or self.trace[-1].get("rule") != "EOF_provisional"
-        ):
-            raise ValueError("missing EOF evidence")
-        previous: Bi | None = None
-        for item, links in zip(self.items, self.trace_by_point):
+        route: list[int] = []
+        for item in self.items:
             if not isinstance(item, Bi):
-                raise ValueError("Bi required")  # noqa: TRY004
+                raise ValueError("Bi record required")  # noqa: TRY004
             item.validate()
             if item.id in ids or item.end_fenxing_index >= len(self.source_series):
-                raise ValueError("duplicate ID or endpoint out of bounds")
+                raise ValueError("duplicate ID or out-of-bounds endpoint")
             ids.add(item.id)
             a, b = item.start_fenxing_index, item.end_fenxing_index
-            if not self._check_pair(self.source_series, a, b) or (
-                item.start_price,
-                item.end_price,
-            ) != (self.source_series[a].price, self.source_series[b].price):
-                raise ValueError("stroke definition/source mismatch")
-            if previous and (
-                previous.end_fenxing_index != a or previous.direction == item.direction
+            if route and route[-1] != a:
+                raise ValueError("route must share endpoints")
+            if not route:
+                route.append(a)
+            route.append(b)
+            if (item.start_price, item.end_price) != (
+                self.source_series[a].price,
+                self.source_series[b].price,
             ):
-                raise ValueError("shared endpoints/alternation required")
-            if links != tuple(range(len(self.trace))) or any(
-                type(i) is not int or i < 0 or i >= len(self.trace) for i in links
-            ):
-                raise ValueError("trace indices")
-            previous = item
+                raise ValueError("source price mismatch")
+        expected = self._validate_route(self.source_series, tuple(route), gap)
+        if not FenxingSeries._same_evidence(
+            self.trace, MergedKlineSeries._freeze_data(expected)
+        ) or self.trace_by_point != tuple((i,) for i in range(len(self.items))):
+            raise ValueError("trace/evidence alignment mismatch")
+
+    def _unresolved(self) -> tuple[tuple[int, int], ...]:
+        count = len(self.source_series.source_series)
+        if not self.items:
+            return ((0, count),)
+        start = self.source_series[self.items[0].start_fenxing_index].source_start + 1
+        stop = self.source_series[self.items[-1].end_fenxing_index].source_start + 2
+        return tuple((a, b) for a, b in ((0, start), (stop, count)) if a < b)
+
+    def unresolved_ranges(self) -> tuple[tuple[int, int], ...]:
+        """Return nonempty half-open merged ranges outside the selected route."""
+        return self._unresolved()
 
     def __len__(self) -> int:
         return len(self.items)
@@ -380,52 +340,33 @@ class BiSeries:
         return iter(self.items)
 
     def get_by_id(self, feature_id: int) -> Bi:
-        """Look up a result-scoped ID."""
+        """Get a result-scoped ID; raise KeyError if absent."""
         MergedKline._validate_integer(feature_id, "feature_id")
-        for item in self.items:
-            if item.id == feature_id:
-                return item
+        for p in self:
+            if p.id == feature_id:
+                return p
         raise KeyError(feature_id)
 
     def explain(self, point_index: int) -> Mapping[str, Any]:
-        """Return immutable rule/source evidence, including provisional EOF."""
-        item = self.items[point_index]
-        a, b = (
-            self.source_series[item.start_fenxing_index],
-            self.source_series[item.end_fenxing_index],
-        )
+        """Expose immutable rule/interval/anchor evidence for one selected stroke."""
+        p = self[point_index]
         return MappingProxyType(
             {
+                "item": p,
                 "rule_tree_ref": self.rule_tree_ref,
-                "item": item,
-                "centers": (a.source_start + 1, b.source_start + 1),
-                "raw_anchors": (a.anchor_raw_index, b.anchor_raw_index),
-                "decisions": tuple(
-                    self.trace[i] for i in self.trace_by_point[point_index]
+                "distance_mode": self.config["distance_mode"],
+                "evidence": self.trace[self.trace_by_point[point_index][0]],
+                "raw_anchors": (
+                    self.source_series[p.start_fenxing_index].anchor_raw_index,
+                    self.source_series[p.end_fenxing_index].anchor_raw_index,
                 ),
-                "working": item is self.items[-1],
-                "uncovered_merged": (
-                    (
-                        0,
-                        self.source_series[
-                            self.items[0].start_fenxing_index
-                        ].source_start
-                        + 1,
-                    ),
-                    (
-                        self.source_series[
-                            self.items[-1].end_fenxing_index
-                        ].source_start
-                        + 2,
-                        len(self.source_series.source_series),
-                    ),
-                ),
+                "unresolved_merged": self._unresolved(),
             }
         )
 
     @classmethod
     def from_chan_table(cls, table: ChanTable, series_key: str) -> BiSeries:
-        """Retrieve the exact selected route from its scoped table registration."""
+        """Retrieve the exact registered snapshot."""
         table.validate()
         result = table.feature_series[series_key]
         if not isinstance(result, cls):
@@ -433,19 +374,19 @@ class BiSeries:
         return result
 
     def to_chan_table(self, table: ChanTable, series_key: str) -> ChanTable:
-        """Register only this explicitly selected route, preserving other keys."""
+        """Register selected records while preserving all upstream registrations."""
         from chanlab.data.feature_table import register
 
         return register(self, table, series_key)
 
     def to_dataframe(self) -> Any:
-        """Export compact records with exact route and provenance metadata."""
+        """Return compact records and provenance; not a resume checkpoint."""
         from chanlab.data.bi_table import to_dataframe
 
         return to_dataframe(self)
 
     def plot(self, **options: Any) -> Any:
-        """Draw this route over raw prices, without selecting alternatives."""
+        """Plot raw/merged/all visible fractals and selected stroke IDs."""
         from chanlab.visualization.bi_plot import plot_bi_series
 
         return plot_bi_series(self, **options)

@@ -1,138 +1,226 @@
 # Bi family implementation plan
-## 000 — Scope
-参照 memo026 的实现、比较、测试和接口结构，[1] 为 memo009 的 `Bi`／`BiSeries` 建立待执行模板。[2] 算法依据为 memo020 的现行定义及002.a–002.d。[3] 核心候选算法、路线级表集成、DataFrame及绘图已实现；10,000条有界随机序列通过定义与参考核对。现行单起点规则的完整真实数据枚举已完成，但该A的后续路线阻塞，输出为空。结果及限制见002。
-### Implementation premises — 实现前提
-执行前必须读取下列设计、定义和实现依赖，并核对现行源码。设计模式规定类的职责与接口，算法文档规定计算规则；不得仅参照历史实现模板推断笔的规则。
+## 000 — Scope and current result
+按memo027的报告结构记录本轮实现、验证、类接口和图集，[1] 类设计遵循memo009，[2] 算法采用memo029的固定快照动态规划。[3] 旧候选枚举／滚动缓存已归档，不属于本轮接口；本轮不修改029。
 
-| 必需文档 | 本轮实现必须遵守／复用的内容 |
-|---|---|
-| memo009 — Design pattern [2] | 001.b–001.e的单向来源引用、不可变性、解释及整数ID；002.h的Bi成员／方法、002.i的BiSeries成员／方法、002.u的ChanTable笔区间及标记语义。保持两个领域类；公开操作放在类／实例方法中，内部helpers及适配器分开。 |
-| memo020 — 笔定义与算法 [3] | 001版本二的六项定义作为独立验收依据；002.a判断树、002.b数值例子、002.c六个helper合同及002.d伪代码共同作为算法规范。保留全部候选路线、缓存恢复及EOF状态区别；候选族采用002.a所述不可变分组报告，每条路线对应一个BiSeries。附录是来源证据，不自动替代现行算法合同。 |
-| memo011 — ChanTable与数据准备 [4] | 复用 `samples/chan_table/README.md` 所列原始样本和context；保留来源、UTC、OHLCV及volume单位。表集成核对009、026、027及现行代码，不沿用早期全部特征NA的限制。 |
-| memo013 — Kline family [5] | 使用现有Kline／KlineTSeries、自动校验、不可变来源和 `KlineTSeries.read_csv(...)`；复用绘图时间轴及US／China配色约定。 |
-| memo015／026 — 合并规则与实现 [6,1] | 核对顺序包含处理、完整来源范围及相邻无包含；显式记录初始化策略，选定完整MergedKlineSeries。pending／dual包装不得直接作为完整输入；显示source_start与原始极值锚点分开。 |
-| memo019／027 — 分型规则与实现 [7,8] | 使用全部完整几何分型及确切合并来源，核对严格三根窗口、中心位置、原始极值锚点和FIRST／LAST选项；上游不先做笔端点取舍。 |
-| memo010 — Python环境 [9] | 复用uv、Python3.11、项目 `.venv` 和现行锁文件；本计划不重新搭环境或增加依赖。 |
-| memo012 — Python Pro比较流程 [10] | 技能阶段实际读取共享SKILL.md，记录调用原文及版本；保留基线和续作、相同输入及验收条件，披露既往技能接触。这里只列依赖，不表示已经调用技能。 |
+实现恰好Bi／BiSeries两个领域类，按“起点最早→终点最晚→同端点笔数最多”选择单路线，确定性并列保留先找到者。strong中心距至少4、weak至少3，其余定义相同。无永久确认、缓存提交或跨批续读承诺。
 
-执行顺序：核对011样本／context → 013加载原始K线 → 按015／026取得完整合并结果 → 按019／027取得全部几何分型 → 依009接口及020算法实现笔候选输出 → 执行001.d测试和001.e全链路Monte Carlo验证。任务记录须冻结上述文档／源码版本、上游选项和输出合同；出现合同缺口先明确缺口，不暗加选择或确认规则。
+**结果摘要：** 活动tests共425项回归通过，Bi定向39项；新增算法／表／绘图模块合计语句覆盖96%，strict mypy、Black、Ruff通过。10,000条随机原始OHLCV分别跑强／弱两档，均与独立参考一致；每档5,377条短输入进一步用完整子集穷举核对各端点最优前缀。完整10,060原始K线→6,200合并单元→3,027分型，strong选480笔、weak选682笔，两档均到最后完整分型。图集每档56页，总112页，覆盖全部原始位置；最终图片验收记录见002.f。
 
-### 起点修订 — 从左往右
-按020现行起点规则：从左往右检查分型X，对每个X从右侧按时间检查配对；首个存在合格(X,Y)的X确定为唯一初始A。合格须满足020完整成笔条件；所有X均不合格则返回空候选及未决范围。A确定后不另开更晚初始A，即使其全部后续路线阻塞也不自动换A。B的替代选择、同价分支和后续缓存恢复继续保留。
-
-本轮已按新规则同步代码及独立递归参考，并重跑下述验证。旧多起点源码、统计和图保留在artifacts/mas/bi-family/history/；不与本轮结果混用。
+**执行依赖：**011原始CSV／context和013Kline加载，[4,5] 015／026包含处理与合并来源，[6,7] 019／027全部几何分型，[8,1] 010环境及012技能记录。[9,10] 原始OHLCV、来源和文件哈希保持不变，source时间标签沿用上游约定，不额外宣称已认证bar-start语义。
 
 ## 001 — Implementation plan
-复用 memo013 的原始加载、memo026 的完整合并结果及 memo027 的几何分型。保留确切来源、配置、规则版本和原始数据。执行前在 `mas/tasks/` 固定输入、允许修改路径和验收条件。
 ### 001.a — Implement the Bi family
-1. 每条路线为一个 `BiSeries`；`derive_candidates(...)` 返回按相同起终分型位置分组的全部路线报告。`derive_from(...)` 仅在唯一结果时直接返回；多结果必须显式指定 `route`，不设默认选择器。
-2. 合同核定后在 `src/chanlab/algo/bi.py` 实现恰好两个不可变领域类；共享算法独立于API和网站，不自行增加领域类。
-3. 保留确切分型／合并／原始来源链，区分分型位置、合并中心、原始锚点与结果整数ID。上游pending／dual包装不自动代选路径。
-4. 按020六项笔要素实现检查；按时序协议处理provisionalA／B、重新校验后的极值延伸、首个合格反向、等端点分支、完整缓存和恢复。保留全部合格替代路线。
-5. 将020的helpers和主流程封装为私有方法；记录来源、规则与无输出决策的解释。EOF暂定与历史阻断分开，不制造实时确认。
-6. 核心稳定后增加ChanTable注册／读取、DataFrame和绘图方法，内部委托适配器。多路线表投影语义须先核定；保留原始OHLCV及其他注册结果。
-### 001.b — Repeat the core implementation using Python Pro
-1. 冻结基线源码、共同测试、配置和哈希到 `artifacts/mas/bi-family/baseline/`。
-2. 执行时读取共享Python Pro技能，逐字记录调用请求与版本；续作保留到 `artifacts/mas/bi-family/python_pro/`。
-3. 使用相同接口、输入、规则和测试，披露既往技能接触及修正；不将顺序比较视为技能的因果效果。
-### 001.c — Compare and select the core implementation
-1. 隔离运行两版并核实导入路径，保留失败及诊断。
-2. 比较定义、完整候选路线、缓存恢复、来源身份、解释、校验、类型和可读性；不能仅比较笔数量。
-3. 将实际命令、结果、哈希和选择理由保存在 `artifacts/mas/bi-family/`。搜索可能指数增长，先核定有界测试与全量运行的资源范围。
-### 001.d — Test the Bi family
-1. **类合同：** 自动校验、不可变性、整数ID、来源身份、索引／切片／迭代及非法输入。
-2. **定义：** 六项要素、最小间隔、共享端点、极值相等和方向镜像。
-3. **候选协议：** 重现020例子，覆盖延伸重校验、等端点、阻断恢复、缓存替代路线与EOF。
-4. **独立核对：** 有界小输入使用独立枚举或参考模型比较完整端点路线及分组；历史研究数量不作本轮通过结果。
-5. **数据与集成：** 原始哈希、来源／规则往返、注册隔离、解释及多路线投影；不得静默选一路。
-6. **质量与绘图：** 定向及回归pytest、报告式Ruff、严格mypy、Black检查和相关覆盖检查；记录实际结果。绘图核对端点、时间轴、US／China配色并目视验证。
-### 001.e — Monte Carlo validation from Kline to Bi
-1. **从原始数据起步：** 用固定且可记录的随机种子生成合法OHLCV及递增UTC时间，经 `KlineTSeries → MergedKlineSeries → FenxingSeries → Bi候选路线` 运行完整链路；不得只随机生成笔端点。逐层独立检查包含处理、分型及来源映射，避免上游错误被带入最终判断。
-2. **样本分层：** 首轮目标至少10,000条独立原始序列；按短／中／长序列、趋势／震荡、跳空、不同波幅、包含密集、等高等低及单价K线分层。长序列先小批运行；记录每层长度、数量、生成分布和实际完成量，不能用大量无笔样本充作有效覆盖。另测价格镜像、平移和正比例缩放后的对应关系。
-3. **独立定义检查器：** 直接依据020的001版本二重算每条输出路线：相邻笔共享同一源端点、方向交替、一顶一底；两中心之间（含端点）最高不超过顶high、最低不低于底low；`H顶>H底`且`L底<L顶`；中心距离至少4。重新核对端点三根分型窗口和原始极值锚点，不调用被测算法的合格判定helper，也不把其 `validate()` 结果作为独立证据。
-4. **检查全部结果：** 检查所有输出路线及边界分组；EOF工作笔按暂定状态核查，单端点／空路线单列，不视为已成笔。定义检查验证输出合法性；有界短序列另用独立参考枚举检查020协议要求的路线是否遗漏，避免“总返回空”也通过。定义本身不证明唯一性或候选协议的完备性。
-5. **失败与资源：** 保存种子、生成器／规则／配置版本、原始数据、完整来源及路线、失败要素和最小化反例到 `artifacts/mas/bi-family/monte-carlo/`；修复后加入固定回归。显式遍历上游初始化策略和合法完整路径，pending单列；搜索超时、路线爆炸、异常及未完成样本单列，不能截断后记为通过。
-6. **验收报告：** 分层报告完成／未完成数、空结果比例、各阶段数量、路线／笔数量、六项检查覆盖及失败数、耗时与峰值资源。完成样本要求零定义违例、零短序列参考差异；未达样本目标或存在未解决反例不得标记该步骤完成。随机验证提供实验性证据，不替代一般正确性证明。
-7. **问题可视化与通知：** 随机验证出现定义／参考不符、异常、资源耗尽，或已有合格起点却所有路线阻塞时，保存完整原始OHLCV、配置、规则版本及最小复现信息，绘制原始K线、合并K线、分型、候选／阻断历史及失败位置，并向用户展示。阻断历史不得画成正式Bi结果；符合020但输出为空的情形也要单独报告。修改算法须先修改020，再同步实现和验证。
-## 002 — Implementation notes and logs
+1. 计划在 `src/chanlab/algo/bi.py` 实现Bi和BiSeries两个不可变领域类，按009核定成员／公开方法；DP数组、区间查询和临时工作数据封装为私有实现，不自行增加领域类。
+2. 接受确切完整FenxingSeries及其MergedKline／Kline来源链，校验全部完整严格分型、顺序和来源一致性。分型位置、合并中心、整数ID及原始锚点分开；上游pending／dual不代选路径。
+3. 本次固定distance_mode：默认strong、min_gap=4；weak为3。按合并中心距离判断，其余定义不放宽。使用029002.e完整配对检查，不套用020初始化／缓存阶段的简化条件。
+4. 从左到右寻找首个存在合法后续连线的起点a；确定后不换更晚起点。best[a]=0，其余不可达，按终点f递增、前驱p递增检查合法连接；只在笔数严格增加时更新best／prev，同笔数保留先找到者。
+5. 选择固定a可达且至少成一笔的最晚终点，沿prev回溯并倒序。目标严格为“起点最早→终点最晚→同端点笔数最多”；不是全局笔数最多，也不是枚举所有路线。无合法起始笔返回空路线。
+6. 独立扫描最终逐笔区间复核六项定义、连接、方向、来源、选中端点及笔数，保存实际合法性依据及非空头尾未覆盖范围；不强连最后分型，不推断永久确认。
+7. 先按029伪代码实现可核对基线，再评估区间极值查询优化：直接扫描最坏O(M²K)，稀疏表预处理O(K log K)、DP选路O(M²)、DP数组O(M)。不缓存完整路线集合或全部失败详情；记录实际时间／内存，不宣称未测复杂度优势。
+8. 本轮只处理固定快照，最优路线允许调整先前连接；不沿用旧R永久只增、Bi002缓存或previous续读合同。追加、起点锁定、确认及持久化状态另行定义。表／DataFrame／绘图按选中路线与未覆盖范围设计，并核对009接口后实施。
+### 001.b — Repeat and review using Python Pro
+冻结基线、共同验收测试和哈希；技能阶段实际读取共享Python Pro，记录版本及调用请求，保存续作。两版使用相同029合同、距离档位及输入。披露既往技能接触，比较为顺序工程比较，不作技能因果结论。
+### 001.c — Compare and select
+独立进程核对两版真实导入路径，以共同用例比较完整端点路线、best／prev、固定遍历的并列处理、逐笔依据和未覆盖范围。选择依据为正确性、类型、可读性、实际性能和来源完整性，不按画出笔数随意选择。失败与诊断保留归档。
+### 001.d — Tests and integration
+1. 验证029002.d数值例子、起点0不可成笔而更晚起点可成笔、最晚分型不可达、较晚终点优先于更高笔数、同端点最多笔数及同笔数固定顺序。
+2. 验证strong／weak中心距边界、窗口不重叠、等高等低、全范围极值、被跳过分型仍参与范围检查、空输入／单分型／全部无边及非法来源；距离只改第六项。
+3. 有界小输入独立穷举端点子集，按029目标比较起点、终点、最多笔数与确定性并列处理；独立检查每个可达端点的最优前缀，不只核对最终路线合法。
+4. 验证不可变结果、ID／位置分离、解释、表注册隔离、CSV/context往返和原始哈希；运行定向／回归pytest、strict mypy、Black／Ruff和相关覆盖检查，记录实际结果。
+5. 全量样本记录实际原始／合并／分型／输出笔数、未覆盖范围、耗时及峰值内存；不复用历史数量作为本轮通过结果。按001.f完整分段绘图并逐段目视检查。
+6. 真实CC前缀分别取100／1,000／3,000个完整分型，两档各至少3次；独立核验全部端点最优前缀，记录合并／分型／DP核心／工厂／端到端计时、中位数、环境、缓存与内存口径。
+### 001.e — Monte Carlo validation
+1. 至少10,000条可复现随机原始OHLCV，实际经过KlineTSeries→既有MergedKlineSeries→既有FenxingSeries→029的Bi算法；不能直接生成笔端点。覆盖趋势、震荡、跳空、包含、等值、单价及变宽，按长度和strong／weak分层。
+2. 独立定义检查器直接扫描原始来源中的合并范围，不调用被测配对helper。短输入用穷举核对选路目标及并列规则；较长输入用独立参考对照，区分“合法性”和“最优选择正确性”。额外检查价格镜像、平移及正比例缩放后的对应结果。
+3. 保存种子、完整OHLCV、来源／规则版本、距离档位及统计；无路线、未覆盖尾部、异常和资源未完成单列，不能静默截断后算通过。
+4. 遇到定义／参考差异、异常或需要讨论的未覆盖行情，保存可复现输入，画原始K线、合并K线、全部分型、选中笔及问题位置并通知用户；不为消除反例擅改规则。
+### 001.f — Full segmented chart validation
+1. **全量覆盖。** 对约3,000个分型规模的完整样本，从第一根到最后一根原始K线全部分段画出；“3,000”是当前分型规模的描述，不预设有3,000根笔。实际分型数／笔数须由本轮运行记录，不能只展示首尾或缓存附近局部。
+2. **分段规则。** 按连续原始位置固定窗口切图，建议每段200根、相邻重叠20根；不足一段照常输出。保存实际窗口及重叠设置，机器检查各段并集覆盖全部原始位置且无缺页。跨边界笔保留连线并标注真实端点，不能在每段重新计算路线。
+3. **每段内容。** 同时显示原始K线、合并范围、全部可见顶／底分型（包括未选端点）、最终选中笔、FX／Bi标识及必要的中心／原始锚点信息；标明距离档位和未覆盖头尾。不同档位单独出完整图集，不混在同一结果中。
+4. **产物与索引。** 保存每段PNG及交互HTML到 `artifacts/mas/bi-family/` 本轮独立目录；生成按顺序可导航的总索引、总览缩略图及窗口清单，包含段号、raw范围、UTC时间范围、涉及FX／Bi及来源／规则版本。必要memo图复制到同名伴随目录。
+5. **验收与通知。** 所有分段均须目视核对，并记录已查段号；检查分型／笔端点对应、边界连续性、标记遮挡和未覆盖行情。发现问题提供段号、图和复现数据向用户说明；未绘完或未检查的段数明确列出，不宣称全量可视化验收完成。
+
+
+## 002 — Implementation notes and verification reports
 ### 002.a — Implement the Bi family → 001.a
-[bi.py](../../src/chanlab/algo/bi.py) 实现两个不可变领域类。工厂先从左往右确定唯一最早合格起点，再以时序栈保留该起点的初始B跳过选择及等价B替代；执行强制极值延伸、首个合格反向和阻断恢复。配对检查为私有方法，其余分支合同直接封装在候选工厂循环内，未机械拆成020的六个同名helper。所有价格／位置均来自确切上游对象。
+[bi.py](../../src/chanlab/algo/bi.py)实现029的单路线DP。输入完整分型与确切合并来源；起点按合法出边从左向右确定，随后终点f递增、前驱p递增，只在笔数严格增加时更新。记录best／prev，不展开全部完整路线；最终取最晚可达终点并回溯。选中笔逐条重新扫描原合并范围，保留实际中心距、端点区间和范围极值证据。
 
-候选报告是只读映射，包含 `groups`、`blocked`、`unresolved`、`states`、`source_series`、`rule_tree_ref`。groups的键为源分型位置 `(start,end)`，值为该边界的全部BiSeries元组；相同完整端点路线去重，不合并不同内部路线。没有笔时groups为空，孤立起点保留在unresolved；阻断历史只在blocked中。每条路线最后一笔为EOF工作笔；所有笔仍为unconfirmed／None。
-### 002.b — Apply Python Pro → 001.b
-冻结[基线](../../artifacts/mas/bi-family/baseline/bi.py)后，按已读取的Python Pro1.1.0进行类型、校验与接口续作，保存[续作](../../artifacts/mas/bi-family/python_pro/bi.py)。此前已接触技能，不能称为未接触技能的基线实验。[任务记录](../../mas/tasks/20261110-memo028-execution.md)保留原始请求。
+生产搜索使用稀疏表范围查询，预处理O(K log K)，选路最坏O(M²)，DP数组O(M)，查询表O(K log K)；最终逐笔直接扫描、来源校验和适配器编码另计。不把“跳过无改善前驱”解释为不同的并列规则。构造／validate保证合法性与依据一致，最优性由工厂计算及独立测试核验；不声称手工构造的任意合法BiSeries都是最优路线。
+### 002.b — Python Pro continuation → 001.b
+冻结[直接范围扫描基线](../../artifacts/mas/bi-dp029/baseline/bi.py)，按已读取的Python Pro1.1.0进行类型、验证、查询优化及接口续作，保留[选定版本](../../artifacts/mas/bi-dp029/python_pro/bi.py)。基线／续作的共同核心为derive_from和逐笔依据；unresolved_ranges等适配扩展在续作补齐。此前已接触技能，这是顺序工程比较，不是技能的因果实验。[执行任务](../../mas/tasks/20261111-memo028-dp029.md)保留用户原始请求。
 ### 002.c — Compare and select → 001.c
-两个冻结版本在独立进程各运行200组相同输入，导入路径已核对，完整路线集合相同。本轮两版均继承已有类型／trace校验；续作补充initial_a、no_qualified_start／blocked状态和无路线时的完整未决范围。选用续作；这不是技能效果的因果证明。[比较与哈希](../../artifacts/mas/bi-family/comparison.json)。
-### 002.d — Test → 001.d
-27项Bi定向测试通过，活动tests共413项回归通过。新算法／表适配器／绘图模块语句覆盖率分别92%／95%／94%，合计93%；5个修改源模块strict mypy、Black及Ruff检查通过。检查记录在[证据目录](../../artifacts/mas/bi-family/)。覆盖了020阻断恢复、等价端点、镜像、显式路线选择、预算失败、非法对象、只读状态及表往返。
+两个冻结版本在独立进程各跑200条相同输入、每条strong／weak两档，共400个结果；路线和逐笔依据完全一致。导入路径与SHA256均记录；选用稀疏范围查询的续作，理由是输出等价且避免重复扫描，不按画出的笔数量选择。[比较报告](../../artifacts/mas/bi-dp029/comparison.json)。
+### 002.d — Tests and integration → 001.d
+[定向测试](../../tests/test_bi.py)39项通过，现有tests共425项通过；覆盖029数值例、逐端点best／prev、距离3的弱档专属边界、空／单分型／无路、最早可成笔起点、完整定义、非法输入、只读对象、损坏依据、ID查询、表往返及全部分型绘图。新算法96%、表适配95%、绘图94%，合计96%语句覆盖；5个修改源模块strict mypy、Black和Ruff通过。测试数量属于本轮，不沿用历史结果。[覆盖检查](../../artifacts/mas/bi-dp029/coverage.txt)、[回归](../../artifacts/mas/bi-dp029/regression.txt)。
 
-[表适配器](../../src/chanlab/data/bi_table.py)仅注册调用者已选定的路线；每个key保留独立来源／规则／trace。缺失上游自动注册确切分型与合并对象。固定bi列显示首个注册BiSeries；其他路线通过各自key读取。笔区间为两原始锚点的闭区间，共端点可有多个笔ID；方向只标在起点。CSV必须带context；往返重建同一注册来源链。DataFrame attrs保留路线／规则／trace和原始context，不能当作独立文件交换格式。
-### 002.e — Handoff and remaining scope
-完整CC样本：10,060根原始K线 → 6,200合并单元 → 3,027分型。选定初始A为源分型位置0，枚举消耗3,177步，在100,000预算内完成；该A的唯一探索历史在分型位置151发生强制延伸失败，保留阻断历史，不改用更晚A，最终零条可行路线。原始CSV哈希不变。[全量证据](../../artifacts/mas/bi-family/full-data.json)。计算完成不表示存在可行笔路线，亦不证明算法能完整刻画该数据。
+[Bi表适配器](../../src/chanlab/data/bi_table.py)将选中笔注册为独立key；自动保留确切Fenxing／MergedKline来源，首个Bi key投影固定bi列，其余key可独立读取。覆盖区间为两原始锚点闭区间；共享端点可有多个Bi ID，方向仅在起点标注。context使用chanlab.bi_features.v2，保留配置、规则、来源指纹、逐笔记录和依据；旧v1历史须重新计算，不混作本轮结果。CSV须带context。DataFrame是8列紧凑记录，attrs不是持久化或续读格式。
 
-旧129根超预算案例属于多起点历史证据，已归档。本轮执行、独立定义核验和全量预算探测均完成；后续若要在阻断后继续输出，需要另行明确恢复／更换起点规则，不能隐式加入。唯一末端路线选择、实时确认、增量回退和线段检测仍未定义。
-### 002.f — Monte Carlo validation → 001.e
-种子0–9999共10,000条独立原始OHLCV序列（随机high／low后，在其范围内随机open／close及非负volume），长度9／17／33／49／65，分六类覆盖趋势、震荡、跳空、包含及等值、单价和变宽；主路径显式使用UP，FIRST／LAST交替。共345,296根原始K线 → 215,780合并单元 → 107,194分型 → 11,368候选路线，逐笔检查33,249根笔；3,436条输入没有候选路线，单列统计。
+完整真实样本strong／weak均通过独立的逐步扩展范围建边参考，与生产的全部best／prev及端点路线相同；该参考不使用生产稀疏查询。两档表／context重载保留记录、模式和explain，原始CSV／context哈希不变。[全量结果](../../artifacts/mas/bi-dp029/full-result.json)、[复现脚本](../../artifacts/mas/bi-dp029/full_atlas.py)。
 
-验证入口先构造KlineTSeries，再调用现有MergedKlineSeries.derive_from与FenxingSeries.derive_from，最后执行Bi；不直接生成分型或笔端点。所有完整输出均通过独立六要素检查和独立递归候选协议参考，零定义违例、零路线集合差异。额外100条输入各跑5种初始化策略×2种锚点策略，pending／dual按上游合同处理；另有300次价格镜像、平移和缩放输入探测。报告保留分层数量、状态数、阻断数、耗时及进程峰值RSS；脚本保存首个失败输入。[最终报告](../../artifacts/mas/bi-family/monte-carlo/report.json)、[复现脚本](../../artifacts/mas/bi-family/verify.py)。这是有界实验性证据，不是一般正确性或唯一划笔证明。
-### 002.g — Restart from plan with problem plots
-按用户要求从001重新核对：009接口、020起点／强制延伸／首个合格反向／缓存／收尾合同均为依据；保留现有两类实现并重新验证，不采用recovery-study的额外反向备选。冻结输入及源码哈希；复用基线／续作快照，重新在独立进程比较200组输入。Python Pro1.1.0此前已读，本轮是审查与复验，不是无先验技能实验。
 
-新目录[restart-20261110_040433](../../artifacts/mas/bi-family/restart-20261110_040433/)保存完整本轮证据。413项回归、27项Bi定向测试通过；新增模块覆盖率93%，5个源模块strict mypy、Black、Ruff通过。10,000条随机原始OHLCV经过实际KlineTSeries→MergedKlineSeries→FenxingSeries→Bi，检查11,368条路线／33,249根笔，零定义违例／参考差异。
+真实CC嵌套前缀100／1,000／3,000完整分型，两档各运行3次，全部best／prev与独立范围参考一致。
 
-**仍须报告的问题：** 包括额外配置探测在内，有190个去重配置出现“已有合格A，但全部路线阻断”，每个保存原始数据、配置及HTML图；这类输出符合当前020，但尚不能作为连续画笔目标已达成的证据。首例seed50包含49根原始K线；初始A为FX1，历史FX1→FX4成立，FX6触发失败延伸。紫色虚线仅表示阻断历史，黑叉为失败位置，不能充当正式Bi结果。未修改020或正式算法来消除该问题。
+| 分型数 | 档位 | 笔数 | DP核心中位秒 | 端到端中位秒 |
+|---:|---|---:|---:|---:|
+| 100 | strong | 17 | 0.0005 | 0.0198 |
+| 100 | weak | 23 | 0.0005 | 0.0206 |
+| 1,000 | strong | 167 | 0.0317 | 0.2410 |
+| 1,000 | weak | 239 | 0.0354 | 0.2348 |
+| 3,000 | strong | 476 | 0.2565 | 0.8390 |
+| 3,000 | weak | 677 | 0.3057 | 0.9095 |
 
-![Monte Carlo seed50 blocked history](memoWX_028_biFamily/restart-seed50-problem.png)
+端到端从已加载原始前缀到完整Bi工厂输出，排除读文件和独立参考耗时；DP核心单列，不重复计入端到端。同一进程、文件暖缓存，无DP结果缓存；每次重建上游。阶段逐次耗时、Python／平台及累计进程峰值RSS见[性能记录](../../artifacts/mas/bi-dp029/scaling.json)，峰值包含参考计算，不能视作单阶段内存。复现见[scaling.py](../../artifacts/mas/bi-dp029/scaling.py)。
+### 002.e — Monte Carlo validation → 001.e
+从种子0–9999生成10,000条原始OHLCV，长度9／17／33／65／129，high／low、区间内open／close及非负volume可复现。逐条实际执行KlineTSeries→既有MergedKlineSeries→既有FenxingSeries→BiSeries；没有直接随机构造端点。
 
-[首例原始数据](../../artifacts/mas/bi-family/restart-20261110_040433/problem/case.json)；[交互图](../../artifacts/mas/bi-family/restart-20261110_040433/problem/problem.html)；[全部问题图和数据](../../artifacts/mas/bi-family/restart-20261110_040433/problem/)。异常捕获器也保存可用原始输入和图；本轮未发生异常。完整真实数据上轮的blocked空结果保留为已知问题，本次未改规则重解释为成功分段。
+| 验证项 | strong | weak |
+|---|---:|---:|
+| 原始输入序列 | 10,000 | 10,000 |
+| 输入原始K线合计 | 507,168 | 507,168 |
+| 合并单元合计 | 338,300 | 338,300 |
+| 完整分型合计 | 168,482 | 168,482 |
+| 输出笔合计 | 23,621 | 32,310 |
+| 空路线输入 | 2,877 | 2,382 |
+| 全子集穷举输入（FX≤11） | 5,377 | 5,377 |
+| 定义／独立参考差异 | 0 | 0 |
 
-## 003 — Class interfaces and examples
-### 003.a — Bi members and methods
-恰好两个领域类。Bi保存8项成员：`id`、`start_fenxing_index`、`end_fenxing_index`、`start_price`、`end_price`、`direction`、`status`、`confirmed_at`。端点下标是FenxingSeries位置，不是中心位置或ID。
+参考先独立扫描完整范围建立合法边，再按前驱向后松弛，与生产按终点向前转移区分；比较整条路线及每个端点的best／prev。短输入枚举全部子集，验证起点、最晚终点、最多笔数及反向前驱字典序对应的固定并列约定。另对100条输入做5种初始化×2种锚点探测，pending单列不冒充完整结果，dual的两个完整路径分别验证；再做300次价格镜像／平移／正比例缩放，两档路线对应一致。
 
-方法：初始化自动调用 `validate()`，检查整数、有限价格、顺序、方向和未确认状态。
-### 003.b — BiSeries members and methods
-保存6组成员：`source_series`、`items`、`config`、`rule_tree_ref`、`trace`、`trace_by_point`。config记录 `max_states` 和该路线的 `route`；默认预算100,000步，不是删路线阈值。超预算抛RuntimeError，没有部分成功结果。
+本轮无算法异常或定义／最优性反例；空路线单列，不因其为空擅加选择规则。失败捕获保存种子、输入和HTML／图形数据，供立即绘图通知用户。以上为实验性验证，不是一般正确性或作者意义唯一性的证明。[生成及复现](../../artifacts/mas/bi-dp029/verify.py)、[独立参考](../../artifacts/mas/bi-dp029/oracle.py)、[分层统计与资源](../../artifacts/mas/bi-dp029/monte-carlo.json)。
+### 002.f — Full segmented charts → 001.f
+| 全量项目 | strong | weak |
+|---|---:|---:|
+| 原始／合并／分型 | 10,060／6,200／3,027 | 10,060／6,200／3,027 |
+| 选中笔 | 480 | 682 |
+| 起止分型位置 | 0→3026 | 0→3026 |
+| 未覆盖合并范围 | [0,1)、[6199,6200) | [0,1)、[6199,6200) |
+| 分段PNG／HTML页数 | 56／56 | 56／56 |
 
-| 方法 | 用途 |
+每页200根原始K线，相邻重叠20根，末页不足200照常输出。全量DP每档只计算一次，跨页笔沿真实端点连续显示，不在窗口内重新选路。所有可见顶／底分型（含未选端点）及FX位置编号、Bi ID均显示；距离档位、raw范围、UTC范围、涉及FX／Bi及规则版本写入manifest。FX位置编号与结果整数ID含义区分，hover给出真实笔端点。
+
+首次绘图检查发现页边FX文字裁切，已将边缘文字向页内排并允许文字越过坐标裁切边界，未改变分型或笔端点，随后重生成全图集。PNG／交互HTML、逐段索引、总览缩略图及机器覆盖／视觉验收记录均保留；最终验收统计见同目录atlas-check.json和visual-review.json，强／弱各56页均经最终全分辨率双页联系图逐页检查，机器同时核对全部标记位置和跨窗笔坐标。密集分型文字局部可重叠，需用交互HTML放大／hover；未隐藏分型。不以局部示例代替全量检查。
+
+**完整图集：**[总入口](../../artifacts/mas/bi-dp029/index.html) · [strong 56页](../../artifacts/mas/bi-dp029/strong/index.html) · [weak 56页](../../artifacts/mas/bi-dp029/weak/index.html) · [逐段范围清单](../../artifacts/mas/bi-dp029/atlas-manifest.json)。
+### 002.g — Handoff and remaining scope
+本轮固定快照DP不保留旧R／缓存，也不提供previous续读；新输入应按新快照重新计算，路线可以变化。端点以后未覆盖允许存在，但本数据两档均到最后完整分型，未强制把缺少右邻的最后合并单元作为分型。来源修订、永久确认、实时锁定及线段检测仍未定义。后续若改变算法目标或距离含义，先更新029再实施；020保持历史用途。
+## 003 — Implemented classes, members and methods
+### 003.a — Class count and scope
+实现2个不可变领域类，定义于src/chanlab/algo/bi.py。表、DataFrame和绘图为内部适配函数，不新增领域类。临时best／prev、稀疏查询表不是对象存储成员；不保存完整候选路线图。
+### 003.b — Bi
+
+| 存储成员 | 含义 |
 |---|---|
-| `derive_candidates(source_series, config, rule_tree_ref)` | 返回全部候选的分组只读报告。 |
-| `derive_from(source_series, config, rule_tree_ref)` | 返回唯一或显式指定route的结果；多结果不代选。 |
-| `validate()` | 定义、来源价格、连接、ID、路线元数据和决策证据校验。 |
-| `__len__()`／`__getitem__()`／`__iter__()` | 序列访问；切片返回tuple。 |
-| `get_by_id(feature_id)` | 按结果整数ID查找；缺失抛KeyError。 |
-| `explain(point_index)` | 返回规则、中心／原始锚点、决策、工作笔及未覆盖范围的只读证据。 |
-| `from_chan_table(...)`／`to_chan_table(...)` | 精确key读取／注册已选路线。 |
-| `to_dataframe()`／`plot(**options)` | 委托内部表／绘图适配器。 |
+| `id: int` | 本结果内非负整数ID，工厂从0递增分配；Bi前缀只用于显示。 |
+| `start_fenxing_index: int` | 确切源FenxingSeries中的起点位置，不是其ID或合并中心。 |
+| `end_fenxing_index: int` | 同一来源中的终点位置，必须晚于起点。 |
+| `start_price: float` | 起点分型的有限价格，series核对来源。 |
+| `end_price: float` | 终点分型的有限价格，series核对来源。 |
+| `direction: str` | up／down，须与端点价格升降一致。 |
+| `status: str` | 当前只支持unconfirmed；最优路线不代表已永久确认。 |
+| `confirmed_at: datetime / None` | 当前只支持None，不以EOF推定确认。 |
 
-私有 `_check_pair` 检查成笔条件，`_options` 校验调用配置；缓存恢复逻辑在工厂内部。
-### 003.c — ChanTable registration and retrieval
-`registered = selected.to_chan_table(table, "bi:route1")`；`BiSeries.from_chan_table(registered, "bi:route1")` 返回该key确切对象。另一路线使用另一key，固定列仍显示第一条注册路线。
-### 003.d — DataFrame export
-`frame = selected.to_dataframe()`；一行一笔，字段对应Bi成员，确认时间为UTC可空列。使用显式注册与context持久化来源链。
-### 003.e — Object examples
+| 方法 | 行为 |
+|---|---|
+| `__init__(...)` | dataclass生成，不可变初始化；__post_init__自动调用validate。 |
+| `validate()` | 检查整数／顺序、有限价格、方向及unconfirmed／None；来源范围和成笔定义由series复核。 |
+
+### 003.c — BiSeries
+
+| 存储成员 | 含义 |
+|---|---|
+| `source_series: FenxingSeries` | 确切完整几何分型引用，沿其单向来源链访问合并／原始K线。 |
+| `items: tuple[Bi, ...]` | DP选中路线的笔记录，按时间保存，可为空。 |
+| `config: Mapping[str, Any]` | 冻结规范配置，目前仅distance_mode=strong／weak；缺省strong，min_gap分别由模式导出4／3。 |
+| `rule_tree_ref: str` | 非空规则位置／版本，由调用方明确提供。 |
+| `trace: tuple[Mapping[str, Any], ...]` | 每根选中笔一条独立完整范围依据：pair、中心、距离、端点区间、范围极值及规则。 |
+| `trace_by_point: tuple[tuple[int, ...], ...]` | 每根笔到其trace条目的单元素索引元组。 |
+
+| 方法 | 行为 |
+|---|---|
+| `__init__(...)`／`validate()` | 递归冻结配置／记录／依据后自动校验；完整来源、每根笔、唯一ID、共享端点、来源价格和逐笔证据一致性，不修补结果。 |
+| `derive_from(source_series, config, rule_tree_ref)` | 类方法；以029目标对完整固定快照执行DP，返回单条选中路线；无合法起始笔返回空series。 |
+| `__len__()`／`__iter__()`／`__getitem__(key)` | 标准位置／负下标／迭代，切片返回Bi元组。 |
+| `get_by_id(feature_id)` | 结果内整数ID查询，缺失抛KeyError。 |
+| `explain(point_index)` | 返回规则、模式、Bi、逐笔完整依据、两端raw锚点及头尾未覆盖合并范围的只读映射。 |
+| `unresolved_ranges()` | 返回非空半开merged范围；空路线返回整个合并序列范围。 |
+| `from_chan_table(table, series_key)` | 类方法；校验表后返回该key确切注册对象。 |
+| `to_chan_table(table, series_key)` | 返回新表，保留原表／其他注册，必要时注册确切上游链。 |
+| `to_dataframe()` | 返回独立8列紧凑表及来源／规则attrs。 |
+| `plot(**options)` | 返回Figure，显示原始／合并K线、全部可见分型和选中笔，不重算局部路线。 |
+
+**私有方法与钩子**
+
+| 方法 | 行为 |
+|---|---|
+| `__post_init__()` | 冻结成员并自动validate。 |
+| `_validate_source(source)` | 拒绝非完整FenxingSeries；复用几何分型及确切上游来源校验。 |
+| `_resolve_distance(mode)`／`_normalize_config(config)` | None／strong→strong/4，weak→weak/3；拒绝其他档位及未知配置，不接收续读状态。 |
+| `_check_pair(source,p,f,gap)` | 按完整定义直接扫描，返回首个失败原因／实际值或完整成功依据；非法位置报错。 |
+| `_range_index(source)` | 为merged高低价建立稀疏查询表。 |
+| `_find_start(count, good)` | 起点递增、后续位置递增，查首个有合法出边者。good为当前查询函数。 |
+| `_solve(source,gap)` | 用局部区间查询函数执行DP，返回route、best、prev；不缓存全部失败或完整路线集合。 |
+| `_recover(prev,a,end)` | 严格沿递减前驱回到a，再反向；缺失或非法前驱报错。 |
+| `_validate_route(source,route,gap)` | 对选中笔重新直接扫描原合并范围，返回逐笔依据，不复用稀疏查询结果。 |
+| `_unresolved()` | 根据选中路线首末中心，推导头尾半开merged范围。 |
+
+**调用选项（不存储）：** config仅接受distance_mode，可省略／None取strong；不接收旧route、max_states或previous。上游初始化及anchor_tie保留在确切来源对象，不在Bi中重复设置。
+
+**绘图选项（不存储）：**raw_start／raw_stop选择原始位置窗口；volume=True、title=None、show_gaps=False、market=US／China。默认调用原始／合并／分型图；FX标记使用真实原始极值锚点，FX文字为源序列位置，Bi文字为结果ID。跨窗口笔保留真实端点并剪裁到视窗，hover列出FX及raw端点。空路线仍可显示上游图。
+### 003.d — Object workflow and implementation boundary
+KlineTSeries.read_csv → MergedKlineSeries.derive_from（显式初始化）→ FenxingSeries.derive_from（全部完整几何分型）→ BiSeries.derive_from（029 DP）→ explain／DataFrame／ChanTable／plot。分型位置、合并中心和原始锚点各有用途，不能用特征ID代替位置。
+
+这是固定快照选路，不是永久提交的流式笔序列。表／图记录模式及版本，strong和weak结果分key／分图保存；未选分型仍参与范围极值检查。
+### 003.e — Usage examples
+从仓库根目录运行（PYTHONPATH=src .venv/bin/python）：
+
 ```python
-report = BiSeries.derive_candidates(fractals, {"max_states": 100_000}, "memo020:002a-d")
-for boundary, routes in report["groups"].items():
-    for candidate in routes:
-        print(boundary, candidate.config["route"])
-# route由调用者显式指定；不能把分型ID或合并中心填入该位置序列。
-selected = BiSeries.derive_from(fractals, {"route": chosen_positions}, "memo020:002a-d")
-```
-### 003.f — Plotting examples
-`selected.plot(...)` 复用合并图的原始区间、volume、show_gaps及market选项，叠加该路线原始极值锚点连线；末笔虚线，全部标注unconfirmed。US／China配色图片均已目视核对；最初沙箱Chrome导出失败，允许本地渲染后成功。
+from pathlib import Path
+from chanlab.algo.kline import KlineTSeries
+from chanlab.algo.merged_kline import MergedKlineSeries
+from chanlab.algo.fenxing import FenxingSeries
+from chanlab.algo.bi import BiSeries
+from chanlab.algo.chan_table import ChanTable
 
-![US candidate route](memoWX_028_biFamily/worked-US.png)
-![China candidate route](memoWX_028_biFamily/worked-China.png)
+sample = Path("samples/chan_table")
+raw = KlineTSeries.read_csv(next(sample.glob("*chan_table*.csv")),
+                           next(sample.glob("*context*.csv")))
+merged = MergedKlineSeries.derive_from(
+    raw, {"initialization": "UP"}, "memo015:002")
+assert isinstance(merged, MergedKlineSeries)
+fx = FenxingSeries.derive_from(merged, {}, "memo019:002")
+bi = BiSeries.derive_from(fx, {"distance_mode": "strong"}, "memo029:001,002a-f")
+print(len(bi), bi.unresolved_ranges())
+if len(bi):
+    print(bi.explain(0))
+frame = bi.to_dataframe()
+table = bi.to_chan_table(ChanTable.from_source_series(raw, raw.context), "bi:strong")
+assert BiSeries.from_chan_table(table, "bi:strong") is bi
+fig = bi.plot(raw_start=0, raw_stop=200, volume=False, market="China")
+# fig.show()／fig.write_html(...)，调用方选择显示与输出位置。
+```
+
+[随机验证](../../artifacts/mas/bi-dp029/verify.py)、[全量／图集复现](../../artifacts/mas/bi-dp029/full_atlas.py)、[逐段机器核对](../../artifacts/mas/bi-dp029/check_atlas.py)及[任务／实际检查](../../mas/tasks/20261111-memo028-dp029.md)分别保留，不把示例代码当成完整验收。
+### 003.f — Chart pictures and complete atlas
+以下图片是完整图集的memo副本；总览为56页缩略导航，详细FX／Bi请打开逐页PNG或交互HTML。所有分段均包括原始K线、合并范围、全部可见分型及笔，未选分型不隐藏。图中涨跌采用China配色；算法没有US／China价格规则差异。
+
+[strong全56段](../../artifacts/mas/bi-dp029/strong/index.html) · [weak全56段](../../artifacts/mas/bi-dp029/weak/index.html) · [图集总入口](../../artifacts/mas/bi-dp029/index.html)
+
+![strong全量56段总览](memoWX_028_biFamily/dp029-strong-overview.png)
+![weak全量56段总览](memoWX_028_biFamily/dp029-weak-overview.png)
+![strong第1段，含全部分型和笔](memoWX_028_biFamily/dp029-strong-first.png)
+![strong第56段](memoWX_028_biFamily/dp029-strong-last.png)
+![weak第1段，含全部分型和笔](memoWX_028_biFamily/dp029-weak-first.png)
+![weak第56段](memoWX_028_biFamily/dp029-weak-last.png)
 
 ## References
-1. [Memo026 — MergedKline family](memoWX_026_MergedKlineFamily.md).
-2. [Memo009 — Feature interfaces](memoWX_009_designPatternForChanFeatures.md), 002.h–002.i、002.u.
-3. [Memo020 — Chan_bi](memoWX_020_Chan_bi.md), 001、002.a–002.d.
-4. [Memo011 — ChanTable implementation](memoWX_011_chanTableImplementation.md).
-5. [Memo013 — Kline family](memoWX_013_klineFamily.md).
-6. [Memo015 — Chan_mergedkline](memoWX_015_Chan_mergedkline.md).
-7. [Memo019 — Chan_fenxing](memoWX_019_Chan_fenxing.md).
-8. [Memo027 — Fenxing family](memoWX_027_fenxingFamily.md).
-9. [Memo010 — Python setup](memoWX_010_pythonSetup.md).
-10. [Memo012 — Python Pro skill](memoWX_012_Skill_python_pro.md).
+1. [Memo027 — Fenxing family implementation](memoWX_027_fenxingFamily.md)，报告格式及上游实现。
+2. [Memo009 — Design pattern for Chan features](memoWX_009_designPatternForChanFeatures.md)，002.h–002.i、002.u。
+3. [Memo029 — Chan_bi：动态规划](memoWX_029_Chan_bi.md)，001、002.a–002.f、004。
+4. [Memo011 — ChanTable implementation](memoWX_011_chanTableImplementation.md)。
+5. [Memo013 — Kline family](memoWX_013_klineFamily.md)。
+6. [Memo015 — Chan_mergedkline](memoWX_015_Chan_mergedkline.md)。
+7. [Memo026 — MergedKline family implementation](memoWX_026_MergedKlineFamily.md)。
+8. [Memo019 — Chan_fenxing](memoWX_019_Chan_fenxing.md)。
+9. [Memo010 — Python setup](memoWX_010_pythonSetup.md)。
+10. [Memo012 — Python Pro skill](memoWX_012_Skill_python_pro.md)。
