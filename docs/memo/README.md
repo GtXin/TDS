@@ -33,6 +33,8 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | WX 027 | [Fenxing family implementation plan](memoWX_027_fenxingFamily.md) |
 | WX 028 | [Bi family implementation plan](memoWX_028_biFamily.md) |
 | WX 029 | [Chan_bi — new algorithm draft](memoWX_029_Chan_bi.md) |
+| WX 030 | [Chan_xianduan — new draft](memoWX_030_Chan_xianduan.md) |
+| WX 031 | [Xianduan family implementation plan](memoWX_031_xianduanFamily.md) |
 | KWX 001 | [cc project folder structure](memoKWX_001_文件夹结构.md) |
 | KWX 009 | [线段](memoKWX_009_Chan_xianduan.md) |
 

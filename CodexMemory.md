@@ -3,7 +3,12 @@ Updated: 2026-11-11
 ## Purpose
 Bring KWX and WX together for a three-day Chan theory feasibility sprint, establishing a reusable algorithm foundation with a Python backend and static website.
 ## Confirmed decisions
-- Memo021 已按用户选择先补齐自有识别器，再验证前1000FX。XD-P1 实验口径在真实运行前写入002.e，明确包含、相等、局部直接破坏守卫、F1/F2、倒序相容过滤及父节点限定派生段。3244 raw→2040 merged→1000 FX：strong 167笔→15段（FX0→917，未决Bi[147,167)，中位0.151秒）；weak 239笔→26段（FX0→986，未决Bi[234,239)，0.412秒）。20 pytest／Ruff通过；独立枚举21050组，重建324证书／353状态／327边及41选中段，DFS选路一致。002.d嵌4张图并链接26页全覆盖、已目视检查图集；17文档检查、31保护哈希及39链接通过。001／附录／References／029／028／生产代码未变。本口径保守，单后继图退化为链式基线，不宣称原文完备或永久确认。[任务](mas/tasks/20261111-memo021-1000fx-validation.md)，[图集](artifacts/mas/memo021-1000fx/charts/index.html)。
+- Memo031按028结构准备线段外围实施／比较／测试／Monte Carlo／全量图集计划，尚未实现。029是上游笔算法，030线段规格仍修订；最终算法依据与版本待明确，未决识别／确认／状态不补写。[计划](docs/memo/memoWX_031_xianduanFamily.md)。
+- Memo030真实500FX试算XD030-A：1651raw/1018merged，strong82Bi→8XD到FX462、weak115Bi→13XD到FX485。保留全部局部证书，最大出度7/9；4889局部独立对照及52/374图路径目标核对通过。14图及4张memo图片已入030；内部完成边界/复杂吸收/上下文完整性未获证明，不称030总体验证成功。[任务](mas/tasks/20261111-memo030-500fx.md)。
+- Memo030002.a–f按用户要求参考029完成DP设计稿：候选确认→上下文状态图→best/prev→回溯，最早起点/最晚已确认终点/最多段。确认包含/同价/触点/复杂延续判定表及状态压缩未完成，不是可直接执行的完整算法；未复用旧XD-P1验收。修正此前引用替换误把001公式b[2]改为b[1]的抄写错误；KWX原件未改。
+- Memo030004新增重新定义线段的可复用提示词：原文逐项核对、区分基本定义与确认规则、分别审查端点类型/价格/极值；仅保存提示词，未执行重定义或替换001。
+- Memo030001保留KWX009001三个版本及说明，以KWX确定稿（版本一）为主定义；原AI定义已完整移至附录C留档，不再放在001。
+- 用户判定memo021线段方案未成功，要求保留021，并复制为[memo030](docs/memo/memoWX_030_Chan_xianduan.md)供以后自行重写。030的002–005已清空，仅保留章节及002.a–f模板标题；000／001／附录／References沿用021，保留图片复制到030同名文件夹。021及旧试算证据保持原样；XD-P1仅属未被用户接受的历史实验，规则一致性检查不等于算法目标成功。[重置任务](mas/tasks/20261111-memo030-xianduan-reset.md)。
 - Memo028已按029固定快照DP执行，009两类合同及027报告结构补齐。425回归／39定向通过，3个Bi模块合计96%覆盖，strict mypy／Black／Ruff通过。10,000随机原始OHLCV×strong/weak经既有merged/FX处理，逐端点独立参考及每档5,377短输入穷举无差异；空路线单列。真实CC100/1000/3000FX两档各3次，全部best/prev一致。完整10060raw→6200merged→3027FX：strong480／weak682，均FX0→3026，仅首尾各1合并单元未覆盖。112页PNG/HTML全部生成、机器覆盖核对并逐页目视检查；页边FX裁切已修复，密集文字可交互放大。无永久确认／缓存续读；029未修改。证据[执行任务](mas/tasks/20261111-memo028-dp029.md)、[图集](artifacts/mas/bi-dp029/index.html)。下一步：用户审阅；算法目标改变先改029。
 - User confirmed028 follows029. CC100/1000/3000FX timing plan belongs in028; erroneous029005 insertion removed. AGENTS.md prohibits changing029 during028 work without explicit user-requested specification change.
 - Memo028 validation plan now requires realCC prefixes of100/1000/3000 completeFX, both modes, independent objective/geometry checks and stage/core/end-to-end timing (≥3 runs, median, environment/cache/memory recorded). Current10060raw sample yields3027FX and supports all three requested tiers; any actual shortage must be reported.

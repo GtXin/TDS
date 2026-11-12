@@ -1,0 +1,4620 @@
+{
+  "mode": "strong",
+  "min_gap": 4,
+  "route_fx_positions": [
+    0,
+    1,
+    6,
+    9,
+    12,
+    25,
+    26,
+    39,
+    54,
+    59,
+    64,
+    71,
+    76,
+    79,
+    80,
+    87,
+    90,
+    97,
+    108,
+    119,
+    124,
+    137,
+    140,
+    145,
+    150,
+    165,
+    166,
+    175,
+    176,
+    179,
+    182,
+    187,
+    190,
+    195,
+    208,
+    213,
+    216,
+    223,
+    226,
+    233,
+    236,
+    239,
+    244,
+    245,
+    248,
+    253,
+    256,
+    261,
+    274,
+    277,
+    288,
+    295,
+    304,
+    309,
+    320,
+    329,
+    332,
+    339,
+    340,
+    345,
+    348,
+    351,
+    370,
+    373,
+    384,
+    391,
+    398,
+    401,
+    410,
+    413,
+    422,
+    441,
+    448,
+    449,
+    452,
+    453,
+    462,
+    467,
+    470,
+    485,
+    486,
+    493,
+    498
+  ],
+  "pens": [
+    {
+      "pen_position": 0,
+      "pen_id": 0,
+      "direction": "down",
+      "low": 2958.0,
+      "high": 2998.0,
+      "start": {
+        "fx_position": 0,
+        "fx_id": 0,
+        "kind": "top",
+        "price": 2998.0,
+        "merged_center": 1,
+        "merged_window": [
+          0,
+          3
+        ],
+        "merged_center_raw_range": [
+          1,
+          4
+        ],
+        "window_raw_range": [
+          0,
+          5
+        ],
+        "anchor_raw_index": 1,
+        "anchor_utc": "2024-10-28T06:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 1,
+        "fx_id": 1,
+        "kind": "bottom",
+        "price": 2958.0,
+        "merged_center": 5,
+        "merged_window": [
+          4,
+          7
+        ],
+        "merged_center_raw_range": [
+          7,
+          8
+        ],
+        "window_raw_range": [
+          6,
+          9
+        ],
+        "anchor_raw_index": 7,
+        "anchor_utc": "2024-10-28T13:30:00+00:00"
+      },
+      "merged_member_range": [
+        1,
+        6
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 1,
+      "pen_id": 1,
+      "direction": "up",
+      "low": 2958.0,
+      "high": 3026.0,
+      "start": {
+        "fx_position": 1,
+        "fx_id": 1,
+        "kind": "bottom",
+        "price": 2958.0,
+        "merged_center": 5,
+        "merged_window": [
+          4,
+          7
+        ],
+        "merged_center_raw_range": [
+          7,
+          8
+        ],
+        "window_raw_range": [
+          6,
+          9
+        ],
+        "anchor_raw_index": 7,
+        "anchor_utc": "2024-10-28T13:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 6,
+        "fx_id": 6,
+        "kind": "top",
+        "price": 3026.0,
+        "merged_center": 16,
+        "merged_window": [
+          15,
+          18
+        ],
+        "merged_center_raw_range": [
+          23,
+          29
+        ],
+        "window_raw_range": [
+          21,
+          30
+        ],
+        "anchor_raw_index": 28,
+        "anchor_utc": "2024-10-29T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        5,
+        17
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 2,
+      "pen_id": 2,
+      "direction": "down",
+      "low": 2966.0,
+      "high": 3026.0,
+      "start": {
+        "fx_position": 6,
+        "fx_id": 6,
+        "kind": "top",
+        "price": 3026.0,
+        "merged_center": 16,
+        "merged_window": [
+          15,
+          18
+        ],
+        "merged_center_raw_range": [
+          23,
+          29
+        ],
+        "window_raw_range": [
+          21,
+          30
+        ],
+        "anchor_raw_index": 28,
+        "anchor_utc": "2024-10-29T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 9,
+        "fx_id": 9,
+        "kind": "bottom",
+        "price": 2966.0,
+        "merged_center": 24,
+        "merged_window": [
+          23,
+          26
+        ],
+        "merged_center_raw_range": [
+          37,
+          38
+        ],
+        "window_raw_range": [
+          36,
+          40
+        ],
+        "anchor_raw_index": 37,
+        "anchor_utc": "2024-10-30T01:15:00+00:00"
+      },
+      "merged_member_range": [
+        16,
+        25
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 3,
+      "pen_id": 3,
+      "direction": "up",
+      "low": 2966.0,
+      "high": 3020.0,
+      "start": {
+        "fx_position": 9,
+        "fx_id": 9,
+        "kind": "bottom",
+        "price": 2966.0,
+        "merged_center": 24,
+        "merged_window": [
+          23,
+          26
+        ],
+        "merged_center_raw_range": [
+          37,
+          38
+        ],
+        "window_raw_range": [
+          36,
+          40
+        ],
+        "anchor_raw_index": 37,
+        "anchor_utc": "2024-10-30T01:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 12,
+        "fx_id": 12,
+        "kind": "top",
+        "price": 3020.0,
+        "merged_center": 30,
+        "merged_window": [
+          29,
+          32
+        ],
+        "merged_center_raw_range": [
+          50,
+          52
+        ],
+        "window_raw_range": [
+          49,
+          53
+        ],
+        "anchor_raw_index": 50,
+        "anchor_utc": "2024-10-30T06:45:00+00:00"
+      },
+      "merged_member_range": [
+        24,
+        31
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 4,
+      "pen_id": 4,
+      "direction": "down",
+      "low": 2958.0,
+      "high": 3020.0,
+      "start": {
+        "fx_position": 12,
+        "fx_id": 12,
+        "kind": "top",
+        "price": 3020.0,
+        "merged_center": 30,
+        "merged_window": [
+          29,
+          32
+        ],
+        "merged_center_raw_range": [
+          50,
+          52
+        ],
+        "window_raw_range": [
+          49,
+          53
+        ],
+        "anchor_raw_index": 50,
+        "anchor_utc": "2024-10-30T06:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 25,
+        "fx_id": 25,
+        "kind": "bottom",
+        "price": 2958.0,
+        "merged_center": 62,
+        "merged_window": [
+          61,
+          64
+        ],
+        "merged_center_raw_range": [
+          102,
+          103
+        ],
+        "window_raw_range": [
+          101,
+          107
+        ],
+        "anchor_raw_index": 102,
+        "anchor_utc": "2024-11-01T14:15:00+00:00"
+      },
+      "merged_member_range": [
+        30,
+        63
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 5,
+      "pen_id": 5,
+      "direction": "up",
+      "low": 2958.0,
+      "high": 3005.0,
+      "start": {
+        "fx_position": 25,
+        "fx_id": 25,
+        "kind": "bottom",
+        "price": 2958.0,
+        "merged_center": 62,
+        "merged_window": [
+          61,
+          64
+        ],
+        "merged_center_raw_range": [
+          102,
+          103
+        ],
+        "window_raw_range": [
+          101,
+          107
+        ],
+        "anchor_raw_index": 102,
+        "anchor_utc": "2024-11-01T14:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 26,
+        "fx_id": 26,
+        "kind": "top",
+        "price": 3005.0,
+        "merged_center": 67,
+        "merged_window": [
+          66,
+          69
+        ],
+        "merged_center_raw_range": [
+          110,
+          113
+        ],
+        "window_raw_range": [
+          109,
+          114
+        ],
+        "anchor_raw_index": 110,
+        "anchor_utc": "2024-11-04T02:30:00+00:00"
+      },
+      "merged_member_range": [
+        62,
+        68
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 6,
+      "pen_id": 6,
+      "direction": "down",
+      "low": 2952.0,
+      "high": 3005.0,
+      "start": {
+        "fx_position": 26,
+        "fx_id": 26,
+        "kind": "top",
+        "price": 3005.0,
+        "merged_center": 67,
+        "merged_window": [
+          66,
+          69
+        ],
+        "merged_center_raw_range": [
+          110,
+          113
+        ],
+        "window_raw_range": [
+          109,
+          114
+        ],
+        "anchor_raw_index": 110,
+        "anchor_utc": "2024-11-04T02:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 39,
+        "fx_id": 39,
+        "kind": "bottom",
+        "price": 2952.0,
+        "merged_center": 87,
+        "merged_window": [
+          86,
+          89
+        ],
+        "merged_center_raw_range": [
+          141,
+          143
+        ],
+        "window_raw_range": [
+          140,
+          145
+        ],
+        "anchor_raw_index": 141,
+        "anchor_utc": "2024-11-05T06:30:00+00:00"
+      },
+      "merged_member_range": [
+        67,
+        88
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 7,
+      "pen_id": 7,
+      "direction": "up",
+      "low": 2952.0,
+      "high": 3116.0,
+      "start": {
+        "fx_position": 39,
+        "fx_id": 39,
+        "kind": "bottom",
+        "price": 2952.0,
+        "merged_center": 87,
+        "merged_window": [
+          86,
+          89
+        ],
+        "merged_center_raw_range": [
+          141,
+          143
+        ],
+        "window_raw_range": [
+          140,
+          145
+        ],
+        "anchor_raw_index": 141,
+        "anchor_utc": "2024-11-05T06:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 54,
+        "fx_id": 54,
+        "kind": "top",
+        "price": 3116.0,
+        "merged_center": 119,
+        "merged_window": [
+          118,
+          121
+        ],
+        "merged_center_raw_range": [
+          189,
+          190
+        ],
+        "window_raw_range": [
+          188,
+          191
+        ],
+        "anchor_raw_index": 189,
+        "anchor_utc": "2024-11-07T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        87,
+        120
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 8,
+      "pen_id": 8,
+      "direction": "down",
+      "low": 3005.0,
+      "high": 3116.0,
+      "start": {
+        "fx_position": 54,
+        "fx_id": 54,
+        "kind": "top",
+        "price": 3116.0,
+        "merged_center": 119,
+        "merged_window": [
+          118,
+          121
+        ],
+        "merged_center_raw_range": [
+          189,
+          190
+        ],
+        "window_raw_range": [
+          188,
+          191
+        ],
+        "anchor_raw_index": 189,
+        "anchor_utc": "2024-11-07T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 59,
+        "fx_id": 59,
+        "kind": "bottom",
+        "price": 3005.0,
+        "merged_center": 135,
+        "merged_window": [
+          134,
+          137
+        ],
+        "merged_center_raw_range": [
+          208,
+          210
+        ],
+        "window_raw_range": [
+          207,
+          211
+        ],
+        "anchor_raw_index": 208,
+        "anchor_utc": "2024-11-08T06:00:00+00:00"
+      },
+      "merged_member_range": [
+        119,
+        136
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 9,
+      "pen_id": 9,
+      "direction": "up",
+      "low": 3005.0,
+      "high": 3103.0,
+      "start": {
+        "fx_position": 59,
+        "fx_id": 59,
+        "kind": "bottom",
+        "price": 3005.0,
+        "merged_center": 135,
+        "merged_window": [
+          134,
+          137
+        ],
+        "merged_center_raw_range": [
+          208,
+          210
+        ],
+        "window_raw_range": [
+          207,
+          211
+        ],
+        "anchor_raw_index": 208,
+        "anchor_utc": "2024-11-08T06:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 64,
+        "fx_id": 64,
+        "kind": "top",
+        "price": 3103.0,
+        "merged_center": 144,
+        "merged_window": [
+          143,
+          146
+        ],
+        "merged_center_raw_range": [
+          222,
+          223
+        ],
+        "window_raw_range": [
+          221,
+          224
+        ],
+        "anchor_raw_index": 222,
+        "anchor_utc": "2024-11-11T01:30:00+00:00"
+      },
+      "merged_member_range": [
+        135,
+        145
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 10,
+      "pen_id": 10,
+      "direction": "down",
+      "low": 3056.0,
+      "high": 3103.0,
+      "start": {
+        "fx_position": 64,
+        "fx_id": 64,
+        "kind": "top",
+        "price": 3103.0,
+        "merged_center": 144,
+        "merged_window": [
+          143,
+          146
+        ],
+        "merged_center_raw_range": [
+          222,
+          223
+        ],
+        "window_raw_range": [
+          221,
+          224
+        ],
+        "anchor_raw_index": 222,
+        "anchor_utc": "2024-11-11T01:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 71,
+        "fx_id": 71,
+        "kind": "bottom",
+        "price": 3056.0,
+        "merged_center": 157,
+        "merged_window": [
+          156,
+          159
+        ],
+        "merged_center_raw_range": [
+          248,
+          249
+        ],
+        "window_raw_range": [
+          247,
+          250
+        ],
+        "anchor_raw_index": 248,
+        "anchor_utc": "2024-11-12T02:30:00+00:00"
+      },
+      "merged_member_range": [
+        144,
+        158
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 11,
+      "pen_id": 11,
+      "direction": "up",
+      "low": 3056.0,
+      "high": 3080.0,
+      "start": {
+        "fx_position": 71,
+        "fx_id": 71,
+        "kind": "bottom",
+        "price": 3056.0,
+        "merged_center": 157,
+        "merged_window": [
+          156,
+          159
+        ],
+        "merged_center_raw_range": [
+          248,
+          249
+        ],
+        "window_raw_range": [
+          247,
+          250
+        ],
+        "anchor_raw_index": 248,
+        "anchor_utc": "2024-11-12T02:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 76,
+        "fx_id": 76,
+        "kind": "top",
+        "price": 3080.0,
+        "merged_center": 167,
+        "merged_window": [
+          166,
+          169
+        ],
+        "merged_center_raw_range": [
+          260,
+          261
+        ],
+        "window_raw_range": [
+          259,
+          263
+        ],
+        "anchor_raw_index": 260,
+        "anchor_utc": "2024-11-12T13:30:00+00:00"
+      },
+      "merged_member_range": [
+        157,
+        168
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 12,
+      "pen_id": 12,
+      "direction": "down",
+      "low": 3055.0,
+      "high": 3080.0,
+      "start": {
+        "fx_position": 76,
+        "fx_id": 76,
+        "kind": "top",
+        "price": 3080.0,
+        "merged_center": 167,
+        "merged_window": [
+          166,
+          169
+        ],
+        "merged_center_raw_range": [
+          260,
+          261
+        ],
+        "window_raw_range": [
+          259,
+          263
+        ],
+        "anchor_raw_index": 260,
+        "anchor_utc": "2024-11-12T13:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 79,
+        "fx_id": 79,
+        "kind": "bottom",
+        "price": 3055.0,
+        "merged_center": 171,
+        "merged_window": [
+          170,
+          173
+        ],
+        "merged_center_raw_range": [
+          266,
+          267
+        ],
+        "window_raw_range": [
+          265,
+          268
+        ],
+        "anchor_raw_index": 266,
+        "anchor_utc": "2024-11-13T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        167,
+        172
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 13,
+      "pen_id": 13,
+      "direction": "up",
+      "low": 3055.0,
+      "high": 3083.0,
+      "start": {
+        "fx_position": 79,
+        "fx_id": 79,
+        "kind": "bottom",
+        "price": 3055.0,
+        "merged_center": 171,
+        "merged_window": [
+          170,
+          173
+        ],
+        "merged_center_raw_range": [
+          266,
+          267
+        ],
+        "window_raw_range": [
+          265,
+          268
+        ],
+        "anchor_raw_index": 266,
+        "anchor_utc": "2024-11-13T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 80,
+        "fx_id": 80,
+        "kind": "top",
+        "price": 3083.0,
+        "merged_center": 175,
+        "merged_window": [
+          174,
+          177
+        ],
+        "merged_center_raw_range": [
+          270,
+          271
+        ],
+        "window_raw_range": [
+          269,
+          272
+        ],
+        "anchor_raw_index": 270,
+        "anchor_utc": "2024-11-13T02:00:00+00:00"
+      },
+      "merged_member_range": [
+        171,
+        176
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 14,
+      "pen_id": 14,
+      "direction": "down",
+      "low": 3032.0,
+      "high": 3083.0,
+      "start": {
+        "fx_position": 80,
+        "fx_id": 80,
+        "kind": "top",
+        "price": 3083.0,
+        "merged_center": 175,
+        "merged_window": [
+          174,
+          177
+        ],
+        "merged_center_raw_range": [
+          270,
+          271
+        ],
+        "window_raw_range": [
+          269,
+          272
+        ],
+        "anchor_raw_index": 270,
+        "anchor_utc": "2024-11-13T02:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 87,
+        "fx_id": 87,
+        "kind": "bottom",
+        "price": 3032.0,
+        "merged_center": 186,
+        "merged_window": [
+          185,
+          188
+        ],
+        "merged_center_raw_range": [
+          289,
+          292
+        ],
+        "window_raw_range": [
+          287,
+          294
+        ],
+        "anchor_raw_index": 290,
+        "anchor_utc": "2024-11-14T01:15:00+00:00"
+      },
+      "merged_member_range": [
+        175,
+        187
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 15,
+      "pen_id": 15,
+      "direction": "up",
+      "low": 3032.0,
+      "high": 3056.0,
+      "start": {
+        "fx_position": 87,
+        "fx_id": 87,
+        "kind": "bottom",
+        "price": 3032.0,
+        "merged_center": 186,
+        "merged_window": [
+          185,
+          188
+        ],
+        "merged_center_raw_range": [
+          289,
+          292
+        ],
+        "window_raw_range": [
+          287,
+          294
+        ],
+        "anchor_raw_index": 290,
+        "anchor_utc": "2024-11-14T01:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 90,
+        "fx_id": 90,
+        "kind": "top",
+        "price": 3056.0,
+        "merged_center": 191,
+        "merged_window": [
+          190,
+          193
+        ],
+        "merged_center_raw_range": [
+          297,
+          300
+        ],
+        "window_raw_range": [
+          296,
+          301
+        ],
+        "anchor_raw_index": 298,
+        "anchor_utc": "2024-11-14T05:30:00+00:00"
+      },
+      "merged_member_range": [
+        186,
+        192
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 16,
+      "pen_id": 16,
+      "direction": "down",
+      "low": 2808.0,
+      "high": 3056.0,
+      "start": {
+        "fx_position": 90,
+        "fx_id": 90,
+        "kind": "top",
+        "price": 3056.0,
+        "merged_center": 191,
+        "merged_window": [
+          190,
+          193
+        ],
+        "merged_center_raw_range": [
+          297,
+          300
+        ],
+        "window_raw_range": [
+          296,
+          301
+        ],
+        "anchor_raw_index": 298,
+        "anchor_utc": "2024-11-14T05:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 97,
+        "fx_id": 97,
+        "kind": "bottom",
+        "price": 2808.0,
+        "merged_center": 210,
+        "merged_window": [
+          209,
+          212
+        ],
+        "merged_center_raw_range": [
+          324,
+          327
+        ],
+        "window_raw_range": [
+          323,
+          328
+        ],
+        "anchor_raw_index": 324,
+        "anchor_utc": "2024-11-15T06:15:00+00:00"
+      },
+      "merged_member_range": [
+        191,
+        211
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 17,
+      "pen_id": 17,
+      "direction": "up",
+      "low": 2808.0,
+      "high": 2844.0,
+      "start": {
+        "fx_position": 97,
+        "fx_id": 97,
+        "kind": "bottom",
+        "price": 2808.0,
+        "merged_center": 210,
+        "merged_window": [
+          209,
+          212
+        ],
+        "merged_center_raw_range": [
+          324,
+          327
+        ],
+        "window_raw_range": [
+          323,
+          328
+        ],
+        "anchor_raw_index": 324,
+        "anchor_utc": "2024-11-15T06:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 108,
+        "fx_id": 108,
+        "kind": "top",
+        "price": 2844.0,
+        "merged_center": 230,
+        "merged_window": [
+          229,
+          232
+        ],
+        "merged_center_raw_range": [
+          358,
+          359
+        ],
+        "window_raw_range": [
+          357,
+          361
+        ],
+        "anchor_raw_index": 358,
+        "anchor_utc": "2024-11-19T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        210,
+        231
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 18,
+      "pen_id": 18,
+      "direction": "down",
+      "low": 2813.0,
+      "high": 2844.0,
+      "start": {
+        "fx_position": 108,
+        "fx_id": 108,
+        "kind": "top",
+        "price": 2844.0,
+        "merged_center": 230,
+        "merged_window": [
+          229,
+          232
+        ],
+        "merged_center_raw_range": [
+          358,
+          359
+        ],
+        "window_raw_range": [
+          357,
+          361
+        ],
+        "anchor_raw_index": 358,
+        "anchor_utc": "2024-11-19T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 119,
+        "fx_id": 119,
+        "kind": "bottom",
+        "price": 2813.0,
+        "merged_center": 247,
+        "merged_window": [
+          246,
+          249
+        ],
+        "merged_center_raw_range": [
+          384,
+          386
+        ],
+        "window_raw_range": [
+          382,
+          387
+        ],
+        "anchor_raw_index": 384,
+        "anchor_utc": "2024-11-20T01:45:00+00:00"
+      },
+      "merged_member_range": [
+        230,
+        248
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 19,
+      "pen_id": 19,
+      "direction": "up",
+      "low": 2813.0,
+      "high": 2830.0,
+      "start": {
+        "fx_position": 119,
+        "fx_id": 119,
+        "kind": "bottom",
+        "price": 2813.0,
+        "merged_center": 247,
+        "merged_window": [
+          246,
+          249
+        ],
+        "merged_center_raw_range": [
+          384,
+          386
+        ],
+        "window_raw_range": [
+          382,
+          387
+        ],
+        "anchor_raw_index": 384,
+        "anchor_utc": "2024-11-20T01:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 124,
+        "fx_id": 124,
+        "kind": "top",
+        "price": 2830.0,
+        "merged_center": 255,
+        "merged_window": [
+          254,
+          257
+        ],
+        "merged_center_raw_range": [
+          397,
+          399
+        ],
+        "window_raw_range": [
+          396,
+          400
+        ],
+        "anchor_raw_index": 398,
+        "anchor_utc": "2024-11-20T13:30:00+00:00"
+      },
+      "merged_member_range": [
+        247,
+        256
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 20,
+      "pen_id": 20,
+      "direction": "down",
+      "low": 2766.0,
+      "high": 2830.0,
+      "start": {
+        "fx_position": 124,
+        "fx_id": 124,
+        "kind": "top",
+        "price": 2830.0,
+        "merged_center": 255,
+        "merged_window": [
+          254,
+          257
+        ],
+        "merged_center_raw_range": [
+          397,
+          399
+        ],
+        "window_raw_range": [
+          396,
+          400
+        ],
+        "anchor_raw_index": 398,
+        "anchor_utc": "2024-11-20T13:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 137,
+        "fx_id": 137,
+        "kind": "bottom",
+        "price": 2766.0,
+        "merged_center": 281,
+        "merged_window": [
+          280,
+          283
+        ],
+        "merged_center_raw_range": [
+          441,
+          442
+        ],
+        "window_raw_range": [
+          440,
+          444
+        ],
+        "anchor_raw_index": 441,
+        "anchor_utc": "2024-11-22T06:45:00+00:00"
+      },
+      "merged_member_range": [
+        255,
+        282
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 21,
+      "pen_id": 21,
+      "direction": "up",
+      "low": 2766.0,
+      "high": 2798.0,
+      "start": {
+        "fx_position": 137,
+        "fx_id": 137,
+        "kind": "bottom",
+        "price": 2766.0,
+        "merged_center": 281,
+        "merged_window": [
+          280,
+          283
+        ],
+        "merged_center_raw_range": [
+          441,
+          442
+        ],
+        "window_raw_range": [
+          440,
+          444
+        ],
+        "anchor_raw_index": 441,
+        "anchor_utc": "2024-11-22T06:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 140,
+        "fx_id": 140,
+        "kind": "top",
+        "price": 2798.0,
+        "merged_center": 286,
+        "merged_window": [
+          285,
+          288
+        ],
+        "merged_center_raw_range": [
+          451,
+          452
+        ],
+        "window_raw_range": [
+          450,
+          457
+        ],
+        "anchor_raw_index": 451,
+        "anchor_utc": "2024-11-25T01:15:00+00:00"
+      },
+      "merged_member_range": [
+        281,
+        287
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 22,
+      "pen_id": 22,
+      "direction": "down",
+      "low": 2778.0,
+      "high": 2798.0,
+      "start": {
+        "fx_position": 140,
+        "fx_id": 140,
+        "kind": "top",
+        "price": 2798.0,
+        "merged_center": 286,
+        "merged_window": [
+          285,
+          288
+        ],
+        "merged_center_raw_range": [
+          451,
+          452
+        ],
+        "window_raw_range": [
+          450,
+          457
+        ],
+        "anchor_raw_index": 451,
+        "anchor_utc": "2024-11-25T01:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 145,
+        "fx_id": 145,
+        "kind": "bottom",
+        "price": 2778.0,
+        "merged_center": 293,
+        "merged_window": [
+          292,
+          295
+        ],
+        "merged_center_raw_range": [
+          466,
+          468
+        ],
+        "window_raw_range": [
+          465,
+          470
+        ],
+        "anchor_raw_index": 466,
+        "anchor_utc": "2024-11-25T13:15:00+00:00"
+      },
+      "merged_member_range": [
+        286,
+        294
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 23,
+      "pen_id": 23,
+      "direction": "up",
+      "low": 2778.0,
+      "high": 2824.0,
+      "start": {
+        "fx_position": 145,
+        "fx_id": 145,
+        "kind": "bottom",
+        "price": 2778.0,
+        "merged_center": 293,
+        "merged_window": [
+          292,
+          295
+        ],
+        "merged_center_raw_range": [
+          466,
+          468
+        ],
+        "window_raw_range": [
+          465,
+          470
+        ],
+        "anchor_raw_index": 466,
+        "anchor_utc": "2024-11-25T13:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 150,
+        "fx_id": 150,
+        "kind": "top",
+        "price": 2824.0,
+        "merged_center": 306,
+        "merged_window": [
+          305,
+          308
+        ],
+        "merged_center_raw_range": [
+          488,
+          491
+        ],
+        "window_raw_range": [
+          487,
+          493
+        ],
+        "anchor_raw_index": 488,
+        "anchor_utc": "2024-11-26T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        293,
+        307
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 24,
+      "pen_id": 24,
+      "direction": "down",
+      "low": 2787.0,
+      "high": 2824.0,
+      "start": {
+        "fx_position": 150,
+        "fx_id": 150,
+        "kind": "top",
+        "price": 2824.0,
+        "merged_center": 306,
+        "merged_window": [
+          305,
+          308
+        ],
+        "merged_center_raw_range": [
+          488,
+          491
+        ],
+        "window_raw_range": [
+          487,
+          493
+        ],
+        "anchor_raw_index": 488,
+        "anchor_utc": "2024-11-26T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 165,
+        "fx_id": 165,
+        "kind": "bottom",
+        "price": 2787.0,
+        "merged_center": 336,
+        "merged_window": [
+          335,
+          338
+        ],
+        "merged_center_raw_range": [
+          539,
+          541
+        ],
+        "window_raw_range": [
+          534,
+          542
+        ],
+        "anchor_raw_index": 539,
+        "anchor_utc": "2024-11-28T14:15:00+00:00"
+      },
+      "merged_member_range": [
+        306,
+        337
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 25,
+      "pen_id": 25,
+      "direction": "up",
+      "low": 2787.0,
+      "high": 2813.0,
+      "start": {
+        "fx_position": 165,
+        "fx_id": 165,
+        "kind": "bottom",
+        "price": 2787.0,
+        "merged_center": 336,
+        "merged_window": [
+          335,
+          338
+        ],
+        "merged_center_raw_range": [
+          539,
+          541
+        ],
+        "window_raw_range": [
+          534,
+          542
+        ],
+        "anchor_raw_index": 539,
+        "anchor_utc": "2024-11-28T14:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 166,
+        "fx_id": 166,
+        "kind": "top",
+        "price": 2813.0,
+        "merged_center": 341,
+        "merged_window": [
+          340,
+          343
+        ],
+        "merged_center_raw_range": [
+          549,
+          550
+        ],
+        "window_raw_range": [
+          547,
+          553
+        ],
+        "anchor_raw_index": 549,
+        "anchor_utc": "2024-11-29T03:00:00+00:00"
+      },
+      "merged_member_range": [
+        336,
+        342
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 26,
+      "pen_id": 26,
+      "direction": "down",
+      "low": 2773.0,
+      "high": 2813.0,
+      "start": {
+        "fx_position": 166,
+        "fx_id": 166,
+        "kind": "top",
+        "price": 2813.0,
+        "merged_center": 341,
+        "merged_window": [
+          340,
+          343
+        ],
+        "merged_center_raw_range": [
+          549,
+          550
+        ],
+        "window_raw_range": [
+          547,
+          553
+        ],
+        "anchor_raw_index": 549,
+        "anchor_utc": "2024-11-29T03:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 175,
+        "fx_id": 175,
+        "kind": "bottom",
+        "price": 2773.0,
+        "merged_center": 356,
+        "merged_window": [
+          355,
+          358
+        ],
+        "merged_center_raw_range": [
+          572,
+          573
+        ],
+        "window_raw_range": [
+          570,
+          574
+        ],
+        "anchor_raw_index": 572,
+        "anchor_utc": "2024-12-02T03:00:00+00:00"
+      },
+      "merged_member_range": [
+        341,
+        357
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 27,
+      "pen_id": 27,
+      "direction": "up",
+      "low": 2773.0,
+      "high": 2790.0,
+      "start": {
+        "fx_position": 175,
+        "fx_id": 175,
+        "kind": "bottom",
+        "price": 2773.0,
+        "merged_center": 356,
+        "merged_window": [
+          355,
+          358
+        ],
+        "merged_center_raw_range": [
+          572,
+          573
+        ],
+        "window_raw_range": [
+          570,
+          574
+        ],
+        "anchor_raw_index": 572,
+        "anchor_utc": "2024-12-02T03:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 176,
+        "fx_id": 176,
+        "kind": "top",
+        "price": 2790.0,
+        "merged_center": 361,
+        "merged_window": [
+          360,
+          363
+        ],
+        "merged_center_raw_range": [
+          578,
+          580
+        ],
+        "window_raw_range": [
+          577,
+          581
+        ],
+        "anchor_raw_index": 578,
+        "anchor_utc": "2024-12-02T06:30:00+00:00"
+      },
+      "merged_member_range": [
+        356,
+        362
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 28,
+      "pen_id": 28,
+      "direction": "down",
+      "low": 2737.0,
+      "high": 2790.0,
+      "start": {
+        "fx_position": 176,
+        "fx_id": 176,
+        "kind": "top",
+        "price": 2790.0,
+        "merged_center": 361,
+        "merged_window": [
+          360,
+          363
+        ],
+        "merged_center_raw_range": [
+          578,
+          580
+        ],
+        "window_raw_range": [
+          577,
+          581
+        ],
+        "anchor_raw_index": 578,
+        "anchor_utc": "2024-12-02T06:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 179,
+        "fx_id": 179,
+        "kind": "bottom",
+        "price": 2737.0,
+        "merged_center": 370,
+        "merged_window": [
+          369,
+          372
+        ],
+        "merged_center_raw_range": [
+          592,
+          593
+        ],
+        "window_raw_range": [
+          591,
+          595
+        ],
+        "anchor_raw_index": 592,
+        "anchor_utc": "2024-12-03T02:00:00+00:00"
+      },
+      "merged_member_range": [
+        361,
+        371
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 29,
+      "pen_id": 29,
+      "direction": "up",
+      "low": 2737.0,
+      "high": 2766.0,
+      "start": {
+        "fx_position": 179,
+        "fx_id": 179,
+        "kind": "bottom",
+        "price": 2737.0,
+        "merged_center": 370,
+        "merged_window": [
+          369,
+          372
+        ],
+        "merged_center_raw_range": [
+          592,
+          593
+        ],
+        "window_raw_range": [
+          591,
+          595
+        ],
+        "anchor_raw_index": 592,
+        "anchor_utc": "2024-12-03T02:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 182,
+        "fx_id": 182,
+        "kind": "top",
+        "price": 2766.0,
+        "merged_center": 377,
+        "merged_window": [
+          376,
+          379
+        ],
+        "merged_center_raw_range": [
+          601,
+          604
+        ],
+        "window_raw_range": [
+          600,
+          606
+        ],
+        "anchor_raw_index": 603,
+        "anchor_utc": "2024-12-03T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        370,
+        378
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 30,
+      "pen_id": 30,
+      "direction": "down",
+      "low": 2645.0,
+      "high": 2766.0,
+      "start": {
+        "fx_position": 182,
+        "fx_id": 182,
+        "kind": "top",
+        "price": 2766.0,
+        "merged_center": 377,
+        "merged_window": [
+          376,
+          379
+        ],
+        "merged_center_raw_range": [
+          601,
+          604
+        ],
+        "window_raw_range": [
+          600,
+          606
+        ],
+        "anchor_raw_index": 603,
+        "anchor_utc": "2024-12-03T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 187,
+        "fx_id": 187,
+        "kind": "bottom",
+        "price": 2645.0,
+        "merged_center": 395,
+        "merged_window": [
+          394,
+          397
+        ],
+        "merged_center_raw_range": [
+          634,
+          635
+        ],
+        "window_raw_range": [
+          632,
+          636
+        ],
+        "anchor_raw_index": 634,
+        "anchor_utc": "2024-12-05T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        377,
+        396
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 31,
+      "pen_id": 31,
+      "direction": "up",
+      "low": 2645.0,
+      "high": 2682.0,
+      "start": {
+        "fx_position": 187,
+        "fx_id": 187,
+        "kind": "bottom",
+        "price": 2645.0,
+        "merged_center": 395,
+        "merged_window": [
+          394,
+          397
+        ],
+        "merged_center_raw_range": [
+          634,
+          635
+        ],
+        "window_raw_range": [
+          632,
+          636
+        ],
+        "anchor_raw_index": 634,
+        "anchor_utc": "2024-12-05T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 190,
+        "fx_id": 190,
+        "kind": "top",
+        "price": 2682.0,
+        "merged_center": 402,
+        "merged_window": [
+          401,
+          404
+        ],
+        "merged_center_raw_range": [
+          643,
+          645
+        ],
+        "window_raw_range": [
+          642,
+          646
+        ],
+        "anchor_raw_index": 643,
+        "anchor_utc": "2024-12-05T05:30:00+00:00"
+      },
+      "merged_member_range": [
+        395,
+        403
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 32,
+      "pen_id": 32,
+      "direction": "down",
+      "low": 2647.0,
+      "high": 2682.0,
+      "start": {
+        "fx_position": 190,
+        "fx_id": 190,
+        "kind": "top",
+        "price": 2682.0,
+        "merged_center": 402,
+        "merged_window": [
+          401,
+          404
+        ],
+        "merged_center_raw_range": [
+          643,
+          645
+        ],
+        "window_raw_range": [
+          642,
+          646
+        ],
+        "anchor_raw_index": 643,
+        "anchor_utc": "2024-12-05T05:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 195,
+        "fx_id": 195,
+        "kind": "bottom",
+        "price": 2647.0,
+        "merged_center": 414,
+        "merged_window": [
+          413,
+          416
+        ],
+        "merged_center_raw_range": [
+          663,
+          665
+        ],
+        "window_raw_range": [
+          659,
+          666
+        ],
+        "anchor_raw_index": 663,
+        "anchor_utc": "2024-12-06T02:45:00+00:00"
+      },
+      "merged_member_range": [
+        402,
+        415
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 33,
+      "pen_id": 33,
+      "direction": "up",
+      "low": 2647.0,
+      "high": 2699.0,
+      "start": {
+        "fx_position": 195,
+        "fx_id": 195,
+        "kind": "bottom",
+        "price": 2647.0,
+        "merged_center": 414,
+        "merged_window": [
+          413,
+          416
+        ],
+        "merged_center_raw_range": [
+          663,
+          665
+        ],
+        "window_raw_range": [
+          659,
+          666
+        ],
+        "anchor_raw_index": 663,
+        "anchor_utc": "2024-12-06T02:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 208,
+        "fx_id": 208,
+        "kind": "top",
+        "price": 2699.0,
+        "merged_center": 439,
+        "merged_window": [
+          438,
+          441
+        ],
+        "merged_center_raw_range": [
+          702,
+          703
+        ],
+        "window_raw_range": [
+          699,
+          705
+        ],
+        "anchor_raw_index": 702,
+        "anchor_utc": "2024-12-09T14:45:00+00:00"
+      },
+      "merged_member_range": [
+        414,
+        440
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 34,
+      "pen_id": 34,
+      "direction": "down",
+      "low": 2662.0,
+      "high": 2699.0,
+      "start": {
+        "fx_position": 208,
+        "fx_id": 208,
+        "kind": "top",
+        "price": 2699.0,
+        "merged_center": 439,
+        "merged_window": [
+          438,
+          441
+        ],
+        "merged_center_raw_range": [
+          702,
+          703
+        ],
+        "window_raw_range": [
+          699,
+          705
+        ],
+        "anchor_raw_index": 702,
+        "anchor_utc": "2024-12-09T14:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 213,
+        "fx_id": 213,
+        "kind": "bottom",
+        "price": 2662.0,
+        "merged_center": 446,
+        "merged_window": [
+          445,
+          448
+        ],
+        "merged_center_raw_range": [
+          712,
+          713
+        ],
+        "window_raw_range": [
+          711,
+          714
+        ],
+        "anchor_raw_index": 712,
+        "anchor_utc": "2024-12-10T05:30:00+00:00"
+      },
+      "merged_member_range": [
+        439,
+        447
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 35,
+      "pen_id": 35,
+      "direction": "up",
+      "low": 2662.0,
+      "high": 2683.0,
+      "start": {
+        "fx_position": 213,
+        "fx_id": 213,
+        "kind": "bottom",
+        "price": 2662.0,
+        "merged_center": 446,
+        "merged_window": [
+          445,
+          448
+        ],
+        "merged_center_raw_range": [
+          712,
+          713
+        ],
+        "window_raw_range": [
+          711,
+          714
+        ],
+        "anchor_raw_index": 712,
+        "anchor_utc": "2024-12-10T05:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 216,
+        "fx_id": 216,
+        "kind": "top",
+        "price": 2683.0,
+        "merged_center": 450,
+        "merged_window": [
+          449,
+          452
+        ],
+        "merged_center_raw_range": [
+          719,
+          722
+        ],
+        "window_raw_range": [
+          717,
+          723
+        ],
+        "anchor_raw_index": 719,
+        "anchor_utc": "2024-12-10T13:15:00+00:00"
+      },
+      "merged_member_range": [
+        446,
+        451
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 36,
+      "pen_id": 36,
+      "direction": "down",
+      "low": 2636.0,
+      "high": 2683.0,
+      "start": {
+        "fx_position": 216,
+        "fx_id": 216,
+        "kind": "top",
+        "price": 2683.0,
+        "merged_center": 450,
+        "merged_window": [
+          449,
+          452
+        ],
+        "merged_center_raw_range": [
+          719,
+          722
+        ],
+        "window_raw_range": [
+          717,
+          723
+        ],
+        "anchor_raw_index": 719,
+        "anchor_utc": "2024-12-10T13:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 223,
+        "fx_id": 223,
+        "kind": "bottom",
+        "price": 2636.0,
+        "merged_center": 463,
+        "merged_window": [
+          462,
+          465
+        ],
+        "merged_center_raw_range": [
+          740,
+          744
+        ],
+        "window_raw_range": [
+          739,
+          746
+        ],
+        "anchor_raw_index": 741,
+        "anchor_utc": "2024-12-11T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        450,
+        464
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 37,
+      "pen_id": 37,
+      "direction": "up",
+      "low": 2636.0,
+      "high": 2660.0,
+      "start": {
+        "fx_position": 223,
+        "fx_id": 223,
+        "kind": "bottom",
+        "price": 2636.0,
+        "merged_center": 463,
+        "merged_window": [
+          462,
+          465
+        ],
+        "merged_center_raw_range": [
+          740,
+          744
+        ],
+        "window_raw_range": [
+          739,
+          746
+        ],
+        "anchor_raw_index": 741,
+        "anchor_utc": "2024-12-11T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 226,
+        "fx_id": 226,
+        "kind": "top",
+        "price": 2660.0,
+        "merged_center": 467,
+        "merged_window": [
+          466,
+          469
+        ],
+        "merged_center_raw_range": [
+          750,
+          751
+        ],
+        "window_raw_range": [
+          748,
+          752
+        ],
+        "anchor_raw_index": 750,
+        "anchor_utc": "2024-12-12T01:15:00+00:00"
+      },
+      "merged_member_range": [
+        463,
+        468
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 38,
+      "pen_id": 38,
+      "direction": "down",
+      "low": 2616.0,
+      "high": 2660.0,
+      "start": {
+        "fx_position": 226,
+        "fx_id": 226,
+        "kind": "top",
+        "price": 2660.0,
+        "merged_center": 467,
+        "merged_window": [
+          466,
+          469
+        ],
+        "merged_center_raw_range": [
+          750,
+          751
+        ],
+        "window_raw_range": [
+          748,
+          752
+        ],
+        "anchor_raw_index": 750,
+        "anchor_utc": "2024-12-12T01:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 233,
+        "fx_id": 233,
+        "kind": "bottom",
+        "price": 2616.0,
+        "merged_center": 479,
+        "merged_window": [
+          478,
+          481
+        ],
+        "merged_center_raw_range": [
+          772,
+          773
+        ],
+        "window_raw_range": [
+          770,
+          774
+        ],
+        "anchor_raw_index": 772,
+        "anchor_utc": "2024-12-13T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        467,
+        480
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 39,
+      "pen_id": 39,
+      "direction": "up",
+      "low": 2616.0,
+      "high": 2650.0,
+      "start": {
+        "fx_position": 233,
+        "fx_id": 233,
+        "kind": "bottom",
+        "price": 2616.0,
+        "merged_center": 479,
+        "merged_window": [
+          478,
+          481
+        ],
+        "merged_center_raw_range": [
+          772,
+          773
+        ],
+        "window_raw_range": [
+          770,
+          774
+        ],
+        "anchor_raw_index": 772,
+        "anchor_utc": "2024-12-13T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 236,
+        "fx_id": 236,
+        "kind": "top",
+        "price": 2650.0,
+        "merged_center": 483,
+        "merged_window": [
+          482,
+          485
+        ],
+        "merged_center_raw_range": [
+          783,
+          784
+        ],
+        "window_raw_range": [
+          779,
+          785
+        ],
+        "anchor_raw_index": 783,
+        "anchor_utc": "2024-12-13T06:00:00+00:00"
+      },
+      "merged_member_range": [
+        479,
+        484
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 40,
+      "pen_id": 40,
+      "direction": "down",
+      "low": 2620.0,
+      "high": 2650.0,
+      "start": {
+        "fx_position": 236,
+        "fx_id": 236,
+        "kind": "top",
+        "price": 2650.0,
+        "merged_center": 483,
+        "merged_window": [
+          482,
+          485
+        ],
+        "merged_center_raw_range": [
+          783,
+          784
+        ],
+        "window_raw_range": [
+          779,
+          785
+        ],
+        "anchor_raw_index": 783,
+        "anchor_utc": "2024-12-13T06:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 239,
+        "fx_id": 239,
+        "kind": "bottom",
+        "price": 2620.0,
+        "merged_center": 489,
+        "merged_window": [
+          488,
+          491
+        ],
+        "merged_center_raw_range": [
+          793,
+          796
+        ],
+        "window_raw_range": [
+          789,
+          798
+        ],
+        "anchor_raw_index": 795,
+        "anchor_utc": "2024-12-16T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        483,
+        490
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 41,
+      "pen_id": 41,
+      "direction": "up",
+      "low": 2620.0,
+      "high": 2655.0,
+      "start": {
+        "fx_position": 239,
+        "fx_id": 239,
+        "kind": "bottom",
+        "price": 2620.0,
+        "merged_center": 489,
+        "merged_window": [
+          488,
+          491
+        ],
+        "merged_center_raw_range": [
+          793,
+          796
+        ],
+        "window_raw_range": [
+          789,
+          798
+        ],
+        "anchor_raw_index": 795,
+        "anchor_utc": "2024-12-16T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 244,
+        "fx_id": 244,
+        "kind": "top",
+        "price": 2655.0,
+        "merged_center": 498,
+        "merged_window": [
+          497,
+          500
+        ],
+        "merged_center_raw_range": [
+          809,
+          814
+        ],
+        "window_raw_range": [
+          808,
+          815
+        ],
+        "anchor_raw_index": 810,
+        "anchor_utc": "2024-12-16T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        489,
+        499
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 42,
+      "pen_id": 42,
+      "direction": "down",
+      "low": 2608.0,
+      "high": 2655.0,
+      "start": {
+        "fx_position": 244,
+        "fx_id": 244,
+        "kind": "top",
+        "price": 2655.0,
+        "merged_center": 498,
+        "merged_window": [
+          497,
+          500
+        ],
+        "merged_center_raw_range": [
+          809,
+          814
+        ],
+        "window_raw_range": [
+          808,
+          815
+        ],
+        "anchor_raw_index": 810,
+        "anchor_utc": "2024-12-16T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 245,
+        "fx_id": 245,
+        "kind": "bottom",
+        "price": 2608.0,
+        "merged_center": 504,
+        "merged_window": [
+          503,
+          506
+        ],
+        "merged_center_raw_range": [
+          820,
+          822
+        ],
+        "window_raw_range": [
+          819,
+          824
+        ],
+        "anchor_raw_index": 821,
+        "anchor_utc": "2024-12-17T01:45:00+00:00"
+      },
+      "merged_member_range": [
+        498,
+        505
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 43,
+      "pen_id": 43,
+      "direction": "up",
+      "low": 2608.0,
+      "high": 2620.0,
+      "start": {
+        "fx_position": 245,
+        "fx_id": 245,
+        "kind": "bottom",
+        "price": 2608.0,
+        "merged_center": 504,
+        "merged_window": [
+          503,
+          506
+        ],
+        "merged_center_raw_range": [
+          820,
+          822
+        ],
+        "window_raw_range": [
+          819,
+          824
+        ],
+        "anchor_raw_index": 821,
+        "anchor_utc": "2024-12-17T01:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 248,
+        "fx_id": 248,
+        "kind": "top",
+        "price": 2620.0,
+        "merged_center": 508,
+        "merged_window": [
+          507,
+          510
+        ],
+        "merged_center_raw_range": [
+          831,
+          832
+        ],
+        "window_raw_range": [
+          829,
+          833
+        ],
+        "anchor_raw_index": 831,
+        "anchor_utc": "2024-12-17T06:30:00+00:00"
+      },
+      "merged_member_range": [
+        504,
+        509
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 44,
+      "pen_id": 44,
+      "direction": "down",
+      "low": 2555.0,
+      "high": 2620.0,
+      "start": {
+        "fx_position": 248,
+        "fx_id": 248,
+        "kind": "top",
+        "price": 2620.0,
+        "merged_center": 508,
+        "merged_window": [
+          507,
+          510
+        ],
+        "merged_center_raw_range": [
+          831,
+          832
+        ],
+        "window_raw_range": [
+          829,
+          833
+        ],
+        "anchor_raw_index": 831,
+        "anchor_utc": "2024-12-17T06:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 253,
+        "fx_id": 253,
+        "kind": "bottom",
+        "price": 2555.0,
+        "merged_center": 527,
+        "merged_window": [
+          526,
+          529
+        ],
+        "merged_center_raw_range": [
+          856,
+          857
+        ],
+        "window_raw_range": [
+          855,
+          858
+        ],
+        "anchor_raw_index": 856,
+        "anchor_utc": "2024-12-18T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        508,
+        528
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 45,
+      "pen_id": 45,
+      "direction": "up",
+      "low": 2555.0,
+      "high": 2586.0,
+      "start": {
+        "fx_position": 253,
+        "fx_id": 253,
+        "kind": "bottom",
+        "price": 2555.0,
+        "merged_center": 527,
+        "merged_window": [
+          526,
+          529
+        ],
+        "merged_center_raw_range": [
+          856,
+          857
+        ],
+        "window_raw_range": [
+          855,
+          858
+        ],
+        "anchor_raw_index": 856,
+        "anchor_utc": "2024-12-18T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 256,
+        "fx_id": 256,
+        "kind": "top",
+        "price": 2586.0,
+        "merged_center": 531,
+        "merged_window": [
+          530,
+          533
+        ],
+        "merged_center_raw_range": [
+          863,
+          864
+        ],
+        "window_raw_range": [
+          861,
+          865
+        ],
+        "anchor_raw_index": 863,
+        "anchor_utc": "2024-12-18T14:45:00+00:00"
+      },
+      "merged_member_range": [
+        527,
+        532
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 46,
+      "pen_id": 46,
+      "direction": "down",
+      "low": 2549.0,
+      "high": 2586.0,
+      "start": {
+        "fx_position": 256,
+        "fx_id": 256,
+        "kind": "top",
+        "price": 2586.0,
+        "merged_center": 531,
+        "merged_window": [
+          530,
+          533
+        ],
+        "merged_center_raw_range": [
+          863,
+          864
+        ],
+        "window_raw_range": [
+          861,
+          865
+        ],
+        "anchor_raw_index": 863,
+        "anchor_utc": "2024-12-18T14:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 261,
+        "fx_id": 261,
+        "kind": "bottom",
+        "price": 2549.0,
+        "merged_center": 537,
+        "merged_window": [
+          536,
+          539
+        ],
+        "merged_center_raw_range": [
+          872,
+          876
+        ],
+        "window_raw_range": [
+          871,
+          877
+        ],
+        "anchor_raw_index": 872,
+        "anchor_utc": "2024-12-19T03:15:00+00:00"
+      },
+      "merged_member_range": [
+        531,
+        538
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 47,
+      "pen_id": 47,
+      "direction": "up",
+      "low": 2549.0,
+      "high": 2659.0,
+      "start": {
+        "fx_position": 261,
+        "fx_id": 261,
+        "kind": "bottom",
+        "price": 2549.0,
+        "merged_center": 537,
+        "merged_window": [
+          536,
+          539
+        ],
+        "merged_center_raw_range": [
+          872,
+          876
+        ],
+        "window_raw_range": [
+          871,
+          877
+        ],
+        "anchor_raw_index": 872,
+        "anchor_utc": "2024-12-19T03:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 274,
+        "fx_id": 274,
+        "kind": "top",
+        "price": 2659.0,
+        "merged_center": 561,
+        "merged_window": [
+          560,
+          563
+        ],
+        "merged_center_raw_range": [
+          909,
+          911
+        ],
+        "window_raw_range": [
+          907,
+          912
+        ],
+        "anchor_raw_index": 910,
+        "anchor_utc": "2024-12-23T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        537,
+        562
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 48,
+      "pen_id": 48,
+      "direction": "down",
+      "low": 2608.0,
+      "high": 2659.0,
+      "start": {
+        "fx_position": 274,
+        "fx_id": 274,
+        "kind": "top",
+        "price": 2659.0,
+        "merged_center": 561,
+        "merged_window": [
+          560,
+          563
+        ],
+        "merged_center_raw_range": [
+          909,
+          911
+        ],
+        "window_raw_range": [
+          907,
+          912
+        ],
+        "anchor_raw_index": 910,
+        "anchor_utc": "2024-12-23T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 277,
+        "fx_id": 277,
+        "kind": "bottom",
+        "price": 2608.0,
+        "merged_center": 569,
+        "merged_window": [
+          568,
+          571
+        ],
+        "merged_center_raw_range": [
+          921,
+          923
+        ],
+        "window_raw_range": [
+          920,
+          926
+        ],
+        "anchor_raw_index": 921,
+        "anchor_utc": "2024-12-23T06:00:00+00:00"
+      },
+      "merged_member_range": [
+        561,
+        570
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 49,
+      "pen_id": 49,
+      "direction": "up",
+      "low": 2608.0,
+      "high": 2634.0,
+      "start": {
+        "fx_position": 277,
+        "fx_id": 277,
+        "kind": "bottom",
+        "price": 2608.0,
+        "merged_center": 569,
+        "merged_window": [
+          568,
+          571
+        ],
+        "merged_center_raw_range": [
+          921,
+          923
+        ],
+        "window_raw_range": [
+          920,
+          926
+        ],
+        "anchor_raw_index": 921,
+        "anchor_utc": "2024-12-23T06:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 288,
+        "fx_id": 288,
+        "kind": "top",
+        "price": 2634.0,
+        "merged_center": 586,
+        "merged_window": [
+          585,
+          588
+        ],
+        "merged_center_raw_range": [
+          947,
+          949
+        ],
+        "window_raw_range": [
+          945,
+          950
+        ],
+        "anchor_raw_index": 948,
+        "anchor_utc": "2024-12-24T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        569,
+        587
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 50,
+      "pen_id": 50,
+      "direction": "down",
+      "low": 2615.0,
+      "high": 2634.0,
+      "start": {
+        "fx_position": 288,
+        "fx_id": 288,
+        "kind": "top",
+        "price": 2634.0,
+        "merged_center": 586,
+        "merged_window": [
+          585,
+          588
+        ],
+        "merged_center_raw_range": [
+          947,
+          949
+        ],
+        "window_raw_range": [
+          945,
+          950
+        ],
+        "anchor_raw_index": 948,
+        "anchor_utc": "2024-12-24T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 295,
+        "fx_id": 295,
+        "kind": "bottom",
+        "price": 2615.0,
+        "merged_center": 594,
+        "merged_window": [
+          593,
+          596
+        ],
+        "merged_center_raw_range": [
+          961,
+          963
+        ],
+        "window_raw_range": [
+          959,
+          965
+        ],
+        "anchor_raw_index": 961,
+        "anchor_utc": "2024-12-25T02:30:00+00:00"
+      },
+      "merged_member_range": [
+        586,
+        595
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 51,
+      "pen_id": 51,
+      "direction": "up",
+      "low": 2615.0,
+      "high": 2698.0,
+      "start": {
+        "fx_position": 295,
+        "fx_id": 295,
+        "kind": "bottom",
+        "price": 2615.0,
+        "merged_center": 594,
+        "merged_window": [
+          593,
+          596
+        ],
+        "merged_center_raw_range": [
+          961,
+          963
+        ],
+        "window_raw_range": [
+          959,
+          965
+        ],
+        "anchor_raw_index": 961,
+        "anchor_utc": "2024-12-25T02:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 304,
+        "fx_id": 304,
+        "kind": "top",
+        "price": 2698.0,
+        "merged_center": 614,
+        "merged_window": [
+          613,
+          616
+        ],
+        "merged_center_raw_range": [
+          1007,
+          1009
+        ],
+        "window_raw_range": [
+          1002,
+          1010
+        ],
+        "anchor_raw_index": 1007,
+        "anchor_utc": "2024-12-27T02:30:00+00:00"
+      },
+      "merged_member_range": [
+        594,
+        615
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 52,
+      "pen_id": 52,
+      "direction": "down",
+      "low": 2662.0,
+      "high": 2698.0,
+      "start": {
+        "fx_position": 304,
+        "fx_id": 304,
+        "kind": "top",
+        "price": 2698.0,
+        "merged_center": 614,
+        "merged_window": [
+          613,
+          616
+        ],
+        "merged_center_raw_range": [
+          1007,
+          1009
+        ],
+        "window_raw_range": [
+          1002,
+          1010
+        ],
+        "anchor_raw_index": 1007,
+        "anchor_utc": "2024-12-27T02:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 309,
+        "fx_id": 309,
+        "kind": "bottom",
+        "price": 2662.0,
+        "merged_center": 623,
+        "merged_window": [
+          622,
+          625
+        ],
+        "merged_center_raw_range": [
+          1025,
+          1026
+        ],
+        "window_raw_range": [
+          1024,
+          1030
+        ],
+        "anchor_raw_index": 1025,
+        "anchor_utc": "2024-12-30T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        614,
+        624
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 53,
+      "pen_id": 53,
+      "direction": "up",
+      "low": 2662.0,
+      "high": 2731.0,
+      "start": {
+        "fx_position": 309,
+        "fx_id": 309,
+        "kind": "bottom",
+        "price": 2662.0,
+        "merged_center": 623,
+        "merged_window": [
+          622,
+          625
+        ],
+        "merged_center_raw_range": [
+          1025,
+          1026
+        ],
+        "window_raw_range": [
+          1024,
+          1030
+        ],
+        "anchor_raw_index": 1025,
+        "anchor_utc": "2024-12-30T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 320,
+        "fx_id": 320,
+        "kind": "top",
+        "price": 2731.0,
+        "merged_center": 641,
+        "merged_window": [
+          640,
+          643
+        ],
+        "merged_center_raw_range": [
+          1063,
+          1065
+        ],
+        "window_raw_range": [
+          1062,
+          1067
+        ],
+        "anchor_raw_index": 1063,
+        "anchor_utc": "2025-01-02T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        623,
+        642
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 54,
+      "pen_id": 54,
+      "direction": "down",
+      "low": 2652.0,
+      "high": 2731.0,
+      "start": {
+        "fx_position": 320,
+        "fx_id": 320,
+        "kind": "top",
+        "price": 2731.0,
+        "merged_center": 641,
+        "merged_window": [
+          640,
+          643
+        ],
+        "merged_center_raw_range": [
+          1063,
+          1065
+        ],
+        "window_raw_range": [
+          1062,
+          1067
+        ],
+        "anchor_raw_index": 1063,
+        "anchor_utc": "2025-01-02T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 329,
+        "fx_id": 329,
+        "kind": "bottom",
+        "price": 2652.0,
+        "merged_center": 661,
+        "merged_window": [
+          660,
+          663
+        ],
+        "merged_center_raw_range": [
+          1103,
+          1104
+        ],
+        "window_raw_range": [
+          1102,
+          1105
+        ],
+        "anchor_raw_index": 1103,
+        "anchor_utc": "2025-01-03T13:30:00+00:00"
+      },
+      "merged_member_range": [
+        641,
+        662
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 55,
+      "pen_id": 55,
+      "direction": "up",
+      "low": 2652.0,
+      "high": 2712.0,
+      "start": {
+        "fx_position": 329,
+        "fx_id": 329,
+        "kind": "bottom",
+        "price": 2652.0,
+        "merged_center": 661,
+        "merged_window": [
+          660,
+          663
+        ],
+        "merged_center_raw_range": [
+          1103,
+          1104
+        ],
+        "window_raw_range": [
+          1102,
+          1105
+        ],
+        "anchor_raw_index": 1103,
+        "anchor_utc": "2025-01-03T13:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 332,
+        "fx_id": 332,
+        "kind": "top",
+        "price": 2712.0,
+        "merged_center": 667,
+        "merged_window": [
+          666,
+          669
+        ],
+        "merged_center_raw_range": [
+          1113,
+          1115
+        ],
+        "window_raw_range": [
+          1112,
+          1116
+        ],
+        "anchor_raw_index": 1113,
+        "anchor_utc": "2025-01-06T02:00:00+00:00"
+      },
+      "merged_member_range": [
+        661,
+        668
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 56,
+      "pen_id": 56,
+      "direction": "down",
+      "low": 2636.0,
+      "high": 2712.0,
+      "start": {
+        "fx_position": 332,
+        "fx_id": 332,
+        "kind": "top",
+        "price": 2712.0,
+        "merged_center": 667,
+        "merged_window": [
+          666,
+          669
+        ],
+        "merged_center_raw_range": [
+          1113,
+          1115
+        ],
+        "window_raw_range": [
+          1112,
+          1116
+        ],
+        "anchor_raw_index": 1113,
+        "anchor_utc": "2025-01-06T02:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 339,
+        "fx_id": 339,
+        "kind": "bottom",
+        "price": 2636.0,
+        "merged_center": 685,
+        "merged_window": [
+          684,
+          687
+        ],
+        "merged_center_raw_range": [
+          1147,
+          1148
+        ],
+        "window_raw_range": [
+          1146,
+          1150
+        ],
+        "anchor_raw_index": 1147,
+        "anchor_utc": "2025-01-07T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        667,
+        686
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 57,
+      "pen_id": 57,
+      "direction": "up",
+      "low": 2636.0,
+      "high": 2672.0,
+      "start": {
+        "fx_position": 339,
+        "fx_id": 339,
+        "kind": "bottom",
+        "price": 2636.0,
+        "merged_center": 685,
+        "merged_window": [
+          684,
+          687
+        ],
+        "merged_center_raw_range": [
+          1147,
+          1148
+        ],
+        "window_raw_range": [
+          1146,
+          1150
+        ],
+        "anchor_raw_index": 1147,
+        "anchor_utc": "2025-01-07T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 340,
+        "fx_id": 340,
+        "kind": "top",
+        "price": 2672.0,
+        "merged_center": 689,
+        "merged_window": [
+          688,
+          691
+        ],
+        "merged_center_raw_range": [
+          1155,
+          1156
+        ],
+        "window_raw_range": [
+          1154,
+          1157
+        ],
+        "anchor_raw_index": 1155,
+        "anchor_utc": "2025-01-08T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        685,
+        690
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 58,
+      "pen_id": 58,
+      "direction": "down",
+      "low": 2624.0,
+      "high": 2672.0,
+      "start": {
+        "fx_position": 340,
+        "fx_id": 340,
+        "kind": "top",
+        "price": 2672.0,
+        "merged_center": 689,
+        "merged_window": [
+          688,
+          691
+        ],
+        "merged_center_raw_range": [
+          1155,
+          1156
+        ],
+        "window_raw_range": [
+          1154,
+          1157
+        ],
+        "anchor_raw_index": 1155,
+        "anchor_utc": "2025-01-08T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 345,
+        "fx_id": 345,
+        "kind": "bottom",
+        "price": 2624.0,
+        "merged_center": 701,
+        "merged_window": [
+          700,
+          703
+        ],
+        "merged_center_raw_range": [
+          1171,
+          1172
+        ],
+        "window_raw_range": [
+          1170,
+          1174
+        ],
+        "anchor_raw_index": 1171,
+        "anchor_utc": "2025-01-08T13:15:00+00:00"
+      },
+      "merged_member_range": [
+        689,
+        702
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 59,
+      "pen_id": 59,
+      "direction": "up",
+      "low": 2624.0,
+      "high": 2642.0,
+      "start": {
+        "fx_position": 345,
+        "fx_id": 345,
+        "kind": "bottom",
+        "price": 2624.0,
+        "merged_center": 701,
+        "merged_window": [
+          700,
+          703
+        ],
+        "merged_center_raw_range": [
+          1171,
+          1172
+        ],
+        "window_raw_range": [
+          1170,
+          1174
+        ],
+        "anchor_raw_index": 1171,
+        "anchor_utc": "2025-01-08T13:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 348,
+        "fx_id": 348,
+        "kind": "top",
+        "price": 2642.0,
+        "merged_center": 705,
+        "merged_window": [
+          704,
+          707
+        ],
+        "merged_center_raw_range": [
+          1177,
+          1179
+        ],
+        "window_raw_range": [
+          1175,
+          1180
+        ],
+        "anchor_raw_index": 1177,
+        "anchor_utc": "2025-01-08T14:45:00+00:00"
+      },
+      "merged_member_range": [
+        701,
+        706
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 60,
+      "pen_id": 60,
+      "direction": "down",
+      "low": 2613.0,
+      "high": 2642.0,
+      "start": {
+        "fx_position": 348,
+        "fx_id": 348,
+        "kind": "top",
+        "price": 2642.0,
+        "merged_center": 705,
+        "merged_window": [
+          704,
+          707
+        ],
+        "merged_center_raw_range": [
+          1177,
+          1179
+        ],
+        "window_raw_range": [
+          1175,
+          1180
+        ],
+        "anchor_raw_index": 1177,
+        "anchor_utc": "2025-01-08T14:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 351,
+        "fx_id": 351,
+        "kind": "bottom",
+        "price": 2613.0,
+        "merged_center": 710,
+        "merged_window": [
+          709,
+          712
+        ],
+        "merged_center_raw_range": [
+          1187,
+          1189
+        ],
+        "window_raw_range": [
+          1185,
+          1190
+        ],
+        "anchor_raw_index": 1187,
+        "anchor_utc": "2025-01-09T05:30:00+00:00"
+      },
+      "merged_member_range": [
+        705,
+        711
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 61,
+      "pen_id": 61,
+      "direction": "up",
+      "low": 2613.0,
+      "high": 2780.0,
+      "start": {
+        "fx_position": 351,
+        "fx_id": 351,
+        "kind": "bottom",
+        "price": 2613.0,
+        "merged_center": 710,
+        "merged_window": [
+          709,
+          712
+        ],
+        "merged_center_raw_range": [
+          1187,
+          1189
+        ],
+        "window_raw_range": [
+          1185,
+          1190
+        ],
+        "anchor_raw_index": 1187,
+        "anchor_utc": "2025-01-09T05:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 370,
+        "fx_id": 370,
+        "kind": "top",
+        "price": 2780.0,
+        "merged_center": 747,
+        "merged_window": [
+          746,
+          749
+        ],
+        "merged_center_raw_range": [
+          1247,
+          1248
+        ],
+        "window_raw_range": [
+          1246,
+          1249
+        ],
+        "anchor_raw_index": 1247,
+        "anchor_utc": "2025-01-14T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        710,
+        748
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 62,
+      "pen_id": 62,
+      "direction": "down",
+      "low": 2739.0,
+      "high": 2780.0,
+      "start": {
+        "fx_position": 370,
+        "fx_id": 370,
+        "kind": "top",
+        "price": 2780.0,
+        "merged_center": 747,
+        "merged_window": [
+          746,
+          749
+        ],
+        "merged_center_raw_range": [
+          1247,
+          1248
+        ],
+        "window_raw_range": [
+          1246,
+          1249
+        ],
+        "anchor_raw_index": 1247,
+        "anchor_utc": "2025-01-14T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 373,
+        "fx_id": 373,
+        "kind": "bottom",
+        "price": 2739.0,
+        "merged_center": 754,
+        "merged_window": [
+          753,
+          756
+        ],
+        "merged_center_raw_range": [
+          1256,
+          1257
+        ],
+        "window_raw_range": [
+          1255,
+          1258
+        ],
+        "anchor_raw_index": 1256,
+        "anchor_utc": "2025-01-14T05:30:00+00:00"
+      },
+      "merged_member_range": [
+        747,
+        755
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 63,
+      "pen_id": 63,
+      "direction": "up",
+      "low": 2739.0,
+      "high": 2791.0,
+      "start": {
+        "fx_position": 373,
+        "fx_id": 373,
+        "kind": "bottom",
+        "price": 2739.0,
+        "merged_center": 754,
+        "merged_window": [
+          753,
+          756
+        ],
+        "merged_center_raw_range": [
+          1256,
+          1257
+        ],
+        "window_raw_range": [
+          1255,
+          1258
+        ],
+        "anchor_raw_index": 1256,
+        "anchor_utc": "2025-01-14T05:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 384,
+        "fx_id": 384,
+        "kind": "top",
+        "price": 2791.0,
+        "merged_center": 777,
+        "merged_window": [
+          776,
+          779
+        ],
+        "merged_center_raw_range": [
+          1288,
+          1291
+        ],
+        "window_raw_range": [
+          1286,
+          1293
+        ],
+        "anchor_raw_index": 1290,
+        "anchor_utc": "2025-01-15T14:15:00+00:00"
+      },
+      "merged_member_range": [
+        754,
+        778
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 64,
+      "pen_id": 64,
+      "direction": "down",
+      "low": 2733.0,
+      "high": 2791.0,
+      "start": {
+        "fx_position": 384,
+        "fx_id": 384,
+        "kind": "top",
+        "price": 2791.0,
+        "merged_center": 777,
+        "merged_window": [
+          776,
+          779
+        ],
+        "merged_center_raw_range": [
+          1288,
+          1291
+        ],
+        "window_raw_range": [
+          1286,
+          1293
+        ],
+        "anchor_raw_index": 1290,
+        "anchor_utc": "2025-01-15T14:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 391,
+        "fx_id": 391,
+        "kind": "bottom",
+        "price": 2733.0,
+        "merged_center": 789,
+        "merged_window": [
+          788,
+          791
+        ],
+        "merged_center_raw_range": [
+          1308,
+          1310
+        ],
+        "window_raw_range": [
+          1306,
+          1317
+        ],
+        "anchor_raw_index": 1308,
+        "anchor_utc": "2025-01-16T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        777,
+        790
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 65,
+      "pen_id": 65,
+      "direction": "up",
+      "low": 2733.0,
+      "high": 2804.0,
+      "start": {
+        "fx_position": 391,
+        "fx_id": 391,
+        "kind": "bottom",
+        "price": 2733.0,
+        "merged_center": 789,
+        "merged_window": [
+          788,
+          791
+        ],
+        "merged_center_raw_range": [
+          1308,
+          1310
+        ],
+        "window_raw_range": [
+          1306,
+          1317
+        ],
+        "anchor_raw_index": 1308,
+        "anchor_utc": "2025-01-16T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 398,
+        "fx_id": 398,
+        "kind": "top",
+        "price": 2804.0,
+        "merged_center": 802,
+        "merged_window": [
+          801,
+          804
+        ],
+        "merged_center_raw_range": [
+          1339,
+          1341
+        ],
+        "window_raw_range": [
+          1337,
+          1342
+        ],
+        "anchor_raw_index": 1339,
+        "anchor_utc": "2025-01-20T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        789,
+        803
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 66,
+      "pen_id": 66,
+      "direction": "down",
+      "low": 2776.0,
+      "high": 2804.0,
+      "start": {
+        "fx_position": 398,
+        "fx_id": 398,
+        "kind": "top",
+        "price": 2804.0,
+        "merged_center": 802,
+        "merged_window": [
+          801,
+          804
+        ],
+        "merged_center_raw_range": [
+          1339,
+          1341
+        ],
+        "window_raw_range": [
+          1337,
+          1342
+        ],
+        "anchor_raw_index": 1339,
+        "anchor_utc": "2025-01-20T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 401,
+        "fx_id": 401,
+        "kind": "bottom",
+        "price": 2776.0,
+        "merged_center": 806,
+        "merged_window": [
+          805,
+          808
+        ],
+        "merged_center_raw_range": [
+          1344,
+          1346
+        ],
+        "window_raw_range": [
+          1343,
+          1347
+        ],
+        "anchor_raw_index": 1344,
+        "anchor_utc": "2025-01-20T02:30:00+00:00"
+      },
+      "merged_member_range": [
+        802,
+        807
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 67,
+      "pen_id": 67,
+      "direction": "up",
+      "low": 2776.0,
+      "high": 2865.0,
+      "start": {
+        "fx_position": 401,
+        "fx_id": 401,
+        "kind": "bottom",
+        "price": 2776.0,
+        "merged_center": 806,
+        "merged_window": [
+          805,
+          808
+        ],
+        "merged_center_raw_range": [
+          1344,
+          1346
+        ],
+        "window_raw_range": [
+          1343,
+          1347
+        ],
+        "anchor_raw_index": 1344,
+        "anchor_utc": "2025-01-20T02:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 410,
+        "fx_id": 410,
+        "kind": "top",
+        "price": 2865.0,
+        "merged_center": 831,
+        "merged_window": [
+          830,
+          833
+        ],
+        "merged_center_raw_range": [
+          1373,
+          1375
+        ],
+        "window_raw_range": [
+          1372,
+          1376
+        ],
+        "anchor_raw_index": 1374,
+        "anchor_utc": "2025-01-21T06:15:00+00:00"
+      },
+      "merged_member_range": [
+        806,
+        832
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 68,
+      "pen_id": 68,
+      "direction": "down",
+      "low": 2824.0,
+      "high": 2865.0,
+      "start": {
+        "fx_position": 410,
+        "fx_id": 410,
+        "kind": "top",
+        "price": 2865.0,
+        "merged_center": 831,
+        "merged_window": [
+          830,
+          833
+        ],
+        "merged_center_raw_range": [
+          1373,
+          1375
+        ],
+        "window_raw_range": [
+          1372,
+          1376
+        ],
+        "anchor_raw_index": 1374,
+        "anchor_utc": "2025-01-21T06:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 413,
+        "fx_id": 413,
+        "kind": "bottom",
+        "price": 2824.0,
+        "merged_center": 837,
+        "merged_window": [
+          836,
+          839
+        ],
+        "merged_center_raw_range": [
+          1384,
+          1385
+        ],
+        "window_raw_range": [
+          1380,
+          1387
+        ],
+        "anchor_raw_index": 1384,
+        "anchor_utc": "2025-01-21T14:45:00+00:00"
+      },
+      "merged_member_range": [
+        831,
+        838
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 69,
+      "pen_id": 69,
+      "direction": "up",
+      "low": 2824.0,
+      "high": 2871.0,
+      "start": {
+        "fx_position": 413,
+        "fx_id": 413,
+        "kind": "bottom",
+        "price": 2824.0,
+        "merged_center": 837,
+        "merged_window": [
+          836,
+          839
+        ],
+        "merged_center_raw_range": [
+          1384,
+          1385
+        ],
+        "window_raw_range": [
+          1380,
+          1387
+        ],
+        "anchor_raw_index": 1384,
+        "anchor_utc": "2025-01-21T14:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 422,
+        "fx_id": 422,
+        "kind": "top",
+        "price": 2871.0,
+        "merged_center": 854,
+        "merged_window": [
+          853,
+          856
+        ],
+        "merged_center_raw_range": [
+          1405,
+          1408
+        ],
+        "window_raw_range": [
+          1404,
+          1409
+        ],
+        "anchor_raw_index": 1407,
+        "anchor_utc": "2025-01-22T14:45:00+00:00"
+      },
+      "merged_member_range": [
+        837,
+        855
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 70,
+      "pen_id": 70,
+      "direction": "down",
+      "low": 2783.0,
+      "high": 2871.0,
+      "start": {
+        "fx_position": 422,
+        "fx_id": 422,
+        "kind": "top",
+        "price": 2871.0,
+        "merged_center": 854,
+        "merged_window": [
+          853,
+          856
+        ],
+        "merged_center_raw_range": [
+          1405,
+          1408
+        ],
+        "window_raw_range": [
+          1404,
+          1409
+        ],
+        "anchor_raw_index": 1407,
+        "anchor_utc": "2025-01-22T14:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 441,
+        "fx_id": 441,
+        "kind": "bottom",
+        "price": 2783.0,
+        "merged_center": 889,
+        "merged_window": [
+          888,
+          891
+        ],
+        "merged_center_raw_range": [
+          1459,
+          1461
+        ],
+        "window_raw_range": [
+          1458,
+          1463
+        ],
+        "anchor_raw_index": 1459,
+        "anchor_utc": "2025-01-27T02:30:00+00:00"
+      },
+      "merged_member_range": [
+        854,
+        890
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 71,
+      "pen_id": 71,
+      "direction": "up",
+      "low": 2783.0,
+      "high": 2941.0,
+      "start": {
+        "fx_position": 441,
+        "fx_id": 441,
+        "kind": "bottom",
+        "price": 2783.0,
+        "merged_center": 889,
+        "merged_window": [
+          888,
+          891
+        ],
+        "merged_center_raw_range": [
+          1459,
+          1461
+        ],
+        "window_raw_range": [
+          1458,
+          1463
+        ],
+        "anchor_raw_index": 1459,
+        "anchor_utc": "2025-01-27T02:30:00+00:00"
+      },
+      "end": {
+        "fx_position": 448,
+        "fx_id": 448,
+        "kind": "top",
+        "price": 2941.0,
+        "merged_center": 905,
+        "merged_window": [
+          904,
+          907
+        ],
+        "merged_center_raw_range": [
+          1483,
+          1486
+        ],
+        "window_raw_range": [
+          1482,
+          1487
+        ],
+        "anchor_raw_index": 1484,
+        "anchor_utc": "2025-02-05T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        889,
+        906
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 72,
+      "pen_id": 72,
+      "direction": "down",
+      "low": 2876.0,
+      "high": 2941.0,
+      "start": {
+        "fx_position": 448,
+        "fx_id": 448,
+        "kind": "top",
+        "price": 2941.0,
+        "merged_center": 905,
+        "merged_window": [
+          904,
+          907
+        ],
+        "merged_center_raw_range": [
+          1483,
+          1486
+        ],
+        "window_raw_range": [
+          1482,
+          1487
+        ],
+        "anchor_raw_index": 1484,
+        "anchor_utc": "2025-02-05T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 449,
+        "fx_id": 449,
+        "kind": "bottom",
+        "price": 2876.0,
+        "merged_center": 912,
+        "merged_window": [
+          911,
+          914
+        ],
+        "merged_center_raw_range": [
+          1495,
+          1497
+        ],
+        "window_raw_range": [
+          1494,
+          1499
+        ],
+        "anchor_raw_index": 1496,
+        "anchor_utc": "2025-02-06T02:00:00+00:00"
+      },
+      "merged_member_range": [
+        905,
+        913
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 73,
+      "pen_id": 73,
+      "direction": "up",
+      "low": 2876.0,
+      "high": 2914.0,
+      "start": {
+        "fx_position": 449,
+        "fx_id": 449,
+        "kind": "bottom",
+        "price": 2876.0,
+        "merged_center": 912,
+        "merged_window": [
+          911,
+          914
+        ],
+        "merged_center_raw_range": [
+          1495,
+          1497
+        ],
+        "window_raw_range": [
+          1494,
+          1499
+        ],
+        "anchor_raw_index": 1496,
+        "anchor_utc": "2025-02-06T02:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 452,
+        "fx_id": 452,
+        "kind": "top",
+        "price": 2914.0,
+        "merged_center": 920,
+        "merged_window": [
+          919,
+          922
+        ],
+        "merged_center_raw_range": [
+          1508,
+          1509
+        ],
+        "window_raw_range": [
+          1507,
+          1510
+        ],
+        "anchor_raw_index": 1508,
+        "anchor_utc": "2025-02-06T13:15:00+00:00"
+      },
+      "merged_member_range": [
+        912,
+        921
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 74,
+      "pen_id": 74,
+      "direction": "down",
+      "low": 2861.0,
+      "high": 2914.0,
+      "start": {
+        "fx_position": 452,
+        "fx_id": 452,
+        "kind": "top",
+        "price": 2914.0,
+        "merged_center": 920,
+        "merged_window": [
+          919,
+          922
+        ],
+        "merged_center_raw_range": [
+          1508,
+          1509
+        ],
+        "window_raw_range": [
+          1507,
+          1510
+        ],
+        "anchor_raw_index": 1508,
+        "anchor_utc": "2025-02-06T13:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 453,
+        "fx_id": 453,
+        "kind": "bottom",
+        "price": 2861.0,
+        "merged_center": 925,
+        "merged_window": [
+          924,
+          927
+        ],
+        "merged_center_raw_range": [
+          1514,
+          1515
+        ],
+        "window_raw_range": [
+          1513,
+          1516
+        ],
+        "anchor_raw_index": 1514,
+        "anchor_utc": "2025-02-06T14:45:00+00:00"
+      },
+      "merged_member_range": [
+        920,
+        926
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 75,
+      "pen_id": 75,
+      "direction": "up",
+      "low": 2861.0,
+      "high": 2953.0,
+      "start": {
+        "fx_position": 453,
+        "fx_id": 453,
+        "kind": "bottom",
+        "price": 2861.0,
+        "merged_center": 925,
+        "merged_window": [
+          924,
+          927
+        ],
+        "merged_center_raw_range": [
+          1514,
+          1515
+        ],
+        "window_raw_range": [
+          1513,
+          1516
+        ],
+        "anchor_raw_index": 1514,
+        "anchor_utc": "2025-02-06T14:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 462,
+        "fx_id": 462,
+        "kind": "top",
+        "price": 2953.0,
+        "merged_center": 942,
+        "merged_window": [
+          941,
+          944
+        ],
+        "merged_center_raw_range": [
+          1539,
+          1542
+        ],
+        "window_raw_range": [
+          1538,
+          1543
+        ],
+        "anchor_raw_index": 1539,
+        "anchor_utc": "2025-02-10T01:15:00+00:00"
+      },
+      "merged_member_range": [
+        925,
+        943
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 76,
+      "pen_id": 76,
+      "direction": "down",
+      "low": 2881.0,
+      "high": 2953.0,
+      "start": {
+        "fx_position": 462,
+        "fx_id": 462,
+        "kind": "top",
+        "price": 2953.0,
+        "merged_center": 942,
+        "merged_window": [
+          941,
+          944
+        ],
+        "merged_center_raw_range": [
+          1539,
+          1542
+        ],
+        "window_raw_range": [
+          1538,
+          1543
+        ],
+        "anchor_raw_index": 1539,
+        "anchor_utc": "2025-02-10T01:15:00+00:00"
+      },
+      "end": {
+        "fx_position": 467,
+        "fx_id": 467,
+        "kind": "bottom",
+        "price": 2881.0,
+        "merged_center": 953,
+        "merged_window": [
+          952,
+          955
+        ],
+        "merged_center_raw_range": [
+          1556,
+          1557
+        ],
+        "window_raw_range": [
+          1555,
+          1558
+        ],
+        "anchor_raw_index": 1556,
+        "anchor_utc": "2025-02-10T13:45:00+00:00"
+      },
+      "merged_member_range": [
+        942,
+        954
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 77,
+      "pen_id": 77,
+      "direction": "up",
+      "low": 2881.0,
+      "high": 2914.0,
+      "start": {
+        "fx_position": 467,
+        "fx_id": 467,
+        "kind": "bottom",
+        "price": 2881.0,
+        "merged_center": 953,
+        "merged_window": [
+          952,
+          955
+        ],
+        "merged_center_raw_range": [
+          1556,
+          1557
+        ],
+        "window_raw_range": [
+          1555,
+          1558
+        ],
+        "anchor_raw_index": 1556,
+        "anchor_utc": "2025-02-10T13:45:00+00:00"
+      },
+      "end": {
+        "fx_position": 470,
+        "fx_id": 470,
+        "kind": "top",
+        "price": 2914.0,
+        "merged_center": 960,
+        "merged_window": [
+          959,
+          962
+        ],
+        "merged_center_raw_range": [
+          1565,
+          1566
+        ],
+        "window_raw_range": [
+          1563,
+          1568
+        ],
+        "anchor_raw_index": 1565,
+        "anchor_utc": "2025-02-11T02:00:00+00:00"
+      },
+      "merged_member_range": [
+        953,
+        961
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 78,
+      "pen_id": 78,
+      "direction": "down",
+      "low": 2820.0,
+      "high": 2914.0,
+      "start": {
+        "fx_position": 470,
+        "fx_id": 470,
+        "kind": "top",
+        "price": 2914.0,
+        "merged_center": 960,
+        "merged_window": [
+          959,
+          962
+        ],
+        "merged_center_raw_range": [
+          1565,
+          1566
+        ],
+        "window_raw_range": [
+          1563,
+          1568
+        ],
+        "anchor_raw_index": 1565,
+        "anchor_utc": "2025-02-11T02:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 485,
+        "fx_id": 485,
+        "kind": "bottom",
+        "price": 2820.0,
+        "merged_center": 987,
+        "merged_window": [
+          986,
+          989
+        ],
+        "merged_center_raw_range": [
+          1607,
+          1608
+        ],
+        "window_raw_range": [
+          1606,
+          1609
+        ],
+        "anchor_raw_index": 1607,
+        "anchor_utc": "2025-02-13T01:00:00+00:00"
+      },
+      "merged_member_range": [
+        960,
+        988
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 79,
+      "pen_id": 79,
+      "direction": "up",
+      "low": 2820.0,
+      "high": 2854.0,
+      "start": {
+        "fx_position": 485,
+        "fx_id": 485,
+        "kind": "bottom",
+        "price": 2820.0,
+        "merged_center": 987,
+        "merged_window": [
+          986,
+          989
+        ],
+        "merged_center_raw_range": [
+          1607,
+          1608
+        ],
+        "window_raw_range": [
+          1606,
+          1609
+        ],
+        "anchor_raw_index": 1607,
+        "anchor_utc": "2025-02-13T01:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 486,
+        "fx_id": 486,
+        "kind": "top",
+        "price": 2854.0,
+        "merged_center": 991,
+        "merged_window": [
+          990,
+          993
+        ],
+        "merged_center_raw_range": [
+          1611,
+          1612
+        ],
+        "window_raw_range": [
+          1610,
+          1613
+        ],
+        "anchor_raw_index": 1611,
+        "anchor_utc": "2025-02-13T02:00:00+00:00"
+      },
+      "merged_member_range": [
+        987,
+        992
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 80,
+      "pen_id": 80,
+      "direction": "down",
+      "low": 2838.0,
+      "high": 2854.0,
+      "start": {
+        "fx_position": 486,
+        "fx_id": 486,
+        "kind": "top",
+        "price": 2854.0,
+        "merged_center": 991,
+        "merged_window": [
+          990,
+          993
+        ],
+        "merged_center_raw_range": [
+          1611,
+          1612
+        ],
+        "window_raw_range": [
+          1610,
+          1613
+        ],
+        "anchor_raw_index": 1611,
+        "anchor_utc": "2025-02-13T02:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 493,
+        "fx_id": 493,
+        "kind": "bottom",
+        "price": 2838.0,
+        "merged_center": 1000,
+        "merged_window": [
+          999,
+          1002
+        ],
+        "merged_center_raw_range": [
+          1621,
+          1623
+        ],
+        "window_raw_range": [
+          1620,
+          1624
+        ],
+        "anchor_raw_index": 1622,
+        "anchor_utc": "2025-02-13T13:00:00+00:00"
+      },
+      "merged_member_range": [
+        991,
+        1001
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    },
+    {
+      "pen_position": 81,
+      "pen_id": 81,
+      "direction": "up",
+      "low": 2838.0,
+      "high": 2895.0,
+      "start": {
+        "fx_position": 493,
+        "fx_id": 493,
+        "kind": "bottom",
+        "price": 2838.0,
+        "merged_center": 1000,
+        "merged_window": [
+          999,
+          1002
+        ],
+        "merged_center_raw_range": [
+          1621,
+          1623
+        ],
+        "window_raw_range": [
+          1620,
+          1624
+        ],
+        "anchor_raw_index": 1622,
+        "anchor_utc": "2025-02-13T13:00:00+00:00"
+      },
+      "end": {
+        "fx_position": 498,
+        "fx_id": 498,
+        "kind": "top",
+        "price": 2895.0,
+        "merged_center": 1013,
+        "merged_window": [
+          1012,
+          1015
+        ],
+        "merged_center_raw_range": [
+          1640,
+          1642
+        ],
+        "window_raw_range": [
+          1636,
+          1647
+        ],
+        "anchor_raw_index": 1640,
+        "anchor_utc": "2025-02-14T05:45:00+00:00"
+      },
+      "merged_member_range": [
+        1000,
+        1014
+      ],
+      "status": "unconfirmed",
+      "confirmed_at": null
+    }
+  ],
+  "unresolved_merged": [
+    [
+      0,
+      1
+    ],
+    [
+      1014,
+      1018
+    ]
+  ],
+  "source_fx_count": 500,
+  "snapshot_only": true,
+  "permanent_confirmation": false,
+  "solve_seconds": 0.03880275000119582,
+  "independent_validation_seconds": 8.820899529382586e-05,
+  "independent_selected_pair_checks": {
+    "selected_pairs_checked": 82,
+    "all_pass": true
+  }
+}

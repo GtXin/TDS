@@ -1,0 +1,34 @@
+{
+  "modes": {
+    "strong": {
+      "overview": 1,
+      "detail_pages": 6,
+      "raw_coverage": 1651,
+      "merged_coverage": 1018,
+      "fractal_coverage": 500,
+      "bi_coverage": 82,
+      "xd_coverage": 8,
+      "xd_roles": {
+        "primary": 7,
+        "derived": 1
+      }
+    },
+    "weak": {
+      "overview": 1,
+      "detail_pages": 6,
+      "raw_coverage": 1651,
+      "merged_coverage": 1018,
+      "fractal_coverage": 500,
+      "bi_coverage": 115,
+      "xd_coverage": 13,
+      "xd_roles": {
+        "primary": 12,
+        "derived": 1
+      }
+    }
+  },
+  "seconds": 0.336057249980513,
+  "source_results": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/memo030-500fx/results.json",
+  "png_rendered": false,
+  "visual_qa": "pending"
+}
