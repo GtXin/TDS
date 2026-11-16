@@ -1,0 +1,14 @@
+[
+  {
+    "path": "artifacts/mas/memo030-full/results.json",
+    "bytes": 205040151,
+    "gzip_bytes": 6608244,
+    "sha256": "149defe8cdf5e0434dde3f18b1ff0261f076a5eab4c50beba2904e6c69f40904"
+  },
+  {
+    "path": "artifacts/mas/memo030-four/results.json",
+    "bytes": 139193668,
+    "gzip_bytes": 6091813,
+    "sha256": "41b1ace84a3c33d458da4d000f171ff99084b3b652ba84332804b0fa952f10f7"
+  }
+]

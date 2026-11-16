@@ -1,0 +1,9 @@
+Rendered 1/4 bi-weak_xd-weak/overview.png
+Rendered 2/4 bi-weak_xd-strong/overview.png
+Rendered 3/4 bi-strong_xd-weak/overview.png
+Rendered 4/4 bi-strong_xd-strong/overview.png
+artifacts/mas/xianduan-family/run031/overview/comparison/compact.swift:8:6: warning: immutable value 'page' was never used; consider replacing with '_' or removing it
+for (page,stem) in stems.enumerated(){
+     ^~~~
+     _
+Saved compact-overview.png

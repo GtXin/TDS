@@ -1,0 +1,11 @@
+{
+  "individual_pages_reviewed_in_contacts": 32,
+  "contact_sheets": 6,
+  "compact_full_resolution": [
+    "comparison/compact-overview.png"
+  ],
+  "observed": "All confirmed segments purple, no derived status colors. Dashed actual evidence tail visible; all later raw history remains open. Long old derived segment absent.",
+  "source_ids_checked": true,
+  "input_hashes_preserved": true,
+  "memo_png_copies_exact": 8
+}

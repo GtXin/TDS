@@ -104,7 +104,8 @@ class ChanTable:
         from chanlab.algo.bi import BiSeries
         from chanlab.algo.fenxing import FenxingSeries
         from chanlab.algo.merged_kline import MergedKlineSeries
-        from chanlab.data import bi_table, fenxing_table
+        from chanlab.algo.xianduan import XianduanSeries
+        from chanlab.data import bi_table, fenxing_table, xianduan_table
         from chanlab.data.feature_table import project_one
 
         all_features: dict[str, Feature] = dict(features)
@@ -125,18 +126,28 @@ class ChanTable:
                     self.context[bi_table.FEATURE_CONTEXT], all_features
                 )
             )
+        if feature_series is None and xianduan_table.FEATURE_CONTEXT in self.context:
+            all_features.update(
+                xianduan_table.decode_features(
+                    self.context[xianduan_table.FEATURE_CONTEXT], all_features
+                )
+            )
         self.feature_series = MappingProxyType(all_features)
         projected = {key: project_one(value) for key, value in all_features.items()}
         self.memberships = MappingProxyType(
             {
                 key: value[
                     (
-                        "bi_ids"
-                        if isinstance(all_features[key], BiSeries)
+                        "xd_ids"
+                        if isinstance(all_features[key], XianduanSeries)
                         else (
-                            "fx_ids"
-                            if isinstance(all_features[key], FenxingSeries)
-                            else "mk_ids"
+                            "bi_ids"
+                            if isinstance(all_features[key], (BiSeries, XianduanSeries))
+                            else (
+                                "fx_ids"
+                                if isinstance(all_features[key], FenxingSeries)
+                                else "mk_ids"
+                            )
                         )
                     )
                 ]
@@ -147,12 +158,16 @@ class ChanTable:
             {
                 key: value[
                     (
-                        "bi_start_ids"
-                        if isinstance(all_features[key], BiSeries)
+                        "xd_start_ids"
+                        if isinstance(all_features[key], XianduanSeries)
                         else (
-                            "fx_start_ids"
-                            if isinstance(all_features[key], FenxingSeries)
-                            else "mk_start_ids"
+                            "bi_start_ids"
+                            if isinstance(all_features[key], (BiSeries, XianduanSeries))
+                            else (
+                                "fx_start_ids"
+                                if isinstance(all_features[key], FenxingSeries)
+                                else "mk_start_ids"
+                            )
                         )
                     )
                 ]
@@ -163,12 +178,16 @@ class ChanTable:
             {
                 key: value[
                     (
-                        "bi_end_ids"
-                        if isinstance(all_features[key], BiSeries)
+                        "xd_end_ids"
+                        if isinstance(all_features[key], XianduanSeries)
                         else (
-                            "fx_end_ids"
-                            if isinstance(all_features[key], FenxingSeries)
-                            else "mk_end_ids"
+                            "bi_end_ids"
+                            if isinstance(all_features[key], (BiSeries, XianduanSeries))
+                            else (
+                                "fx_end_ids"
+                                if isinstance(all_features[key], FenxingSeries)
+                                else "mk_end_ids"
+                            )
                         )
                     )
                 ]
@@ -191,7 +210,13 @@ class ChanTable:
         from chanlab.algo.bi import BiSeries
         from chanlab.algo.fenxing import FenxingSeries
         from chanlab.algo.merged_kline import MergedKlineSeries
-        from chanlab.data import bi_table, fenxing_table, merged_kline_table
+        from chanlab.algo.xianduan import XianduanSeries
+        from chanlab.data import (
+            bi_table,
+            fenxing_table,
+            merged_kline_table,
+            xianduan_table,
+        )
         from chanlab.data.feature_table import contexts, visible_projection
 
         self.source_series.validate()
@@ -201,17 +226,24 @@ class ChanTable:
             if (
                 not isinstance(key, str)
                 or not key.strip()
-                or not isinstance(feature, (MergedKlineSeries, FenxingSeries, BiSeries))
+                or not isinstance(
+                    feature,
+                    (MergedKlineSeries, FenxingSeries, BiSeries, XianduanSeries),
+                )
             ):
                 raise ValueError("invalid feature key/class")
             feature.validate()
             raw = (
-                feature.source_series.source_series.source_series
-                if isinstance(feature, BiSeries)
+                feature.source_series.source_series.source_series.source_series
+                if isinstance(feature, XianduanSeries)
                 else (
-                    feature.source_series.source_series
-                    if isinstance(feature, FenxingSeries)
-                    else feature.source_series
+                    feature.source_series.source_series.source_series
+                    if isinstance(feature, (BiSeries, XianduanSeries))
+                    else (
+                        feature.source_series.source_series
+                        if isinstance(feature, FenxingSeries)
+                        else feature.source_series
+                    )
                 )
             )
             if raw is not self.source_series:
@@ -221,6 +253,7 @@ class ChanTable:
             merged_kline_table.FEATURE_CONTEXT,
             fenxing_table.FEATURE_CONTEXT,
             bi_table.FEATURE_CONTEXT,
+            xianduan_table.FEATURE_CONTEXT,
         ):
             if (
                 name in expected_context
@@ -245,7 +278,8 @@ class ChanTable:
                 for key, values in projected.items():
                     expected = (
                         ("NA" if values[i] is None else values[i])
-                        if key in ("mk_direction", "fx_kind", "bi_direction")
+                        if key
+                        in ("mk_direction", "fx_kind", "bi_direction", "xd_direction")
                         else json.dumps(values[i], separators=(",", ":"))
                     )
                     if row[key] != expected:

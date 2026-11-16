@@ -230,7 +230,7 @@ Shared derived-series behavior (002.e, 002.g, 002.i, 002.k, 002.m, 002.o): facto
 |---|---|
 | `__init__(...)` | Retain source references, immutable results, settings and traces; automatically call `validate()`. |
 | `validate()` | Validate source/stroke records, unique integer IDs, endpoint references, chronology and trace alignment. |
-| `derive_from(source_series, config, rule_tree_ref)` | Class method: derive strokes from FenxingSeries and processed-bar context reached through its source chain. |
+| `derive_from(source_series, config, rule_tree_ref)` | Class method: derive strokes from FenxingSeries and processed-bar context reached through its source chain. Missing distance_mode defaults to weak (3); explicit strong remains 4 (memo031). |
 | `__len__()` | Return the number of Bi records: `len(series)`. |
 | `__getitem__(key)` | Return one Bi by position or a tuple of records for a slice. |
 | `__iter__()` | Iterate over `items` in stored order. |
@@ -262,6 +262,7 @@ Shared derived-series behavior (002.e, 002.g, 002.i, 002.k, 002.m, 002.o): facto
 | Member | Type | Meaning |
 |---|---|---|
 | `source_series` | `BiSeries` | Reference to the source series, without copying its data. |
+| `tail` | `tuple[tuple[int, int], ...]` | XD030-E actual unconfirmed successor/support ranges; excluded from confirmed items and count. |
 | `items` | `tuple[Xianduan, ...]` | Calculated records in time order. |
 | `config`, `rule_tree_ref`, `trace`, `trace_by_point` | See 002.e | Shared calculation settings, rule-tree reference and decision tracing. |
 
@@ -271,7 +272,7 @@ Shared derived-series behavior (002.e, 002.g, 002.i, 002.k, 002.m, 002.o): facto
 |---|---|
 | `__init__(...)` | Retain source references, immutable results, settings and traces; automatically call `validate()`. |
 | `validate()` | Validate source/segment records, unique integer IDs, Bi ranges, endpoint consistency, chronology and trace alignment. |
-| `derive_from(source_series, config, rule_tree_ref)` | Class method: derive segments from BiSeries and retain the source and decision trace. |
+| `derive_from(source_series, config, rule_tree_ref)` | Class method: derive segments from BiSeries under memo030 XD030-E; default xd_mode=weak independently of the actual upstream Bi mode. Retain source and actual S/T/U evidence; confirmed means current snapshot, not permanent. |
 | `__len__()` | Return the number of Xianduan records: `len(series)`. |
 | `__getitem__(key)` | Return one Xianduan by position or a tuple of records for a slice. |
 | `__iter__()` | Iterate over `items` in stored order. |

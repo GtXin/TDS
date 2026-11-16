@@ -1,0 +1,22 @@
+{
+  "bi-weak_xd-weak": {
+    "same_exact_input_endpoints": true,
+    "full_route_tail_matches_E": true,
+    "count": 89
+  },
+  "bi-weak_xd-strong": {
+    "same_exact_input_endpoints": true,
+    "full_route_tail_matches_E": true,
+    "count": 79
+  },
+  "bi-strong_xd-weak": {
+    "same_exact_input_endpoints": true,
+    "full_route_tail_matches_E": true,
+    "count": 57
+  },
+  "bi-strong_xd-strong": {
+    "same_exact_input_endpoints": true,
+    "full_route_tail_matches_E": true,
+    "count": 53
+  }
+}

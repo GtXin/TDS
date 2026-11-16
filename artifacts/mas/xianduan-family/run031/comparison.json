@@ -1,0 +1,11 @@
+{
+  "cases": 400,
+  "route_tail_evidence_equal": true,
+  "profile_label_excluded": true,
+  "processes": 2,
+  "baseline": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/baseline-instrumented.py",
+  "production": "src/chanlab/algo/xianduan.py",
+  "skill": "mas/skills/python-pro/SKILL.md",
+  "skill_version": "1.1.0",
+  "causal_claim": false
+}

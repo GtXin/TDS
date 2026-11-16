@@ -1,0 +1,34 @@
+{
+  "modes": {
+    "strong": {
+      "overview": 1,
+      "detail_pages": 7,
+      "raw_coverage": 10060,
+      "merged_coverage": 6200,
+      "fractal_coverage": 3027,
+      "bi_coverage": 480,
+      "xd_coverage": 58,
+      "xd_roles": {
+        "primary": 53,
+        "derived": 5
+      }
+    },
+    "weak": {
+      "overview": 1,
+      "detail_pages": 7,
+      "raw_coverage": 10060,
+      "merged_coverage": 6200,
+      "fractal_coverage": 3027,
+      "bi_coverage": 682,
+      "xd_coverage": 89,
+      "xd_roles": {
+        "primary": 80,
+        "derived": 9
+      }
+    }
+  },
+  "seconds": 1.1773846659925766,
+  "source_results": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/memo030-full/results.json",
+  "png_rendered": false,
+  "visual_qa": "pending"
+}

@@ -23,6 +23,20 @@ def load(name: str, path: Path) -> Any:
     return module
 
 
+def make_suffix(nodes: Any, outgoing: Any) -> Any:
+    """Bind one graph for independent backward objective verification."""
+    from functools import cache
+
+    @cache
+    def suffix(a: int) -> tuple[int, int]:
+        return max(
+            [(nodes[a]["j"], 1)]
+            + [(suffix(b)[0], suffix(b)[1] + 1) for b in outgoing[a]]
+        )
+
+    return suffix
+
+
 def run() -> None:
     """Enumerate all local witnesses, build a branching graph and select by DP."""
     rec = load("old_local", OLD / "recognizer.py")
@@ -126,13 +140,14 @@ def run() -> None:
             route.append(current)
             current = prev[current]
         route.reverse()
-        # Independent reverse DAG value recursion; no forward best/prev reuse.
-        from functools import cache
-        @cache
-        def suffix(a: int) -> tuple[int, int]:
-            return max([(nodes[a]["j"], 1)] + [(suffix(b)[0], suffix(b)[1] + 1) for b in outgoing[a]])
-        independent_score = max((suffix(q["id"]) for q in primary if q["i"] == earliest), default=None)
-        assert independent_score == ((nodes[winner]["j"], best[winner]) if winner is not None else None)
+        # Independent reverse DAG value recursion.
+        suffix = make_suffix(nodes, outgoing)
+        independent_score = max(
+            (suffix(q["id"]) for q in primary if q["i"] == earliest), default=None
+        )
+        assert independent_score == (
+            (nodes[winner]["j"], best[winner]) if winner is not None else None
+        )
         path_count = None
 
         def point(index: int, pens: Any = pens) -> dict[str, Any]:

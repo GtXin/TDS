@@ -1,0 +1,10 @@
+{
+  "spec_and_raw_hashes_unchanged": true,
+  "memo_links_pass": true,
+  "regression": 439,
+  "directed": 14,
+  "coverage_percent": 96,
+  "mypy_files": 9,
+  "all_plan_sections_completed": true,
+  "existing_log_conflict_preserved": true
+}

@@ -1,0 +1,56 @@
+{
+  "modes": {
+    "bi-strong_xd-strong": {
+      "overview": 1,
+      "detail_pages": 7,
+      "raw_coverage": 10060,
+      "merged_coverage": 6200,
+      "fractal_coverage": 3027,
+      "bi_coverage": 480,
+      "xd_coverage": 53,
+      "xd_roles": {
+        "confirmed": 53
+      }
+    },
+    "bi-strong_xd-weak": {
+      "overview": 1,
+      "detail_pages": 7,
+      "raw_coverage": 10060,
+      "merged_coverage": 6200,
+      "fractal_coverage": 3027,
+      "bi_coverage": 480,
+      "xd_coverage": 57,
+      "xd_roles": {
+        "confirmed": 57
+      }
+    },
+    "bi-weak_xd-strong": {
+      "overview": 1,
+      "detail_pages": 7,
+      "raw_coverage": 10060,
+      "merged_coverage": 6200,
+      "fractal_coverage": 3027,
+      "bi_coverage": 682,
+      "xd_coverage": 79,
+      "xd_roles": {
+        "confirmed": 79
+      }
+    },
+    "bi-weak_xd-weak": {
+      "overview": 1,
+      "detail_pages": 7,
+      "raw_coverage": 10060,
+      "merged_coverage": 6200,
+      "fractal_coverage": 3027,
+      "bi_coverage": 682,
+      "xd_coverage": 89,
+      "xd_roles": {
+        "confirmed": 89
+      }
+    }
+  },
+  "seconds": 1.8896368750138208,
+  "source_results": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/memo030-d/plot-results.json",
+  "png_rendered": false,
+  "visual_qa": "pending"
+}

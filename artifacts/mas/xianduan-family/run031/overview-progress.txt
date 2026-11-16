@@ -1,0 +1,5 @@
+bi-weak_xd-weak 0
+bi-weak_xd-strong 0
+bi-strong_xd-weak 0
+bi-strong_xd-strong 0
+pages 4

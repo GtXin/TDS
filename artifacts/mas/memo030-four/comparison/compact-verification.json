@@ -1,0 +1,75 @@
+{
+  "pages": [
+    {
+      "stem": "overview",
+      "common_y": [
+        2492.36,
+        3313.64
+      ],
+      "original_arrays_exact": true
+    },
+    {
+      "stem": "detail-001",
+      "common_y": [
+        2503.64,
+        3161.36
+      ],
+      "original_arrays_exact": true
+    },
+    {
+      "stem": "detail-002",
+      "common_y": [
+        2759.76,
+        3198.24
+      ],
+      "original_arrays_exact": true
+    },
+    {
+      "stem": "detail-003",
+      "common_y": [
+        2899.48,
+        3211.52
+      ],
+      "original_arrays_exact": true
+    },
+    {
+      "stem": "detail-004",
+      "common_y": [
+        2687.96,
+        3138.04
+      ],
+      "original_arrays_exact": true
+    },
+    {
+      "stem": "detail-005",
+      "common_y": [
+        2670.48,
+        3243.52
+      ],
+      "original_arrays_exact": true
+    },
+    {
+      "stem": "detail-006",
+      "common_y": [
+        2859.56,
+        3257.44
+      ],
+      "original_arrays_exact": true
+    },
+    {
+      "stem": "detail-007",
+      "common_y": [
+        3129.56,
+        3266.44
+      ],
+      "original_arrays_exact": true
+    }
+  ],
+  "plots_per_page": 4,
+  "size": [
+    1800,
+    1100
+  ],
+  "visual_review": "All7window composites inspected; overview uses same approved composition with common scales. Original32data arrays unchanged; renderer asserts originalFX/Bi/XD IDs.",
+  "memo_copies_exact": true
+}

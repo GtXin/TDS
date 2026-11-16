@@ -1,0 +1,8700 @@
+{
+  "bi-strong_xd-strong": {
+    "recomputed_selected_certificates": 52,
+    "actual_binding_pass": true,
+    "confirmed_fx_bounds": [
+      0,
+      2892
+    ],
+    "tail": [
+      [
+        460,
+        463
+      ]
+    ],
+    "evidence": [
+      {
+        "confirmed": [
+          0,
+          21
+        ],
+        "actual_breaker": [
+          21,
+          24
+        ],
+        "actual_second_sequence_successor": [
+          24,
+          39
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 27,
+          "reverse_end": 24,
+          "supports": [
+            [
+              21,
+              24
+            ],
+            [
+              24,
+              27
+            ]
+          ],
+          "h1": 24,
+          "h2": 27,
+          "profile": "XD030-B",
+          "i": 0,
+          "j": 21,
+          "direction": "down",
+          "dep_pen": 26,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          21,
+          24
+        ],
+        "actual_breaker": [
+          24,
+          39
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 27,
+          "reverse_end": null,
+          "supports": [
+            [
+              24,
+              27
+            ],
+            [
+              24,
+              27
+            ]
+          ],
+          "h1": 27,
+          "profile": "XD030-B",
+          "i": 21,
+          "j": 24,
+          "direction": "up",
+          "dep_pen": 26,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          24,
+          39
+        ],
+        "actual_breaker": [
+          39,
+          42
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 42,
+          "reverse_end": null,
+          "supports": [
+            [
+              39,
+              42
+            ],
+            [
+              39,
+              42
+            ]
+          ],
+          "h1": 42,
+          "profile": "XD030-B",
+          "i": 24,
+          "j": 39,
+          "direction": "down",
+          "dep_pen": 41,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          39,
+          42
+        ],
+        "actual_breaker": [
+          42,
+          47
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 45,
+          "reverse_end": 45,
+          "supports": [
+            [
+              42,
+              45
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 39,
+          "j": 42,
+          "direction": "up",
+          "dep_pen": 44,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          42,
+          47
+        ],
+        "actual_breaker": [
+          47,
+          54
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 52,
+          "reverse_end": 52,
+          "supports": [
+            [
+              47,
+              52
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 42,
+          "j": 47,
+          "direction": "down",
+          "dep_pen": 51,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          47,
+          54
+        ],
+        "actual_breaker": [
+          54,
+          61
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 57,
+          "reverse_end": 57,
+          "supports": [
+            [
+              54,
+              57
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 47,
+          "j": 54,
+          "direction": "up",
+          "dep_pen": 56,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          54,
+          61
+        ],
+        "actual_breaker": [
+          61,
+          76
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 64,
+          "reverse_end": 64,
+          "supports": [
+            [
+              61,
+              64
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 54,
+          "j": 61,
+          "direction": "down",
+          "dep_pen": 63,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          61,
+          76
+        ],
+        "actual_breaker": [
+          76,
+          79
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 79,
+          "reverse_end": null,
+          "supports": [
+            [
+              76,
+              79
+            ],
+            [
+              76,
+              79
+            ]
+          ],
+          "h1": 79,
+          "profile": "XD030-B",
+          "i": 61,
+          "j": 76,
+          "direction": "up",
+          "dep_pen": 78,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          76,
+          79
+        ],
+        "actual_breaker": [
+          79,
+          90
+        ],
+        "actual_second_sequence_successor": [
+          90,
+          93
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 93,
+          "reverse_end": 90,
+          "supports": [
+            [
+              79,
+              90
+            ],
+            [
+              90,
+              93
+            ]
+          ],
+          "h1": 82,
+          "h2": 93,
+          "profile": "XD030-B",
+          "i": 76,
+          "j": 79,
+          "direction": "down",
+          "dep_pen": 92,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          79,
+          90
+        ],
+        "actual_breaker": [
+          90,
+          93
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 93,
+          "reverse_end": 93,
+          "supports": [
+            [
+              90,
+              93
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 79,
+          "j": 90,
+          "direction": "up",
+          "dep_pen": 92,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          90,
+          93
+        ],
+        "actual_breaker": [
+          93,
+          126
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 96,
+          "reverse_end": null,
+          "supports": [
+            [
+              93,
+              96
+            ],
+            [
+              93,
+              96
+            ]
+          ],
+          "h1": 96,
+          "profile": "XD030-B",
+          "i": 90,
+          "j": 93,
+          "direction": "down",
+          "dep_pen": 95,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          93,
+          126
+        ],
+        "actual_breaker": [
+          126,
+          129
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 129,
+          "reverse_end": null,
+          "supports": [
+            [
+              126,
+              129
+            ],
+            [
+              126,
+              129
+            ]
+          ],
+          "h1": 129,
+          "profile": "XD030-B",
+          "i": 93,
+          "j": 126,
+          "direction": "up",
+          "dep_pen": 128,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          126,
+          129
+        ],
+        "actual_breaker": [
+          129,
+          132
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 132,
+          "reverse_end": null,
+          "supports": [
+            [
+              129,
+              132
+            ],
+            [
+              129,
+              132
+            ]
+          ],
+          "h1": 132,
+          "profile": "XD030-B",
+          "i": 126,
+          "j": 129,
+          "direction": "down",
+          "dep_pen": 131,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          129,
+          132
+        ],
+        "actual_breaker": [
+          132,
+          135
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 135,
+          "reverse_end": 135,
+          "supports": [
+            [
+              132,
+              135
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 129,
+          "j": 132,
+          "direction": "up",
+          "dep_pen": 134,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          132,
+          135
+        ],
+        "actual_breaker": [
+          135,
+          140
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 140,
+          "reverse_end": 140,
+          "supports": [
+            [
+              135,
+              140
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 132,
+          "j": 135,
+          "direction": "down",
+          "dep_pen": 139,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          135,
+          140
+        ],
+        "actual_breaker": [
+          140,
+          153
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 143,
+          "reverse_end": 143,
+          "supports": [
+            [
+              140,
+              143
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 135,
+          "j": 140,
+          "direction": "up",
+          "dep_pen": 142,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          140,
+          153
+        ],
+        "actual_breaker": [
+          153,
+          180
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 156,
+          "reverse_end": null,
+          "supports": [
+            [
+              153,
+              156
+            ],
+            [
+              153,
+              156
+            ]
+          ],
+          "h1": 156,
+          "profile": "XD030-B",
+          "i": 140,
+          "j": 153,
+          "direction": "down",
+          "dep_pen": 155,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          153,
+          180
+        ],
+        "actual_breaker": [
+          180,
+          187
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 183,
+          "reverse_end": null,
+          "supports": [
+            [
+              180,
+              183
+            ],
+            [
+              180,
+              183
+            ]
+          ],
+          "h1": 183,
+          "profile": "XD030-B",
+          "i": 153,
+          "j": 180,
+          "direction": "up",
+          "dep_pen": 182,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          180,
+          187
+        ],
+        "actual_breaker": [
+          187,
+          198
+        ],
+        "actual_second_sequence_successor": [
+          198,
+          201
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 201,
+          "reverse_end": 198,
+          "supports": [
+            [
+              187,
+              198
+            ],
+            [
+              198,
+              201
+            ]
+          ],
+          "h1": 190,
+          "h2": 201,
+          "profile": "XD030-B",
+          "i": 180,
+          "j": 187,
+          "direction": "down",
+          "dep_pen": 200,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          187,
+          198
+        ],
+        "actual_breaker": [
+          198,
+          201
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 201,
+          "reverse_end": null,
+          "supports": [
+            [
+              198,
+              201
+            ],
+            [
+              198,
+              201
+            ]
+          ],
+          "h1": 201,
+          "profile": "XD030-B",
+          "i": 187,
+          "j": 198,
+          "direction": "up",
+          "dep_pen": 200,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          198,
+          201
+        ],
+        "actual_breaker": [
+          201,
+          204
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 204,
+          "reverse_end": 204,
+          "supports": [
+            [
+              201,
+              204
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 198,
+          "j": 201,
+          "direction": "down",
+          "dep_pen": 203,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          201,
+          204
+        ],
+        "actual_breaker": [
+          204,
+          207
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 207,
+          "reverse_end": 207,
+          "supports": [
+            [
+              204,
+              207
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 201,
+          "j": 204,
+          "direction": "up",
+          "dep_pen": 206,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          204,
+          207
+        ],
+        "actual_breaker": [
+          207,
+          218
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 210,
+          "reverse_end": null,
+          "supports": [
+            [
+              207,
+              210
+            ],
+            [
+              207,
+              210
+            ]
+          ],
+          "h1": 210,
+          "profile": "XD030-B",
+          "i": 204,
+          "j": 207,
+          "direction": "down",
+          "dep_pen": 209,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          207,
+          218
+        ],
+        "actual_breaker": [
+          218,
+          231
+        ],
+        "actual_second_sequence_successor": [
+          231,
+          236
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 234,
+          "reverse_end": 231,
+          "supports": [
+            [
+              218,
+              231
+            ],
+            [
+              231,
+              234
+            ]
+          ],
+          "h1": 221,
+          "h2": 234,
+          "profile": "XD030-B",
+          "i": 207,
+          "j": 218,
+          "direction": "up",
+          "dep_pen": 233,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          218,
+          231
+        ],
+        "actual_breaker": [
+          231,
+          236
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 234,
+          "reverse_end": 234,
+          "supports": [
+            [
+              231,
+              234
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 218,
+          "j": 231,
+          "direction": "down",
+          "dep_pen": 233,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          231,
+          236
+        ],
+        "actual_breaker": [
+          236,
+          239
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 239,
+          "reverse_end": null,
+          "supports": [
+            [
+              236,
+              239
+            ],
+            [
+              236,
+              239
+            ]
+          ],
+          "h1": 239,
+          "profile": "XD030-B",
+          "i": 231,
+          "j": 236,
+          "direction": "up",
+          "dep_pen": 238,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          236,
+          239
+        ],
+        "actual_breaker": [
+          239,
+          242
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 242,
+          "reverse_end": null,
+          "supports": [
+            [
+              239,
+              242
+            ],
+            [
+              239,
+              242
+            ]
+          ],
+          "h1": 242,
+          "profile": "XD030-B",
+          "i": 236,
+          "j": 239,
+          "direction": "down",
+          "dep_pen": 241,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          239,
+          242
+        ],
+        "actual_breaker": [
+          242,
+          255
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 245,
+          "reverse_end": 245,
+          "supports": [
+            [
+              242,
+              245
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 239,
+          "j": 242,
+          "direction": "up",
+          "dep_pen": 244,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          242,
+          255
+        ],
+        "actual_breaker": [
+          255,
+          262
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 258,
+          "reverse_end": 258,
+          "supports": [
+            [
+              255,
+              258
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 242,
+          "j": 255,
+          "direction": "down",
+          "dep_pen": 257,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          255,
+          262
+        ],
+        "actual_breaker": [
+          262,
+          265
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 265,
+          "reverse_end": null,
+          "supports": [
+            [
+              262,
+              265
+            ],
+            [
+              262,
+              265
+            ]
+          ],
+          "h1": 265,
+          "profile": "XD030-B",
+          "i": 255,
+          "j": 262,
+          "direction": "up",
+          "dep_pen": 264,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          262,
+          265
+        ],
+        "actual_breaker": [
+          265,
+          270
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 268,
+          "reverse_end": 268,
+          "supports": [
+            [
+              265,
+              268
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 262,
+          "j": 265,
+          "direction": "down",
+          "dep_pen": 267,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          265,
+          270
+        ],
+        "actual_breaker": [
+          270,
+          277
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 273,
+          "reverse_end": 273,
+          "supports": [
+            [
+              270,
+              273
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 265,
+          "j": 270,
+          "direction": "up",
+          "dep_pen": 272,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          270,
+          277
+        ],
+        "actual_breaker": [
+          277,
+          280
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 280,
+          "reverse_end": null,
+          "supports": [
+            [
+              277,
+              280
+            ],
+            [
+              277,
+              280
+            ]
+          ],
+          "h1": 280,
+          "profile": "XD030-B",
+          "i": 270,
+          "j": 277,
+          "direction": "down",
+          "dep_pen": 279,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          277,
+          280
+        ],
+        "actual_breaker": [
+          280,
+          289
+        ],
+        "actual_second_sequence_successor": [
+          289,
+          292
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 292,
+          "reverse_end": 289,
+          "supports": [
+            [
+              280,
+              289
+            ],
+            [
+              289,
+              292
+            ]
+          ],
+          "h1": 283,
+          "h2": 292,
+          "profile": "XD030-B",
+          "i": 277,
+          "j": 280,
+          "direction": "up",
+          "dep_pen": 291,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          280,
+          289
+        ],
+        "actual_breaker": [
+          289,
+          292
+        ],
+        "actual_second_sequence_successor": [
+          292,
+          299
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 295,
+          "reverse_end": 292,
+          "supports": [
+            [
+              289,
+              292
+            ],
+            [
+              292,
+              295
+            ]
+          ],
+          "h1": 292,
+          "h2": 295,
+          "profile": "XD030-B",
+          "i": 280,
+          "j": 289,
+          "direction": "down",
+          "dep_pen": 294,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          289,
+          292
+        ],
+        "actual_breaker": [
+          292,
+          299
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 295,
+          "reverse_end": null,
+          "supports": [
+            [
+              292,
+              295
+            ],
+            [
+              292,
+              295
+            ]
+          ],
+          "h1": 295,
+          "profile": "XD030-B",
+          "i": 289,
+          "j": 292,
+          "direction": "up",
+          "dep_pen": 294,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          292,
+          299
+        ],
+        "actual_breaker": [
+          299,
+          324
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 302,
+          "reverse_end": 302,
+          "supports": [
+            [
+              299,
+              302
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 292,
+          "j": 299,
+          "direction": "down",
+          "dep_pen": 301,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          299,
+          324
+        ],
+        "actual_breaker": [
+          324,
+          329
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 327,
+          "reverse_end": 327,
+          "supports": [
+            [
+              324,
+              327
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 299,
+          "j": 324,
+          "direction": "up",
+          "dep_pen": 326,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          324,
+          329
+        ],
+        "actual_breaker": [
+          329,
+          350
+        ],
+        "actual_second_sequence_successor": [
+          350,
+          377
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 353,
+          "reverse_end": 350,
+          "supports": [
+            [
+              329,
+              350
+            ],
+            [
+              350,
+              353
+            ]
+          ],
+          "h1": 332,
+          "h2": 353,
+          "profile": "XD030-B",
+          "i": 324,
+          "j": 329,
+          "direction": "down",
+          "dep_pen": 352,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          329,
+          350
+        ],
+        "actual_breaker": [
+          350,
+          377
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 353,
+          "reverse_end": null,
+          "supports": [
+            [
+              350,
+              353
+            ],
+            [
+              350,
+              353
+            ]
+          ],
+          "h1": 353,
+          "profile": "XD030-B",
+          "i": 329,
+          "j": 350,
+          "direction": "up",
+          "dep_pen": 352,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          350,
+          377
+        ],
+        "actual_breaker": [
+          377,
+          392
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 392,
+          "reverse_end": 392,
+          "supports": [
+            [
+              377,
+              392
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 350,
+          "j": 377,
+          "direction": "down",
+          "dep_pen": 391,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          377,
+          392
+        ],
+        "actual_breaker": [
+          392,
+          395
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 395,
+          "reverse_end": null,
+          "supports": [
+            [
+              392,
+              395
+            ],
+            [
+              392,
+              395
+            ]
+          ],
+          "h1": 395,
+          "profile": "XD030-B",
+          "i": 377,
+          "j": 392,
+          "direction": "up",
+          "dep_pen": 394,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          392,
+          395
+        ],
+        "actual_breaker": [
+          395,
+          402
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 398,
+          "reverse_end": null,
+          "supports": [
+            [
+              395,
+              398
+            ],
+            [
+              395,
+              398
+            ]
+          ],
+          "h1": 398,
+          "profile": "XD030-B",
+          "i": 392,
+          "j": 395,
+          "direction": "down",
+          "dep_pen": 397,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          395,
+          402
+        ],
+        "actual_breaker": [
+          402,
+          405
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 405,
+          "reverse_end": 405,
+          "supports": [
+            [
+              402,
+              405
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 395,
+          "j": 402,
+          "direction": "up",
+          "dep_pen": 404,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          402,
+          405
+        ],
+        "actual_breaker": [
+          405,
+          408
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 408,
+          "reverse_end": null,
+          "supports": [
+            [
+              405,
+              408
+            ],
+            [
+              405,
+              408
+            ]
+          ],
+          "h1": 408,
+          "profile": "XD030-B",
+          "i": 402,
+          "j": 405,
+          "direction": "down",
+          "dep_pen": 407,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          405,
+          408
+        ],
+        "actual_breaker": [
+          408,
+          413
+        ],
+        "actual_second_sequence_successor": [
+          413,
+          418
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 418,
+          "reverse_end": 413,
+          "supports": [
+            [
+              408,
+              413
+            ],
+            [
+              413,
+              418
+            ]
+          ],
+          "h1": 411,
+          "h2": 418,
+          "profile": "XD030-B",
+          "i": 405,
+          "j": 408,
+          "direction": "up",
+          "dep_pen": 417,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          408,
+          413
+        ],
+        "actual_breaker": [
+          413,
+          418
+        ],
+        "actual_second_sequence_successor": [
+          418,
+          427
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 421,
+          "reverse_end": 418,
+          "supports": [
+            [
+              413,
+              418
+            ],
+            [
+              418,
+              421
+            ]
+          ],
+          "h1": 418,
+          "h2": 421,
+          "profile": "XD030-B",
+          "i": 408,
+          "j": 413,
+          "direction": "down",
+          "dep_pen": 420,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          413,
+          418
+        ],
+        "actual_breaker": [
+          418,
+          427
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 421,
+          "reverse_end": null,
+          "supports": [
+            [
+              418,
+              421
+            ],
+            [
+              418,
+              421
+            ]
+          ],
+          "h1": 421,
+          "profile": "XD030-B",
+          "i": 413,
+          "j": 418,
+          "direction": "up",
+          "dep_pen": 420,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          418,
+          427
+        ],
+        "actual_breaker": [
+          427,
+          450
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 430,
+          "reverse_end": 430,
+          "supports": [
+            [
+              427,
+              430
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 418,
+          "j": 427,
+          "direction": "down",
+          "dep_pen": 429,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          427,
+          450
+        ],
+        "actual_breaker": [
+          450,
+          453
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 453,
+          "reverse_end": null,
+          "supports": [
+            [
+              450,
+              453
+            ],
+            [
+              450,
+              453
+            ]
+          ],
+          "h1": 453,
+          "profile": "XD030-B",
+          "i": 427,
+          "j": 450,
+          "direction": "up",
+          "dep_pen": 452,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          450,
+          453
+        ],
+        "actual_breaker": [
+          453,
+          460
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 456,
+          "reverse_end": 456,
+          "supports": [
+            [
+              453,
+              456
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 450,
+          "j": 453,
+          "direction": "down",
+          "dep_pen": 455,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          453,
+          460
+        ],
+        "actual_breaker": [
+          460,
+          463
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 463,
+          "reverse_end": 463,
+          "supports": [
+            [
+              460,
+              463
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 453,
+          "j": 460,
+          "direction": "up",
+          "dep_pen": 462,
+          "xd_mode": "strong"
+        }
+      }
+    ]
+  },
+  "bi-strong_xd-weak": {
+    "recomputed_selected_certificates": 56,
+    "actual_binding_pass": true,
+    "confirmed_fx_bounds": [
+      0,
+      2892
+    ],
+    "tail": [
+      [
+        460,
+        463
+      ]
+    ],
+    "evidence": [
+      {
+        "confirmed": [
+          0,
+          21
+        ],
+        "actual_breaker": [
+          21,
+          24
+        ],
+        "actual_second_sequence_successor": [
+          24,
+          39
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 27,
+          "reverse_end": 24,
+          "supports": [
+            [
+              21,
+              24
+            ],
+            [
+              24,
+              27
+            ]
+          ],
+          "h1": 24,
+          "h2": 27,
+          "profile": "XD030-B",
+          "i": 0,
+          "j": 21,
+          "direction": "down",
+          "dep_pen": 26,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          21,
+          24
+        ],
+        "actual_breaker": [
+          24,
+          39
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 27,
+          "reverse_end": null,
+          "supports": [
+            [
+              24,
+              27
+            ],
+            [
+              24,
+              27
+            ]
+          ],
+          "h1": 27,
+          "profile": "XD030-B",
+          "i": 21,
+          "j": 24,
+          "direction": "up",
+          "dep_pen": 26,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          24,
+          39
+        ],
+        "actual_breaker": [
+          39,
+          42
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 42,
+          "reverse_end": null,
+          "supports": [
+            [
+              39,
+              42
+            ],
+            [
+              39,
+              42
+            ]
+          ],
+          "h1": 42,
+          "profile": "XD030-B",
+          "i": 24,
+          "j": 39,
+          "direction": "down",
+          "dep_pen": 41,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          39,
+          42
+        ],
+        "actual_breaker": [
+          42,
+          47
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 45,
+          "reverse_end": 45,
+          "supports": [
+            [
+              42,
+              45
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 39,
+          "j": 42,
+          "direction": "up",
+          "dep_pen": 44,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          42,
+          47
+        ],
+        "actual_breaker": [
+          47,
+          54
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 52,
+          "reverse_end": 52,
+          "supports": [
+            [
+              47,
+              52
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 42,
+          "j": 47,
+          "direction": "down",
+          "dep_pen": 51,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          47,
+          54
+        ],
+        "actual_breaker": [
+          54,
+          61
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 57,
+          "reverse_end": 57,
+          "supports": [
+            [
+              54,
+              57
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 47,
+          "j": 54,
+          "direction": "up",
+          "dep_pen": 56,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          54,
+          61
+        ],
+        "actual_breaker": [
+          61,
+          76
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 64,
+          "reverse_end": 64,
+          "supports": [
+            [
+              61,
+              64
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 54,
+          "j": 61,
+          "direction": "down",
+          "dep_pen": 63,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          61,
+          76
+        ],
+        "actual_breaker": [
+          76,
+          79
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 79,
+          "reverse_end": null,
+          "supports": [
+            [
+              76,
+              79
+            ],
+            [
+              76,
+              79
+            ]
+          ],
+          "h1": 79,
+          "profile": "XD030-B",
+          "i": 61,
+          "j": 76,
+          "direction": "up",
+          "dep_pen": 78,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          76,
+          79
+        ],
+        "actual_breaker": [
+          79,
+          90
+        ],
+        "actual_second_sequence_successor": [
+          90,
+          93
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 93,
+          "reverse_end": 90,
+          "supports": [
+            [
+              79,
+              90
+            ],
+            [
+              90,
+              93
+            ]
+          ],
+          "h1": 82,
+          "h2": 93,
+          "profile": "XD030-B",
+          "i": 76,
+          "j": 79,
+          "direction": "down",
+          "dep_pen": 92,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          79,
+          90
+        ],
+        "actual_breaker": [
+          90,
+          93
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 93,
+          "reverse_end": 93,
+          "supports": [
+            [
+              90,
+              93
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 79,
+          "j": 90,
+          "direction": "up",
+          "dep_pen": 92,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          90,
+          93
+        ],
+        "actual_breaker": [
+          93,
+          100
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 96,
+          "reverse_end": null,
+          "supports": [
+            [
+              93,
+              96
+            ],
+            [
+              93,
+              96
+            ]
+          ],
+          "h1": 96,
+          "profile": "XD030-B",
+          "i": 90,
+          "j": 93,
+          "direction": "down",
+          "dep_pen": 95,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          93,
+          100
+        ],
+        "actual_breaker": [
+          100,
+          103
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 103,
+          "reverse_end": 103,
+          "supports": [
+            [
+              100,
+              103
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 93,
+          "j": 100,
+          "direction": "up",
+          "dep_pen": 102,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          100,
+          103
+        ],
+        "actual_breaker": [
+          103,
+          126
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 108,
+          "reverse_end": null,
+          "supports": [
+            [
+              103,
+              106
+            ],
+            [
+              103,
+              108
+            ]
+          ],
+          "h1": 108,
+          "profile": "XD030-B",
+          "i": 100,
+          "j": 103,
+          "direction": "down",
+          "dep_pen": 107,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          103,
+          126
+        ],
+        "actual_breaker": [
+          126,
+          129
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 129,
+          "reverse_end": null,
+          "supports": [
+            [
+              126,
+              129
+            ],
+            [
+              126,
+              129
+            ]
+          ],
+          "h1": 129,
+          "profile": "XD030-B",
+          "i": 103,
+          "j": 126,
+          "direction": "up",
+          "dep_pen": 128,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          126,
+          129
+        ],
+        "actual_breaker": [
+          129,
+          132
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 132,
+          "reverse_end": null,
+          "supports": [
+            [
+              129,
+              132
+            ],
+            [
+              129,
+              132
+            ]
+          ],
+          "h1": 132,
+          "profile": "XD030-B",
+          "i": 126,
+          "j": 129,
+          "direction": "down",
+          "dep_pen": 131,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          129,
+          132
+        ],
+        "actual_breaker": [
+          132,
+          135
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 135,
+          "reverse_end": 135,
+          "supports": [
+            [
+              132,
+              135
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 129,
+          "j": 132,
+          "direction": "up",
+          "dep_pen": 134,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          132,
+          135
+        ],
+        "actual_breaker": [
+          135,
+          140
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 140,
+          "reverse_end": 140,
+          "supports": [
+            [
+              135,
+              140
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 132,
+          "j": 135,
+          "direction": "down",
+          "dep_pen": 139,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          135,
+          140
+        ],
+        "actual_breaker": [
+          140,
+          147
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 143,
+          "reverse_end": 143,
+          "supports": [
+            [
+              140,
+              143
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 135,
+          "j": 140,
+          "direction": "up",
+          "dep_pen": 142,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          140,
+          147
+        ],
+        "actual_breaker": [
+          147,
+          180
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 152,
+          "reverse_end": null,
+          "supports": [
+            [
+              147,
+              150
+            ],
+            [
+              147,
+              152
+            ]
+          ],
+          "h1": 152,
+          "profile": "XD030-B",
+          "i": 140,
+          "j": 147,
+          "direction": "down",
+          "dep_pen": 151,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          147,
+          180
+        ],
+        "actual_breaker": [
+          180,
+          187
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 183,
+          "reverse_end": null,
+          "supports": [
+            [
+              180,
+              183
+            ],
+            [
+              180,
+              183
+            ]
+          ],
+          "h1": 183,
+          "profile": "XD030-B",
+          "i": 147,
+          "j": 180,
+          "direction": "up",
+          "dep_pen": 182,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          180,
+          187
+        ],
+        "actual_breaker": [
+          187,
+          198
+        ],
+        "actual_second_sequence_successor": [
+          198,
+          201
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 201,
+          "reverse_end": 198,
+          "supports": [
+            [
+              187,
+              198
+            ],
+            [
+              198,
+              201
+            ]
+          ],
+          "h1": 190,
+          "h2": 201,
+          "profile": "XD030-B",
+          "i": 180,
+          "j": 187,
+          "direction": "down",
+          "dep_pen": 200,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          187,
+          198
+        ],
+        "actual_breaker": [
+          198,
+          201
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 201,
+          "reverse_end": null,
+          "supports": [
+            [
+              198,
+              201
+            ],
+            [
+              198,
+              201
+            ]
+          ],
+          "h1": 201,
+          "profile": "XD030-B",
+          "i": 187,
+          "j": 198,
+          "direction": "up",
+          "dep_pen": 200,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          198,
+          201
+        ],
+        "actual_breaker": [
+          201,
+          204
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 204,
+          "reverse_end": 204,
+          "supports": [
+            [
+              201,
+              204
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 198,
+          "j": 201,
+          "direction": "down",
+          "dep_pen": 203,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          201,
+          204
+        ],
+        "actual_breaker": [
+          204,
+          207
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 207,
+          "reverse_end": 207,
+          "supports": [
+            [
+              204,
+              207
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 201,
+          "j": 204,
+          "direction": "up",
+          "dep_pen": 206,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          204,
+          207
+        ],
+        "actual_breaker": [
+          207,
+          218
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 210,
+          "reverse_end": null,
+          "supports": [
+            [
+              207,
+              210
+            ],
+            [
+              207,
+              210
+            ]
+          ],
+          "h1": 210,
+          "profile": "XD030-B",
+          "i": 204,
+          "j": 207,
+          "direction": "down",
+          "dep_pen": 209,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          207,
+          218
+        ],
+        "actual_breaker": [
+          218,
+          231
+        ],
+        "actual_second_sequence_successor": [
+          231,
+          236
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 234,
+          "reverse_end": 231,
+          "supports": [
+            [
+              218,
+              231
+            ],
+            [
+              231,
+              234
+            ]
+          ],
+          "h1": 221,
+          "h2": 234,
+          "profile": "XD030-B",
+          "i": 207,
+          "j": 218,
+          "direction": "up",
+          "dep_pen": 233,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          218,
+          231
+        ],
+        "actual_breaker": [
+          231,
+          236
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 234,
+          "reverse_end": 234,
+          "supports": [
+            [
+              231,
+              234
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 218,
+          "j": 231,
+          "direction": "down",
+          "dep_pen": 233,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          231,
+          236
+        ],
+        "actual_breaker": [
+          236,
+          239
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 239,
+          "reverse_end": null,
+          "supports": [
+            [
+              236,
+              239
+            ],
+            [
+              236,
+              239
+            ]
+          ],
+          "h1": 239,
+          "profile": "XD030-B",
+          "i": 231,
+          "j": 236,
+          "direction": "up",
+          "dep_pen": 238,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          236,
+          239
+        ],
+        "actual_breaker": [
+          239,
+          242
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 242,
+          "reverse_end": null,
+          "supports": [
+            [
+              239,
+              242
+            ],
+            [
+              239,
+              242
+            ]
+          ],
+          "h1": 242,
+          "profile": "XD030-B",
+          "i": 236,
+          "j": 239,
+          "direction": "down",
+          "dep_pen": 241,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          239,
+          242
+        ],
+        "actual_breaker": [
+          242,
+          255
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 245,
+          "reverse_end": 245,
+          "supports": [
+            [
+              242,
+              245
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 239,
+          "j": 242,
+          "direction": "up",
+          "dep_pen": 244,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          242,
+          255
+        ],
+        "actual_breaker": [
+          255,
+          262
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 258,
+          "reverse_end": 258,
+          "supports": [
+            [
+              255,
+              258
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 242,
+          "j": 255,
+          "direction": "down",
+          "dep_pen": 257,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          255,
+          262
+        ],
+        "actual_breaker": [
+          262,
+          265
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 265,
+          "reverse_end": null,
+          "supports": [
+            [
+              262,
+              265
+            ],
+            [
+              262,
+              265
+            ]
+          ],
+          "h1": 265,
+          "profile": "XD030-B",
+          "i": 255,
+          "j": 262,
+          "direction": "up",
+          "dep_pen": 264,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          262,
+          265
+        ],
+        "actual_breaker": [
+          265,
+          270
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 268,
+          "reverse_end": 268,
+          "supports": [
+            [
+              265,
+              268
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 262,
+          "j": 265,
+          "direction": "down",
+          "dep_pen": 267,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          265,
+          270
+        ],
+        "actual_breaker": [
+          270,
+          277
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 273,
+          "reverse_end": 273,
+          "supports": [
+            [
+              270,
+              273
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 265,
+          "j": 270,
+          "direction": "up",
+          "dep_pen": 272,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          270,
+          277
+        ],
+        "actual_breaker": [
+          277,
+          280
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 280,
+          "reverse_end": null,
+          "supports": [
+            [
+              277,
+              280
+            ],
+            [
+              277,
+              280
+            ]
+          ],
+          "h1": 280,
+          "profile": "XD030-B",
+          "i": 270,
+          "j": 277,
+          "direction": "down",
+          "dep_pen": 279,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          277,
+          280
+        ],
+        "actual_breaker": [
+          280,
+          289
+        ],
+        "actual_second_sequence_successor": [
+          289,
+          292
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 292,
+          "reverse_end": 289,
+          "supports": [
+            [
+              280,
+              289
+            ],
+            [
+              289,
+              292
+            ]
+          ],
+          "h1": 283,
+          "h2": 292,
+          "profile": "XD030-B",
+          "i": 277,
+          "j": 280,
+          "direction": "up",
+          "dep_pen": 291,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          280,
+          289
+        ],
+        "actual_breaker": [
+          289,
+          292
+        ],
+        "actual_second_sequence_successor": [
+          292,
+          299
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 295,
+          "reverse_end": 292,
+          "supports": [
+            [
+              289,
+              292
+            ],
+            [
+              292,
+              295
+            ]
+          ],
+          "h1": 292,
+          "h2": 295,
+          "profile": "XD030-B",
+          "i": 280,
+          "j": 289,
+          "direction": "down",
+          "dep_pen": 294,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          289,
+          292
+        ],
+        "actual_breaker": [
+          292,
+          299
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 295,
+          "reverse_end": null,
+          "supports": [
+            [
+              292,
+              295
+            ],
+            [
+              292,
+              295
+            ]
+          ],
+          "h1": 295,
+          "profile": "XD030-B",
+          "i": 289,
+          "j": 292,
+          "direction": "up",
+          "dep_pen": 294,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          292,
+          299
+        ],
+        "actual_breaker": [
+          299,
+          308
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 302,
+          "reverse_end": 302,
+          "supports": [
+            [
+              299,
+              302
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 292,
+          "j": 299,
+          "direction": "down",
+          "dep_pen": 301,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          299,
+          308
+        ],
+        "actual_breaker": [
+          308,
+          317
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 313,
+          "reverse_end": null,
+          "supports": [
+            [
+              308,
+              311
+            ],
+            [
+              308,
+              313
+            ]
+          ],
+          "h1": 313,
+          "profile": "XD030-B",
+          "i": 299,
+          "j": 308,
+          "direction": "up",
+          "dep_pen": 312,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          308,
+          317
+        ],
+        "actual_breaker": [
+          317,
+          324
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 320,
+          "reverse_end": null,
+          "supports": [
+            [
+              317,
+              320
+            ],
+            [
+              317,
+              320
+            ]
+          ],
+          "h1": 320,
+          "profile": "XD030-B",
+          "i": 308,
+          "j": 317,
+          "direction": "down",
+          "dep_pen": 319,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          317,
+          324
+        ],
+        "actual_breaker": [
+          324,
+          329
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 327,
+          "reverse_end": 327,
+          "supports": [
+            [
+              324,
+              327
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 317,
+          "j": 324,
+          "direction": "up",
+          "dep_pen": 326,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          324,
+          329
+        ],
+        "actual_breaker": [
+          329,
+          350
+        ],
+        "actual_second_sequence_successor": [
+          350,
+          377
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 353,
+          "reverse_end": 350,
+          "supports": [
+            [
+              329,
+              350
+            ],
+            [
+              350,
+              353
+            ]
+          ],
+          "h1": 332,
+          "h2": 353,
+          "profile": "XD030-B",
+          "i": 324,
+          "j": 329,
+          "direction": "down",
+          "dep_pen": 352,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          329,
+          350
+        ],
+        "actual_breaker": [
+          350,
+          377
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 353,
+          "reverse_end": null,
+          "supports": [
+            [
+              350,
+              353
+            ],
+            [
+              350,
+              353
+            ]
+          ],
+          "h1": 353,
+          "profile": "XD030-B",
+          "i": 329,
+          "j": 350,
+          "direction": "up",
+          "dep_pen": 352,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          350,
+          377
+        ],
+        "actual_breaker": [
+          377,
+          392
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 392,
+          "reverse_end": 392,
+          "supports": [
+            [
+              377,
+              392
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 350,
+          "j": 377,
+          "direction": "down",
+          "dep_pen": 391,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          377,
+          392
+        ],
+        "actual_breaker": [
+          392,
+          395
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 395,
+          "reverse_end": null,
+          "supports": [
+            [
+              392,
+              395
+            ],
+            [
+              392,
+              395
+            ]
+          ],
+          "h1": 395,
+          "profile": "XD030-B",
+          "i": 377,
+          "j": 392,
+          "direction": "up",
+          "dep_pen": 394,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          392,
+          395
+        ],
+        "actual_breaker": [
+          395,
+          402
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 398,
+          "reverse_end": null,
+          "supports": [
+            [
+              395,
+              398
+            ],
+            [
+              395,
+              398
+            ]
+          ],
+          "h1": 398,
+          "profile": "XD030-B",
+          "i": 392,
+          "j": 395,
+          "direction": "down",
+          "dep_pen": 397,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          395,
+          402
+        ],
+        "actual_breaker": [
+          402,
+          405
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 405,
+          "reverse_end": 405,
+          "supports": [
+            [
+              402,
+              405
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 395,
+          "j": 402,
+          "direction": "up",
+          "dep_pen": 404,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          402,
+          405
+        ],
+        "actual_breaker": [
+          405,
+          408
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 408,
+          "reverse_end": null,
+          "supports": [
+            [
+              405,
+              408
+            ],
+            [
+              405,
+              408
+            ]
+          ],
+          "h1": 408,
+          "profile": "XD030-B",
+          "i": 402,
+          "j": 405,
+          "direction": "down",
+          "dep_pen": 407,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          405,
+          408
+        ],
+        "actual_breaker": [
+          408,
+          413
+        ],
+        "actual_second_sequence_successor": [
+          413,
+          418
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 418,
+          "reverse_end": 413,
+          "supports": [
+            [
+              408,
+              413
+            ],
+            [
+              413,
+              418
+            ]
+          ],
+          "h1": 411,
+          "h2": 418,
+          "profile": "XD030-B",
+          "i": 405,
+          "j": 408,
+          "direction": "up",
+          "dep_pen": 417,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          408,
+          413
+        ],
+        "actual_breaker": [
+          413,
+          418
+        ],
+        "actual_second_sequence_successor": [
+          418,
+          427
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 421,
+          "reverse_end": 418,
+          "supports": [
+            [
+              413,
+              418
+            ],
+            [
+              418,
+              421
+            ]
+          ],
+          "h1": 418,
+          "h2": 421,
+          "profile": "XD030-B",
+          "i": 408,
+          "j": 413,
+          "direction": "down",
+          "dep_pen": 420,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          413,
+          418
+        ],
+        "actual_breaker": [
+          418,
+          427
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 421,
+          "reverse_end": null,
+          "supports": [
+            [
+              418,
+              421
+            ],
+            [
+              418,
+              421
+            ]
+          ],
+          "h1": 421,
+          "profile": "XD030-B",
+          "i": 413,
+          "j": 418,
+          "direction": "up",
+          "dep_pen": 420,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          418,
+          427
+        ],
+        "actual_breaker": [
+          427,
+          450
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 430,
+          "reverse_end": 430,
+          "supports": [
+            [
+              427,
+              430
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 418,
+          "j": 427,
+          "direction": "down",
+          "dep_pen": 429,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          427,
+          450
+        ],
+        "actual_breaker": [
+          450,
+          453
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 453,
+          "reverse_end": null,
+          "supports": [
+            [
+              450,
+              453
+            ],
+            [
+              450,
+              453
+            ]
+          ],
+          "h1": 453,
+          "profile": "XD030-B",
+          "i": 427,
+          "j": 450,
+          "direction": "up",
+          "dep_pen": 452,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          450,
+          453
+        ],
+        "actual_breaker": [
+          453,
+          460
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 456,
+          "reverse_end": 456,
+          "supports": [
+            [
+              453,
+              456
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 450,
+          "j": 453,
+          "direction": "down",
+          "dep_pen": 455,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          453,
+          460
+        ],
+        "actual_breaker": [
+          460,
+          463
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 463,
+          "reverse_end": 463,
+          "supports": [
+            [
+              460,
+              463
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 453,
+          "j": 460,
+          "direction": "up",
+          "dep_pen": 462,
+          "xd_mode": "weak"
+        }
+      }
+    ]
+  },
+  "bi-weak_xd-strong": {
+    "recomputed_selected_certificates": 78,
+    "actual_binding_pass": true,
+    "confirmed_fx_bounds": [
+      0,
+      2892
+    ],
+    "tail": [
+      [
+        654,
+        657
+      ]
+    ],
+    "evidence": [
+      {
+        "confirmed": [
+          0,
+          23
+        ],
+        "actual_breaker": [
+          23,
+          26
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 26,
+          "reverse_end": null,
+          "supports": [
+            [
+              23,
+              26
+            ],
+            [
+              23,
+              26
+            ]
+          ],
+          "h1": 26,
+          "profile": "XD030-B",
+          "i": 0,
+          "j": 23,
+          "direction": "down",
+          "dep_pen": 25,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          23,
+          26
+        ],
+        "actual_breaker": [
+          26,
+          33
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 29,
+          "reverse_end": null,
+          "supports": [
+            [
+              26,
+              29
+            ],
+            [
+              26,
+              29
+            ]
+          ],
+          "h1": 29,
+          "profile": "XD030-B",
+          "i": 23,
+          "j": 26,
+          "direction": "up",
+          "dep_pen": 28,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          26,
+          33
+        ],
+        "actual_breaker": [
+          33,
+          36
+        ],
+        "actual_second_sequence_successor": [
+          36,
+          55
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 39,
+          "reverse_end": 36,
+          "supports": [
+            [
+              33,
+              36
+            ],
+            [
+              36,
+              39
+            ]
+          ],
+          "h1": 36,
+          "h2": 39,
+          "profile": "XD030-B",
+          "i": 26,
+          "j": 33,
+          "direction": "down",
+          "dep_pen": 38,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          33,
+          36
+        ],
+        "actual_breaker": [
+          36,
+          55
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 39,
+          "reverse_end": null,
+          "supports": [
+            [
+              36,
+              39
+            ],
+            [
+              36,
+              39
+            ]
+          ],
+          "h1": 39,
+          "profile": "XD030-B",
+          "i": 33,
+          "j": 36,
+          "direction": "up",
+          "dep_pen": 38,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          36,
+          55
+        ],
+        "actual_breaker": [
+          55,
+          58
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 58,
+          "reverse_end": null,
+          "supports": [
+            [
+              55,
+              58
+            ],
+            [
+              55,
+              58
+            ]
+          ],
+          "h1": 58,
+          "profile": "XD030-B",
+          "i": 36,
+          "j": 55,
+          "direction": "down",
+          "dep_pen": 57,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          55,
+          58
+        ],
+        "actual_breaker": [
+          58,
+          65
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 61,
+          "reverse_end": 61,
+          "supports": [
+            [
+              58,
+              61
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 55,
+          "j": 58,
+          "direction": "up",
+          "dep_pen": 60,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          58,
+          65
+        ],
+        "actual_breaker": [
+          65,
+          74
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 68,
+          "reverse_end": 68,
+          "supports": [
+            [
+              65,
+              68
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 58,
+          "j": 65,
+          "direction": "down",
+          "dep_pen": 67,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          65,
+          74
+        ],
+        "actual_breaker": [
+          74,
+          83
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 77,
+          "reverse_end": null,
+          "supports": [
+            [
+              74,
+              77
+            ],
+            [
+              74,
+              77
+            ]
+          ],
+          "h1": 77,
+          "profile": "XD030-B",
+          "i": 65,
+          "j": 74,
+          "direction": "up",
+          "dep_pen": 76,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          74,
+          83
+        ],
+        "actual_breaker": [
+          83,
+          96
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 88,
+          "reverse_end": 88,
+          "supports": [
+            [
+              83,
+              88
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 74,
+          "j": 83,
+          "direction": "down",
+          "dep_pen": 87,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          83,
+          96
+        ],
+        "actual_breaker": [
+          96,
+          99
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 99,
+          "reverse_end": 99,
+          "supports": [
+            [
+              96,
+              99
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 83,
+          "j": 96,
+          "direction": "up",
+          "dep_pen": 98,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          96,
+          99
+        ],
+        "actual_breaker": [
+          99,
+          104
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 104,
+          "reverse_end": 104,
+          "supports": [
+            [
+              99,
+              104
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 96,
+          "j": 99,
+          "direction": "down",
+          "dep_pen": 103,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          99,
+          104
+        ],
+        "actual_breaker": [
+          104,
+          109
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 107,
+          "reverse_end": null,
+          "supports": [
+            [
+              104,
+              107
+            ],
+            [
+              104,
+              107
+            ]
+          ],
+          "h1": 107,
+          "profile": "XD030-B",
+          "i": 99,
+          "j": 104,
+          "direction": "up",
+          "dep_pen": 106,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          104,
+          109
+        ],
+        "actual_breaker": [
+          109,
+          124
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 112,
+          "reverse_end": null,
+          "supports": [
+            [
+              109,
+              112
+            ],
+            [
+              109,
+              112
+            ]
+          ],
+          "h1": 112,
+          "profile": "XD030-B",
+          "i": 104,
+          "j": 109,
+          "direction": "down",
+          "dep_pen": 111,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          109,
+          124
+        ],
+        "actual_breaker": [
+          124,
+          129
+        ],
+        "actual_second_sequence_successor": [
+          129,
+          138
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 132,
+          "reverse_end": 129,
+          "supports": [
+            [
+              124,
+              129
+            ],
+            [
+              129,
+              132
+            ]
+          ],
+          "h1": 127,
+          "h2": 132,
+          "profile": "XD030-B",
+          "i": 109,
+          "j": 124,
+          "direction": "up",
+          "dep_pen": 131,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          124,
+          129
+        ],
+        "actual_breaker": [
+          129,
+          138
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 132,
+          "reverse_end": null,
+          "supports": [
+            [
+              129,
+              132
+            ],
+            [
+              129,
+              132
+            ]
+          ],
+          "h1": 132,
+          "profile": "XD030-B",
+          "i": 124,
+          "j": 129,
+          "direction": "down",
+          "dep_pen": 131,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          129,
+          138
+        ],
+        "actual_breaker": [
+          138,
+          149
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 141,
+          "reverse_end": 141,
+          "supports": [
+            [
+              138,
+              141
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 129,
+          "j": 138,
+          "direction": "up",
+          "dep_pen": 140,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          138,
+          149
+        ],
+        "actual_breaker": [
+          149,
+          160
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 152,
+          "reverse_end": null,
+          "supports": [
+            [
+              149,
+              152
+            ],
+            [
+              149,
+              152
+            ]
+          ],
+          "h1": 152,
+          "profile": "XD030-B",
+          "i": 138,
+          "j": 149,
+          "direction": "down",
+          "dep_pen": 151,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          149,
+          160
+        ],
+        "actual_breaker": [
+          160,
+          169
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 163,
+          "reverse_end": 163,
+          "supports": [
+            [
+              160,
+              163
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 149,
+          "j": 160,
+          "direction": "up",
+          "dep_pen": 162,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          160,
+          169
+        ],
+        "actual_breaker": [
+          169,
+          188
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 172,
+          "reverse_end": 172,
+          "supports": [
+            [
+              169,
+              172
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 160,
+          "j": 169,
+          "direction": "down",
+          "dep_pen": 171,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          169,
+          188
+        ],
+        "actual_breaker": [
+          188,
+          193
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 191,
+          "reverse_end": 191,
+          "supports": [
+            [
+              188,
+              191
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 169,
+          "j": 188,
+          "direction": "up",
+          "dep_pen": 190,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          188,
+          193
+        ],
+        "actual_breaker": [
+          193,
+          202
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 202,
+          "reverse_end": 202,
+          "supports": [
+            [
+              193,
+              202
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 188,
+          "j": 193,
+          "direction": "down",
+          "dep_pen": 201,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          193,
+          202
+        ],
+        "actual_breaker": [
+          202,
+          221
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 205,
+          "reverse_end": 205,
+          "supports": [
+            [
+              202,
+              205
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 193,
+          "j": 202,
+          "direction": "up",
+          "dep_pen": 204,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          202,
+          221
+        ],
+        "actual_breaker": [
+          221,
+          234
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 224,
+          "reverse_end": null,
+          "supports": [
+            [
+              221,
+              224
+            ],
+            [
+              221,
+              224
+            ]
+          ],
+          "h1": 224,
+          "profile": "XD030-B",
+          "i": 202,
+          "j": 221,
+          "direction": "down",
+          "dep_pen": 223,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          221,
+          234
+        ],
+        "actual_breaker": [
+          234,
+          237
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 237,
+          "reverse_end": 237,
+          "supports": [
+            [
+              234,
+              237
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 221,
+          "j": 234,
+          "direction": "up",
+          "dep_pen": 236,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          234,
+          237
+        ],
+        "actual_breaker": [
+          237,
+          256
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 240,
+          "reverse_end": null,
+          "supports": [
+            [
+              237,
+              240
+            ],
+            [
+              237,
+              240
+            ]
+          ],
+          "h1": 240,
+          "profile": "XD030-B",
+          "i": 234,
+          "j": 237,
+          "direction": "down",
+          "dep_pen": 239,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          237,
+          256
+        ],
+        "actual_breaker": [
+          256,
+          263
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 259,
+          "reverse_end": null,
+          "supports": [
+            [
+              256,
+              259
+            ],
+            [
+              256,
+              259
+            ]
+          ],
+          "h1": 259,
+          "profile": "XD030-B",
+          "i": 237,
+          "j": 256,
+          "direction": "up",
+          "dep_pen": 258,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          256,
+          263
+        ],
+        "actual_breaker": [
+          263,
+          274
+        ],
+        "actual_second_sequence_successor": [
+          274,
+          279
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 279,
+          "reverse_end": 274,
+          "supports": [
+            [
+              263,
+              274
+            ],
+            [
+              274,
+              279
+            ]
+          ],
+          "h1": 266,
+          "h2": 279,
+          "profile": "XD030-B",
+          "i": 256,
+          "j": 263,
+          "direction": "down",
+          "dep_pen": 278,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          263,
+          274
+        ],
+        "actual_breaker": [
+          274,
+          279
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 279,
+          "reverse_end": null,
+          "supports": [
+            [
+              274,
+              277
+            ],
+            [
+              274,
+              279
+            ]
+          ],
+          "h1": 279,
+          "profile": "XD030-B",
+          "i": 263,
+          "j": 274,
+          "direction": "up",
+          "dep_pen": 278,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          274,
+          279
+        ],
+        "actual_breaker": [
+          279,
+          286
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 282,
+          "reverse_end": null,
+          "supports": [
+            [
+              279,
+              282
+            ],
+            [
+              279,
+              282
+            ]
+          ],
+          "h1": 282,
+          "profile": "XD030-B",
+          "i": 274,
+          "j": 279,
+          "direction": "down",
+          "dep_pen": 281,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          279,
+          286
+        ],
+        "actual_breaker": [
+          286,
+          289
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 289,
+          "reverse_end": null,
+          "supports": [
+            [
+              286,
+              289
+            ],
+            [
+              286,
+              289
+            ]
+          ],
+          "h1": 289,
+          "profile": "XD030-B",
+          "i": 279,
+          "j": 286,
+          "direction": "up",
+          "dep_pen": 288,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          286,
+          289
+        ],
+        "actual_breaker": [
+          289,
+          292
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 292,
+          "reverse_end": 292,
+          "supports": [
+            [
+              289,
+              292
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 286,
+          "j": 289,
+          "direction": "down",
+          "dep_pen": 291,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          289,
+          292
+        ],
+        "actual_breaker": [
+          292,
+          295
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 295,
+          "reverse_end": 295,
+          "supports": [
+            [
+              292,
+              295
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 289,
+          "j": 292,
+          "direction": "up",
+          "dep_pen": 294,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          292,
+          295
+        ],
+        "actual_breaker": [
+          295,
+          312
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 298,
+          "reverse_end": null,
+          "supports": [
+            [
+              295,
+              298
+            ],
+            [
+              295,
+              298
+            ]
+          ],
+          "h1": 298,
+          "profile": "XD030-B",
+          "i": 292,
+          "j": 295,
+          "direction": "down",
+          "dep_pen": 297,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          295,
+          312
+        ],
+        "actual_breaker": [
+          312,
+          331
+        ],
+        "actual_second_sequence_successor": [
+          331,
+          336
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 334,
+          "reverse_end": 331,
+          "supports": [
+            [
+              312,
+              331
+            ],
+            [
+              331,
+              334
+            ]
+          ],
+          "h1": 315,
+          "h2": 334,
+          "profile": "XD030-B",
+          "i": 295,
+          "j": 312,
+          "direction": "up",
+          "dep_pen": 333,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          312,
+          331
+        ],
+        "actual_breaker": [
+          331,
+          336
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 334,
+          "reverse_end": 334,
+          "supports": [
+            [
+              331,
+              334
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 312,
+          "j": 331,
+          "direction": "down",
+          "dep_pen": 333,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          331,
+          336
+        ],
+        "actual_breaker": [
+          336,
+          339
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 339,
+          "reverse_end": null,
+          "supports": [
+            [
+              336,
+              339
+            ],
+            [
+              336,
+              339
+            ]
+          ],
+          "h1": 339,
+          "profile": "XD030-B",
+          "i": 331,
+          "j": 336,
+          "direction": "up",
+          "dep_pen": 338,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          336,
+          339
+        ],
+        "actual_breaker": [
+          339,
+          342
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 342,
+          "reverse_end": null,
+          "supports": [
+            [
+              339,
+              342
+            ],
+            [
+              339,
+              342
+            ]
+          ],
+          "h1": 342,
+          "profile": "XD030-B",
+          "i": 336,
+          "j": 339,
+          "direction": "down",
+          "dep_pen": 341,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          339,
+          342
+        ],
+        "actual_breaker": [
+          342,
+          351
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 345,
+          "reverse_end": 345,
+          "supports": [
+            [
+              342,
+              345
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 339,
+          "j": 342,
+          "direction": "up",
+          "dep_pen": 344,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          342,
+          351
+        ],
+        "actual_breaker": [
+          351,
+          354
+        ],
+        "actual_second_sequence_successor": [
+          354,
+          371
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 357,
+          "reverse_end": 354,
+          "supports": [
+            [
+              351,
+              354
+            ],
+            [
+              354,
+              357
+            ]
+          ],
+          "h1": 354,
+          "h2": 357,
+          "profile": "XD030-B",
+          "i": 342,
+          "j": 351,
+          "direction": "down",
+          "dep_pen": 356,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          351,
+          354
+        ],
+        "actual_breaker": [
+          354,
+          371
+        ],
+        "actual_second_sequence_successor": [
+          371,
+          382
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 374,
+          "reverse_end": 371,
+          "supports": [
+            [
+              354,
+              371
+            ],
+            [
+              371,
+              374
+            ]
+          ],
+          "h1": 357,
+          "h2": 374,
+          "profile": "XD030-B",
+          "i": 351,
+          "j": 354,
+          "direction": "up",
+          "dep_pen": 373,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          354,
+          371
+        ],
+        "actual_breaker": [
+          371,
+          382
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 374,
+          "reverse_end": 374,
+          "supports": [
+            [
+              371,
+              374
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 354,
+          "j": 371,
+          "direction": "down",
+          "dep_pen": 373,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          371,
+          382
+        ],
+        "actual_breaker": [
+          382,
+          385
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 385,
+          "reverse_end": null,
+          "supports": [
+            [
+              382,
+              385
+            ],
+            [
+              382,
+              385
+            ]
+          ],
+          "h1": 385,
+          "profile": "XD030-B",
+          "i": 371,
+          "j": 382,
+          "direction": "up",
+          "dep_pen": 384,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          382,
+          385
+        ],
+        "actual_breaker": [
+          385,
+          392
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 388,
+          "reverse_end": 388,
+          "supports": [
+            [
+              385,
+              388
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 382,
+          "j": 385,
+          "direction": "down",
+          "dep_pen": 387,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          385,
+          392
+        ],
+        "actual_breaker": [
+          392,
+          399
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 395,
+          "reverse_end": 395,
+          "supports": [
+            [
+              392,
+              395
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 385,
+          "j": 392,
+          "direction": "up",
+          "dep_pen": 394,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          392,
+          399
+        ],
+        "actual_breaker": [
+          399,
+          402
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 402,
+          "reverse_end": null,
+          "supports": [
+            [
+              399,
+              402
+            ],
+            [
+              399,
+              402
+            ]
+          ],
+          "h1": 402,
+          "profile": "XD030-B",
+          "i": 392,
+          "j": 399,
+          "direction": "down",
+          "dep_pen": 401,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          399,
+          402
+        ],
+        "actual_breaker": [
+          402,
+          417
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 405,
+          "reverse_end": null,
+          "supports": [
+            [
+              402,
+              405
+            ],
+            [
+              402,
+              405
+            ]
+          ],
+          "h1": 405,
+          "profile": "XD030-B",
+          "i": 399,
+          "j": 402,
+          "direction": "up",
+          "dep_pen": 404,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          402,
+          417
+        ],
+        "actual_breaker": [
+          417,
+          420
+        ],
+        "actual_second_sequence_successor": [
+          420,
+          439
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 423,
+          "reverse_end": 420,
+          "supports": [
+            [
+              417,
+              420
+            ],
+            [
+              420,
+              423
+            ]
+          ],
+          "h1": 420,
+          "h2": 423,
+          "profile": "XD030-B",
+          "i": 402,
+          "j": 417,
+          "direction": "down",
+          "dep_pen": 422,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          417,
+          420
+        ],
+        "actual_breaker": [
+          420,
+          439
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 423,
+          "reverse_end": null,
+          "supports": [
+            [
+              420,
+              423
+            ],
+            [
+              420,
+              423
+            ]
+          ],
+          "h1": 423,
+          "profile": "XD030-B",
+          "i": 417,
+          "j": 420,
+          "direction": "up",
+          "dep_pen": 422,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          420,
+          439
+        ],
+        "actual_breaker": [
+          439,
+          442
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 442,
+          "reverse_end": null,
+          "supports": [
+            [
+              439,
+              442
+            ],
+            [
+              439,
+              442
+            ]
+          ],
+          "h1": 442,
+          "profile": "XD030-B",
+          "i": 420,
+          "j": 439,
+          "direction": "down",
+          "dep_pen": 441,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          439,
+          442
+        ],
+        "actual_breaker": [
+          442,
+          449
+        ],
+        "actual_second_sequence_successor": [
+          449,
+          452
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 452,
+          "reverse_end": 449,
+          "supports": [
+            [
+              442,
+              449
+            ],
+            [
+              449,
+              452
+            ]
+          ],
+          "h1": 447,
+          "h2": 452,
+          "profile": "XD030-B",
+          "i": 439,
+          "j": 442,
+          "direction": "up",
+          "dep_pen": 451,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          442,
+          449
+        ],
+        "actual_breaker": [
+          449,
+          452
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 452,
+          "reverse_end": null,
+          "supports": [
+            [
+              449,
+              452
+            ],
+            [
+              449,
+              452
+            ]
+          ],
+          "h1": 452,
+          "profile": "XD030-B",
+          "i": 442,
+          "j": 449,
+          "direction": "down",
+          "dep_pen": 451,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          449,
+          452
+        ],
+        "actual_breaker": [
+          452,
+          457
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 455,
+          "reverse_end": 455,
+          "supports": [
+            [
+              452,
+              455
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 449,
+          "j": 452,
+          "direction": "up",
+          "dep_pen": 454,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          452,
+          457
+        ],
+        "actual_breaker": [
+          457,
+          466
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 460,
+          "reverse_end": null,
+          "supports": [
+            [
+              457,
+              460
+            ],
+            [
+              457,
+              460
+            ]
+          ],
+          "h1": 460,
+          "profile": "XD030-B",
+          "i": 452,
+          "j": 457,
+          "direction": "down",
+          "dep_pen": 459,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          457,
+          466
+        ],
+        "actual_breaker": [
+          466,
+          473
+        ],
+        "actual_second_sequence_successor": [
+          473,
+          486
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 476,
+          "reverse_end": 473,
+          "supports": [
+            [
+              466,
+              473
+            ],
+            [
+              473,
+              476
+            ]
+          ],
+          "h1": 469,
+          "h2": 476,
+          "profile": "XD030-B",
+          "i": 457,
+          "j": 466,
+          "direction": "up",
+          "dep_pen": 475,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          466,
+          473
+        ],
+        "actual_breaker": [
+          473,
+          486
+        ],
+        "actual_second_sequence_successor": [
+          486,
+          489
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 489,
+          "reverse_end": 486,
+          "supports": [
+            [
+              473,
+              486
+            ],
+            [
+              486,
+              489
+            ]
+          ],
+          "h1": 476,
+          "h2": 489,
+          "profile": "XD030-B",
+          "i": 466,
+          "j": 473,
+          "direction": "down",
+          "dep_pen": 488,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          473,
+          486
+        ],
+        "actual_breaker": [
+          486,
+          489
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 489,
+          "reverse_end": 489,
+          "supports": [
+            [
+              486,
+              489
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 473,
+          "j": 486,
+          "direction": "up",
+          "dep_pen": 488,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          486,
+          489
+        ],
+        "actual_breaker": [
+          489,
+          498
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 492,
+          "reverse_end": 492,
+          "supports": [
+            [
+              489,
+              492
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 486,
+          "j": 489,
+          "direction": "down",
+          "dep_pen": 491,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          489,
+          498
+        ],
+        "actual_breaker": [
+          498,
+          531
+        ],
+        "actual_second_sequence_successor": [
+          531,
+          548
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 534,
+          "reverse_end": 531,
+          "supports": [
+            [
+              498,
+              531
+            ],
+            [
+              531,
+              534
+            ]
+          ],
+          "h1": 501,
+          "h2": 534,
+          "profile": "XD030-B",
+          "i": 489,
+          "j": 498,
+          "direction": "up",
+          "dep_pen": 533,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          498,
+          531
+        ],
+        "actual_breaker": [
+          531,
+          548
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 534,
+          "reverse_end": 534,
+          "supports": [
+            [
+              531,
+              534
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 498,
+          "j": 531,
+          "direction": "down",
+          "dep_pen": 533,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          531,
+          548
+        ],
+        "actual_breaker": [
+          548,
+          551
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 551,
+          "reverse_end": null,
+          "supports": [
+            [
+              548,
+              551
+            ],
+            [
+              548,
+              551
+            ]
+          ],
+          "h1": 551,
+          "profile": "XD030-B",
+          "i": 531,
+          "j": 548,
+          "direction": "up",
+          "dep_pen": 550,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          548,
+          551
+        ],
+        "actual_breaker": [
+          551,
+          566
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 554,
+          "reverse_end": null,
+          "supports": [
+            [
+              551,
+              554
+            ],
+            [
+              551,
+              554
+            ]
+          ],
+          "h1": 554,
+          "profile": "XD030-B",
+          "i": 548,
+          "j": 551,
+          "direction": "down",
+          "dep_pen": 553,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          551,
+          566
+        ],
+        "actual_breaker": [
+          566,
+          573
+        ],
+        "actual_second_sequence_successor": [
+          573,
+          576
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 576,
+          "reverse_end": 573,
+          "supports": [
+            [
+              566,
+              573
+            ],
+            [
+              573,
+              576
+            ]
+          ],
+          "h1": 571,
+          "h2": 576,
+          "profile": "XD030-B",
+          "i": 551,
+          "j": 566,
+          "direction": "up",
+          "dep_pen": 575,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          566,
+          573
+        ],
+        "actual_breaker": [
+          573,
+          576
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 576,
+          "reverse_end": null,
+          "supports": [
+            [
+              573,
+              576
+            ],
+            [
+              573,
+              576
+            ]
+          ],
+          "h1": 576,
+          "profile": "XD030-B",
+          "i": 566,
+          "j": 573,
+          "direction": "down",
+          "dep_pen": 575,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          573,
+          576
+        ],
+        "actual_breaker": [
+          576,
+          581
+        ],
+        "actual_second_sequence_successor": [
+          581,
+          586
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 586,
+          "reverse_end": 581,
+          "supports": [
+            [
+              576,
+              581
+            ],
+            [
+              581,
+              586
+            ]
+          ],
+          "h1": 579,
+          "h2": 586,
+          "profile": "XD030-B",
+          "i": 573,
+          "j": 576,
+          "direction": "up",
+          "dep_pen": 585,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          576,
+          581
+        ],
+        "actual_breaker": [
+          581,
+          586
+        ],
+        "actual_second_sequence_successor": [
+          586,
+          597
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 589,
+          "reverse_end": 586,
+          "supports": [
+            [
+              581,
+              586
+            ],
+            [
+              586,
+              589
+            ]
+          ],
+          "h1": 586,
+          "h2": 589,
+          "profile": "XD030-B",
+          "i": 576,
+          "j": 581,
+          "direction": "down",
+          "dep_pen": 588,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          581,
+          586
+        ],
+        "actual_breaker": [
+          586,
+          597
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 589,
+          "reverse_end": null,
+          "supports": [
+            [
+              586,
+              589
+            ],
+            [
+              586,
+              589
+            ]
+          ],
+          "h1": 589,
+          "profile": "XD030-B",
+          "i": 581,
+          "j": 586,
+          "direction": "up",
+          "dep_pen": 588,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          586,
+          597
+        ],
+        "actual_breaker": [
+          597,
+          610
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 600,
+          "reverse_end": 600,
+          "supports": [
+            [
+              597,
+              600
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 586,
+          "j": 597,
+          "direction": "down",
+          "dep_pen": 599,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          597,
+          610
+        ],
+        "actual_breaker": [
+          610,
+          613
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 613,
+          "reverse_end": 613,
+          "supports": [
+            [
+              610,
+              613
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 597,
+          "j": 610,
+          "direction": "up",
+          "dep_pen": 612,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          610,
+          613
+        ],
+        "actual_breaker": [
+          613,
+          618
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 616,
+          "reverse_end": 616,
+          "supports": [
+            [
+              613,
+              616
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 610,
+          "j": 613,
+          "direction": "down",
+          "dep_pen": 615,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          613,
+          618
+        ],
+        "actual_breaker": [
+          618,
+          621
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 621,
+          "reverse_end": 621,
+          "supports": [
+            [
+              618,
+              621
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 613,
+          "j": 618,
+          "direction": "up",
+          "dep_pen": 620,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          618,
+          621
+        ],
+        "actual_breaker": [
+          621,
+          624
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 624,
+          "reverse_end": 624,
+          "supports": [
+            [
+              621,
+              624
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 618,
+          "j": 621,
+          "direction": "down",
+          "dep_pen": 623,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          621,
+          624
+        ],
+        "actual_breaker": [
+          624,
+          627
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 627,
+          "reverse_end": null,
+          "supports": [
+            [
+              624,
+              627
+            ],
+            [
+              624,
+              627
+            ]
+          ],
+          "h1": 627,
+          "profile": "XD030-B",
+          "i": 621,
+          "j": 624,
+          "direction": "up",
+          "dep_pen": 626,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          624,
+          627
+        ],
+        "actual_breaker": [
+          627,
+          634
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 630,
+          "reverse_end": 630,
+          "supports": [
+            [
+              627,
+              630
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 624,
+          "j": 627,
+          "direction": "down",
+          "dep_pen": 629,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          627,
+          634
+        ],
+        "actual_breaker": [
+          634,
+          637
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 637,
+          "reverse_end": null,
+          "supports": [
+            [
+              634,
+              637
+            ],
+            [
+              634,
+              637
+            ]
+          ],
+          "h1": 637,
+          "profile": "XD030-B",
+          "i": 627,
+          "j": 634,
+          "direction": "up",
+          "dep_pen": 636,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          634,
+          637
+        ],
+        "actual_breaker": [
+          637,
+          640
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 640,
+          "reverse_end": 640,
+          "supports": [
+            [
+              637,
+              640
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 634,
+          "j": 637,
+          "direction": "down",
+          "dep_pen": 639,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          637,
+          640
+        ],
+        "actual_breaker": [
+          640,
+          643
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 643,
+          "reverse_end": null,
+          "supports": [
+            [
+              640,
+              643
+            ],
+            [
+              640,
+              643
+            ]
+          ],
+          "h1": 643,
+          "profile": "XD030-B",
+          "i": 637,
+          "j": 640,
+          "direction": "up",
+          "dep_pen": 642,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          640,
+          643
+        ],
+        "actual_breaker": [
+          643,
+          654
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 646,
+          "reverse_end": 646,
+          "supports": [
+            [
+              643,
+              646
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 640,
+          "j": 643,
+          "direction": "down",
+          "dep_pen": 645,
+          "xd_mode": "strong"
+        }
+      },
+      {
+        "confirmed": [
+          643,
+          654
+        ],
+        "actual_breaker": [
+          654,
+          657
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 657,
+          "reverse_end": 657,
+          "supports": [
+            [
+              654,
+              657
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 643,
+          "j": 654,
+          "direction": "up",
+          "dep_pen": 656,
+          "xd_mode": "strong"
+        }
+      }
+    ]
+  },
+  "bi-weak_xd-weak": {
+    "recomputed_selected_certificates": 87,
+    "actual_binding_pass": true,
+    "confirmed_fx_bounds": [
+      0,
+      2933
+    ],
+    "tail": [
+      [
+        663,
+        668
+      ]
+    ],
+    "evidence": [
+      {
+        "confirmed": [
+          0,
+          23
+        ],
+        "actual_breaker": [
+          23,
+          26
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 26,
+          "reverse_end": null,
+          "supports": [
+            [
+              23,
+              26
+            ],
+            [
+              23,
+              26
+            ]
+          ],
+          "h1": 26,
+          "profile": "XD030-B",
+          "i": 0,
+          "j": 23,
+          "direction": "down",
+          "dep_pen": 25,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          23,
+          26
+        ],
+        "actual_breaker": [
+          26,
+          33
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 29,
+          "reverse_end": null,
+          "supports": [
+            [
+              26,
+              29
+            ],
+            [
+              26,
+              29
+            ]
+          ],
+          "h1": 29,
+          "profile": "XD030-B",
+          "i": 23,
+          "j": 26,
+          "direction": "up",
+          "dep_pen": 28,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          26,
+          33
+        ],
+        "actual_breaker": [
+          33,
+          36
+        ],
+        "actual_second_sequence_successor": [
+          36,
+          55
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 39,
+          "reverse_end": 36,
+          "supports": [
+            [
+              33,
+              36
+            ],
+            [
+              36,
+              39
+            ]
+          ],
+          "h1": 36,
+          "h2": 39,
+          "profile": "XD030-B",
+          "i": 26,
+          "j": 33,
+          "direction": "down",
+          "dep_pen": 38,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          33,
+          36
+        ],
+        "actual_breaker": [
+          36,
+          55
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 39,
+          "reverse_end": null,
+          "supports": [
+            [
+              36,
+              39
+            ],
+            [
+              36,
+              39
+            ]
+          ],
+          "h1": 39,
+          "profile": "XD030-B",
+          "i": 33,
+          "j": 36,
+          "direction": "up",
+          "dep_pen": 38,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          36,
+          55
+        ],
+        "actual_breaker": [
+          55,
+          58
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 58,
+          "reverse_end": null,
+          "supports": [
+            [
+              55,
+              58
+            ],
+            [
+              55,
+              58
+            ]
+          ],
+          "h1": 58,
+          "profile": "XD030-B",
+          "i": 36,
+          "j": 55,
+          "direction": "down",
+          "dep_pen": 57,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          55,
+          58
+        ],
+        "actual_breaker": [
+          58,
+          65
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 61,
+          "reverse_end": 61,
+          "supports": [
+            [
+              58,
+              61
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 55,
+          "j": 58,
+          "direction": "up",
+          "dep_pen": 60,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          58,
+          65
+        ],
+        "actual_breaker": [
+          65,
+          74
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 68,
+          "reverse_end": 68,
+          "supports": [
+            [
+              65,
+              68
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 58,
+          "j": 65,
+          "direction": "down",
+          "dep_pen": 67,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          65,
+          74
+        ],
+        "actual_breaker": [
+          74,
+          83
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 77,
+          "reverse_end": null,
+          "supports": [
+            [
+              74,
+              77
+            ],
+            [
+              74,
+              77
+            ]
+          ],
+          "h1": 77,
+          "profile": "XD030-B",
+          "i": 65,
+          "j": 74,
+          "direction": "up",
+          "dep_pen": 76,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          74,
+          83
+        ],
+        "actual_breaker": [
+          83,
+          96
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 88,
+          "reverse_end": 88,
+          "supports": [
+            [
+              83,
+              88
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 74,
+          "j": 83,
+          "direction": "down",
+          "dep_pen": 87,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          83,
+          96
+        ],
+        "actual_breaker": [
+          96,
+          99
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 99,
+          "reverse_end": 99,
+          "supports": [
+            [
+              96,
+              99
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 83,
+          "j": 96,
+          "direction": "up",
+          "dep_pen": 98,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          96,
+          99
+        ],
+        "actual_breaker": [
+          99,
+          104
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 104,
+          "reverse_end": 104,
+          "supports": [
+            [
+              99,
+              104
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 96,
+          "j": 99,
+          "direction": "down",
+          "dep_pen": 103,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          99,
+          104
+        ],
+        "actual_breaker": [
+          104,
+          109
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 107,
+          "reverse_end": null,
+          "supports": [
+            [
+              104,
+              107
+            ],
+            [
+              104,
+              107
+            ]
+          ],
+          "h1": 107,
+          "profile": "XD030-B",
+          "i": 99,
+          "j": 104,
+          "direction": "up",
+          "dep_pen": 106,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          104,
+          109
+        ],
+        "actual_breaker": [
+          109,
+          124
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 112,
+          "reverse_end": null,
+          "supports": [
+            [
+              109,
+              112
+            ],
+            [
+              109,
+              112
+            ]
+          ],
+          "h1": 112,
+          "profile": "XD030-B",
+          "i": 104,
+          "j": 109,
+          "direction": "down",
+          "dep_pen": 111,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          109,
+          124
+        ],
+        "actual_breaker": [
+          124,
+          129
+        ],
+        "actual_second_sequence_successor": [
+          129,
+          138
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 132,
+          "reverse_end": 129,
+          "supports": [
+            [
+              124,
+              129
+            ],
+            [
+              129,
+              132
+            ]
+          ],
+          "h1": 127,
+          "h2": 132,
+          "profile": "XD030-B",
+          "i": 109,
+          "j": 124,
+          "direction": "up",
+          "dep_pen": 131,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          124,
+          129
+        ],
+        "actual_breaker": [
+          129,
+          138
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 132,
+          "reverse_end": null,
+          "supports": [
+            [
+              129,
+              132
+            ],
+            [
+              129,
+              132
+            ]
+          ],
+          "h1": 132,
+          "profile": "XD030-B",
+          "i": 124,
+          "j": 129,
+          "direction": "down",
+          "dep_pen": 131,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          129,
+          138
+        ],
+        "actual_breaker": [
+          138,
+          149
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 141,
+          "reverse_end": 141,
+          "supports": [
+            [
+              138,
+              141
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 129,
+          "j": 138,
+          "direction": "up",
+          "dep_pen": 140,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          138,
+          149
+        ],
+        "actual_breaker": [
+          149,
+          154
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 152,
+          "reverse_end": null,
+          "supports": [
+            [
+              149,
+              152
+            ],
+            [
+              149,
+              152
+            ]
+          ],
+          "h1": 152,
+          "profile": "XD030-B",
+          "i": 138,
+          "j": 149,
+          "direction": "down",
+          "dep_pen": 151,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          149,
+          154
+        ],
+        "actual_breaker": [
+          154,
+          169
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 159,
+          "reverse_end": null,
+          "supports": [
+            [
+              154,
+              157
+            ],
+            [
+              154,
+              159
+            ]
+          ],
+          "h1": 159,
+          "profile": "XD030-B",
+          "i": 149,
+          "j": 154,
+          "direction": "up",
+          "dep_pen": 158,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          154,
+          169
+        ],
+        "actual_breaker": [
+          169,
+          180
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 172,
+          "reverse_end": 172,
+          "supports": [
+            [
+              169,
+              172
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 154,
+          "j": 169,
+          "direction": "down",
+          "dep_pen": 171,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          169,
+          180
+        ],
+        "actual_breaker": [
+          180,
+          185
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 185,
+          "reverse_end": null,
+          "supports": [
+            [
+              180,
+              183
+            ],
+            [
+              180,
+              185
+            ]
+          ],
+          "h1": 185,
+          "profile": "XD030-B",
+          "i": 169,
+          "j": 180,
+          "direction": "up",
+          "dep_pen": 184,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          180,
+          185
+        ],
+        "actual_breaker": [
+          185,
+          188
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 188,
+          "reverse_end": 188,
+          "supports": [
+            [
+              185,
+              188
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 180,
+          "j": 185,
+          "direction": "down",
+          "dep_pen": 187,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          185,
+          188
+        ],
+        "actual_breaker": [
+          188,
+          193
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 191,
+          "reverse_end": 191,
+          "supports": [
+            [
+              188,
+              191
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 185,
+          "j": 188,
+          "direction": "up",
+          "dep_pen": 190,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          188,
+          193
+        ],
+        "actual_breaker": [
+          193,
+          202
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 202,
+          "reverse_end": 202,
+          "supports": [
+            [
+              193,
+              202
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 188,
+          "j": 193,
+          "direction": "down",
+          "dep_pen": 201,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          193,
+          202
+        ],
+        "actual_breaker": [
+          202,
+          221
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 205,
+          "reverse_end": 205,
+          "supports": [
+            [
+              202,
+              205
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 193,
+          "j": 202,
+          "direction": "up",
+          "dep_pen": 204,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          202,
+          221
+        ],
+        "actual_breaker": [
+          221,
+          234
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 224,
+          "reverse_end": null,
+          "supports": [
+            [
+              221,
+              224
+            ],
+            [
+              221,
+              224
+            ]
+          ],
+          "h1": 224,
+          "profile": "XD030-B",
+          "i": 202,
+          "j": 221,
+          "direction": "down",
+          "dep_pen": 223,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          221,
+          234
+        ],
+        "actual_breaker": [
+          234,
+          237
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 237,
+          "reverse_end": 237,
+          "supports": [
+            [
+              234,
+              237
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 221,
+          "j": 234,
+          "direction": "up",
+          "dep_pen": 236,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          234,
+          237
+        ],
+        "actual_breaker": [
+          237,
+          256
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 240,
+          "reverse_end": null,
+          "supports": [
+            [
+              237,
+              240
+            ],
+            [
+              237,
+              240
+            ]
+          ],
+          "h1": 240,
+          "profile": "XD030-B",
+          "i": 234,
+          "j": 237,
+          "direction": "down",
+          "dep_pen": 239,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          237,
+          256
+        ],
+        "actual_breaker": [
+          256,
+          263
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 259,
+          "reverse_end": null,
+          "supports": [
+            [
+              256,
+              259
+            ],
+            [
+              256,
+              259
+            ]
+          ],
+          "h1": 259,
+          "profile": "XD030-B",
+          "i": 237,
+          "j": 256,
+          "direction": "up",
+          "dep_pen": 258,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          256,
+          263
+        ],
+        "actual_breaker": [
+          263,
+          274
+        ],
+        "actual_second_sequence_successor": [
+          274,
+          279
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 279,
+          "reverse_end": 274,
+          "supports": [
+            [
+              263,
+              274
+            ],
+            [
+              274,
+              279
+            ]
+          ],
+          "h1": 266,
+          "h2": 279,
+          "profile": "XD030-B",
+          "i": 256,
+          "j": 263,
+          "direction": "down",
+          "dep_pen": 278,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          263,
+          274
+        ],
+        "actual_breaker": [
+          274,
+          279
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 279,
+          "reverse_end": null,
+          "supports": [
+            [
+              274,
+              277
+            ],
+            [
+              274,
+              279
+            ]
+          ],
+          "h1": 279,
+          "profile": "XD030-B",
+          "i": 263,
+          "j": 274,
+          "direction": "up",
+          "dep_pen": 278,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          274,
+          279
+        ],
+        "actual_breaker": [
+          279,
+          286
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 282,
+          "reverse_end": null,
+          "supports": [
+            [
+              279,
+              282
+            ],
+            [
+              279,
+              282
+            ]
+          ],
+          "h1": 282,
+          "profile": "XD030-B",
+          "i": 274,
+          "j": 279,
+          "direction": "down",
+          "dep_pen": 281,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          279,
+          286
+        ],
+        "actual_breaker": [
+          286,
+          289
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 289,
+          "reverse_end": null,
+          "supports": [
+            [
+              286,
+              289
+            ],
+            [
+              286,
+              289
+            ]
+          ],
+          "h1": 289,
+          "profile": "XD030-B",
+          "i": 279,
+          "j": 286,
+          "direction": "up",
+          "dep_pen": 288,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          286,
+          289
+        ],
+        "actual_breaker": [
+          289,
+          292
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 292,
+          "reverse_end": 292,
+          "supports": [
+            [
+              289,
+              292
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 286,
+          "j": 289,
+          "direction": "down",
+          "dep_pen": 291,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          289,
+          292
+        ],
+        "actual_breaker": [
+          292,
+          295
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 295,
+          "reverse_end": 295,
+          "supports": [
+            [
+              292,
+              295
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 289,
+          "j": 292,
+          "direction": "up",
+          "dep_pen": 294,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          292,
+          295
+        ],
+        "actual_breaker": [
+          295,
+          312
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 298,
+          "reverse_end": null,
+          "supports": [
+            [
+              295,
+              298
+            ],
+            [
+              295,
+              298
+            ]
+          ],
+          "h1": 298,
+          "profile": "XD030-B",
+          "i": 292,
+          "j": 295,
+          "direction": "down",
+          "dep_pen": 297,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          295,
+          312
+        ],
+        "actual_breaker": [
+          312,
+          317
+        ],
+        "actual_second_sequence_successor": [
+          317,
+          320
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 320,
+          "reverse_end": 317,
+          "supports": [
+            [
+              312,
+              317
+            ],
+            [
+              317,
+              320
+            ]
+          ],
+          "h1": 315,
+          "h2": 320,
+          "profile": "XD030-B",
+          "i": 295,
+          "j": 312,
+          "direction": "up",
+          "dep_pen": 319,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          312,
+          317
+        ],
+        "actual_breaker": [
+          317,
+          320
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 320,
+          "reverse_end": null,
+          "supports": [
+            [
+              317,
+              320
+            ],
+            [
+              317,
+              320
+            ]
+          ],
+          "h1": 320,
+          "profile": "XD030-B",
+          "i": 312,
+          "j": 317,
+          "direction": "down",
+          "dep_pen": 319,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          317,
+          320
+        ],
+        "actual_breaker": [
+          320,
+          331
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 325,
+          "reverse_end": null,
+          "supports": [
+            [
+              320,
+              323
+            ],
+            [
+              320,
+              325
+            ]
+          ],
+          "h1": 325,
+          "profile": "XD030-B",
+          "i": 317,
+          "j": 320,
+          "direction": "up",
+          "dep_pen": 324,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          320,
+          331
+        ],
+        "actual_breaker": [
+          331,
+          336
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 334,
+          "reverse_end": 334,
+          "supports": [
+            [
+              331,
+              334
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 320,
+          "j": 331,
+          "direction": "down",
+          "dep_pen": 333,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          331,
+          336
+        ],
+        "actual_breaker": [
+          336,
+          339
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 339,
+          "reverse_end": null,
+          "supports": [
+            [
+              336,
+              339
+            ],
+            [
+              336,
+              339
+            ]
+          ],
+          "h1": 339,
+          "profile": "XD030-B",
+          "i": 331,
+          "j": 336,
+          "direction": "up",
+          "dep_pen": 338,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          336,
+          339
+        ],
+        "actual_breaker": [
+          339,
+          342
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 342,
+          "reverse_end": null,
+          "supports": [
+            [
+              339,
+              342
+            ],
+            [
+              339,
+              342
+            ]
+          ],
+          "h1": 342,
+          "profile": "XD030-B",
+          "i": 336,
+          "j": 339,
+          "direction": "down",
+          "dep_pen": 341,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          339,
+          342
+        ],
+        "actual_breaker": [
+          342,
+          351
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 345,
+          "reverse_end": 345,
+          "supports": [
+            [
+              342,
+              345
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 339,
+          "j": 342,
+          "direction": "up",
+          "dep_pen": 344,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          342,
+          351
+        ],
+        "actual_breaker": [
+          351,
+          354
+        ],
+        "actual_second_sequence_successor": [
+          354,
+          371
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 357,
+          "reverse_end": 354,
+          "supports": [
+            [
+              351,
+              354
+            ],
+            [
+              354,
+              357
+            ]
+          ],
+          "h1": 354,
+          "h2": 357,
+          "profile": "XD030-B",
+          "i": 342,
+          "j": 351,
+          "direction": "down",
+          "dep_pen": 356,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          351,
+          354
+        ],
+        "actual_breaker": [
+          354,
+          371
+        ],
+        "actual_second_sequence_successor": [
+          371,
+          382
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 374,
+          "reverse_end": 371,
+          "supports": [
+            [
+              354,
+              371
+            ],
+            [
+              371,
+              374
+            ]
+          ],
+          "h1": 357,
+          "h2": 374,
+          "profile": "XD030-B",
+          "i": 351,
+          "j": 354,
+          "direction": "up",
+          "dep_pen": 373,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          354,
+          371
+        ],
+        "actual_breaker": [
+          371,
+          382
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 374,
+          "reverse_end": 374,
+          "supports": [
+            [
+              371,
+              374
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 354,
+          "j": 371,
+          "direction": "down",
+          "dep_pen": 373,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          371,
+          382
+        ],
+        "actual_breaker": [
+          382,
+          385
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 385,
+          "reverse_end": null,
+          "supports": [
+            [
+              382,
+              385
+            ],
+            [
+              382,
+              385
+            ]
+          ],
+          "h1": 385,
+          "profile": "XD030-B",
+          "i": 371,
+          "j": 382,
+          "direction": "up",
+          "dep_pen": 384,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          382,
+          385
+        ],
+        "actual_breaker": [
+          385,
+          392
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 388,
+          "reverse_end": 388,
+          "supports": [
+            [
+              385,
+              388
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 382,
+          "j": 385,
+          "direction": "down",
+          "dep_pen": 387,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          385,
+          392
+        ],
+        "actual_breaker": [
+          392,
+          399
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 395,
+          "reverse_end": 395,
+          "supports": [
+            [
+              392,
+              395
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 385,
+          "j": 392,
+          "direction": "up",
+          "dep_pen": 394,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          392,
+          399
+        ],
+        "actual_breaker": [
+          399,
+          402
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 402,
+          "reverse_end": null,
+          "supports": [
+            [
+              399,
+              402
+            ],
+            [
+              399,
+              402
+            ]
+          ],
+          "h1": 402,
+          "profile": "XD030-B",
+          "i": 392,
+          "j": 399,
+          "direction": "down",
+          "dep_pen": 401,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          399,
+          402
+        ],
+        "actual_breaker": [
+          402,
+          417
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 405,
+          "reverse_end": null,
+          "supports": [
+            [
+              402,
+              405
+            ],
+            [
+              402,
+              405
+            ]
+          ],
+          "h1": 405,
+          "profile": "XD030-B",
+          "i": 399,
+          "j": 402,
+          "direction": "up",
+          "dep_pen": 404,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          402,
+          417
+        ],
+        "actual_breaker": [
+          417,
+          420
+        ],
+        "actual_second_sequence_successor": [
+          420,
+          431
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 423,
+          "reverse_end": 420,
+          "supports": [
+            [
+              417,
+              420
+            ],
+            [
+              420,
+              423
+            ]
+          ],
+          "h1": 420,
+          "h2": 423,
+          "profile": "XD030-B",
+          "i": 402,
+          "j": 417,
+          "direction": "down",
+          "dep_pen": 422,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          417,
+          420
+        ],
+        "actual_breaker": [
+          420,
+          431
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 423,
+          "reverse_end": null,
+          "supports": [
+            [
+              420,
+              423
+            ],
+            [
+              420,
+              423
+            ]
+          ],
+          "h1": 423,
+          "profile": "XD030-B",
+          "i": 417,
+          "j": 420,
+          "direction": "up",
+          "dep_pen": 422,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          420,
+          431
+        ],
+        "actual_breaker": [
+          431,
+          442
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 434,
+          "reverse_end": 434,
+          "supports": [
+            [
+              431,
+              434
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 420,
+          "j": 431,
+          "direction": "down",
+          "dep_pen": 433,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          431,
+          442
+        ],
+        "actual_breaker": [
+          442,
+          449
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 447,
+          "reverse_end": null,
+          "supports": [
+            [
+              442,
+              445
+            ],
+            [
+              442,
+              447
+            ]
+          ],
+          "h1": 447,
+          "profile": "XD030-B",
+          "i": 431,
+          "j": 442,
+          "direction": "up",
+          "dep_pen": 446,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          442,
+          449
+        ],
+        "actual_breaker": [
+          449,
+          452
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 452,
+          "reverse_end": null,
+          "supports": [
+            [
+              449,
+              452
+            ],
+            [
+              449,
+              452
+            ]
+          ],
+          "h1": 452,
+          "profile": "XD030-B",
+          "i": 442,
+          "j": 449,
+          "direction": "down",
+          "dep_pen": 451,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          449,
+          452
+        ],
+        "actual_breaker": [
+          452,
+          457
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 455,
+          "reverse_end": 455,
+          "supports": [
+            [
+              452,
+              455
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 449,
+          "j": 452,
+          "direction": "up",
+          "dep_pen": 454,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          452,
+          457
+        ],
+        "actual_breaker": [
+          457,
+          466
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 460,
+          "reverse_end": null,
+          "supports": [
+            [
+              457,
+              460
+            ],
+            [
+              457,
+              460
+            ]
+          ],
+          "h1": 460,
+          "profile": "XD030-B",
+          "i": 452,
+          "j": 457,
+          "direction": "down",
+          "dep_pen": 459,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          457,
+          466
+        ],
+        "actual_breaker": [
+          466,
+          473
+        ],
+        "actual_second_sequence_successor": [
+          473,
+          486
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 476,
+          "reverse_end": 473,
+          "supports": [
+            [
+              466,
+              473
+            ],
+            [
+              473,
+              476
+            ]
+          ],
+          "h1": 469,
+          "h2": 476,
+          "profile": "XD030-B",
+          "i": 457,
+          "j": 466,
+          "direction": "up",
+          "dep_pen": 475,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          466,
+          473
+        ],
+        "actual_breaker": [
+          473,
+          486
+        ],
+        "actual_second_sequence_successor": [
+          486,
+          489
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 489,
+          "reverse_end": 486,
+          "supports": [
+            [
+              473,
+              486
+            ],
+            [
+              486,
+              489
+            ]
+          ],
+          "h1": 476,
+          "h2": 489,
+          "profile": "XD030-B",
+          "i": 466,
+          "j": 473,
+          "direction": "down",
+          "dep_pen": 488,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          473,
+          486
+        ],
+        "actual_breaker": [
+          486,
+          489
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 489,
+          "reverse_end": 489,
+          "supports": [
+            [
+              486,
+              489
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 473,
+          "j": 486,
+          "direction": "up",
+          "dep_pen": 488,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          486,
+          489
+        ],
+        "actual_breaker": [
+          489,
+          498
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 492,
+          "reverse_end": 492,
+          "supports": [
+            [
+              489,
+              492
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 486,
+          "j": 489,
+          "direction": "down",
+          "dep_pen": 491,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          489,
+          498
+        ],
+        "actual_breaker": [
+          498,
+          531
+        ],
+        "actual_second_sequence_successor": [
+          531,
+          534
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 534,
+          "reverse_end": 531,
+          "supports": [
+            [
+              498,
+              531
+            ],
+            [
+              531,
+              534
+            ]
+          ],
+          "h1": 501,
+          "h2": 534,
+          "profile": "XD030-B",
+          "i": 489,
+          "j": 498,
+          "direction": "up",
+          "dep_pen": 533,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          498,
+          531
+        ],
+        "actual_breaker": [
+          531,
+          534
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 534,
+          "reverse_end": 534,
+          "supports": [
+            [
+              531,
+              534
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 498,
+          "j": 531,
+          "direction": "down",
+          "dep_pen": 533,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          531,
+          534
+        ],
+        "actual_breaker": [
+          534,
+          539
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 539,
+          "reverse_end": null,
+          "supports": [
+            [
+              534,
+              537
+            ],
+            [
+              534,
+              539
+            ]
+          ],
+          "h1": 539,
+          "profile": "XD030-B",
+          "i": 531,
+          "j": 534,
+          "direction": "up",
+          "dep_pen": 538,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          534,
+          539
+        ],
+        "actual_breaker": [
+          539,
+          548
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 544,
+          "reverse_end": null,
+          "supports": [
+            [
+              539,
+              542
+            ],
+            [
+              539,
+              544
+            ]
+          ],
+          "h1": 544,
+          "profile": "XD030-B",
+          "i": 534,
+          "j": 539,
+          "direction": "down",
+          "dep_pen": 543,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          539,
+          548
+        ],
+        "actual_breaker": [
+          548,
+          559
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 551,
+          "reverse_end": null,
+          "supports": [
+            [
+              548,
+              551
+            ],
+            [
+              548,
+              551
+            ]
+          ],
+          "h1": 551,
+          "profile": "XD030-B",
+          "i": 539,
+          "j": 548,
+          "direction": "up",
+          "dep_pen": 550,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          548,
+          559
+        ],
+        "actual_breaker": [
+          559,
+          566
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 562,
+          "reverse_end": null,
+          "supports": [
+            [
+              559,
+              562
+            ],
+            [
+              559,
+              562
+            ]
+          ],
+          "h1": 562,
+          "profile": "XD030-B",
+          "i": 548,
+          "j": 559,
+          "direction": "down",
+          "dep_pen": 561,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          559,
+          566
+        ],
+        "actual_breaker": [
+          566,
+          573
+        ],
+        "actual_second_sequence_successor": [
+          573,
+          576
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 576,
+          "reverse_end": 573,
+          "supports": [
+            [
+              566,
+              573
+            ],
+            [
+              573,
+              576
+            ]
+          ],
+          "h1": 571,
+          "h2": 576,
+          "profile": "XD030-B",
+          "i": 559,
+          "j": 566,
+          "direction": "up",
+          "dep_pen": 575,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          566,
+          573
+        ],
+        "actual_breaker": [
+          573,
+          576
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 576,
+          "reverse_end": null,
+          "supports": [
+            [
+              573,
+              576
+            ],
+            [
+              573,
+              576
+            ]
+          ],
+          "h1": 576,
+          "profile": "XD030-B",
+          "i": 566,
+          "j": 573,
+          "direction": "down",
+          "dep_pen": 575,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          573,
+          576
+        ],
+        "actual_breaker": [
+          576,
+          581
+        ],
+        "actual_second_sequence_successor": [
+          581,
+          586
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 586,
+          "reverse_end": 581,
+          "supports": [
+            [
+              576,
+              581
+            ],
+            [
+              581,
+              586
+            ]
+          ],
+          "h1": 579,
+          "h2": 586,
+          "profile": "XD030-B",
+          "i": 573,
+          "j": 576,
+          "direction": "up",
+          "dep_pen": 585,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          576,
+          581
+        ],
+        "actual_breaker": [
+          581,
+          586
+        ],
+        "actual_second_sequence_successor": [
+          586,
+          597
+        ],
+        "certificate": {
+          "kind": "gap",
+          "dep_endpoint": 589,
+          "reverse_end": 586,
+          "supports": [
+            [
+              581,
+              586
+            ],
+            [
+              586,
+              589
+            ]
+          ],
+          "h1": 586,
+          "h2": 589,
+          "profile": "XD030-B",
+          "i": 576,
+          "j": 581,
+          "direction": "down",
+          "dep_pen": 588,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          581,
+          586
+        ],
+        "actual_breaker": [
+          586,
+          597
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 589,
+          "reverse_end": null,
+          "supports": [
+            [
+              586,
+              589
+            ],
+            [
+              586,
+              589
+            ]
+          ],
+          "h1": 589,
+          "profile": "XD030-B",
+          "i": 581,
+          "j": 586,
+          "direction": "up",
+          "dep_pen": 588,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          586,
+          597
+        ],
+        "actual_breaker": [
+          597,
+          600
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 600,
+          "reverse_end": 600,
+          "supports": [
+            [
+              597,
+              600
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 586,
+          "j": 597,
+          "direction": "down",
+          "dep_pen": 599,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          597,
+          600
+        ],
+        "actual_breaker": [
+          600,
+          605
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 605,
+          "reverse_end": null,
+          "supports": [
+            [
+              600,
+              603
+            ],
+            [
+              600,
+              605
+            ]
+          ],
+          "h1": 605,
+          "profile": "XD030-B",
+          "i": 597,
+          "j": 600,
+          "direction": "up",
+          "dep_pen": 604,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          600,
+          605
+        ],
+        "actual_breaker": [
+          605,
+          610
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 610,
+          "reverse_end": 610,
+          "supports": [
+            [
+              605,
+              610
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 600,
+          "j": 605,
+          "direction": "down",
+          "dep_pen": 609,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          605,
+          610
+        ],
+        "actual_breaker": [
+          610,
+          613
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 613,
+          "reverse_end": 613,
+          "supports": [
+            [
+              610,
+              613
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 605,
+          "j": 610,
+          "direction": "up",
+          "dep_pen": 612,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          610,
+          613
+        ],
+        "actual_breaker": [
+          613,
+          618
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 616,
+          "reverse_end": 616,
+          "supports": [
+            [
+              613,
+              616
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 610,
+          "j": 613,
+          "direction": "down",
+          "dep_pen": 615,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          613,
+          618
+        ],
+        "actual_breaker": [
+          618,
+          621
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 621,
+          "reverse_end": 621,
+          "supports": [
+            [
+              618,
+              621
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 613,
+          "j": 618,
+          "direction": "up",
+          "dep_pen": 620,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          618,
+          621
+        ],
+        "actual_breaker": [
+          621,
+          624
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 624,
+          "reverse_end": 624,
+          "supports": [
+            [
+              621,
+              624
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 618,
+          "j": 621,
+          "direction": "down",
+          "dep_pen": 623,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          621,
+          624
+        ],
+        "actual_breaker": [
+          624,
+          627
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 627,
+          "reverse_end": null,
+          "supports": [
+            [
+              624,
+              627
+            ],
+            [
+              624,
+              627
+            ]
+          ],
+          "h1": 627,
+          "profile": "XD030-B",
+          "i": 621,
+          "j": 624,
+          "direction": "up",
+          "dep_pen": 626,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          624,
+          627
+        ],
+        "actual_breaker": [
+          627,
+          634
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 630,
+          "reverse_end": 630,
+          "supports": [
+            [
+              627,
+              630
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 624,
+          "j": 627,
+          "direction": "down",
+          "dep_pen": 629,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          627,
+          634
+        ],
+        "actual_breaker": [
+          634,
+          637
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 637,
+          "reverse_end": null,
+          "supports": [
+            [
+              634,
+              637
+            ],
+            [
+              634,
+              637
+            ]
+          ],
+          "h1": 637,
+          "profile": "XD030-B",
+          "i": 627,
+          "j": 634,
+          "direction": "up",
+          "dep_pen": 636,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          634,
+          637
+        ],
+        "actual_breaker": [
+          637,
+          640
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 640,
+          "reverse_end": 640,
+          "supports": [
+            [
+              637,
+              640
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 634,
+          "j": 637,
+          "direction": "down",
+          "dep_pen": 639,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          637,
+          640
+        ],
+        "actual_breaker": [
+          640,
+          643
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 643,
+          "reverse_end": null,
+          "supports": [
+            [
+              640,
+              643
+            ],
+            [
+              640,
+              643
+            ]
+          ],
+          "h1": 643,
+          "profile": "XD030-B",
+          "i": 637,
+          "j": 640,
+          "direction": "up",
+          "dep_pen": 642,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          640,
+          643
+        ],
+        "actual_breaker": [
+          643,
+          654
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 646,
+          "reverse_end": 646,
+          "supports": [
+            [
+              643,
+              646
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 640,
+          "j": 643,
+          "direction": "down",
+          "dep_pen": 645,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          643,
+          654
+        ],
+        "actual_breaker": [
+          654,
+          663
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "direct_071",
+          "dep_endpoint": 657,
+          "reverse_end": 657,
+          "supports": [
+            [
+              654,
+              657
+            ]
+          ],
+          "profile": "XD030-B",
+          "i": 643,
+          "j": 654,
+          "direction": "up",
+          "dep_pen": 656,
+          "xd_mode": "weak"
+        }
+      },
+      {
+        "confirmed": [
+          654,
+          663
+        ],
+        "actual_breaker": [
+          663,
+          668
+        ],
+        "actual_second_sequence_successor": null,
+        "certificate": {
+          "kind": "no_gap",
+          "dep_endpoint": 668,
+          "reverse_end": null,
+          "supports": [
+            [
+              663,
+              666
+            ],
+            [
+              663,
+              668
+            ]
+          ],
+          "h1": 668,
+          "profile": "XD030-B",
+          "i": 654,
+          "j": 663,
+          "direction": "down",
+          "dep_pen": 667,
+          "xd_mode": "weak"
+        }
+      }
+    ]
+  }
+}

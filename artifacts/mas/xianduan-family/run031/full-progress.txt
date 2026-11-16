@@ -1,0 +1,4 @@
+full bi-weak_xd-weak 89
+full bi-weak_xd-strong 79
+full bi-strong_xd-weak 57
+full bi-strong_xd-strong 53

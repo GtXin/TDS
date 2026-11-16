@@ -1,0 +1,13 @@
+{
+  "src/chanlab/algo/bi.py": "dbf9024aa6198127df16c3d293dbed019c02ce91a0966e741529944eb62797c2",
+  "src/chanlab/algo/chan_table.py": "d122b633baf308087a051837a0658fffe2577ca97e562b78166ada4aec5108d9",
+  "src/chanlab/data/feature_table.py": "7048bff86d0baf7359db56252e3ef1980b1248cb12663272e111359ecf3aeb67",
+  "tests/test_bi.py": "9730ad5b82996eb64266d59bac5179e25a105aab4e1202021e7ed8d403342759",
+  "tests/test_xianduan.py": "7bf5bbb6cf96c7058485ede2139f8ca26c1dbb8f449857807b17c8c186e05f45",
+  "src/chanlab/visualization/xianduan_plot.py": "ffab4f2be5506e2e946c740b67595a65f02b313c346dc52303221710d650dfe6",
+  "src/chanlab/algo/_xianduan_select.py": "1f21af3f73c24d8c0356d4ed9e1825f10ff33baef43c58912807ea7faa1b138e",
+  "src/chanlab/algo/_xianduan_events.py": "7c7c57cd738090aec808bdf79a04efad9faf8083595413ca7d06958b355972a8",
+  "src/chanlab/algo/xianduan.py": "ce8e1346c2f03fc2579f283ffeadac3af28ac039c0dba38f66120fb1899f66fe",
+  "src/chanlab/algo/_xianduan_features.py": "f392d6373f2d0af4b0818f780dfc1b4439955446d31feead30fb87aa5555015c",
+  "src/chanlab/data/xianduan_table.py": "60ddaa2a7bc24c6d69c70544dd1952ed752513b097bf6f23fc71a3f1f3ad58a8"
+}

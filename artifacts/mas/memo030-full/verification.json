@@ -1,0 +1,30 @@
+{
+  "strong": {
+    "edges_exact": 56033,
+    "selected_connectivity_pass": true,
+    "window_fx_counts": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      27
+    ],
+    "coverage_pass": true
+  },
+  "weak": {
+    "edges_exact": 184054,
+    "selected_connectivity_pass": true,
+    "window_fx_counts": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      27
+    ],
+    "coverage_pass": true
+  }
+}

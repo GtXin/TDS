@@ -1,0 +1,398 @@
+{
+  "bi-strong_xd-strong": {
+    "id": 10185,
+    "i": 329,
+    "j": 472,
+    "direction": "up",
+    "root": false,
+    "kind": "secondary_067",
+    "dep_endpoint": 475,
+    "dep_pen": 474,
+    "certificate": {
+      "kind": "gap",
+      "dep_endpoint": 475,
+      "reverse_end": 472,
+      "supports": [
+        [
+          329,
+          472
+        ],
+        [
+          472,
+          475
+        ]
+      ],
+      "h1": 332,
+      "h2": 475,
+      "profile": "XD030-B",
+      "i": 324,
+      "j": 329,
+      "direction": "down",
+      "dep_pen": 474,
+      "xd_mode": "strong"
+    },
+    "parent_id": 6545,
+    "role": "derived",
+    "start_source": {
+      "fx_position": 2141,
+      "fx_id": 2141,
+      "kind": "bottom",
+      "price": 2715.0,
+      "merged_center": 4379,
+      "merged_window": [
+        4378,
+        4381
+      ],
+      "merged_center_raw_range": [
+        7124,
+        7126
+      ],
+      "window_raw_range": [
+        7121,
+        7127
+      ],
+      "anchor_raw_index": 7125,
+      "anchor_utc": "2026-02-04T13:00:00+00:00"
+    },
+    "end_source": {
+      "fx_position": 2978,
+      "fx_id": 2978,
+      "kind": "top",
+      "price": 3152.0,
+      "merged_center": 6100,
+      "merged_window": [
+        6099,
+        6102
+      ],
+      "merged_center_raw_range": [
+        9899,
+        9900
+      ],
+      "window_raw_range": [
+        9894,
+        9901
+      ],
+      "anchor_raw_index": 9899,
+      "anchor_utc": "2026-08-10T13:00:00+00:00"
+    },
+    "evidence_source": {
+      "fx_position": 2989,
+      "fx_id": 2989,
+      "kind": "bottom",
+      "price": 3117.0,
+      "merged_center": 6119,
+      "merged_window": [
+        6118,
+        6121
+      ],
+      "merged_center_raw_range": [
+        9925,
+        9931
+      ],
+      "window_raw_range": [
+        9924,
+        9932
+      ],
+      "anchor_raw_index": 9930,
+      "anchor_utc": "2026-08-12T01:00:00+00:00"
+    },
+    "h": 475
+  },
+  "bi-strong_xd-weak": {
+    "id": 12040,
+    "i": 329,
+    "j": 472,
+    "direction": "up",
+    "root": false,
+    "kind": "secondary_067",
+    "dep_endpoint": 475,
+    "dep_pen": 474,
+    "certificate": {
+      "kind": "gap",
+      "dep_endpoint": 475,
+      "reverse_end": 472,
+      "supports": [
+        [
+          329,
+          472
+        ],
+        [
+          472,
+          475
+        ]
+      ],
+      "h1": 332,
+      "h2": 475,
+      "profile": "XD030-B",
+      "i": 324,
+      "j": 329,
+      "direction": "down",
+      "dep_pen": 474,
+      "xd_mode": "weak"
+    },
+    "parent_id": 7734,
+    "role": "derived",
+    "start_source": {
+      "fx_position": 2141,
+      "fx_id": 2141,
+      "kind": "bottom",
+      "price": 2715.0,
+      "merged_center": 4379,
+      "merged_window": [
+        4378,
+        4381
+      ],
+      "merged_center_raw_range": [
+        7124,
+        7126
+      ],
+      "window_raw_range": [
+        7121,
+        7127
+      ],
+      "anchor_raw_index": 7125,
+      "anchor_utc": "2026-02-04T13:00:00+00:00"
+    },
+    "end_source": {
+      "fx_position": 2978,
+      "fx_id": 2978,
+      "kind": "top",
+      "price": 3152.0,
+      "merged_center": 6100,
+      "merged_window": [
+        6099,
+        6102
+      ],
+      "merged_center_raw_range": [
+        9899,
+        9900
+      ],
+      "window_raw_range": [
+        9894,
+        9901
+      ],
+      "anchor_raw_index": 9899,
+      "anchor_utc": "2026-08-10T13:00:00+00:00"
+    },
+    "evidence_source": {
+      "fx_position": 2989,
+      "fx_id": 2989,
+      "kind": "bottom",
+      "price": 3117.0,
+      "merged_center": 6119,
+      "merged_window": [
+        6118,
+        6121
+      ],
+      "merged_center_raw_range": [
+        9925,
+        9931
+      ],
+      "window_raw_range": [
+        9924,
+        9932
+      ],
+      "anchor_raw_index": 9930,
+      "anchor_utc": "2026-08-12T01:00:00+00:00"
+    },
+    "h": 475
+  },
+  "bi-weak_xd-strong": {
+    "id": 30652,
+    "i": 473,
+    "j": 672,
+    "direction": "up",
+    "root": false,
+    "kind": "secondary_067",
+    "dep_endpoint": 675,
+    "dep_pen": 674,
+    "certificate": {
+      "kind": "gap",
+      "dep_endpoint": 675,
+      "reverse_end": 672,
+      "supports": [
+        [
+          473,
+          672
+        ],
+        [
+          672,
+          675
+        ]
+      ],
+      "h1": 476,
+      "h2": 675,
+      "profile": "XD030-B",
+      "i": 452,
+      "j": 473,
+      "direction": "down",
+      "dep_pen": 674,
+      "xd_mode": "strong"
+    },
+    "parent_id": 17910,
+    "role": "derived",
+    "start_source": {
+      "fx_position": 2141,
+      "fx_id": 2141,
+      "kind": "bottom",
+      "price": 2715.0,
+      "merged_center": 4379,
+      "merged_window": [
+        4378,
+        4381
+      ],
+      "merged_center_raw_range": [
+        7124,
+        7126
+      ],
+      "window_raw_range": [
+        7121,
+        7127
+      ],
+      "anchor_raw_index": 7125,
+      "anchor_utc": "2026-02-04T13:00:00+00:00"
+    },
+    "end_source": {
+      "fx_position": 2978,
+      "fx_id": 2978,
+      "kind": "top",
+      "price": 3152.0,
+      "merged_center": 6100,
+      "merged_window": [
+        6099,
+        6102
+      ],
+      "merged_center_raw_range": [
+        9899,
+        9900
+      ],
+      "window_raw_range": [
+        9894,
+        9901
+      ],
+      "anchor_raw_index": 9899,
+      "anchor_utc": "2026-08-10T13:00:00+00:00"
+    },
+    "evidence_source": {
+      "fx_position": 2989,
+      "fx_id": 2989,
+      "kind": "bottom",
+      "price": 3117.0,
+      "merged_center": 6119,
+      "merged_window": [
+        6118,
+        6121
+      ],
+      "merged_center_raw_range": [
+        9925,
+        9931
+      ],
+      "window_raw_range": [
+        9924,
+        9932
+      ],
+      "anchor_raw_index": 9930,
+      "anchor_utc": "2026-08-12T01:00:00+00:00"
+    },
+    "h": 675
+  },
+  "bi-weak_xd-weak": {
+    "id": 37316,
+    "i": 473,
+    "j": 672,
+    "direction": "up",
+    "root": false,
+    "kind": "secondary_067",
+    "dep_endpoint": 675,
+    "dep_pen": 674,
+    "certificate": {
+      "kind": "gap",
+      "dep_endpoint": 675,
+      "reverse_end": 672,
+      "supports": [
+        [
+          473,
+          672
+        ],
+        [
+          672,
+          675
+        ]
+      ],
+      "h1": 476,
+      "h2": 675,
+      "profile": "XD030-B",
+      "i": 452,
+      "j": 473,
+      "direction": "down",
+      "dep_pen": 674,
+      "xd_mode": "weak"
+    },
+    "parent_id": 22009,
+    "role": "derived",
+    "start_source": {
+      "fx_position": 2141,
+      "fx_id": 2141,
+      "kind": "bottom",
+      "price": 2715.0,
+      "merged_center": 4379,
+      "merged_window": [
+        4378,
+        4381
+      ],
+      "merged_center_raw_range": [
+        7124,
+        7126
+      ],
+      "window_raw_range": [
+        7121,
+        7127
+      ],
+      "anchor_raw_index": 7125,
+      "anchor_utc": "2026-02-04T13:00:00+00:00"
+    },
+    "end_source": {
+      "fx_position": 2978,
+      "fx_id": 2978,
+      "kind": "top",
+      "price": 3152.0,
+      "merged_center": 6100,
+      "merged_window": [
+        6099,
+        6102
+      ],
+      "merged_center_raw_range": [
+        9899,
+        9900
+      ],
+      "window_raw_range": [
+        9894,
+        9901
+      ],
+      "anchor_raw_index": 9899,
+      "anchor_utc": "2026-08-10T13:00:00+00:00"
+    },
+    "evidence_source": {
+      "fx_position": 2989,
+      "fx_id": 2989,
+      "kind": "bottom",
+      "price": 3117.0,
+      "merged_center": 6119,
+      "merged_window": [
+        6118,
+        6121
+      ],
+      "merged_center_raw_range": [
+        9925,
+        9931
+      ],
+      "window_raw_range": [
+        9924,
+        9932
+      ],
+      "anchor_raw_index": 9930,
+      "anchor_utc": "2026-08-12T01:00:00+00:00"
+    },
+    "h": 675
+  }
+}

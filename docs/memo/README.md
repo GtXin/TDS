@@ -35,6 +35,7 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | WX 029 | [Chan_bi — new algorithm draft](memoWX_029_Chan_bi.md) |
 | WX 030 | [Chan_xianduan — new draft](memoWX_030_Chan_xianduan.md) |
 | WX 031 | [Xianduan family implementation plan](memoWX_031_xianduanFamily.md) |
+| WX 032 | [GitHub file size policy and recovery](memoWX_032_githubFileSizes.md) |
 | KWX 001 | [cc project folder structure](memoKWX_001_文件夹结构.md) |
 | KWX 002 | [Guide to WX001–018](memoKWX_002_memoWX001-018导读.md) |
 | KWX 003 | [TDS synchronization and Chinese localization](memoKWX_003_sync_en2cn.md) |

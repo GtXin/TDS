@@ -1,0 +1,174 @@
+stage 100 weak weak 0 Bi 23
+core 0.0007074169698171318
+factory 0.00721154100028798
+repeat and independently validated objective count PASS
+stage 100 weak weak 1 Bi 23
+core 0.0005847080028615892
+factory 0.007358584029134363
+repeat and independently validated objective count PASS
+stage 100 weak weak 2 Bi 23
+core 0.0005924169672653079
+factory 0.00741304102120921
+repeat and independently validated objective count PASS
+timing 100 weak weak 2
+stage 100 weak strong 0 Bi 23
+core 0.0005528329638764262
+factory 0.0072850839933380485
+repeat and independently validated objective count PASS
+stage 100 weak strong 1 Bi 23
+core 0.0005126670002937317
+factory 0.007260125013999641
+repeat and independently validated objective count PASS
+stage 100 weak strong 2 Bi 23
+core 0.0004665000014938414
+factory 0.0073662089998833835
+repeat and independently validated objective count PASS
+timing 100 weak strong 1
+stage 100 strong weak 0 Bi 17
+core 0.00031416601268574595
+factory 0.0069325839867815375
+repeat and independently validated objective count PASS
+stage 100 strong weak 1 Bi 17
+core 0.00032537500374019146
+factory 0.006885875016450882
+repeat and independently validated objective count PASS
+stage 100 strong weak 2 Bi 17
+core 0.00033729197457432747
+factory 0.00715904199751094
+repeat and independently validated objective count PASS
+timing 100 strong weak 1
+stage 100 strong strong 0 Bi 17
+core 0.00028024998027831316
+factory 0.006950584007427096
+repeat and independently validated objective count PASS
+stage 100 strong strong 1 Bi 17
+core 0.0002631249953992665
+factory 0.0069427089765667915
+repeat and independently validated objective count PASS
+stage 100 strong strong 2 Bi 17
+core 0.0002815419575199485
+factory 0.0070024580345489085
+repeat and independently validated objective count PASS
+timing 100 strong strong 1
+stage 1000 weak weak 0 Bi 239
+core 0.24061354098375887
+factory 0.30573704198468477
+repeat and independently validated objective count PASS
+stage 1000 weak weak 1 Bi 239
+core 0.23640216700732708
+factory 0.30506574996979907
+repeat and independently validated objective count PASS
+stage 1000 weak weak 2 Bi 239
+core 0.2579335839836858
+factory 0.3130789580172859
+repeat and independently validated objective count PASS
+timing 1000 weak weak 28
+stage 1000 weak strong 0 Bi 239
+core 0.14656654198188335
+factory 0.2335952080320567
+repeat and independently validated objective count PASS
+stage 1000 weak strong 1 Bi 239
+core 0.1693292079726234
+factory 0.2365254579926841
+repeat and independently validated objective count PASS
+stage 1000 weak strong 2 Bi 239
+core 0.14559054101118818
+factory 0.23451475001638755
+repeat and independently validated objective count PASS
+timing 1000 weak strong 25
+stage 1000 strong weak 0 Bi 167
+core 0.09551995800575241
+factory 0.14162708399817348
+repeat and independently validated objective count PASS
+stage 1000 strong weak 1 Bi 167
+core 0.09748337499331683
+factory 0.14159420900978148
+repeat and independently validated objective count PASS
+stage 1000 strong weak 2 Bi 167
+core 0.09073658299166709
+factory 0.14547579200007021
+repeat and independently validated objective count PASS
+timing 1000 strong weak 20
+stage 1000 strong strong 0 Bi 167
+core 0.051536165992729366
+factory 0.13485783396754414
+repeat and independently validated objective count PASS
+stage 1000 strong strong 1 Bi 167
+core 0.051339249999728054
+factory 0.11832804203731939
+repeat and independently validated objective count PASS
+stage 1000 strong strong 2 Bi 167
+core 0.06783345795702189
+factory 0.11963375000050291
+repeat and independently validated objective count PASS
+timing 1000 strong strong 18
+stage 3000 weak weak 0 Bi 677
+core 9.432369792019017
+factory 9.679109958000481
+repeat and independently validated objective count PASS
+stage 3000 weak weak 1 Bi 677
+core 9.517821041983552
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_select.py", line 129 in solve
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 49 in recognize
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 163 in derive_from
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/timing_final.py", line 32 in <module>
+factory 9.407282166997902
+repeat and independently validated objective count PASS
+stage 3000 weak weak 2 Bi 677
+core 9.507883000012953
+factory 9.531162375002168
+repeat and independently validated objective count PASS
+timing 3000 weak weak 89
+stage 3000 weak strong 0 Bi 677
+core 5.690044415998273
+factory 5.854751166945789
+repeat and independently validated objective count PASS
+stage 3000 weak strong 1 Bi 677
+core 5.666770041978452
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_select.py", line 71 in pair
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_select.py", line 129 in solve
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 49 in recognize
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 163 in derive_from
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/timing_final.py", line 32 in <module>
+factory 5.80428929097252
+repeat and independently validated objective count PASS
+stage 3000 weak strong 2 Bi 677
+core 5.698881541960873
+factory 5.803660375007894
+repeat and independently validated objective count PASS
+timing 3000 weak strong 79
+stage 3000 strong weak 0 Bi 476
+core 2.7545841250102967
+factory 2.9902921249740757
+repeat and independently validated objective count PASS
+stage 3000 strong weak 1 Bi 476
+core 2.7868659580126405
+factory 2.9292925829649903
+repeat and independently validated objective count PASS
+stage 3000 strong weak 2 Bi 476
+core 2.7387069999822415
+factory 2.9680672499816865
+repeat and independently validated objective count PASS
+timing 3000 strong weak 57
+stage 3000 strong strong 0 Bi 476
+core 1.8043831249815412
+factory 2.009500540967565
+repeat and independently validated objective count PASS
+stage 3000 strong strong 1 Bi 476
+core 1.8281664999667555
+factory 1.9844434160040691
+repeat and independently validated objective count PASS
+stage 3000 strong strong 2 Bi 476
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_select.py", line 129 in solve
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 49 in recognize
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/timing_final.py", line 32 in <module>
+core 1.8377617499791086
+factory 1.9997787909815088
+repeat and independently validated objective count PASS
+timing 3000 strong strong 53

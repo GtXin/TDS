@@ -29,3 +29,10 @@ Read `CodexMemory.md` at the start of work. Update it after confirmed decisions,
 **Every repository update must also be recorded in `logXW.md` before reporting it complete, including code, documentation, configuration, and memory changes.**
 
 Follow [logXW.md](logXW.md) and append a concise entry for each repository work event, including minor edits, decisions, checks, failures, and blockers. Record events before finishing the turn; distinguish observed actions from reported or planned actions.
+
+## Git file sizes
+
+- Before committing, run `python3 scripts/check_git_sizes.py`; before pushing, run `python3 scripts/check_git_sizes.py --history`. Resolve errors and review warnings above 50 MiB.
+- Never commit ordinary Git blobs at or above 100 MiB. Compress generated evidence losslessly, split it meaningfully, or agree on external storage/LFS; preserve provenance and reproduction instructions.
+- Ignoring a file does not remove it from existing commits. Inspect outgoing history; only rewrite unpublished commits with a recovery copy. Ask before rewriting shared history or force-pushing.
+- Install the local commit guard with `git config core.hooksPath .githooks` in each clone. See memo032 for recovery and checks.

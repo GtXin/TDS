@@ -3,8 +3,25 @@ Updated: 2026-11-11
 ## Purpose
 Bring KWX and WX together for a three-day Chan theory feasibility sprint, establishing a reusable algorithm foundation with a Python backend and static website.
 ## Confirmed decisions
-- Memo031按028结构准备线段外围实施／比较／测试／Monte Carlo／全量图集计划，尚未实现。029是上游笔算法，030线段规格仍修订；最终算法依据与版本待明确，未决识别／确认／状态不补写。[计划](docs/memo/memoWX_031_xianduanFamily.md)。
-- Memo030真实500FX试算XD030-A：1651raw/1018merged，strong82Bi→8XD到FX462、weak115Bi→13XD到FX485。保留全部局部证书，最大出度7/9；4889局部独立对照及52/374图路径目标核对通过。14图及4张memo图片已入030；内部完成边界/复杂吸收/上下文完整性未获证明，不称030总体验证成功。[任务](mas/tasks/20261111-memo030-500fx.md)。
+- GitHub size repair: memo032 documents gzip storage for two oversized memo030 results, local originals ignored, staged/outgoing blob guard and local commit hook. Recovery bundle: `/private/tmp/TDS-before-size-fix-54a2f1a.bundle`; latest unpublished commit is to be amended; no shared-history rewrite or push.
+- Memo031002.f验证报告直接嵌入全样本四组合总览（031伴随目录字节一致副本），保留交互入口；默认weak/weak置于最下方。
+- Memo031002.f已将030-E一致性验收整理为四组合030/031并列表，列明FX首末、完整路线/tail/278证书对照、profile标签差异及新增字段比较边界；附证据与复现命令。
+- 031与当前030-E逐项对照通过：四组完整笔输入、已确认路线、tail、FX首末及278条S/T/U证书相同；只差历史profile标签B→E。新增全样本四组合/默认交互总览：[入口](artifacts/mas/xianduan-family/run031/overview/index.html)。
+- 用户明确最新优先级为“已确认线段数最多→同段数最晚已确认终点”，无起点优先。030当前XD030-E，评分(count,b)，002/000同步；120小输入双目标穷举、278证据及四组全量通过。53/57/79/89及路线恰与D相同，不能据此混淆目标。E32单图+8比较入030，D结果附录G。[任务](mas/tasks/20261111-memo030-count-end.md)。
+- 当前030为XD030-D：唯一目标全局已确认段数最多，取消起点最早/末端最晚优先。所有起点多源DP，001及破坏规则不变；四组53/57/79/89，起点FX1/1/1/6。278选中证据重算和120小输入全链计数对照通过；32单图+8紧凑比较已入030，旧C验证移附录F。原文完备性仍未证。[任务](mas/tasks/20261111-memo030-max-count.md)。
+- XD030-C局部合同隔离实现完成：实际相邻S/T/U绑定，相邻对状态在无跨T剩余依赖前提下压缩；120小输入全链枚举目标一致，273选中证据从原笔重新生成核对。全量四组52/56/78/87段，前三到FX2892、弱弱到FX2933，最长33笔，旧超长派生段消失。32单图+8紧凑比较及新版统一图集入030；旧B仅复用局部事件缓存，不用路线/派生节点。原文完备性仍未证明。[任务](mas/tasks/20261111-memo030-c.md)。
+- Memo030002.a–f已完整替换为XD030-C设计，12阶段树及伪代码绑定实际S/T/U，统一段角色；完整候选前缀+关系状态保留安全基线，未证明压缩前不承诺多项式。旧B四组合图移附录E，001不变。未实现C、未重算；复杂吸收/unsupported及状态压缩仍需验证。
+- 用户指出颜色分类掩盖每段必须由实际后段破坏：030记录XD030-C修订合同，B独立证书+水位兼容边不足；改为(S,T,w,约束)相邻对状态，T被实际U破坏才增计已确认数，尾候选单列。001不变，旧B树/代码/图保留并标历史不再作为正确性证据。Break实际相邻判定表、完整细树及实现/四组合重算尚未完成。
+- 四组合完整图集入口已整合8张紧凑纵向比较图（总体+7窗），各窗直接链接四个独立交互图；plot.py调用build_index.py保持重新生成后入口一致。
+- 四组合紧凑纵向图扩展至总体+7个500FX窗口（末窗27），8张1800×1100图均嵌入030002.d；同页统一四组y范围和x轴，原32图数据数组不变，逐图源ID/复制一致核对通过，无算法重算。
+- 用户不采用叠图：Memo030002.d比较改为1列×4行紧凑纵向总览（每幅绘图区190像素），相同价格/时间尺度，41/45/59/61段；压缩已有PNG，无算法重算。旧叠图保留于artifacts及memo备份。
+- XD030-B四组合全量隔离试算完成：Bi强/XD强41段、强/弱45、弱/强59、弱/弱61，均FX0→2989；32PNG/HTML全覆盖。346600候选双归约对照、263849资格检查、1223089边、反向DAG目标及6pytest通过。四组共同出现FX2141→2978超长第二序列派生段（143/199笔），内部边界疑点未解决，不判定算法目标成功。030已附结果/图/支配归并说明。[任务](mas/tasks/20261111-memo030-four.md)。
+- Memo030002.a/b/d/e/f已与13阶段002.c同步：明确支持段无需递归确认、精确支持区间、独立分支及事件顺序、类别并列顺序、稳定证据输出；伪代码展开Shape/证书/构图/DP/回溯。001、002.c及003以后完整保留；未实现重算。
+- 用户要求增量细化且可由其他agent复现：030002.c扩展为13阶段执行树，明确索引/Shape/包含/证书比较与水位/支持区间/父派生/全部兼容边/DP循环与失败路径；仅改002.c并完整备份，其他章节保留。新树未实现，复杂事件枚举与原文完备性仍需验证。
+- 用户授权探索7a/7b新算法：030002已重写为XD030-B提案，完整备份后保留001原样；xd_mode独立于bi_distance_mode，主/派生/证据支持段统一检查所选模式，重新识别建图后DP，不能后删路线。旧全量XD030-A图移附录D，不作为新验证；新实现/四组合重算尚未执行。[任务](mas/tasks/20261111-memo030-7ab-design.md)。
+- Memo030001版本二新增用户指定7a强/7b弱线段条件：强要求终点较第一笔末端沿段方向严格更极端（上>、下<），弱无此附加限制，其余1–6保持；与笔距离strong/weak独立。旧全量图尚未按此新条件重算。
+- Memo031已完成030-E共享线段实现，默认weak Bi＋weak XD；439回归/14定向、六新模块96%覆盖、strict mypy/Black/Ruff通过。400独立进程比较含全部best/prev摘要；10,000完整OHLCV×四组合独立验证，真实100/1000/3000FX四组合各3次，完整89/79/57/53段。224PNG/HTML全部坐标/覆盖核对并经38联系图逐页目视检查，另56四组合比较图。029/030及raw未改；现有log冲突保留。[报告与接口](docs/memo/memoWX_031_xianduanFamily.md)、[执行记录](mas/tasks/20261111-memo031-implementation.md)。
+- Memo030验证已用全量替换500FX结果：10060raw/6200merged/3027FX，strong480Bi→58XD到FX2892，weak682Bi→89XD到FX2933。173300局部候选独立对照、反向DAG目标及240087边重建核对通过。每档总览+7窗（每窗500FX、末窗27），共16PNG/HTML全覆盖；内部完成边界/复杂吸收/上下文完备性仍待确认。[任务](mas/tasks/20261111-memo030-full.md)。
 - Memo030002.a–f按用户要求参考029完成DP设计稿：候选确认→上下文状态图→best/prev→回溯，最早起点/最晚已确认终点/最多段。确认包含/同价/触点/复杂延续判定表及状态压缩未完成，不是可直接执行的完整算法；未复用旧XD-P1验收。修正此前引用替换误把001公式b[2]改为b[1]的抄写错误；KWX原件未改。
 - Memo030004新增重新定义线段的可复用提示词：原文逐项核对、区分基本定义与确认规则、分别审查端点类型/价格/极值；仅保存提示词，未执行重定义或替换001。
 - Memo030001保留KWX009001三个版本及说明，以KWX确定稿（版本一）为主定义；原AI定义已完整移至附录C留档，不再放在001。
@@ -58,7 +75,8 @@ Bring KWX and WX together for a three-day Chan theory feasibility sprint, establ
 - [Memo 005](docs/memo/memoWX_005_informationWorkflow.md) covers research and evidence; [memo 006](docs/memo/memoWX_006_memoWritingGuide.md) is the authoritative writing guide.
 - [logXW.md](logXW.md) records repository events; every repository update must also be logged.
 ## Current status
-The selected TDS_CN KWX001–004 memos and 44,375-row CC ChanTable L1 batch are available on GitHub main. See the [publication record](mas/tasks/20261111-publish-kwx001-004.md) and [batch verification](artifacts/mas/cc-chantable-20261111-134106-27c20343/verification.json).
+Memo031已完成XD030-E领域类、weak/weak默认、表/图/持久化和全部计划验收。下一步用户审阅[memo031](docs/memo/memoWX_031_xianduanFamily.md)及[默认图集](artifacts/mas/xianduan-family/run031/charts/bi-weak_xd-weak/index.html)。原文复杂情形完备性未证明；永久确认/续读不在本轮合同内。已有logXW合并冲突保留。
+
 
 Memo028已按029固定快照DP执行，009两类合同及027报告结构补齐。425回归／39定向通过，3个Bi模块合计96%覆盖，strict mypy／Black／Ruff通过。10,000随机原始OHLCV×strong/weak经既有merged/FX处理，逐端点独立参考及每档5,377短输入穷举无差异；空路线单列。真实CC100/1000/3000FX两档各3次，全部best/prev一致。完整10060raw→6200merged→3027FX：strong480／weak682，均FX0→3026，仅首尾各1合并单元未覆盖。112页PNG/HTML全部生成、机器覆盖核对并逐页目视检查；页边FX裁切已修复，密集文字可交互放大。无永久确认／缓存续读；029未修改。证据[执行任务](mas/tasks/20261111-memo028-dp029.md)、[图集](artifacts/mas/bi-dp029/index.html)。下一步：用户审阅；算法目标改变先改029。
 

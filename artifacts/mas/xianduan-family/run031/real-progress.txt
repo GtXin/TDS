@@ -1,0 +1,233 @@
+stage 100 weak weak 0 Bi 23
+core 0.000726790982298553
+factory 0.007379334012512118
+reference PASS
+stage 100 weak weak 1 Bi 23
+core 0.0005847919965162873
+factory 0.007465499977115542
+reference PASS
+stage 100 weak weak 2 Bi 23
+core 0.0005717920139431953
+factory 0.007471832970622927
+reference PASS
+timing 100 weak weak 2
+stage 100 weak strong 0 Bi 23
+core 0.0005416669882833958
+factory 0.007657125010155141
+reference PASS
+stage 100 weak strong 1 Bi 23
+core 0.00048474996583536267
+factory 0.007478917017579079
+reference PASS
+stage 100 weak strong 2 Bi 23
+core 0.0004848340176977217
+factory 0.007327375002205372
+reference PASS
+timing 100 weak strong 1
+stage 100 strong weak 0 Bi 17
+core 0.0003231670125387609
+factory 0.0069872079766355455
+reference PASS
+stage 100 strong weak 1 Bi 17
+core 0.0003506669891066849
+factory 0.007087625039275736
+reference PASS
+stage 100 strong weak 2 Bi 17
+core 0.00032350001856684685
+factory 0.007075708010233939
+reference PASS
+timing 100 strong weak 1
+stage 100 strong strong 0 Bi 17
+core 0.00032583397114649415
+factory 0.007205791014712304
+reference PASS
+stage 100 strong strong 1 Bi 17
+core 0.00029200001154094934
+factory 0.006979792029596865
+reference PASS
+stage 100 strong strong 2 Bi 17
+core 0.00027295900508761406
+factory 0.007105875003617257
+reference PASS
+timing 100 strong strong 1
+stage 1000 weak weak 0 Bi 239
+core 0.25313687504967675
+factory 0.3178874169825576
+reference PASS
+stage 1000 weak weak 1 Bi 239
+core 0.2765557499951683
+factory 0.32260312500875443
+reference PASS
+stage 1000 weak weak 2 Bi 239
+core 0.2537286660517566
+factory 0.32516054197913036
+reference PASS
+timing 1000 weak weak 28
+stage 1000 weak strong 0 Bi 239
+core 0.16871212498517707
+factory 0.24492041702615097
+reference PASS
+stage 1000 weak strong 1 Bi 239
+core 0.19280033296672627
+factory 0.2286465840297751
+reference PASS
+stage 1000 weak strong 2 Bi 239
+core 0.17368533299304545
+factory 0.241240875038784
+reference PASS
+timing 1000 weak strong 25
+stage 1000 strong weak 0 Bi 167
+core 0.07878187496680766
+factory 0.1813733340241015
+reference PASS
+stage 1000 strong weak 1 Bi 167
+core 0.07782133301952854
+factory 0.1468674999778159
+reference PASS
+stage 1000 strong weak 2 Bi 167
+core 0.10104587499517947
+factory 0.14800887502497062
+reference PASS
+timing 1000 strong weak 20
+stage 1000 strong strong 0 Bi 167
+core 0.0533125419751741
+factory 0.13893008301965892
+reference PASS
+stage 1000 strong strong 1 Bi 167
+core 0.06861083302646875
+factory 0.13005341700045392
+reference PASS
+stage 1000 strong strong 2 Bi 167
+core 0.05654250003863126
+factory 0.12788329197792336
+reference PASS
+timing 1000 strong strong 18
+stage 3000 weak weak 0 Bi 677
+core 9.942819292016793
+factory 9.647163000016008
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 78 in suffix
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 80 in <genexpr>
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 80 in reference_dp
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 53 in check
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/real.py", line 29 in <module>
+reference PASS
+stage 3000 weak weak 1 Bi 677
+core 9.577794457960408
+factory 11.23017604200868
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/reference_events.py", line 32 in <genexpr>
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/reference_events.py", line 31 in norm
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/reference_events.py", line 70 in candidates
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 63 in <dictcomp>
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 63 in reference_dp
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 53 in check
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/real.py", line 29 in <module>
+reference PASS
+stage 3000 weak weak 2 Bi 677
+core 8.675643958966248
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_select.py", line 88 in save
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_select.py", line 130 in solve
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 45 in recognize
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 146 in derive_from
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/real.py", line 29 in <module>
+factory 11.204610333021265
+reference PASS
+timing 3000 weak weak 89
+stage 3000 weak strong 0 Bi 677
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 45 in recognize
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/real.py", line 29 in <module>
+core 6.930808041011915
+factory 5.9794689590344205
+reference PASS
+stage 3000 weak strong 1 Bi 677
+core 5.214044541993644
+factory 6.791849792003632
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 77 in suffix
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 77 in suffix
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 80 in <genexpr>
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 80 in reference_dp
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 53 in check
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/real.py", line 29 in <module>
+reference PASS
+stage 3000 weak strong 2 Bi 677
+core 5.263177708955482
+factory 6.6806833750451915
+reference PASS
+timing 3000 weak strong 79
+stage 3000 strong weak 0 Bi 476
+core 2.611211708979681
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_events.py", line 59 in anchor
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_events.py", line 104 in candidates
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 30 in recognize
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 146 in derive_from
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/real.py", line 29 in <module>
+factory 2.8823752910248004
+reference PASS
+stage 3000 strong weak 1 Bi 476
+core 2.979877249978017
+factory 3.025698082987219
+reference PASS
+stage 3000 strong weak 2 Bi 476
+core 2.8987199169932865
+factory 3.054859541996848
+reference PASS
+timing 3000 strong weak 57
+stage 3000 strong strong 0 Bi 476
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_select.py", line 89 in save
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_select.py", line 129 in solve
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 45 in recognize
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/real.py", line 29 in <module>
+core 1.8488593329675496
+factory 2.066735125030391
+reference PASS
+stage 3000 strong strong 1 Bi 476
+core 2.0863132920349017
+factory 2.0633479169919156
+reference PASS
+stage 3000 strong strong 2 Bi 476
+core 2.0693948750267737
+factory 2.0199859169661067
+reference PASS
+timing 3000 strong strong 53
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/memo021-1000fx/independent_validate.py", line 71 in reduced
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/reference_events.py", line 33 in norm
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/reference_events.py", line 70 in candidates
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 63 in <dictcomp>
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 63 in reference_dp
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 53 in check
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/real.py", line 38 in <module>
+full bi-weak_xd-weak 89
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/memo021-1000fx/independent_validate.py", line 73 in reduced
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/reference_events.py", line 33 in norm
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/reference_events.py", line 70 in candidates
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 63 in <dictcomp>
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 63 in reference_dp
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 53 in check
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/real.py", line 38 in <module>
+full bi-weak_xd-strong 79
+full bi-strong_xd-weak 57
+Timeout (0:00:45)!
+Thread 0x00000001f6bf2180 (most recent call first):
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 77 in suffix
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 80 in <genexpr>
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 80 in reference_dp
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/validate.py", line 53 in check
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/real.py", line 38 in <module>
+full bi-strong_xd-strong 53

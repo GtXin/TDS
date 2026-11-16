@@ -28,7 +28,7 @@ def test_memo029_example_and_per_endpoint_optimum():
  assert route==(0,1,2,3,4) and best==(0,1,2,3,4) and prev==(None,0,1,2,3)
  assert oracle.solve(f,4,True)==(route,best,prev)
  assert s.unresolved_ranges()==((0,1),(18,19))
- assert BiSeries.derive_from(f,{},'029').items==s.items
+ assert BiSeries.derive_from(f,{},'029').items==series('weak').items
 
 @pytest.mark.parametrize('mode,gap',[('strong',4),('weak',3)])
 @pytest.mark.parametrize('values',[[1],[1,2],[1,2,1],[0,5,0,1,2,3,4,5,6,5,4,3,2,1,0,1],[8,9,6,4,2,0,2,4,6,7,3,-1,1,3,5,8,5,2,0,-2,-1],[1,0,2,4,2,0,2,4,2,0,1]])

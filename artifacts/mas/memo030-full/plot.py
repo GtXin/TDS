@@ -6,6 +6,7 @@ import argparse
 import html
 import json
 from collections import Counter
+from itertools import pairwise
 from pathlib import Path
 from time import perf_counter
 from typing import Any
@@ -343,8 +344,14 @@ def main() -> None:
         selected = results["modes"][mode]["selected"]
         target = CHARTS / mode
         target.mkdir(exist_ok=True)
-        boundaries = [0] + [fractals[i]["merged_center"] for i in range(500, len(fractals), 500)] + [len(bars["merged"])]
-        windows = [(0, len(bars["merged"]), True)] + [(a,b,False) for a,b in zip(boundaries,boundaries[1:])]
+        boundaries = (
+            [0]
+            + [fractals[i]["merged_center"] for i in range(500, len(fractals), 500)]
+            + [len(bars["merged"])]
+        )
+        windows = [(0, len(bars["merged"]), True)] + [
+            (a, b, False) for a, b in pairwise(boundaries)
+        ]
         rows = []
         for page, (a, b, overview) in enumerate(windows):
             stem = "overview" if overview else f"detail-{page:03d}"

@@ -1,0 +1,23 @@
+timing 100 weak weak 2
+timing 100 weak strong 1
+timing 100 strong weak 1
+timing 100 strong strong 1
+timing 1000 weak weak 28
+timing 1000 weak strong 25
+timing 1000 strong weak 20
+timing 1000 strong strong 18
+Traceback (most recent call last):
+  File "/Users/coder/Public/EngineGit/TDS/artifacts/mas/xianduan-family/run031/real.py", line 25, in <module>
+    t=time.perf_counter();mm=MergedKlineSeries.derive_from(prefix,{'initialization':'UP'},'memo015');t1=time.perf_counter();ff=FenxingSeries.derive_from(mm,{},'memo019');t2=time.perf_counter();bi=BiSeries.derive_from(ff,{'distance_mode':bm},'memo029');t3=time.perf_counter();core=recognize(XianduanSeries._prices(bi),xm);t4=time.perf_counter();s=XianduanSeries.derive_from(bi,{'xd_mode':xm});t5=time.perf_counter();check(s)
+                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 29, in recognize
+    for w in events(a, b):
+             ^^^^^^^^^^^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_events.py", line 81, in candidates
+    continue
+           ^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_events.py", line 36, in stale
+    
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_events.py", line 36, in <genexpr>
+    
+KeyboardInterrupt

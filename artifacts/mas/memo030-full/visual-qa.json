@@ -1,0 +1,12 @@
+{
+  "reviewed_contact_sheets": [
+    "contact-01.png",
+    "contact-02.png",
+    "contact-03.png"
+  ],
+  "pages_reviewed": 16,
+  "full_resolution": [
+    "weak/overview.png"
+  ],
+  "observed": "Source geometry and open tail displayed. All detail pages present. Dense labels in500FX viewports; HTML zoom/hover available. Long segments crossing internal extremes retained by existing policy, semantic completeness not accepted."
+}

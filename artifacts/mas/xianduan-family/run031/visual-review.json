@@ -1,0 +1,58 @@
+{
+  "individual_pages": 224,
+  "contact_sheets_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "all_individual_pages_reviewed_via_contacts": true,
+  "additional_full_resolution": [
+    "bi-weak_xd-weak/page-055.png"
+  ],
+  "compact_examples_inspected": [
+    "comparison/compact-page-001.png",
+    "comparison/compact-page-054.png"
+  ],
+  "findings": [
+    "Source geometry and page-to-page segments continuous; actual evidence tail dashed.",
+    "Dense FX text may overlap; HTML zoom/hover retains every source ID.",
+    "Native x label corrected to window-relative index; all224 rerendered; figure geometry unchanged; final tail page inspected."
+  ],
+  "machine_evidence": "atlas-check.json and charts/render.json",
+  "unreviewed_individual_pages": 0
+}

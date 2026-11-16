@@ -1,0 +1,1350 @@
+{
+  "pages": 224,
+  "checks": [
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 1,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 2,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 3,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 4,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 5,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 6,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 7,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 8,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 9,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 10,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 11,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 12,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 13,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 14,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 15,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 16,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 17,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 18,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 19,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 20,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 21,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 22,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 23,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 24,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 25,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 26,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 27,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 28,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 29,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 30,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 31,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 32,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 33,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 34,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 35,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 36,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 37,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 38,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 39,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 40,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 41,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 42,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 43,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 44,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 45,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 46,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 47,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 48,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 49,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 50,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 51,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 52,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 53,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 54,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 55,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-weak",
+      "page": 56,
+      "raw_count": 160,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 1,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 2,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 3,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 4,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 5,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 6,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 7,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 8,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 9,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 10,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 11,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 12,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 13,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 14,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 15,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 16,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 17,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 18,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 19,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 20,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 21,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 22,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 23,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 24,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 25,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 26,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 27,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 28,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 29,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 30,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 31,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 32,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 33,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 34,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 35,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 36,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 37,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 38,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 39,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 40,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 41,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 42,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 43,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 44,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 45,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 46,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 47,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 48,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 49,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 50,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 51,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 52,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 53,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 54,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 55,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-weak_xd-strong",
+      "page": 56,
+      "raw_count": 160,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 1,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 2,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 3,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 4,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 5,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 6,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 7,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 8,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 9,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 10,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 11,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 12,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 13,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 14,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 15,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 16,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 17,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 18,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 19,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 20,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 21,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 22,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 23,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 24,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 25,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 26,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 27,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 28,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 29,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 30,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 31,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 32,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 33,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 34,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 35,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 36,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 37,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 38,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 39,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 40,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 41,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 42,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 43,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 44,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 45,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 46,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 47,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 48,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 49,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 50,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 51,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 52,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 53,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 54,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 55,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-weak",
+      "page": 56,
+      "raw_count": 160,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 1,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 2,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 3,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 4,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 5,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 6,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 7,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 8,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 9,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 10,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 11,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 12,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 13,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 14,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 15,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 16,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 17,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 18,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 19,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 20,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 21,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 22,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 23,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 24,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 25,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 26,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 27,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 28,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 29,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 30,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 31,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 32,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 33,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 34,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 35,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 36,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 37,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 38,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 39,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 40,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 41,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 42,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 43,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 44,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 45,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 46,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 47,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 48,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 49,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 50,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 51,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 52,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 53,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 54,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 55,
+      "raw_count": 200,
+      "all_coordinates_pass": true
+    },
+    {
+      "key": "bi-strong_xd-strong",
+      "page": 56,
+      "raw_count": 160,
+      "all_coordinates_pass": true
+    }
+  ],
+  "all_raw_positions_covered": true
+}

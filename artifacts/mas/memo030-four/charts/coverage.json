@@ -1,0 +1,60 @@
+{
+  "modes": {
+    "bi-strong_xd-strong": {
+      "overview": 1,
+      "detail_pages": 7,
+      "raw_coverage": 10060,
+      "merged_coverage": 6200,
+      "fractal_coverage": 3027,
+      "bi_coverage": 480,
+      "xd_coverage": 41,
+      "xd_roles": {
+        "primary": 35,
+        "derived": 6
+      }
+    },
+    "bi-strong_xd-weak": {
+      "overview": 1,
+      "detail_pages": 7,
+      "raw_coverage": 10060,
+      "merged_coverage": 6200,
+      "fractal_coverage": 3027,
+      "bi_coverage": 480,
+      "xd_coverage": 45,
+      "xd_roles": {
+        "primary": 39,
+        "derived": 6
+      }
+    },
+    "bi-weak_xd-strong": {
+      "overview": 1,
+      "detail_pages": 7,
+      "raw_coverage": 10060,
+      "merged_coverage": 6200,
+      "fractal_coverage": 3027,
+      "bi_coverage": 682,
+      "xd_coverage": 59,
+      "xd_roles": {
+        "primary": 50,
+        "derived": 9
+      }
+    },
+    "bi-weak_xd-weak": {
+      "overview": 1,
+      "detail_pages": 7,
+      "raw_coverage": 10060,
+      "merged_coverage": 6200,
+      "fractal_coverage": 3027,
+      "bi_coverage": 682,
+      "xd_coverage": 61,
+      "xd_roles": {
+        "primary": 54,
+        "derived": 7
+      }
+    }
+  },
+  "seconds": 2.128895375004504,
+  "source_results": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/memo030-four/results.json",
+  "png_rendered": false,
+  "visual_qa": "pending"
+}

@@ -84,9 +84,9 @@ class BiSeries:
 
     @staticmethod
     def _resolve_distance(mode: Any) -> tuple[str, int]:
-        if mode is None or mode == "strong":
+        if mode == "strong":
             return "strong", 4
-        if mode == "weak":
+        if mode is None or mode == "weak":
             return "weak", 3
         raise ValueError("distance_mode must be strong/weak")
 

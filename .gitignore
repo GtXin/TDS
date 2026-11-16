@@ -6,3 +6,7 @@ __pycache__/
 .ruff_cache/
 .coverage
 htmlcov/
+
+# Large generated originals; lossless compressed copies are tracked.
+/artifacts/mas/memo030-full/results.json
+/artifacts/mas/memo030-four/results.json
