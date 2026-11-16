@@ -1,0 +1,179 @@
+{
+  "baseline": "artifacts\\mas\\cc-jm-1m-chantable-v2-through-zoushi\\real_delivery",
+  "view": "recursive_l0_d1",
+  "symbol": "dce:KQ.m@jm",
+  "period": "1m",
+  "query_start_utc": "2026-04-27T05:32:00Z",
+  "query_end_utc_exclusive": "2026-11-09T05:36:01Z",
+  "first_utc": "2026-04-27T05:32:00+00:00",
+  "last_utc": "2026-11-09T05:36:00+00:00",
+  "rows": 44375,
+  "columns": 41,
+  "checked_output_hashes": {
+    "old": 14,
+    "new": 7
+  },
+  "raw_input_sha256": {
+    "old": "2fd090eb221088e6c7533609f83a24d62ae61cc5ca0a062e5f56069e0b591abc",
+    "new": "aebfe6ad5fe5b33107f9d444ff605d258b24e95e3006051c4837498f4a936c30"
+  },
+  "memo_sha256_used_for_db_run": "cc5477cc4b52b23550b095da04fb3ffeefc566b1a17b3c6dfff447d6cd57f390",
+  "raw_lexical_differences_by_field": {
+    "datetime_utc": 44375,
+    "low": 1,
+    "volume": 1
+  },
+  "raw_value_differences_by_field": {
+    "low": [
+      {
+        "raw_index": 44374,
+        "timestamp": "2026-11-09T05:36:00Z",
+        "old": "1396.5",
+        "new": "1396.0"
+      }
+    ],
+    "volume": [
+      {
+        "raw_index": 44374,
+        "timestamp": "2026-11-09T05:36:00Z",
+        "old": "628.0",
+        "new": "725.0"
+      }
+    ]
+  },
+  "chantable_differing_cells_by_column": {
+    "source": 44375,
+    "low": 1,
+    "volume": 1
+  },
+  "chantable_source_label": {
+    "old": "CC local market database snapshot",
+    "new": "CC DuckDB klines.duckdb"
+  },
+  "selected_feature_counts": {
+    "MK": 21424,
+    "FX": 11184,
+    "BI": 1802,
+    "XD": 217,
+    "ZS": 17,
+    "ZOU": 7
+  },
+  "unavailable_columns_all_na": [
+    "bc_ids",
+    "bc_kind",
+    "bsp_ids",
+    "bsp_side",
+    "bsp_category"
+  ],
+  "native_value_differences_by_path": {
+    "native/merged/[]/low": 1
+  },
+  "changed_merged_records": [
+    {
+      "old": {
+        "period": "1m",
+        "dir": "down",
+        "high": 1398.0,
+        "low": 1396.5,
+        "start_ts": 1794202560,
+        "end_ts": 1794202560,
+        "start_index": 44374,
+        "end_index": 44374,
+        "trace": {
+          "algo_card_id": "kline-merge-v1",
+          "rule_id": "merge.dir.down",
+          "profile_id": "default",
+          "config_hash": null,
+          "source_from_ts": 1794202560,
+          "source_to_ts": 1794202560,
+          "merged_from_index": null,
+          "merged_to_index": null,
+          "dep_to_index": null,
+          "freeze_state": null,
+          "pen_break_at": null,
+          "confirmation_ts": null,
+          "frozen_by": ""
+        },
+        "id": "mk-1794202560-1794202560"
+      },
+      "new": {
+        "period": "1m",
+        "dir": "down",
+        "high": 1398.0,
+        "low": 1396.0,
+        "start_ts": 1794202560,
+        "end_ts": 1794202560,
+        "start_index": 44374,
+        "end_index": 44374,
+        "trace": {
+          "algo_card_id": "kline-merge-v1",
+          "rule_id": "merge.dir.down",
+          "profile_id": "default",
+          "config_hash": null,
+          "source_from_ts": 1794202560,
+          "source_to_ts": 1794202560,
+          "merged_from_index": null,
+          "merged_to_index": null,
+          "dep_to_index": null,
+          "freeze_state": null,
+          "pen_break_at": null,
+          "confirmation_ts": null,
+          "frozen_by": ""
+        },
+        "id": "mk-1794202560-1794202560"
+      }
+    }
+  ],
+  "feature_differences_by_path": {
+    "features/source_snapshot": 1,
+    "features/raw_cells_sha256": 1,
+    "features/context/source_snapshot": 1,
+    "features/context/source": 1,
+    "features/series/[]/source_snapshot": 7,
+    "features/series/[]/records/[]/details/cc_native/low": 1,
+    "features/series/[]/records/[]/details/low": 1
+  },
+  "import_report_differences_by_path": {
+    "import/context/source_snapshot": 1,
+    "import/context/source": 1
+  },
+  "controlled_replay": {
+    "source": "data\\raw\\cc\\jm-1m-20261109-real\\klines.csv",
+    "source_label": "CC local market database snapshot",
+    "native_and_states_equal": true,
+    "chantable_rows_equal_all_columns": true,
+    "feature_dict_equal": true,
+    "non_deterministic_native_metadata_excluded": [
+      "created_utc",
+      "capture_seconds"
+    ]
+  },
+  "additional_l2_comparison": {
+    "view": "recursive_l1_d1",
+    "method": "Current native archive projected in memory and compared to old L2 CSV and sidecars",
+    "rows": 44375,
+    "columns": 41,
+    "differing_cells_by_column": {
+      "source": 44375,
+      "low": 1,
+      "volume": 1
+    },
+    "selected_feature_counts": {
+      "MK": 21424,
+      "FX": 11184,
+      "BI": 1802,
+      "XD": 217,
+      "ZS": 2,
+      "ZOU": 1
+    },
+    "feature_differences_by_path": {
+      "features/source_snapshot": 1,
+      "features/raw_cells_sha256": 1,
+      "features/context/source_snapshot": 1,
+      "features/context/source": 1,
+      "features/series/[]/source_snapshot": 7,
+      "features/series/[]/records/[]/details/cc_native/low": 1,
+      "features/series/[]/records/[]/details/low": 1
+    }
+  }
+}
