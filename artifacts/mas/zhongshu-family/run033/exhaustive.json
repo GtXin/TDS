@@ -1,0 +1,13 @@
+{
+  "domain": "every strict alternating endpoint path with 1..8 vertices in {0,1,2,3}; actual range=endpoint range",
+  "counts": {
+    "paths": 2852,
+    "centers": 2866,
+    "closed": 200,
+    "open": 2666,
+    "zero": 276,
+    "crossings": 3066
+  },
+  "independent_all_seed_exit_enumeration": "PASS",
+  "exact_rational_crossings": "PASS"
+}

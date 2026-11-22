@@ -1,0 +1,18 @@
+{
+  "experiments/zhongshu033/audit.py": "5fa9fc3bc010160fc2a7fefbae5f4d4ecdc7fca9a977504c77e2b6f02dc45596",
+  "experiments/zhongshu033/charts.py": "f40882ded70411fdec5c6f8d3449c38c4efa8155b1663ebde6e08e101dc29f13",
+  "experiments/zhongshu033/render.py": "06cc154e98ff1713c3241ee1505f93579d13b6bc83ff9dadf8c66c242b35dd86",
+  "experiments/zhongshu033/validate.py": "940992befa49a735c4920000d89c683a5531600ede627a3aa0f170b36b9abc38",
+  "experiments/zhongshu033/exhaustive.py": "8a1bedb43add9341a866a01c3f852279f0729d06469a79086613b441daddc1a1",
+  "experiments/zhongshu033/usage.py": "0bf37a0034cebfc9694656e838ca30581056866577ae2ef5aab7fee659cfdf79",
+  "experiments/zhongshu033/long_mc.py": "044b06cab1f2b5fcf34039613eeec007946c0e84fa6e8b1096d6d32bc47c526f",
+  "experiments/zhongshu033/compare.py": "6f991f79d6f49476dbcadc03c5b5cdd19d378fa7072ccdd90dba8fcfdd576c76",
+  "src/chanlab/algo/zhongshu.py": "25e77bb5ce869f258fa5b8c25d8d3bf1e9d6519551a81475fda345fe2456462b",
+  "src/chanlab/algo/_zhongshu_scan.py": "dd00c401bfa468ce057e43c11bd319e1c5364aceb45b035a17f8454e49caa091",
+  "src/chanlab/algo/_zhongshu_input.py": "f9468ba6f844d220e87a28e5d777394dda4e700c93b3185c6cdd6746b686ebbe",
+  "src/chanlab/data/zhongshu_table.py": "b4b5dc463c77c735cec4dd9f1e40ca151d67eff4e485711b17be8a99c42c0ba8",
+  "src/chanlab/data/feature_table.py": "aa4756dec8a8e96f95b8728466bd7b972395156a5b40f1bf9fd29dd6876232fd",
+  "src/chanlab/algo/chan_table.py": "4f3ec48e636da2267621f8c1639a0cf10b661df72180ae21e9582abe771046e7",
+  "src/chanlab/visualization/zhongshu_plot.py": "854012c30c3fb30fdc74cb7aa99d426759c5996f2e0dd10912985e44830143e0",
+  "tests/test_zhongshu.py": "e9feb959c7f4c823c2168ec108eecab17654c1c85e8c9acdadd5d2d67a32193c"
+}

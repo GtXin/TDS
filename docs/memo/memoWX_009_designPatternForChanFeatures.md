@@ -283,48 +283,44 @@ Shared derived-series behavior (002.e, 002.g, 002.i, 002.k, 002.m, 002.o): facto
 | `to_dataframe()` | Return a separate compact record DataFrame retaining integer IDs, source/version context and confirmation times. |
 | `plot(**options)` | Delegate plotting of these features over source price data to a helper and return its chart. |
 ### 002.l — Zhongshu
+当前实现合同见[memo033](memoWX_033_zhongshuFamily.md)，识别规则为[memo022](memoWX_022_Chan_zhongshu.md)001／002。仅从已确认线段快照识别线段中枢；不将线段自动等同于所有层级的已完成走势类型。
+
 | Member | Type | Meaning |
 |---|---|---|
-| `id` | `int` | Numeric identifier within this feature series/result version; display prefix in001.e. |
-| `level` | `str` | Chan level of the center; distinct from bar period. |
-| `lower` | `float` | Lower boundary of the center overlap. |
-| `upper` | `float` | Upper boundary of the center overlap. |
-| `member_indices` | `tuple[int, ...]` | Positions of qualifying completed lower-level movements in the source series. |
-| `start_raw_index` | `int` | First time-axis anchor in the original raw series. |
-| `end_raw_index` | `int` | Last time-axis anchor in the original raw series, included. |
-| `status` | `str` | Calculation or confirmation state under the selected rules. |
-| `confirmed_at` | `Optional[datetime]` | Source evidence time of confirmation; None while unconfirmed. |
+| `id` | `int` | 结果内整数ID，与序列位置分开；显示前缀ZS。 |
+| `level` | `str` | 结构级别标签，默认segment；不是K线周期或递归级别证明。 |
+| `lower`, `upper` | `float` | 初始三条线段实际范围的固定共同区间；允许相等。 |
+| `member_indices` | `tuple[int, ...]` | 确切源XianduanSeries中的连续位置；含终线段、不含确认回抽，开放时至已观测末段。 |
+| `start_raw_index`, `end_raw_index` | `int` | 成员范围首末原始端点锚点，末端包含；开放时end是观测范围，不是最终终点。 |
+| `status` | `str` | closed或open；矩形能否定位单独由geometry描述。 |
+| `confirmed_at` | `datetime \| None` | 结束所需源证据最大UTC时间；开放为空。 |
+| `geometry` | `Center` | 不可变算法值：s/e/q、observed_stop、核心、形成／结束证据时间、左右Crossing和诊断。Crossing保留分数原始位置及插值UTC时间；不向整数锚点取整。 |
 
-**Proposed methods**
-
-| Method | Purpose |
-|---|---|
-| `__init__(...)` | Initialize immutable fields and automatically call local `validate()`. |
-| `validate()` | Check integer ID, level, finite ordered overlap bounds, nonnegative member indices, ordered raw extent and status/UTC confirmation consistency. |
+`__init__`自动调用局部`validate()`，检查ID、范围、连续成员、状态／证据和几何一致性；源合同及最早顺序由所属series重放验证。整数锚点用于原始表成员映射；矩形竖边使用geometry交点，两者不能混用。
 ### 002.m — ZhongshuSeries
 | Member | Type | Meaning |
 |---|---|---|
-| `level` | `str` | Chan level represented by this collection; distinct from bar period. |
-| `source_series` | rule-qualified series | Reference to qualifying completed lower-level movements. |
-| `items` | `tuple[Zhongshu, ...]` | Calculated records in time order. |
-| `config`, `rule_tree_ref`, `trace`, `trace_by_point` | See 002.e | Shared calculation settings, rule-tree reference and decision tracing. |
-
-**Proposed methods**
+| `level` | `str` | 与各记录一致的结构标签。 |
+| `source_series` | `XianduanSeries` | 确切已确认源线段及Bi→FX→Merged→raw链；未确认tail不进入中枢输入。 |
+| `items` | `tuple[Zhongshu, ...]` | 全部顺序结果，含至多一个开放中枢及无法定位的结构。 |
+| `config` | immutable mapping | 当前为空；不提供改变022规则的开关。 |
+| `rule_tree_ref` | `str` | 默认memo022:001,002:sequential-rectangle。 |
+| `trace` | `tuple[Decision, ...]` | 全部seed／ending判定，含失败滑窗和开放尾部。 |
+| `trace_by_point` | `tuple[tuple[int, ...], ...]` | 每个中枢的成立及结束扫描记录索引；完整trace另保留未形成判定。 |
+| `unformed` | `tuple[tuple[int,int], ...]` | 未形成中枢的半开源线段范围，与开放items区别。 |
 
 | Method | Purpose |
 |---|---|
-| `__init__(...)` | Retain source references, immutable results, settings and traces; automatically call `validate()`. |
-| `validate()` | Validate source/center records, unique integer IDs, level, qualifying members, overlap bounds, raw anchors and trace alignment. |
-| `derive_from(source_series, level, config, rule_tree_ref)` | Class method: derive centers at the selected level from rule-qualified completed lower-level movements. |
-| `__len__()` | Return the number of Zhongshu records: `len(series)`. |
-| `__getitem__(key)` | Return one Zhongshu by position or a tuple of records for a slice. |
-| `__iter__()` | Iterate over `items` in stored order. |
-| `get_by_id(feature_id)` | Return the Zhongshu with this integer ID; raise `KeyError` if absent. |
-| `explain(point_index)` | Return the applied-rule explanation for this result position using its recorded trace and versioned rule tree. |
-| `from_chan_table(table, series_key)` | Class method: return the exact registered series for this key through the adapter; check class/result context. |
-| `to_chan_table(table, series_key)` | Return a new ChanTable view registering this series against the same raw snapshot; preserve other features through the adapter. |
-| `to_dataframe()` | Return a separate compact record DataFrame retaining integer IDs, source/version context and confirmation times. |
-| `plot(**options)` | Delegate plotting of these features over source price data to a helper and return its chart. |
+| `derive_from(source_series, level="segment", config=None, rule_tree_ref=...)` | 固定快照重算，复用022共享扫描器。 |
+| `validate()` | 验收上游并重放完整规则；检查记录、顺序、成员、几何、所有判定和未形成范围，拒绝遗漏结果。 |
+| `len / iter / getitem / get_by_id` | 位置访问／切片元组及结果内整数ID查询，缺ID抛KeyError。 |
+| `explain(point_index)` | 返回规则、源ID、确认位置、判定、上游模式和未形成范围。 |
+| `unresolved_ranges()` | 返回unformed；开放中枢仍在items。 |
+| `to_chan_table / from_chan_table` | 同raw快照独立key注册与查询，自动保存完整上游链。 |
+| `to_dataframe()` | 独立10字段记录表，attrs保留级别、规则、配置和完整源指纹。 |
+| `plot(**options)` | 源图叠加可定位矩形／零高度线；开放无固定右边，缺交点显示诊断。支持raw窗口和日历间距。 |
+
+持久化采用`chanlab.zhongshu_features.v1`，包含完整记录／几何／判定及上游指纹。ChanTable的zs_ids按成员整数锚点闭区间映射，zs_start_ids及zs_lower/upper在首锚点标记；zs_end_ids仅标已结束结构。分数交点保留在context，不创造新raw行。多结果按key隔离，固定CSV列显示第一份注册结果。
 ### 002.n — Zoushi
 | Member | Type | Meaning |
 |---|---|---|

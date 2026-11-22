@@ -1,0 +1,56 @@
+{
+  "reviewed": [
+    {
+      "path": "artifacts/mas/memo022-zs/charts/contacts/sheet-01.png",
+      "sha256": "3d69221eb6932bc318e962509ff438cd9e2baa9d6b6d4d4c6b41947534b7c8ee"
+    },
+    {
+      "path": "artifacts/mas/memo022-zs/charts/contacts/sheet-02.png",
+      "sha256": "87575be7258206975cc6e4831ab931ab947367917b9ed2c8fcb5f4f41515e525"
+    },
+    {
+      "path": "artifacts/mas/memo022-zs/charts/contacts/sheet-03.png",
+      "sha256": "d76e431e5c7816e258b902d99a5f53ebec4107a78c6632fe6f0bc0bdf6a83e1f"
+    },
+    {
+      "path": "artifacts/mas/memo022-zs/charts/contacts/sheet-04.png",
+      "sha256": "7fe6dbf90a827ab4719932a402d249ba4e1d4f4f30c9e8c87d2e7f133b3a7607"
+    },
+    {
+      "path": "artifacts/mas/memo022-zs/charts/contacts/sheet-05.png",
+      "sha256": "b0cf399384e0a12a5f3232f9151134444fc7bf539446e61c8d22adb9a8c4bbec"
+    },
+    {
+      "path": "artifacts/mas/memo022-zs/charts/contacts/sheet-06.png",
+      "sha256": "3f0f9b1dec24b942ef2d175c02aeba2d22ad8946710cf312a5dca31ab822b51b"
+    },
+    {
+      "path": "artifacts/mas/memo022-zs/charts/contacts/sheet-07.png",
+      "sha256": "2fe6eee07369fe0a175c6ec868af6449c57128ae40481245187cb4983e9e451c"
+    },
+    {
+      "path": "artifacts/mas/memo022-zs/charts/contacts/sheet-08.png",
+      "sha256": "04031d7a42832c5811419ee31861017b03cdc60b66bb5f09cb4b20d4c9c65a15"
+    },
+    {
+      "path": "artifacts/mas/memo022-zs/charts/comparison-overview.png",
+      "sha256": "c5ce422e4f32c1381e7083644d217d51fca9a5e1cc8a04cb39d50f2cc379c152"
+    },
+    {
+      "path": "artifacts/mas/memo022-zs/charts/bi-weak_xd-weak_detail-001.png",
+      "sha256": "d3313bcc0c5a03f2b6fcb13d9bf695953281dc4e4f9fdd0ee904b1d7d50db785"
+    },
+    {
+      "path": "artifacts/mas/memo022-zs/charts/geometry-exception.png",
+      "sha256": "bda1dbd739757920f4a8ceb3c5c5d3884d3adc3c67420fde9044c1d39a63acb8"
+    }
+  ],
+  "covers_individual_pages": 32,
+  "observations": [
+    "Four upstream modes aligned; rectangle heights fixed and borders vertical.",
+    "Open centers use dotted horizontal core bounds without a final right vertical.",
+    "Weak/weak Z0 missing left intersection is omitted from rectangle count and illustrated separately.",
+    "Last raw windows remain visible even beyond the last completed input segment."
+  ],
+  "serialized_geometry_audit": "chart-audit.json"
+}

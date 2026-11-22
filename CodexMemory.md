@@ -1,8 +1,9 @@
 # TDS project memory
-Updated: 2026-11-11
+Updated: 2026-11-18
 ## Purpose
 Bring KWX and WX together for a three-day Chan theory feasibility sprint, establishing a reusable algorithm foundation with a Python backend and static website.
 ## Confirmed decisions
+- Memo033实现与验收完成：共享Zhongshu领域／表／绘图，522测试、99%覆盖、10000随机×四组合、64长输入及有限枚举通过；真实四组合与022逐字段一致。228单组合PNG/HTML逐页检查，57比较图；默认Z0缺左交点诊断沿用022。[结果](docs/memo/memoWX_033_zhongshuFamily.md)，[证据](artifacts/mas/zhongshu-family/run033/README.md)。下一步用户审阅，范围仍为固定快照线段中枢。
 - GitHub size repair: memo032 documents gzip storage for two oversized memo030 results, local originals ignored, staged/outgoing blob guard and local commit hook. Recovery bundle: `/private/tmp/TDS-before-size-fix-54a2f1a.bundle`; latest unpublished commit is to be amended; no shared-history rewrite or push.
 - Memo031002.f验证报告直接嵌入全样本四组合总览（031伴随目录字节一致副本），保留交互入口；默认weak/weak置于最下方。
 - Memo031002.f已将030-E一致性验收整理为四组合030/031并列表，列明FX首末、完整路线/tail/278证书对照、profile标签差异及新增字段比较边界；附证据与复现命令。
@@ -75,6 +76,8 @@ Bring KWX and WX together for a three-day Chan theory feasibility sprint, establ
 - [Memo 005](docs/memo/memoWX_005_informationWorkflow.md) covers research and evidence; [memo 006](docs/memo/memoWX_006_memoWritingGuide.md) is the authoritative writing guide.
 - [logXW.md](logXW.md) records repository events; every repository update must also be logged.
 ## Current status
+Memo022已按030补齐001矩形口径、002.a–f、003–005及真实数据图集。结果与日志须显式记录起段／终段及可回查的源快照；确认回抽单列，开放终段为空，缺交点仍保留起终段。用户明确允许零高度；交点用原始端点直线，无法相交单列异常。顺序扫描选最早三段重合，实际离开段为终线段，相邻已完成未返回回抽确认，再从e+1寻找。新增共享私有扫描器／031适配器和复现实验。四组53/57/79/89条已完成线段得到8/8/11/14个已结束结构、8/8/11/13个可定位矩形，弱组各1开放；默认weak/weak首个结构缺左交点（核心[3005,3083]，起线段端点3026→3005），保留未补框。472测试、33定向/随机、282固定线段前缀对照、83交点、278源极值核对通过；新模块99%覆盖，strict mypy8文件、Black/Ruff通过。32PNG/HTML＋8比较PNG＋1异常图，32页已目视核对；原文/CC附录、029/030/031及原数据未改。下一步用户审阅，若要求异常也完整画框需另改几何合同。[memo](docs/memo/memoWX_022_Chan_zhongshu.md)、[证据](artifacts/mas/memo022-zs/README.md)、[任务](mas/tasks/20261118-memo022-complete-real-validation.md)。
+
 Memo031已完成XD030-E领域类、weak/weak默认、表/图/持久化和全部计划验收。下一步用户审阅[memo031](docs/memo/memoWX_031_xianduanFamily.md)及[默认图集](artifacts/mas/xianduan-family/run031/charts/bi-weak_xd-weak/index.html)。原文复杂情形完备性未证明；永久确认/续读不在本轮合同内。已有logXW合并冲突保留。
 
 

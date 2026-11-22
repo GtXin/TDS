@@ -10,15 +10,17 @@ from chanlab.algo.bi import BiSeries
 from chanlab.algo.fenxing import FenxingSeries
 from chanlab.algo.merged_kline import MergedKlineSeries
 from chanlab.algo.xianduan import XianduanSeries
+from chanlab.algo.zhongshu import ZhongshuSeries
 from chanlab.data import bi_table as bi
 from chanlab.data import fenxing_table as fx
 from chanlab.data import merged_kline_table as mk
 from chanlab.data import xianduan_table as xd
+from chanlab.data import zhongshu_table as zs
 
 if TYPE_CHECKING:
     from chanlab.algo.chan_table import ChanTable
 
-Feature = MergedKlineSeries | FenxingSeries | BiSeries | XianduanSeries
+Feature = MergedKlineSeries | FenxingSeries | BiSeries | XianduanSeries | ZhongshuSeries
 
 
 def contexts(features: Mapping[str, Feature]) -> dict[str, str]:
@@ -37,11 +39,15 @@ def contexts(features: Mapping[str, Feature]) -> dict[str, str]:
         result[bi.FEATURE_CONTEXT] = bi.encode_features(features)
     if any(isinstance(v, XianduanSeries) for v in features.values()):
         result[xd.FEATURE_CONTEXT] = xd.encode_features(features)
+    if any(isinstance(v, ZhongshuSeries) for v in features.values()):
+        result[zs.FEATURE_CONTEXT] = zs.encode_features(features)
     return result
 
 
 def project_one(series: Feature) -> dict[str, tuple[Any, ...]]:
     """Project a single scoped result."""
+    if isinstance(series, ZhongshuSeries):
+        return zs.projection(series)
     if isinstance(series, XianduanSeries):
         return xd.projection(series)
     if isinstance(series, BiSeries):
@@ -56,7 +62,13 @@ def project_one(series: Feature) -> dict[str, tuple[Any, ...]]:
 def visible_projection(features: Mapping[str, Feature]) -> dict[str, tuple[Any, ...]]:
     """First registration in each family supplies the fixed CSV columns."""
     projected = {}
-    for cls in (MergedKlineSeries, FenxingSeries, BiSeries, XianduanSeries):
+    for cls in (
+        MergedKlineSeries,
+        FenxingSeries,
+        BiSeries,
+        XianduanSeries,
+        ZhongshuSeries,
+    ):
         series = next((s for s in features.values() if isinstance(s, cls)), None)
         if series is not None:
             projected.update(project_one(series))
@@ -71,7 +83,13 @@ def register(series: Feature, table: ChanTable, key: str) -> ChanTable:
         raise ValueError("series_key required")
     series.validate()
     table.validate()
-    if isinstance(series, XianduanSeries):
+    if isinstance(series, ZhongshuSeries):
+        if not any(v is series.source_series for v in table.feature_series.values()):
+            table = register(series.source_series, table, f"{key}:source")
+        raw = (
+            series.source_series.source_series.source_series.source_series.source_series
+        )
+    elif isinstance(series, XianduanSeries):
         if not any(v is series.source_series for v in table.feature_series.values()):
             table = register(series.source_series, table, f"{key}:source")
         raw = series.source_series.source_series.source_series.source_series
@@ -104,8 +122,16 @@ def register(series: Feature, table: ChanTable, key: str) -> ChanTable:
     for column, values in visible_projection(features).items():
         for i, value in enumerate(values):
             rows[i][column] = (
-                ("NA" if value is None else value)
-                if column in ("mk_direction", "fx_kind", "bi_direction", "xd_direction")
+                ("NA" if value is None else str(value))
+                if column
+                in (
+                    "mk_direction",
+                    "fx_kind",
+                    "bi_direction",
+                    "xd_direction",
+                    "zs_lower",
+                    "zs_upper",
+                )
                 else json.dumps(value, separators=(",", ":"))
             )
     return ChanTable(rows, context, source_series=raw, feature_series=features)

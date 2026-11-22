@@ -1,0 +1,16 @@
+{
+  "individual_png": 228,
+  "individual_html": 228,
+  "comparison_png": 57,
+  "contact_sheets_reviewed": 38,
+  "individual_pages_reviewed": 228,
+  "individual_unreviewed": 0,
+  "full_resolution_reviewed": [
+    "bi-weak_xd-weak-page-001.png",
+    "bi-weak_xd-weak-page-055.png",
+    "comparison-overview.png"
+  ],
+  "comparison_review": "overview sampled; not all 57 individually reviewed",
+  "fix": "left-edge static label alignment corrected and all PNGs rerendered",
+  "limitation": "dense FX labels can overlap; interactive HTML supports zoom"
+}

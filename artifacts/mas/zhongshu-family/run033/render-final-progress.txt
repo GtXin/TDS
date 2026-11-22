@@ -1,0 +1,9 @@
+PNG 0
+PNG 30
+PNG 60
+PNG 90
+PNG 120
+PNG 150
+PNG 180
+PNG 210
+Rendered 228 individual figures and 57 comparisons

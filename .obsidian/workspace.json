@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/memo/memoWX_015_Chan_mergedkline.md",
+                "file": "docs/memo/memoWX_003_folderDecision.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memoWX_015_Chan_mergedkline"
+              "title": "memoWX_003_folderDecision"
             }
           },
           {
@@ -69,16 +69,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/memo/memoWX_031_xianduanFamily.md",
+                "file": "docs/memo/memoKWX_002_memoWX001-018导读.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memoWX_031_xianduanFamily"
+              "title": "memoKWX_002_memoWX001-018导读"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -245,52 +244,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "4bb05b68806e93c7",
+  "active": "b688d124338f704e",
   "lastOpenFiles": [
-    "docs/memo/memoWX_030_Chan_xianduan.md",
-    "docs/memo/memoWX_031_xianduanFamily.md",
-    "docs/memo/memoWX_031_xianduanFamily/four-modes-overall.png",
-    "docs/memo/backups/memoWX_031_xianduanFamily__20261111_235332_939826.md",
+    "docs/memo/memoWX_002_MAS.md",
+    "docs/memo/memoWX_001_folderStrucureforProj009.md",
+    "docs/memo/memoKWX_009_Chan_xianduan.md",
+    "docs/memo/memoKWX_004_CCToChanTable.md",
+    "docs/memo/memoKWX_003_sync_en2cn.md",
+    "docs/memo/memoKWX_002_memoWX001-018导读.md",
+    "docs/memo/memoKWX_001_文件夹结构.md",
+    "docs/memo/memoWX_033_zhongshuFamily.md",
+    "artifacts/mas/zhongshu-family/run033/quality-final.json",
+    "docs/memo/backups/memoWX_033_zhongshuFamily__20261118_101607_019299.md",
+    "artifacts/mas/zhongshu-family/run033/README.md",
+    "artifacts/mas/zhongshu-family/run033/visual-review.json",
+    "docs/memo/memoWX_033_zhongshuFamily/bi-weak_xd-weak-page-001.png",
+    "docs/memo/memoWX_033_zhongshuFamily/comparison-overview.png",
+    "docs/memo/memoWX_033_zhongshuFamily/bi-weak_xd-weak-page-055.png",
+    "docs/memo/memoWX_033_zhongshuFamily",
+    "docs/memo/backups/memoWX_033_zhongshuFamily__20261118_101538_796158.md",
+    "artifacts/mas/zhongshu-family/run033/render-final-progress.txt",
+    "artifacts/mas/zhongshu-family/run033/final-audit.json",
+    "artifacts/mas/zhongshu-family/run033/implementation-hashes.json",
+    "experiments/zhongshu033/__pycache__/audit.cpython-311.pyc",
+    "artifacts/mas/zhongshu-family/run033/final-audit-progress.txt",
+    "artifacts/mas/zhongshu-family/run033/ruff-final.txt",
+    "artifacts/mas/zhongshu-family/run033/black-final.txt",
+    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261118_100014_502705.md",
+    "artifacts/mas/zhongshu-family/run033/charts/contacts/sheet-38.png",
+    "artifacts/mas/zhongshu-family/run033/charts/contacts/sheet-37.png",
+    "artifacts/mas/zhongshu-family/run033/charts/contacts/sheet-36.png",
+    "artifacts/mas/zhongshu-family/run033/charts/contacts/sheet-35.png",
+    "artifacts/mas/zhongshu-family/run033/charts/contacts/sheet-34.png",
+    "artifacts/mas/zhongshu-family/run033/charts/contacts/sheet-33.png",
+    "artifacts/mas/zhongshu-family/run033/charts/contacts/sheet-32.png",
+    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261118_095739_721502.md",
+    "docs/memo/memoWX_032_githubFileSizes.md",
+    "mas/tasks/20261118-memo033-implementation.md",
+    "docs/memo/backups/memoWX_022_Chan_zhongshu__20261118_094741_476968.md",
     "docs/memo/memoWX_022_Chan_zhongshu.md",
-    "docs/memo/backups/memoWX_031_xianduanFamily__20261111_231017_609076.md",
-    "docs/memo/backups/memoWX_031_xianduanFamily__20261111_230633_160330.md",
-    "artifacts/mas/xianduan-family/run031/overview/comparison/compact-overview.png",
-    "artifacts/mas/xianduan-family/run031/overview/bi-strong_xd-strong/overview.png",
-    "artifacts/mas/xianduan-family/run031/overview/bi-strong_xd-weak/overview.png",
-    "artifacts/mas/xianduan-family/run031/overview/bi-weak_xd-strong/overview.png",
-    "artifacts/mas/xianduan-family/run031/memo030-comparison.json",
-    "artifacts/mas/xianduan-family/run031/compare_memo030.py",
-    "artifacts/mas/xianduan-family/run031/overview/index.html",
-    "artifacts/mas/xianduan-family/run031/overview/bi-strong_xd-strong/index.html",
-    "artifacts/mas/xianduan-family/run031/overview/bi-strong_xd-strong/plotly.min.js",
-    "artifacts/mas/xianduan-family/run031/overview/bi-strong_xd-strong/overview.html",
-    "artifacts/mas/xianduan-family/run031/overview/bi-strong_xd-strong/overview.figure.json",
-    "artifacts/mas/xianduan-family/run031/overview/bi-strong_xd-strong",
-    "artifacts/mas/xianduan-family/run031/overview/bi-strong_xd-weak/index.html",
-    "artifacts/mas/xianduan-family/run031/overview/bi-strong_xd-weak/plotly.min.js",
-    "artifacts/mas/xianduan-family/run031/overview/contact-01.png",
-    "artifacts/mas/xianduan-family/run031/overview/bi-weak_xd-weak/overview.png",
-    "docs/memo/memoWX_031_xianduanFamily/weak-weak-tail.png",
-    "docs/memo/memoWX_031_xianduanFamily/weak-weak-first.png",
-    "docs/memo/memoWX_031_xianduanFamily/four-modes-first.png",
-    "docs/memo/backups/memoWX_031_xianduanFamily__20261111_220201_882124.md",
-    "artifacts/mas/xianduan-family/run031/README.md",
-    "docs/memo/backups/memoWX_009_designPatternForChanFeatures__20261111_214747_370583.md",
-    "mas/tasks/20261111-memo031-implementation.md",
-    "docs/memo/backups/memoWX_031_xianduanFamily__20261111_212751_924779.md",
-    "mas/tasks/20261111-memo030-count-end.md",
-    "artifacts/mas/memo030-e/README.md",
-    "docs/memo/backups/memoWX_030_Chan_xianduan__20261111_202009_990239.md",
-    "docs/memo/backups/memoWX_030_Chan_xianduan__20261111_201826_736722.md",
-    "artifacts/mas/memo030-d/README.md",
-    "docs/memo/backups/memoWX_030_Chan_xianduan__20261111_201525_586869.md",
-    "mas/tasks/20261111-memo030-max-count.md",
-    "docs/memo/backups/memoWX_030_Chan_xianduan__20261111_201329_900147.md",
-    "mas/tasks/20261111-memo030-c.md",
-    "docs/memo/backups/memoWX_030_Chan_xianduan__20261111_194820_567326.md",
-    "artifacts/mas/memo030-c/README.md",
-    "docs/memo/backups/memoWX_030_Chan_xianduan__20261111_193723_654723.md",
-    "docs/memo/backups/memoWX_030_Chan_xianduan__20261111_193302_484774.md",
-    "docs/memo/backups/memoWX_030_Chan_xianduan__20261111_191702_990434.md"
+    "docs/memo/backups/README__20261118_094411_339658.md",
+    "docs/memo/backups/memoWX_022_Chan_zhongshu__20261118_093421_462303.md",
+    "artifacts/mas/memo022-zs/README.md",
+    "mas/tasks/20261118-memo022-complete-real-validation.md",
+    "docs/memo/backups/memoWX_022_Chan_zhongshu__20261118_090212_637082.md",
+    "docs/memo/backups/memoWX_022_Chan_zhongshu__20261118_090046_271963.md",
+    "mas/tasks/20261118-memo022-algorithm-ab.md",
+    "docs/memo/memoWX_021_Chan_xianduan.md",
+    "docs/memo/memoWX_030_Chan_xianduan.md"
   ]
 }

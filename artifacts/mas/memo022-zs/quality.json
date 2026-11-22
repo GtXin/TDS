@@ -1,0 +1,20 @@
+{
+  "active_tests": 472,
+  "focused_tests": 33,
+  "random_base_paths": 500,
+  "random_with_transforms": 1500,
+  "mypy_strict_files": 8,
+  "black": "PASS",
+  "ruff": "PASS",
+  "coverage": {
+    "covered_lines": 159,
+    "num_statements": 160,
+    "percent_covered": 99.375,
+    "percent_covered_display": "99",
+    "missing_lines": 1,
+    "excluded_lines": 0,
+    "percent_statements_covered": 99.375,
+    "percent_statements_covered_display": "99"
+  },
+  "scope": "shared scanner/adapter; source-preserving real-data experiment"
+}

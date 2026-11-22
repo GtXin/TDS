@@ -1,0 +1,9 @@
+{
+  "figures": 32,
+  "serialized_shapes_checked": 112,
+  "raw_rows_per_mode": 10060,
+  "coverage": "PASS",
+  "candles_chords_shapes": "PASS",
+  "missing_crossings_omitted": "PASS",
+  "open_right_borders_absent": "PASS"
+}

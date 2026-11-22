@@ -1,0 +1,53 @@
+{
+  "modes": {
+    "bi-strong_xd-strong": {
+      "segments": 53,
+      "centers": 8,
+      "closed": 8,
+      "open": 0,
+      "drawable": 8,
+      "missing": 0,
+      "crossings": 16,
+      "prefixes": 54,
+      "roundtrip": "PASS",
+      "memo022_complete_parity": "PASS"
+    },
+    "bi-strong_xd-weak": {
+      "segments": 57,
+      "centers": 8,
+      "closed": 8,
+      "open": 0,
+      "drawable": 8,
+      "missing": 0,
+      "crossings": 16,
+      "prefixes": 58,
+      "roundtrip": "PASS",
+      "memo022_complete_parity": "PASS"
+    },
+    "bi-weak_xd-strong": {
+      "segments": 79,
+      "centers": 12,
+      "closed": 11,
+      "open": 1,
+      "drawable": 11,
+      "missing": 0,
+      "crossings": 23,
+      "prefixes": 80,
+      "roundtrip": "PASS",
+      "memo022_complete_parity": "PASS"
+    },
+    "bi-weak_xd-weak": {
+      "segments": 89,
+      "centers": 15,
+      "closed": 14,
+      "open": 1,
+      "drawable": 13,
+      "missing": 1,
+      "crossings": 28,
+      "prefixes": 90,
+      "roundtrip": "PASS",
+      "memo022_complete_parity": "PASS"
+    }
+  },
+  "seconds": 78.03460862499196
+}

@@ -1,0 +1,12 @@
+{
+  "figures": 228,
+  "native_public_method": true,
+  "raw_coverage": {
+    "bi-strong_xd-strong": 10060,
+    "bi-strong_xd-weak": 10060,
+    "bi-weak_xd-strong": 10060,
+    "bi-weak_xd-weak": 10060
+  },
+  "center_primitives": 251,
+  "candles_all_FX_XD_crossings_open_missing": "PASS"
+}

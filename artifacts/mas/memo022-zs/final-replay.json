@@ -1,0 +1,9 @@
+{
+  "modes": [
+    "bi-strong_xd-strong",
+    "bi-strong_xd-weak",
+    "bi-weak_xd-strong",
+    "bi-weak_xd-weak"
+  ],
+  "all_result_fields_and_decisions": "identical to final scanner"
+}

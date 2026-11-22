@@ -1,0 +1,1 @@
+Counter({'crossings': 3066, 'centers': 2866, 'paths': 2852, 'open': 2666, 'zero': 276, 'closed': 200})

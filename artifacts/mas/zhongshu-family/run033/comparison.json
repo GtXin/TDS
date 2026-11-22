@@ -1,0 +1,8 @@
+{
+  "cases": 404,
+  "baseline": "/Users/coder/Public/EngineGit/TDS/artifacts/mas/zhongshu-family/run033/baseline/scanner.py",
+  "production": "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_zhongshu_scan.py",
+  "complete_centers_decisions_unformed": "PASS",
+  "exclusions": [],
+  "baseline_origin": "existing022 scanner frozen before033 domain edits; Python Pro already read before freeze, not an independent new implementation or causal skill test"
+}

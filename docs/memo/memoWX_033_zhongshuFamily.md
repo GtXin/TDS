@@ -1,0 +1,136 @@
+# Zhongshu family implementation and validation
+## 000 — Scope and current status
+沿用memo031结构完成中枢领域类、表集成、验证和图集。[1] 类设计核对memo009，算法遵循memo022当前001及002.a–f。[2][3] 2026-11-18本轮实现与验收完成，详细结果见002；001保留原计划。
+
+输入为031已确认XianduanSeries，保留确切Bi→Fenxing→MergedKline→raw来源链；默认weak Bi＋weak Xianduan，四组合分别验收。范围限于022线段中枢固定快照。
+
+## 001 — Implementation plan
+### 001.a — Implement the Zhongshu family
+1. 核对009的Zhongshu／ZhongshuSeries成员、来源、级别、状态和方法与022的线段输入合同；列明差异，冲突先讨论，不擅改算法或扩展来源类型。
+2. 共享代码放在 `src/chanlab/algo/`，复用022已有扫描器及适配器；API、网站和实验调用同一实现。
+3. 保留最早三段重合、无重合后移一段、初始核心固定、首次有效离开及相邻回抽确认、关闭后从e+1重启的顺序语义。允许零高度；实际范围取全部组成笔极值，交点取原始端点直线。
+4. 区分结构已结束、开放、未形成尾部和矩形无法定位；缺交点保留结构与原因。成员包含终线段、不含确认回抽；几何边界与形成／结束证据时间分开。
+5. 实现不可变领域结果、来源和trace验证，再完成explain、DataFrame、ChanTable、CSV/context与绘图；不改变上游路线以适配矩形。
+6. 先建立可核对基线，再优化；记录实际扫描、来源查询、验证、绘图的时间和内存成本。
+### 001.b — Repeat and review using Python Pro
+冻结规格、输入、共同测试及基线哈希，实际读取共享Python Pro后续作；记录技能版本和既往接触。两版遵守相同022规则，按顺序工程比较，不作技能因果结论。[4]
+### 001.c — Compare and select
+独立进程比较完整结构顺序、s/e/q、核心、成员、交点、确认时间、开放状态、未形成范围和几何诊断。结合正确性、接口完整性、类型与实测资源选择，保留失败版本及证据。
+### 001.d — Tests and integration
+1. 覆盖三段滑窗、正高度／零高度／无重合、触边返回、上下离开、首次关闭、固定核心、e+1重启及确认回抽可作为新起段。
+2. 覆盖空／短输入、断链、方向错误、非法来源、实际范围与端点范围不同、缺左／右交点、开放尾部、ID与位置分离及损坏trace/context。
+3. 独立检查最早形成与首次结束、全部来源和证据；验证表注册隔离、CSV/context往返、解释和绘图。执行相关pytest、strict mypy、Black／Ruff及覆盖检查，记录实际结果。
+4. 沿用真实CC100／1,000／3,000完整FX前缀及Bi×XD四组合，各至少3次；记录实际输入段数、中枢数、开放与几何异常，以及核心／工厂／端到端中位耗时、环境、缓存和内存口径。不足如实说明。
+### 001.e — Monte Carlo validation
+1. 计划至少10,000条可复现随机原始OHLCV，经既有合并、分型、029笔及031线段后进入中枢；覆盖趋势、震荡、跳空、包含和等值，四组合及默认weak/weak单列。
+2. 独立参考不调用被测扫描helper；短输入枚举形成／结束位置，核对顺序规则、固定核心、成员、证据与交点。合法性与选择顺序分别验收。
+3. 保存种子、完整输入、来源／规则哈希和统计；空结果、开放、无法定位、异常及资源未完成单列。差异保存可复现数据与问题图，不为通过验证擅改022。
+### 001.f — Full segmented chart validation
+1. 全量真实样本计算一次，按原始K线连续分窗；机器检查覆盖、缺页和跨页一致性。
+2. 显示raw、merged、全部FX、源Bi、已确认XD及中枢；开放不画固定右边，零高度画水平线，无法定位保留诊断，不虚构矩形。
+3. 四组合PNG／交互HTML、窗口清单、缩略图和总索引放入 `artifacts/mas/zhongshu-family/` 独立运行目录；同轴紧凑比较明确默认weak/weak。
+4. 逐页目视核对交点、核心边界、跨页结构、标记遮挡与异常；报告未绘／未查页数。memo图片按需复制到同名伴随目录。
+
+## 002 — Implementation notes and verification reports
+2026-11-18完成；完整命令、输入、哈希、逐项统计与图集见运行证据。[6]
+### 002.a — Implement the Zhongshu family → 001.a
+实现不可变Zhongshu／ZhongshuSeries、完整来源与trace重放验证、解释、DataFrame、ChanTable注册、CSV/context往返及原生绘图。共享算法仍调用022扫描器；009同步实际成员合同。结构成员锚点为整数raw位置，矩形交点另存分数位置及插值UTC时间；成员包括终线段，不包括确认回抽。
+
+状态仅closed／open；缺交点是独立几何诊断，未形成范围是源XD半开位置区间。默认level="segment"只是结构标签。持久化绑定确切XD→Bi→FX→Merged→raw全链，拒绝损坏或重新计算摘要后仍不合法的内容；多series_key注册隔离。
+### 002.b — Python Pro continuation → 001.b
+读取Python Pro1.1.0后执行类型、不可变对象、异常与测试工作。基线冻结自既有022扫描器，冻结前已读取技能；本轮不是两个独立新算法或技能因果实验。修正过来源摘要不能直接JSON序列化的问题，改用完整上游context；初次mypy导入配置失败后以explicit-package-bases重跑通过。
+### 002.c — Compare and select → 001.c
+404输入在独立进程对照冻结022扫描器，完整Center、Decision、unformed一致，无字段排除。另以独立枚举参考核对选择顺序与有理数直线交点。真实样本重新从031来源推导，与022结果逐字段一致：s/e/q、observed_stop、核心、全部成员、形成／确认时间、交点及诊断、trace、未形成范围均核对。[3][6]
+
+| Bi / XD | XD数 | ZS数 | closed / open | 可定位closed / 缺交点 | 与022 |
+|---|---:|---:|---:|---:|---|
+| strong / strong | 53 | 8 | 8 / 0 | 8 / 0 | 一致 |
+| strong / weak | 57 | 8 | 8 / 0 | 8 / 0 | 一致 |
+| weak / strong | 79 | 12 | 11 / 1 | 11 / 0 | 一致 |
+| weak / weak（默认） | 89 | 15 | 14 / 1 | 13 / 1 | 一致 |
+
+来源投影只排除旧snapshot_id标签的文字差别；所有实际段字段均核对，031原表／context哈希另与022保存manifest核对。默认Z0核心[3005,3083]，源XD0实际范围[2952,3116]，但端点直线3026→3005不能穿过入边3083；沿用022的left_crossing_missing，不补画矩形。022／029／030／031及原始样本的受保护哈希保持一致。
+
+选择保留022算法并增加领域／集成层。扫描O(N)，当前trace映射按每个中枢筛选决定，为O(CN)；工厂还包含上游重放，不宣称整体线性。
+### 002.d — Tests and integration → 001.d
+522项回归测试通过（59.71秒）。7个相关源文件strict mypy通过，Black／Ruff通过。五个中枢模块语句覆盖合计99%：输入适配95%、扫描100%、领域99%、表适配99%、绘图100%。四组合完整CSV/context往返与混合注册通过。
+
+真实10,060 raw／6,200 merged／3,027 FX，四组合共43中枢、83交点；282个固定XD前缀通过独立参考。100／1,000／3,000 FX完整前缀各四组合、每项3次，重新执行全部上游。下表为中位数：
+
+| FX | Bi / XD | XD / ZS | 扫描ms | 工厂ms | 端到端s |
+|---:|---|---:|---:|---:|---:|
+|100|strong / strong|1 / 0|0.006|10.40|0.049|
+|100|strong / weak|1 / 0|0.005|11.58|0.055|
+|100|weak / strong|1 / 0|0.005|11.74|0.056|
+|100|weak / weak|2 / 0|0.007|12.13|0.057|
+|1000|strong / strong|18 / 4|0.099|155.27|0.899|
+|1000|strong / weak|20 / 4|0.100|154.49|0.981|
+|1000|weak / strong|25 / 4|0.105|132.14|0.964|
+|1000|weak / weak|28 / 5|0.114|137.56|1.186|
+|3000|strong / strong|53 / 8|0.216|496.23|6.664|
+|3000|strong / weak|57 / 8|0.235|426.91|8.345|
+|3000|weak / strong|79 / 12|0.304|511.42|14.312|
+|3000|weak / weak|89 / 15|0.311|425.37|19.863|
+
+Python3.11.16、macOS26.6.2 arm64；文件热缓存，无结果缓存；独立参考和加载不计入阶段耗时。工厂含来源验证、投影、扫描及自身重放。进程累计峰值RSS 1,034,797,056 bytes，含设置及参考，不是单项增量内存。
+### 002.e — Monte Carlo validation → 001.e
+10,000条完整随机OHLCV（9／17／33／65／129 raw，六种分布）全部经上游四组合，无参考差异；263.55秒。完整随机输入压缩保存。
+
+| Bi / XD | XD总数 | 中枢（全open） | 空结果输入 | 缺交点 |
+|---|---:|---:|---:|---:|
+|strong / strong|664|5|9995|0|
+|strong / weak|680|5|9995|0|
+|weak / strong|1420|27|9973|7|
+|weak / weak|1455|27|9973|6|
+
+短随机没有closed或零高度，不能据此证明关闭规则。补充64条961raw长输入×四组合，42.59秒，得到470中枢（268closed／202open，82缺交点），包括关闭后续搜与固定前缀核对。另穷举端点值{0,1,2,3}、1–8顶点的2,852条严格交替路径，2,866中枢（200closed／2,666open，276零高度）、3,066交点通过独立枚举和有理数校验。有限验证不代表全部输入的数学证明。
+### 002.f — Full segmented charts → 001.f
+每组合1总览＋56分窗，200raw／窗、相邻重叠20；四组合228份PNG、HTML及原生figure JSON，另57张四组合比较PNG。全10,060行覆盖，raw／merged／全部FX／Bi／XD／中枢坐标与跨页一致性机器核对通过。
+
+38张六页缩略图覆盖全部228单组合图，逐页目视检查完成，未绘／未查单组合页均0；另全尺寸检查默认第一页、开放尾部页及四组合总览。57张比较图已生成，目视抽查总览，不宣称全部比较页逐张审阅。修复静态图左边标签裁切并重绘全部图。密集FX标签仍可重叠，可用交互HTML放大；PNG从原生figure坐标渲染，保留数据／结构语义，蜡烛实体采用粗开收线段。开放只画虚线边界，缺交点保留文字诊断。
+### 002.g — Handoff and remaining scope
+本轮001各项完成，结果以本次证据为准。[6][7] 当前范围为022固定快照线段中枢；递归级别、永久流式确认不在本轮范围。已知默认一处左交点缺失沿用022，无未解决实现差异。
+
+## 003 — Implemented classes, members and methods
+### 003.a — Class count and scope
+两个frozen领域类；Center／Crossing／Decision为022共享扫描辅助结构，不计作新增领域类。
+### 003.b — Zhongshu
+10个存储成员：`id: int`、`level: str`、`lower: float`、`upper: float`、`member_indices: tuple[int, ...]`、`start_raw_index: int`、`end_raw_index: int`、`status: str`、`confirmed_at: datetime | None`、`geometry: Center`。整数锚点表示成员覆盖范围；geometry保存s/e/q、形成／确认时间、分数交点和诊断。`validate()`检查局部合同；归属series重放完整来源。
+### 003.c — ZhongshuSeries
+8个存储成员：`level: str`、`source_series: XianduanSeries`、`items: tuple[Zhongshu, ...]`、`config: Mapping[str, Any]`、`rule_tree_ref: str`、`trace: tuple[Decision, ...]`、`trace_by_point: tuple[tuple[int, ...], ...]`、`unformed: tuple[tuple[int, int], ...]`。当前config只接受空映射；默认rule为`memo022:001,002:sequential-rectangle`。
+
+公开方法：`derive_from(source_series, level="segment", config=None, rule_tree_ref=...)`、`validate()`、`get_by_id(feature_id)`、`unresolved_ranges()`、`explain(point_index)`、`to_dataframe()`、`to_chan_table(table, series_key)`、`from_chan_table(table, series_key)`、`plot(**options)`及len／迭代／整数或切片索引。ID与位置分离；explain参数为中枢位置。unresolved_ranges只返回未形成区间，open另在items中。
+
+内部方法`_config`、`_project`、`_records`、`_mapping`分别规范配置、投影确切XD、建立领域结果、映射trace。表层保存typed context和来源指纹；raw列仅写成员锚点投影，不能将整数成员起止当作分数矩形交点。
+### 003.d — Object workflow and implementation boundary
+KlineTSeries→MergedKlineSeries→FenxingSeries→BiSeries→XianduanSeries→ZhongshuSeries→解释／DataFrame／ChanTable／绘图。算法在`src/chanlab/algo/`，表序列化在`data/zhongshu_table.py`，绘图在`visualization/zhongshu_plot.py`。原生plot接受raw_start／raw_stop、volume、market和上游选项，保留上游图层与尾部。
+### 003.e — Usage examples
+完整可运行示例见[usage.py](../../experiments/zhongshu033/usage.py)：
+
+```python
+from chanlab.algo.zhongshu import ZhongshuSeries
+zs = ZhongshuSeries.derive_from(xd)  # 已确认XianduanSeries，保留确切来源
+zs.validate()
+frame = zs.to_dataframe()
+info = zs.explain(0) if len(zs) else None
+fig = zs.plot(raw_start=0, raw_stop=200, volume=False, market="China")
+```
+
+执行`PYTHONPATH=src:. .venv/bin/python experiments/zhongshu033/usage.py`，实际首1,000raw得到612merged／302FX／72Bi／9XD／2ZS，DataFrame为2×10，未形成源区间((7,9),)。
+### 003.f — Chart pictures and complete atlas
+[完整交互图集](../../artifacts/mas/zhongshu-family/run033/charts/index.html)。下图从最终PNG逐字节复制，原始证据不移动。
+
+![四组合总览，默认在最下方](memoWX_033_zhongshuFamily/comparison-overview.png)
+
+![默认Z0保留缺左交点诊断](memoWX_033_zhongshuFamily/bi-weak_xd-weak-page-001.png)
+
+![默认开放尾部，无固定右边界](memoWX_033_zhongshuFamily/bi-weak_xd-weak-page-055.png)
+
+## References
+1. [Memo031 — Xianduan family implementation plan](memoWX_031_xianduanFamily.md)。
+2. [Memo009 — Design pattern for Chan features](memoWX_009_designPatternForChanFeatures.md)。
+3. [Memo022 — Chan_zhongshu](memoWX_022_Chan_zhongshu.md)。
+4. [Python Pro](../../mas/skills/python-pro/SKILL.md)。
+5. [Memo022既有验证证据](../../artifacts/mas/memo022-zs/README.md)。
+6. [Memo033运行证据与复现说明](../../artifacts/mas/zhongshu-family/run033/README.md)。
+7. [Memo033任务与验收记录](../../mas/tasks/20261118-memo033-implementation.md)。

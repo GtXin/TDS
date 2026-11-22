@@ -1,0 +1,44 @@
+{
+  "inputs": 64,
+  "raw_per_input": 961,
+  "counts": {
+    "bi-strong_xd-strong": {
+      "inputs": 64,
+      "segments": 768,
+      "centers": 114,
+      "closed": 64,
+      "open": 50,
+      "missing": 20,
+      "crossings": 158
+    },
+    "bi-strong_xd-weak": {
+      "inputs": 64,
+      "segments": 848,
+      "centers": 121,
+      "closed": 70,
+      "open": 51,
+      "missing": 21,
+      "crossings": 170
+    },
+    "bi-weak_xd-strong": {
+      "inputs": 64,
+      "segments": 768,
+      "centers": 114,
+      "closed": 64,
+      "open": 50,
+      "missing": 20,
+      "crossings": 158
+    },
+    "bi-weak_xd-weak": {
+      "inputs": 64,
+      "segments": 848,
+      "centers": 121,
+      "closed": 70,
+      "open": 51,
+      "missing": 21,
+      "crossings": 170
+    }
+  },
+  "failures": 0,
+  "seconds": 42.58841399999801
+}

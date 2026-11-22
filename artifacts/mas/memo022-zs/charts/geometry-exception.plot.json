@@ -1,0 +1,5894 @@
+{
+  "mode": "bi-weak_xd-weak",
+  "name": "XD0 missing left crossing",
+  "start": 0,
+  "stop": 400,
+  "segments": [
+    {
+      "id": 0,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 2,
+      "source_stop": 13,
+      "start_x": 28.0,
+      "end_x": 208.0,
+      "start_time": "2024-10-29T13:00:00+00:00",
+      "end_time": "2024-11-08T06:00:00+00:00",
+      "start_price": 3026.0,
+      "end_price": 3005.0,
+      "low": 2952.0,
+      "high": 3116.0,
+      "direction": -1,
+      "confirmed_at": "2024-11-13T02:30:00+00:00"
+    },
+    {
+      "id": 1,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 13,
+      "source_stop": 18,
+      "start_x": 208.0,
+      "end_x": 270.0,
+      "start_time": "2024-11-08T06:00:00+00:00",
+      "end_time": "2024-11-13T02:00:00+00:00",
+      "start_price": 3005.0,
+      "end_price": 3083.0,
+      "low": 3005.0,
+      "high": 3103.0,
+      "direction": 1,
+      "confirmed_at": "2024-11-15T02:00:00+00:00"
+    },
+    {
+      "id": 2,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 18,
+      "source_stop": 23,
+      "start_x": 270.0,
+      "end_x": 324.0,
+      "start_time": "2024-11-13T02:00:00+00:00",
+      "end_time": "2024-11-15T06:15:00+00:00",
+      "start_price": 3083.0,
+      "end_price": 2808.0,
+      "low": 2808.0,
+      "high": 3083.0,
+      "direction": -1,
+      "confirmed_at": "2024-11-19T01:30:00+00:00"
+    },
+    {
+      "id": 3,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 23,
+      "source_stop": 26,
+      "start_x": 324.0,
+      "end_x": 358.0,
+      "start_time": "2024-11-15T06:15:00+00:00",
+      "end_time": "2024-11-19T01:00:00+00:00",
+      "start_price": 2808.0,
+      "end_price": 2844.0,
+      "low": 2808.0,
+      "high": 2844.0,
+      "direction": 1,
+      "confirmed_at": "2024-11-20T02:30:00+00:00"
+    },
+    {
+      "id": 4,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 26,
+      "source_stop": 33,
+      "start_x": 358.0,
+      "end_x": 441.0,
+      "start_time": "2024-11-19T01:00:00+00:00",
+      "end_time": "2024-11-22T06:45:00+00:00",
+      "start_price": 2844.0,
+      "end_price": 2766.0,
+      "low": 2766.0,
+      "high": 2844.0,
+      "direction": -1,
+      "confirmed_at": "2024-12-02T03:15:00+00:00"
+    },
+    {
+      "id": 5,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 33,
+      "source_stop": 36,
+      "start_x": 441.0,
+      "end_x": 488.0,
+      "start_time": "2024-11-22T06:45:00+00:00",
+      "end_time": "2024-11-26T13:00:00+00:00",
+      "start_price": 2766.0,
+      "end_price": 2824.0,
+      "low": 2766.0,
+      "high": 2824.0,
+      "direction": 1,
+      "confirmed_at": "2024-12-02T03:15:00+00:00"
+    },
+    {
+      "id": 6,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 36,
+      "source_stop": 55,
+      "start_x": 488.0,
+      "end_x": 772.0,
+      "start_time": "2024-11-26T13:00:00+00:00",
+      "end_time": "2024-12-13T01:00:00+00:00",
+      "start_price": 2824.0,
+      "end_price": 2616.0,
+      "low": 2616.0,
+      "high": 2824.0,
+      "direction": -1,
+      "confirmed_at": "2024-12-16T03:00:00+00:00"
+    },
+    {
+      "id": 7,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 55,
+      "source_stop": 58,
+      "start_x": 772.0,
+      "end_x": 800.0,
+      "start_time": "2024-12-13T01:00:00+00:00",
+      "end_time": "2024-12-16T02:30:00+00:00",
+      "start_price": 2616.0,
+      "end_price": 2655.0,
+      "low": 2616.0,
+      "high": 2655.0,
+      "direction": 1,
+      "confirmed_at": "2024-12-18T03:15:00+00:00"
+    },
+    {
+      "id": 8,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 58,
+      "source_stop": 65,
+      "start_x": 800.0,
+      "end_x": 872.0,
+      "start_time": "2024-12-16T02:30:00+00:00",
+      "end_time": "2024-12-19T03:15:00+00:00",
+      "start_price": 2655.0,
+      "end_price": 2549.0,
+      "low": 2549.0,
+      "high": 2655.0,
+      "direction": -1,
+      "confirmed_at": "2024-12-23T01:15:00+00:00"
+    },
+    {
+      "id": 9,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 65,
+      "source_stop": 74,
+      "start_x": 872.0,
+      "end_x": 1063.0,
+      "start_time": "2024-12-19T03:15:00+00:00",
+      "end_time": "2025-01-02T01:00:00+00:00",
+      "start_price": 2549.0,
+      "end_price": 2731.0,
+      "low": 2549.0,
+      "high": 2731.0,
+      "direction": 1,
+      "confirmed_at": "2025-01-03T13:45:00+00:00"
+    },
+    {
+      "id": 10,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 74,
+      "source_stop": 83,
+      "start_x": 1063.0,
+      "end_x": 1187.0,
+      "start_time": "2025-01-02T01:00:00+00:00",
+      "end_time": "2025-01-09T05:30:00+00:00",
+      "start_price": 2731.0,
+      "end_price": 2613.0,
+      "low": 2613.0,
+      "high": 2731.0,
+      "direction": -1,
+      "confirmed_at": "2025-01-15T14:45:00+00:00"
+    },
+    {
+      "id": 11,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 83,
+      "source_stop": 96,
+      "start_x": 1187.0,
+      "end_x": 1407.0,
+      "start_time": "2025-01-09T05:30:00+00:00",
+      "end_time": "2025-01-22T14:45:00+00:00",
+      "start_price": 2613.0,
+      "end_price": 2871.0,
+      "low": 2613.0,
+      "high": 2871.0,
+      "direction": 1,
+      "confirmed_at": "2025-01-27T03:15:00+00:00"
+    },
+    {
+      "id": 12,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 96,
+      "source_stop": 99,
+      "start_x": 1407.0,
+      "end_x": 1459.0,
+      "start_time": "2025-01-22T14:45:00+00:00",
+      "end_time": "2025-01-27T02:30:00+00:00",
+      "start_price": 2871.0,
+      "end_price": 2783.0,
+      "low": 2783.0,
+      "high": 2871.0,
+      "direction": -1,
+      "confirmed_at": "2025-02-10T02:00:00+00:00"
+    },
+    {
+      "id": 13,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 99,
+      "source_stop": 104,
+      "start_x": 1459.0,
+      "end_x": 1539.0,
+      "start_time": "2025-01-27T02:30:00+00:00",
+      "end_time": "2025-02-10T01:15:00+00:00",
+      "start_price": 2783.0,
+      "end_price": 2953.0,
+      "low": 2783.0,
+      "high": 2953.0,
+      "direction": 1,
+      "confirmed_at": "2025-02-12T06:15:00+00:00"
+    },
+    {
+      "id": 14,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 104,
+      "source_stop": 109,
+      "start_x": 1539.0,
+      "end_x": 1607.0,
+      "start_time": "2025-02-10T01:15:00+00:00",
+      "end_time": "2025-02-13T01:00:00+00:00",
+      "start_price": 2953.0,
+      "end_price": 2820.0,
+      "low": 2820.0,
+      "high": 2953.0,
+      "direction": -1,
+      "confirmed_at": "2025-02-14T01:00:00+00:00"
+    },
+    {
+      "id": 15,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 109,
+      "source_stop": 124,
+      "start_x": 1607.0,
+      "end_x": 1755.0,
+      "start_time": "2025-02-13T01:00:00+00:00",
+      "end_time": "2025-02-21T05:45:00+00:00",
+      "start_price": 2820.0,
+      "end_price": 2985.0,
+      "low": 2820.0,
+      "high": 2985.0,
+      "direction": 1,
+      "confirmed_at": "2025-02-27T13:15:00+00:00"
+    },
+    {
+      "id": 16,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 124,
+      "source_stop": 129,
+      "start_x": 1755.0,
+      "end_x": 1813.0,
+      "start_time": "2025-02-21T05:45:00+00:00",
+      "end_time": "2025-02-25T14:45:00+00:00",
+      "start_price": 2985.0,
+      "end_price": 2867.0,
+      "low": 2867.0,
+      "high": 2985.0,
+      "direction": -1,
+      "confirmed_at": "2025-02-27T13:15:00+00:00"
+    },
+    {
+      "id": 17,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 129,
+      "source_stop": 138,
+      "start_x": 1813.0,
+      "end_x": 1915.0,
+      "start_time": "2025-02-25T14:45:00+00:00",
+      "end_time": "2025-03-04T05:30:00+00:00",
+      "start_price": 2867.0,
+      "end_price": 3025.0,
+      "low": 2867.0,
+      "high": 3025.0,
+      "direction": 1,
+      "confirmed_at": "2025-03-06T05:30:00+00:00"
+    },
+    {
+      "id": 18,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 138,
+      "source_stop": 149,
+      "start_x": 1915.0,
+      "end_x": 2054.0,
+      "start_time": "2025-03-04T05:30:00+00:00",
+      "end_time": "2025-03-12T05:45:00+00:00",
+      "start_price": 3025.0,
+      "end_price": 2822.0,
+      "low": 2822.0,
+      "high": 3025.0,
+      "direction": -1,
+      "confirmed_at": "2025-03-14T01:00:00+00:00"
+    },
+    {
+      "id": 19,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 149,
+      "source_stop": 154,
+      "start_x": 2054.0,
+      "end_x": 2116.0,
+      "start_time": "2025-03-12T05:45:00+00:00",
+      "end_time": "2025-03-17T01:45:00+00:00",
+      "start_price": 2822.0,
+      "end_price": 2929.0,
+      "low": 2822.0,
+      "high": 2929.0,
+      "direction": 1,
+      "confirmed_at": "2025-03-19T01:30:00+00:00"
+    },
+    {
+      "id": 20,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 154,
+      "source_stop": 169,
+      "start_x": 2116.0,
+      "end_x": 2336.0,
+      "start_time": "2025-03-17T01:45:00+00:00",
+      "end_time": "2025-03-28T13:15:00+00:00",
+      "start_price": 2929.0,
+      "end_price": 2805.0,
+      "low": 2805.0,
+      "high": 2935.0,
+      "direction": -1,
+      "confirmed_at": "2025-03-31T13:30:00+00:00"
+    },
+    {
+      "id": 21,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 169,
+      "source_stop": 180,
+      "start_x": 2336.0,
+      "end_x": 2464.0,
+      "start_time": "2025-03-28T13:15:00+00:00",
+      "end_time": "2025-04-08T06:45:00+00:00",
+      "start_price": 2805.0,
+      "end_price": 3168.0,
+      "low": 2790.0,
+      "high": 3168.0,
+      "direction": 1,
+      "confirmed_at": "2025-04-11T02:30:00+00:00"
+    },
+    {
+      "id": 22,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 180,
+      "source_stop": 185,
+      "start_x": 2464.0,
+      "end_x": 2522.0,
+      "start_time": "2025-04-08T06:45:00+00:00",
+      "end_time": "2025-04-11T01:45:00+00:00",
+      "start_price": 3168.0,
+      "end_price": 3051.0,
+      "low": 3051.0,
+      "high": 3168.0,
+      "direction": -1,
+      "confirmed_at": "2025-04-14T14:00:00+00:00"
+    },
+    {
+      "id": 23,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 185,
+      "source_stop": 188,
+      "start_x": 2522.0,
+      "end_x": 2557.0,
+      "start_time": "2025-04-11T01:45:00+00:00",
+      "end_time": "2025-04-14T13:00:00+00:00",
+      "start_price": 3051.0,
+      "end_price": 3124.0,
+      "low": 3051.0,
+      "high": 3124.0,
+      "direction": 1,
+      "confirmed_at": "2025-04-16T13:00:00+00:00"
+    },
+    {
+      "id": 24,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 188,
+      "source_stop": 193,
+      "start_x": 2557.0,
+      "end_x": 2630.0,
+      "start_time": "2025-04-14T13:00:00+00:00",
+      "end_time": "2025-04-17T14:00:00+00:00",
+      "start_price": 3124.0,
+      "end_price": 3004.0,
+      "low": 3004.0,
+      "high": 3124.0,
+      "direction": -1,
+      "confirmed_at": "2025-04-24T06:15:00+00:00"
+    },
+    {
+      "id": 25,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 193,
+      "source_stop": 202,
+      "start_x": 2630.0,
+      "end_x": 2733.0,
+      "start_time": "2025-04-17T14:00:00+00:00",
+      "end_time": "2025-04-24T03:00:00+00:00",
+      "start_price": 3004.0,
+      "end_price": 3075.0,
+      "low": 3004.0,
+      "high": 3075.0,
+      "direction": 1,
+      "confirmed_at": "2025-04-28T14:00:00+00:00"
+    },
+    {
+      "id": 26,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 202,
+      "source_stop": 221,
+      "start_x": 2733.0,
+      "end_x": 3063.0,
+      "start_time": "2025-04-24T03:00:00+00:00",
+      "end_time": "2025-05-20T01:00:00+00:00",
+      "start_price": 3075.0,
+      "end_price": 2861.0,
+      "low": 2861.0,
+      "high": 3075.0,
+      "direction": -1,
+      "confirmed_at": "2025-05-20T14:45:00+00:00"
+    },
+    {
+      "id": 27,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 221,
+      "source_stop": 234,
+      "start_x": 3063.0,
+      "end_x": 3208.0,
+      "start_time": "2025-05-20T01:00:00+00:00",
+      "end_time": "2025-05-28T03:00:00+00:00",
+      "start_price": 2861.0,
+      "end_price": 2978.0,
+      "low": 2861.0,
+      "high": 2978.0,
+      "direction": 1,
+      "confirmed_at": "2025-05-29T02:00:00+00:00"
+    },
+    {
+      "id": 28,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 234,
+      "source_stop": 237,
+      "start_x": 3208.0,
+      "end_x": 3225.0,
+      "start_time": "2025-05-28T03:00:00+00:00",
+      "end_time": "2025-05-29T01:15:00+00:00",
+      "start_price": 2978.0,
+      "end_price": 2932.0,
+      "low": 2932.0,
+      "high": 2978.0,
+      "direction": -1,
+      "confirmed_at": "2025-05-30T02:45:00+00:00"
+    },
+    {
+      "id": 29,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 237,
+      "source_stop": 256,
+      "start_x": 3225.0,
+      "end_x": 3500.0,
+      "start_time": "2025-05-29T01:15:00+00:00",
+      "end_time": "2025-06-17T03:15:00+00:00",
+      "start_price": 2932.0,
+      "end_price": 3087.0,
+      "low": 2925.0,
+      "high": 3087.0,
+      "direction": 1,
+      "confirmed_at": "2025-06-23T02:00:00+00:00"
+    },
+    {
+      "id": 30,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 256,
+      "source_stop": 263,
+      "start_x": 3500.0,
+      "end_x": 3662.0,
+      "start_time": "2025-06-17T03:15:00+00:00",
+      "end_time": "2025-06-26T05:30:00+00:00",
+      "start_price": 3087.0,
+      "end_price": 2921.0,
+      "low": 2921.0,
+      "high": 3087.0,
+      "direction": -1,
+      "confirmed_at": "2025-07-08T13:15:00+00:00"
+    },
+    {
+      "id": 31,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 263,
+      "source_stop": 274,
+      "start_x": 3662.0,
+      "end_x": 3768.0,
+      "start_time": "2025-06-26T05:30:00+00:00",
+      "end_time": "2025-07-03T01:00:00+00:00",
+      "start_price": 2921.0,
+      "end_price": 2976.0,
+      "low": 2921.0,
+      "high": 2976.0,
+      "direction": 1,
+      "confirmed_at": "2025-07-08T13:15:00+00:00"
+    },
+    {
+      "id": 32,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 274,
+      "source_stop": 279,
+      "start_x": 3768.0,
+      "end_x": 3852.0,
+      "start_time": "2025-07-03T01:00:00+00:00",
+      "end_time": "2025-07-08T13:00:00+00:00",
+      "start_price": 2976.0,
+      "end_price": 2925.0,
+      "low": 2925.0,
+      "high": 2976.0,
+      "direction": -1,
+      "confirmed_at": "2025-07-11T03:00:00+00:00"
+    },
+    {
+      "id": 33,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 279,
+      "source_stop": 286,
+      "start_x": 3852.0,
+      "end_x": 3944.0,
+      "start_time": "2025-07-08T13:00:00+00:00",
+      "end_time": "2025-07-14T13:00:00+00:00",
+      "start_price": 2925.0,
+      "end_price": 2999.0,
+      "low": 2925.0,
+      "high": 2999.0,
+      "direction": 1,
+      "confirmed_at": "2025-07-16T05:30:00+00:00"
+    },
+    {
+      "id": 34,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 286,
+      "source_stop": 289,
+      "start_x": 3944.0,
+      "end_x": 3981.0,
+      "start_time": "2025-07-14T13:00:00+00:00",
+      "end_time": "2025-07-16T02:45:00+00:00",
+      "start_price": 2999.0,
+      "end_price": 2969.0,
+      "low": 2969.0,
+      "high": 2999.0,
+      "direction": -1,
+      "confirmed_at": "2025-07-23T01:45:00+00:00"
+    },
+    {
+      "id": 35,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 289,
+      "source_stop": 292,
+      "start_x": 3981.0,
+      "end_x": 4091.0,
+      "start_time": "2025-07-16T02:45:00+00:00",
+      "end_time": "2025-07-23T01:15:00+00:00",
+      "start_price": 2969.0,
+      "end_price": 3121.0,
+      "low": 2969.0,
+      "high": 3121.0,
+      "direction": 1,
+      "confirmed_at": "2025-07-29T01:30:00+00:00"
+    },
+    {
+      "id": 36,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 292,
+      "source_stop": 295,
+      "start_x": 4091.0,
+      "end_x": 4183.0,
+      "start_time": "2025-07-23T01:15:00+00:00",
+      "end_time": "2025-07-29T01:15:00+00:00",
+      "start_price": 3121.0,
+      "end_price": 2963.0,
+      "low": 2963.0,
+      "high": 3121.0,
+      "direction": -1,
+      "confirmed_at": "2025-07-30T02:00:00+00:00"
+    },
+    {
+      "id": 37,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 295,
+      "source_stop": 312,
+      "start_x": 4183.0,
+      "end_x": 4435.0,
+      "start_time": "2025-07-29T01:15:00+00:00",
+      "end_time": "2025-08-13T01:00:00+00:00",
+      "start_price": 2963.0,
+      "end_price": 3190.0,
+      "low": 2963.0,
+      "high": 3190.0,
+      "direction": 1,
+      "confirmed_at": "2025-08-19T03:15:00+00:00"
+    },
+    {
+      "id": 38,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 312,
+      "source_stop": 317,
+      "start_x": 4435.0,
+      "end_x": 4492.0,
+      "start_time": "2025-08-13T01:00:00+00:00",
+      "end_time": "2025-08-15T06:00:00+00:00",
+      "start_price": 3190.0,
+      "end_price": 3121.0,
+      "low": 3121.0,
+      "high": 3190.0,
+      "direction": -1,
+      "confirmed_at": "2025-08-19T03:15:00+00:00"
+    },
+    {
+      "id": 39,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 317,
+      "source_stop": 320,
+      "start_x": 4492.0,
+      "end_x": 4534.0,
+      "start_time": "2025-08-15T06:00:00+00:00",
+      "end_time": "2025-08-19T03:00:00+00:00",
+      "start_price": 3121.0,
+      "end_price": 3178.0,
+      "low": 3121.0,
+      "high": 3178.0,
+      "direction": 1,
+      "confirmed_at": "2025-08-21T05:45:00+00:00"
+    },
+    {
+      "id": 40,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 320,
+      "source_stop": 331,
+      "start_x": 4534.0,
+      "end_x": 4696.0,
+      "start_time": "2025-08-19T03:00:00+00:00",
+      "end_time": "2025-08-28T03:15:00+00:00",
+      "start_price": 3178.0,
+      "end_price": 3027.0,
+      "low": 3027.0,
+      "high": 3178.0,
+      "direction": -1,
+      "confirmed_at": "2025-09-03T13:45:00+00:00"
+    },
+    {
+      "id": 41,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 331,
+      "source_stop": 336,
+      "start_x": 4696.0,
+      "end_x": 4852.0,
+      "start_time": "2025-08-28T03:15:00+00:00",
+      "end_time": "2025-09-08T01:45:00+00:00",
+      "start_price": 3027.0,
+      "end_price": 3095.0,
+      "low": 3027.0,
+      "high": 3095.0,
+      "direction": 1,
+      "confirmed_at": "2025-09-10T02:45:00+00:00"
+    },
+    {
+      "id": 42,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 336,
+      "source_stop": 339,
+      "start_x": 4852.0,
+      "end_x": 4899.0,
+      "start_time": "2025-09-08T01:45:00+00:00",
+      "end_time": "2025-09-10T02:00:00+00:00",
+      "start_price": 3095.0,
+      "end_price": 3055.0,
+      "low": 3055.0,
+      "high": 3095.0,
+      "direction": -1,
+      "confirmed_at": "2025-09-12T01:15:00+00:00"
+    },
+    {
+      "id": 43,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 339,
+      "source_stop": 342,
+      "start_x": 4899.0,
+      "end_x": 4941.0,
+      "start_time": "2025-09-10T02:00:00+00:00",
+      "end_time": "2025-09-12T01:00:00+00:00",
+      "start_price": 3055.0,
+      "end_price": 3097.0,
+      "low": 3055.0,
+      "high": 3097.0,
+      "direction": 1,
+      "confirmed_at": "2025-09-16T01:00:00+00:00"
+    },
+    {
+      "id": 44,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 342,
+      "source_stop": 351,
+      "start_x": 4941.0,
+      "end_x": 5113.0,
+      "start_time": "2025-09-12T01:00:00+00:00",
+      "end_time": "2025-09-23T06:00:00+00:00",
+      "start_price": 3097.0,
+      "end_price": 2907.0,
+      "low": 2907.0,
+      "high": 3097.0,
+      "direction": -1,
+      "confirmed_at": "2025-09-29T01:00:00+00:00"
+    },
+    {
+      "id": 45,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 351,
+      "source_stop": 354,
+      "start_x": 5113.0,
+      "end_x": 5140.0,
+      "start_time": "2025-09-23T06:00:00+00:00",
+      "end_time": "2025-09-24T13:00:00+00:00",
+      "start_price": 2907.0,
+      "end_price": 2976.0,
+      "low": 2907.0,
+      "high": 2976.0,
+      "direction": 1,
+      "confirmed_at": "2025-10-24T06:30:00+00:00"
+    },
+    {
+      "id": 46,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 354,
+      "source_stop": 371,
+      "start_x": 5140.0,
+      "end_x": 5437.0,
+      "start_time": "2025-09-24T13:00:00+00:00",
+      "end_time": "2025-10-21T14:30:00+00:00",
+      "start_price": 2976.0,
+      "end_price": 2852.0,
+      "low": 2852.0,
+      "high": 2976.0,
+      "direction": -1,
+      "confirmed_at": "2025-10-24T06:30:00+00:00"
+    },
+    {
+      "id": 47,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 371,
+      "source_stop": 382,
+      "start_x": 5437.0,
+      "end_x": 5686.0,
+      "start_time": "2025-10-21T14:30:00+00:00",
+      "end_time": "2025-11-05T13:30:00+00:00",
+      "start_price": 2852.0,
+      "end_price": 3085.0,
+      "low": 2852.0,
+      "high": 3085.0,
+      "direction": 1,
+      "confirmed_at": "2025-11-07T14:30:00+00:00"
+    },
+    {
+      "id": 48,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 382,
+      "source_stop": 385,
+      "start_x": 5686.0,
+      "end_x": 5735.0,
+      "start_time": "2025-11-05T13:30:00+00:00",
+      "end_time": "2025-11-07T14:15:00+00:00",
+      "start_price": 3085.0,
+      "end_price": 3031.0,
+      "low": 3031.0,
+      "high": 3085.0,
+      "direction": -1,
+      "confirmed_at": "2025-11-11T03:00:00+00:00"
+    },
+    {
+      "id": 49,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 385,
+      "source_stop": 392,
+      "start_x": 5735.0,
+      "end_x": 5845.0,
+      "start_time": "2025-11-07T14:15:00+00:00",
+      "end_time": "2025-11-14T13:00:00+00:00",
+      "start_price": 3031.0,
+      "end_price": 3107.0,
+      "low": 3031.0,
+      "high": 3107.0,
+      "direction": 1,
+      "confirmed_at": "2025-11-19T03:00:00+00:00"
+    },
+    {
+      "id": 50,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 392,
+      "source_stop": 399,
+      "start_x": 5845.0,
+      "end_x": 5961.0,
+      "start_time": "2025-11-14T13:00:00+00:00",
+      "end_time": "2025-11-21T13:15:00+00:00",
+      "start_price": 3107.0,
+      "end_price": 2988.0,
+      "low": 2988.0,
+      "high": 3107.0,
+      "direction": -1,
+      "confirmed_at": "2025-11-25T14:00:00+00:00"
+    },
+    {
+      "id": 51,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 399,
+      "source_stop": 402,
+      "start_x": 5961.0,
+      "end_x": 6008.0,
+      "start_time": "2025-11-21T13:15:00+00:00",
+      "end_time": "2025-11-25T13:30:00+00:00",
+      "start_price": 2988.0,
+      "end_price": 3033.0,
+      "low": 2988.0,
+      "high": 3033.0,
+      "direction": 1,
+      "confirmed_at": "2025-11-26T13:15:00+00:00"
+    },
+    {
+      "id": 52,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 402,
+      "source_stop": 417,
+      "start_x": 6008.0,
+      "end_x": 6248.0,
+      "start_time": "2025-11-25T13:30:00+00:00",
+      "end_time": "2025-12-10T02:00:00+00:00",
+      "start_price": 3033.0,
+      "end_price": 2736.0,
+      "low": 2736.0,
+      "high": 3062.0,
+      "direction": -1,
+      "confirmed_at": "2025-12-15T01:30:00+00:00"
+    },
+    {
+      "id": 53,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 417,
+      "source_stop": 420,
+      "start_x": 6248.0,
+      "end_x": 6294.0,
+      "start_time": "2025-12-10T02:00:00+00:00",
+      "end_time": "2025-12-12T02:00:00+00:00",
+      "start_price": 2736.0,
+      "end_price": 2789.0,
+      "low": 2736.0,
+      "high": 2789.0,
+      "direction": 1,
+      "confirmed_at": "2025-12-15T01:30:00+00:00"
+    },
+    {
+      "id": 54,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 420,
+      "source_stop": 431,
+      "start_x": 6294.0,
+      "end_x": 6415.0,
+      "start_time": "2025-12-12T02:00:00+00:00",
+      "end_time": "2025-12-19T05:45:00+00:00",
+      "start_price": 2789.0,
+      "end_price": 2726.0,
+      "low": 2726.0,
+      "high": 2789.0,
+      "direction": -1,
+      "confirmed_at": "2025-12-24T01:00:00+00:00"
+    },
+    {
+      "id": 55,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 431,
+      "source_stop": 442,
+      "start_x": 6415.0,
+      "end_x": 6674.0,
+      "start_time": "2025-12-19T05:45:00+00:00",
+      "end_time": "2026-01-08T01:15:00+00:00",
+      "start_price": 2726.0,
+      "end_price": 2827.0,
+      "low": 2719.0,
+      "high": 2827.0,
+      "direction": 1,
+      "confirmed_at": "2026-01-13T01:15:00+00:00"
+    },
+    {
+      "id": 56,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 442,
+      "source_stop": 449,
+      "start_x": 6674.0,
+      "end_x": 6765.0,
+      "start_time": "2026-01-08T01:15:00+00:00",
+      "end_time": "2026-01-14T01:00:00+00:00",
+      "start_price": 2827.0,
+      "end_price": 2740.0,
+      "low": 2740.0,
+      "high": 2827.0,
+      "direction": -1,
+      "confirmed_at": "2026-01-14T14:45:00+00:00"
+    },
+    {
+      "id": 57,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 449,
+      "source_stop": 452,
+      "start_x": 6765.0,
+      "end_x": 6785.0,
+      "start_time": "2026-01-14T01:00:00+00:00",
+      "end_time": "2026-01-14T14:15:00+00:00",
+      "start_price": 2740.0,
+      "end_price": 2761.0,
+      "low": 2740.0,
+      "high": 2761.0,
+      "direction": 1,
+      "confirmed_at": "2026-01-16T14:45:00+00:00"
+    },
+    {
+      "id": 58,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 452,
+      "source_stop": 457,
+      "start_x": 6785.0,
+      "end_x": 6857.0,
+      "start_time": "2026-01-14T14:15:00+00:00",
+      "end_time": "2026-01-20T01:00:00+00:00",
+      "start_price": 2761.0,
+      "end_price": 2712.0,
+      "low": 2712.0,
+      "high": 2761.0,
+      "direction": -1,
+      "confirmed_at": "2026-01-22T13:45:00+00:00"
+    },
+    {
+      "id": 59,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 457,
+      "source_stop": 466,
+      "start_x": 6857.0,
+      "end_x": 7015.0,
+      "start_time": "2026-01-20T01:00:00+00:00",
+      "end_time": "2026-01-28T14:15:00+00:00",
+      "start_price": 2712.0,
+      "end_price": 2809.0,
+      "low": 2712.0,
+      "high": 2809.0,
+      "direction": 1,
+      "confirmed_at": "2026-02-06T13:45:00+00:00"
+    },
+    {
+      "id": 60,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 466,
+      "source_stop": 473,
+      "start_x": 7015.0,
+      "end_x": 7125.0,
+      "start_time": "2026-01-28T14:15:00+00:00",
+      "end_time": "2026-02-04T13:00:00+00:00",
+      "start_price": 2809.0,
+      "end_price": 2715.0,
+      "low": 2715.0,
+      "high": 2809.0,
+      "direction": -1,
+      "confirmed_at": "2026-03-02T06:00:00+00:00"
+    },
+    {
+      "id": 61,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 473,
+      "source_stop": 486,
+      "start_x": 7125.0,
+      "end_x": 7336.0,
+      "start_time": "2026-02-04T13:00:00+00:00",
+      "end_time": "2026-02-26T02:00:00+00:00",
+      "start_price": 2715.0,
+      "end_price": 2847.0,
+      "low": 2715.0,
+      "high": 2847.0,
+      "direction": 1,
+      "confirmed_at": "2026-03-02T06:00:00+00:00"
+    },
+    {
+      "id": 62,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 486,
+      "source_stop": 489,
+      "start_x": 7336.0,
+      "end_x": 7385.0,
+      "start_time": "2026-02-26T02:00:00+00:00",
+      "end_time": "2026-03-02T03:00:00+00:00",
+      "start_price": 2847.0,
+      "end_price": 2809.0,
+      "low": 2809.0,
+      "high": 2847.0,
+      "direction": -1,
+      "confirmed_at": "2026-03-09T05:45:00+00:00"
+    },
+    {
+      "id": 63,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 489,
+      "source_stop": 498,
+      "start_x": 7385.0,
+      "end_x": 7593.0,
+      "start_time": "2026-03-02T03:00:00+00:00",
+      "end_time": "2026-03-13T03:15:00+00:00",
+      "start_price": 2809.0,
+      "end_price": 3204.0,
+      "low": 2809.0,
+      "high": 3204.0,
+      "direction": 1,
+      "confirmed_at": "2026-04-09T13:45:00+00:00"
+    },
+    {
+      "id": 64,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 498,
+      "source_stop": 531,
+      "start_x": 7593.0,
+      "end_x": 7980.0,
+      "start_time": "2026-03-13T03:15:00+00:00",
+      "end_time": "2026-04-08T06:15:00+00:00",
+      "start_price": 3204.0,
+      "end_price": 2823.0,
+      "low": 2823.0,
+      "high": 3204.0,
+      "direction": -1,
+      "confirmed_at": "2026-04-09T13:45:00+00:00"
+    },
+    {
+      "id": 65,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 531,
+      "source_stop": 534,
+      "start_x": 7980.0,
+      "end_x": 8008.0,
+      "start_time": "2026-04-08T06:15:00+00:00",
+      "end_time": "2026-04-09T13:30:00+00:00",
+      "start_price": 2823.0,
+      "end_price": 3000.0,
+      "low": 2823.0,
+      "high": 3000.0,
+      "direction": 1,
+      "confirmed_at": "2026-04-14T01:45:00+00:00"
+    },
+    {
+      "id": 66,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 534,
+      "source_stop": 539,
+      "start_x": 8008.0,
+      "end_x": 8060.0,
+      "start_time": "2026-04-09T13:30:00+00:00",
+      "end_time": "2026-04-14T01:00:00+00:00",
+      "start_price": 3000.0,
+      "end_price": 2958.0,
+      "low": 2958.0,
+      "high": 3000.0,
+      "direction": -1,
+      "confirmed_at": "2026-04-16T13:15:00+00:00"
+    },
+    {
+      "id": 67,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 539,
+      "source_stop": 548,
+      "start_x": 8060.0,
+      "end_x": 8206.0,
+      "start_time": "2026-04-14T01:00:00+00:00",
+      "end_time": "2026-04-22T03:15:00+00:00",
+      "start_price": 2958.0,
+      "end_price": 3034.0,
+      "low": 2933.0,
+      "high": 3034.0,
+      "direction": 1,
+      "confirmed_at": "2026-04-24T03:15:00+00:00"
+    },
+    {
+      "id": 68,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 548,
+      "source_stop": 551,
+      "start_x": 8206.0,
+      "end_x": 8250.0,
+      "start_time": "2026-04-22T03:15:00+00:00",
+      "end_time": "2026-04-24T02:45:00+00:00",
+      "start_price": 3034.0,
+      "end_price": 2965.0,
+      "low": 2965.0,
+      "high": 3034.0,
+      "direction": -1,
+      "confirmed_at": "2026-04-28T01:15:00+00:00"
+    },
+    {
+      "id": 69,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 551,
+      "source_stop": 566,
+      "start_x": 8250.0,
+      "end_x": 8470.0,
+      "start_time": "2026-04-24T02:45:00+00:00",
+      "end_time": "2026-05-13T02:00:00+00:00",
+      "start_price": 2965.0,
+      "end_price": 3073.0,
+      "low": 2965.0,
+      "high": 3073.0,
+      "direction": 1,
+      "confirmed_at": "2026-05-19T14:00:00+00:00"
+    },
+    {
+      "id": 70,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 566,
+      "source_stop": 573,
+      "start_x": 8470.0,
+      "end_x": 8527.0,
+      "start_time": "2026-05-13T02:00:00+00:00",
+      "end_time": "2026-05-15T13:00:00+00:00",
+      "start_price": 3073.0,
+      "end_price": 2962.0,
+      "low": 2962.0,
+      "high": 3073.0,
+      "direction": -1,
+      "confirmed_at": "2026-05-19T14:00:00+00:00"
+    },
+    {
+      "id": 71,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 573,
+      "source_stop": 576,
+      "start_x": 8527.0,
+      "end_x": 8575.0,
+      "start_time": "2026-05-15T13:00:00+00:00",
+      "end_time": "2026-05-19T13:30:00+00:00",
+      "start_price": 2962.0,
+      "end_price": 3050.0,
+      "low": 2962.0,
+      "high": 3050.0,
+      "direction": 1,
+      "confirmed_at": "2026-05-29T02:00:00+00:00"
+    },
+    {
+      "id": 72,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 576,
+      "source_stop": 581,
+      "start_x": 8575.0,
+      "end_x": 8673.0,
+      "start_time": "2026-05-19T13:30:00+00:00",
+      "end_time": "2026-05-26T01:00:00+00:00",
+      "start_price": 3050.0,
+      "end_price": 2960.0,
+      "low": 2960.0,
+      "high": 3050.0,
+      "direction": -1,
+      "confirmed_at": "2026-06-02T02:00:00+00:00"
+    },
+    {
+      "id": 73,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 581,
+      "source_stop": 586,
+      "start_x": 8673.0,
+      "end_x": 8742.0,
+      "start_time": "2026-05-26T01:00:00+00:00",
+      "end_time": "2026-05-29T01:00:00+00:00",
+      "start_price": 2960.0,
+      "end_price": 3010.0,
+      "low": 2960.0,
+      "high": 3010.0,
+      "direction": 1,
+      "confirmed_at": "2026-06-02T02:00:00+00:00"
+    },
+    {
+      "id": 74,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 586,
+      "source_stop": 597,
+      "start_x": 8742.0,
+      "end_x": 8920.0,
+      "start_time": "2026-05-29T01:00:00+00:00",
+      "end_time": "2026-06-09T13:30:00+00:00",
+      "start_price": 3010.0,
+      "end_price": 2887.0,
+      "low": 2887.0,
+      "high": 3010.0,
+      "direction": -1,
+      "confirmed_at": "2026-06-11T14:30:00+00:00"
+    },
+    {
+      "id": 75,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 597,
+      "source_stop": 600,
+      "start_x": 8920.0,
+      "end_x": 8964.0,
+      "start_time": "2026-06-09T13:30:00+00:00",
+      "end_time": "2026-06-11T13:00:00+00:00",
+      "start_price": 2887.0,
+      "end_price": 2944.0,
+      "low": 2887.0,
+      "high": 2944.0,
+      "direction": 1,
+      "confirmed_at": "2026-06-15T01:15:00+00:00"
+    },
+    {
+      "id": 76,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 600,
+      "source_stop": 605,
+      "start_x": 8964.0,
+      "end_x": 8995.0,
+      "start_time": "2026-06-11T13:00:00+00:00",
+      "end_time": "2026-06-15T01:00:00+00:00",
+      "start_price": 2944.0,
+      "end_price": 2924.0,
+      "low": 2924.0,
+      "high": 2944.0,
+      "direction": -1,
+      "confirmed_at": "2026-06-16T14:15:00+00:00"
+    },
+    {
+      "id": 77,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 605,
+      "source_stop": 610,
+      "start_x": 8995.0,
+      "end_x": 9037.0,
+      "start_time": "2026-06-15T01:00:00+00:00",
+      "end_time": "2026-06-16T14:00:00+00:00",
+      "start_price": 2924.0,
+      "end_price": 2967.0,
+      "low": 2924.0,
+      "high": 2967.0,
+      "direction": 1,
+      "confirmed_at": "2026-06-23T01:15:00+00:00"
+    },
+    {
+      "id": 78,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 610,
+      "source_stop": 613,
+      "start_x": 9037.0,
+      "end_x": 9102.0,
+      "start_time": "2026-06-16T14:00:00+00:00",
+      "end_time": "2026-06-23T01:00:00+00:00",
+      "start_price": 2967.0,
+      "end_price": 2919.0,
+      "low": 2919.0,
+      "high": 2967.0,
+      "direction": -1,
+      "confirmed_at": "2026-06-26T06:30:00+00:00"
+    },
+    {
+      "id": 79,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 613,
+      "source_stop": 618,
+      "start_x": 9102.0,
+      "end_x": 9193.0,
+      "start_time": "2026-06-23T01:00:00+00:00",
+      "end_time": "2026-06-26T14:45:00+00:00",
+      "start_price": 2919.0,
+      "end_price": 2986.0,
+      "low": 2919.0,
+      "high": 2986.0,
+      "direction": 1,
+      "confirmed_at": "2026-07-01T01:00:00+00:00"
+    },
+    {
+      "id": 80,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 618,
+      "source_stop": 621,
+      "start_x": 9193.0,
+      "end_x": 9239.0,
+      "start_time": "2026-06-26T14:45:00+00:00",
+      "end_time": "2026-06-30T14:45:00+00:00",
+      "start_price": 2986.0,
+      "end_price": 2921.0,
+      "low": 2921.0,
+      "high": 2986.0,
+      "direction": -1,
+      "confirmed_at": "2026-07-02T05:30:00+00:00"
+    },
+    {
+      "id": 81,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 621,
+      "source_stop": 624,
+      "start_x": 9239.0,
+      "end_x": 9264.0,
+      "start_time": "2026-06-30T14:45:00+00:00",
+      "end_time": "2026-07-02T01:15:00+00:00",
+      "start_price": 2921.0,
+      "end_price": 2989.0,
+      "low": 2921.0,
+      "high": 2989.0,
+      "direction": 1,
+      "confirmed_at": "2026-07-03T06:45:00+00:00"
+    },
+    {
+      "id": 82,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 624,
+      "source_stop": 627,
+      "start_x": 9264.0,
+      "end_x": 9298.0,
+      "start_time": "2026-07-02T01:15:00+00:00",
+      "end_time": "2026-07-03T06:15:00+00:00",
+      "start_price": 2989.0,
+      "end_price": 2957.0,
+      "low": 2957.0,
+      "high": 2989.0,
+      "direction": -1,
+      "confirmed_at": "2026-07-08T14:45:00+00:00"
+    },
+    {
+      "id": 83,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 627,
+      "source_stop": 634,
+      "start_x": 9298.0,
+      "end_x": 9424.0,
+      "start_time": "2026-07-03T06:15:00+00:00",
+      "end_time": "2026-07-13T01:00:00+00:00",
+      "start_price": 2957.0,
+      "end_price": 3100.0,
+      "low": 2957.0,
+      "high": 3100.0,
+      "direction": 1,
+      "confirmed_at": "2026-07-14T13:30:00+00:00"
+    },
+    {
+      "id": 84,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 634,
+      "source_stop": 637,
+      "start_x": 9424.0,
+      "end_x": 9462.0,
+      "start_time": "2026-07-13T01:00:00+00:00",
+      "end_time": "2026-07-14T13:00:00+00:00",
+      "start_price": 3100.0,
+      "end_price": 3039.0,
+      "low": 3039.0,
+      "high": 3100.0,
+      "direction": -1,
+      "confirmed_at": "2026-07-16T01:15:00+00:00"
+    },
+    {
+      "id": 85,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 637,
+      "source_stop": 640,
+      "start_x": 9462.0,
+      "end_x": 9493.0,
+      "start_time": "2026-07-14T13:00:00+00:00",
+      "end_time": "2026-07-16T01:00:00+00:00",
+      "start_price": 3039.0,
+      "end_price": 3097.0,
+      "low": 3039.0,
+      "high": 3097.0,
+      "direction": 1,
+      "confirmed_at": "2026-07-17T06:45:00+00:00"
+    },
+    {
+      "id": 86,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 640,
+      "source_stop": 643,
+      "start_x": 9493.0,
+      "end_x": 9525.0,
+      "start_time": "2026-07-16T01:00:00+00:00",
+      "end_time": "2026-07-17T05:30:00+00:00",
+      "start_price": 3097.0,
+      "end_price": 3055.0,
+      "low": 3055.0,
+      "high": 3097.0,
+      "direction": -1,
+      "confirmed_at": "2026-07-20T14:30:00+00:00"
+    },
+    {
+      "id": 87,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 643,
+      "source_stop": 654,
+      "start_x": 9525.0,
+      "end_x": 9645.0,
+      "start_time": "2026-07-17T05:30:00+00:00",
+      "end_time": "2026-07-24T06:45:00+00:00",
+      "start_price": 3055.0,
+      "end_price": 3230.0,
+      "low": 3055.0,
+      "high": 3230.0,
+      "direction": 1,
+      "confirmed_at": "2026-07-28T13:15:00+00:00"
+    },
+    {
+      "id": 88,
+      "snapshot_id": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "source_start": 654,
+      "source_stop": 663,
+      "start_x": 9645.0,
+      "end_x": 9769.0,
+      "start_time": "2026-07-24T06:45:00+00:00",
+      "end_time": "2026-08-03T01:00:00+00:00",
+      "start_price": 3230.0,
+      "end_price": 3045.0,
+      "low": 3045.0,
+      "high": 3230.0,
+      "direction": -1,
+      "confirmed_at": "2026-08-06T02:45:00+00:00"
+    }
+  ],
+  "centers": [
+    {
+      "start": 0,
+      "terminal": 2,
+      "confirmation": 3,
+      "observed_stop": 3,
+      "low": 3005.0,
+      "high": 3083.0,
+      "formation_at": "2024-11-19T01:30:00+00:00",
+      "confirmed_at": "2024-11-20T02:30:00+00:00",
+      "left": null,
+      "right": {
+        "segment_id": 2,
+        "fraction": 0.28363636363636363,
+        "x": 285.31636363636363,
+        "time": "2024-11-13T16:49:12+00:00",
+        "price": 3005.0
+      },
+      "diagnostics": [
+        "left_crossing_missing"
+      ]
+    },
+    {
+      "start": 3,
+      "terminal": 6,
+      "confirmation": 7,
+      "observed_stop": 7,
+      "low": 2808.0,
+      "high": 2824.0,
+      "formation_at": "2024-12-02T03:15:00+00:00",
+      "confirmed_at": "2024-12-18T03:15:00+00:00",
+      "left": {
+        "segment_id": 3,
+        "fraction": 0.0,
+        "x": 324.0,
+        "time": "2024-11-15T06:15:00+00:00",
+        "price": 2808.0
+      },
+      "right": {
+        "segment_id": 6,
+        "fraction": 0.07692307692307693,
+        "x": 509.84615384615387,
+        "time": "2024-11-27T19:27:41.538462+00:00",
+        "price": 2808.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 7,
+      "terminal": 11,
+      "confirmation": 12,
+      "observed_stop": 12,
+      "low": 2616.0,
+      "high": 2655.0,
+      "formation_at": "2025-01-03T13:45:00+00:00",
+      "confirmed_at": "2025-02-10T02:00:00+00:00",
+      "left": {
+        "segment_id": 7,
+        "fraction": 0.0,
+        "x": 772.0,
+        "time": "2024-12-13T01:00:00+00:00",
+        "price": 2616.0
+      },
+      "right": {
+        "segment_id": 11,
+        "fraction": 0.16279069767441862,
+        "x": 1222.8139534883721,
+        "time": "2025-01-11T09:47:47.441860+00:00",
+        "price": 2655.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 12,
+      "terminal": 21,
+      "confirmation": 22,
+      "observed_stop": 22,
+      "low": 2820.0,
+      "high": 2871.0,
+      "formation_at": "2025-02-14T01:00:00+00:00",
+      "confirmed_at": "2025-04-14T14:00:00+00:00",
+      "left": {
+        "segment_id": 12,
+        "fraction": -0.0,
+        "x": 1407.0,
+        "time": "2025-01-22T14:45:00+00:00",
+        "price": 2871.0
+      },
+      "right": {
+        "segment_id": 21,
+        "fraction": 0.18181818181818182,
+        "x": 2359.2727272727275,
+        "time": "2025-03-30T12:04:05.454545+00:00",
+        "price": 2871.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 22,
+      "terminal": 26,
+      "confirmation": 27,
+      "observed_stop": 27,
+      "low": 3051.0,
+      "high": 3124.0,
+      "formation_at": "2025-04-24T06:15:00+00:00",
+      "confirmed_at": "2025-05-29T02:00:00+00:00",
+      "left": {
+        "segment_id": 22,
+        "fraction": 0.37606837606837606,
+        "x": 2485.811965811966,
+        "time": "2025-04-09T07:56:47.692308+00:00",
+        "price": 3124.0
+      },
+      "right": {
+        "segment_id": 26,
+        "fraction": 0.11214953271028037,
+        "x": 2770.0093457943926,
+        "time": "2025-04-27T00:45:25.233645+00:00",
+        "price": 3051.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 27,
+      "terminal": 37,
+      "confirmation": 38,
+      "observed_stop": 38,
+      "low": 2932.0,
+      "high": 2978.0,
+      "formation_at": "2025-06-23T02:00:00+00:00",
+      "confirmed_at": "2025-08-19T03:15:00+00:00",
+      "left": {
+        "segment_id": 27,
+        "fraction": 0.6068376068376068,
+        "x": 3150.991452991453,
+        "time": "2025-05-24T22:43:35.384615+00:00",
+        "price": 2932.0
+      },
+      "right": {
+        "segment_id": 37,
+        "fraction": 0.06607929515418502,
+        "x": 4199.651982378855,
+        "time": "2025-07-30T01:01:19.295154+00:00",
+        "price": 2978.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 38,
+      "terminal": 40,
+      "confirmation": 41,
+      "observed_stop": 41,
+      "low": 3121.0,
+      "high": 3178.0,
+      "formation_at": "2025-09-03T13:45:00+00:00",
+      "confirmed_at": "2025-09-10T02:45:00+00:00",
+      "left": {
+        "segment_id": 38,
+        "fraction": 0.17391304347826086,
+        "x": 4444.913043478261,
+        "time": "2025-08-13T10:13:02.608696+00:00",
+        "price": 3178.0
+      },
+      "right": {
+        "segment_id": 40,
+        "fraction": 0.37748344370860926,
+        "x": 4595.152317880795,
+        "time": "2025-08-22T12:37:50.860927+00:00",
+        "price": 3121.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 41,
+      "terminal": 44,
+      "confirmation": 45,
+      "observed_stop": 45,
+      "low": 3055.0,
+      "high": 3095.0,
+      "formation_at": "2025-09-16T01:00:00+00:00",
+      "confirmed_at": "2025-10-24T06:30:00+00:00",
+      "left": {
+        "segment_id": 41,
+        "fraction": 0.4117647058823529,
+        "x": 4760.235294117647,
+        "time": "2025-09-01T15:20:17.647059+00:00",
+        "price": 3055.0
+      },
+      "right": {
+        "segment_id": 44,
+        "fraction": 0.22105263157894736,
+        "x": 4979.021052631579,
+        "time": "2025-09-14T12:27:47.368421+00:00",
+        "price": 3055.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 45,
+      "terminal": 47,
+      "confirmation": 48,
+      "observed_stop": 48,
+      "low": 2907.0,
+      "high": 2976.0,
+      "formation_at": "2025-11-07T14:30:00+00:00",
+      "confirmed_at": "2025-11-11T03:00:00+00:00",
+      "left": {
+        "segment_id": 45,
+        "fraction": 0.0,
+        "x": 5113.0,
+        "time": "2025-09-23T06:00:00+00:00",
+        "price": 2907.0
+      },
+      "right": {
+        "segment_id": 47,
+        "fraction": 0.5321888412017167,
+        "x": 5569.515021459228,
+        "time": "2025-10-29T13:33:20.858369+00:00",
+        "price": 2976.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 48,
+      "terminal": 52,
+      "confirmation": 53,
+      "observed_stop": 53,
+      "low": 3031.0,
+      "high": 3085.0,
+      "formation_at": "2025-11-25T14:00:00+00:00",
+      "confirmed_at": "2025-12-15T01:30:00+00:00",
+      "left": {
+        "segment_id": 48,
+        "fraction": -0.0,
+        "x": 5686.0,
+        "time": "2025-11-05T13:30:00+00:00",
+        "price": 3085.0
+      },
+      "right": {
+        "segment_id": 52,
+        "fraction": 0.006734006734006734,
+        "x": 6009.616161616162,
+        "time": "2025-11-25T15:50:48.484848+00:00",
+        "price": 3031.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 53,
+      "terminal": 61,
+      "confirmation": 62,
+      "observed_stop": 62,
+      "low": 2736.0,
+      "high": 2789.0,
+      "formation_at": "2026-01-13T01:15:00+00:00",
+      "confirmed_at": "2026-03-09T05:45:00+00:00",
+      "left": {
+        "segment_id": 53,
+        "fraction": 0.0,
+        "x": 6248.0,
+        "time": "2025-12-10T02:00:00+00:00",
+        "price": 2736.0
+      },
+      "right": {
+        "segment_id": 61,
+        "fraction": 0.5606060606060606,
+        "x": 7243.287878787879,
+        "time": "2026-02-16T14:50:00+00:00",
+        "price": 2789.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 62,
+      "terminal": 65,
+      "confirmation": 66,
+      "observed_stop": 66,
+      "low": 2823.0,
+      "high": 2847.0,
+      "formation_at": "2026-04-09T13:45:00+00:00",
+      "confirmed_at": "2026-04-16T13:15:00+00:00",
+      "left": {
+        "segment_id": 62,
+        "fraction": -0.0,
+        "x": 7336.0,
+        "time": "2026-02-26T02:00:00+00:00",
+        "price": 2847.0
+      },
+      "right": {
+        "segment_id": 65,
+        "fraction": 0.13559322033898305,
+        "x": 7983.796610169492,
+        "time": "2026-04-08T10:29:14.237288+00:00",
+        "price": 2847.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 66,
+      "terminal": 74,
+      "confirmation": 75,
+      "observed_stop": 75,
+      "low": 2965.0,
+      "high": 3000.0,
+      "formation_at": "2026-04-28T01:15:00+00:00",
+      "confirmed_at": "2026-06-15T01:15:00+00:00",
+      "left": {
+        "segment_id": 66,
+        "fraction": -0.0,
+        "x": 8008.0,
+        "time": "2026-04-09T13:30:00+00:00",
+        "price": 3000.0
+      },
+      "right": {
+        "segment_id": 74,
+        "fraction": 0.36585365853658536,
+        "x": 8807.121951219513,
+        "time": "2026-06-02T06:09:30.731707+00:00",
+        "price": 2965.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 75,
+      "terminal": 81,
+      "confirmation": 82,
+      "observed_stop": 82,
+      "low": 2924.0,
+      "high": 2944.0,
+      "formation_at": "2026-06-23T01:15:00+00:00",
+      "confirmed_at": "2026-07-08T14:45:00+00:00",
+      "left": {
+        "segment_id": 75,
+        "fraction": 0.6491228070175439,
+        "x": 8948.561403508771,
+        "time": "2026-06-10T20:20:00+00:00",
+        "price": 2924.0
+      },
+      "right": {
+        "segment_id": 81,
+        "fraction": 0.3382352941176471,
+        "x": 9247.45588235294,
+        "time": "2026-07-01T02:25:08.823529+00:00",
+        "price": 2944.0
+      },
+      "diagnostics": []
+    },
+    {
+      "start": 83,
+      "terminal": null,
+      "confirmation": null,
+      "observed_stop": 89,
+      "low": 3039.0,
+      "high": 3097.0,
+      "formation_at": "2026-07-17T06:45:00+00:00",
+      "confirmed_at": null,
+      "left": {
+        "segment_id": 83,
+        "fraction": 0.5734265734265734,
+        "x": 9370.251748251749,
+        "time": "2026-07-08T20:51:42.797203+00:00",
+        "price": 3039.0
+      },
+      "right": null,
+      "diagnostics": []
+    }
+  ],
+  "diagnostic": true,
+  "pens": [
+    [
+      1,
+      2998.0,
+      7,
+      2958.0
+    ],
+    [
+      7,
+      2958.0,
+      28,
+      3026.0
+    ],
+    [
+      28,
+      3026.0,
+      37,
+      2966.0
+    ],
+    [
+      37,
+      2966.0,
+      50,
+      3020.0
+    ],
+    [
+      50,
+      3020.0,
+      102,
+      2958.0
+    ],
+    [
+      102,
+      2958.0,
+      110,
+      3005.0
+    ],
+    [
+      110,
+      3005.0,
+      141,
+      2952.0
+    ],
+    [
+      141,
+      2952.0,
+      153,
+      3005.0
+    ],
+    [
+      153,
+      3005.0,
+      159,
+      2975.0
+    ],
+    [
+      159,
+      2975.0,
+      181,
+      3109.0
+    ],
+    [
+      181,
+      3109.0,
+      185,
+      3077.0
+    ],
+    [
+      185,
+      3077.0,
+      189,
+      3116.0
+    ],
+    [
+      189,
+      3116.0,
+      208,
+      3005.0
+    ],
+    [
+      208,
+      3005.0,
+      222,
+      3103.0
+    ],
+    [
+      222,
+      3103.0,
+      248,
+      3056.0
+    ],
+    [
+      248,
+      3056.0,
+      260,
+      3080.0
+    ],
+    [
+      260,
+      3080.0,
+      266,
+      3055.0
+    ],
+    [
+      266,
+      3055.0,
+      270,
+      3083.0
+    ],
+    [
+      270,
+      3083.0,
+      290,
+      3032.0
+    ],
+    [
+      290,
+      3032.0,
+      298,
+      3056.0
+    ],
+    [
+      298,
+      3056.0,
+      314,
+      2823.0
+    ],
+    [
+      314,
+      2823.0,
+      318,
+      2852.0
+    ],
+    [
+      318,
+      2852.0,
+      324,
+      2808.0
+    ],
+    [
+      324,
+      2808.0,
+      344,
+      2834.0
+    ],
+    [
+      344,
+      2834.0,
+      351,
+      2815.0
+    ],
+    [
+      351,
+      2815.0,
+      358,
+      2844.0
+    ],
+    [
+      358,
+      2844.0,
+      374,
+      2819.0
+    ],
+    [
+      374,
+      2819.0,
+      379,
+      2831.0
+    ],
+    [
+      379,
+      2831.0,
+      384,
+      2813.0
+    ],
+    [
+      384,
+      2813.0,
+      398,
+      2830.0
+    ],
+    [
+      398,
+      2830.0,
+      402,
+      2807.0
+    ],
+    [
+      402,
+      2807.0,
+      409,
+      2827.0
+    ],
+    [
+      409,
+      2827.0,
+      441,
+      2766.0
+    ],
+    [
+      441,
+      2766.0,
+      451,
+      2798.0
+    ],
+    [
+      451,
+      2798.0,
+      466,
+      2778.0
+    ],
+    [
+      466,
+      2778.0,
+      488,
+      2824.0
+    ],
+    [
+      488,
+      2824.0,
+      539,
+      2787.0
+    ],
+    [
+      539,
+      2787.0,
+      549,
+      2813.0
+    ],
+    [
+      549,
+      2813.0,
+      572,
+      2773.0
+    ],
+    [
+      572,
+      2773.0,
+      578,
+      2790.0
+    ],
+    [
+      578,
+      2790.0,
+      592,
+      2737.0
+    ],
+    [
+      592,
+      2737.0,
+      603,
+      2766.0
+    ],
+    [
+      603,
+      2766.0,
+      634,
+      2645.0
+    ],
+    [
+      634,
+      2645.0,
+      643,
+      2682.0
+    ],
+    [
+      643,
+      2682.0,
+      649,
+      2654.0
+    ],
+    [
+      649,
+      2654.0,
+      657,
+      2671.0
+    ],
+    [
+      657,
+      2671.0,
+      663,
+      2647.0
+    ],
+    [
+      663,
+      2647.0,
+      673,
+      2668.0
+    ],
+    [
+      673,
+      2668.0,
+      678,
+      2650.0
+    ],
+    [
+      678,
+      2650.0,
+      702,
+      2699.0
+    ],
+    [
+      702,
+      2699.0,
+      712,
+      2662.0
+    ],
+    [
+      712,
+      2662.0,
+      719,
+      2683.0
+    ],
+    [
+      719,
+      2683.0,
+      741,
+      2636.0
+    ],
+    [
+      741,
+      2636.0,
+      750,
+      2660.0
+    ],
+    [
+      750,
+      2660.0,
+      772,
+      2616.0
+    ],
+    [
+      772,
+      2616.0,
+      783,
+      2650.0
+    ],
+    [
+      783,
+      2650.0,
+      795,
+      2620.0
+    ],
+    [
+      795,
+      2620.0,
+      800,
+      2655.0
+    ],
+    [
+      800,
+      2655.0,
+      821,
+      2608.0
+    ],
+    [
+      821,
+      2608.0,
+      831,
+      2620.0
+    ],
+    [
+      831,
+      2620.0,
+      846,
+      2571.0
+    ],
+    [
+      846,
+      2571.0,
+      851,
+      2588.0
+    ],
+    [
+      851,
+      2588.0,
+      856,
+      2555.0
+    ],
+    [
+      856,
+      2555.0,
+      863,
+      2586.0
+    ],
+    [
+      863,
+      2586.0,
+      872,
+      2549.0
+    ],
+    [
+      872,
+      2549.0,
+      889,
+      2605.0
+    ],
+    [
+      889,
+      2605.0,
+      893,
+      2593.0
+    ],
+    [
+      893,
+      2593.0,
+      910,
+      2659.0
+    ],
+    [
+      910,
+      2659.0,
+      921,
+      2608.0
+    ],
+    [
+      921,
+      2608.0,
+      948,
+      2634.0
+    ],
+    [
+      948,
+      2634.0,
+      961,
+      2615.0
+    ],
+    [
+      961,
+      2615.0,
+      1007,
+      2698.0
+    ],
+    [
+      1007,
+      2698.0,
+      1025,
+      2662.0
+    ],
+    [
+      1025,
+      2662.0,
+      1063,
+      2731.0
+    ],
+    [
+      1063,
+      2731.0,
+      1081,
+      2696.0
+    ],
+    [
+      1081,
+      2696.0,
+      1086,
+      2724.0
+    ],
+    [
+      1086,
+      2724.0,
+      1103,
+      2652.0
+    ],
+    [
+      1103,
+      2652.0,
+      1113,
+      2712.0
+    ],
+    [
+      1113,
+      2712.0,
+      1147,
+      2636.0
+    ],
+    [
+      1147,
+      2636.0,
+      1155,
+      2672.0
+    ],
+    [
+      1155,
+      2672.0,
+      1171,
+      2624.0
+    ],
+    [
+      1171,
+      2624.0,
+      1177,
+      2642.0
+    ],
+    [
+      1177,
+      2642.0,
+      1187,
+      2613.0
+    ],
+    [
+      1187,
+      2613.0,
+      1247,
+      2780.0
+    ],
+    [
+      1247,
+      2780.0,
+      1256,
+      2739.0
+    ],
+    [
+      1256,
+      2739.0,
+      1259,
+      2760.0
+    ],
+    [
+      1259,
+      2760.0,
+      1263,
+      2740.0
+    ],
+    [
+      1263,
+      2740.0,
+      1290,
+      2791.0
+    ],
+    [
+      1290,
+      2791.0,
+      1308,
+      2733.0
+    ],
+    [
+      1308,
+      2733.0,
+      1333,
+      2795.0
+    ],
+    [
+      1333,
+      2795.0,
+      1337,
+      2771.0
+    ],
+    [
+      1337,
+      2771.0,
+      1358,
+      2823.0
+    ],
+    [
+      1358,
+      2823.0,
+      1362,
+      2800.0
+    ],
+    [
+      1362,
+      2800.0,
+      1374,
+      2865.0
+    ],
+    [
+      1374,
+      2865.0,
+      1384,
+      2824.0
+    ],
+    [
+      1384,
+      2824.0,
+      1407,
+      2871.0
+    ],
+    [
+      1407,
+      2871.0,
+      1431,
+      2823.0
+    ],
+    [
+      1431,
+      2823.0,
+      1435,
+      2863.0
+    ],
+    [
+      1435,
+      2863.0,
+      1459,
+      2783.0
+    ],
+    [
+      1459,
+      2783.0,
+      1484,
+      2941.0
+    ],
+    [
+      1484,
+      2941.0,
+      1496,
+      2876.0
+    ],
+    [
+      1496,
+      2876.0,
+      1508,
+      2914.0
+    ],
+    [
+      1508,
+      2914.0,
+      1514,
+      2861.0
+    ],
+    [
+      1514,
+      2861.0,
+      1539,
+      2953.0
+    ],
+    [
+      1539,
+      2953.0,
+      1556,
+      2881.0
+    ],
+    [
+      1556,
+      2881.0,
+      1565,
+      2914.0
+    ],
+    [
+      1565,
+      2914.0,
+      1593,
+      2835.0
+    ],
+    [
+      1593,
+      2835.0,
+      1598,
+      2862.0
+    ],
+    [
+      1598,
+      2862.0,
+      1607,
+      2820.0
+    ],
+    [
+      1607,
+      2820.0,
+      1611,
+      2854.0
+    ],
+    [
+      1611,
+      2854.0,
+      1622,
+      2838.0
+    ],
+    [
+      1622,
+      2838.0,
+      1629,
+      2885.0
+    ],
+    [
+      1629,
+      2885.0,
+      1632,
+      2857.0
+    ],
+    [
+      1632,
+      2857.0,
+      1640,
+      2895.0
+    ],
+    [
+      1640,
+      2895.0,
+      1649,
+      2862.0
+    ],
+    [
+      1649,
+      2862.0,
+      1653,
+      2897.0
+    ],
+    [
+      1653,
+      2897.0,
+      1666,
+      2843.0
+    ],
+    [
+      1666,
+      2843.0,
+      1679,
+      2877.0
+    ],
+    [
+      1679,
+      2877.0,
+      1685,
+      2847.0
+    ],
+    [
+      1685,
+      2847.0,
+      1694,
+      2894.0
+    ],
+    [
+      1694,
+      2894.0,
+      1702,
+      2874.0
+    ],
+    [
+      1702,
+      2874.0,
+      1716,
+      2917.0
+    ],
+    [
+      1716,
+      2917.0,
+      1724,
+      2893.0
+    ],
+    [
+      1724,
+      2893.0,
+      1755,
+      2985.0
+    ],
+    [
+      1755,
+      2985.0,
+      1758,
+      2936.0
+    ],
+    [
+      1758,
+      2936.0,
+      1762,
+      2964.0
+    ],
+    [
+      1762,
+      2964.0,
+      1791,
+      2885.0
+    ],
+    [
+      1791,
+      2885.0,
+      1800,
+      2927.0
+    ],
+    [
+      1800,
+      2927.0,
+      1813,
+      2867.0
+    ],
+    [
+      1813,
+      2867.0,
+      1821,
+      2895.0
+    ],
+    [
+      1821,
+      2895.0,
+      1829,
+      2874.0
+    ],
+    [
+      1829,
+      2874.0,
+      1852,
+      2946.0
+    ],
+    [
+      1852,
+      2946.0,
+      1857,
+      2915.0
+    ],
+    [
+      1857,
+      2915.0,
+      1878,
+      2977.0
+    ],
+    [
+      1878,
+      2977.0,
+      1883,
+      2925.0
+    ],
+    [
+      1883,
+      2925.0,
+      1892,
+      3016.0
+    ],
+    [
+      1892,
+      3016.0,
+      1911,
+      2944.0
+    ],
+    [
+      1911,
+      2944.0,
+      1915,
+      3025.0
+    ],
+    [
+      1915,
+      3025.0,
+      1927,
+      2927.0
+    ],
+    [
+      1927,
+      2927.0,
+      1930,
+      2951.0
+    ],
+    [
+      1930,
+      2951.0,
+      1960,
+      2854.0
+    ],
+    [
+      1960,
+      2854.0,
+      1978,
+      2924.0
+    ],
+    [
+      1978,
+      2924.0,
+      1993,
+      2863.0
+    ],
+    [
+      1993,
+      2863.0,
+      1998,
+      2979.0
+    ],
+    [
+      1998,
+      2979.0,
+      2022,
+      2857.0
+    ],
+    [
+      2022,
+      2857.0,
+      2027,
+      2883.0
+    ],
+    [
+      2027,
+      2883.0,
+      2034,
+      2851.0
+    ],
+    [
+      2034,
+      2851.0,
+      2041,
+      2875.0
+    ],
+    [
+      2041,
+      2875.0,
+      2054,
+      2822.0
+    ],
+    [
+      2054,
+      2822.0,
+      2062,
+      2864.0
+    ],
+    [
+      2062,
+      2864.0,
+      2065,
+      2845.0
+    ],
+    [
+      2065,
+      2845.0,
+      2089,
+      2901.0
+    ],
+    [
+      2089,
+      2901.0,
+      2092,
+      2878.0
+    ],
+    [
+      2092,
+      2878.0,
+      2116,
+      2929.0
+    ],
+    [
+      2116,
+      2929.0,
+      2128,
+      2889.0
+    ],
+    [
+      2128,
+      2889.0,
+      2141,
+      2917.0
+    ],
+    [
+      2141,
+      2917.0,
+      2148,
+      2899.0
+    ],
+    [
+      2148,
+      2899.0,
+      2154,
+      2924.0
+    ],
+    [
+      2154,
+      2924.0,
+      2159,
+      2880.0
+    ],
+    [
+      2159,
+      2880.0,
+      2186,
+      2935.0
+    ],
+    [
+      2186,
+      2935.0,
+      2197,
+      2845.0
+    ],
+    [
+      2197,
+      2845.0,
+      2209,
+      2883.0
+    ],
+    [
+      2209,
+      2883.0,
+      2229,
+      2834.0
+    ],
+    [
+      2229,
+      2834.0,
+      2253,
+      2879.0
+    ],
+    [
+      2253,
+      2879.0,
+      2259,
+      2851.0
+    ],
+    [
+      2259,
+      2851.0,
+      2272,
+      2874.0
+    ],
+    [
+      2272,
+      2874.0,
+      2298,
+      2806.0
+    ],
+    [
+      2298,
+      2806.0,
+      2315,
+      2840.0
+    ],
+    [
+      2315,
+      2840.0,
+      2336,
+      2805.0
+    ],
+    [
+      2336,
+      2805.0,
+      2343,
+      2845.0
+    ],
+    [
+      2343,
+      2845.0,
+      2351,
+      2823.0
+    ],
+    [
+      2351,
+      2823.0,
+      2357,
+      2855.0
+    ],
+    [
+      2357,
+      2855.0,
+      2368,
+      2790.0
+    ],
+    [
+      2368,
+      2790.0,
+      2371,
+      2822.0
+    ],
+    [
+      2371,
+      2822.0,
+      2382,
+      2797.0
+    ],
+    [
+      2382,
+      2797.0,
+      2395,
+      2840.0
+    ],
+    [
+      2395,
+      2840.0,
+      2410,
+      2819.0
+    ],
+    [
+      2410,
+      2819.0,
+      2427,
+      3120.0
+    ],
+    [
+      2427,
+      3120.0,
+      2441,
+      3042.0
+    ],
+    [
+      2441,
+      3042.0,
+      2464,
+      3168.0
+    ],
+    [
+      2464,
+      3168.0,
+      2497,
+      3053.0
+    ],
+    [
+      2497,
+      3053.0,
+      2505,
+      3095.0
+    ],
+    [
+      2505,
+      3095.0,
+      2511,
+      3068.0
+    ],
+    [
+      2511,
+      3068.0,
+      2517,
+      3092.0
+    ],
+    [
+      2517,
+      3092.0,
+      2522,
+      3051.0
+    ],
+    [
+      2522,
+      3051.0,
+      2528,
+      3093.0
+    ],
+    [
+      2528,
+      3093.0,
+      2537,
+      3075.0
+    ],
+    [
+      2537,
+      3075.0,
+      2557,
+      3124.0
+    ],
+    [
+      2557,
+      3124.0,
+      2585,
+      3054.0
+    ],
+    [
+      2585,
+      3054.0,
+      2589,
+      3081.0
+    ],
+    [
+      2589,
+      3081.0,
+      2600,
+      3011.0
+    ],
+    [
+      2600,
+      3011.0,
+      2622,
+      3036.0
+    ],
+    [
+      2622,
+      3036.0,
+      2630,
+      3004.0
+    ],
+    [
+      2630,
+      3004.0,
+      2657,
+      3066.0
+    ],
+    [
+      2657,
+      3066.0,
+      2668,
+      3035.0
+    ],
+    [
+      2668,
+      3035.0,
+      2673,
+      3053.0
+    ],
+    [
+      2673,
+      3053.0,
+      2679,
+      3032.0
+    ],
+    [
+      2679,
+      3032.0,
+      2690,
+      3064.0
+    ],
+    [
+      2690,
+      3064.0,
+      2706,
+      3023.0
+    ],
+    [
+      2706,
+      3023.0,
+      2717,
+      3052.0
+    ],
+    [
+      2717,
+      3052.0,
+      2722,
+      3034.0
+    ],
+    [
+      2722,
+      3034.0,
+      2733,
+      3075.0
+    ],
+    [
+      2733,
+      3075.0,
+      2773,
+      2975.0
+    ],
+    [
+      2773,
+      2975.0,
+      2779,
+      2998.0
+    ],
+    [
+      2779,
+      2998.0,
+      2789,
+      2970.0
+    ],
+    [
+      2789,
+      2970.0,
+      2797,
+      2992.0
+    ],
+    [
+      2797,
+      2992.0,
+      2882,
+      2895.0
+    ],
+    [
+      2882,
+      2895.0,
+      2894,
+      2929.0
+    ],
+    [
+      2894,
+      2929.0,
+      2914,
+      2897.0
+    ],
+    [
+      2914,
+      2897.0,
+      2917,
+      2907.0
+    ],
+    [
+      2917,
+      2907.0,
+      2925,
+      2865.0
+    ],
+    [
+      2925,
+      2865.0,
+      2948,
+      2925.0
+    ],
+    [
+      2948,
+      2925.0,
+      2967,
+      2875.0
+    ],
+    [
+      2967,
+      2875.0,
+      2974,
+      2918.0
+    ],
+    [
+      2974,
+      2918.0,
+      2977,
+      2901.0
+    ],
+    [
+      2977,
+      2901.0,
+      2985,
+      2917.0
+    ],
+    [
+      2985,
+      2917.0,
+      2994,
+      2888.0
+    ],
+    [
+      2994,
+      2888.0,
+      3008,
+      2925.0
+    ],
+    [
+      3008,
+      2925.0,
+      3014,
+      2890.0
+    ],
+    [
+      3014,
+      2890.0,
+      3019,
+      2915.0
+    ],
+    [
+      3019,
+      2915.0,
+      3063,
+      2861.0
+    ],
+    [
+      3063,
+      2861.0,
+      3072,
+      2895.0
+    ],
+    [
+      3072,
+      2895.0,
+      3078,
+      2885.0
+    ],
+    [
+      3078,
+      2885.0,
+      3083,
+      2901.0
+    ],
+    [
+      3083,
+      2901.0,
+      3088,
+      2885.0
+    ],
+    [
+      3088,
+      2885.0,
+      3101,
+      2945.0
+    ],
+    [
+      3101,
+      2945.0,
+      3109,
+      2920.0
+    ],
+    [
+      3109,
+      2920.0,
+      3134,
+      2966.0
+    ],
+    [
+      3134,
+      2966.0,
+      3155,
+      2935.0
+    ],
+    [
+      3155,
+      2935.0,
+      3171,
+      2964.0
+    ],
+    [
+      3171,
+      2964.0,
+      3183,
+      2940.0
+    ],
+    [
+      3183,
+      2940.0,
+      3188,
+      2974.0
+    ],
+    [
+      3188,
+      2974.0,
+      3196,
+      2952.0
+    ],
+    [
+      3196,
+      2952.0,
+      3208,
+      2978.0
+    ],
+    [
+      3208,
+      2978.0,
+      3216,
+      2951.0
+    ],
+    [
+      3216,
+      2951.0,
+      3221,
+      2967.0
+    ],
+    [
+      3221,
+      2967.0,
+      3225,
+      2932.0
+    ],
+    [
+      3225,
+      2932.0,
+      3236,
+      2965.0
+    ],
+    [
+      3236,
+      2965.0,
+      3242,
+      2944.0
+    ],
+    [
+      3242,
+      2944.0,
+      3250,
+      2985.0
+    ],
+    [
+      3250,
+      2985.0,
+      3295,
+      2925.0
+    ],
+    [
+      3295,
+      2925.0,
+      3312,
+      2965.0
+    ],
+    [
+      3312,
+      2965.0,
+      3318,
+      2949.0
+    ],
+    [
+      3318,
+      2949.0,
+      3331,
+      3011.0
+    ],
+    [
+      3331,
+      3011.0,
+      3339,
+      2995.0
+    ],
+    [
+      3339,
+      2995.0,
+      3356,
+      3022.0
+    ],
+    [
+      3356,
+      3022.0,
+      3361,
+      3010.0
+    ],
+    [
+      3361,
+      3010.0,
+      3367,
+      3023.0
+    ],
+    [
+      3367,
+      3023.0,
+      3378,
+      3005.0
+    ],
+    [
+      3378,
+      3005.0,
+      3415,
+      3065.0
+    ],
+    [
+      3415,
+      3065.0,
+      3423,
+      3032.0
+    ],
+    [
+      3423,
+      3032.0,
+      3438,
+      3057.0
+    ],
+    [
+      3438,
+      3057.0,
+      3448,
+      3041.0
+    ],
+    [
+      3448,
+      3041.0,
+      3454,
+      3056.0
+    ],
+    [
+      3454,
+      3056.0,
+      3462,
+      3020.0
+    ],
+    [
+      3462,
+      3020.0,
+      3500,
+      3087.0
+    ],
+    [
+      3500,
+      3087.0,
+      3530,
+      3052.0
+    ],
+    [
+      3530,
+      3052.0,
+      3557,
+      3086.0
+    ],
+    [
+      3557,
+      3086.0,
+      3587,
+      3021.0
+    ],
+    [
+      3587,
+      3021.0,
+      3597,
+      3042.0
+    ],
+    [
+      3597,
+      3042.0,
+      3607,
+      3013.0
+    ],
+    [
+      3607,
+      3013.0,
+      3616,
+      3040.0
+    ],
+    [
+      3616,
+      3040.0,
+      3662,
+      2921.0
+    ],
+    [
+      3662,
+      2921.0,
+      3668,
+      2945.0
+    ],
+    [
+      3668,
+      2945.0,
+      3682,
+      2926.0
+    ],
+    [
+      3682,
+      2926.0,
+      3719,
+      2971.0
+    ],
+    [
+      3719,
+      2971.0,
+      3722,
+      2948.0
+    ],
+    [
+      3722,
+      2948.0,
+      3733,
+      2969.0
+    ],
+    [
+      3733,
+      2969.0,
+      3741,
+      2942.0
+    ],
+    [
+      3741,
+      2942.0,
+      3745,
+      2957.0
+    ],
+    [
+      3745,
+      2957.0,
+      3753,
+      2935.0
+    ],
+    [
+      3753,
+      2935.0,
+      3760,
+      2954.0
+    ],
+    [
+      3760,
+      2954.0,
+      3763,
+      2943.0
+    ],
+    [
+      3763,
+      2943.0,
+      3768,
+      2976.0
+    ],
+    [
+      3768,
+      2976.0,
+      3781,
+      2953.0
+    ],
+    [
+      3781,
+      2953.0,
+      3788,
+      2976.0
+    ],
+    [
+      3788,
+      2976.0,
+      3806,
+      2946.0
+    ],
+    [
+      3806,
+      2946.0,
+      3810,
+      2969.0
+    ],
+    [
+      3810,
+      2969.0,
+      3852,
+      2925.0
+    ],
+    [
+      3852,
+      2925.0,
+      3866,
+      2956.0
+    ],
+    [
+      3866,
+      2956.0,
+      3886,
+      2928.0
+    ],
+    [
+      3886,
+      2928.0,
+      3910,
+      2985.0
+    ],
+    [
+      3910,
+      2985.0,
+      3915,
+      2971.0
+    ],
+    [
+      3915,
+      2971.0,
+      3921,
+      2984.0
+    ],
+    [
+      3921,
+      2984.0,
+      3929,
+      2961.0
+    ],
+    [
+      3929,
+      2961.0,
+      3944,
+      2999.0
+    ],
+    [
+      3944,
+      2999.0,
+      3961,
+      2972.0
+    ],
+    [
+      3961,
+      2972.0,
+      3970,
+      2989.0
+    ],
+    [
+      3970,
+      2989.0,
+      3981,
+      2969.0
+    ],
+    [
+      3981,
+      2969.0,
+      4059,
+      3084.0
+    ],
+    [
+      4059,
+      3084.0,
+      4065,
+      3057.0
+    ],
+    [
+      4065,
+      3057.0,
+      4091,
+      3121.0
+    ],
+    [
+      4091,
+      3121.0,
+      4122,
+      3003.0
+    ],
+    [
+      4122,
+      3003.0,
+      4128,
+      3038.0
+    ],
+    [
+      4128,
+      3038.0,
+      4183,
+      2963.0
+    ],
+    [
+      4183,
+      2963.0,
+      4198,
+      3005.0
+    ],
+    [
+      4198,
+      3005.0,
+      4202,
+      2987.0
+    ],
+    [
+      4202,
+      2987.0,
+      4208,
+      3016.0
+    ],
+    [
+      4208,
+      3016.0,
+      4211,
+      3001.0
+    ],
+    [
+      4211,
+      3001.0,
+      4222,
+      3019.0
+    ],
+    [
+      4222,
+      3019.0,
+      4237,
+      2986.0
+    ],
+    [
+      4237,
+      2986.0,
+      4252,
+      3022.0
+    ],
+    [
+      4252,
+      3022.0,
+      4260,
+      2995.0
+    ],
+    [
+      4260,
+      2995.0,
+      4278,
+      3036.0
+    ],
+    [
+      4278,
+      3036.0,
+      4285,
+      3015.0
+    ],
+    [
+      4285,
+      3015.0,
+      4296,
+      3047.0
+    ],
+    [
+      4296,
+      3047.0,
+      4320,
+      3004.0
+    ],
+    [
+      4320,
+      3004.0,
+      4333,
+      3034.0
+    ],
+    [
+      4333,
+      3034.0,
+      4348,
+      3006.0
+    ],
+    [
+      4348,
+      3006.0,
+      4358,
+      3050.0
+    ],
+    [
+      4358,
+      3050.0,
+      4372,
+      3031.0
+    ],
+    [
+      4372,
+      3031.0,
+      4435,
+      3190.0
+    ],
+    [
+      4435,
+      3190.0,
+      4451,
+      3147.0
+    ],
+    [
+      4451,
+      3147.0,
+      4462,
+      3185.0
+    ],
+    [
+      4462,
+      3185.0,
+      4475,
+      3135.0
+    ],
+    [
+      4475,
+      3135.0,
+      4481,
+      3150.0
+    ],
+    [
+      4481,
+      3150.0,
+      4492,
+      3121.0
+    ],
+    [
+      4492,
+      3121.0,
+      4496,
+      3149.0
+    ],
+    [
+      4496,
+      3149.0,
+      4499,
+      3123.0
+    ],
+    [
+      4499,
+      3123.0,
+      4534,
+      3178.0
+    ],
+    [
+      4534,
+      3178.0,
+      4549,
+      3131.0
+    ],
+    [
+      4549,
+      3131.0,
+      4553,
+      3152.0
+    ],
+    [
+      4553,
+      3152.0,
+      4559,
+      3138.0
+    ],
+    [
+      4559,
+      3138.0,
+      4565,
+      3163.0
+    ],
+    [
+      4565,
+      3163.0,
+      4581,
+      3105.0
+    ],
+    [
+      4581,
+      3105.0,
+      4585,
+      3122.0
+    ],
+    [
+      4585,
+      3122.0,
+      4610,
+      3081.0
+    ],
+    [
+      4610,
+      3081.0,
+      4634,
+      3128.0
+    ],
+    [
+      4634,
+      3128.0,
+      4680,
+      3040.0
+    ],
+    [
+      4680,
+      3040.0,
+      4687,
+      3064.0
+    ],
+    [
+      4687,
+      3064.0,
+      4696,
+      3027.0
+    ],
+    [
+      4696,
+      3027.0,
+      4734,
+      3074.0
+    ],
+    [
+      4734,
+      3074.0,
+      4772,
+      3039.0
+    ],
+    [
+      4772,
+      3039.0,
+      4796,
+      3076.0
+    ],
+    [
+      4796,
+      3076.0,
+      4818,
+      3042.0
+    ],
+    [
+      4818,
+      3042.0,
+      4852,
+      3095.0
+    ],
+    [
+      4852,
+      3095.0,
+      4870,
+      3065.0
+    ],
+    [
+      4870,
+      3065.0,
+      4879,
+      3084.0
+    ],
+    [
+      4879,
+      3084.0,
+      4899,
+      3055.0
+    ],
+    [
+      4899,
+      3055.0,
+      4915,
+      3080.0
+    ],
+    [
+      4915,
+      3080.0,
+      4924,
+      3065.0
+    ],
+    [
+      4924,
+      3065.0,
+      4941,
+      3097.0
+    ],
+    [
+      4941,
+      3097.0,
+      4967,
+      3032.0
+    ],
+    [
+      4967,
+      3032.0,
+      4979,
+      3051.0
+    ],
+    [
+      4979,
+      3051.0,
+      4983,
+      3030.0
+    ],
+    [
+      4983,
+      3030.0,
+      4989,
+      3058.0
+    ],
+    [
+      4989,
+      3058.0,
+      5020,
+      2998.0
+    ],
+    [
+      5020,
+      2998.0,
+      5027,
+      3016.0
+    ],
+    [
+      5027,
+      3016.0,
+      5053,
+      2983.0
+    ],
+    [
+      5053,
+      2983.0,
+      5081,
+      3046.0
+    ],
+    [
+      5081,
+      3046.0,
+      5113,
+      2907.0
+    ],
+    [
+      5113,
+      2907.0,
+      5116,
+      2932.0
+    ],
+    [
+      5116,
+      2932.0,
+      5123,
+      2910.0
+    ],
+    [
+      5123,
+      2910.0,
+      5140,
+      2976.0
+    ],
+    [
+      5140,
+      2976.0,
+      5144,
+      2951.0
+    ],
+    [
+      5144,
+      2951.0,
+      5161,
+      2971.0
+    ],
+    [
+      5161,
+      2971.0,
+      5187,
+      2926.0
+    ],
+    [
+      5187,
+      2926.0,
+      5203,
+      2952.0
+    ],
+    [
+      5203,
+      2952.0,
+      5233,
+      2918.0
+    ],
+    [
+      5233,
+      2918.0,
+      5242,
+      2946.0
+    ],
+    [
+      5242,
+      2946.0,
+      5251,
+      2923.0
+    ],
+    [
+      5251,
+      2923.0,
+      5260,
+      2936.0
+    ],
+    [
+      5260,
+      2936.0,
+      5266,
+      2903.0
+    ],
+    [
+      5266,
+      2903.0,
+      5270,
+      2957.0
+    ],
+    [
+      5270,
+      2957.0,
+      5310,
+      2883.0
+    ],
+    [
+      5310,
+      2883.0,
+      5324,
+      2930.0
+    ],
+    [
+      5324,
+      2930.0,
+      5335,
+      2906.0
+    ],
+    [
+      5335,
+      2906.0,
+      5353,
+      2925.0
+    ],
+    [
+      5353,
+      2925.0,
+      5383,
+      2863.0
+    ],
+    [
+      5383,
+      2863.0,
+      5416,
+      2913.0
+    ],
+    [
+      5416,
+      2913.0,
+      5437,
+      2852.0
+    ],
+    [
+      5437,
+      2852.0,
+      5474,
+      2942.0
+    ],
+    [
+      5474,
+      2942.0,
+      5481,
+      2928.0
+    ],
+    [
+      5481,
+      2928.0,
+      5494,
+      2955.0
+    ],
+    [
+      5494,
+      2955.0,
+      5519,
+      2922.0
+    ],
+    [
+      5519,
+      2922.0,
+      5592,
+      3014.0
+    ],
+    [
+      5592,
+      3014.0,
+      5597,
+      2982.0
+    ],
+    [
+      5597,
+      2982.0,
+      5632,
+      3058.0
+    ],
+    [
+      5632,
+      3058.0,
+      5637,
+      3019.0
+    ],
+    [
+      5637,
+      3019.0,
+      5646,
+      3047.0
+    ],
+    [
+      5646,
+      3047.0,
+      5661,
+      3002.0
+    ],
+    [
+      5661,
+      3002.0,
+      5686,
+      3085.0
+    ],
+    [
+      5686,
+      3085.0,
+      5716,
+      3034.0
+    ],
+    [
+      5716,
+      3034.0,
+      5728,
+      3063.0
+    ],
+    [
+      5728,
+      3063.0,
+      5735,
+      3031.0
+    ],
+    [
+      5735,
+      3031.0,
+      5742,
+      3068.0
+    ],
+    [
+      5742,
+      3068.0,
+      5749,
+      3044.0
+    ],
+    [
+      5749,
+      3044.0,
+      5762,
+      3070.0
+    ],
+    [
+      5762,
+      3070.0,
+      5778,
+      3038.0
+    ],
+    [
+      5778,
+      3038.0,
+      5795,
+      3073.0
+    ],
+    [
+      5795,
+      3073.0,
+      5805,
+      3045.0
+    ],
+    [
+      5805,
+      3045.0,
+      5845,
+      3107.0
+    ],
+    [
+      5845,
+      3107.0,
+      5853,
+      3024.0
+    ],
+    [
+      5853,
+      3024.0,
+      5876,
+      3086.0
+    ],
+    [
+      5876,
+      3086.0,
+      5902,
+      3016.0
+    ],
+    [
+      5902,
+      3016.0,
+      5911,
+      3039.0
+    ],
+    [
+      5911,
+      3039.0,
+      5934,
+      3000.0
+    ],
+    [
+      5934,
+      3000.0,
+      5942,
+      3027.0
+    ],
+    [
+      5942,
+      3027.0,
+      5961,
+      2988.0
+    ],
+    [
+      5961,
+      2988.0,
+      5977,
+      3020.0
+    ],
+    [
+      5977,
+      3020.0,
+      5983,
+      2995.0
+    ],
+    [
+      5983,
+      2995.0,
+      6008,
+      3033.0
+    ],
+    [
+      6008,
+      3033.0,
+      6013,
+      3016.0
+    ],
+    [
+      6013,
+      3016.0,
+      6018,
+      3030.0
+    ],
+    [
+      6018,
+      3030.0,
+      6029,
+      3007.0
+    ],
+    [
+      6029,
+      3007.0,
+      6049,
+      3062.0
+    ],
+    [
+      6049,
+      3062.0,
+      6074,
+      3041.0
+    ],
+    [
+      6074,
+      3041.0,
+      6077,
+      3057.0
+    ],
+    [
+      6077,
+      3057.0,
+      6098,
+      3029.0
+    ],
+    [
+      6098,
+      3029.0,
+      6121,
+      3053.0
+    ],
+    [
+      6121,
+      3053.0,
+      6129,
+      3025.0
+    ],
+    [
+      6129,
+      3025.0,
+      6143,
+      3047.0
+    ],
+    [
+      6143,
+      3047.0,
+      6158,
+      2812.0
+    ],
+    [
+      6158,
+      2812.0,
+      6168,
+      2844.0
+    ],
+    [
+      6168,
+      2844.0,
+      6210,
+      2770.0
+    ],
+    [
+      6210,
+      2770.0,
+      6216,
+      2790.0
+    ],
+    [
+      6216,
+      2790.0,
+      6248,
+      2736.0
+    ],
+    [
+      6248,
+      2736.0,
+      6260,
+      2763.0
+    ],
+    [
+      6260,
+      2763.0,
+      6265,
+      2745.0
+    ],
+    [
+      6265,
+      2745.0,
+      6294,
+      2789.0
+    ],
+    [
+      6294,
+      2789.0,
+      6305,
+      2754.0
+    ],
+    [
+      6305,
+      2754.0,
+      6308,
+      2772.0
+    ],
+    [
+      6308,
+      2772.0,
+      6313,
+      2753.0
+    ],
+    [
+      6313,
+      2753.0,
+      6321,
+      2772.0
+    ],
+    [
+      6321,
+      2772.0,
+      6333,
+      2748.0
+    ],
+    [
+      6333,
+      2748.0,
+      6353,
+      2784.0
+    ],
+    [
+      6353,
+      2784.0,
+      6363,
+      2756.0
+    ],
+    [
+      6363,
+      2756.0,
+      6371,
+      2769.0
+    ],
+    [
+      6371,
+      2769.0,
+      6382,
+      2732.0
+    ],
+    [
+      6382,
+      2732.0,
+      6395,
+      2749.0
+    ],
+    [
+      6395,
+      2749.0,
+      6415,
+      2726.0
+    ],
+    [
+      6415,
+      2726.0,
+      6433,
+      2754.0
+    ],
+    [
+      6433,
+      2754.0,
+      6451,
+      2736.0
+    ],
+    [
+      6451,
+      2736.0,
+      6473,
+      2757.0
+    ],
+    [
+      6473,
+      2757.0,
+      6492,
+      2719.0
+    ],
+    [
+      6492,
+      2719.0,
+      6544,
+      2803.0
+    ],
+    [
+      6544,
+      2803.0,
+      6567,
+      2758.0
+    ],
+    [
+      6567,
+      2758.0,
+      6583,
+      2780.0
+    ],
+    [
+      6583,
+      2780.0,
+      6604,
+      2735.0
+    ],
+    [
+      6604,
+      2735.0,
+      6624,
+      2767.0
+    ],
+    [
+      6624,
+      2767.0,
+      6632,
+      2757.0
+    ],
+    [
+      6632,
+      2757.0,
+      6674,
+      2827.0
+    ],
+    [
+      6674,
+      2827.0,
+      6689,
+      2774.0
+    ],
+    [
+      6689,
+      2774.0,
+      6703,
+      2801.0
+    ],
+    [
+      6703,
+      2801.0,
+      6711,
+      2775.0
+    ],
+    [
+      6711,
+      2775.0,
+      6737,
+      2805.0
+    ],
+    [
+      6737,
+      2805.0,
+      6742,
+      2756.0
+    ],
+    [
+      6742,
+      2756.0,
+      6749,
+      2779.0
+    ],
+    [
+      6749,
+      2779.0,
+      6765,
+      2740.0
+    ],
+    [
+      6765,
+      2740.0,
+      6772,
+      2756.0
+    ],
+    [
+      6772,
+      2756.0,
+      6777,
+      2744.0
+    ],
+    [
+      6777,
+      2744.0,
+      6785,
+      2761.0
+    ],
+    [
+      6785,
+      2761.0,
+      6794,
+      2742.0
+    ],
+    [
+      6794,
+      2742.0,
+      6799,
+      2750.0
+    ],
+    [
+      6799,
+      2750.0,
+      6832,
+      2719.0
+    ],
+    [
+      6832,
+      2719.0,
+      6835,
+      2746.0
+    ],
+    [
+      6835,
+      2746.0,
+      6857,
+      2712.0
+    ],
+    [
+      6857,
+      2712.0,
+      6874,
+      2742.0
+    ],
+    [
+      6874,
+      2742.0,
+      6884,
+      2718.0
+    ],
+    [
+      6884,
+      2718.0,
+      6918,
+      2773.0
+    ],
+    [
+      6918,
+      2773.0,
+      6940,
+      2745.0
+    ],
+    [
+      6940,
+      2745.0,
+      6962,
+      2776.0
+    ],
+    [
+      6962,
+      2776.0,
+      6972,
+      2756.0
+    ],
+    [
+      6972,
+      2756.0,
+      6978,
+      2773.0
+    ],
+    [
+      6978,
+      2773.0,
+      6985,
+      2763.0
+    ],
+    [
+      6985,
+      2763.0,
+      7015,
+      2809.0
+    ],
+    [
+      7015,
+      2809.0,
+      7018,
+      2790.0
+    ],
+    [
+      7018,
+      2790.0,
+      7033,
+      2808.0
+    ],
+    [
+      7033,
+      2808.0,
+      7046,
+      2755.0
+    ],
+    [
+      7046,
+      2755.0,
+      7051,
+      2771.0
+    ],
+    [
+      7051,
+      2771.0,
+      7057,
+      2754.0
+    ],
+    [
+      7057,
+      2754.0,
+      7063,
+      2767.0
+    ],
+    [
+      7063,
+      2767.0,
+      7125,
+      2715.0
+    ],
+    [
+      7125,
+      2715.0,
+      7143,
+      2740.0
+    ],
+    [
+      7143,
+      2740.0,
+      7153,
+      2729.0
+    ],
+    [
+      7153,
+      2729.0,
+      7173,
+      2760.0
+    ],
+    [
+      7173,
+      2760.0,
+      7193,
+      2727.0
+    ],
+    [
+      7193,
+      2727.0,
+      7207,
+      2742.0
+    ],
+    [
+      7207,
+      2742.0,
+      7216,
+      2732.0
+    ],
+    [
+      7216,
+      2732.0,
+      7236,
+      2777.0
+    ],
+    [
+      7236,
+      2777.0,
+      7247,
+      2766.0
+    ],
+    [
+      7247,
+      2766.0,
+      7270,
+      2813.0
+    ],
+    [
+      7270,
+      2813.0,
+      7300,
+      2780.0
+    ],
+    [
+      7300,
+      2780.0,
+      7309,
+      2845.0
+    ],
+    [
+      7309,
+      2845.0,
+      7331,
+      2818.0
+    ],
+    [
+      7331,
+      2818.0,
+      7336,
+      2847.0
+    ],
+    [
+      7336,
+      2847.0,
+      7363,
+      2815.0
+    ],
+    [
+      7363,
+      2815.0,
+      7378,
+      2844.0
+    ],
+    [
+      7378,
+      2844.0,
+      7385,
+      2809.0
+    ],
+    [
+      7385,
+      2809.0,
+      7406,
+      2868.0
+    ],
+    [
+      7406,
+      2868.0,
+      7431,
+      2819.0
+    ],
+    [
+      7431,
+      2819.0,
+      7493,
+      3066.0
+    ],
+    [
+      7493,
+      3066.0,
+      7510,
+      2965.0
+    ],
+    [
+      7510,
+      2965.0,
+      7514,
+      3000.0
+    ],
+    [
+      7514,
+      3000.0,
+      7518,
+      2922.0
+    ],
+    [
+      7518,
+      2922.0,
+      7536,
+      3077.0
+    ],
+    [
+      7536,
+      3077.0,
+      7542,
+      2996.0
+    ],
+    [
+      7542,
+      2996.0,
+      7593,
+      3204.0
+    ],
+    [
+      7593,
+      3204.0,
+      7602,
+      3078.0
+    ],
+    [
+      7602,
+      3078.0,
+      7605,
+      3110.0
+    ],
+    [
+      7605,
+      3110.0,
+      7631,
+      3001.0
+    ],
+    [
+      7631,
+      3001.0,
+      7644,
+      3088.0
+    ],
+    [
+      7644,
+      3088.0,
+      7666,
+      3020.0
+    ],
+    [
+      7666,
+      3020.0,
+      7678,
+      3084.0
+    ],
+    [
+      7678,
+      3084.0,
+      7693,
+      3007.0
+    ],
+    [
+      7693,
+      3007.0,
+      7700,
+      3054.0
+    ],
+    [
+      7700,
+      3054.0,
+      7703,
+      3012.0
+    ],
+    [
+      7703,
+      3012.0,
+      7711,
+      3057.0
+    ],
+    [
+      7711,
+      3057.0,
+      7723,
+      2972.0
+    ],
+    [
+      7723,
+      2972.0,
+      7732,
+      3023.0
+    ],
+    [
+      7732,
+      3023.0,
+      7742,
+      2956.0
+    ],
+    [
+      7742,
+      2956.0,
+      7747,
+      2995.0
+    ],
+    [
+      7747,
+      2995.0,
+      7769,
+      2931.0
+    ],
+    [
+      7769,
+      2931.0,
+      7778,
+      2947.0
+    ],
+    [
+      7778,
+      2947.0,
+      7782,
+      2928.0
+    ],
+    [
+      7782,
+      2928.0,
+      7792,
+      2969.0
+    ],
+    [
+      7792,
+      2969.0,
+      7796,
+      2943.0
+    ],
+    [
+      7796,
+      2943.0,
+      7802,
+      2964.0
+    ],
+    [
+      7802,
+      2964.0,
+      7810,
+      2911.0
+    ],
+    [
+      7810,
+      2911.0,
+      7830,
+      2958.0
+    ],
+    [
+      7830,
+      2958.0,
+      7846,
+      2920.0
+    ],
+    [
+      7846,
+      2920.0,
+      7853,
+      2941.0
+    ],
+    [
+      7853,
+      2941.0,
+      7863,
+      2904.0
+    ],
+    [
+      7863,
+      2904.0,
+      7876,
+      2932.0
+    ],
+    [
+      7876,
+      2932.0,
+      7902,
+      2856.0
+    ],
+    [
+      7902,
+      2856.0,
+      7908,
+      2889.0
+    ],
+    [
+      7908,
+      2889.0,
+      7945,
+      2826.0
+    ],
+    [
+      7945,
+      2826.0,
+      7961,
+      2861.0
+    ],
+    [
+      7961,
+      2861.0,
+      7969,
+      2824.0
+    ],
+    [
+      7969,
+      2824.0,
+      7974,
+      2839.0
+    ],
+    [
+      7974,
+      2839.0,
+      7980,
+      2823.0
+    ],
+    [
+      7980,
+      2823.0,
+      7987,
+      2978.0
+    ],
+    [
+      7987,
+      2978.0,
+      7991,
+      2959.0
+    ],
+    [
+      7991,
+      2959.0,
+      8008,
+      3000.0
+    ],
+    [
+      8008,
+      3000.0,
+      8021,
+      2963.0
+    ],
+    [
+      8021,
+      2963.0,
+      8039,
+      2998.0
+    ],
+    [
+      8039,
+      2998.0,
+      8049,
+      2971.0
+    ],
+    [
+      8049,
+      2971.0,
+      8055,
+      2993.0
+    ],
+    [
+      8055,
+      2993.0,
+      8060,
+      2958.0
+    ],
+    [
+      8060,
+      2958.0,
+      8067,
+      2985.0
+    ],
+    [
+      8067,
+      2985.0,
+      8083,
+      2959.0
+    ],
+    [
+      8083,
+      2959.0,
+      8087,
+      2975.0
+    ],
+    [
+      8087,
+      2975.0,
+      8094,
+      2964.0
+    ],
+    [
+      8094,
+      2964.0,
+      8120,
+      2995.0
+    ],
+    [
+      8120,
+      2995.0,
+      8145,
+      2933.0
+    ],
+    [
+      8145,
+      2933.0,
+      8162,
+      2978.0
+    ],
+    [
+      8162,
+      2978.0,
+      8171,
+      2964.0
+    ],
+    [
+      8171,
+      2964.0,
+      8206,
+      3034.0
+    ],
+    [
+      8206,
+      3034.0,
+      8225,
+      2981.0
+    ],
+    [
+      8225,
+      2981.0,
+      8238,
+      3010.0
+    ],
+    [
+      8238,
+      3010.0,
+      8250,
+      2965.0
+    ],
+    [
+      8250,
+      2965.0,
+      8263,
+      2991.0
+    ],
+    [
+      8263,
+      2991.0,
+      8268,
+      2975.0
+    ],
+    [
+      8268,
+      2975.0,
+      8290,
+      3010.0
+    ],
+    [
+      8290,
+      3010.0,
+      8296,
+      2986.0
+    ],
+    [
+      8296,
+      2986.0,
+      8305,
+      3018.0
+    ],
+    [
+      8305,
+      3018.0,
+      8308,
+      2996.0
+    ],
+    [
+      8308,
+      2996.0,
+      8336,
+      3042.0
+    ],
+    [
+      8336,
+      3042.0,
+      8389,
+      2979.0
+    ],
+    [
+      8389,
+      2979.0,
+      8392,
+      2998.0
+    ],
+    [
+      8392,
+      2998.0,
+      8405,
+      2981.0
+    ],
+    [
+      8405,
+      2981.0,
+      8435,
+      3049.0
+    ],
+    [
+      8435,
+      3049.0,
+      8438,
+      3028.0
+    ],
+    [
+      8438,
+      3028.0,
+      8446,
+      3043.0
+    ],
+    [
+      8446,
+      3043.0,
+      8453,
+      3022.0
+    ],
+    [
+      8453,
+      3022.0,
+      8470,
+      3073.0
+    ],
+    [
+      8470,
+      3073.0,
+      8475,
+      3036.0
+    ],
+    [
+      8475,
+      3036.0,
+      8487,
+      3072.0
+    ],
+    [
+      8487,
+      3072.0,
+      8492,
+      3049.0
+    ],
+    [
+      8492,
+      3049.0,
+      8500,
+      3066.0
+    ],
+    [
+      8500,
+      3066.0,
+      8506,
+      2991.0
+    ],
+    [
+      8506,
+      2991.0,
+      8512,
+      3016.0
+    ],
+    [
+      8512,
+      3016.0,
+      8527,
+      2962.0
+    ],
+    [
+      8527,
+      2962.0,
+      8542,
+      2994.0
+    ],
+    [
+      8542,
+      2994.0,
+      8548,
+      2982.0
+    ],
+    [
+      8548,
+      2982.0,
+      8575,
+      3050.0
+    ],
+    [
+      8575,
+      3050.0,
+      8584,
+      3020.0
+    ],
+    [
+      8584,
+      3020.0,
+      8591,
+      3033.0
+    ],
+    [
+      8591,
+      3033.0,
+      8631,
+      2984.0
+    ],
+    [
+      8631,
+      2984.0,
+      8644,
+      3009.0
+    ],
+    [
+      8644,
+      3009.0,
+      8673,
+      2960.0
+    ],
+    [
+      8673,
+      2960.0,
+      8682,
+      2982.0
+    ],
+    [
+      8682,
+      2982.0,
+      8687,
+      2968.0
+    ],
+    [
+      8687,
+      2968.0,
+      8699,
+      2981.0
+    ],
+    [
+      8699,
+      2981.0,
+      8713,
+      2963.0
+    ],
+    [
+      8713,
+      2963.0,
+      8742,
+      3010.0
+    ],
+    [
+      8742,
+      3010.0,
+      8767,
+      2973.0
+    ],
+    [
+      8767,
+      2973.0,
+      8781,
+      2999.0
+    ],
+    [
+      8781,
+      2999.0,
+      8790,
+      2964.0
+    ],
+    [
+      8790,
+      2964.0,
+      8796,
+      2978.0
+    ],
+    [
+      8796,
+      2978.0,
+      8811,
+      2949.0
+    ],
+    [
+      8811,
+      2949.0,
+      8818,
+      2995.0
+    ],
+    [
+      8818,
+      2995.0,
+      8836,
+      2944.0
+    ],
+    [
+      8836,
+      2944.0,
+      8839,
+      2954.0
+    ],
+    [
+      8839,
+      2954.0,
+      8893,
+      2896.0
+    ],
+    [
+      8893,
+      2896.0,
+      8899,
+      2918.0
+    ],
+    [
+      8899,
+      2918.0,
+      8920,
+      2887.0
+    ],
+    [
+      8920,
+      2887.0,
+      8947,
+      2933.0
+    ],
+    [
+      8947,
+      2933.0,
+      8952,
+      2918.0
+    ],
+    [
+      8952,
+      2918.0,
+      8964,
+      2944.0
+    ],
+    [
+      8964,
+      2944.0,
+      8972,
+      2924.0
+    ],
+    [
+      8972,
+      2924.0,
+      8979,
+      2938.0
+    ],
+    [
+      8979,
+      2938.0,
+      8982,
+      2926.0
+    ],
+    [
+      8982,
+      2926.0,
+      8986,
+      2942.0
+    ],
+    [
+      8986,
+      2942.0,
+      8995,
+      2924.0
+    ],
+    [
+      8995,
+      2924.0,
+      8999,
+      2952.0
+    ],
+    [
+      8999,
+      2952.0,
+      9011,
+      2929.0
+    ],
+    [
+      9011,
+      2929.0,
+      9018,
+      2949.0
+    ],
+    [
+      9018,
+      2949.0,
+      9027,
+      2934.0
+    ],
+    [
+      9027,
+      2934.0,
+      9037,
+      2967.0
+    ],
+    [
+      9037,
+      2967.0,
+      9079,
+      2923.0
+    ],
+    [
+      9079,
+      2923.0,
+      9089,
+      2939.0
+    ],
+    [
+      9089,
+      2939.0,
+      9102,
+      2919.0
+    ],
+    [
+      9102,
+      2919.0,
+      9146,
+      2965.0
+    ],
+    [
+      9146,
+      2965.0,
+      9152,
+      2919.0
+    ],
+    [
+      9152,
+      2919.0,
+      9181,
+      2984.0
+    ],
+    [
+      9181,
+      2984.0,
+      9186,
+      2971.0
+    ],
+    [
+      9186,
+      2971.0,
+      9193,
+      2986.0
+    ],
+    [
+      9193,
+      2986.0,
+      9230,
+      2935.0
+    ],
+    [
+      9230,
+      2935.0,
+      9233,
+      2946.0
+    ],
+    [
+      9233,
+      2946.0,
+      9239,
+      2921.0
+    ],
+    [
+      9239,
+      2921.0,
+      9248,
+      2979.0
+    ],
+    [
+      9248,
+      2979.0,
+      9254,
+      2963.0
+    ],
+    [
+      9254,
+      2963.0,
+      9264,
+      2989.0
+    ],
+    [
+      9264,
+      2989.0,
+      9274,
+      2971.0
+    ],
+    [
+      9274,
+      2971.0,
+      9281,
+      2986.0
+    ],
+    [
+      9281,
+      2986.0,
+      9298,
+      2957.0
+    ],
+    [
+      9298,
+      2957.0,
+      9347,
+      3054.0
+    ],
+    [
+      9347,
+      3054.0,
+      9353,
+      3027.0
+    ],
+    [
+      9353,
+      3027.0,
+      9376,
+      3063.0
+    ],
+    [
+      9376,
+      3063.0,
+      9387,
+      3034.0
+    ],
+    [
+      9387,
+      3034.0,
+      9395,
+      3058.0
+    ],
+    [
+      9395,
+      3058.0,
+      9401,
+      3040.0
+    ],
+    [
+      9401,
+      3040.0,
+      9424,
+      3100.0
+    ],
+    [
+      9424,
+      3100.0,
+      9437,
+      3046.0
+    ],
+    [
+      9437,
+      3046.0,
+      9448,
+      3068.0
+    ],
+    [
+      9448,
+      3068.0,
+      9462,
+      3039.0
+    ],
+    [
+      9462,
+      3039.0,
+      9475,
+      3076.0
+    ],
+    [
+      9475,
+      3076.0,
+      9487,
+      3057.0
+    ],
+    [
+      9487,
+      3057.0,
+      9493,
+      3097.0
+    ],
+    [
+      9493,
+      3097.0,
+      9508,
+      3060.0
+    ],
+    [
+      9508,
+      3060.0,
+      9520,
+      3088.0
+    ],
+    [
+      9520,
+      3088.0,
+      9525,
+      3055.0
+    ],
+    [
+      9525,
+      3055.0,
+      9542,
+      3112.0
+    ],
+    [
+      9542,
+      3112.0,
+      9546,
+      3088.0
+    ],
+    [
+      9546,
+      3088.0,
+      9558,
+      3147.0
+    ],
+    [
+      9558,
+      3147.0,
+      9564,
+      3127.0
+    ],
+    [
+      9564,
+      3127.0,
+      9572,
+      3153.0
+    ],
+    [
+      9572,
+      3153.0,
+      9577,
+      3132.0
+    ],
+    [
+      9577,
+      3132.0,
+      9587,
+      3166.0
+    ],
+    [
+      9587,
+      3166.0,
+      9592,
+      3127.0
+    ],
+    [
+      9592,
+      3127.0,
+      9609,
+      3209.0
+    ],
+    [
+      9609,
+      3209.0,
+      9624,
+      3166.0
+    ],
+    [
+      9624,
+      3166.0,
+      9645,
+      3230.0
+    ],
+    [
+      9645,
+      3230.0,
+      9673,
+      3111.0
+    ],
+    [
+      9673,
+      3111.0,
+      9679,
+      3141.0
+    ],
+    [
+      9679,
+      3141.0,
+      9692,
+      3091.0
+    ],
+    [
+      9692,
+      3091.0,
+      9704,
+      3122.0
+    ],
+    [
+      9704,
+      3122.0,
+      9735,
+      3062.0
+    ],
+    [
+      9735,
+      3062.0,
+      9741,
+      3086.0
+    ],
+    [
+      9741,
+      3086.0,
+      9758,
+      3065.0
+    ],
+    [
+      9758,
+      3065.0,
+      9762,
+      3086.0
+    ],
+    [
+      9762,
+      3086.0,
+      9769,
+      3045.0
+    ],
+    [
+      9769,
+      3045.0,
+      9799,
+      3086.0
+    ],
+    [
+      9799,
+      3086.0,
+      9811,
+      3057.0
+    ],
+    [
+      9811,
+      3057.0,
+      9823,
+      3069.0
+    ],
+    [
+      9823,
+      3069.0,
+      9826,
+      3060.0
+    ],
+    [
+      9826,
+      3060.0,
+      9841,
+      3087.0
+    ],
+    [
+      9841,
+      3087.0,
+      9846,
+      3077.0
+    ],
+    [
+      9846,
+      3077.0,
+      9874,
+      3118.0
+    ],
+    [
+      9874,
+      3118.0,
+      9884,
+      3086.0
+    ],
+    [
+      9884,
+      3086.0,
+      9899,
+      3152.0
+    ],
+    [
+      9899,
+      3152.0,
+      9903,
+      3136.0
+    ],
+    [
+      9903,
+      3136.0,
+      9907,
+      3144.0
+    ],
+    [
+      9907,
+      3144.0,
+      9930,
+      3117.0
+    ],
+    [
+      9930,
+      3117.0,
+      9941,
+      3148.0
+    ],
+    [
+      9941,
+      3148.0,
+      9952,
+      3129.0
+    ],
+    [
+      9952,
+      3129.0,
+      9999,
+      3187.0
+    ],
+    [
+      9999,
+      3187.0,
+      10006,
+      3165.0
+    ],
+    [
+      10006,
+      3165.0,
+      10029,
+      3245.0
+    ],
+    [
+      10029,
+      3245.0,
+      10034,
+      3229.0
+    ],
+    [
+      10034,
+      3229.0,
+      10056,
+      3257.0
+    ]
+  ]
+}

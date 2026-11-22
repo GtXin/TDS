@@ -1,0 +1,9 @@
+Name                                         Stmts   Miss  Cover   Missing
+--------------------------------------------------------------------------
+src/chanlab/algo/_zhongshu_input.py             20      1    95%   24
+src/chanlab/algo/_zhongshu_scan.py             140      0   100%
+src/chanlab/algo/zhongshu.py                   162     37    77%   101, 114, 124, 147-148, 162, 172, 180, 183-185, 245, 276, 285, 295-297, 307, 311, 313-321, 341, 354-375
+src/chanlab/data/zhongshu_table.py              79      1    99%   158
+src/chanlab/visualization/zhongshu_plot.py      35      0   100%
+--------------------------------------------------------------------------
+TOTAL                                          436     39    91%

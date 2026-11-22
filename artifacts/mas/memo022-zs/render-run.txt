@@ -1,0 +1,17 @@
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/coder/.cache/fontconfig
+	/Users/coder/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/coder/.cache/fontconfig
+	/Users/coder/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/coder/.cache/fontconfig
+	/Users/coder/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+Rendered 32 individual, 8 comparison, 8 contact figures

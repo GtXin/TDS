@@ -1,0 +1,167 @@
+{
+  "profile": "ZS022-sequential-rectangle",
+  "python": "3.11.16",
+  "policies": {
+    "zero_height": true,
+    "geometry": "endpoint_chord",
+    "missing_crossing": "report_keep_structure",
+    "seed_selection": "earliest",
+    "core": "source_stroke_extrema",
+    "tail": "open"
+  },
+  "source": {
+    "raw": 10060,
+    "utc_start": "2024-10-28T05:45:00+00:00",
+    "utc_end": "2026-08-19T06:45:00+00:00",
+    "files": {
+      "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_chan_table_v20261108.csv": "1c4039411b0472c27fd4af42fcd320ccd0579d9f5c5f54d9d013893f665c85c5",
+      "samples/chan_table/dce-KQ.m-at-m_15m_20241028_20260819_context_v20261108.csv": "733c3e485ff508ba6a1888943bfdeefd9dcf9d604d617965eaba5348e1545e15"
+    }
+  },
+  "modes": {
+    "bi-strong_xd-strong": {
+      "segments": 53,
+      "pens": 480,
+      "fractals": 3027,
+      "closed": 8,
+      "open": 0,
+      "drawable_closed": 8,
+      "zero_height": 0,
+      "geometry_diagnostics": [],
+      "internal_extrema_segments": 3,
+      "source_extrema_checks": 53,
+      "independent": {
+        "fixed_segment_prefixes": 54,
+        "crossings": 16
+      },
+      "scan_ms_repeats": [
+        1.1461354093626142,
+        0.6373516598250717,
+        0.7613233395386487
+      ],
+      "scan_ms_median": 0.7613233395386487,
+      "seed_checks": 9,
+      "ending_checks": 34,
+      "unformed_ranges": [
+        [
+          0,
+          1
+        ],
+        [
+          51,
+          53
+        ]
+      ],
+      "context_sha256": "90415c0c841987f63be265629191c022f07eef17f1453ff7f6a1c294bdd969cc",
+      "table_sha256": "834d20d931fb07d9a3eae2ddbd831dde4fee4315f558f0ee37823c4624b4847b"
+    },
+    "bi-strong_xd-weak": {
+      "segments": 57,
+      "pens": 480,
+      "fractals": 3027,
+      "closed": 8,
+      "open": 0,
+      "drawable_closed": 8,
+      "zero_height": 0,
+      "geometry_diagnostics": [],
+      "internal_extrema_segments": 4,
+      "source_extrema_checks": 57,
+      "independent": {
+        "fixed_segment_prefixes": 58,
+        "crossings": 16
+      },
+      "scan_ms_repeats": [
+        0.49352333997376263,
+        0.5211700010113418,
+        0.49994624918326735
+      ],
+      "scan_ms_median": 0.49994624918326735,
+      "seed_checks": 9,
+      "ending_checks": 38,
+      "unformed_ranges": [
+        [
+          0,
+          1
+        ],
+        [
+          55,
+          57
+        ]
+      ],
+      "context_sha256": "bb043284d90a0cc11d20a4a6a9ec89cf16cf98a4d3a86fdf6774aef12e9bead8",
+      "table_sha256": "ebef64bb49b96e0c19254f6449875058446cbe161253e0f36cc47bf027a069d0"
+    },
+    "bi-weak_xd-strong": {
+      "segments": 79,
+      "pens": 682,
+      "fractals": 3027,
+      "closed": 11,
+      "open": 1,
+      "drawable_closed": 11,
+      "zero_height": 0,
+      "geometry_diagnostics": [],
+      "internal_extrema_segments": 5,
+      "source_extrema_checks": 79,
+      "independent": {
+        "fixed_segment_prefixes": 80,
+        "crossings": 23
+      },
+      "scan_ms_repeats": [
+        0.9697975008748472,
+        0.7727937505114824,
+        0.7563445798587054
+      ],
+      "scan_ms_median": 0.7727937505114824,
+      "seed_checks": 13,
+      "ending_checks": 54,
+      "unformed_ranges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "context_sha256": "7bab53b1f6071745eba854e8f66ff587d21d18bcdb0d5e89be53da4bea60d0fd",
+      "table_sha256": "016bda3a1a5ba103a14275ebe1532e944a82f9cbfb03a3ad7e9c63f7dcd71950"
+    },
+    "bi-weak_xd-weak": {
+      "segments": 89,
+      "pens": 682,
+      "fractals": 3027,
+      "closed": 14,
+      "open": 1,
+      "drawable_closed": 13,
+      "zero_height": 0,
+      "geometry_diagnostics": [
+        {
+          "start": 0,
+          "terminal": 2,
+          "reasons": [
+            "left_crossing_missing"
+          ]
+        }
+      ],
+      "internal_extrema_segments": 8,
+      "source_extrema_checks": 89,
+      "independent": {
+        "fixed_segment_prefixes": 90,
+        "crossings": 28
+      },
+      "scan_ms_repeats": [
+        0.8433470805175602,
+        0.9120024996809661,
+        1.1172158305998892
+      ],
+      "scan_ms_median": 0.9120024996809661,
+      "seed_checks": 16,
+      "ending_checks": 58,
+      "unformed_ranges": [
+        [
+          82,
+          83
+        ]
+      ],
+      "context_sha256": "62911ca20c59a067e20077706c0bacb2ff4fa7d6a999ce1a3243e25674c76ba7",
+      "table_sha256": "54b93f74861e8ddd93bb02c60f50ce96d2301f8abb054237ae2b326e55ec9973"
+    }
+  }
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "mode": "bi-strong_xd-strong",
+    "window": "overview",
+    "raw_start": 0,
+    "raw_stop": 10060,
+    "html": "bi-strong_xd-strong_overview.html",
+    "png": "bi-strong_xd-strong_overview.png",
+    "plot": "bi-strong_xd-strong_overview.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-strong",
+    "window": "detail-001",
+    "raw_start": 0,
+    "raw_stop": 1653,
+    "html": "bi-strong_xd-strong_detail-001.html",
+    "png": "bi-strong_xd-strong_detail-001.png",
+    "plot": "bi-strong_xd-strong_detail-001.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-strong",
+    "window": "detail-002",
+    "raw_start": 1653,
+    "raw_stop": 3243,
+    "html": "bi-strong_xd-strong_detail-002.html",
+    "png": "bi-strong_xd-strong_detail-002.png",
+    "plot": "bi-strong_xd-strong_detail-002.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-strong",
+    "window": "detail-003",
+    "raw_start": 3243,
+    "raw_stop": 4922,
+    "html": "bi-strong_xd-strong_detail-003.html",
+    "png": "bi-strong_xd-strong_detail-003.png",
+    "plot": "bi-strong_xd-strong_detail-003.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-strong",
+    "window": "detail-004",
+    "raw_start": 4922,
+    "raw_stop": 6603,
+    "html": "bi-strong_xd-strong_detail-004.html",
+    "png": "bi-strong_xd-strong_detail-004.png",
+    "plot": "bi-strong_xd-strong_detail-004.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-strong",
+    "window": "detail-005",
+    "raw_start": 6603,
+    "raw_stop": 8388,
+    "html": "bi-strong_xd-strong_detail-005.html",
+    "png": "bi-strong_xd-strong_detail-005.png",
+    "plot": "bi-strong_xd-strong_detail-005.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-strong",
+    "window": "detail-006",
+    "raw_start": 8388,
+    "raw_stop": 9964,
+    "html": "bi-strong_xd-strong_detail-006.html",
+    "png": "bi-strong_xd-strong_detail-006.png",
+    "plot": "bi-strong_xd-strong_detail-006.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-strong",
+    "window": "detail-007",
+    "raw_start": 9964,
+    "raw_stop": 10060,
+    "html": "bi-strong_xd-strong_detail-007.html",
+    "png": "bi-strong_xd-strong_detail-007.png",
+    "plot": "bi-strong_xd-strong_detail-007.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-weak",
+    "window": "overview",
+    "raw_start": 0,
+    "raw_stop": 10060,
+    "html": "bi-strong_xd-weak_overview.html",
+    "png": "bi-strong_xd-weak_overview.png",
+    "plot": "bi-strong_xd-weak_overview.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-weak",
+    "window": "detail-001",
+    "raw_start": 0,
+    "raw_stop": 1653,
+    "html": "bi-strong_xd-weak_detail-001.html",
+    "png": "bi-strong_xd-weak_detail-001.png",
+    "plot": "bi-strong_xd-weak_detail-001.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-weak",
+    "window": "detail-002",
+    "raw_start": 1653,
+    "raw_stop": 3243,
+    "html": "bi-strong_xd-weak_detail-002.html",
+    "png": "bi-strong_xd-weak_detail-002.png",
+    "plot": "bi-strong_xd-weak_detail-002.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-weak",
+    "window": "detail-003",
+    "raw_start": 3243,
+    "raw_stop": 4922,
+    "html": "bi-strong_xd-weak_detail-003.html",
+    "png": "bi-strong_xd-weak_detail-003.png",
+    "plot": "bi-strong_xd-weak_detail-003.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-weak",
+    "window": "detail-004",
+    "raw_start": 4922,
+    "raw_stop": 6603,
+    "html": "bi-strong_xd-weak_detail-004.html",
+    "png": "bi-strong_xd-weak_detail-004.png",
+    "plot": "bi-strong_xd-weak_detail-004.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-weak",
+    "window": "detail-005",
+    "raw_start": 6603,
+    "raw_stop": 8388,
+    "html": "bi-strong_xd-weak_detail-005.html",
+    "png": "bi-strong_xd-weak_detail-005.png",
+    "plot": "bi-strong_xd-weak_detail-005.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-weak",
+    "window": "detail-006",
+    "raw_start": 8388,
+    "raw_stop": 9964,
+    "html": "bi-strong_xd-weak_detail-006.html",
+    "png": "bi-strong_xd-weak_detail-006.png",
+    "plot": "bi-strong_xd-weak_detail-006.plot.json"
+  },
+  {
+    "mode": "bi-strong_xd-weak",
+    "window": "detail-007",
+    "raw_start": 9964,
+    "raw_stop": 10060,
+    "html": "bi-strong_xd-weak_detail-007.html",
+    "png": "bi-strong_xd-weak_detail-007.png",
+    "plot": "bi-strong_xd-weak_detail-007.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-strong",
+    "window": "overview",
+    "raw_start": 0,
+    "raw_stop": 10060,
+    "html": "bi-weak_xd-strong_overview.html",
+    "png": "bi-weak_xd-strong_overview.png",
+    "plot": "bi-weak_xd-strong_overview.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-strong",
+    "window": "detail-001",
+    "raw_start": 0,
+    "raw_stop": 1653,
+    "html": "bi-weak_xd-strong_detail-001.html",
+    "png": "bi-weak_xd-strong_detail-001.png",
+    "plot": "bi-weak_xd-strong_detail-001.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-strong",
+    "window": "detail-002",
+    "raw_start": 1653,
+    "raw_stop": 3243,
+    "html": "bi-weak_xd-strong_detail-002.html",
+    "png": "bi-weak_xd-strong_detail-002.png",
+    "plot": "bi-weak_xd-strong_detail-002.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-strong",
+    "window": "detail-003",
+    "raw_start": 3243,
+    "raw_stop": 4922,
+    "html": "bi-weak_xd-strong_detail-003.html",
+    "png": "bi-weak_xd-strong_detail-003.png",
+    "plot": "bi-weak_xd-strong_detail-003.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-strong",
+    "window": "detail-004",
+    "raw_start": 4922,
+    "raw_stop": 6603,
+    "html": "bi-weak_xd-strong_detail-004.html",
+    "png": "bi-weak_xd-strong_detail-004.png",
+    "plot": "bi-weak_xd-strong_detail-004.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-strong",
+    "window": "detail-005",
+    "raw_start": 6603,
+    "raw_stop": 8388,
+    "html": "bi-weak_xd-strong_detail-005.html",
+    "png": "bi-weak_xd-strong_detail-005.png",
+    "plot": "bi-weak_xd-strong_detail-005.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-strong",
+    "window": "detail-006",
+    "raw_start": 8388,
+    "raw_stop": 9964,
+    "html": "bi-weak_xd-strong_detail-006.html",
+    "png": "bi-weak_xd-strong_detail-006.png",
+    "plot": "bi-weak_xd-strong_detail-006.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-strong",
+    "window": "detail-007",
+    "raw_start": 9964,
+    "raw_stop": 10060,
+    "html": "bi-weak_xd-strong_detail-007.html",
+    "png": "bi-weak_xd-strong_detail-007.png",
+    "plot": "bi-weak_xd-strong_detail-007.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-weak",
+    "window": "overview",
+    "raw_start": 0,
+    "raw_stop": 10060,
+    "html": "bi-weak_xd-weak_overview.html",
+    "png": "bi-weak_xd-weak_overview.png",
+    "plot": "bi-weak_xd-weak_overview.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-weak",
+    "window": "detail-001",
+    "raw_start": 0,
+    "raw_stop": 1653,
+    "html": "bi-weak_xd-weak_detail-001.html",
+    "png": "bi-weak_xd-weak_detail-001.png",
+    "plot": "bi-weak_xd-weak_detail-001.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-weak",
+    "window": "detail-002",
+    "raw_start": 1653,
+    "raw_stop": 3243,
+    "html": "bi-weak_xd-weak_detail-002.html",
+    "png": "bi-weak_xd-weak_detail-002.png",
+    "plot": "bi-weak_xd-weak_detail-002.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-weak",
+    "window": "detail-003",
+    "raw_start": 3243,
+    "raw_stop": 4922,
+    "html": "bi-weak_xd-weak_detail-003.html",
+    "png": "bi-weak_xd-weak_detail-003.png",
+    "plot": "bi-weak_xd-weak_detail-003.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-weak",
+    "window": "detail-004",
+    "raw_start": 4922,
+    "raw_stop": 6603,
+    "html": "bi-weak_xd-weak_detail-004.html",
+    "png": "bi-weak_xd-weak_detail-004.png",
+    "plot": "bi-weak_xd-weak_detail-004.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-weak",
+    "window": "detail-005",
+    "raw_start": 6603,
+    "raw_stop": 8388,
+    "html": "bi-weak_xd-weak_detail-005.html",
+    "png": "bi-weak_xd-weak_detail-005.png",
+    "plot": "bi-weak_xd-weak_detail-005.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-weak",
+    "window": "detail-006",
+    "raw_start": 8388,
+    "raw_stop": 9964,
+    "html": "bi-weak_xd-weak_detail-006.html",
+    "png": "bi-weak_xd-weak_detail-006.png",
+    "plot": "bi-weak_xd-weak_detail-006.plot.json"
+  },
+  {
+    "mode": "bi-weak_xd-weak",
+    "window": "detail-007",
+    "raw_start": 9964,
+    "raw_stop": 10060,
+    "html": "bi-weak_xd-weak_detail-007.html",
+    "png": "bi-weak_xd-weak_detail-007.png",
+    "plot": "bi-weak_xd-weak_detail-007.plot.json"
+  }
+]
