@@ -1,0 +1,103 @@
+{
+  "python": "3.11.16",
+  "hashes": {
+    "artifacts/mas/cc-chantable-20261111-134106-27c20343/features.json": "aee573ebc7b919d354870e44c376bdfea4471050d89e2504868f68d54501eb8a",
+    "artifacts/mas/cc-chantable-20261111-134106-27c20343/context.csv": "6033c6c95482f4656c26a92f45896d2af352c7c4e9db0afd3ac5f46a166520f3",
+    "artifacts/mas/cc-chantable-20261111-134106-27c20343/cc_native_snapshot.json": "17d452366744b43dcff5544aa0fc1d1bc3d51b3807d863164f133ef6fcabe007",
+    "artifacts/mas/cc-chantable-20261111-134106-27c20343/comparison.json": "604d5823893a2e9867c9fe689dd695c0002dbf6537794c6a9808e282fae5c03f",
+    "artifacts/mas/cc-chantable-20261111-134106-27c20343/import_report.json": "7ccbb9b4bc6611a4c8aa44cda54234f1e2e2027c08ddf814c3f4333a19903fc9",
+    "artifacts/mas/cc-chantable-20261111-134106-27c20343/verification.json": "b4114e216ae84a83decfed4d51f132a17033a88ee42ffc763830708ebf0e244d",
+    "artifacts/mas/cc-chantable-20261111-134106-27c20343/ChanTable.csv": "06c64f0edbcd9d6b69bba53e8d12552e352fabfa7f1051d5f0bbbe105eafdc76",
+    "docs/memo/memoWX_029_Chan_bi.md": "8b7f0c9cf374fb26aac139edde49f15ca1e56c8dc5d13ac9d596ff45acfbab97",
+    "docs/memo/memoWX_030_Chan_xianduan.md": "ca113192e41b370572b0a8e684c72b39332a921b120c7ecda086823608db8eec"
+  },
+  "native_master_import": {
+    "unsupported": "reserved feature columns must be NA"
+  },
+  "raw_count": 44375,
+  "raw_index_contiguous": true,
+  "timestamp_utc_ordered": true,
+  "missing_by_column": {
+    "raw_index": 0,
+    "timestamp": 0,
+    "symbol": 0,
+    "period": 0,
+    "source": 0,
+    "open": 0,
+    "high": 0,
+    "low": 0,
+    "close": 0,
+    "volume": 0,
+    "mk_ids": 0,
+    "mk_direction": 22951,
+    "mk_start_ids": 0,
+    "mk_end_ids": 0,
+    "fx_ids": 0,
+    "fx_kind": 33191,
+    "fx_start_ids": 0,
+    "fx_end_ids": 0,
+    "fx_anchor_ids": 0,
+    "bi_ids": 0,
+    "bi_direction": 42573,
+    "bi_start_ids": 0,
+    "bi_end_ids": 0,
+    "xd_ids": 0,
+    "xd_direction": 44158,
+    "xd_start_ids": 0,
+    "xd_end_ids": 0,
+    "zs_ids": 0,
+    "zs_lower": 44358,
+    "zs_upper": 44358,
+    "zs_start_ids": 0,
+    "zs_end_ids": 0,
+    "zou_ids": 0,
+    "zou_kind": 44368,
+    "zou_start_ids": 0,
+    "zou_end_ids": 0,
+    "bc_ids": 44375,
+    "bc_kind": 44375,
+    "bsp_ids": 44375,
+    "bsp_side": 44375,
+    "bsp_category": 44375
+  },
+  "raw_domain_roundtrip": "PASS; all bars and context values equal",
+  "foreign_csv_cell_roundtrip": "PASS; all 41 string fields equal",
+  "foreign_json_roundtrip": "PASS; JSON semantic equality; foreign schema retained",
+  "foreign_series_ranges_ids": [
+    {
+      "key": "cc.mk",
+      "kind": "mk",
+      "count": 21424
+    },
+    {
+      "key": "cc.fx",
+      "kind": "fx",
+      "count": 11184
+    },
+    {
+      "key": "cc.bi",
+      "kind": "bi",
+      "count": 1802
+    },
+    {
+      "key": "cc.xd",
+      "kind": "xd",
+      "count": 217
+    },
+    {
+      "key": "cc.bootstrap.l0.frozen",
+      "kind": "zou",
+      "count": 134
+    },
+    {
+      "key": "cc.recursive.l0.d1.zs",
+      "kind": "zs",
+      "count": 17
+    },
+    {
+      "key": "cc.recursive.l0.d1.zou",
+      "kind": "zou",
+      "count": 7
+    }
+  ]
+}

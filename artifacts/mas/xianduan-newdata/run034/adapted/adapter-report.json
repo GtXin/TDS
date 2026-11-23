@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "native_input": "artifacts/mas/xianduan-newdata/run034/adapted/table.csv",
+  "raw_rows": 44375,
+  "raw_values_and_context_equal": true,
+  "native_ChanTable_roundtrip": true,
+  "foreign_feature_archive_roundtrip": true,
+  "feature_policy": "Native input has NA feature columns; derive native objects from raw. Foreign features remain external comparisons, with original statuses and source graph preserved.",
+  "mapping_span_vs_native_endpoint_differences": {
+    "mk": 0,
+    "fx": 0,
+    "bi": 622,
+    "xd": 62
+  },
+  "normalized_comparison": "../kwx-normalized.json.gz"
+}

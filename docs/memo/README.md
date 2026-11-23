@@ -37,6 +37,7 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | WX 031 | [Xianduan family implementation plan](memoWX_031_xianduanFamily.md) |
 | WX 032 | [GitHub file size policy and recovery](memoWX_032_githubFileSizes.md) |
 | WX 033 | [Zhongshu family implementation plan](memoWX_033_zhongshuFamily.md) |
+| WX 034 | [线段新数据验证模板](memoWX_034_xiamduan_newData.md) |
 | KWX 001 | [cc project folder structure](memoKWX_001_文件夹结构.md) |
 | KWX 002 | [Guide to WX001–018](memoKWX_002_memoWX001-018导读.md) |
 | KWX 003 | [TDS synchronization and Chinese localization](memoKWX_003_sync_en2cn.md) |

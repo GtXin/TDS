@@ -2,7 +2,19 @@
 
 ## 000 — Scope
 
+基于[中枢](memoWX_022_Chan_zhongshu.md)与[走势](memoWX_023_Chan_zoushi.md)，研究给定级别的趋势背驰和盘整背驰的比较段、力度、价格极值及完成时点；版本一定义采用 KWX012 的001。[19]
+
 ## 001 — Definition (What)
+
+### 版本一
+
+复制自 [KWX012 的001](memoKWX_012_Chan_beichi.md#001--定义是什么)。
+
+同一中枢的首次进入段与最后离开段同向，且离开段力度弱于进入段，即为背驰。
+
+**趋势背驰**　在某级别的趋势中，末两个本级中枢的连接段与最后离开末中枢的走势同向，且离开段沿趋势方向创出新高或新低、力度弱于连接段，即为趋势背驰。
+
+**盘整背驰**　在某级别的盘整中，本级中枢的首次进入段与最后离开段同向，且离开段力度弱于进入段，即为盘整背驰。
 
 ## 002 — Algorithm (How)
 
@@ -466,3 +478,5 @@ return list(result.zoushis)
 [17] [CC二次复核信号传输源码副本与出处（同一HEAD374268381a3e）](../../references/cc_algo/recheck_signal_boundary/374268381a3e/README.md)。
 
 [18] [S7/S8二次复核：候选覆盖、源码与缺图核对](../../artifacts/mas/memo018-appendix-recheck/s7-s8/coverage.md)。
+
+[19] [KWX012 — 背驰](memoKWX_012_Chan_beichi.md)，001定义（是什么）。

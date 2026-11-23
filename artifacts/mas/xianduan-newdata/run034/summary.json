@@ -1,0 +1,21 @@
+{
+  "raw": 44375,
+  "mk": 21424,
+  "fx": 11184,
+  "timings": {
+    "merged": 0.8546463329985272,
+    "fx": 0.7145884169985948,
+    "bi-weak": 5.059083583000756
+  },
+  "modes": {
+    "bi-weak_xd-weak": {
+      "bi": 2587,
+      "status": "incomplete",
+      "error": "Explicit pair-state budget 40000000 exceeded during selection",
+      "seconds": 181.1689574999982,
+      "peak_rss_bytes": 6727467008
+    }
+  },
+  "state_budget": 40000000,
+  "recursion_limit": 20000
+}

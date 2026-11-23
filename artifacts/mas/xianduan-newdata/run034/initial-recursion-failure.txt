@@ -1,0 +1,29 @@
+compatibility {'unsupported': 'reserved feature columns must be NA'} 44375
+upstream 21424 11184 {'merged': 0.8586657500018191, 'fx': 0.7210088749998249}
+bi weak 2587 4.934643791999406
+Traceback (most recent call last):
+  File "/Users/coder/Public/EngineGit/TDS/experiments/xianduan034/run.py", line 194, in <module>
+    main()
+  File "/Users/coder/Public/EngineGit/TDS/experiments/xianduan034/run.py", line 162, in main
+    xd = XianduanSeries.derive_from(bi, {"xd_mode": xm})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 165, in derive_from
+    result = recognize(cls._prices(source_series), c["xd_mode"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 30, in recognize
+    for w in events(a, b):
+             ^^^^^^^^^^^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_events.py", line 93, in candidates
+    left = norm(a + 1, b, d)[-1]
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_events.py", line 49, in norm
+    stack = list(norm(a, b - 2, d))
+                 ^^^^^^^^^^^^^^^^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_events.py", line 49, in norm
+    stack = list(norm(a, b - 2, d))
+                 ^^^^^^^^^^^^^^^^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_events.py", line 49, in norm
+    stack = list(norm(a, b - 2, d))
+                 ^^^^^^^^^^^^^^^^^
+  [Previous line repeated 494 more times]
+RecursionError: maximum recursion depth exceeded

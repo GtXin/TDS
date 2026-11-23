@@ -1,0 +1,42 @@
+<div id="beichi-structure">
+<style>
+#beichi-structure section{margin-bottom:calc(var(--font-size-base)*1.5)}
+#beichi-structure svg{display:block;width:100%;height:300px;color:var(--foreground)}
+#beichi-structure text{fill:currentColor;font-size:var(--font-size-base)}
+#beichi-structure .route{fill:none;stroke:var(--muted-foreground);stroke-width:2}
+#beichi-structure .compare{fill:none;stroke:var(--viz-series-1);stroke-width:3}
+#beichi-structure .box{fill:var(--viz-series-2);fill-opacity:.12;stroke:var(--viz-series-2);stroke-width:1}
+#beichi-structure .axis{stroke:var(--border);stroke-width:1}
+</style>
+<section><h3>趋势背驰：A、B 两个同级中枢</h3><div class="text-small">比较 b、c：c 创新高，假设同向 MACD 面积 b＝100、c＝60。</div><svg id="trend-structure" role="img" aria-label="两个上移中枢及其三段重合，蓝线标出b和c的比较语境，c创新高；末端反向回抽确认中枢离开。"></svg></section>
+<section><h3>盘整背驰：围绕一个中枢 B</h3><div class="text-small">比较首次进入段 a 与最后离开段 c；假设同向 MACD 面积 a＝100、c＝60。</div><svg id="range-structure" role="img" aria-label="一个由三段重合形成的中枢，向上进入段a和向上离开段c同向，回抽未返回固定核心，确认中枢结束。"></svg></section>
+<div class="text-small">人工结构示意：折线表示线段，内部笔省略；框按三段重合及端点直线交点定位。力度是假设值，不能由线条角度推算；中枢结束确认不等于背驰最终确认。</div>
+<script>
+(()=>{
+const root=document.getElementById('beichi-structure');
+const NS='http://www.w3.org/2000/svg';
+function draw(id,prices,boxes,highlights,labels){
+ const svg=root.querySelector('#'+id), w=svg.clientWidth;
+ svg.replaceChildren();svg.setAttribute('viewBox',`0 0 ${w} 300`);
+ const x=i=>24+i*(w-48)/(prices.length-1), y=p=>250-p*7;
+ function add(tag,attrs,text){const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));if(text)e.textContent=text;svg.append(e);return e;}
+ add('line',{x1:24,y1:265,x2:w-16,y2:265,class:'axis'});
+ for(const [s,e,d,g,name] of boxes){
+  const left=s+( (prices[s+1]>prices[s]?d:g)-prices[s])/(prices[s+1]-prices[s]);
+  const right=e+( (prices[e+1]>prices[e]?g:d)-prices[e])/(prices[e+1]-prices[e]);
+  add('rect',{x:x(left),y:y(g),width:x(right)-x(left),height:y(d)-y(g),class:'box'});
+  add('text',{x:(x(left)+x(right))/2,y:y(d)+23,'text-anchor':'middle'},name);
+ }
+ add('polyline',{points:prices.map((p,i)=>`${x(i)},${y(p)}`).join(' '),class:'route'});
+ for(const [a,b] of highlights)add('polyline',{points:prices.slice(a,b+1).map((p,i)=>`${x(a+i)},${y(p)}`).join(' '),class:'compare'});
+ for(const [i,p,t] of labels)add('text',{x:x(i),y:y(p),'text-anchor':'middle'},t);
+ add('text',{x:24,y:20},'价格 ↑');add('text',{x:w-16,y:292,'text-anchor':'end'},'时间 →');
+}
+function render(){
+ draw('trend-structure',[0,10,4,9,5,16,13,22,17,21,18,28,24],[[0,4,4,9,'A'],[6,10,17,21,'B']],[[4,7],[10,11]],[[5.4,19,'b'],[10.7,31,'c：新高'],[12,21,'回抽']]);
+ draw('range-structure',[0,12,5,10,6,16,13],[[0,4,5,10,'B']],[[0,1],[4,5]],[[.7,16,'a'],[4.8,20,'c'],[6,10,'回抽']]);
+}
+new ResizeObserver(render).observe(root);render();
+})();
+</script>
+</div>

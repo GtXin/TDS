@@ -1,0 +1,20 @@
+compatibility {'unsupported': 'reserved feature columns must be NA'} 44375
+upstream 21424 11184 {'merged': 0.8345115419979265, 'fx': 0.7457837920010206}
+bi weak 2587 4.983310042000085
+Traceback (most recent call last):
+  File "/Users/coder/Public/EngineGit/TDS/experiments/xianduan034/run.py", line 196, in <module>
+    main()
+  File "/Users/coder/Public/EngineGit/TDS/experiments/xianduan034/run.py", line 164, in main
+    xd = XianduanSeries.derive_from(bi, {"xd_mode": xm})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 165, in derive_from
+    result = recognize(cls._prices(source_series), c["xd_mode"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/xianduan.py", line 49, in recognize
+    result = solve({"xd_mode": mode, "bi_mode": "source", "nodes": nodes}, pens)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_select.py", line 110, in solve
+    save(origin, b, c, 0, None, None)
+  File "/Users/coder/Public/EngineGit/TDS/src/chanlab/algo/_xianduan_select.py", line 102, in save
+    raise RuntimeError(
+RuntimeError: Explicit pair-state budget 6000000 exceeded during selection

@@ -1,0 +1,61 @@
+{
+  "mk": {
+    "ours": 21424,
+    "kwx": 21424,
+    "exact_geometry_matches": 21423,
+    "status_ours": {
+      "unconfirmed": 21424
+    },
+    "status_kwx": {
+      "confirmed": 21423,
+      "provisional": 1
+    },
+    "status_difference_on_matching_geometry": 21423,
+    "only_ours": 1,
+    "only_kwx": 1
+  },
+  "fx": {
+    "ours": 11184,
+    "kwx": 11184,
+    "exact_geometry_matches": 11184,
+    "status_ours": {
+      "unconfirmed": 11184
+    },
+    "status_kwx": {
+      "confirmed": 11184
+    },
+    "status_difference_on_matching_geometry": 11184,
+    "only_ours": 0,
+    "only_kwx": 0
+  },
+  "bi-weak": {
+    "ours": 2587,
+    "kwx": 1802,
+    "exact_geometry_matches": 902,
+    "status_ours": {
+      "unconfirmed": 2587
+    },
+    "status_kwx": {
+      "confirmed": 1801,
+      "provisional": 1
+    },
+    "status_difference_on_matching_geometry": 902,
+    "only_ours": 1685,
+    "only_kwx": 900
+  },
+  "bi-strong": {
+    "ours": 1862,
+    "kwx": 1802,
+    "exact_geometry_matches": 1123,
+    "status_ours": {
+      "unconfirmed": 1862
+    },
+    "status_kwx": {
+      "confirmed": 1801,
+      "provisional": 1
+    },
+    "status_difference_on_matching_geometry": 1123,
+    "only_ours": 739,
+    "only_kwx": 679
+  }
+}

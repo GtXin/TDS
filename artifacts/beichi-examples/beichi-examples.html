@@ -1,0 +1,43 @@
+<div id="beichi-examples">
+<style>
+#beichi-examples section{margin-bottom:calc(var(--font-size-base)*1.5)}
+#beichi-examples svg{width:100%;height:260px;overflow:visible;color:var(--foreground)}
+#beichi-examples text{fill:currentColor;font-size:var(--font-size-base)}
+#beichi-examples .axis{stroke:var(--border);stroke-width:1;fill:none}
+#beichi-examples .context{stroke:var(--muted-foreground);stroke-width:1.5;fill:none}
+#beichi-examples .compare{stroke:var(--viz-series-1);stroke-width:3;fill:none}
+#beichi-examples .future{stroke:var(--muted-foreground);stroke-width:2;stroke-dasharray:5 4;fill:none}
+#beichi-examples .center{fill:var(--viz-series-2);fill-opacity:.13;stroke:var(--border);stroke-width:1}
+</style>
+<section><h3>① 趋势背驰：两个同级中枢，比较 b 与 c</h3>
+<svg role="img" aria-label="上涨趋势有两个逐级抬高的同级中枢A和B，b与c同向，c创新高但力度较弱。内部结构省略。">
+<svg x="0" y="0" width="100%" height="260" viewBox="0 0 700 260" preserveAspectRatio="none">
+<path class="axis" d="M25 15V235H680"/>
+<rect class="center" x="105" y="150" width="115" height="45"/><rect class="center" x="355" y="75" width="115" height="45"/>
+<path class="context" d="M45 220L105 155L137 195L170 150L198 185L220 150M355 75L387 120L420 75L448 110L470 75"/>
+<path class="compare" d="M220 150L355 75M470 75L585 28"/>
+<path class="future" d="M585 28L650 110"/>
+<text x="140" y="218">中枢 A</text><text x="380" y="145">中枢 B</text><text x="260" y="88">b：力度 100</text><text x="490" y="65">c：力度 60</text><text x="565" y="20">新高</text><text x="45" y="35">价格 ↑</text><text x="595" y="255">时间 →</text>
+</svg></svg></section>
+<section><h3>② 盘整背驰：一个中枢，离开后又回到中枢</h3>
+<svg role="img" aria-label="进入段和离开段都向上，离开段力度较弱，随后回到同一个中枢。">
+<svg x="0" y="0" width="100%" height="260" viewBox="0 0 700 260" preserveAspectRatio="none">
+<path class="axis" d="M25 15V235H680"/>
+<rect class="center" x="190" y="90" width="240" height="75"/>
+<path class="compare" d="M60 215L190 70M430 165L550 55"/>
+<path class="context" d="M190 70L245 165L300 90L365 165L400 105L430 165"/>
+<path class="future" d="M550 55L625 130"/>
+<text x="60" y="90">进入段：100</text><text x="270" y="195">同一个中枢</text><text x="460" y="35">离开段：60</text><text x="545" y="160">回到中枢</text><text x="45" y="35">价格 ↑</text><text x="595" y="255">时间 →</text>
+</svg></svg></section>
+<section><h3>③ 盘整背驰：离开后回抽，仍留在中枢上方</h3>
+<svg role="img" aria-label="同一个中枢的向上进入段与离开段比较，后段较弱，随后回抽低点仍高于中枢上沿，再次上涨。第三类买点还需满足次级别结构条件。">
+<svg x="0" y="0" width="100%" height="260" viewBox="0 0 700 260" preserveAspectRatio="none">
+<path class="axis" d="M25 15V235H680"/>
+<rect class="center" x="175" y="130" width="220" height="60"/>
+<path class="compare" d="M50 220L175 110M395 190L525 42"/>
+<path class="context" d="M175 110L225 190L270 130L320 190L355 145L395 190"/>
+<path class="future" d="M525 42L585 100L655 25"/>
+<text x="50" y="105">进入段：100</text><text x="250" y="215">同一个中枢</text><text x="405" y="35">离开段：60</text><text x="530" y="123">回抽未返回</text><text x="45" y="35">价格 ↑</text><text x="595" y="255">时间 →</text>
+</svg></svg></section>
+<div class="text-small">概念示意；内部次级别结构省略。力度 100／60 为人工假设，与折线斜率、长度无对应关系；虚线表示一种可能的后续。</div>
+</div>

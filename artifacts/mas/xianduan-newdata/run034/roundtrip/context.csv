@@ -1,0 +1,19 @@
+key,value
+source_snapshot,aebfe6ad5fe5b33107f9d444ff605d258b24e95e3006051c4837498f4a936c30
+result_version,cc:556e9a5f16dc6b5efa7add12fe5f95c86757001449dc79519973c2d53edd0086:cc-extend-frozen-depth1-v2
+import_origin,CC
+source,CC DuckDB klines.duckdb
+cc_head,af305b0812131be71e49cf91851016012ea63a78
+cc_profile_id,bi_5k
+cc_config_hash,65564d7f127c
+projection_scope,raw_mk_fx_bi_xd_recursive_zs_zou
+fx_anchor_policy,earliest_raw_equal_selected_feature_price
+trace_capture,native_summary_only
+native_snapshot_schema,chanlab.cc_native_snapshot.v1
+unmapped_groups,"bc,bsp"
+qualification_version,cc-extend-frozen-depth1-v2
+view_name,recursive_l0_d1
+selected_series,"{""bi"":""cc.bi"",""fx"":""cc.fx"",""mk"":""cc.mk"",""xd"":""cc.xd"",""zou"":""cc.recursive.l0.d1.zou"",""zs"":""cc.recursive.l0.d1.zs""}"
+selected_zs_series,cc.recursive.l0.d1.zs
+selected_zou_series,cc.recursive.l0.d1.zou
+selected_level,l1
