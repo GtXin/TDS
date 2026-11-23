@@ -42,5 +42,7 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | KWX 003 | [TDS synchronization and Chinese localization](memoKWX_003_sync_en2cn.md) |
 | KWX 004 | [CC data import and ChanTable conversion](memoKWX_004_CCToChanTable.md) |
 | KWX 009 | [线段](memoKWX_009_Chan_xianduan.md) |
+| KWX 010 | [中枢](memoKWX_010_Chan_zhongshu.md) |
+| KWX 012 | [背驰](memoKWX_012_Chan_beichi.md) |
 
 For new or revised memos, follow [the writing guide](memoWX_006_memoWritingGuide.md).

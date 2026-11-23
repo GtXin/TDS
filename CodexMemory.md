@@ -3,6 +3,7 @@ Updated: 2026-11-18
 ## Purpose
 Bring KWX and WX together for a three-day Chan theory feasibility sprint, establishing a reusable algorithm foundation with a Python backend and static website.
 ## Confirmed decisions
+- Memo024已补000范围，并在001版本一原样收录KWX012的通用／趋势／盘整背驰定义；KWX原件、024算法空模板及附录保持。下一步按用户指示讨论力度与比较段规则。[memo024](docs/memo/memoWX_024_Chan_beichi.md)。
 - Memo033实现与验收完成：共享Zhongshu领域／表／绘图，522测试、99%覆盖、10000随机×四组合、64长输入及有限枚举通过；真实四组合与022逐字段一致。228单组合PNG/HTML逐页检查，57比较图；默认Z0缺左交点诊断沿用022。[结果](docs/memo/memoWX_033_zhongshuFamily.md)，[证据](artifacts/mas/zhongshu-family/run033/README.md)。下一步用户审阅，范围仍为固定快照线段中枢。
 - GitHub size repair: memo032 documents gzip storage for two oversized memo030 results, local originals ignored, staged/outgoing blob guard and local commit hook. Recovery bundle: `/private/tmp/TDS-before-size-fix-54a2f1a.bundle`; latest unpublished commit is to be amended; no shared-history rewrite or push.
 - Memo031002.f验证报告直接嵌入全样本四组合总览（031伴随目录字节一致副本），保留交互入口；默认weak/weak置于最下方。
@@ -76,10 +77,13 @@ Bring KWX and WX together for a three-day Chan theory feasibility sprint, establ
 - [Memo 005](docs/memo/memoWX_005_informationWorkflow.md) covers research and evidence; [memo 006](docs/memo/memoWX_006_memoWritingGuide.md) is the authoritative writing guide.
 - [logXW.md](logXW.md) records repository events; every repository update must also be logged.
 ## Current status
+KWX010 (中枢) and KWX012 (背驰) are published from the current TDS_CN source with their two original illustrations. See the [publication record](mas/tasks/20261120-publish-kwx010-012.md).
+
+The selected TDS_CN KWX001–004 memos and 44,375-row CC ChanTable L1 batch are available on GitHub main. See the [publication record](mas/tasks/20261111-publish-kwx001-004.md) and [batch verification](artifacts/mas/cc-chantable-20261111-134106-27c20343/verification.json).
+
 Memo022已按030补齐001矩形口径、002.a–f、003–005及真实数据图集。结果与日志须显式记录起段／终段及可回查的源快照；确认回抽单列，开放终段为空，缺交点仍保留起终段。用户明确允许零高度；交点用原始端点直线，无法相交单列异常。顺序扫描选最早三段重合，实际离开段为终线段，相邻已完成未返回回抽确认，再从e+1寻找。新增共享私有扫描器／031适配器和复现实验。四组53/57/79/89条已完成线段得到8/8/11/14个已结束结构、8/8/11/13个可定位矩形，弱组各1开放；默认weak/weak首个结构缺左交点（核心[3005,3083]，起线段端点3026→3005），保留未补框。472测试、33定向/随机、282固定线段前缀对照、83交点、278源极值核对通过；新模块99%覆盖，strict mypy8文件、Black/Ruff通过。32PNG/HTML＋8比较PNG＋1异常图，32页已目视核对；原文/CC附录、029/030/031及原数据未改。下一步用户审阅，若要求异常也完整画框需另改几何合同。[memo](docs/memo/memoWX_022_Chan_zhongshu.md)、[证据](artifacts/mas/memo022-zs/README.md)、[任务](mas/tasks/20261118-memo022-complete-real-validation.md)。
 
 Memo031已完成XD030-E领域类、weak/weak默认、表/图/持久化和全部计划验收。下一步用户审阅[memo031](docs/memo/memoWX_031_xianduanFamily.md)及[默认图集](artifacts/mas/xianduan-family/run031/charts/bi-weak_xd-weak/index.html)。原文复杂情形完备性未证明；永久确认/续读不在本轮合同内。已有logXW合并冲突保留。
-
 
 Memo028已按029固定快照DP执行，009两类合同及027报告结构补齐。425回归／39定向通过，3个Bi模块合计96%覆盖，strict mypy／Black／Ruff通过。10,000随机原始OHLCV×strong/weak经既有merged/FX处理，逐端点独立参考及每档5,377短输入穷举无差异；空路线单列。真实CC100/1000/3000FX两档各3次，全部best/prev一致。完整10060raw→6200merged→3027FX：strong480／weak682，均FX0→3026，仅首尾各1合并单元未覆盖。112页PNG/HTML全部生成、机器覆盖核对并逐页目视检查；页边FX裁切已修复，密集文字可交互放大。无永久确认／缓存续读；029未修改。证据[执行任务](mas/tasks/20261111-memo028-dp029.md)、[图集](artifacts/mas/bi-dp029/index.html)。下一步：用户审阅；算法目标改变先改029。
 
