@@ -936,3 +936,5 @@ This is an agent-maintained record, not an automatic filesystem watcher. Record 
 - **2026-11-23T00:22:22-08:00 | Codex | 背驰概念示意图** — 按用户请求以KWX012／WX024定义绘制三个聊天示例：趋势背驰、盘整背驰后返回、盘整背驰后留在中枢外。新增 `artifacts/beichi-examples/beichi-examples.html`；力度100/60明确为人工假设，折线省略次级别内部结构，虚线为可能后续。完成标签／闭合结构及概念边界检查，未声称真实行情验证；未修改memo或算法。
 
 - **2026-11-23T00:28:41-08:00 | Codex | Memo024范围引用KWX012** — 按用户要求在000范围明确版本一定义采用KWX012的001，增加[19]及References对应链接；编辑前完整备份 `docs/memo/backups/memoWX_024_Chan_beichi__20261123_002841_035700.md`。备份一致及001至附录不变检查通过；沿用既有1–18编号，未改定义或算法。
+
+- **2026-11-23T09:25:34-08:00 | Codex | Publish KWX013 and KWX014 to main** — Added the two current TDS_CN memos and their three embedded JPEGs on main at 9534d375. Exact source bytes were retained, with memo index, project memory and publication task updates. The source review verified the five files and reference scope. Existing local references are listed in the task. Direct Git transport timed out; the Windows-enabled loopback proxy restored GitHub access.

@@ -45,5 +45,7 @@ WX and KWX use separate three-digit sequences. Keep assigned numbers stable.
 | KWX 009 | [线段](memoKWX_009_Chan_xianduan.md) |
 | KWX 010 | [中枢](memoKWX_010_Chan_zhongshu.md) |
 | KWX 012 | [背驰](memoKWX_012_Chan_beichi.md) |
+| KWX 013 | [买卖点](memoKWX_013_Chan_buysellpoint.md) |
+| KWX 014 | [区间套](memoKWX_014_Chan_intervalNesting.md) |
 
 For new or revised memos, follow [the writing guide](memoWX_006_memoWritingGuide.md).

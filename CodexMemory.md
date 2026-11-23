@@ -77,6 +77,8 @@ Bring KWX and WX together for a three-day Chan theory feasibility sprint, establ
 - [Memo 005](docs/memo/memoWX_005_informationWorkflow.md) covers research and evidence; [memo 006](docs/memo/memoWX_006_memoWritingGuide.md) is the authoritative writing guide.
 - [logXW.md](logXW.md) records repository events; every repository update must also be logged.
 ## Current status
+The current TDS_CN KWX013 (买卖点) and KWX014 (区间套) memos are published with their three embedded original illustrations. See the [publication record](mas/tasks/20261124-publish-kwx013-014.md).
+
 KWX010 (中枢) and KWX012 (背驰) are published from the current TDS_CN source with their two original illustrations. See the [publication record](mas/tasks/20261120-publish-kwx010-012.md).
 
 The selected TDS_CN KWX001–004 memos and 44,375-row CC ChanTable L1 batch are available on GitHub main. See the [publication record](mas/tasks/20261111-publish-kwx001-004.md) and [batch verification](artifacts/mas/cc-chantable-20261111-134106-27c20343/verification.json).
