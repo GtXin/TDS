@@ -3,6 +3,7 @@ Updated: 2026-11-18
 ## Purpose
 Bring KWX and WX together for a three-day Chan theory feasibility sprint, establishing a reusable algorithm foundation with a Python backend and static website.
 ## Confirmed decisions
+- 2026-11-28 用户授权以 TDS_CN 最新版替换 [KWX010 中枢](docs/memo/memoKWX_010_Chan_zhongshu.md)，携带六张 CC 实盘新图和直接复核记录，直接发布 main；源稿保留三版定义与待议边界。发布准备及后续核验见[任务](mas/tasks/20261128-publish-kwx010.md)。
 - Memo024已补000范围，并在001版本一原样收录KWX012的通用／趋势／盘整背驰定义；KWX原件、024算法空模板及附录保持。下一步按用户指示讨论力度与比较段规则。[memo024](docs/memo/memoWX_024_Chan_beichi.md)。
 - Memo033实现与验收完成：共享Zhongshu领域／表／绘图，522测试、99%覆盖、10000随机×四组合、64长输入及有限枚举通过；真实四组合与022逐字段一致。228单组合PNG/HTML逐页检查，57比较图；默认Z0缺左交点诊断沿用022。[结果](docs/memo/memoWX_033_zhongshuFamily.md)，[证据](artifacts/mas/zhongshu-family/run033/README.md)。下一步用户审阅，范围仍为固定快照线段中枢。
 - GitHub size repair: memo032 documents gzip storage for two oversized memo030 results, local originals ignored, staged/outgoing blob guard and local commit hook. Recovery bundle: `/private/tmp/TDS-before-size-fix-54a2f1a.bundle`; latest unpublished commit is to be amended; no shared-history rewrite or push.

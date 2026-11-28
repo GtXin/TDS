@@ -1,6 +1,6 @@
 # KWX 010 — 中枢
 
-[返回 KWX005 八篇范式](memoKWX_005_batchConcept1to8.md) · [来源核验](../../artifacts/mas/kwx005-first-batch-20261111/coverage-S4-S6.md)
+[返回 KWX005 批次协调](memoKWX_005_batchConcept1to11.md) · [来源核验](../../artifacts/mas/kwx005-first-batch-20261111/coverage-S4-S6.md)
 
 上游概念见[KWX009 线段](memoKWX_009_Chan_xianduan.md)。
 
@@ -36,6 +36,35 @@
 上一级中枢     X₁、X₂、X₃ 为本级走势，沿用三段共同条件和起算规则
 ```
 
+**实盘图例**
+
+低硫燃料油主连（ine:KQ.m@lu）1 分钟，2026-07-08 至 09-23（北京时间）。六张图均为同窗 CC 原图，使用新笔、标准线段和中枢延伸。
+
+**总图**　蓝框是三条线段构成的最低级别中枢，E 后连续三段已完成走势①②③的共同区间形成紫框④，⑤标出结束依据。
+
+![低硫燃料油主连一分钟总图，蓝框为最低级别，紫框④为上一级，⑤为离开和回试](memoKWX_010_Chan_zhongshu/cc-lu-1m-overview.jpg)
+
+**①–④ 三类走势与上一级中枢**　①盘整只含一个完整的 xzs24，②上涨的 xzs26、xzs27 外围分离且上移，③下跌的 xzs28、xzs29 外围分离且下移，三段共同覆盖 [4607, 4950]。
+
+![三个连续完成的本级走势，盘整含一个本级中枢，上涨与下跌分别含两个严格移位的本级中枢](memoKWX_010_Chan_zhongshu/cc-lu-1m-01-04-formation.jpg)
+
+**①a 下—上—下**　xzs24 从 E 后数三段，取共同区间 [4876, 4933]，右侧回抽最高 4713 仍低于下界。
+
+![xzs24 的进入段、下上下一至三段和区间下方的回抽](memoKWX_010_Chan_zhongshu/cc-lu-1m-01a-down-up-down.jpg)
+
+**①b 上—下—上**　①②交界处的 xzs25 从 E 后数三段，取共同区间 [4660, 4713]，右侧回试最低 4745 仍高于上界。
+
+![交界处 xzs25 的进入段、上下上一至三段和区间上方的回试](memoKWX_010_Chan_zhongshu/cc-lu-1m-01b-up-down-up.jpg)
+
+**②a 延伸**　xzs27 的前三段确定 [4870, 4898]，随后两段沿用该区间，右侧回试最低 4981 高于上界。
+
+![xzs27 的前三段、两段延伸和区间上方的回试](memoKWX_010_Chan_zhongshu/cc-lu-1m-02a-extension.jpg)
+
+**⑤ 上一级中枢结束**　向上离开④后，CC 以已完成回试的最低价 5242 仍高于④上界 4950 为关闭依据。
+
+![上一级中枢④的右端、向上离开、最低价为5242的回试](memoKWX_010_Chan_zhongshu/cc-lu-1m-05-close.jpg)
+
+[数据及复核记录](../../mas/tasks/20261128-kwx010-cc-zhongshu-screenshots.md#009--原生递推总图补查)
 
 ## 002 — 算法（怎么做）
 
